@@ -162,3 +162,169 @@ What was implemented
   ├── checkpoint.json
   ├── indicator_vocabulary.json
   └── indicator_vocabulary_summary.txt
+
+
+
+
+
+
+
+
+
+
+
+GPU Setup Guide — Windows / PowerShell / Driver 591.74
+                                                                                
+  Step 1 — Confirm your GPU has enough VRAM                       
+                                                                                
+  nvidia-smi                                                                    
+                                                                                
+  Look for your GPU name and VRAM. Qwen2-VL-7B-AWQ needs ≥10 GB VRAM (fp16 AWQ).
+   16 GB recommended.                                             
+                                                                                
+  ---                                                             
+  Step 2 — Install CUDA Toolkit 12.4
+                                    
+  Download and run the installer from NVIDIA:
+  https://developer.nvidia.com/cuda-12-4-0-download-archive                     
+  Select: Windows → x86_64 → 11 → exe (local)              
+                                                                                
+  After installation, verify:                                                   
+  nvcc --version
+  Expected: release 12.4                                                        
+                                                                                
+  ---
+  Step 3 — Confirm Python and create virtual environment                        
+                                                                                
+  python --version   # should be 3.10–3.12
+  cd "C:\path\to\COGS 185\FINAL\project"                                        
+                                                                                
+  python -m venv .venv                                                          
+  .venv\Scripts\Activate.ps1                                                    
+  python -m pip install --upgrade pip                                           
+                                                                  
+  If Activate.ps1 is blocked:                                                   
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  .venv\Scripts\Activate.ps1                                                    
+                                                                  
+  ---                                                                           
+  Step 4 — Install PyTorch with CUDA 12.4
+                                                                                
+  pip install torch==2.5.1 torchvision==0.20.1 --index-url        
+  https://download.pytorch.org/whl/cu124                                        
+   
+  Verify CUDA is visible to PyTorch:                                            
+  python -c "import torch; print('CUDA:', torch.cuda.is_available()); 
+  print('GPU:', torch.cuda.get_device_name(0))"                                 
+                                                                                
+  ---                                                                           
+  Step 5 — Install AutoAWQ (must come before transformers)                      
+                                                                                
+  AutoAWQ provides the quantisation kernels the AWQ model weights require:
+                                                                                
+  pip install autoawq                                             
+                                                                                
+  If the pre-built wheel fails (CUDA version mismatch), use the CUDA 12.4       
+  specific wheel:
+  pip install autoawq --extra-index-url https://huggingface.github.io/autoawq/  
+                                                                  
+  ---                                                                           
+  Step 6 — Install the remaining requirements
+                                                                                
+  pip install -r requirements.txt                                 
+                                                                                
+  This installs transformers, qwen-vl-utils, accelerate, tqdm, pandas, Pillow,  
+  etc.                                                                          
+                                                                                
+  detectron2 (for the segmentation pipeline) is not needed for VLM inference —  
+  skip it for now.
+                                                                                
+  ---                                                             
+  Step 7 — Log in to Hugging Face Hub
+                                     
+  The model weights (~8 GB) will be downloaded automatically on first run:      
+                                                                                
+  pip install huggingface_hub                                                   
+  huggingface-cli login                                                         
+                                                                                
+  Paste your token from https://huggingface.co/settings/tokens when prompted.   
+                                                                                
+  ---                                                                           
+  Step 8 — Dry-run to verify prompts (no GPU needed)              
+                                                                                
+  python src\vlm\run_vlm_annotation.py --dry-run
+                                                                                
+  This prints the first 3 formatted prompts without loading the model. Confirm  
+  the few-shot block, detected objects section, and affordance names look       
+  correct.                                                                      
+                                                                  
+  ---
+  Step 9 — Run the full annotation pipeline
+                                                                                
+  python src\vlm\run_vlm_annotation.py
+                                                                                
+  The script will:                                                              
+  1. Download model weights on first run (one-time, ~8 GB to
+  ~/.cache/huggingface/)                                                        
+  2. Annotate all 2,100 pairs (420 images × 5 affordances)        
+  3. Save one JSON per pair to data\vlm_annotations\raw\                        
+  4. Checkpoint every 50 pairs — safe to Ctrl+C and resume                      
+                                                                                
+  Useful flags:                                                                 
+  # Run only one affordance first as a sanity check:                            
+  python src\vlm\run_vlm_annotation.py --affordance-ids L079 --max-pairs 5      
+                                                                                
+  # Restrict to specific affordances (e.g. to split work across sessions):      
+  python src\vlm\run_vlm_annotation.py --affordance-ids L059 L079               
+                                                                                
+  # Resume after interruption (completed pairs are skipped automatically):      
+  python src\vlm\run_vlm_annotation.py                                          
+                                      
+  Expected throughput: 5–20 seconds/pair depending on GPU. Full run ≈ 3–6 hours.
+                                                                                
+  ---                                                                           
+  Step 10 — Extract indicator vocabulary (after inference completes)            
+                                                                                
+  python src\vlm\extract_indicator_vocab.py --min-count 2
+                                                                                
+  Outputs:                                                                      
+  - data\vlm_annotations\indicator_vocabulary.json                              
+  - data\vlm_annotations\indicator_vocabulary_summary.txt                       
+                                                                  
+  ---                                                                           
+  Troubleshooting quick reference                                 
+                                                                                
+  ┌───────────────────────┬─────────────────────────────────────────────────┐
+  │        Symptom        │                       Fix                       │
+  ├───────────────────────┼─────────────────────────────────────────────────┤   
+  │ CUDA not available    │ Reboot after CUDA Toolkit install; re-check     │
+  │ after Step 4          │ with nvcc --version                             │   
+  ├───────────────────────┼─────────────────────────────────────────────────┤   
+  │ autoawq install fails │ Try pip install autoawq --no-build-isolation or │
+  │                       │  install from source                            │   
+  ├───────────────────────┼─────────────────────────────────────────────────┤
+  │ qwen_vl_utils not     │ pip install qwen-vl-utils (underscore in        │   
+  │ found                 │ import, hyphen in package name)                 │   
+  ├───────────────────────┼─────────────────────────────────────────────────┤
+  │ OutOfMemoryError on   │ Your VRAM may be under 10 GB; try adding        │   
+  │ GPU                   │ --affordance-ids L059 to run one at a time      │   
+  ├───────────────────────┼─────────────────────────────────────────────────┤
+  │ source is not         │ You're in PowerShell — use                      │   
+  │ recognised            │ .venv\Scripts\Activate.ps1                      │   
+  └───────────────────────┴─────────────────────────────────────────────────┘
+                                                                                
+✻ Brewed for 58s                                                  
+
+❯ Error in step 4: could not install packages due to an OSError: INvalid URL    
+'https:/download.pytorch.org/wh1/cu124/torchvision/': No host supplied          
+                                                                                
+⏺ The URL got corrupted when copying — two characters are wrong: https:/        
+  (missing a slash) and wh1 (that's a 1, not an l). Type this manually or copy
+  carefully:                                                                    
+   
+  pip install torch==2.5.1 torchvision==0.20.1 --index-url                      
+  https://download.pytorch.org/whl/cu124                                        
+                                                                                
+  The two fixes:                                                                
+  - https:// — two forward slashes                                
+  - whl — ends in a lowercase letter l, not the number 1
