@@ -1,0 +1,57 @@
+# ── Core ML / Deep Learning ─────────────────────────────────────────────────
+torch>=2.3.0
+torchvision>=0.18.0
+accelerate>=0.30.0
+
+# ── Transformers (Mask2Former + Qwen2-VL) ───────────────────────────────────
+transformers>=4.41.0
+
+# ── Qwen2-VL inference utilities ────────────────────────────────────────────
+# qwen-vl-utils provides process_vision_info() for image pre-processing
+qwen-vl-utils>=0.0.8
+
+# ── AWQ quantisation kernels (required for *-AWQ model weights) ──────────────
+# Must match your CUDA version; install AFTER torch:
+#   pip install autoawq  (for CUDA 11/12 pre-built wheels)
+# or from source for custom CUDA:
+#   pip install git+https://github.com/casper-hansen/AutoAWQ.git
+autoawq>=0.2.6
+
+# ── Detectron2 (Mask2Former COCO panoptic) ──────────────────────────────────
+# Install separately — version must match your torch/CUDA build:
+#   pip install 'git+https://github.com/facebookresearch/detectron2.git'
+# Or pre-built wheel: https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+# detectron2  # uncomment after installing manually
+
+# ── Gradient Boosting + HPO ─────────────────────────────────────────────────
+lightgbm>=4.3.0
+optuna>=3.6.0
+
+# ── Explainability ──────────────────────────────────────────────────────────
+shap>=0.45.0
+
+# ── Classic ML / Stats ──────────────────────────────────────────────────────
+scikit-learn>=1.4.0
+scipy>=1.13.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# ── Data Serialization ──────────────────────────────────────────────────────
+pyarrow>=16.0.0
+
+# ── Visualization ───────────────────────────────────────────────────────────
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# ── Image I/O ───────────────────────────────────────────────────────────────
+Pillow>=10.3.0
+
+# ── Progress / Utilities ────────────────────────────────────────────────────
+tqdm>=4.66.0
+requests>=2.31.0
+openpyxl>=3.1.0
+remotezip>=0.12.0
+
+# ── Notebook support ────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipywidgets>=8.1.0

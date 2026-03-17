@@ -1,0 +1,547 @@
+{
+  "_metadata": {
+    "description": "Two few-shot examples per affordance (high-scoring and low-scoring) for VLM prompt injection.",
+    "usage": "Injected as text into the user prompt to guide output format and scoring calibration. These are text-only examples — no actual images are attached.",
+    "schema": "Each entry: affordance_id, score, scene_description, expected_output"
+  },
+
+  "L059": [
+    {
+      "affordance_id": "L059",
+      "score": 6,
+      "scene_description": "A residential bedroom with a queen-size bed covered in white pillows and a grey duvet, a wooden nightstand with a warm-toned bedside lamp, floor-length curtains drawn over the window, and a wardrobe along the far wall. The room is enclosed with a visible door.",
+      "expected_output": {
+        "affordance_id": "L059",
+        "affordance_name": "Sleep (Primary)",
+        "score": 6,
+        "confidence": 0.90,
+        "indicators": [
+          {
+            "name": "queen bed with duvet and pillows",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "A bed is the primary artifact for sleep; its presence with soft textiles strongly supports the activity."
+          },
+          {
+            "name": "wooden nightstand with bedside lamp",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Bedside lamp provides dimmable warm lighting typical of sleep-supportive environments."
+          },
+          {
+            "name": "floor-length curtains over window",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Window coverings provide light control and visual privacy essential for quality sleep."
+          },
+          {
+            "name": "wardrobe along far wall",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 1,
+            "rationale": "Personal storage fixture is consistent with a primary sleeping room, reinforcing residential bedroom context."
+          },
+          {
+            "name": "enclosed private room with door",
+            "type": "spatial",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Enclosed layout with no through-traffic cues supports the low-disturbance environment needed for sleep."
+          },
+          {
+            "name": "warm soft ambient lighting",
+            "type": "lighting",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Warm-toned, low-intensity bedside lighting is conducive to relaxation and sleep onset."
+          }
+        ],
+        "reasoning_summary": "This is a well-appointed residential bedroom. The queen bed with soft textiles is the primary sleep artifact, complemented by privacy-providing curtains and a warm bedside lamp. The enclosed, low-disturbance layout earns a high score; it falls just short of 7 due to modest room size and curtains that appear to be drapes rather than blackout blinds."
+      }
+    },
+    {
+      "affordance_id": "L059",
+      "score": 2,
+      "scene_description": "A commercial kitchen with stainless steel countertops, an industrial six-burner stove, overhead fluorescent lighting, metal utility shelving with cleaning supplies. A small folding cot is pushed against one wall.",
+      "expected_output": {
+        "affordance_id": "L059",
+        "affordance_name": "Sleep (Primary)",
+        "score": 2,
+        "confidence": 0.88,
+        "indicators": [
+          {
+            "name": "small folding cot against wall",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 1,
+            "rationale": "A cot provides a minimal horizontal rest surface, though its size and utility-room placement are far from sleep-optimal."
+          },
+          {
+            "name": "overhead fluorescent lighting",
+            "type": "lighting",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Bright overhead fluorescent fixtures are incompatible with sleep — they cannot be dimmed and disrupt circadian signalling."
+          },
+          {
+            "name": "industrial six-burner stove and range hood",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Large commercial cooking appliances create noise, heat, and odour incompatible with a sleep environment."
+          },
+          {
+            "name": "stainless steel countertops and utility shelving",
+            "type": "surface",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Hard industrial surfaces indicate a commercial kitchen context entirely unsuitable for sleeping."
+          },
+          {
+            "name": "open commercial-use layout",
+            "type": "spatial",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Open, throughfare-prone commercial kitchen layout provides no privacy or acoustic enclosure for sleep."
+          }
+        ],
+        "reasoning_summary": "This is a commercial kitchen with only a small folding cot as an afterthought. The dominant fluorescent lighting, industrial cooking equipment, and open commercial layout are strongly incompatible with primary sleep. Only the presence of any horizontal rest surface at all prevents a score of 1."
+      }
+    }
+  ],
+
+  "L079": [
+    {
+      "affordance_id": "L079",
+      "score": 7,
+      "scene_description": "A modern residential kitchen with a six-burner gas range and overhead range hood, a stainless steel sink, granite countertops forming a U-shape, a large side-by-side refrigerator, and extensive upper and lower wood cabinets. The layout forms a clear work triangle.",
+      "expected_output": {
+        "affordance_id": "L079",
+        "affordance_name": "Cook (Daily)",
+        "score": 7,
+        "confidence": 0.96,
+        "indicators": [
+          {
+            "name": "six-burner gas range with range hood overhead",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "A multi-burner range is the central cooking appliance; the overhead hood signals functional kitchen infrastructure."
+          },
+          {
+            "name": "stainless steel kitchen sink",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+          },
+          {
+            "name": "granite countertops forming U-shape",
+            "type": "surface",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+          },
+          {
+            "name": "large side-by-side refrigerator",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Refrigerator completes the stove–sink–refrigerator work triangle, the standard efficient cooking workflow."
+          },
+          {
+            "name": "upper and lower wood cabinets",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Extensive above- and below-counter storage is essential for organised daily cooking."
+          },
+          {
+            "name": "work triangle layout (stove–sink–fridge)",
+            "type": "layout",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "The classical work triangle is clearly visible in the U-shape arrangement, minimising movement during cooking tasks."
+          }
+        ],
+        "reasoning_summary": "This is a fully equipped modern kitchen with all primary cooking affordances present and well-arranged. The work triangle is clearly defined, countertop prep space is generous, and both water access and storage are well-provisioned. This space scores 7 — ideally suited for daily cooking at any skill level."
+      }
+    },
+    {
+      "affordance_id": "L079",
+      "score": 1,
+      "scene_description": "A living room with a large sectional sofa, a glass coffee table, a widescreen TV mounted on the wall, a floor lamp in the corner, and decorative shelving with books and plants. No kitchen appliances or sink are visible.",
+      "expected_output": {
+        "affordance_id": "L079",
+        "affordance_name": "Cook (Daily)",
+        "score": 1,
+        "confidence": 0.97,
+        "indicators": [
+          {
+            "name": "absence of any cooking appliance",
+            "type": "spatial",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "No stove, oven, or microwave is visible — the single most critical deficiency for a cooking space."
+          },
+          {
+            "name": "absence of water fixture",
+            "type": "spatial",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "No sink is present; water access is essential for food preparation and kitchen hygiene."
+          },
+          {
+            "name": "large sectional sofa",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Soft seating furniture occupies the main floor area, leaving no usable cooking workspace."
+          },
+          {
+            "name": "absence of hard prep surfaces",
+            "type": "surface",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "No countertop or hard washable work surface is present — required for all food preparation tasks."
+          },
+          {
+            "name": "wall-mounted widescreen TV",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 1,
+            "rationale": "Entertainment media without any cooking infrastructure confirms this as a living room, not a kitchen."
+          }
+        ],
+        "reasoning_summary": "This is a purely recreational living room with no cooking infrastructure whatsoever — no appliances, no sink, and no hard prep surfaces. The space is completely unsuitable for any cooking activity and receives the minimum score of 1."
+      }
+    }
+  ],
+
+  "L091": [
+    {
+      "affordance_id": "L091",
+      "score": 7,
+      "scene_description": "A dedicated home office with a large L-shaped desk supporting dual monitors, an ergonomic mesh office chair with lumbar support, a desk lamp angled toward the screens, a bookshelf lined with reference materials, and a closed door providing enclosure and privacy.",
+      "expected_output": {
+        "affordance_id": "L091",
+        "affordance_name": "Computer Work (Solo)",
+        "score": 7,
+        "confidence": 0.93,
+        "indicators": [
+          {
+            "name": "L-shaped desk with dual monitors",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "A large dedicated work surface with two screens is the ideal configuration for extended computer work."
+          },
+          {
+            "name": "ergonomic mesh office chair with lumbar support",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Ergonomic seating with lumbar support is critical for maintaining correct posture during sustained knowledge work."
+          },
+          {
+            "name": "desk lamp angled toward screens",
+            "type": "lighting",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Directional task lighting reduces eye strain and is well-positioned relative to the monitors."
+          },
+          {
+            "name": "bookshelf with reference materials",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 1,
+            "rationale": "Reference books and organised storage indicate a dedicated knowledge work environment."
+          },
+          {
+            "name": "closed door providing privacy",
+            "type": "spatial",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Enclosed room with door enables acoustic and visual privacy essential for focused solo work."
+          },
+          {
+            "name": "dedicated low-distraction room layout",
+            "type": "layout",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "No high-traffic areas or recreational features compete for attention; the room is wholly work-oriented."
+          }
+        ],
+        "reasoning_summary": "This dedicated home office has all the hallmarks of an ideal computer work environment: a large desk with dual monitors, ergonomic seating, targeted task lighting, organised reference storage, and acoustic privacy. It represents the top of the suitability scale for solo computer work."
+      }
+    },
+    {
+      "affordance_id": "L091",
+      "score": 2,
+      "scene_description": "A hotel lobby with a marble floor, large decorative plant arrangements, an upholstered sofa near the entrance, ambient chandelier lighting, and a front reception desk visible in the background. No personal flat work surface or ergonomic seating is present.",
+      "expected_output": {
+        "affordance_id": "L091",
+        "affordance_name": "Computer Work (Solo)",
+        "score": 2,
+        "confidence": 0.87,
+        "indicators": [
+          {
+            "name": "no flat personal work surface",
+            "type": "spatial",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Absence of any desk or table at sitting height is the primary barrier to setting up a computer workstation."
+          },
+          {
+            "name": "upholstered lobby sofa without desk",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Soft lounging seating without an adjacent surface forces an uncomfortable, non-ergonomic posture for laptop use."
+          },
+          {
+            "name": "high-traffic public lobby layout",
+            "type": "layout",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Hotel lobby is a high-distraction, high-foot-traffic public space — strongly incompatible with focused solo knowledge work."
+          },
+          {
+            "name": "ambient chandelier overhead lighting",
+            "type": "lighting",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Decorative ambient lighting provides no task illumination for screen work and may cause screen glare."
+          },
+          {
+            "name": "decorative plant arrangements",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 1,
+            "rationale": "Decorative elements confirm this is a public reception space, not a work-focused environment."
+          }
+        ],
+        "reasoning_summary": "A hotel lobby is fundamentally unsuitable for focused solo computer work. The lack of any desk surface, combined with the high-traffic public layout and ambient-only lighting, prevents productive workstation setup. A laptop could technically be balanced on one's lap on the sofa, preventing a score of 1, but the environment is far from adequate for sustained work."
+      }
+    }
+  ],
+
+  "L130": [
+    {
+      "affordance_id": "L130",
+      "score": 6,
+      "scene_description": "A living room with a three-seat sofa and two armchairs arranged in a U-shape around a rectangular coffee table, a woven rug defining the seating zone, cushions on all seats, and a floor lamp providing warm ambient light.",
+      "expected_output": {
+        "affordance_id": "L130",
+        "affordance_name": "Casual Conversation / Hangout",
+        "score": 6,
+        "confidence": 0.91,
+        "indicators": [
+          {
+            "name": "three-seat sofa",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "A large sofa is the primary social seating artifact, accommodating multiple people comfortably."
+          },
+          {
+            "name": "two armchairs facing sofa",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Armchairs arranged opposite the sofa create a sociopetal layout — seats face each other, enabling natural eye contact."
+          },
+          {
+            "name": "rectangular coffee table at centre",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "A central shared surface within reach of all seats allows drinks, snacks, and objects to be shared during conversation."
+          },
+          {
+            "name": "woven rug defining seating zone",
+            "type": "surface",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "A rug visually anchors the conversational cluster, creating a sense of enclosed social space."
+          },
+          {
+            "name": "U-shaped sociopetal seating arrangement",
+            "type": "layout",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "The U-shaped arrangement with seats facing inward is the classic sociopetal configuration optimised for group conversation."
+          },
+          {
+            "name": "floor lamp with warm ambient light",
+            "type": "lighting",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Warm ambient floor lighting creates a relaxed, social atmosphere rather than a task-oriented one."
+          }
+        ],
+        "reasoning_summary": "This living room displays excellent conversational affordance through its sociopetal seating arrangement, central coffee table, and warm ambient lighting. The U-shaped cluster with sofa and two armchairs is the ideal topology for casual hangouts. A score of 7 would require additional social props such as drinks accessories; this room is just below peak."
+      }
+    },
+    {
+      "affordance_id": "L130",
+      "score": 2,
+      "scene_description": "A laundry room with a washer and dryer side by side, a folding table, utility shelving stocked with detergent and cleaning supplies, bright overhead fluorescent lighting, and a single plastic stool in the corner.",
+      "expected_output": {
+        "affordance_id": "L130",
+        "affordance_name": "Casual Conversation / Hangout",
+        "score": 2,
+        "confidence": 0.90,
+        "indicators": [
+          {
+            "name": "washer and dryer side by side",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Appliances dominating the space signal a utility room context entirely incompatible with casual social hangout."
+          },
+          {
+            "name": "single plastic stool — no seating cluster",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Single-occupancy, non-facing seating with no counterpart makes multi-person social conversation physically awkward."
+          },
+          {
+            "name": "utility shelving with detergent",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Functional storage for cleaning products reinforces the non-social utility purpose of the room."
+          },
+          {
+            "name": "bright overhead fluorescent lighting",
+            "type": "lighting",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Bright utilitarian fluorescent lighting creates an environment antithetical to a relaxed social atmosphere."
+          },
+          {
+            "name": "no soft seating or sociopetal arrangement",
+            "type": "layout",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Complete absence of any seating cluster or face-to-face arrangement makes sustained comfortable conversation impractical."
+          }
+        ],
+        "reasoning_summary": "This laundry room is a utility space with no social seating, harsh fluorescent lighting, and an appliance-dominated layout. The single plastic stool and folding table are functionally incompatible with casual social hangout. Only the theoretical ability to stand and talk in the space prevents a score of 1."
+      }
+    }
+  ],
+
+  "L141": [
+    {
+      "affordance_id": "L141",
+      "score": 6,
+      "scene_description": "A fitness room with hardwood flooring, a yoga mat unrolled in the centre of an open floor area, a full-length mirror along one wall, only a small storage bench along another wall, and natural light entering from a large window. The floor is clear of any furniture obstruction.",
+      "expected_output": {
+        "affordance_id": "L141",
+        "affordance_name": "Yoga / Stretching",
+        "score": 6,
+        "confidence": 0.93,
+        "indicators": [
+          {
+            "name": "yoga mat unrolled on open floor",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "A yoga mat is the primary artifact for yoga practice — its deployment on open floor is the strongest positive signal."
+          },
+          {
+            "name": "large unobstructed floor area",
+            "type": "spatial",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "Open floor clearance is the most critical spatial requirement for yoga; ample unobstructed space surrounds the mat."
+          },
+          {
+            "name": "full-length mirror on wall",
+            "type": "object",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "A full-length mirror allows practitioners to observe and self-correct posture during practice."
+          },
+          {
+            "name": "hardwood flooring",
+            "type": "surface",
+            "polarity": "positive",
+            "strength": 2,
+            "rationale": "Smooth hardwood provides an appropriate firm, non-slip base surface for yoga mat placement."
+          },
+          {
+            "name": "minimal clutter in movement zone",
+            "type": "spatial",
+            "polarity": "positive",
+            "strength": 3,
+            "rationale": "The near-total absence of furniture or objects on the floor is the key spatial prerequisite for safe yoga practice."
+          },
+          {
+            "name": "natural light from large window",
+            "type": "lighting",
+            "polarity": "positive",
+            "strength": 1,
+            "rationale": "Natural light creates a calm, energising environment appropriate for mindful movement practice."
+          }
+        ],
+        "reasoning_summary": "This fitness room is well-optimised for yoga: a mat is deployed on clear hardwood with generous unobstructed clearance, a full-length mirror provides form feedback, and the room is calm and uncluttered. A score of 6 rather than 7 reflects the modest room depth visible at the frame edges and the absence of additional props such as blocks or bolsters."
+      }
+    },
+    {
+      "affordance_id": "L141",
+      "score": 1,
+      "scene_description": "A cluttered home office with a large L-shaped desk and two monitors occupying the central floor area, bookshelves lining all walls, a filing cabinet, an office chair, and stacks of papers and boxes covering the remaining floor space.",
+      "expected_output": {
+        "affordance_id": "L141",
+        "affordance_name": "Yoga / Stretching",
+        "score": 1,
+        "confidence": 0.96,
+        "indicators": [
+          {
+            "name": "large L-shaped desk blocking floor",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "The desk dominates the available floor space, directly blocking the open clearance required for even minimal stretching."
+          },
+          {
+            "name": "bookshelves lining all walls",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Wall-to-wall shelving reduces usable floor width and creates visual clutter unsuitable for calm movement practice."
+          },
+          {
+            "name": "boxes and papers stacked on floor",
+            "type": "object",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Floor-level clutter directly obstructs any mat-sized area — there is no clearance for basic stretching poses."
+          },
+          {
+            "name": "no open floor area visible",
+            "type": "spatial",
+            "polarity": "negative",
+            "strength": 3,
+            "rationale": "Complete absence of any unobstructed floor zone makes yoga or stretching physically impossible in this space."
+          },
+          {
+            "name": "high visual noise from clutter",
+            "type": "layout",
+            "polarity": "negative",
+            "strength": 2,
+            "rationale": "Dense visual clutter creates a cognitively stimulating environment incompatible with the calm needed for yoga."
+          }
+        ],
+        "reasoning_summary": "This cluttered home office has no unobstructed floor space whatsoever. Every available surface — including the floor — is occupied by furniture, boxes, or equipment. This space is completely unsuitable for yoga or any movement practice and receives the minimum score of 1."
+      }
+    }
+  ]
+}

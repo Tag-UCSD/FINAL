@@ -1,0 +1,96 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Gibson1979}
+\citation{Nagarajan2020}
+\citation{Nagarajan2020}
+\citation{Bai2023}
+\citation{Hinton2015,Gou2021}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Gibson's affordance concept.}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Computational challenge.}{1}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Distillation as a solution.}{1}{section*.3}\protected@file@percent }
+\citation{Cheng2022}
+\citation{Bai2023}
+\citation{Roberts2021}
+\citation{Hinton2015}
+\citation{Gou2021}
+\citation{Nagarajan2020}
+\citation{Li2023}
+\citation{Bai2023}
+\citation{Radford2021}
+\citation{Bai2023}
+\citation{Roberts2021}
+\citation{Cheng2022}
+\citation{Cheng2022}
+\citation{Caesar2018}
+\@writefile{toc}{\contentsline {paragraph}{This work.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Knowledge distillation.}{2}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Affordance prediction in computer vision.}{2}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vision-language model reasoning.}{2}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Indoor scene understanding.}{2}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{2}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{2}{Method}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Pipeline Overview}{2}{subsection.3.1}\protected@file@percent }
+\citation{Bai2023}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overview of the two-phase affordance distillation pipeline. Phase 1 (shaded): generate VLM-annotated training pairs. Phase 2 (white): train and evaluate lightweight distilled models.}}{3}{figure.caption.9}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:pipeline}{{1}{3}{Overview of the two-phase affordance distillation pipeline. Phase 1 (shaded): generate VLM-annotated training pairs. Phase 2 (white): train and evaluate lightweight distilled models}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Scene Decomposition}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Feature Extraction}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}VLM Annotation}{3}{subsection.3.4}\protected@file@percent }
+\citation{Ke2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Distilled Models}{4}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{4}{section.4}\protected@file@percent }
+\newlabel{sec:experiments}{{4}{4}{Experiments}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset}{4}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:dataset}{{4.1}{4}{Dataset}{subsection.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces VLM score statistics (0--10 scale) across the pilot dataset. Skewness reflects bimodal scene-type distributions in Hypersim.}}{4}{table.caption.10}\protected@file@percent }
+\newlabel{tab:dataset}{{1}{4}{VLM score statistics (0--10 scale) across the pilot dataset. Skewness reflects bimodal scene-type distributions in Hypersim}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Experiment 1: VLM Score Distribution Analysis}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces VLM score distributions per affordance overlaid by inferred room type. Bimodal distributions (L059, L079) reflect strong room-type priors in VLM judgment. The unimodal low distribution of L141 reflects the rarity of open-floor scenes.}}{5}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:exp1}{{2}{5}{VLM score distributions per affordance overlaid by inferred room type. Bimodal distributions (L059, L079) reflect strong room-type priors in VLM judgment. The unimodal low distribution of L141 reflects the rarity of open-floor scenes}{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Feature group ablation study: LightGBM test-set $R^{2}$ as feature groups are added cumulatively. ``+Presence'' uses only binary presence features; subsequent rows add each group in order.}}{5}{table.caption.12}\protected@file@percent }
+\newlabel{tab:ablation}{{2}{5}{Feature group ablation study: LightGBM test-set $R^{2}$ as feature groups are added cumulatively. ``+Presence'' uses only binary presence features; subsequent rows add each group in order}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Experiment 2: Feature Group Ablation}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Experiment 3: Model A (Linear Regression) Performance}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Experiment 4: Model B (LightGBM) Performance}{5}{subsection.4.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Predicted vs.\ actual VLM scores for \textbf  {Model B} (LightGBM) on the held-out test set. Diagonal = perfect prediction. L059 and L079 cluster tightly along the diagonal; L141 shows systematic underestimation in the mid-score range.}}{6}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:exp4}{{3}{6}{Predicted vs.\ actual VLM scores for \model {Model B} (LightGBM) on the held-out test set. Diagonal = perfect prediction. L059 and L079 cluster tightly along the diagonal; L141 shows systematic underestimation in the mid-score range}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Experiment 5: Model D (Multilayer Perceptron) Performance}{6}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Experiment 6: Cross-Model Comparison}{6}{subsection.4.7}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Test-set performance ($R^{2}$ / MAE) for all three distilled models across five affordances. Best result per affordance is \textbf  {bold}.}}{6}{table.caption.14}\protected@file@percent }
+\newlabel{tab:model_comparison}{{3}{6}{Test-set performance ($R^{2}$ / MAE) for all three distilled models across five affordances. Best result per affordance is \textbf {bold}}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Experiment 7: Per-Affordance Feature Importance Analysis}{6}{subsection.4.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Top-10 SHAP feature importances for \textbf  {Model B} per affordance. Feature groups are color-coded: presence (blue), count (orange), pairwise 2D (green), pairwise depth (red), aggregates (purple). L141 is unique in being dominated by an aggregate feature (\texttt  {free\_floor\_fraction}).}}{7}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:exp7}{{4}{7}{Top-10 SHAP feature importances for \model {Model B} per affordance. Feature groups are color-coded: presence (blue), count (orange), pairwise 2D (green), pairwise depth (red), aggregates (purple). L141 is unique in being dominated by an aggregate feature (\texttt {free\_floor\_fraction})}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{7}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{7}{Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{7}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{7}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Phase 2 connection.}{7}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{7}{Conclusion}{section.6}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{Bai2023}{{1}{2023}{{Bai et~al.}}{{Bai, Bai, Yang, Wang, Tan, Wang, Lin, Zhou, and Zhou}}}
+\bibcite{Caesar2018}{{2}{2018}{{Caesar et~al.}}{{Caesar, Uijlings, and Ferrari}}}
+\bibcite{Cheng2022}{{3}{2022}{{Cheng et~al.}}{{Cheng, Misra, Schwing, Kirillov, and Girdhar}}}
+\bibcite{Gibson1979}{{4}{1979}{{Gibson}}{{}}}
+\bibcite{Gou2021}{{5}{2021}{{Gou et~al.}}{{Gou, Yu, Maybank, and Tao}}}
+\bibcite{Hinton2015}{{6}{2015}{{Hinton et~al.}}{{Hinton, Vinyals, and Dean}}}
+\bibcite{Ke2017}{{7}{2017}{{Ke et~al.}}{{Ke, Meng, Finley, Wang, Chen, Ma, Ye, and Liu}}}
+\bibcite{Li2023}{{8}{2023}{{Li et~al.}}{{Li, Li, Cao, Gong, and Lu}}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Novelty Arguments (Bonus)}{8}{section.7}\protected@file@percent }
+\newlabel{sec:novelty}{{7}{8}{Novelty Arguments (Bonus)}{section.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{1. Application domain novelty: room-level affordance suitability scoring.}{8}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{2. Dataset novelty: the first VLM-annotated structured affordance corpus.}{8}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{3. Framework novelty: indicator-level distillation for interpretable affordance prediction.}{8}{section*.21}\protected@file@percent }
+\bibcite{Nagarajan2020}{{9}{2020}{{Nagarajan et~al.}}{{Nagarajan, Li, Feichtenhofer, and Grauman}}}
+\bibcite{Radford2021}{{10}{2021}{{Radford et~al.}}{{Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever}}}
+\bibcite{Roberts2021}{{11}{2021}{{Roberts et~al.}}{{Roberts, Ramapuram, Ranjan, Kumar, Bautista, Paczan, Webb, and Susskind}}}
+\gdef \@abspage@last{9}

@@ -1,0 +1,27 @@
+ACTIVITY: $affordance_name
+DEFINITION: $affordance_definition
+
+DETECTED OBJECTS IN THIS IMAGE (from automated segmentation):
+$detected_objects_list
+
+$few_shot_block
+
+Assess how well this indoor scene supports the activity "$affordance_name".
+
+Respond with this exact JSON structure:
+{
+  "affordance_id": "$affordance_id",
+  "affordance_name": "$affordance_name",
+  "score": <integer 1-7>,
+  "confidence": <float 0-1>,
+  "indicators": [
+    {
+      "name": "<concrete noun phrase>",
+      "type": "<object|spatial|surface|lighting|layout>",
+      "polarity": "<positive|negative>",
+      "strength": <integer 1-3>,
+      "rationale": "<1 sentence>"
+    }
+  ],
+  "reasoning_summary": "<2-3 sentence overall assessment>"
+}

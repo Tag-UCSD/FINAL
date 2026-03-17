@@ -1,0 +1,164 @@
+What was implemented                                                          
+                                                                                
+  Task 1 — Prompt Templates (project/src/vlm/prompts/)                          
+                                                                                
+  ┌────────────────────────┬─────────────────────────────────────────────────┐
+  │          File          │                     Purpose                     │
+  ├────────────────────────┼─────────────────────────────────────────────────┤
+  │ system_preamble.txt    │ Shared system prompt — environmental            │
+  │                        │ psychologist persona + 5 strict rules           │
+  ├────────────────────────┼─────────────────────────────────────────────────┤
+  │                        │ Per-affordance prompt using string.Template     │
+  │ user_template.txt      │ ($variable syntax) — injects detected objects,  │
+  │                        │ few-shot block, and JSON schema                 │
+  ├────────────────────────┼─────────────────────────────────────────────────┤
+  │                        │ 2 calibrated examples per affordance (1         │
+  │ few_shot_examples.json │ high-score ≥5, 1 low-score ≤2), with full       │
+  │                        │ indicator JSON tailored to each affordance's    │
+  │                        │ key cues                                        │
+  └────────────────────────┴─────────────────────────────────────────────────┘
+
+  The template uses string.Template rather than str.format() — this avoids the
+  {/} collision that would occur when Python's format parser encounters JSON
+  curly braces inside the injected few-shot examples.
+
+  Task 2 — run_vlm_annotation.py
+
+  - Model loading: Qwen2VLForConditionalGeneration with device_map="auto",
+  torch_dtype=torch.float16; processor configured with min/max pixel bounds
+  - Batch loop: 300 images × 5 affordances = 1,500 pairs; skips completed pairs
+  on restart
+  - Prompt formatting: injects segmentation objects (or a fallback message if
+  Agent 2 hasn't run yet), then few-shot examples
+  - Inference: do_sample=False (greedy, equivalent to temperature=0.0),
+  max_new_tokens=1024
+  - Parsing: strips markdown fences, tries direct JSON parse, falls back to
+  extracting the outermost {...} block
+  - Validation: checks all required keys, score∈[1,7], confidence∈[0,1],
+  non-empty indicators with valid type/polarity/strength
+  - Retry: one retry with simplified prompt (no few-shot, terse JSON-only
+  reminder)
+  - Checkpointing: every 50 pairs; data/vlm_annotations/checkpoint.json
+  - Progress: tqdm bar showing avg latency per pair and ETA
+
+  Bonus — extract_indicator_vocab.py
+
+  Post-run script that reads all raw annotation JSONs and produces:
+  - indicator_vocabulary.json — per-affordance and cross-affordance term counts,
+   majority-vote type/polarity, average strength
+  - indicator_vocabulary_summary.txt — human-readable table
+
+  ---
+  Running on a GPU machine — full setup guide
+
+  1. Prerequisites
+
+  OS  : Ubuntu 20.04+ or similar Linux
+  GPU : NVIDIA with ≥16 GB VRAM (RTX 3090 / A100 / A6000 / etc.)
+  CUDA: 11.8 or 12.x  (check with: nvidia-smi)
+  RAM : ≥32 GB system RAM recommended
+  Disk: ≥50 GB free (model weights ~8 GB, images ~3 GB, outputs ~200 MB)
+
+  2. Clone the repo
+
+  git clone <your-repo-url>
+  cd "COGS 185/FINAL/project"
+
+  3. Python environment
+
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install --upgrade pip
+
+  4. Install PyTorch (match your CUDA version)
+
+  # CUDA 12.1 example — check https://pytorch.org/get-started for your version:
+  pip install torch==2.3.0 torchvision==0.18.0 --index-url
+  https://download.pytorch.org/whl/cu121
+
+  5. Install AutoAWQ BEFORE transformers
+
+  AutoAWQ must be installed first because it registers AWQ kernels that
+  transformers then picks up:
+
+  # Option A — pre-built wheel (fastest, CUDA 11.8/12.x):
+  pip install autoawq
+
+  # Option B — if the wheel doesn't match your CUDA:
+  pip install git+https://github.com/casper-hansen/AutoAWQ.git
+
+  6. Install remaining requirements
+
+  pip install -r requirements.txt
+  # Note: detectron2 is listed in requirements.txt as a manual install — only
+  needed for
+  # the segmentation pipeline (Agent 2), not for the VLM pipeline.
+
+  7. Verify CUDA + model loading (optional smoke test)
+
+  python3 -c "import torch; print('CUDA:', torch.cuda.is_available(),
+  torch.cuda.get_device_name(0))"
+
+  8. Log in to HuggingFace Hub (required for gated models)
+
+  Qwen2-VL-7B-Instruct-AWQ is a public model but downloading large weights
+  requires authentication:
+
+  pip install huggingface_hub
+  huggingface-cli login    # paste your HF token when prompted
+
+  9. Transfer images
+
+  If you're running on a remote GPU server, copy the images over:
+
+  # From your local machine:
+  rsync -avz "data/hypersim_pilot_420/"
+  user@gpu-server:/path/to/project/data/hypersim_pilot_420/
+
+  10. Dry-run to verify prompts
+
+  python src/vlm/run_vlm_annotation.py \
+      --image-dir data/hypersim_pilot_420 \
+      --dry-run
+
+  This prints the first 3 formatted prompts without loading the model. Confirm
+  the few-shot block and detected objects section look correct.
+
+  11. Run the full annotation pipeline
+
+  python src/vlm/run_vlm_annotation.py \
+      --image-dir data/hypersim_pilot_420 \
+      --checkpoint-interval 50
+
+  Useful flags:
+  # Run only specific affordances (e.g. to parallelize across GPUs):
+  --affordance-ids L079 L059
+
+  # Smoke test — run only 10 pairs:
+  --max-pairs 10
+
+  # Resume after interruption (checkpoint is loaded automatically):
+  # just re-run the same command — completed pairs are skipped
+
+  Expected throughput: ~5–15 seconds/pair on an RTX 3090 → ~2–4 hours for all
+  1,500 pairs.
+
+  12. Extract indicator vocabulary
+
+  After annotation is complete:
+
+  python src/vlm/extract_indicator_vocab.py --min-count 2
+
+  Outputs data/vlm_annotations/indicator_vocabulary.json and a human-readable
+  summary.
+
+  13. Output structure
+
+  data/vlm_annotations/
+  ├── raw/
+  │   ├── ai_008_009_cam_00_frame0000_L059.json
+  │   ├── ai_008_009_cam_00_frame0000_L079.json
+  │   ├── ...  (1,500 files total)
+  ├── checkpoint.json
+  ├── indicator_vocabulary.json
+  └── indicator_vocabulary_summary.txt

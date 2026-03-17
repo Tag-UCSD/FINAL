@@ -1,0 +1,30 @@
+# required by the Hypersim Low-Level Toolkit
+vray_bin       = "/Applications/ChaosGroup/V-Ray/Standalone_for_mavericks_x64/bin/vray"
+imapviewer_bin = "/Applications/ChaosGroup/V-Ray/Standalone_for_mavericks_x64/bin/imapviewer.bin"
+vdenoise_bin   = "/Applications/ChaosGroup/V-Ray/Standalone_for_mavericks_x64/bin/vdenoise.bin"
+vrimg2exr_bin  = "/Applications/ChaosGroup/V-Ray/Standalone_for_mavericks_x64/bin/vrimg2exr.bin"
+
+# required by the Hypersim High-Level Toolkit
+python_bin = "python"
+
+# required by the Hypersim High-Level Toolkit during initialization and normalization
+#   - decompress_bin is the binary executable responsible for decompressing asset files
+#   - asset_file_ext is the file extension of top-level asset files
+#   - asset_sceneassets_photometric_replace_dirs is an array of directories containing
+#     shared asset files (if any of these directories appears in a vrscene file after
+#     being exported, it will be replaced with a portable directory during normalization,
+#     i.e., a directory that is a child of the top-level dataset_dir
+decompress_bin                             = ""
+asset_file_ext                             = ""
+asset_sceneassets_photometric_replace_dirs = []
+
+# required by the Hypersim High-Level Toolkit to submit rendering jobs for cloud rendering
+cloud_server_hostname      = "127.0.0.1"
+cloud_server_port          = 8082
+cloud_server_username      = ""
+cloud_post_task_script     = ""
+cloud_asset_key_prefix_str = ""
+
+# required by the Hypersim High-Level Toolkit to generate animations
+animation_bin   = ""
+animation_codec = ""
