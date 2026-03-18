@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Checkered floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The checkered floor may be slippery and uncomfortable for yoga practice."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and obstructs the space needed for yoga."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are too high and may obstruct the view during yoga."
+    }
+  ],
+  "reasoning_summary": "The space is somewhat suitable for yoga due to the presence of natural light and the absence of large furniture, but the checkered floor and high cabinets could be problematic.",
+  "_meta": {
+    "image_id": "ai_030_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.41,
+    "attempt": 2
+  }
+}

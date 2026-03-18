@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large mirror",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large mirror can create a sense of openness and make the space feel larger."
+    },
+    {
+      "name": "Seating area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no seating area visible, which could limit the number of people who can engage in a casual conversation."
+    },
+    {
+      "name": "Bowl",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The bowl is present but its purpose is unclear, it might be used for food or decoration."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation as it has a large mirror to enhance the feeling of openness, but lacks a seating area for multiple people.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.01,
+    "attempt": 2
+  }
+}

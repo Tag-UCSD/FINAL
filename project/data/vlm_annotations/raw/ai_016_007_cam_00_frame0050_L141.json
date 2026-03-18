@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of any furniture or obstructions, allowing for free movement."
+    },
+    {
+      "name": "minimal clutter",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is little clutter on the floor, which is essential for a yoga practice."
+    },
+    {
+      "name": "adequate lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting appears to be sufficient for a yoga session, though it's not overly bright or dim."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga and stretching. The unobstructed floor and minimal clutter are strong positives, while the lighting is adequate but not exceptional. The score of 3 reflects these factors, with the potential for improvement in lighting conditions.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.76,
+    "attempt": 1
+  }
+}

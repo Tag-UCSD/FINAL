@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a private sleeping area, not suitable for casual conversation."
+    },
+    {
+      "name": "door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The door is closed, blocking access to another room, which could be used for casual conversation."
+    },
+    {
+      "name": "dark tiled bathroom",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dark tiled bathroom is not conducive to a casual hangout due to its functional nature and lack of seating."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for casual conversation because it includes a private sleeping area (bed) and a closed door, preventing access to another room. Additionally, the dark tiled bathroom is not conducive to a casual hangout due to its functional nature and lack of seating.",
+  "_meta": {
+    "image_id": "ai_039_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.7,
+    "attempt": 1
+  }
+}

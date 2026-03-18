@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for computer work due to their size and lack of ergonomics."
+    },
+    {
+      "name": "chairs around dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not designed for extended computer use and lack ergonomic support."
+    },
+    {
+      "name": "open layout with large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open layout and large windows can lead to distractions and lack of privacy."
+    },
+    {
+      "name": "lack of dedicated work surfaces",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No flat work surfaces available for setting up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No chairs or seating options designed for extended computer use."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of large dining tables and chairs around them makes it difficult to set up a proper workstation. The open layout and large windows contribute to distractions and lack of privacy. There are no dedicated work surfaces or ergonomic seating options available, making it challenging to create a comfortable and efficient workspace.",
+  "_meta": {
+    "image_id": "ai_010_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.56,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops are durable and easy to clean, providing a hard work surface for food preparation."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No stove is visible, which is a critical component for cooking."
+    },
+    {
+      "name": "no visible cooking utensils or appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no visible cooking utensils or appliances, which are essential for cooking."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects such as a sink and granite countertops, but it lacks a stove and visible cooking utensils or appliances, making it marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_028_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.62,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rows of seats are designed for listening, not individual work, making it difficult to set up a computer workstation."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No flat surface at sitting height for placing a laptop or other work tools."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient rather than task-specific, which is inadequate for focused computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The seating arrangement is designed for listening rather than individual work, and there is a lack of a flat personal work surface. The lighting is low and appears to be ambient rather than task-specific, which is inadequate for focused computer work.",
+  "_meta": {
+    "image_id": "ai_053_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.0,
+    "attempt": 1
+  }
+}

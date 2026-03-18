@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A couch provides comfortable seating for multiple people."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can serve as a shared surface for conversation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide additional seating options."
+    },
+    {
+      "name": "light fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Light fixtures provide adequate lighting for a comfortable conversation."
+    },
+    {
+      "name": "open windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Open windows allow natural light and ventilation, enhancing the social atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation/hangout. The presence of a couch, dining table, chairs, and adequate lighting supports the activity. However, the lack of a dedicated seating arrangement and the open windows might lead to discomfort in colder weather.",
+  "_meta": {
+    "image_id": "ai_030_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.02,
+    "attempt": 1
+  }
+}

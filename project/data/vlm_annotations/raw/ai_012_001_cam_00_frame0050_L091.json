@@ -1,0 +1,93 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too low for comfortable sitting and working."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for ergonomic support and comfort for extended computer work."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bowl is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "bottle",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bottle is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "cup",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The cup is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The potted plant is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The oven is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The refrigerator is not related to computer work and is not a functional object for it."
+    },
+    {
+      "name": "floor-wood",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The wooden flooring is not suitable for sitting and working."
+    },
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The counter is too low for comfortable sitting and working."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The chair is not designed for ergonomic support and comfort for extended computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The low counter and lack of ergonomic seating make it difficult to set up a comfortable workstation. The presence of non-functional objects like bowls, bottles, cups, potted plants, oven, and refrigerator further detracts from the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_012_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.92,
+    "attempt": 1
+  }
+}

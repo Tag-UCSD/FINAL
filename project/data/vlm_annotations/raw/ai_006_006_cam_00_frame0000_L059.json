@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A couch is not suitable for sleep as it lacks the necessary height and backrest support for comfortable lying."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor is uncomfortable for sleep and can cause noise and coldness."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No curtains prevent light control and privacy, which are important for sleep."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is the primary artifact for sleep; its absence makes the space unsuitable for sleep."
+    }
+  ],
+  "reasoning_summary": "The space is not suitable for sleep (primary) because it lacks a bed, has a hard floor, no windows, and no curtains. The presence of a couch instead of a bed further undermines the suitability for sleep.",
+  "_meta": {
+    "image_id": "ai_006_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.64,
+    "attempt": 1
+  }
+}

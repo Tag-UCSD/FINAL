@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The staircase obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Columns limit the open floor space required for yoga."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "painting",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The painting obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wall obstructs the open floor space required for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially obstructed by a staircase, columns, potted plants, a painting, ceiling, and wall, which limit the open floor space required for yoga. The score of 3 reflects the significant obstruction of the open floor area, making it marginally suitable for yoga.",
+  "_meta": {
+    "image_id": "ai_044_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.93,
+    "attempt": 1
+  }
+}

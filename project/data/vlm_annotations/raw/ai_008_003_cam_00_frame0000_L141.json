@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The couch obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The brick wall obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "dresser",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dresser obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open floor area is partially suitable for yoga, but obstructed by furniture."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga due to the open floor area, but obstructed by furniture such as a couch, brick wall, dresser, and potted plant. The score of 2 reflects the significant obstruction of the open floor space required for yoga.",
+  "_meta": {
+    "image_id": "ai_008_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.45,
+    "attempt": 1
+  }
+}

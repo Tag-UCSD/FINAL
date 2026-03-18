@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A sink is a functional object typically found in a bathroom, not a social hangout area."
+    },
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A towel is a functional object typically found in a bathroom, not a social hangout area."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A window is a spatial feature typically found in a bathroom, not a social hangout area."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A counter is a functional object typically found in a bathroom, not a social hangout area."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Wood flooring is a surface typically found in a bathroom, not a social hangout area."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is clearly not suitable for a casual conversation or hangout. The presence of a sink, towel, window, counter, and wood flooring indicates a bathroom setting, which is entirely incompatible with a social hangout. A score of 2 reflects the complete lack of social affordances in this space.",
+  "_meta": {
+    "image_id": "ai_022_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.54,
+    "attempt": 1
+  }
+}

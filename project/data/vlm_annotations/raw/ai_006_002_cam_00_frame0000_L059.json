@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "yellow chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Chairs are not suitable for sleeping, as they lack a flat surface and are designed for sitting."
+    },
+    {
+      "name": "round tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Round tables are not suitable for sleeping, as they lack a flat surface and are designed for dining."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar counter is not suitable for sleeping, as it lacks a flat surface and is designed for serving drinks."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Lighting is bright and artificial, which is incompatible with sleep."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Open layout allows for through-traffic and noise, which is incompatible with sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). The presence of chairs, round tables, and a bar counter indicates a commercial setting, which is incompatible with sleep. The bright artificial lighting and open layout further contribute to the unsuitability for sleep.",
+  "_meta": {
+    "image_id": "ai_006_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.17,
+    "attempt": 1
+  }
+}

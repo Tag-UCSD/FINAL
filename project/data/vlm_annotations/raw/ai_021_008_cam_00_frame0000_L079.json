@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A kitchen island can serve as a prep area and provide additional counter space."
+    },
+    {
+      "name": "stainless steel sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A sink is essential for food preparation and cleaning."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops are durable and easy to clean, ideal for food preparation."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An oven is necessary for baking and roasting."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A stove is essential for cooking."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hardwood flooring can be slippery and difficult to clean, especially when wet."
+    }
+  ],
+  "reasoning_summary": "The space has some key elements for cooking, such as a kitchen island, sink, and oven, but lacks a stove and hardwood flooring could pose a challenge for cleaning.",
+  "_meta": {
+    "image_id": "ai_021_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.37,
+    "attempt": 1
+  }
+}

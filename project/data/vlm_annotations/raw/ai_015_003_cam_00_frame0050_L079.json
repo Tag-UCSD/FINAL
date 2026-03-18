@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "microwave",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Microwave is a common cooking appliance used for quick heating and cooking tasks."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dining table can be used for food preparation and serving."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide seating for those preparing or eating meals."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets offer storage for cooking utensils, ingredients, and other supplies."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Floor is not a hard surface suitable for food preparation."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Ceiling does not provide any additional work surface or storage."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of essential appliances and seating options, but lacks hard prep surfaces and storage space on the floor or ceiling.",
+  "_meta": {
+    "image_id": "ai_015_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.48,
+    "attempt": 1
+  }
+}

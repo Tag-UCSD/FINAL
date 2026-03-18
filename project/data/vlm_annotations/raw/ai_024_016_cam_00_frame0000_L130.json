@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.8,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for multiple people to gather without feeling cramped."
+    },
+    {
+      "name": "Modern lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern lighting provides a bright and welcoming atmosphere conducive to social interaction."
+    },
+    {
+      "name": "Concrete flooring",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The concrete flooring is functional but does not add much to the aesthetic appeal of the space."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, with modern lighting, making it suitable for casual conversations and hangouts. However, the concrete flooring is neutral in its contribution to the overall ambiance.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_016_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_016\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.05,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for stretching and yoga poses without obstruction."
+    },
+    {
+      "name": "fountain in the center",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fountain is a significant obstacle for yoga practice, as it occupies a large portion of the floor space."
+    },
+    {
+      "name": "candles on the floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Candles on the floor can pose a fire hazard and are not suitable for yoga practice."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can obstruct the floor space and are not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The open floor space and the presence of a fountain in the center make this space marginally suitable for yoga practice. However, the fountain and candles on the floor pose significant obstacles, reducing the overall suitability to a score of 3.",
+  "_meta": {
+    "image_id": "ai_031_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.25,
+    "attempt": 1
+  }
+}

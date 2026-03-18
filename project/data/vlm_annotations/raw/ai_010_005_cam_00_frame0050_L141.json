@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed obstructs the open floor space required for yoga practice."
+    },
+    {
+      "name": "pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Pillows on the bed obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "nightstands",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Nightstands on either side of the bed obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a firm, non-slip base surface suitable for yoga mat placement."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a calm, energizing environment suitable for yoga practice."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinet obstructs the open floor space required for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga practice due to the presence of a bed, pillows, nightstands, and a cabinet that obstruct the open floor space required for yoga. However, the hardwood flooring and large windows contribute positively to the environment, making it suitable for yoga practice.",
+  "_meta": {
+    "image_id": "ai_010_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.79,
+    "attempt": 1
+  }
+}

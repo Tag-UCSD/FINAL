@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rows of chairs are too close together, limiting movement."
+    },
+    {
+      "name": "floor material",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are slippery and not suitable for yoga."
+    },
+    {
+      "name": "wall quotes",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "No direct impact on yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to limited movement space and unsuitable flooring, but the wall quotes do not hinder the activity.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_053_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.14,
+    "attempt": 2
+  }
+}

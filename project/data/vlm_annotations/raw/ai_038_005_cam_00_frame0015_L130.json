@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Open Space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open space allows for easy movement and conversation."
+    },
+    {
+      "name": "Modern Design",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The modern design creates a contemporary atmosphere conducive to casual conversations."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is bright and evenly distributed, making it comfortable for conversation."
+    }
+  ],
+  "reasoning_summary": "The space is open and modern, with good lighting, making it marginally adequate for casual conversations and hangouts.",
+  "_meta": {
+    "image_id": "ai_038_005_cam_00_frame0015",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_038_005\\images\\scene_cam_00_final_preview\\frame.0015.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.78,
+    "attempt": 2
+  }
+}

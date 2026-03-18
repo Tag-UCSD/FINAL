@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "wooden ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden ceiling beams are too high and sparse to create a sense of enclosure or intimacy."
+    },
+    {
+      "name": "red pipes",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Red pipes are functional but visually distracting and do not contribute to a social atmosphere."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brick wall is too bare and lacks texture or pattern to create a welcoming social space."
+    },
+    {
+      "name": "white windows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White windows are too bright and stark, lacking privacy and creating a cold, clinical atmosphere."
+    }
+  ],
+  "reasoning_summary": "This indoor scene has a low score for Casual Conversation / Hangout due to its high, sparse wooden ceiling beams, bare brick wall, bright white windows, and distracting red pipes. The lack of a social atmosphere and the presence of functional elements prevent it from being ideally suited for this activity.",
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.65,
+    "attempt": 1
+  }
+}

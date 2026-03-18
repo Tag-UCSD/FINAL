@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural light coming through the windows can help create a calming atmosphere conducive to relaxation and focus during yoga."
+    },
+    {
+      "name": "Minimal furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The minimal furniture allows for unobstructed movement and space for various yoga poses and stretches."
+    }
+  ],
+  "reasoning_summary": "The space is large, well-lit, and has minimal obstructions, making it suitable for yoga and stretching activities.",
+  "_meta": {
+    "image_id": "ai_024_014_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_014\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.92,
+    "attempt": 2
+  }
+}

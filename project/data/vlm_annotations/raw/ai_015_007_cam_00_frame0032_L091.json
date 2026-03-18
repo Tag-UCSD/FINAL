@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A book is present, which might suggest a need for reference material, but it does not indicate a dedicated workspace."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can be distracting and do not provide a flat surface for a computer workstation."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A window can be a source of distraction and may affect lighting conditions."
+    }
+  ],
+  "reasoning_summary": "The scene lacks key elements typically associated with a dedicated computer workstation, such as a flat work surface, ergonomic seating, and minimal distractions. While there is a window, it may introduce unwanted light and distractions. The presence of books and potted plants suggests a more casual or decorative setting rather than a focused workspace.",
+  "_meta": {
+    "image_id": "ai_015_007_cam_00_frame0032",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_007\\images\\scene_cam_00_final_preview\\frame.0032.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.93,
+    "attempt": 1
+  }
+}

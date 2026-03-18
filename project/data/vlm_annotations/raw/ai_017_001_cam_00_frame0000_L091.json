@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a more casual, leisurely atmosphere rather than a focused work environment."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases on the sideboard and on the floor add to the casual, decorative nature of the space."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants on the sideboard and on the floor contribute to the casual, decorative nature of the space."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient rather than task-specific, which is less suitable for focused computer work."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout with multiple seating options and decorative elements suggests a more casual, social atmosphere rather than a focused work environment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there is a dedicated seating area with a couch, the presence of decorative elements like vases and potted plants, along with low lighting and an open layout, suggest a more casual, social atmosphere rather than a focused work environment. The layout and lighting do not support the needs of focused computer work.",
+  "_meta": {
+    "image_id": "ai_017_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.4,
+    "attempt": 1
+  }
+}

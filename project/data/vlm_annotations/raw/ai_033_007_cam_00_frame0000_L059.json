@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "hard industrial surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard industrial surfaces of the office space are incompatible with a sleep environment."
+    },
+    {
+      "name": "open office layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open office layout with visible through-traffic cues does not provide the necessary privacy and acoustic enclosure for sleep."
+    },
+    {
+      "name": "lack of personal storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no personal storage fixture visible, which is typically found in a primary sleeping room."
+    },
+    {
+      "name": "no visible bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed visible in the image, which is the primary artifact for sleep."
+    }
+  ],
+  "reasoning_summary": "This is a commercial office space with hard industrial surfaces, an open layout, and no personal storage, making it completely unsuitable for primary sleep. The lack of a bed further contributes to the low score.",
+  "_meta": {
+    "image_id": "ai_033_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.17,
+    "attempt": 1
+  }
+}

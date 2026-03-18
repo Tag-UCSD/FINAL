@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large for a single person to comfortably use as a workspace."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white chairs are not designed for extended computer use and lack ergonomic support."
+    },
+    {
+      "name": "lack of personal flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs do not provide proper back support or armrests for extended use."
+    },
+    {
+      "name": "no dedicated lighting for screen work",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ambient lighting is not sufficient for tasks requiring focused screen work."
+    },
+    {
+      "name": "no dedicated layout for solo work",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The room is not set up for solo work, with multiple chairs and a large table suggesting a communal setting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to the lack of a dedicated flat work surface, ergonomic seating, and appropriate lighting. The large dining table and white chairs suggest a communal setting rather than a dedicated workspace for solo work.",
+  "_meta": {
+    "image_id": "ai_053_014_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_014\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.03,
+    "attempt": 1
+  }
+}

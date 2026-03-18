@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove is a central cooking appliance."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The oven is essential for baking and roasting."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sink is essential for washing dishes and preparing food."
+    },
+    {
+      "name": "countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The countertop provides a hard work surface for food preparation."
+    },
+    {
+      "name": "cupboards",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cupboards provide storage for kitchen items."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is bright and even, which is good for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of essential cooking appliances and a hard work surface, but lacks a dedicated kitchen area and sufficient storage space.",
+  "_meta": {
+    "image_id": "ai_043_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.85,
+    "attempt": 1
+  }
+}

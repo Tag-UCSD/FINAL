@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large glass partition obstructs view and may create a sense of isolation."
+    },
+    {
+      "name": "open-plan layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open-plan layout can lead to distractions and reduced privacy."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No flat surface at sitting height for setting up a computer workstation."
+    },
+    {
+      "name": "low lighting levels",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting levels may make it difficult to see the computer screens clearly."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large glass partition and open-plan layout create potential distractions and reduced privacy. The absence of a flat personal work surface and low lighting levels further undermine the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.91,
+    "attempt": 1
+  }
+}

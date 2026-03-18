@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining tables are not suitable for yoga practice due to their fixed size and shape, which do not allow for the flexibility required for various yoga poses."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Chairs are not suitable for yoga practice because they are designed for sitting and lack the flexibility needed for various yoga poses."
+    },
+    {
+      "name": "dining tables",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of dining tables and chairs creates a cluttered and obstructed floor space, making it difficult to perform yoga poses."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be artificial and does not provide the natural light that is often preferred for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for yoga practice due to the presence of dining tables and chairs, which create a cluttered and obstructed floor space. The artificial lighting also does not provide the natural light that is often preferred for yoga practice.",
+  "_meta": {
+    "image_id": "ai_012_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.24,
+    "attempt": 1
+  }
+}

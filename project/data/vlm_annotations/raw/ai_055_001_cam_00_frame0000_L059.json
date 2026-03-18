@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "hard industrial surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard industrial surfaces of the tables, chairs, and bar counter are incompatible with a sleep environment."
+    },
+    {
+      "name": "open commercial layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open, throughfare-prone commercial layout provides no privacy or acoustic enclosure for sleep."
+    },
+    {
+      "name": "bright overhead lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright overhead lighting is incompatible with sleep, as it cannot be dimmed and disrupts circadian signaling."
+    },
+    {
+      "name": "no horizontal rest surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no horizontal rest surface available in the scene, making it unsuitable for sleep."
+    }
+  ],
+  "reasoning_summary": "This is a commercial setting with hard industrial surfaces, an open layout, bright lighting, and no horizontal rest surface, making it completely unsuitable for primary sleep.",
+  "_meta": {
+    "image_id": "ai_055_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.96,
+    "attempt": 1
+  }
+}

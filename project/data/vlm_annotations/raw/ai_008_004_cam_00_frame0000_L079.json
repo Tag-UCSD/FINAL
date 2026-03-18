@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not a cooking surface and is not suitable for food preparation."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for sitting and do not serve as a cooking surface."
+    },
+    {
+      "name": "glass block window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass block window does not provide a view of the outside world and is not suitable for cooking."
+    },
+    {
+      "name": "candles on the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Candles are not suitable for cooking due to fire risk."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for daily cooking. The presence of a dining table and chairs suggests it is primarily a dining area rather than a kitchen. The glass block window and candles on the table indicate that this space is not designed for cooking. The score of 3 reflects the marginal suitability for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_008_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.72,
+    "attempt": 1
+  }
+}

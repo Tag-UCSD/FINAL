@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a central meeting point for conversation."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs around the table allow multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "Artwork",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The artwork adds a personal touch, making the space feel more inviting."
+    },
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The wooden floor is neutral and does not interfere with the conversation."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations with a dining table, chairs, and artwork contributing positively to the atmosphere. The wooden floor is neutral and does not detract from the conversation.",
+  "_validation_errors": [
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_011_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.48,
+    "attempt": 2
+  }
+}

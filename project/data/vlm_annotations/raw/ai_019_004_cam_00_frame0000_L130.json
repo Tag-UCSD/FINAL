@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is too far away from the stairs and does not form a sociopetal layout."
+    },
+    {
+      "name": "stairs",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The stairs lead up and do not form a sociopetal layout."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too high and does not form a sociopetal layout."
+    },
+    {
+      "name": "wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wall is too high and does not form a sociopetal layout."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is too high and does not form a sociopetal layout."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is too high and does not form a sociopetal layout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene lacks a sociopetal layout and has too many high vertical elements that prevent a comfortable hangout. The stairs, ceiling, wall, window, and floor are too high and do not form a sociopetal layout. A score of 4 indicates marginal adequacy for casual conversation / hangout.",
+  "_meta": {
+    "image_id": "ai_019_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_019_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.83,
+    "attempt": 1
+  }
+}

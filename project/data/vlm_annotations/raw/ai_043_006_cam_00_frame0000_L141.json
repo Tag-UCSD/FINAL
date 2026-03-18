@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Floor-wood",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a stable surface for stretching and yoga poses."
+    },
+    {
+      "name": "Mirror-stuff",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The presence of a mirror can help users align their poses and monitor their progress."
+    },
+    {
+      "name": "Light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural light from the window can create a calming atmosphere conducive to yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga and stretching due to the stable floor, presence of a mirror, and natural lighting.",
+  "_meta": {
+    "image_id": "ai_043_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.33,
+    "attempt": 2
+  }
+}

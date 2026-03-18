@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and not designed for sleep, making it unsuitable for primary sleep."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table is not suitable for sleep, as it is not designed for comfort or support."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for sleep, as they lack back support and are not designed for comfort."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are not suitable for sleep, as they are cold and hard."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows make it difficult to control light and noise, which are important for sleep."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No curtains make it difficult to control light and noise, which are important for sleep."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No bed makes it impossible to sleep in this space."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for primary sleep. There is no bed, no windows, and no curtains, making it difficult to control light and noise. The furniture is not suitable for sleep, and the hard floors are cold and hard. The score is 4 because there are no windows or curtains to control light and noise, and no bed to sleep on.",
+  "_meta": {
+    "image_id": "ai_042_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.93,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "closed wooden door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A closed door suggests limited access to the space, potentially discouraging spontaneous hangouts."
+    },
+    {
+      "name": "staircase leading to door",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A staircase can be a barrier to easy entry and exit, making it less suitable for casual social gatherings."
+    },
+    {
+      "name": "potted plants on either side of door",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Plants add a touch of nature and life to the entrance, enhancing the welcoming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The entrance is somewhat suitable for casual conversations due to the presence of potted plants, but the closed door and staircase suggest limited accessibility and ease of entry, reducing its suitability for spontaneous hangouts.",
+  "_meta": {
+    "image_id": "ai_016_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.61,
+    "attempt": 1
+  }
+}

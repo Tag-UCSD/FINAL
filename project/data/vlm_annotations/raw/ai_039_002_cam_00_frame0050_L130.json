@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A freestanding bathtub is a strong indicator of a private, personal space, which is not conducive to casual conversation or hangout."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring can be slippery and difficult to walk on, potentially causing discomfort and reducing the likelihood of prolonged social interaction."
+    },
+    {
+      "name": "large mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large mirror can make the space feel more like a public or commercial setting, which is less suitable for casual conversation or hangout."
+    },
+    {
+      "name": "cabinets and drawers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets and drawers suggest a storage or utility function, which is not conducive to a social hangout environment."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is typically associated with a functional area, not a social hangout space."
+    }
+  ],
+  "reasoning_summary": "The presence of a freestanding bathtub, hard flooring, large mirror, cabinets, drawers, and a sink indicates that this space is primarily designed for personal use rather than social interaction. While there is some potential for social interaction due to the presence of a sink and cabinets, the overall design leans towards a private, functional space rather than a social hangout area. Therefore, the score is 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_039_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.13,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for cooking due to its lack of space and potential for food spills."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring can be slippery and difficult to clean, making it less suitable for cooking."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting can make cooking more challenging and less safe."
+    },
+    {
+      "name": "no cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no cooking appliances such as a stove, oven, or microwave, which are essential for cooking."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for daily cooking due to the absence of essential cooking appliances and poor lighting conditions. The dining table and hardwood flooring also pose potential hazards for cooking activities.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.85,
+    "attempt": 1
+  }
+}

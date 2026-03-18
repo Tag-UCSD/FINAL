@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space for yoga practice."
+    },
+    {
+      "name": "nightstands",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Nightstands are placed close to the bed, limiting the available floor space for yoga."
+    },
+    {
+      "name": "wardrobe",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wardrobe is large and takes up a significant portion of the room, reducing available floor space."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a stable surface for yoga mats."
+    },
+    {
+      "name": "wall-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of windows allows natural light to enter the room."
+    },
+    {
+      "name": "grass-merged",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The view of greenery outside the window can create a calming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga due to the presence of a wooden floor and natural light, but it is hindered by the bed, nightstands, and wardrobe, which take up significant floor space. The score of 4 reflects the mixed suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_010_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.53,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dense furniture arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dense arrangement of tables and chairs makes it difficult to move around and find space for yoga or stretching."
+    },
+    {
+      "name": "High ceilings",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "High ceilings can provide more headroom for stretching and movement."
+    }
+  ],
+  "reasoning_summary": "The dense furniture arrangement makes it difficult to perform yoga or stretching in this space, despite the high ceilings providing some positive aspects.",
+  "_meta": {
+    "image_id": "ai_017_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 38.82,
+    "attempt": 2
+  }
+}

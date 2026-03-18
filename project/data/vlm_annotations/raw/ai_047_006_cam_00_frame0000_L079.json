@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "glass dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass table is not suitable for cooking due to its fragility and lack of durability."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for dining, not cooking, and do not provide a suitable surface for food preparation."
+    },
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls are not conducive to cooking as they do not provide a flat, stable surface for food preparation."
+    },
+    {
+      "name": "exposed concrete ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed concrete ceiling does not provide a suitable surface for food preparation."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting conditions can make cooking more difficult and less enjoyable."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for daily cooking due to the presence of a glass dining table and chairs, which are not suitable for food preparation. The brick walls and exposed concrete ceiling do not provide a flat, stable surface for cooking. The low lighting conditions can also make cooking more challenging. Overall, the space is not ideally suited for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_047_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.83,
+    "attempt": 1
+  }
+}

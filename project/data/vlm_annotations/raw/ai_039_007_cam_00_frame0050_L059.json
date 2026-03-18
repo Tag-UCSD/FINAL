@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "pool",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The pool is a significant source of noise and disturbance, making it unsuitable for sleep."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White walls reflect light, creating a bright and potentially stimulating environment."
+    },
+    {
+      "name": "rock path",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rock path is a hard surface that could be uncomfortable to lie on, and it is not suitable for sleeping."
+    },
+    {
+      "name": "tree",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The tree provides some natural elements, but it does not directly support sleep."
+    },
+    {
+      "name": "light fixture",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The light fixture is bright and likely to be a source of glare and distraction."
+    }
+  ],
+  "reasoning_summary": "The scene is partially suitable for sleep due to the presence of a tree and white walls, but it is significantly undermined by the pool, rock path, light fixture, and lack of a comfortable resting surface.",
+  "_meta": {
+    "image_id": "ai_039_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.56,
+    "attempt": 1
+  }
+}

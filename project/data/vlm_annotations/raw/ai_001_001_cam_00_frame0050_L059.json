@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bath tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bath tub is not suitable for sleep, as it is designed for bathing and not resting."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel rack is not suitable for sleep, as it is designed for drying towels and not resting."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A window allows natural light and ventilation, which can be beneficial for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a bath tub and towel rack indicates that the space is primarily designed for bathing and drying, not resting. However, the window allows natural light and ventilation, which can be beneficial for sleep.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.63,
+    "attempt": 1
+  }
+}

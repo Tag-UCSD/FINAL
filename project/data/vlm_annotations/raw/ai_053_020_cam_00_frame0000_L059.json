@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for sleep, as it is designed for eating and socializing, not resting."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are designed for sitting and eating, not resting."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The vase is decorative and does not provide a suitable rest surface."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The potted plant is decorative and does not provide a suitable rest surface."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too high and open, providing no acoustic enclosure for sleep."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is hard and open, providing no acoustic enclosure for sleep."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is too large and open, providing no acoustic enclosure for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The presence of a dining table, chairs, and decorative objects such as a vase and potted plants indicates a space designed for eating and socializing, not resting. The open ceiling, floor, and window lack acoustic enclosure, making this space unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_053_020_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_020\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.73,
+    "attempt": 1
+  }
+}

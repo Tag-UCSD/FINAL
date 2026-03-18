@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several round tables",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Round tables are not suitable for computer work as they do not provide a flat surface for a keyboard and monitor."
+    },
+    {
+      "name": "yellow chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not designed for extended computer use and may cause discomfort over time."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No chairs are designed for extended computer use and may cause discomfort over time."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout is open and does not provide a dedicated area for focused work."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting available for screen work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). There are no flat surfaces or ergonomic seating available, and the layout is open and lacks dedicated workspace design. Task lighting is also absent, making it difficult to set up a productive workstation.",
+  "_meta": {
+    "image_id": "ai_006_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.71,
+    "attempt": 1
+  }
+}

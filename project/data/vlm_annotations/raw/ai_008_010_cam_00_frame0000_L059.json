@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can lead to feelings of claustrophobia and discomfort during sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be uncomfortable to sleep on and may cause noise."
+    },
+    {
+      "name": "no visible windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a couch and low ceiling height negatively impact the suitability, while the hard flooring and lack of windows further reduce the score. However, the absence of visible windows and the low ceiling height are the most significant factors undermining the primary sleep affordance.",
+  "_meta": {
+    "image_id": "ai_008_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.47,
+    "attempt": 1
+  }
+}

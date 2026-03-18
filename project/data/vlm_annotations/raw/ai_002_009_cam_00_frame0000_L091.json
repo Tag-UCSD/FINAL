@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 2,
+  "confidence": 0.87,
+  "indicators": [
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The image shows no flat surface suitable for placing a laptop or keyboard, making it impossible to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no visible seating that would allow for ergonomic positioning while working on a laptop."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and does not provide sufficient task illumination for screen work."
+    },
+    {
+      "name": "no dedicated layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The space is not designed for focused solo work, as it lacks a dedicated area for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuitable for computer work (solo). There is no flat work surface, no ergonomic seating, no task lighting, and no dedicated layout for focused work. The presence of glass walls with wave patterns also suggests a high level of distraction, further reducing the suitability.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.85,
+    "attempt": 1
+  }
+}

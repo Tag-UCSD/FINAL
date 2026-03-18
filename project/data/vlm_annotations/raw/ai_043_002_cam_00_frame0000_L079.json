@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is set for a meal, indicating it is currently being used for eating rather than cooking."
+    },
+    {
+      "name": "chairs around the dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are occupied, suggesting the table is being used for dining rather than cooking."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of an oven indicates the space can be used for cooking."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove is visible, providing a surface for cooking."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sink is visible, providing a water source for food preparation."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are not ideal for cooking, as they can be slippery and difficult to clean."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls can make the space feel cold and sterile, which may not be conducive to a comfortable cooking environment."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, as it contains essential cooking appliances such as an oven and stove. However, the presence of a dining table and chairs, along with the lack of a hardworking surface, suggests that the space is currently being used for dining rather than cooking. The white walls and hardwood floors also contribute to a less-than-ideal cooking environment.",
+  "_meta": {
+    "image_id": "ai_043_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.97,
+    "attempt": 1
+  }
+}

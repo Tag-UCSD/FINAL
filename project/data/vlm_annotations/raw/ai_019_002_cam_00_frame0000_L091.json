@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large open space lacks the privacy needed for focused solo work."
+    },
+    {
+      "name": "glass walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass walls do not provide the necessary privacy for focused work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting levels make it difficult to see the computer screens clearly."
+    },
+    {
+      "name": "no dedicated workstations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are no dedicated workstations for setting up a computer."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large open space and glass walls lack the necessary privacy, while the low lighting makes it difficult to see the computer screens clearly. There are no dedicated workstations, making it challenging to set up a computer.",
+  "_meta": {
+    "image_id": "ai_019_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_019_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.0,
+    "attempt": 1
+  }
+}

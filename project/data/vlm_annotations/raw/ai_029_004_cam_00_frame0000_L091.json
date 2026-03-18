@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout makes it difficult to find a quiet spot away from distractions."
+    },
+    {
+      "name": "low ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceilings can make the space feel cramped and claustrophobic."
+    },
+    {
+      "name": "lack of dedicated work surfaces",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are no flat surfaces suitable for placing a laptop or other work tools."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are no chairs designed for prolonged sitting, which is essential for comfort and posture."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large open space and low ceilings create a challenging environment for finding a quiet spot and maintaining comfort. There are no dedicated work surfaces or ergonomic seating, which are crucial for extended computer work.",
+  "_meta": {
+    "image_id": "ai_029_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.33,
+    "attempt": 1
+  }
+}

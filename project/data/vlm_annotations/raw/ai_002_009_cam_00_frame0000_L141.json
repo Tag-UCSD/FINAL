@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "glass partition with wave pattern",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass partition obstructs the view and creates a sense of enclosure, which is generally negative for yoga practice."
+    },
+    {
+      "name": "floor tiles with wave pattern",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor tiles with a wave pattern may be slippery, which is not ideal for yoga practice."
+    },
+    {
+      "name": "towel on floor",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A towel can be used to create a more comfortable and non-slip surface for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The glass partition and wave-patterned floor tiles create a sense of enclosure and potential slipperiness, which are negative factors for yoga practice. However, the presence of a towel on the floor can be seen as a positive factor, providing a more comfortable and non-slip surface for yoga practice.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.26,
+    "attempt": 1
+  }
+}

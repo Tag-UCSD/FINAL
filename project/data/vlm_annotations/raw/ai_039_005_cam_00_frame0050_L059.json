@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "cabinets and drawers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets and drawers are typically used for storage, not sleep."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not suitable for sleep."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles are not suitable for sleep."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are not suitable for sleep."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants are not suitable for sleep."
+    },
+    {
+      "name": "cabinets and drawers",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout of cabinets and drawers suggests a functional space, not a sleep environment."
+    },
+    {
+      "name": "cabinets and drawers",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets and drawers suggest artificial lighting, not natural light."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is primarily a functional space with cabinets, drawers, a sink, and various decorative items. It lacks the features typically associated with a sleep environment, such as a bed, soft bedding, and a quiet, dark setting. The presence of artificial lighting and functional storage areas makes this space marginally adequate for sleep.",
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.69,
+    "attempt": 1
+  }
+}

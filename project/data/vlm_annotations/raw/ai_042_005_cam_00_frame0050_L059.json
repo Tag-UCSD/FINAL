@@ -1,0 +1,114 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not a suitable sleep surface."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not a suitable sleep surface."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is not a suitable sleep surface."
+    },
+    {
+      "name": "tree",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Tree is not a suitable sleep surface."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not a suitable sleep surface."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plant is not a suitable sleep surface."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling is too high and open for a sleep environment."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor is too hard and open for a sleep environment."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is not a suitable sleep surface."
+    },
+    {
+      "name": "tree",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Tree is not a suitable sleep surface."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not a suitable sleep surface."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plant is not a suitable sleep surface."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling is too high and open for a sleep environment."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor is too hard and open for a sleep environment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). There are no objects or surfaces that can serve as a sleep surface, and the open, hard floor and ceiling make it unsuitable for sleep. The presence of furniture and plants further indicates that this is not a sleep environment.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.31,
+    "attempt": 1
+  }
+}

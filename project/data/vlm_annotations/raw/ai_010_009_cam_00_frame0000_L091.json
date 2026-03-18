@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, reducing the need for artificial lighting, which can be beneficial for concentration."
+    },
+    {
+      "name": "Minimal furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The minimal furniture setup might limit the amount of space available for a workspace, potentially making it less suitable for extended periods of work."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The soft lighting from the large window can create a comfortable environment for work, reducing eye strain."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to its minimal furniture setup and the presence of soft lighting, but the large window could potentially reduce the need for artificial lighting, which can be beneficial for concentration.",
+  "_meta": {
+    "image_id": "ai_010_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.09,
+    "attempt": 2
+  }
+}

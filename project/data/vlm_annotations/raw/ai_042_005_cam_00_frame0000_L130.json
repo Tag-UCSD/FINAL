@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows multiple people to gather comfortably."
+    },
+    {
+      "name": "Modern furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern furniture provides a contemporary look suitable for casual gatherings."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table can accommodate multiple people for casual conversations."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets might limit the visibility of the space, making it less inviting for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for casual conversations due to its large open area and modern furniture, but the cabinets could potentially detract from the inviting nature of the space.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.1,
+    "attempt": 2
+  }
+}

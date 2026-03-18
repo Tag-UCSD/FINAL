@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "long wooden table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long wooden table is not suitable for computer work as it lacks a flat surface for a laptop or monitor."
+    },
+    {
+      "name": "low bookshelves",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low bookshelves do not provide enough space for a comfortable sitting position to work on a laptop."
+    },
+    {
+      "name": "arched windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The arches allow natural light to enter, which can be beneficial for computer work."
+    },
+    {
+      "name": "carpeted floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The carpeted floor can be slippery and may cause discomfort when standing or walking."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While the arches allow natural light to enter, the long wooden table and low bookshelves make it difficult to set up a comfortable workstation. The carpeted floor also poses a potential safety hazard and comfort issue.",
+  "_meta": {
+    "image_id": "ai_023_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.89,
+    "attempt": 1
+  }
+}

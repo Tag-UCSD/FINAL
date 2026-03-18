@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is not suitable for computer work due to its height and lack of a flat surface."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for setting up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No ergonomic seating is available for comfortable long-term use."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting to reduce eye strain and provide good visibility for screen work."
+    },
+    {
+      "name": "high-traffic public layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The layout is high-traffic and public, making it unsuitable for focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The absence of a flat personal work surface, ergonomic seating, and task lighting, along with the high-traffic public layout, makes it difficult to set up a productive workstation. However, the presence of a bed suggests that some level of comfort is possible, albeit not ideal for extended periods.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.7,
+    "attempt": 1
+  }
+}

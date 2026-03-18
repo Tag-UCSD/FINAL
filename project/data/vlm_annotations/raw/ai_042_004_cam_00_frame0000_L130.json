@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and formal for casual conversation, suggesting a more formal dining setting."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too formal and lack comfort for casual conversation."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is too decorative and does not contribute to a casual conversation setting."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too high and open, making it difficult to create a cozy atmosphere."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is too bright and utilitarian, lacking the soft glow needed for a casual hangout."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase is too prominent and obstructs the flow of casual conversation."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The windows are too large and open, allowing distractions and drafts."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too formal and lack comfort for casual conversation."
+    },
+    {
+      "name": "table-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too large and obstructs the flow of casual conversation."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for casual conversation / hangout due to its formal dining setup, bright lighting, and obstructive staircase. The large dining table and chairs suggest a more formal dining setting, while the bright lighting and open ceiling make it difficult to create a cozy atmosphere. The presence of a staircase and large windows also detracts from the casual hangout experience.",
+  "_meta": {
+    "image_id": "ai_042_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.11,
+    "attempt": 1
+  }
+}

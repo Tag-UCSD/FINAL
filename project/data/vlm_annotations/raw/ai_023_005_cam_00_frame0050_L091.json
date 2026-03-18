@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several round dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for computer work as they lack the necessary flat surface and ergonomic support for extended use."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble flooring is slippery and not conducive to prolonged sitting, which is required for computer work."
+    },
+    {
+      "name": "stained glass windows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Stained glass windows allow natural light, which can be distracting and reduce the need for artificial lighting during computer work."
+    },
+    {
+      "name": "chairs with armrests",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs with armrests are not suitable for computer work as they do not provide a comfortable and ergonomic seating position."
+    },
+    {
+      "name": "high-traffic area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of other people and the high-traffic nature of the area make it unsuitable for focused solo computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of dining tables, marble flooring, stained glass windows, and chairs with armrests makes it difficult to set up a suitable workstation. Additionally, the high-traffic area further undermines the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_023_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.4,
+    "attempt": 1
+  }
+}

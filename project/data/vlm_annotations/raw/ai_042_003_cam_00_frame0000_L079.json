@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An oven is essential for baking and roasting, key daily cooking tasks."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A sink is crucial for washing dishes and preparing food."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors can be slippery and difficult to clean, potentially hazardous when cooking."
+    },
+    {
+      "name": "glass railings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Glass railings are not suitable for cooking, as they are not stable and could pose a safety hazard."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bar stools are not designed for cooking, as they lack stability and are not suitable for prolonged standing."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of essential appliances like the oven and sink. However, the hardwood flooring and glass railings pose potential safety hazards, and the bar stools are not suitable for cooking.",
+  "_meta": {
+    "image_id": "ai_042_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.76,
+    "attempt": 1
+  }
+}

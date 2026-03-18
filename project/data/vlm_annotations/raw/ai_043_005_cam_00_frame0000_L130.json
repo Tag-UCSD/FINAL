@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and formal for a casual hangout setting."
+    },
+    {
+      "name": "stool",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A single stool is insufficient for a comfortable hangout setting."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor lamp provides harsh lighting, which is not conducive to a casual hangout."
+    },
+    {
+      "name": "kitchen area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen area is too busy and functional for a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for a casual conversation/hangout due to the presence of a formal dining table, insufficient seating, harsh lighting, and a busy kitchen area. The score of 4 reflects the need for more informal furniture and a more relaxed atmosphere.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.0,
+    "attempt": 1
+  }
+}

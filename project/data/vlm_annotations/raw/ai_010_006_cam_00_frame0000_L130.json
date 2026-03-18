@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a functional object, but it does not support casual conversation or hangout activities."
+    },
+    {
+      "name": "bathroom setting",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bathroom setting is not conducive to casual conversation or hangout activities, as it is designed for personal hygiene and not social interaction."
+    },
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel is a functional object, but it does not support casual conversation or hangout activities."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a decorative object, but it does not support casual conversation or hangout activities."
+    },
+    {
+      "name": "bottle",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle is a functional object, but it does not support casual conversation or hangout activities."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is a bathroom, which is not suitable for casual conversation or hangout activities. The presence of functional objects like a sink, towel, vase, bottle, and a bathroom setting overall indicates that this space is not designed for social interaction. A score of 4 reflects the marginal adequacy of this space for the intended activity.",
+  "_meta": {
+    "image_id": "ai_010_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.04,
+    "attempt": 1
+  }
+}

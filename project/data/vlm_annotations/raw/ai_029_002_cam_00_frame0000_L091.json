@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large desk provides ample space for a computer setup and other work materials."
+    },
+    {
+      "name": "Good lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The presence of multiple light sources ensures good illumination for work tasks."
+    },
+    {
+      "name": "Minimal distractions",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout and minimal furniture arrangement reduce distractions."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for solo computer work due to its large desk and good lighting, but lacks dedicated seating and could benefit from more privacy.",
+  "_meta": {
+    "image_id": "ai_029_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 39.86,
+    "attempt": 2
+  }
+}

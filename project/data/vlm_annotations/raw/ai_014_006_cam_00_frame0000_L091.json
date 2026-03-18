@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving limited space for computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a comfortable chair near the window, providing a suitable spot for computer work."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A small table is available for placing a laptop or other work materials."
+    }
+  ],
+  "reasoning_summary": "The room has a large bed and limited space for computer work, but it also has a comfortable chair and a small table, making it marginally adequate for solo computer work.",
+  "_meta": {
+    "image_id": "ai_014_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_014_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.37,
+    "attempt": 2
+  }
+}

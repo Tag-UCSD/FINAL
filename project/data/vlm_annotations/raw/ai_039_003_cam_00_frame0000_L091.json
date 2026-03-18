@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large flat surface",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large flat surface is suitable for placing a laptop or monitor."
+    },
+    {
+      "name": "ergonomic chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An ergonomic chair with lumbar support is suitable for long periods of sitting."
+    },
+    {
+      "name": "task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Task lighting can reduce eye strain and improve visibility."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A closed door can provide privacy and reduce distractions."
+    },
+    {
+      "name": "dedicated workspace layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The layout is focused on work, with minimal distractions."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (solo). While it has a large flat surface and ergonomic chair, the lack of task lighting and privacy may limit its suitability for extended work sessions.",
+  "_meta": {
+    "image_id": "ai_039_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.89,
+    "attempt": 1
+  }
+}

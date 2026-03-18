@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The dining table can be used as a workspace."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There are chairs available to sit at the dining table."
+    },
+    {
+      "name": "Floor-Wood",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wooden floor is clean and smooth, suitable for walking."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (solo) due to the availability of a dining table and chairs, but lacks dedicated furniture like a desk or chair specifically designed for computer use.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_016_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.31,
+    "attempt": 2
+  }
+}

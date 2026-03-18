@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, potentially improving mood and alertness."
+    },
+    {
+      "name": "Light blue walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Light blue walls can create a calming atmosphere conducive to sleep."
+    },
+    {
+      "name": "Towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel rack is not directly related to sleep but could be seen as a distraction from the primary activity."
+    }
+  ],
+  "reasoning_summary": "The space has some positive features that support sleep, such as large windows and light blue walls, but also has a negative feature, the towel rack, which could be seen as a distraction.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.27,
+    "attempt": 2
+  }
+}

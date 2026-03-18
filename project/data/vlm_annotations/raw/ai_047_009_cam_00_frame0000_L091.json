@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large conference table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large conference table is not suitable for individual computer work as it lacks a personal work surface."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for group meetings rather than individual work, making it less suitable for solo computer work."
+    },
+    {
+      "name": "lack of personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated personal work surface for placing a laptop or other work tools."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are designed for group meetings and do not provide ergonomic support for extended computer work."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting specifically designed for computer work, which can lead to eye strain and reduced productivity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to the lack of a personal work surface, ergonomic seating, and task lighting. The large conference table and seating arrangement are designed for group meetings rather than individual work, making it less suitable for solo computer work.",
+  "_meta": {
+    "image_id": "ai_047_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.55,
+    "attempt": 1
+  }
+}

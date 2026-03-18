@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The couch occupies a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table is placed in the middle of the room, obstructing the open floor space needed for yoga."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling lights are bright and could be too intense for a calming yoga practice."
+    },
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood floors are generally suitable for yoga mats, providing a stable surface."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is some open floor space available for yoga, but it is limited."
+    }
+  ],
+  "reasoning_summary": "The room is partially suitable for yoga, with some open floor space available, but the presence of furniture and bright lighting make it less than ideal. The score of 3 reflects the limited open space and the need for rearranging the furniture to create a more suitable environment.",
+  "_meta": {
+    "image_id": "ai_032_009_cam_00_frame0003",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_009\\images\\scene_cam_00_final_preview\\frame.0003.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.07,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor is clear of furniture, allowing for stretching exercises."
+    },
+    {
+      "name": "chairs and table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs and a table are present, but they could be moved out of the way for stretching."
+    },
+    {
+      "name": "candles on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Candles on the floor could pose a fire hazard during stretching."
+    },
+    {
+      "name": "chalkboard and desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A desk and chalkboard are present, but they could be moved out of the way for stretching."
+    }
+  ],
+  "reasoning_summary": "The scene has unobstructed floor space suitable for stretching, but it also contains furniture and candles that could pose hazards. The score is 4 because the space is marginally adequate for yoga due to the presence of furniture and potential fire hazards.",
+  "_meta": {
+    "image_id": "ai_045_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.43,
+    "attempt": 1
+  }
+}

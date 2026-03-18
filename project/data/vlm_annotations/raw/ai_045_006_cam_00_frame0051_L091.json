@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelf is cluttered and could be distracting."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is not suitable for sitting while working."
+    },
+    {
+      "name": "ceiling light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a ceiling light providing sufficient illumination."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the cluttered bookshelf and lack of a suitable seating area, but has good lighting.",
+  "_meta": {
+    "image_id": "ai_045_006_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_006\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.9,
+    "attempt": 2
+  }
+}

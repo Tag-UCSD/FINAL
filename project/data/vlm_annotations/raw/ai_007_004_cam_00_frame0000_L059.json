@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "towels hanging on towel bars",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Towels provide a soft surface for drying and resting, though their presence in a bathroom suggests a secondary use."
+    },
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Marble is a hard, cold surface that is not suitable for sleeping."
+    },
+    {
+      "name": "two sinks with faucets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sinks are not suitable for sleeping, as they are hard and cold surfaces."
+    },
+    {
+      "name": "large mirror",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large mirror can reflect light and create glare, which is not conducive to sleep."
+    },
+    {
+      "name": "lighting from chandeliers",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Chandelier lighting is bright and likely to be too stimulating for sleep."
+    }
+  ],
+  "reasoning_summary": "The bathroom is marginally suitable for sleep (Primary). While there are soft towels available, the hard marble countertop and cold sinks make it less than ideal. The large mirror and bright chandelier lighting further detract from the sleep-friendly environment.",
+  "_meta": {
+    "image_id": "ai_007_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.25,
+    "attempt": 1
+  }
+}

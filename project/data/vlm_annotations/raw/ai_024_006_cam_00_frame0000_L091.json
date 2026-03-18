@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can lead to glare and distractions from external light sources."
+    },
+    {
+      "name": "white columns",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White columns can obstruct views and create a sense of confinement."
+    },
+    {
+      "name": "low ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling can make the space feel cramped and claustrophobic."
+    },
+    {
+      "name": "dark flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring can be difficult to maintain and may absorb light, creating a dim atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for computer work (solo). While it has large windows that could potentially cause glare and distractions, the presence of white columns and a low ceiling can create a sense of confinement and claustrophobia. The dark flooring may also make the space feel less inviting and harder to maintain. Overall, the space is not ideal for focused solo work due to its limited openness and potential distractions.",
+  "_meta": {
+    "image_id": "ai_024_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.84,
+    "attempt": 1
+  }
+}

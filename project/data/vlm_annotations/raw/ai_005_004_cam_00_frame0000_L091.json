@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not suitable for computer work as they lack a flat surface and are designed for lounging."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting is insufficient for task work, and there is no direct lighting for screens."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout allows distractions and does not provide a private space for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of couches and the open layout make it difficult to set up a dedicated workspace. The lighting is insufficient for task work, and there is no direct lighting for screens. However, the space is not entirely unsuitable, as it could potentially be adapted for computer work with some modifications.",
+  "_meta": {
+    "image_id": "ai_005_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.2,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual focus, making it less suitable for solo computer work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is insufficient for task work, as it is more decorative and ambient than task-specific."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout allows for easy distraction and does not provide a private space conducive to focused solo work."
+    },
+    {
+      "name": "no flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height, which is necessary for setting up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to its social seating arrangement, low lighting, open layout, and lack of a flat work surface. While some elements like the seating and layout could be adapted for solo work, the overall environment is not conducive to focused knowledge work.",
+  "_meta": {
+    "image_id": "ai_055_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.97,
+    "attempt": 1
+  }
+}

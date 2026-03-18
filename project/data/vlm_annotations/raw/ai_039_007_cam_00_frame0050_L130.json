@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "pool",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The pool is a significant obstacle to casual conversation, requiring users to leave the area to access it."
+    },
+    {
+      "name": "tree",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The tree is a large, immovable object that obstructs views and access to the space."
+    },
+    {
+      "name": "white wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The white wall is a solid barrier that encloses the space, reducing visibility and openness."
+    },
+    {
+      "name": "white floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The white floor is smooth and reflective, which can be slippery and difficult to walk on."
+    },
+    {
+      "name": "white rocks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The white rocks are scattered and uneven, posing a tripping hazard."
+    }
+  ],
+  "reasoning_summary": "The space is marginally suitable for casual conversation due to the presence of a pool, tree, and solid white walls. The smooth white floor and scattered rocks also pose safety hazards. A score of 7 would require significant rearrangement and removal of these obstacles.",
+  "_meta": {
+    "image_id": "ai_039_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.13,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a living area rather than a dedicated workspace."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A dining table is not suitable for computer work due to its height and lack of ergonomics."
+    },
+    {
+      "name": "grass",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Outdoor grass is not conducive to focused work and can be distracting."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A potted plant is a decorative element, not a functional workspace feature."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A closed door can provide some privacy, though it is not a dedicated workspace feature."
+    },
+    {
+      "name": "low-traffic layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The layout is not cluttered and does not have high-traffic areas, which can be distracting."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there is a closed door for privacy and a low-traffic layout, the presence of a couch, table, grass, and potted plant suggest this is more of a living area than a dedicated workspace. The lack of a flat work surface and ergonomic seating makes it challenging to set up a productive workstation.",
+  "_meta": {
+    "image_id": "ai_009_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.42,
+    "attempt": 1
+  }
+}

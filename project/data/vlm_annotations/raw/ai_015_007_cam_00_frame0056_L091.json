@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "ergonomic mesh office chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chair is designed for comfort and support, which is important for long periods of computer work."
+    },
+    {
+      "name": "desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk provides a suitable workspace for two monitors, which can enhance productivity."
+    },
+    {
+      "name": "task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The desk lamp is positioned to provide good light for the computer screens."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The closed door provides some privacy and reduces distractions."
+    },
+    {
+      "name": "dedicated work area",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The area is specifically set up for work, with no other activities taking place."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there is a dedicated workspace with dual monitors and task lighting, the presence of a closed door and a dedicated work area suggest it is primarily intended for work, but the overall setup is not as comprehensive as a dedicated home office.",
+  "_meta": {
+    "image_id": "ai_015_007_cam_00_frame0056",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_007\\images\\scene_cam_00_final_preview\\frame.0056.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.96,
+    "attempt": 1
+  }
+}

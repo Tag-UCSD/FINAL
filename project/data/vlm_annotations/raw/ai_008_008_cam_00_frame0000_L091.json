@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not suitable for extended computer work as they lack a flat surface for a keyboard and monitor."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glass coffee table is not stable enough for a laptop and peripheral devices."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is insufficient for extended computer work, as it does not provide adequate task illumination."
+    },
+    {
+      "name": "open kitchen area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open kitchen area can be a source of distraction and noise, which is detrimental to focused computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of white couches and a glass coffee table makes it difficult to set up a proper workstation. The low lighting and open kitchen area also contribute to a less than ideal environment for focused solo work.",
+  "_meta": {
+    "image_id": "ai_008_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.57,
+    "attempt": 1
+  }
+}

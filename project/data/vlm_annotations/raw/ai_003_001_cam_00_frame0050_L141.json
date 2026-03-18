@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.98,
+  "indicators": [
+    {
+      "name": "no objects detected",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no objects present in the image that could be used for yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "The image does not contain any objects that would support yoga or stretching activities. Therefore, it is completely unsuitable for these activities.",
+  "_meta": {
+    "image_id": "ai_003_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.26,
+    "attempt": 1
+  }
+}

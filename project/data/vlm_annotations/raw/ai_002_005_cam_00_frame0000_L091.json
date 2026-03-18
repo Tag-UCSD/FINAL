@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not designed for extended computer use and do not provide ergonomic support."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The counter is too low and does not provide a flat surface for a computer workstation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The sink is not suitable for a computer workstation due to its location and functionality."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The vase is decorative and not functional for a computer workstation."
+    },
+    {
+      "name": "banana",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The banana is a food item and not suitable for a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The dining table and chairs are not suitable for a workstation, and the counter and sink are too low and not flat. The presence of a vase and a banana further detracts from the workspace suitability.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.47,
+    "attempt": 1
+  }
+}

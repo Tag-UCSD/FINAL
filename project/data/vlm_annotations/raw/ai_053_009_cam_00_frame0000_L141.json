@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is designed for lectures and discussions, not for individual yoga practice. The seats are too close together and do not allow for individual movement."
+    },
+    {
+      "name": "lack of open floor space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no open floor space available for yoga practice. The seats and tables take up the entire floor area, leaving no room for movement."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga practice as it provides a stable and non-slip surface."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuitable for yoga or stretching due to the lack of open floor space and the seating arrangement designed for lectures. The hard wood flooring is a positive aspect but is not enough to make up for the lack of space.",
+  "_meta": {
+    "image_id": "ai_053_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.56,
+    "attempt": 1
+  }
+}

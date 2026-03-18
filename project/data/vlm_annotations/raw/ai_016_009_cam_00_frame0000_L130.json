@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 1,
+  "confidence": 0.8,
+  "indicators": [
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hardwood floors are typically associated with formal settings and are not conducive to casual conversation."
+    }
+  ],
+  "reasoning_summary": "The hardwood floor is a strong indicator of a formal setting, which is completely unsuitable for casual conversation or hangout. The lack of any seating or social area further supports this assessment.",
+  "_meta": {
+    "image_id": "ai_016_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.6,
+    "attempt": 1
+  }
+}

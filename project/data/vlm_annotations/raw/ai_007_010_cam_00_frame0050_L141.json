@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "White sinks",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white sinks provide a clean and neutral surface for yoga mats."
+    },
+    {
+      "name": "Brown wooden tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brown wooden tiles might be slippery when wet, which could be a safety hazard during yoga."
+    },
+    {
+      "name": "Large mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large mirror can help users align their poses and monitor their progress."
+    },
+    {
+      "name": "Toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a toilet in the same room as the sinks and mirrors can be distracting and uncomfortable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a toilet and potentially slippery wooden tiles, but it has positive features like white sinks and a large mirror.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.2,
+    "attempt": 2
+  }
+}

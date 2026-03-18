@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Couch is not suitable for sleep as it is designed for sitting and lacks a backrest."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table is not suitable for sleep as it is designed for placing items and lacks a backrest."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls are not suitable for sleep as they lack texture and warmth."
+    },
+    {
+      "name": "glass doors",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass doors are not suitable for sleep as they allow light and sound to pass through."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Staircase is not suitable for sleep as it is designed for movement and lacks a backrest."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (primary). The white couch and coffee table are not suitable for sleep as they lack backrests and are designed for sitting and placing items. The white walls and glass doors do not provide the necessary texture and light control for sleep. The staircase also disrupts the quiet environment needed for sleep.",
+  "_meta": {
+    "image_id": "ai_005_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.55,
+    "attempt": 1
+  }
+}

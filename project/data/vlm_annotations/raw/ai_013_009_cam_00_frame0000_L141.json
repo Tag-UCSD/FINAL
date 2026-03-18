@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "table with tablecloth",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table with a tablecloth obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "chairs around table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs around the table obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "vase on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A vase on the table is a non-functional object that does not contribute to the yoga experience."
+    },
+    {
+      "name": "candles on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Candles on the table are not functional for yoga and can pose a fire hazard."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a stable surface for yoga mats."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a pleasant atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of furniture and objects that obstruct the open floor space required for yoga. However, the wooden floor and natural light from the windows contribute positively to the yoga experience.",
+  "_meta": {
+    "image_id": "ai_013_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.34,
+    "attempt": 1
+  }
+}

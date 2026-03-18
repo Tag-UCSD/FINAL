@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space lacks the privacy needed for focused solo work."
+    },
+    {
+      "name": "several desks and chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There are multiple workstations available for setting up a computer."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space does not provide a dedicated area for focused work."
+    },
+    {
+      "name": "no personal flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height for setting up a computer."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are no ergonomic chairs for comfortable long-term computer use."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo) due to the lack of dedicated workspace and personal flat work surface. While there are several desks and chairs, the open space does not provide the necessary privacy and dedicated area for focused work.",
+  "_meta": {
+    "image_id": "ai_033_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.63,
+    "attempt": 1
+  }
+}

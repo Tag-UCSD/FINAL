@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too formal and large for a casual hangout setting."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs lack comfort and are not suitable for long conversations."
+    },
+    {
+      "name": "dark wood island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dark wood island is too formal and does not contribute to a casual atmosphere."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is too functional and not suitable for casual hangouts."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is too small and not suitable for a casual hangout setting."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is too small and not suitable for a casual hangout setting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the presence of formal furniture and objects that do not contribute to a casual atmosphere. The dining table, white chairs, dark wood island, sink, potted plant, and vase are all negative indicators of a casual hangout setting.",
+  "_meta": {
+    "image_id": "ai_006_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.47,
+    "attempt": 1
+  }
+}

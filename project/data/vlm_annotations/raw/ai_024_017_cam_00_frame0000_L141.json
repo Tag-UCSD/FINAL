@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "arched wooden ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The curved ceiling may limit headroom and restrict movement."
+    },
+    {
+      "name": "wide open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wide open space provides ample room for yoga practice."
+    },
+    {
+      "name": "natural light from skylights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light can create a calming atmosphere for yoga."
+    },
+    {
+      "name": "wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden floors are generally smooth and suitable for yoga mats."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga. While the wide open space and natural light are positive factors, the curved ceiling may limit headroom and restrict movement. A score of 4 rather than 5 reflects these mixed conditions.",
+  "_meta": {
+    "image_id": "ai_024_017_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_017\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.58,
+    "attempt": 1
+  }
+}

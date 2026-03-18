@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "kitchen counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen counter is too narrow and lacks seating, making it unsuitable for casual conversation."
+    },
+    {
+      "name": "no seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no seating arrangement visible, which is essential for a casual conversation hangout."
+    },
+    {
+      "name": "no visible lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no visible lighting source, which could create a pleasant ambiance for a casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for a casual conversation hangout due to the lack of seating, lighting, and a defined space for social interaction. The kitchen counter is too narrow and lacks seating, and there is no visible lighting to create a pleasant atmosphere. A score of 3 indicates that the space is marginally adequate for the activity.",
+  "_meta": {
+    "image_id": "ai_002_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.16,
+    "attempt": 1
+  }
+}

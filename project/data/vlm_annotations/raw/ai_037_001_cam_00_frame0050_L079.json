@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Stainless steel countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Stainless steel surfaces are easy to clean and resistant to heat and stains."
+    },
+    {
+      "name": "Large open shelves",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large open shelves provide ample storage space for cookware and dishes."
+    },
+    {
+      "name": "Proper lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Good lighting is essential for precise cooking tasks."
+    },
+    {
+      "name": "Close proximity to kitchen sink",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Easy access to water and drainage is crucial for cooking."
+    }
+  ],
+  "reasoning_summary": "The kitchen is well-equipped and organized, providing a suitable environment for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_037_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.53,
+    "attempt": 2
+  }
+}

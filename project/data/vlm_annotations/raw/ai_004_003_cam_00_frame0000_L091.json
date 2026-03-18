@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring can be slippery and may pose a tripping hazard when wet."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sink is not a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "bidet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bidet is not a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Toilet is not a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is not a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Lighting is not task-specific and may cause glare on screens."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a sink, bidet, toilet, and vase indicates a residential bathroom setting, which is not conducive to focused work. The wood flooring and lack of flat surfaces for work equipment further reduce the suitability. The lighting is not task-specific, which may cause glare on screens. However, the presence of a bathtub suggests a more private and potentially quieter environment compared to a hotel lobby, which could slightly increase the score.",
+  "_meta": {
+    "image_id": "ai_004_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.75,
+    "attempt": 1
+  }
+}

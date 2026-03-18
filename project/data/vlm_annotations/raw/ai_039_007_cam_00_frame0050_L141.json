@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor is clear of any furniture or objects, allowing for free movement."
+    },
+    {
+      "name": "natural light from the window",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light can create a calming atmosphere conducive to yoga practice."
+    },
+    {
+      "name": "pool and rock garden",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "While these features add aesthetic value, they do not contribute to the primary purpose of yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to its unobstructed floor area and natural lighting. However, the presence of the pool and rock garden may detract from the focus on yoga practice.",
+  "_meta": {
+    "image_id": "ai_039_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.28,
+    "attempt": 1
+  }
+}

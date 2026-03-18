@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is too large and lacks a built-in kitchen sink, which is essential for food preparation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for dining, not kitchen work, and do not provide a suitable height for food preparation."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring is slippery and not suitable for wet kitchen use."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Overhead lighting is insufficient for detailed food preparation tasks."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the lack of essential kitchen infrastructure such as a sink, appropriate seating, and suitable flooring. The presence of a dining table and chairs suggests this is more of a dining area than a kitchen, making it less suitable for daily cooking tasks.",
+  "_meta": {
+    "image_id": "ai_047_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.32,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for sleep due to its height and lack of a comfortable seating arrangement."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not suitable for sleep due to their height and lack of a comfortable seating arrangement."
+    },
+    {
+      "name": "fruit on the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fruit on the table is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "vase with flowers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase with flowers is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The book is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowl is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "apple",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The apple is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is not suitable for sleep due to its potential to attract pests and create mess."
+    },
+    {
+      "name": "enclosed private room with door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The enclosed layout with no through-traffic cues supports the low-disturbance environment needed for sleep."
+    },
+    {
+      "name": "warm soft ambient lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Warm-toned, low-intensity lighting is conducive to relaxation and sleep onset."
+    }
+  ],
+  "reasoning_summary": "This is a well-designed residential bedroom with a queen bed, nightstand, and warm lighting. However, the presence of a dining table, chairs, and various items on the table and sink makes it unsuitable for sleep. The enclosed layout and warm lighting contribute positively to the sleep environment.",
+  "_meta": {
+    "image_id": "ai_003_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.87,
+    "attempt": 1
+  }
+}

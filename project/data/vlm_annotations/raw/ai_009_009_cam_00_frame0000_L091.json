@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.93,
+  "indicators": [
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and lacks sufficient space for a computer setup."
+    },
+    {
+      "name": "chair (96%)",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not designed for extended computer use and do not provide ergonomic support."
+    },
+    {
+      "name": "potted plant (98%)",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The potted plants add visual clutter and may obstruct views."
+    },
+    {
+      "name": "water-other (93%)",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a pool can be distracting and may require additional safety measures."
+    },
+    {
+      "name": "person (89%)",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no indication of a person using the space for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The small table and chairs are not suitable for a computer setup, and the presence of a pool and potted plants adds distractions and safety concerns. There is no indication of a person using the space for computer work, making it less than ideal for this activity.",
+  "_meta": {
+    "image_id": "ai_009_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.31,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white sofas",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White sofas provide ample seating for multiple people."
+    },
+    {
+      "name": "low table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Low table allows easy conversation and interaction between seated individuals."
+    },
+    {
+      "name": "glass railings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass railings may limit the feeling of enclosure and connection among seated individuals."
+    },
+    {
+      "name": "skylights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from skylights can create a pleasant and inviting atmosphere."
+    },
+    {
+      "name": "brick wall",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick wall adds character and warmth to the space."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation/hangout. The white sofas and low table provide ample seating and interaction space. However, the glass railings might limit the sense of connection among seated individuals. Natural light from skylights and the brick wall contribute positively to the atmosphere.",
+  "_meta": {
+    "image_id": "ai_008_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.5,
+    "attempt": 1
+  }
+}

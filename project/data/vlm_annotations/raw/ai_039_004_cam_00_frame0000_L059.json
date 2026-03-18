@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "white bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bathtub is not suitable for sleep, as it is a vertical space and not a horizontal rest surface."
+    },
+    {
+      "name": "dark wood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark wood flooring can be cold and uncomfortable to lie on, especially in a sleep environment."
+    },
+    {
+      "name": "white tiled walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White tiled walls can be cold and uncomfortable to lie on, especially in a sleep environment."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chandelier is a decorative element that does not contribute to a sleep-friendly environment."
+    },
+    {
+      "name": "artwork on wall",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Artwork on the wall is not conducive to a restful sleep environment."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling lights can be bright and disruptive to sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a bathtub, dark wood flooring, white tiled walls, chandelier, artwork, and ceiling lights all contribute to a less-than-ideal sleep environment. The lack of a horizontal rest surface and the potential for discomfort from the flooring and walls make this a suboptimal space for sleep.",
+  "_meta": {
+    "image_id": "ai_039_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.41,
+    "attempt": 1
+  }
+}

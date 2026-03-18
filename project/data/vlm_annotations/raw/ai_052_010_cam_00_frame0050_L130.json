@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window provides a view of the city, creating a pleasant backdrop for casual conversations."
+    },
+    {
+      "name": "marble counter",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The marble counter provides a clean, elegant surface for placing drinks and snacks."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bar stools offer seating for multiple people, facilitating casual conversations."
+    },
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The brick walls add a rustic charm to the space, making it feel cozy and inviting."
+    },
+    {
+      "name": "hanging pendant lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The pendant lights provide soft, ambient lighting, creating a relaxed atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation / hangout. The large window and brick walls contribute to a pleasant ambiance, while the marble counter and bar stools provide functional elements for socializing. However, the lack of a dedicated seating area and the industrial design elements slightly detract from the overall comfort and appeal for extended hangouts.",
+  "_meta": {
+    "image_id": "ai_052_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.44,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a surface for people to sit around and engage in conversation."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs around the dining table allow multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "Flower",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The flower adds a touch of color and liveliness to the space, making it more inviting for casual conversations."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The lighting fixtures provide ample illumination, creating a comfortable atmosphere for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts, with a dining table, chairs, and good lighting providing a comfortable and inviting environment.",
+  "_meta": {
+    "image_id": "ai_003_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.35,
+    "attempt": 2
+  }
+}

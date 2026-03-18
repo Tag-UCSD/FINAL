@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is not a cooking surface and is not suitable for food preparation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for food preparation and can obstruct the table."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bookshelves are not directly related to cooking activities."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants are not directly related to cooking activities."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking due to the presence of a table and chairs, but lacks essential cooking surfaces and storage for ingredients. The bookshelves and potted plants do not contribute to cooking activities and could be considered distractions.",
+  "_meta": {
+    "image_id": "ai_046_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.64,
+    "attempt": 1
+  }
+}

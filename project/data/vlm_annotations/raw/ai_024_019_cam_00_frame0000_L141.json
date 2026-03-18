@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "geometric patterns on walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The geometric patterns on the walls create a visually distracting environment that could be disorienting for yoga practitioners."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a stable and non-slip surface suitable for yoga practice."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling lights provide even lighting, which is beneficial for yoga practice."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for unobstructed movement and stretching."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga / stretching. While the wooden floor and ceiling lights are positive features, the geometric patterns on the walls and the lack of furniture create a visually distracting environment that could be disorienting for yoga practitioners. The open floor space is a strong positive feature, but the overall score is lower due to the visual distractions.",
+  "_meta": {
+    "image_id": "ai_024_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.9,
+    "attempt": 1
+  }
+}

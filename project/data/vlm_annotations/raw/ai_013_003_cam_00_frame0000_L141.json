@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can enhance the mood and focus during yoga practice."
+    },
+    {
+      "name": "Hard floor surface",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "A hard floor provides a stable surface for yoga mats and stretching exercises, but may be less comfortable than a soft surface."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, allowing for a wide range of movement and positioning during yoga and stretching. The natural light from the windows can enhance the mood and focus. The hard floor surface provides a stable surface for yoga mats and stretching exercises, but may be less comfortable than a soft surface.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_013_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.91,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large open space provides ample room for yoga practice without obstructions."
+    },
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood floors are suitable for yoga practice as they are smooth and non-slip."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are present but not arranged in a way that would facilitate yoga practice."
+    },
+    {
+      "name": "windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from windows can create a calming atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is relatively spacious and has a hardwood floor, which are positive aspects for yoga. However, the presence of several chairs and the lack of a dedicated yoga setup make it less suitable for yoga practice.",
+  "_meta": {
+    "image_id": "ai_032_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.78,
+    "attempt": 1
+  }
+}

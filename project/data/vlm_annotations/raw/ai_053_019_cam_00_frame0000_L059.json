@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "long wooden table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The long wooden table is not suitable for sleeping, as it lacks a comfortable surface and is too large to fit into a typical bedroom."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs around the table are not suitable for sleeping, as they lack a comfortable surface and are too large to fit into a typical bedroom."
+    },
+    {
+      "name": "white board on the wall",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The white board on the wall is not suitable for sleeping, as it is not a comfortable surface and is too large to fit into a typical bedroom."
+    },
+    {
+      "name": "glass walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The glass walls are not suitable for sleeping, as they do not provide privacy and can be easily seen through, making the space feel exposed."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no windows in the room, which makes it difficult to get natural light and potentially disrupts circadian rhythms."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The long wooden table and chairs around it are not suitable for sleeping, and the white board on the wall is also not suitable. The glass walls and lack of windows make the space feel exposed and difficult to sleep in.",
+  "_meta": {
+    "image_id": "ai_053_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.75,
+    "attempt": 1
+  }
+}

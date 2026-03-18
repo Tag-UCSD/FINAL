@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a bathtub in a bathroom is not conducive to computer work, as it suggests a leisurely environment rather than a workspace."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is durable and easy to clean, which can be beneficial for a workspace."
+    },
+    {
+      "name": "large window with blinds",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can reduce the need for artificial lighting, which can be beneficial for computer work."
+    },
+    {
+      "name": "cabinets and drawers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Cabinets and drawers provide storage for office supplies and equipment, which can be useful for computer work."
+    },
+    {
+      "name": "countertop with sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A countertop with a sink is not suitable for computer work, as it is not a flat surface for a keyboard and monitor."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are positive aspects such as natural light and storage, the presence of a bathtub and a countertop with a sink make it less suitable for focused knowledge work. The hard flooring is a positive feature, but the overall layout and presence of a bathtub suggest a more leisurely environment rather than a workspace.",
+  "_meta": {
+    "image_id": "ai_039_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.72,
+    "attempt": 1
+  }
+}

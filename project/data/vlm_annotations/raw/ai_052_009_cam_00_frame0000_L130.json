@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "long dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large dining tables are typically used for formal dining, not casual conversations."
+    },
+    {
+      "name": "formal dining chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal dining chairs are not conducive to casual conversation, as they are designed for formal dining settings."
+    },
+    {
+      "name": "brick walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick walls add a rustic charm that can make the space feel more inviting and relaxed."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a brighter and more welcoming atmosphere."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel more open and spacious, which is conducive to casual conversation."
+    },
+    {
+      "name": "industrial lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Industrial lighting can create a modern and stylish atmosphere, which can be appealing for casual hangouts."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects, such as brick walls and high ceilings, but the presence of formal dining tables and chairs, along with the industrial lighting, suggests that this space is better suited for formal dining rather than casual conversations. The score of 5 reflects a mixed suitability, leaning towards formal dining rather than casual hangouts.",
+  "_meta": {
+    "image_id": "ai_052_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.38,
+    "attempt": 1
+  }
+}

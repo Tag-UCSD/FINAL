@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A comfortable seating area for multiple people."
+    },
+    {
+      "name": "armchairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Additional seating options for a more intimate conversation."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central surface for placing drinks and conversation starters."
+    },
+    {
+      "name": "candles",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Atmospheric candles enhance the cozy ambiance."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Plants add a touch of nature and life to the space."
+    },
+    {
+      "name": "warm lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting creates a welcoming and comfortable atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversations and hangouts, featuring a comfortable seating arrangement, a central coffee table, and atmospheric lighting. However, the presence of candles and potted plants might be considered a bit too decorative for a purely functional hangout space.",
+  "_meta": {
+    "image_id": "ai_028_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.55,
+    "attempt": 1
+  }
+}

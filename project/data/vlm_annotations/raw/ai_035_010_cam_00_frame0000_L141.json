@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is large and takes up significant floor space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug is large and covers much of the floor, reducing the available open space for yoga."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fireplace is large and takes up significant floor space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are large and take up significant floor space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is large and takes up significant floor space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling beams are large and take up significant vertical space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to enter, creating a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is covered with a rug and obstructed by furniture, reducing the available open space for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga due to the presence of large furniture and objects that obstruct the open floor area required for yoga. The large windows allow natural light to enter, creating a calming atmosphere suitable for yoga. However, the presence of the bed, rug, fireplace, cabinets, table, and ceiling beams significantly obstructs the open floor area required for yoga, resulting in a moderate score of 5 out of 7.",
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.88,
+    "attempt": 1
+  }
+}

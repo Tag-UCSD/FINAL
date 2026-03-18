@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large windows with view of forest",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows provide natural light and a connection to nature, which can enhance sleep quality."
+    },
+    {
+      "name": "low lighting from hanging lamps",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft, warm lighting from hanging lamps can help create a relaxing atmosphere conducive to sleep."
+    },
+    {
+      "name": "seating arrangement facing large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Seating arrangement facing large windows may prevent users from fully blocking out light and distractions."
+    },
+    {
+      "name": "hard flooring material",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable, potentially disrupting sleep."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects for sleep, such as large windows and low lighting, but also some negative factors like hard flooring and seating arrangement facing the windows. Overall, it is marginally adequate for primary sleep.",
+  "_meta": {
+    "image_id": "ai_044_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.14,
+    "attempt": 1
+  }
+}

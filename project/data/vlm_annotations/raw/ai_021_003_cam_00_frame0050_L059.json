@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls can be cold and uncomfortable to touch, affecting sleep quality."
+    },
+    {
+      "name": "red pipes",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Red pipes are visually distracting and may be perceived as a safety hazard."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling beams can be visually distracting and may cause discomfort when lying down."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has several negative indicators that contribute to a lower score for sleep (primary). The brick wall, red pipes, and ceiling beams are all potential sources of discomfort and distraction, making the space less suitable for sleep.",
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.0,
+    "attempt": 1
+  }
+}

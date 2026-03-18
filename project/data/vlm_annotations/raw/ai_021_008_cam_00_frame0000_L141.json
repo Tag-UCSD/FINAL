@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable, non-slip surface suitable for yoga practice."
+    },
+    {
+      "name": "ample unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open space in the room allows for various yoga poses without obstruction."
+    },
+    {
+      "name": "minimal furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The few pieces of furniture do not obstruct the floor space, allowing for easy movement."
+    },
+    {
+      "name": "large windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from the windows can create a calming atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga, with a hardwood floor, ample unobstructed space, and minimal furniture. However, the presence of a kitchen area and the lack of a dedicated yoga area slightly reduce the suitability.",
+  "_meta": {
+    "image_id": "ai_021_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.98,
+    "attempt": 1
+  }
+}

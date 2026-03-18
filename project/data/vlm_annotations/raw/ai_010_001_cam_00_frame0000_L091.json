@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving limited space for computer work."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, which can be beneficial for computer work."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is high, but there is no indication of a desk or workspace, which is necessary for computer work."
+    }
+  ],
+  "reasoning_summary": "The room has a large bed and a high ceiling, which could make it difficult to set up a workspace for computer work. However, the large window provides ample natural light, which can be beneficial for such tasks.",
+  "_meta": {
+    "image_id": "ai_010_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.61,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "yoga mat on floor",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A yoga mat is present, but it is not unrolled and ready for use."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is enough open space to accommodate a yoga mat and some stretching exercises."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga practice as it provides a stable and non-slip surface."
+    },
+    {
+      "name": "minimal furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of minimal furniture does not obstruct the open floor space."
+    },
+    {
+      "name": "natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light can create a calming atmosphere conducive to yoga practice."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for yoga / stretching due to the presence of a yoga mat and open floor space, but the mat is not ready for use and the room is not fully optimized for the activity.",
+  "_meta": {
+    "image_id": "ai_004_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.57,
+    "attempt": 1
+  }
+}

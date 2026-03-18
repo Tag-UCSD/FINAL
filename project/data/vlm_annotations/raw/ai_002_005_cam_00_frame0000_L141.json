@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "table with chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table and chairs are in the way of any open floor space required for yoga."
+    },
+    {
+      "name": "cabinets and shelves",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The cabinets and shelves block the open floor space necessary for yoga."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The counter is in the way of any open floor space required for yoga."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The sink is in the way of any open floor space required for yoga."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is in the way of any open floor space required for yoga."
+    },
+    {
+      "name": "banana",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The banana is in the way of any open floor space required for yoga."
+    }
+  ],
+  "reasoning_summary": "This kitchen scene is not suitable for yoga due to the presence of furniture and objects that obstruct the open floor space required for yoga. The score of 2 reflects the significant amount of clutter and the lack of an unobstructed floor area.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.51,
+    "attempt": 1
+  }
+}

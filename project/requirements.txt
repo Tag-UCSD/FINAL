@@ -15,7 +15,10 @@ qwen-vl-utils>=0.0.8
 #   pip install autoawq  (for CUDA 11/12 pre-built wheels)
 # or from source for custom CUDA:
 #   pip install git+https://github.com/casper-hansen/AutoAWQ.git
-autoawq>=0.2.6
+autoawq==0.2.6
+autoawq-kernels==0.0.7
+transformers==4.47.1
+numpy<2
 
 # ── Detectron2 (Mask2Former COCO panoptic) ──────────────────────────────────
 # Install separately — version must match your torch/CUDA build:
@@ -55,3 +58,10 @@ remotezip>=0.12.0
 # ── Notebook support ────────────────────────────────────────────────────────
 jupyter>=1.0.0
 ipywidgets>=8.1.0
+
+numpy<2
+torch==2.3.1
+torchvision==0.18.1
+transformers==4.46.0
+autoawq==0.2.6
+autoawq-kernels==0.0.7

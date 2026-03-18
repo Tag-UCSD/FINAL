@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed provides ample space for stretching and yoga poses."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor is smooth and suitable for yoga mats."
+    },
+    {
+      "name": "Windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to enter, creating a serene atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for yoga and stretching due to the ample space provided by the bed, the smooth wooden floor, and the natural light from the large windows.",
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.98,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Couches obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Table obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a firm, non-slip base surface suitable for yoga mat placement."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Ceiling lights provide ambient lighting suitable for yoga practice."
+    },
+    {
+      "name": "glass railings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass railings obstruct the open floor space required for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of furniture and potted plants obstructing the open floor space. However, the hardwood flooring and ceiling lights provide suitable conditions for yoga practice.",
+  "_meta": {
+    "image_id": "ai_008_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.56,
+    "attempt": 1
+  }
+}

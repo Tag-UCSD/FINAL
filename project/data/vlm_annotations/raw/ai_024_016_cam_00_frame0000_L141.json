@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.8,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Concrete flooring",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The concrete flooring provides a stable surface for yoga mats and stretching exercises."
+    },
+    {
+      "name": "High ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The high ceiling allows for more vertical space to perform poses and stretches."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, with a stable surface and enough vertical space for yoga and stretching, making it suitable for these activities.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_016_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_016\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.81,
+    "attempt": 2
+  }
+}

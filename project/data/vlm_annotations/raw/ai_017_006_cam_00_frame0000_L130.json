@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A couch provides comfortable seating for multiple people."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An additional chair can accommodate more people."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A coffee table can hold drinks and snacks for easy sharing."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds comfort."
+    },
+    {
+      "name": "sociopetal seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Seating is arranged to face each other, facilitating conversation."
+    },
+    {
+      "name": "warm lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Warm lighting creates a cozy atmosphere conducive to conversation."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation/hangout due to the presence of comfortable seating, a sociopetal layout, and warm lighting. However, the lack of a second seating option and the limited surface area for shared objects slightly undermines the suitability.",
+  "_meta": {
+    "image_id": "ai_017_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.39,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a surface for food preparation."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Cabinets offer storage for cooking utensils and ingredients."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Wooden flooring is common in kitchens but may be slippery when wet."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a dining table and cabinets, but the wooden flooring could pose a slip hazard.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_048_007_cam_00_frame0001",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_007\\images\\scene_cam_00_final_preview\\frame.0001.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.42,
+    "attempt": 2
+  }
+}

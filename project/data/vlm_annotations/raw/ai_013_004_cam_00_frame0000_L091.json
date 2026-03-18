@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are multiple chairs, but none are positioned as a dedicated workspace for computer work."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is decorative and does not serve as a functional workspace element."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling lights are not task-specific and may cause glare on computer screens."
+    },
+    {
+      "name": "glass walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass walls can reduce privacy and increase distractions, which are negative for solo computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are chairs and a potted plant, they do not form a dedicated workspace. The ceiling lights may cause glare, and glass walls reduce privacy and increase distractions. However, the presence of chairs suggests some potential for setting up a workspace, albeit not optimally.",
+  "_meta": {
+    "image_id": "ai_013_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.77,
+    "attempt": 1
+  }
+}

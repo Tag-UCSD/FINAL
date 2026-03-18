@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large desk provides ample space for a computer and other accessories."
+    },
+    {
+      "name": "Good lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The overhead lights provide sufficient illumination for computer work."
+    },
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch might be distracting and not conducive to focused computer work."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work with a large desk and good lighting, but the presence of a couch could be a distraction.",
+  "_meta": {
+    "image_id": "ai_006_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.6,
+    "attempt": 2
+  }
+}

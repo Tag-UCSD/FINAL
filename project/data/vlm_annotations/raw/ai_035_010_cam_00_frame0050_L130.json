@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large bed takes up a significant portion of the room, leaving limited space for other social furniture."
+    },
+    {
+      "name": "two bedside tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bedside tables can be used to place drinks, snacks, or personal items during casual conversations."
+    },
+    {
+      "name": "red patterned rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug can define a conversational area and add warmth to the space."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light and views, creating a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "wooden beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden beams add a rustic charm and warmth to the space, enhancing the casual atmosphere."
+    }
+  ],
+  "reasoning_summary": "The room has a large bed taking up much of the space, which could limit the area available for casual conversations. However, the presence of two bedside tables and a red patterned rug can support casual conversations. The large windows and wooden beams contribute positively to the overall atmosphere, making it suitable for casual hangouts but not ideal.",
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.58,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for multiple people to gather without feeling cramped."
+    },
+    {
+      "name": "Concrete walls",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The concrete walls provide a neutral backdrop that does not distract from the conversation."
+    },
+    {
+      "name": "Ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling lights provide ample lighting for the space, making it suitable for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, allowing for multiple people to gather comfortably. The neutral concrete walls and adequate lighting make it suitable for casual conversations.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_026_011_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_011\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.25,
+    "attempt": 2
+  }
+}

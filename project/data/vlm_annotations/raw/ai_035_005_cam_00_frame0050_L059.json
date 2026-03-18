@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with soft bedding",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed with soft bedding provides a comfortable resting surface."
+    },
+    {
+      "name": "window with natural light",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can help regulate the circadian rhythm."
+    },
+    {
+      "name": "teddy bear on bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A teddy bear can provide comfort and security during sleep."
+    },
+    {
+      "name": "airplane mobile above bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The airplane mobile may be distracting and could disturb sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (primary). The bed with soft bedding and natural light from the window support the activity, but the airplane mobile above the bed could be a distraction and disturb sleep.",
+  "_meta": {
+    "image_id": "ai_035_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.46,
+    "attempt": 1
+  }
+}

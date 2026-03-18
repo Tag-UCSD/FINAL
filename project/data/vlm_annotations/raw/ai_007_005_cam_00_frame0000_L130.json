@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "round bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A round bathtub is not conducive to conversation as it is designed for personal use and lacks seating for multiple people."
+    },
+    {
+      "name": "freestanding sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A freestanding sink is not suitable for conversation as it is designed for individual use and does not provide a shared surface for social interaction."
+    },
+    {
+      "name": "towel on edge of bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the edge of the bathtub is not conducive to conversation as it suggests a private bathing area and does not provide a shared space for social interaction."
+    },
+    {
+      "name": "vase on edge of bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase on the edge of the bathtub is not conducive to conversation as it suggests a private bathing area and does not provide a shared space for social interaction."
+    },
+    {
+      "name": "bottle on edge of bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle on the edge of the bathtub is not conducive to conversation as it suggests a private bathing area and does not provide a shared space for social interaction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the presence of a round bathtub, a freestanding sink, and personal items like towels, vases, and bottles. These elements suggest a private bathing area and do not provide a shared space for social interaction. A score of 4 indicates that while the space could potentially be used for conversation, it is not optimally suited for this activity.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.93,
+    "attempt": 1
+  }
+}

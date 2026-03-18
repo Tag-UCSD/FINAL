@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs are arranged facing a stage, indicating a lecture or presentation setting, not a sleep environment."
+    },
+    {
+      "name": "lack of personal storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No visible personal storage like a nightstand or closet, which are essential for a sleep environment."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No bed present, which is the primary artifact for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows for natural light and ventilation, which are important for sleep."
+    }
+  ],
+  "reasoning_summary": "The image depicts a conference room with rows of chairs facing a stage, indicating it is designed for lectures or presentations rather than sleep. There is no bed, personal storage, or windows, making it completely unsuitable for sleep (Primary).",
+  "_meta": {
+    "image_id": "ai_053_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.09,
+    "attempt": 1
+  }
+}

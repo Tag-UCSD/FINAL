@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large glass ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large glass ceiling obstructs natural light and creates a cold, sterile atmosphere, which is not conducive to a relaxed social setting."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "White walls can make the space feel stark and uninviting, reducing the comfort level for casual conversations."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of furniture such as sofas, chairs, or tables makes it difficult to create a comfortable and engaging space for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene lacks the necessary furniture and spatial features to support a casual conversation or hangout. The large glass ceiling and white walls contribute to a cold, sterile atmosphere, making the space less suitable for social interactions.",
+  "_meta": {
+    "image_id": "ai_026_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.08,
+    "attempt": 1
+  }
+}

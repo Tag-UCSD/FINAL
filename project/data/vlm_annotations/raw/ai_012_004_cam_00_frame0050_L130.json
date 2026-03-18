@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island takes up a significant portion of the space, leaving little room for social interaction."
+    },
+    {
+      "name": "seating area",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no seating area designed for conversation, making it difficult to engage in casual hangouts."
+    },
+    {
+      "name": "kitchen appliances",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of kitchen appliances suggests a functional space rather than a social one."
+    },
+    {
+      "name": "counter space",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter space is too narrow for comfortable conversation."
+    }
+  ],
+  "reasoning_summary": "The kitchen scene is primarily functional and lacks a dedicated space for casual conversation. The large kitchen island and lack of seating area make it unsuitable for hangouts. A score of 4 indicates marginal adequacy due to the presence of some social props like the counter space, but the overall layout and purpose of the space are not conducive to casual social interactions.",
+  "_meta": {
+    "image_id": "ai_012_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.65,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "high ceiling with skylights",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings and skylights can create a sense of openness and distraction, which may reduce focus on computer work."
+    },
+    {
+      "name": "exposed structural beams",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed beams can be visually distracting and may contribute to a cluttered feeling in the workspace."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can allow natural light to enter, but they also introduce potential glare and distractions from outside activities."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to increased noise and visual distractions, which can negatively impact concentration on computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for computer work (Solo). While it has some positive aspects such as natural light and open space, the presence of high ceilings, exposed structural beams, large windows, and an open layout contribute to a sense of openness and distraction, which may reduce focus on computer work. Overall, the environment is not conducive to focused solo work.",
+  "_meta": {
+    "image_id": "ai_026_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.5,
+    "attempt": 1
+  }
+}

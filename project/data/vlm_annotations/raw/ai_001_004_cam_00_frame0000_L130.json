@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bookshelves",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelves are too high and narrow to serve as seating or conversation props."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor lamp provides ambient light suitable for a casual hangout."
+    },
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are too high and narrow to serve as seating or conversation props."
+    },
+    {
+      "name": "wall decor",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wall decor adds a personal touch, making the space feel more inviting."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation / hangout due to the lack of suitable seating and conversation props. The floor lamp provides a positive element, but the high and narrow bookshelves and cabinets do not contribute to the social atmosphere.",
+  "_meta": {
+    "image_id": "ai_001_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.12,
+    "attempt": 1
+  }
+}

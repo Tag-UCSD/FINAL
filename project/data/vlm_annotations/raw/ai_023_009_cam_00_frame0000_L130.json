@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is too open and lacks a clear focal point for conversation."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture to sit on, making it difficult to engage in a casual conversation."
+    },
+    {
+      "name": "open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open space lacks a defined area for conversation, making it less suitable for a hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for casual conversation / hangout due to the lack of furniture and an open, undefined space. The layout is too open and lacks a clear focal point for conversation, making it difficult to engage in a casual conversation.",
+  "_meta": {
+    "image_id": "ai_023_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.57,
+    "attempt": 1
+  }
+}

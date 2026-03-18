@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating area with booths and chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Booths and chairs provide comfortable seating for multiple people, facilitating conversation."
+    },
+    {
+      "name": "bar counter with stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bar counter and stools offer a casual meeting spot for informal conversations."
+    },
+    {
+      "name": "artwork on the walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Artwork adds a personal touch and aesthetic appeal, making the space more inviting."
+    },
+    {
+      "name": "open layout with glass doors",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open layout with glass doors allows for easy visibility and communication between areas."
+    },
+    {
+      "name": "natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the windows creates a pleasant and welcoming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation and hangouts. The seating area with booths and chairs, along with the bar counter and stools, provides ample space for social interaction. The artwork and open layout contribute to a welcoming atmosphere. However, the lack of a dedicated meeting area and the presence of functional areas like the bar counter might slightly detract from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_055_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.68,
+    "attempt": 1
+  }
+}

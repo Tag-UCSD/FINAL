@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa provides ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "two armchairs facing sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Armchairs arranged opposite the sofa create a sociopetal layout, enabling natural eye contact and conversation."
+    },
+    {
+      "name": "rectangular dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can serve as a shared surface for snacks and drinks, enhancing the social atmosphere."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, creating a pleasant and open atmosphere conducive to conversation."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "An open layout without barriers encourages free flow of conversation and interaction among people."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft lighting provides a warm and inviting atmosphere suitable for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The scene is ideally suited for casual conversation and hangouts, featuring a large sofa, armchairs, a dining table, large windows, an open layout, and soft lighting. The score of 6 indicates it is very close to being perfectly suited, but could benefit from additional social props like drinks accessories.",
+  "_meta": {
+    "image_id": "ai_018_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_018_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.13,
+    "attempt": 1
+  }
+}

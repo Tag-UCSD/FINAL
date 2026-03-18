@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The toilet is not a primary sleep artifact and is not conducive to sleep."
+    },
+    {
+      "name": "white sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sinks are not a primary sleep artifact and are not conducive to sleep."
+    },
+    {
+      "name": "brown wood paneling",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brown wood paneling is not conducive to sleep."
+    },
+    {
+      "name": "mirrors",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirrors are not conducive to sleep."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is not conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "This bathroom is not suitable for sleep. The presence of a toilet and sinks, along with the brown wood paneling, mirrors, and lighting, make this space unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.65,
+    "attempt": 1
+  }
+}

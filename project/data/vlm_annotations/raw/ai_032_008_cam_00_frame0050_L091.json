@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the window."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is partially obstructed by curtains, reducing the amount of natural light available for work and potentially creating a less comfortable working environment."
+    },
+    {
+      "name": "chandelier lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chandelier lighting is too diffuse and lacks task illumination, which is crucial for screen work and can cause glare on the computer screens."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no flat surface suitable for placing a laptop or keyboard, making it difficult to set up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a bed and obstructed window reduce the available space and natural light, while the chandelier lighting lacks task illumination. There is no flat surface suitable for setting up a computer workstation, making it challenging to perform focused solo work in this environment.",
+  "_meta": {
+    "image_id": "ai_032_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.76,
+    "attempt": 1
+  }
+}

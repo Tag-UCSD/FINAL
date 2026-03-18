@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Laptop",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The laptop is present and functional, providing a central tool for computer work."
+    },
+    {
+      "name": "Speakers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of speakers might be distracting or inappropriate for a focused work environment."
+    },
+    {
+      "name": "Red Wall",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The red wall color is bold but does not directly impact the functionality of the workspace."
+    }
+  ],
+  "reasoning_summary": "The space is adequately suited for computer work with a laptop present, but the presence of speakers could be a distraction.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_001_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.81,
+    "attempt": 2
+  }
+}

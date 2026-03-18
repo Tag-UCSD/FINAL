@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting during computer work."
+    },
+    {
+      "name": "Comfortable bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A comfortable bed can provide a relaxing environment for long periods of computer use."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The wooden floor provides a neutral surface that is not too cold or warm to the touch."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Cabinets can be used for storage, but their presence does not directly support computer work."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work (Solo) due to the large windows providing natural light and the comfortable bed offering a relaxing environment. However, the presence of cabinets is neutral as they do not directly support computer work.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'",
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.69,
+    "attempt": 2
+  }
+}

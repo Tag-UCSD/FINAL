@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops forming U-shape",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Oven is a key cooking appliance for baking, roasting, and other oven-based cooking methods."
+    },
+    {
+      "name": "microwave",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Microwave is useful for quick heating and defrosting tasks."
+    },
+    {
+      "name": "side-by-side refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Refrigerator completes the stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201crefrigerator work triangle, the standard efficient cooking workflow."
+    },
+    {
+      "name": "work triangle layout (stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge)",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The classical work triangle is clearly visible in the U-shape arrangement, minimising movement during cooking tasks."
+    }
+  ],
+  "reasoning_summary": "This is a well-equipped modern kitchen with all primary cooking affordances present and well-arranged. The work triangle is clearly defined, countertop prep space is generous, and both water access and storage are well-provisioned. This space scores 6 \u00e2\u20ac\u201d marginally adequate for daily cooking at any skill level.",
+  "_meta": {
+    "image_id": "ai_002_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.85,
+    "attempt": 1
+  }
+}

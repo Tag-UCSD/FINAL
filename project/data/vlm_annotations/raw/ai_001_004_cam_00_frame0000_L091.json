@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large desk provides ample space for a computer and other work materials."
+    },
+    {
+      "name": "Good lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor lamp provides focused light on the desk area, reducing eye strain."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets offer storage for office supplies and personal items, keeping the workspace organized."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for computer work (Solo) with a large desk, good lighting, and ample storage.",
+  "_meta": {
+    "image_id": "ai_001_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.53,
+    "attempt": 2
+  }
+}

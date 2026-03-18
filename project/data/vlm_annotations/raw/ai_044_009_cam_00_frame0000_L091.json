@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting and potentially improving mood and productivity."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual work, as indicated by the presence of multiple chairs facing each other and the lack of personal work surfaces."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient rather than task-specific, which may not be sufficient for extended computer work."
+    },
+    {
+      "name": "no flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height, which is necessary for setting up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo) due to the presence of large windows allowing natural light, but it lacks key features such as a flat work surface and proper seating for individual work. The low lighting and social seating arrangement further undermine its suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_044_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.24,
+    "attempt": 1
+  }
+}

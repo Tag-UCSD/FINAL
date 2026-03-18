@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with striped duvet and pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, with soft textiles providing comfort and support."
+    },
+    {
+      "name": "low lighting from bedside lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dimmable warm lighting is conducive to relaxation and sleep onset."
+    },
+    {
+      "name": "bookshelves with books",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Books can be used for reading before sleep, which can help induce relaxation."
+    },
+    {
+      "name": "window with natural light",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light can help regulate the body's circadian rhythm, promoting better sleep."
+    },
+    {
+      "name": "folding chair in corner",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A folding chair is not a suitable sleep surface and could be a distraction."
+    }
+  ],
+  "reasoning_summary": "This is a well-designed bedroom that supports primary sleep. The bed with soft textiles, low lighting, and books for reading before sleep all contribute to a conducive sleep environment. However, the folding chair in the corner is not a suitable sleep surface and could be a distraction, which slightly reduces the score.",
+  "_meta": {
+    "image_id": "ai_035_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.3,
+    "attempt": 1
+  }
+}

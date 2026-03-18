@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "White chairs provide ample seating for multiple people, promoting social interaction."
+    },
+    {
+      "name": "round dining tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Round tables encourage conversation by allowing all participants to face each other easily."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and can enhance the ambiance, making the space more inviting."
+    },
+    {
+      "name": "umbrellas",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Umbrellas suggest outdoor seating, which can be associated with a more relaxed and casual atmosphere."
+    },
+    {
+      "name": "glassware and utensils",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Glassware and utensils indicate a dining setup, which is conducive to casual conversations."
+    },
+    {
+      "name": "wooden flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring adds warmth and a natural feel to the space, enhancing the comfort level."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversations and hangouts, featuring ample seating, round tables for easy conversation, and a pleasant ambiance enhanced by potted plants and outdoor umbrellas. A score of 7 would require additional social props such as drinks accessories, but this room is very close to being ideally suited.",
+  "_meta": {
+    "image_id": "ai_052_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.08,
+    "attempt": 1
+  }
+}

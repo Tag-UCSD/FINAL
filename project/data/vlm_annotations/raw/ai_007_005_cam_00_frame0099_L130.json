@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A freestanding bathtub is not conducive to casual conversation or hangout, as it takes up a significant portion of the space and is not easily accessible for social interaction."
+    },
+    {
+      "name": "tall pedestal sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A tall pedestal sink is not conducive to casual conversation or hangout, as it is not easily accessible for social interaction and does not provide a comfortable space for conversation."
+    },
+    {
+      "name": "shelves with decorative items",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Shelves with decorative items add a personal touch to the space, making it more inviting for casual conversation and hangout."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large window allows natural light to enter the space, creating a pleasant and welcoming atmosphere for casual conversation and hangout."
+    },
+    {
+      "name": "curtains",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Curtains can help control the amount of natural light entering the space, creating a more controlled and comfortable environment for casual conversation and hangout."
+    }
+  ],
+  "reasoning_summary": "The space has some positive features, such as a large window and curtains, but the presence of a freestanding bathtub and pedestal sink negatively impacts the suitability for casual conversation and hangout. The score of 4 indicates that the space is marginally adequate for this activity.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.02,
+    "attempt": 1
+  }
+}

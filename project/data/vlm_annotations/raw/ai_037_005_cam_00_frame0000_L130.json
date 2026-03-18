@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white round dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A round dining table provides a central shared surface for casual conversation."
+    },
+    {
+      "name": "white chairs around table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White chairs around the table create a sociopetal layout conducive to conversation."
+    },
+    {
+      "name": "cushions on long bench",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cushions on the long bench provide comfort for extended conversations."
+    },
+    {
+      "name": "blue pendant light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A blue pendant light provides a pleasant, ambient light for conversation."
+    },
+    {
+      "name": "vases and flowers on table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Decorative items on the table add a touch of personalization and warmth."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation, featuring a round dining table and white chairs around it, creating a sociopetal layout. The long bench with cushions provides additional seating, and the blue pendant light offers a pleasant ambiance. However, the lack of a central shared surface and the presence of decorative items on the table slightly detract from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_037_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.39,
+    "attempt": 1
+  }
+}

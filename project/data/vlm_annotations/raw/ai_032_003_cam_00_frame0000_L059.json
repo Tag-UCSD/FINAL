@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "marble walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble surfaces are cold and hard, which can be uncomfortable for sleep."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble floors are cold and hard, which can be uncomfortable for sleep."
+    },
+    {
+      "name": "elevators",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Elevators are noisy and can be a source of disturbance during sleep."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel more open and less conducive to sleep."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows prevent natural light and views, which can be important for circadian rhythms."
+    }
+  ],
+  "reasoning_summary": "The scene is a high-ceilinged, elevator-equipped lobby with marble surfaces and floors. The lack of windows and the presence of elevators suggest a public, possibly commercial setting, which is not ideal for primary sleep. The cold, hard surfaces and the potential for noise from elevators contribute to a lower score.",
+  "_meta": {
+    "image_id": "ai_032_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.18,
+    "attempt": 1
+  }
+}

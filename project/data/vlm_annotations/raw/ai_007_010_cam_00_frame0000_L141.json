@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "towel on bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the bathtub is not suitable for yoga practice as it can cause slipping and is not a typical yoga prop."
+    },
+    {
+      "name": "toilet in close proximity",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A toilet in close proximity to the yoga area can be distracting and unsanitary, making the space less suitable for yoga."
+    },
+    {
+      "name": "sink in close proximity",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink in close proximity to the yoga area can be distracting and unsanitary, making the space less suitable for yoga."
+    },
+    {
+      "name": "towel on bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the bathtub is not suitable for yoga practice as it can cause slipping and is not a typical yoga prop."
+    },
+    {
+      "name": "towel on bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the bathtub is not suitable for yoga practice as it can cause slipping and is not a typical yoga prop."
+    },
+    {
+      "name": "towel on bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the bathtub is not suitable for yoga practice as it can cause slipping and is not a typical yoga prop."
+    }
+  ],
+  "reasoning_summary": "The bathroom is marginally adequate for yoga due to the presence of a bathtub, sink, and toilet in close proximity, which can be distracting and unsanitary. The towel on the bathtub is not suitable for yoga practice. However, the space is not ideal for yoga due to these factors.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.78,
+    "attempt": 1
+  }
+}

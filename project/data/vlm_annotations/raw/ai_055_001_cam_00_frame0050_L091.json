@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual focus, making it less suitable for solo computer work."
+    },
+    {
+      "name": "large dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large dining tables are not conducive to individual work, as they are typically used for group dining and socializing."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bar counter is not designed for individual work and is likely to be a source of noise and distraction."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout of the space makes it difficult to maintain privacy and focus on individual work tasks."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The lighting is not bright enough to support extended computer work, which requires good visibility."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to its social and open layout, lack of individual work surfaces, and low lighting. The presence of dining tables and a bar counter further undermines the suitability for focused work.",
+  "_meta": {
+    "image_id": "ai_055_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.3,
+    "attempt": 1
+  }
+}

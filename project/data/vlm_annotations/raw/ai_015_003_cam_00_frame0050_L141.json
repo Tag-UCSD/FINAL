@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.99,
+  "indicators": [
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Cabinets obstruct movement and create a cluttered environment."
+    },
+    {
+      "name": "Microwave",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Microwave takes up valuable space and can be a tripping hazard."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining table obstructs movement and can be a tripping hazard."
+    }
+  ],
+  "reasoning_summary": "The space is not suitable for yoga or stretching due to the presence of cabinets, a microwave, and a dining table, which obstruct movement and create a cluttered environment.",
+  "_meta": {
+    "image_id": "ai_015_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.57,
+    "attempt": 2
+  }
+}

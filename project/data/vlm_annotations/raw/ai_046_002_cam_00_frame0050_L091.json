@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several desks with computers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple workstations provide options for setting up a computer workspace."
+    },
+    {
+      "name": "ergonomic office chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ergonomic chairs support long periods of sitting."
+    },
+    {
+      "name": "task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Task lighting is present but not specifically directed at the screens."
+    },
+    {
+      "name": "open space layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open space layout can lead to distractions and noise."
+    },
+    {
+      "name": "artwork on walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Artwork can be distracting and does not contribute to a focused work environment."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there are multiple workstations and ergonomic chairs, the open space layout and artwork on the walls can lead to distractions and noise, reducing the overall suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_046_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.18,
+    "attempt": 1
+  }
+}

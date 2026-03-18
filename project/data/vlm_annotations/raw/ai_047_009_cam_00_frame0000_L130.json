@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "long wooden conference table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long table is too formal and lacks a central shared surface for casual conversation."
+    },
+    {
+      "name": "black mesh office chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too formal and lack comfort for extended casual conversation."
+    },
+    {
+      "name": "lack of soft seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No soft seating like sofas or armchairs makes it difficult to engage in casual conversation."
+    },
+    {
+      "name": "formal layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The formal layout with chairs facing the table is not conducive to casual conversation."
+    },
+    {
+      "name": "no central shared surface",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no central shared surface for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the formal layout, lack of soft seating, and the absence of a central shared surface. The long wooden conference table and black mesh office chairs are too formal and uncomfortable for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_047_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.75,
+    "attempt": 1
+  }
+}

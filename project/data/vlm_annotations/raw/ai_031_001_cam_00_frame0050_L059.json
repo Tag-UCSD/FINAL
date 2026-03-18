@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "arched doorway",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The archway is too narrow to allow easy movement, which could disturb sleep."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is too close to the archway, potentially obstructing movement and disturbing sleep."
+    },
+    {
+      "name": "sky-other-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sky is visible through the archway, which could be a source of noise and light disturbance."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for sleep (Primary). The narrow archway and potted plant obstruct movement, while the visible sky could be a source of noise and light disturbance. However, the presence of a bed and the enclosed layout contribute positively to the overall score.",
+  "_meta": {
+    "image_id": "ai_031_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.71,
+    "attempt": 1
+  }
+}

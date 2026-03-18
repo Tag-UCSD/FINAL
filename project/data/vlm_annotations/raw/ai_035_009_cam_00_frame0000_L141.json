@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed takes up a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelves are densely packed with books, taking up valuable floor space and creating a cluttered environment."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed close to the bed, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is cluttered with furniture and objects, making it difficult to find a clear space for yoga."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The lighting appears to be artificial and dim, which may not be ideal for a calming yoga practice."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for yoga / stretching due to the presence of a bed, bookshelves, and a chair that take up a significant amount of floor space. The cluttered floor and artificial lighting also contribute to the negative assessment. However, the presence of a window allows some natural light to enter, which could potentially improve the atmosphere for yoga.",
+  "_meta": {
+    "image_id": "ai_035_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.02,
+    "attempt": 1
+  }
+}

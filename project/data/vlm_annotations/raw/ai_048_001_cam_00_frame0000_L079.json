@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with bar stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A kitchen island with bar stools provides a functional workspace for food preparation and dining."
+    },
+    {
+      "name": "black cabinets and white brick walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Black cabinets and white brick walls create a clean, modern aesthetic suitable for a kitchen."
+    },
+    {
+      "name": "wooden beams and windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden beams and large windows allow natural light to enter, creating a bright and inviting atmosphere."
+    },
+    {
+      "name": "white rug on wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A white rug on a wooden floor adds comfort and warmth to the space."
+    },
+    {
+      "name": "couch with pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A couch with pillows is more suitable for relaxation than for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a kitchen island and black cabinets, but lacks essential cooking appliances such as a stove and oven. The bright and inviting atmosphere created by the wooden beams and large windows is positive, but the presence of a couch with pillows suggests this space is primarily designed for relaxation rather than cooking.",
+  "_meta": {
+    "image_id": "ai_048_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.85,
+    "attempt": 1
+  }
+}

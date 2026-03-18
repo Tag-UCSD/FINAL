@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "curved ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curved ceiling may limit headroom and create a sense of enclosure, potentially making it less suitable for yoga practice."
+    },
+    {
+      "name": "wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden floor provides a stable, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Seating arrangement with steps and curved seating may limit space for yoga practice and create a sense of enclosure."
+    }
+  ],
+  "reasoning_summary": "The curved ceiling and seating arrangement suggest limited space and potential headroom constraints, which could make this space less suitable for yoga practice compared to a more open and spacious layout. However, the wooden floor is suitable for yoga mat placement.",
+  "_meta": {
+    "image_id": "ai_023_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.72,
+    "attempt": 1
+  }
+}

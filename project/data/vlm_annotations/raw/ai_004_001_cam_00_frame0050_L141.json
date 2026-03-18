@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A freestanding bathtub is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A toilet is a major obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A wooden floor provides a stable, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "window",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can create a calming atmosphere conducive to yoga practice."
+    },
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is ample unobstructed floor space for yoga mat placement and movement."
+    }
+  ],
+  "reasoning_summary": "The presence of a freestanding bathtub and toilet significantly undermines the suitability of this space for yoga practice. While the wooden floor and window contribute positively, the obstacles posed by these fixtures make the space marginally adequate for yoga, earning a score of 3.",
+  "_meta": {
+    "image_id": "ai_004_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.98,
+    "attempt": 1
+  }
+}

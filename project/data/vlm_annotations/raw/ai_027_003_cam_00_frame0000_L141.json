@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "long wooden dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table is too long and wide to allow for any yoga poses without obstructing the space."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs are positioned around the table, making it impossible to use the table as a yoga mat."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The hardwood flooring provides a smooth, non-slip surface suitable for yoga."
+    },
+    {
+      "name": "open space under the table",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is some open space under the table, which could potentially be used for yoga if the table were moved."
+    },
+    {
+      "name": "large windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from the windows can create a calming atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The long wooden dining table and chairs make it difficult to use the space for yoga, but the hardwood flooring and open space under the table suggest potential for rearrangement to support the activity. The large windows provide natural light, which is beneficial for yoga.",
+  "_meta": {
+    "image_id": "ai_027_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.24,
+    "attempt": 1
+  }
+}

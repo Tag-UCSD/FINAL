@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and comfortable, but it is not suitable for computer work due to its size and potential distractions."
+    },
+    {
+      "name": "window-blind",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window blinds can be adjusted to control the amount of natural light, which is beneficial for computer work."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is large and could be used for storage, but it is not directly related to computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the presence of a comfortable bed and adjustable window blinds, but the large cabinet and the size of the bed could be distracting.",
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.02,
+    "attempt": 2
+  }
+}

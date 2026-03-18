@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white bowl on shelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bowl is not a bed or a resting surface suitable for sleep."
+    },
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble is a hard, cold surface that is not suitable for sleeping."
+    },
+    {
+      "name": "frosted glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Frosted glass does not provide privacy or acoustic enclosure for sleep."
+    },
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed or other resting surface present in the image."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). There is no bed or resting surface, and the hard, cold marble countertop and frosted glass partition do not provide the necessary comfort and privacy for sleep.",
+  "_meta": {
+    "image_id": "ai_039_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.79,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "White sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white sofa provides a comfortable place to sit while working."
+    },
+    {
+      "name": "White coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white coffee table can hold a laptop and other necessary items."
+    },
+    {
+      "name": "Black and white striped rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug adds a cozy and modern touch to the space."
+    },
+    {
+      "name": "White floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The white floor is clean and easy to maintain."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work (solo) due to its comfortable seating, functional furniture, and visually appealing design.",
+  "_validation_errors": [
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_030_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.22,
+    "attempt": 2
+  }
+}

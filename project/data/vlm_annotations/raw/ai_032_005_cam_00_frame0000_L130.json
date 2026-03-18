@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is not suitable for casual conversation as it is intended for sleeping, not socializing."
+    },
+    {
+      "name": "large bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A large bed takes up a significant portion of the space, leaving little room for other social furniture."
+    },
+    {
+      "name": "two armchairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Armchairs provide seating for two people, but they are not arranged in a sociopetal manner."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A coffee table can serve as a shared surface for conversation."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds comfort underfoot."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A staircase divides the space and obstructs direct access between areas."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation due to the presence of a large bed and a staircase dividing the space. The coffee table and armchairs provide some potential for conversation, but the lack of a sociopetal seating arrangement and the division by the staircase limit the space's suitability for this activity.",
+  "_meta": {
+    "image_id": "ai_032_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.81,
+    "attempt": 1
+  }
+}

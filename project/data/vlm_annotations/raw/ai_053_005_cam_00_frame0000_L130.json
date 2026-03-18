@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is too formal and rigid, lacking a sociopetal layout conducive to casual conversation."
+    },
+    {
+      "name": "stage setup",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The stage setup with curtains and spotlights is designed for performances, not casual conversations."
+    },
+    {
+      "name": "seating density",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The high seating density makes it difficult for people to move around and engage in casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not ideally suited for casual conversation / hangout due to its formal stage setup, rigid seating arrangement, and high seating density. The presence of a stage and curtains suggests a performance-oriented environment rather than a social one. A score of 3 indicates that while some seating is present, the overall layout and purpose of the space do not support casual social interactions.",
+  "_meta": {
+    "image_id": "ai_053_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.32,
+    "attempt": 1
+  }
+}

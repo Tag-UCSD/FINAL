@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too small and not facing the coffee table, making it difficult for multiple people to sit and converse."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Central coffee table provides a shared surface for drinks and conversation."
+    },
+    {
+      "name": "laptop",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Laptop on the table suggests work or study, not casual conversation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is too far from the coffee table, making it difficult for multiple people to sit and converse."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Rug defines the seating area and adds comfort underfoot."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirror reflects the room, which can be distracting during a casual conversation."
+    }
+  ],
+  "reasoning_summary": "The space has some elements that could support casual conversation, such as the central coffee table and rug, but the lack of proper seating arrangements and the presence of a laptop suggest it is more suited for work or study rather than casual hangouts. A score of 4 indicates it is marginally adequate for casual conversation.",
+  "_meta": {
+    "image_id": "ai_006_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.59,
+    "attempt": 1
+  }
+}

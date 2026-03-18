@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is large and takes up a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug is large and covers much of the floor, making it difficult to find a clear space for yoga practice."
+    },
+    {
+      "name": "stairs",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The stairs are located close to the bed, creating a potential tripping hazard and limiting the available floor space for yoga."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed near the bed, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "fence",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The fence is close to the bed and chair, limiting the available floor space for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is placed near the bed, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The lighting is dim, which could make it difficult to see oneself in a mirror for self-correction during yoga practice."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is moderately suitable for yoga / stretching. The presence of a bed, rug, stairs, chair, fence, and table significantly limits the available floor space for yoga. The dim lighting also presents a challenge for self-correction during practice. A score of 3 rather than 4 reflects the limited available floor space and the presence of obstacles that would require rearrangement to create a suitable space for yoga.",
+  "_meta": {
+    "image_id": "ai_032_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.94,
+    "attempt": 1
+  }
+}

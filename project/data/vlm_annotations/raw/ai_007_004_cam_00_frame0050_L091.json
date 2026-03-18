@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble floor is slippery and cold, making it less comfortable for prolonged sitting."
+    },
+    {
+      "name": "towel hanging",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Towel hanging is not a typical item found in a workspace, suggesting this is a bathroom rather than a workspace."
+    },
+    {
+      "name": "bidet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bidet is not a typical item found in a workspace, suggesting this is a bathroom rather than a workspace."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sink is not a typical item found in a workspace, suggesting this is a bathroom rather than a workspace."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Toilet is not a typical item found in a workspace, suggesting this is a bathroom rather than a workspace."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Window allows natural light and ventilation, which can be beneficial for concentration."
+    },
+    {
+      "name": "mirror",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Mirror can be used for video calls or virtual meetings, which are common in remote work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally suitable for computer work (solo). While there is a window for natural light and a mirror for video calls, the presence of a bidet, sink, toilet, towel, and a marble floor suggests this is more likely a bathroom rather than a workspace. The lack of a flat work surface and ergonomic seating makes it difficult to set up a productive workstation.",
+  "_meta": {
+    "image_id": "ai_007_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.61,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "fountain",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A fountain is a non-functional object that does not contribute to social interaction."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A marble floor is slippery and not suitable for casual conversation."
+    },
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Couches provide comfortable seating for multiple people."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space."
+    },
+    {
+      "name": "arched doorways",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Architectural features create a sense of openness and flow."
+    },
+    {
+      "name": "mosaic tile pattern",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The mosaic tile pattern adds visual interest and texture."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation with comfortable seating, potted plants, and a sense of openness created by the arches. However, the fountain and slippery marble floor could be improved for a more ideal hangout space.",
+  "_meta": {
+    "image_id": "ai_031_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.81,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hard flooring can be uncomfortable and may cause injury during yoga and stretching."
+    },
+    {
+      "name": "No windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No natural light may make it difficult to perform yoga and stretching activities."
+    },
+    {
+      "name": "No mats",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No yoga mats suggest that the space is not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is not suitable for yoga and stretching due to hard flooring, lack of natural light, and absence of yoga mats.",
+  "_meta": {
+    "image_id": "ai_008_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.03,
+    "attempt": 2
+  }
+}

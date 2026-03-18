@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A couch provides a comfortable seating option for casual conversation."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A pillow adds comfort and suggests a relaxed atmosphere."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds warmth to the space."
+    },
+    {
+      "name": "window-blind",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Window blinds can control natural light, creating a comfortable environment."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wood flooring is a classic choice for a cozy, inviting space."
+    }
+  ],
+  "reasoning_summary": "The space has some positive indicators for casual conversation, but lacks a strong layout or multiple seating options. The presence of a couch and pillow suggests a potential for comfort, while the rug and window blinds contribute to a welcoming atmosphere. However, the lack of a clearly defined seating arrangement and multiple seating options limits the suitability for a hangout.",
+  "_meta": {
+    "image_id": "ai_007_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.64,
+    "attempt": 1
+  }
+}

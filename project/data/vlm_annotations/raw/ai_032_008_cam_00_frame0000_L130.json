@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is present, which is typically associated with sleeping rather than socializing."
+    },
+    {
+      "name": "large bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large bed takes up a significant portion of the space, leaving little room for other social furniture."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is a table merged with the bed, which is not conducive to social interaction."
+    },
+    {
+      "name": "curtain",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curtains can block visibility and create a more private, less open atmosphere."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is warm and inviting, contributing to a cozy atmosphere."
+    },
+    {
+      "name": "window-other",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light and a view, which can enhance the social atmosphere."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wall is merged with the bed, which can make the space feel cramped and less open."
+    }
+  ],
+  "reasoning_summary": "The presence of a bed and the merging of the table with the bed significantly reduce the suitability of this space for casual conversation and hangouts. While the lighting and window contribute positively, the large bed and the merging of objects negatively impact the overall suitability.",
+  "_meta": {
+    "image_id": "ai_032_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.28,
+    "attempt": 1
+  }
+}

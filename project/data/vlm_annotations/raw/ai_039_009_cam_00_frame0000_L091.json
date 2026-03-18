@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Black marble tiles",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The black marble tiles may cause glare and reduce visibility."
+    },
+    {
+      "name": "Ceiling height",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A higher ceiling can provide better natural light and create a more spacious feeling."
+    },
+    {
+      "name": "Mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The mirror can reflect light and create a sense of depth, but it might also be distracting."
+    },
+    {
+      "name": "Bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a bed in the room suggests a multi-purpose use, which could be distracting for focused computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for solo computer work due to the presence of a bed and the potential glare from the black marble tiles, while the higher ceiling provides some benefits.",
+  "_meta": {
+    "image_id": "ai_039_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.29,
+    "attempt": 2
+  }
+}

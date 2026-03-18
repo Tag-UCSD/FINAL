@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island takes up a significant portion of the space, leaving little room for social seating."
+    },
+    {
+      "name": "sink and faucet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink and faucet are functional but do not provide a comfortable space for social interaction."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The oven is a functional appliance but does not contribute to a social atmosphere."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are functional storage but do not provide a comfortable space for social interaction."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden flooring is functional but does not contribute to a social atmosphere."
+    },
+    {
+      "name": "bottle",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle is a functional item but does not contribute to a social atmosphere."
+    },
+    {
+      "name": "shelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The shelf is functional storage but does not provide a comfortable space for social interaction."
+    }
+  ],
+  "reasoning_summary": "This kitchen scene is primarily functional and lacks the social seating and layout necessary for a casual conversation / hangout. The large kitchen island and lack of social seating make it marginally adequate for this activity.",
+  "_meta": {
+    "image_id": "ai_002_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.98,
+    "attempt": 1
+  }
+}

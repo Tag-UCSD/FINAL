@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white tiled floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White tiles can be slippery and difficult to clean, potentially leading to accidents and discomfort."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls can reflect too much light, creating a harsh, uninviting environment."
+    },
+    {
+      "name": "white ceiling",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white ceiling can make the space feel cold and sterile, lacking warmth and comfort."
+    },
+    {
+      "name": "white kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large kitchen island can obstruct movement and conversation flow, making it less suitable for casual hangouts."
+    },
+    {
+      "name": "white cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White cabinets can be difficult to match with other furniture, limiting the aesthetic appeal of the space."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white dining table can be easily stained and difficult to maintain, reducing its suitability for casual hangouts."
+    }
+  ],
+  "reasoning_summary": "This indoor scene has a high score of 4 due to its stark, monochromatic color scheme and lack of soft, inviting surfaces. The white floor, walls, ceiling, kitchen island, cabinets, and dining table all contribute to a clinical, uninviting atmosphere that is not well-suited to casual conversation and hangouts. The presence of a kitchen area also suggests a functional space rather than a social one, further reducing its suitability for the activity.",
+  "_meta": {
+    "image_id": "ai_015_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.31,
+    "attempt": 1
+  }
+}

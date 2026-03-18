@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "low horizontal rest surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The low horizontal rest surface is not suitable for sleep, as it lacks the necessary height and comfort for a comfortable sleep position."
+    },
+    {
+      "name": "no bed or mattress",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed or mattress present, which are essential for sleep."
+    },
+    {
+      "name": "no privacy",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout and lack of walls or dividers make it difficult to achieve privacy, which is important for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The absence of windows makes it difficult to control light levels, which can affect sleep quality."
+    },
+    {
+      "name": "no curtains or blinds",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of curtains or blinds makes it difficult to control light levels, which can affect sleep quality."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of furniture makes it difficult to create a comfortable sleep environment."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not well-suited for sleep (Primary). There is no bed or mattress, no privacy, no windows, and no furniture, making it difficult to create a comfortable sleep environment. The low horizontal rest surface is also not suitable for sleep.",
+  "_meta": {
+    "image_id": "ai_036_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.08,
+    "attempt": 1
+  }
+}

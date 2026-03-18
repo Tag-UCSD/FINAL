@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large white sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large white sofa provides ample seating space for a solo user to sit and work."
+    },
+    {
+      "name": "White coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white coffee table can be used to place a laptop and other necessary items for computer work."
+    },
+    {
+      "name": "Rug under the coffee table",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug adds comfort and insulation under the coffee table, making it more suitable for prolonged sitting."
+    },
+    {
+      "name": "Ceiling-mounted lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The ceiling-mounted lighting provides even illumination, reducing shadows and glare on the workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (Solo) due to ample seating, a functional coffee table, comfortable flooring, and good lighting.",
+  "_meta": {
+    "image_id": "ai_014_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_014_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.85,
+    "attempt": 2
+  }
+}

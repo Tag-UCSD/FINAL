@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops forming U-shape",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+    },
+    {
+      "name": "large side-by-side refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Refrigerator completes the stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge work triangle, the standard efficient cooking workflow."
+    },
+    {
+      "name": "six-burner gas range with range hood overhead",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A multi-burner range is the central cooking appliance; the overhead hood signals functional kitchen infrastructure."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops forming U-shape",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+    },
+    {
+      "name": "large side-by-side refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Refrigerator completes the stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge work triangle, the standard efficient cooking workflow."
+    },
+    {
+      "name": "six-burner gas range with range hood overhead",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A multi-burner range is the central cooking appliance; the overhead hood signals functional kitchen infrastructure."
+    }
+  ],
+  "reasoning_summary": "This is a modern kitchen with essential cooking affordances such as a stove, sink, and refrigerator. However, it lacks hard prep surfaces and storage space, which are crucial for daily cooking. The space is marginally adequate for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.1,
+    "attempt": 1
+  }
+}

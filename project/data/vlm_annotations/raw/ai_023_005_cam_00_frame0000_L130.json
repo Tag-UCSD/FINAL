@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The arrangement of chairs and tables encourages conversation and interaction."
+    },
+    {
+      "name": "round tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Round tables facilitate conversation by allowing all participants to face each other."
+    },
+    {
+      "name": "stained glass windows",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Stained glass adds a pleasant, inviting ambiance conducive to social interaction."
+    },
+    {
+      "name": "chandelier",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chandelier provides ambient lighting, enhancing the social atmosphere."
+    },
+    {
+      "name": "arched ceilings",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Architectural features like arched ceilings can create a more intimate and cozy atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation and hangouts. The seating arrangement, round tables, and stained glass windows contribute positively to the social atmosphere. However, the presence of arches and chandeliers also suggests a more formal setting, which slightly undermines the casual nature of the space.",
+  "_meta": {
+    "image_id": "ai_023_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.73,
+    "attempt": 1
+  }
+}

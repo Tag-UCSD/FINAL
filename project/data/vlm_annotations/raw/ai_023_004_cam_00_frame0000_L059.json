@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "grand piano",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A grand piano is a musical instrument designed for playing music, not sleeping."
+    },
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A hardwood floor is hard and cold, not suitable for sleeping."
+    },
+    {
+      "name": "arched windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Architectural features like arches can create drafts and noise, disrupting sleep."
+    },
+    {
+      "name": "sunlight streaming through windows",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Sunlight can be bright and disruptive, especially when combined with the hard floor and drafty windows."
+    }
+  ],
+  "reasoning_summary": "The presence of a grand piano, hard floor, arches, and sunlight streaming through windows makes this space poorly suited for primary sleep. While the space is large and open, the negative factors outweigh the positive, resulting in a moderate score of 3.",
+  "_meta": {
+    "image_id": "ai_023_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.19,
+    "attempt": 1
+  }
+}

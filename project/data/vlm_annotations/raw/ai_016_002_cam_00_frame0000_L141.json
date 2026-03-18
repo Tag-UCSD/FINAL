@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "several round tables with tablecloths",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple round tables with tablecloths obstructs the open floor space required for yoga practice."
+    },
+    {
+      "name": "chandelier hanging from ceiling",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chandelier hanging from the ceiling obstructs the open floor space required for yoga practice."
+    },
+    {
+      "name": "curtains around windows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The curtains around the windows obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "floor is covered with carpet",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The carpeted floor is not suitable for yoga practice as it can be slippery and lacks the firmness required for stability."
+    },
+    {
+      "name": "chairs around tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs around the tables obstruct the open floor space required for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuitable for yoga or stretching due to the presence of multiple round tables with tablecloths, a chandelier hanging from the ceiling, curtains around the windows, a carpeted floor, and chairs around the tables. The open floor space required for yoga practice is obstructed by these objects, making it impossible to perform yoga or stretching in this space.",
+  "_meta": {
+    "image_id": "ai_016_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.36,
+    "attempt": 1
+  }
+}

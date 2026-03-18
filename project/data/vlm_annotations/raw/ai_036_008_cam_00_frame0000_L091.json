@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large wooden conference table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large table is not suitable for individual computer work as it lacks a dedicated workspace for a single user."
+    },
+    {
+      "name": "several chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Multiple chairs around the table suggest a collaborative or group work environment rather than a solo workspace."
+    },
+    {
+      "name": "open office layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open office layout with multiple desks and chairs suggests a collaborative environment, which is less suitable for solo computer work."
+    },
+    {
+      "name": "lack of dedicated workstations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no dedicated workstations with desks and chairs arranged for individual use, making it difficult to set up a solo workspace."
+    },
+    {
+      "name": "no personal flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a flat work surface at sitting height is a significant barrier to setting up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to its open office layout, lack of dedicated workstations, and the presence of multiple chairs around a large table. The environment is more suited to collaborative work rather than individual computer tasks.",
+  "_meta": {
+    "image_id": "ai_036_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.11,
+    "attempt": 1
+  }
+}

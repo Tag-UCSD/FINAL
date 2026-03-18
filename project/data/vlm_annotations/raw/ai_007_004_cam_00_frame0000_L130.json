@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Towels are typically associated with personal hygiene and are not conducive to social interaction."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sinks are functional objects used for washing hands and are not suitable for social conversation."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Toilets are private spaces used for personal hygiene and are not conducive to social interaction."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bright lighting is typically associated with task-oriented environments and is not conducive to social conversation."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is merged with the wall, creating a closed-off feeling that is not conducive to social interaction."
+    },
+    {
+      "name": "mirror-stuff",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirrors reflect the ceiling and walls, creating a closed-off feeling that is not conducive to social interaction."
+    }
+  ],
+  "reasoning_summary": "This bathroom is not ideally suited for casual conversation / hangout due to the presence of functional objects like sinks, toilets, and lighting that are not conducive to social interaction. The closed-off feeling created by the ceiling and mirrors further undermines the social atmosphere. A score of 4 indicates that while the space is not completely unsuitable, it is not well-suited for the intended activity.",
+  "_meta": {
+    "image_id": "ai_007_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.78,
+    "attempt": 1
+  }
+}

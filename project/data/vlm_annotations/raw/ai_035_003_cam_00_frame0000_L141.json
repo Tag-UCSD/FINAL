@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, creating a bright and inviting atmosphere conducive to yoga."
+    },
+    {
+      "name": "Bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is present but not used for yoga, which could be seen as a distraction."
+    },
+    {
+      "name": "Rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A rug can provide a soft surface for yoga mats, enhancing comfort and safety."
+    }
+  ],
+  "reasoning_summary": "The scene is highly suitable for yoga due to the large window allowing natural light and the presence of a rug. However, the bed might be a distraction.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.21,
+    "attempt": 2
+  }
+}

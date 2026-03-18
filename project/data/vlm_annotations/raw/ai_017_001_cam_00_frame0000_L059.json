@@ -1,0 +1,86 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep as it lacks back support and is not designed for sleeping."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor is not suitable for sleep as it is hard and lacks comfort."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No bed present, which is essential for sleep."
+    },
+    {
+      "name": "no pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No pillows present, which are essential for sleep."
+    },
+    {
+      "name": "no blankets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No blankets present, which are essential for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows present, which are essential for natural light and ventilation."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No curtains present, which are essential for light control and privacy."
+    },
+    {
+      "name": "no nightstand",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No nightstand present, which is essential for placing items like lamps and books."
+    },
+    {
+      "name": "no lamp",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No lamp present, which is essential for providing light for reading and relaxation."
+    },
+    {
+      "name": "no storage",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No storage present, which is essential for keeping personal items."
+    }
+  ],
+  "reasoning_summary": "The indoor scene does not support the activity 'Sleep (Primary)' as there is no bed, pillows, blankets, windows, curtains, nightstand, lamp, or storage. The presence of a couch and floor indicates a lack of comfort and support for sleep.",
+  "_meta": {
+    "image_id": "ai_017_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.55,
+    "attempt": 1
+  }
+}

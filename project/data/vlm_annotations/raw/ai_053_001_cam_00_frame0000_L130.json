@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is designed for formal lectures, not casual conversations. The rows of seats face forward, not each other, making it difficult for people to engage in a social setting."
+    },
+    {
+      "name": "seats",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seats are designed for formal listening, not social interaction. They lack armrests and are not designed for comfort or conversation."
+    },
+    {
+      "name": "no central shared surface",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no central shared surface like a coffee table to facilitate conversation and social interaction."
+    },
+    {
+      "name": "no lighting design for social interaction",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is focused on the front of the room, likely for the lecturer, not for creating a social atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is designed for formal lectures rather than casual conversations. The seating arrangement, lack of central shared surfaces, and lighting design all contribute to a negative score for this activity. A score of 1 would require significant changes to the space to make it suitable for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_053_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.59,
+    "attempt": 1
+  }
+}

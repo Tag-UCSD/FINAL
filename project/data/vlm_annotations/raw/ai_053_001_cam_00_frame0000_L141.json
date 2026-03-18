@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of seats are arranged in a way that would obstruct any open floor space necessary for yoga practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga practice, providing a firm, non-slip surface."
+    },
+    {
+      "name": "several rows of seats",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple rows of seats indicates a space designed for lectures or presentations, not for yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "The space is designed for lectures or presentations, indicated by the rows of seats and the lack of open floor space. While the hardwood flooring is suitable for yoga, the seating arrangement and the overall purpose of the space make it unsuitable for yoga or stretching.",
+  "_meta": {
+    "image_id": "ai_053_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.0,
+    "attempt": 1
+  }
+}

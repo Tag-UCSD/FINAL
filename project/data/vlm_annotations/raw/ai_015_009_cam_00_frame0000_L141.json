@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bathroom setting",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a bathroom setting, with sinks and mirrors, is not conducive to yoga practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a firm, non-slip base surface suitable for yoga mat placement."
+    },
+    {
+      "name": "towel on counter",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A towel can be used for wiping sweat or as a prop in yoga practice."
+    },
+    {
+      "name": "vase on counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is not a typical item found in a yoga studio and could be considered a distraction."
+    }
+  ],
+  "reasoning_summary": "The image shows a bathroom setting with sinks and mirrors, which is not ideal for yoga practice. However, the hardwood flooring and the presence of a towel suggest that the space could potentially be adapted for yoga if the bathroom setting were removed or rearranged.",
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.41,
+    "attempt": 1
+  }
+}

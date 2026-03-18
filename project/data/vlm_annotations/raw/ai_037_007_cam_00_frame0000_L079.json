@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "chalkboard wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chalkboard wall is not a cooking appliance or utensil, but it can be used to plan meals and grocery lists, which is helpful for daily cooking."
+    },
+    {
+      "name": "wooden dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden dining table provides a hard surface for food preparation and can be used as a temporary workspace."
+    },
+    {
+      "name": "vase with flowers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The vase with flowers is decorative and does not contribute to the cooking process."
+    },
+    {
+      "name": "bowl of grapes",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bowl of grapes can be used for food preparation and as a snack."
+    },
+    {
+      "name": "cup with tea",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The cup of tea can be used for hydration and comfort while cooking."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for daily cooking due to the presence of a chalkboard wall, which can be used for meal planning, and a wooden dining table, which can serve as a temporary workspace. However, the presence of decorative items like the vase with flowers and the bowl of grapes, as well as the cup of tea, suggests that the space is more focused on dining and relaxation rather than active cooking.",
+  "_meta": {
+    "image_id": "ai_037_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.56,
+    "attempt": 1
+  }
+}

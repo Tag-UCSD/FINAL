@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space for yoga practice."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a suitable surface for yoga mat placement."
+    },
+    {
+      "name": "mirror-stuff",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The mirror can be used for self-assessment and posture correction during yoga."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is a potential obstacle to clear floor space for yoga."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting appears to be sufficient for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for yoga, with a bed and counter acting as obstacles to clear floor space. The wooden floor and mirror are positive features, but the presence of these objects limits the space's suitability for yoga practice.",
+  "_meta": {
+    "image_id": "ai_048_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.11,
+    "attempt": 1
+  }
+}

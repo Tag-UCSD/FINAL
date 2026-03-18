@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is present, but it is not suitable for casual conversation due to its size and position."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the space, providing a soft surface for sitting."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A floor lamp provides ambient lighting, creating a comfortable atmosphere."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A chair is available for seating, although it is not directly facing the bed."
+    }
+  ],
+  "reasoning_summary": "The presence of a bed and a rug suggests a bedroom setting, which is not ideal for casual conversation. However, the floor lamp and chair provide some positive aspects for a hangout, but the lack of a direct seating arrangement and the presence of a bed make this a marginally adequate space for casual conversation.",
+  "_meta": {
+    "image_id": "ai_010_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.3,
+    "attempt": 1
+  }
+}

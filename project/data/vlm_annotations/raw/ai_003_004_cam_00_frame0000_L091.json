@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "desk with lamp",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk provides a flat surface for a computer and lamp for focused work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chair is ergonomic and positioned at the desk, suitable for long periods of computer use."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light can reduce the need for artificial lighting, potentially improving visual comfort."
+    },
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a bed suggests a multi-purpose room, which may be less conducive to focused work."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Books on the shelves indicate a knowledge-oriented environment, which is supportive of computer work."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there is a desk and chair suitable for work, the presence of a bed and the multi-purpose nature of the room suggest it may not be as conducive to focused work compared to a dedicated home office.",
+  "_meta": {
+    "image_id": "ai_003_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.93,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling beams obstruct the view and create a cluttered feeling, which can be distracting for focused work."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brick wall is not smooth or flat, which could make it difficult to set up a flat surface for a computer workstation."
+    },
+    {
+      "name": "red pipes",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The red pipes are visually distracting and do not contribute to a professional or focused workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of ceiling beams and a brick wall obstructs the view and creates a cluttered feeling, which can be distracting. Additionally, the red pipes are visually distracting and do not contribute to a professional or focused workspace. However, the absence of other potential distractions and the presence of natural light through the windows suggest that this space could potentially support solo computer work if these visual distractions were addressed.",
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.06,
+    "attempt": 1
+  }
+}

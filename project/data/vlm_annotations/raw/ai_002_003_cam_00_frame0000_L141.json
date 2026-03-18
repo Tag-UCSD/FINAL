@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for stretching without obstructions."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft lighting creates a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "couches and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches and chairs block the open floor space and create visual clutter."
+    }
+  ],
+  "reasoning_summary": "The open floor space and soft lighting support yoga, but the presence of couches and chairs obstructs the open area and creates visual clutter, reducing the overall suitability to 3 out of 7.",
+  "_meta": {
+    "image_id": "ai_002_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.8,
+    "attempt": 1
+  }
+}

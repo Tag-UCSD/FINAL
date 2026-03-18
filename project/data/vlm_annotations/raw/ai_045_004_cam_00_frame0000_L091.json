@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and is not suitable for prolonged use."
+    },
+    {
+      "name": "low table",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low table is not suitable for placing a laptop or keyboard, making it difficult to set up a proper workstation."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The bookshelf contains books and magazines, which could be useful for reference material during computer work."
+    },
+    {
+      "name": "wall sconce",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wall sconce provides directed task lighting, which is beneficial for computer work."
+    },
+    {
+      "name": "plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The plants add a touch of greenery and can improve the ambiance, although they do not directly support computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is a bookshelf and a wall sconce that could support some aspects of computer work, the presence of a bed and a low table makes it difficult to set up a proper workstation. The plants add a pleasant touch but do not contribute significantly to the suitability of the space for computer work.",
+  "_meta": {
+    "image_id": "ai_045_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.39,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "yellow cushion on sofa",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cushion on the sofa is not suitable for prolonged sitting, making it unsuitable for computer work."
+    },
+    {
+      "name": "white vertical blinds",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vertical blinds can obstruct light and create shadows, which may be distracting for computer work."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling lights can cast shadows on the computer screen, potentially causing glare and distraction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The large dining table and cushioned sofa are not suitable for a workstation, and the white vertical blinds and ceiling lights may create distractions and glare. However, the presence of a sofa and dining table suggests potential for rearrangement to create a more suitable workspace.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.87,
+    "attempt": 1
+  }
+}

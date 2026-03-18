@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Black and white color scheme",
+      "type": "color",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The monochromatic color scheme may make it difficult to focus on the body's alignment during yoga."
+    },
+    {
+      "name": "Minimalist layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The minimalist layout provides ample space for movement and allows for a clear view of the surroundings."
+    },
+    {
+      "name": "Hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be slippery and uncomfortable for yoga practice, especially without proper footwear."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga/stretching due to the monochromatic color scheme and hard flooring, but the minimalist layout provides ample space for movement.",
+  "_validation_errors": [
+    "indicators[0].type invalid: 'color' (must be one of {'spatial', 'layout', 'surface', 'object', 'lighting'})"
+  ],
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.75,
+    "attempt": 2
+  }
+}

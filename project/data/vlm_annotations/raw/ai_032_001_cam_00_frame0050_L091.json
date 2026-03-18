@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 1,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "embossed wall panel",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The embossed wall panel is a non-flat surface, making it unsuitable for placing a flat work surface or laptop."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuitable for computer work (solo). The embossed wall panel is a non-flat surface, making it impossible to set up a flat work surface or laptop. This is the lowest possible score for this activity.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 6.18,
+    "attempt": 1
+  }
+}

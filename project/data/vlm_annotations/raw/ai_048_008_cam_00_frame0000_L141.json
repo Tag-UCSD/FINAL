@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "yoga mat on floor",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A yoga mat is present, but it is not unrolled and is partially obscured by a cushion."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is enough open space on the floor to accommodate a yoga mat and some stretching."
+    },
+    {
+      "name": "pillow on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A pillow is on the floor, which could be a hazard if someone were to do yoga or stretch."
+    },
+    {
+      "name": "chair in room",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A chair is in the room, which could obstruct the open floor space needed for yoga."
+    },
+    {
+      "name": "cushion on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A cushion is on the floor, which could be a hazard if someone were to do yoga or stretch."
+    }
+  ],
+  "reasoning_summary": "The room has some open floor space suitable for yoga, but there are several objects on the floor that could pose a risk. The presence of a chair and cushion on the floor also limits the usability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_048_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.36,
+    "attempt": 1
+  }
+}

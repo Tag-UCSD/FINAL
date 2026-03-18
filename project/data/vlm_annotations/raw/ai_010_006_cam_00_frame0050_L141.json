@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bath tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bath tub is a significant obstacle to yoga practice, requiring removal or rearrangement to create a clear floor space."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a sink in close proximity to the bath tub further obstructs the clear floor space needed for yoga."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a small but noticeable object that could be easily knocked over, posing a risk during yoga practice."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles on the floor can be easily knocked over, posing a risk during yoga practice."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be used to monitor posture and alignment during yoga practice."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Indirect lighting from the ceiling can create a calming atmosphere suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a bath tub, sink, and small objects like a vase and bottles, which obstruct the clear floor space needed for yoga. However, the mirror and indirect lighting contribute positively to the atmosphere and posture monitoring, respectively.",
+  "_meta": {
+    "image_id": "ai_010_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.3,
+    "attempt": 1
+  }
+}

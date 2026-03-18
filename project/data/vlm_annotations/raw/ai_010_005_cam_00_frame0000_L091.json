@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting during computer work."
+    },
+    {
+      "name": "Wooden floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "A wooden floor can be comfortable to walk on, but may require cleaning more frequently than other surfaces."
+    },
+    {
+      "name": "Bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a bed in the room may lead to distractions or interruptions during computer work."
+    }
+  ],
+  "reasoning_summary": "The room is well-suited for computer work due to its large windows and wooden floor, but the presence of a bed could be a distraction.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_010_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.12,
+    "attempt": 2
+  }
+}

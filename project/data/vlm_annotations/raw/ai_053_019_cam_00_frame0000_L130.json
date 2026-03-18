@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "long wooden table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long table is too narrow for comfortable conversation and lacks a central shared surface for objects."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is too sparse and does not form a sociopetal cluster conducive to conversation."
+    },
+    {
+      "name": "whiteboard",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The whiteboard is not suitable for casual conversation as it is typically used for presentations or brainstorming sessions."
+    },
+    {
+      "name": "glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass partition obstructs visual connection and makes the space feel more formal and less open."
+    },
+    {
+      "name": "overhead lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The overhead lighting is too bright and clinical, creating an environment that is not conducive to a relaxed social atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the lack of a sociopetal seating arrangement, the presence of a whiteboard, and the bright overhead lighting. The long table and sparse seating arrangement further undermine the potential for comfortable conversation.",
+  "_meta": {
+    "image_id": "ai_053_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.36,
+    "attempt": 1
+  }
+}

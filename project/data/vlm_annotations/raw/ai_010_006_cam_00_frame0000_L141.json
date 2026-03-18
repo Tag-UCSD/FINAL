@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bath tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bath tub is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "bottle",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is obstructed by the bath tub, sink, towel, vase, and bottle, making it unsuitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The presence of a bath tub, sink, towel, vase, and bottle obstructs the floor, making it unsuitable for yoga practice. The score of 4 reflects the significant obstacles present, despite the potential for some open space around these objects.",
+  "_meta": {
+    "image_id": "ai_010_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.56,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table is not suitable for sleep because it is too large and obstructs the view of the statue and the pool."
+    },
+    {
+      "name": "statue",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The statue is not suitable for sleep because it is too large and obstructs the view of the pool and the table."
+    },
+    {
+      "name": "pool",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The pool is not suitable for sleep because it is too large and obstructs the view of the statue and the table."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs are not suitable for sleep because they are too large and obstruct the view of the pool and the table."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep because it has too many objects and spatial features that obstruct the view of the pool and the table. The presence of a large pool and chairs also makes it difficult to find a suitable place to sleep. The score is 2 because there are no positive indicators present.",
+  "_meta": {
+    "image_id": "ai_009_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.25,
+    "attempt": 1
+  }
+}

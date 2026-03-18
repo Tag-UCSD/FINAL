@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "books on the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Books on the table suggest a casual setting rather than a dedicated workspace."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for ergonomic support, which is crucial for extended computer work."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling lights can create glare on computer screens, reducing visibility and comfort."
+    },
+    {
+      "name": "open kitchen area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open kitchen area suggests a shared living space, which is not conducive to focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a dining table, books, and a chair suggests a casual, non-work-focused environment. The ceiling lights and open kitchen area further detract from the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_015_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.08,
+    "attempt": 1
+  }
+}

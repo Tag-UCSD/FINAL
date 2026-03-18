@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, potentially improving mood and alertness."
+    },
+    {
+      "name": "Floor tiles",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The floor tiles are smooth and neutral, which can be comfortable to walk on but might not be ideal for sleeping."
+    },
+    {
+      "name": "Bathroom fixtures",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of bathroom fixtures suggests a secondary use of the space, which could disrupt the primary sleep experience."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for sleep (primary) due to the presence of bathroom fixtures and the potential disruption caused by the large window allowing natural light.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_039_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.23,
+    "attempt": 2
+  }
+}

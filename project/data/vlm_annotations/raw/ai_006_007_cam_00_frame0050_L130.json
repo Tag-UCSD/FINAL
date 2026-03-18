@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is not suitable for casual conversation due to its primary function as a sleeping area."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A rug is not conducive to conversation as it is typically associated with a private sleeping area."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A table is not suitable for casual conversation as it is typically used for dining or work."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are decorative items and do not contribute to a conversational setting."
+    }
+  ],
+  "reasoning_summary": "The presence of a bed, rug, table, and vases indicates that this space is primarily designed for sleeping and dining, not for casual conversation. The score of 4 reflects the marginal adequacy of the space for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_006_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.99,
+    "attempt": 1
+  }
+}

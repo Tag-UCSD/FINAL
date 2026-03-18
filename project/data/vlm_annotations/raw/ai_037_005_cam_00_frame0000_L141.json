@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "white wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A smooth, flat, and non-slip surface is ideal for yoga practice."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too close to the seating area and could be a tripping hazard."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too close to the table and could be a tripping hazard."
+    },
+    {
+      "name": "white wall",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A clean, uncluttered wall is suitable for a yoga studio."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too close to the seating area and could be a tripping hazard."
+    },
+    {
+      "name": "white wall",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A clean, uncluttered wall is suitable for a yoga studio."
+    }
+  ],
+  "reasoning_summary": "The white wooden floor is suitable for yoga practice, but the close proximity of the white chairs and dining table to the seating area could pose a tripping hazard. The white wall is clean and uncluttered, making it suitable for a yoga studio. Overall, the space is marginally adequate for yoga practice due to the potential tripping hazards.",
+  "_meta": {
+    "image_id": "ai_037_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.34,
+    "attempt": 1
+  }
+}

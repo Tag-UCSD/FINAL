@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "long wooden dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The long wooden dining table is not suitable for sleeping, as it lacks a comfortable surface and is too large to fit into a typical bedroom."
+    },
+    {
+      "name": "empty chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The empty chairs around the table suggest that the space is currently not being used for sleeping, which is necessary for a primary sleep affordance."
+    },
+    {
+      "name": "hard floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard floor-wood is not suitable for sleeping, as it is not comfortable and can be cold."
+    },
+    {
+      "name": "no bed or mattress",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed or mattress present, which is essential for primary sleep."
+    },
+    {
+      "name": "no curtains or window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no curtains or window to block out light, which is important for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for primary sleep. There is no bed or mattress, no curtains or window to block out light, and the hard floor-wood and lack of furniture make it unsuitable for sleeping.",
+  "_meta": {
+    "image_id": "ai_008_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.61,
+    "attempt": 1
+  }
+}

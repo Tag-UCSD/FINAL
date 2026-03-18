@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Couches provide ample seating for multiple people."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A table can be used for placing drinks and snacks."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Plants add a touch of nature and life to the space."
+    },
+    {
+      "name": "arched doorway",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The archway provides a focal point and a sense of entry."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A vase can be used for decorative purposes or to hold flowers."
+    },
+    {
+      "name": "fountain",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A fountain adds a calming element to the space."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation and hangouts, featuring comfortable seating, a central table, and decorative elements like plants and a fountain. The score of 6 indicates it's very close to being ideally suited, but could benefit from more direct social props like drinks and snacks.",
+  "_meta": {
+    "image_id": "ai_031_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.91,
+    "attempt": 1
+  }
+}

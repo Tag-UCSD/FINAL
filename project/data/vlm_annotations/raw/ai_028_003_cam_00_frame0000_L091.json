@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "table with yellow tablecloth",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and lacks a flat surface suitable for a laptop or keyboard."
+    },
+    {
+      "name": "chair next to the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended sitting, which is necessary for computer work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is insufficient for extended computer work, as it is too dim and lacks task illumination."
+    },
+    {
+      "name": "open doors and windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open doors and windows allow distractions and reduce privacy, which are important for focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The small table and chair are not suitable for extended use, and the lighting is insufficient for prolonged screen work. The open doors and windows contribute to distractions and lack of privacy, which are crucial for focused solo work.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.59,
+    "attempt": 1
+  }
+}

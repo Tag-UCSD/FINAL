@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table occupies a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "yellow chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The yellow chairs are too close to the dining table, making it difficult to move around without bumping into them."
+    },
+    {
+      "name": "glass table top",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The glass table top is slippery and uneven, which could be dangerous for yoga practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable and non-slip surface for yoga mat placement."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is some open floor space available for yoga practice, but it is limited."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of windows means there is no natural light, which is important for creating a calming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially suitable for yoga practice, with some open floor space available and hardwood flooring providing a stable surface. However, the presence of a dining table, chairs, and limited open space make it challenging to create a dedicated yoga area. The absence of windows also limits the ability to create a calming atmosphere through natural light.",
+  "_meta": {
+    "image_id": "ai_008_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.49,
+    "attempt": 1
+  }
+}

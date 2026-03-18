@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Modern geometric wall art",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The modern geometric wall art adds a contemporary feel to the space, which can be appealing for casual conversations."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wooden floor provides a neutral surface that is suitable for casual seating options."
+    },
+    {
+      "name": "Ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling lights provide ample lighting, which is essential for a comfortable hangout environment."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to its modern and stylish design, but lacks specific seating arrangements and additional amenities.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.32,
+    "attempt": 2
+  }
+}

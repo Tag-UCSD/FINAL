@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are too high to easily access during yoga."
+    },
+    {
+      "name": "Sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is too close to the cabinets, making it difficult to move around."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair available for sitting during yoga."
+    },
+    {
+      "name": "Towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No towel is visible for wiping sweat after yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of cabinets, sink, and lack of seating and towel.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.02,
+    "attempt": 2
+  }
+}

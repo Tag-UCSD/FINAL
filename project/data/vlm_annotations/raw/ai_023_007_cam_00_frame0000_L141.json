@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor appears to be smooth and hard, which might be uncomfortable for yoga practice."
+    },
+    {
+      "name": "Door",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open door allows light to enter but also suggests potential distractions or drafts."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is a chair in the adjacent room, which could be a distraction or a source of discomfort if used during yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga/stretching due to the smooth, hard floor, potential distractions from the open door, and the presence of a chair in the adjacent room.",
+  "_meta": {
+    "image_id": "ai_023_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.09,
+    "attempt": 2
+  }
+}

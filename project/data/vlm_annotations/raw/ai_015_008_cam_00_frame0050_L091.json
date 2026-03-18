@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a flat surface at sitting height makes it impossible to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair or seating arrangement suitable for extended computer use."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and does not provide sufficient task illumination for screen work."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The space is open and lacks a dedicated area for focused work."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is largely unsuitable for computer work (solo). The lack of a flat work surface, ergonomic seating, task lighting, and a dedicated workspace layout makes it difficult to set up a productive workstation. The presence of a bench and potted plant suggests a more casual, less work-focused environment.",
+  "_meta": {
+    "image_id": "ai_015_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.6,
+    "attempt": 1
+  }
+}

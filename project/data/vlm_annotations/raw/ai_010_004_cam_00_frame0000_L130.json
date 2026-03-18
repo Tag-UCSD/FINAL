@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "red sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A red sofa provides a comfortable seating area for conversation."
+    },
+    {
+      "name": "black coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A black coffee table offers a surface for placing drinks and small items during conversation."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large window allows natural light and a view, enhancing the social atmosphere."
+    },
+    {
+      "name": "red curtains",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Red curtains add color and warmth to the space, making it inviting for conversation."
+    },
+    {
+      "name": "red cabinet",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A red cabinet adds a pop of color and storage for small items."
+    },
+    {
+      "name": "black floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A black floor lamp provides ambient light, creating a cozy atmosphere for conversation."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation with a red sofa, black coffee table, large window, red curtains, red cabinet, and black floor lamp. However, the lack of a sociopetal seating arrangement and the presence of a television suggest a mixed use of the space, which slightly undermines the suitability for pure hangout.",
+  "_meta": {
+    "image_id": "ai_010_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.88,
+    "attempt": 1
+  }
+}

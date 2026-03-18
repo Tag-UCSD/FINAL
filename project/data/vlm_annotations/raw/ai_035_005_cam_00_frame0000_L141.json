@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is too large and takes up a significant portion of the room, leaving little space for yoga or stretching."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug is too small to accommodate a full yoga pose, such as a Downward Dog or Warrior."
+    }
+  ],
+  "reasoning_summary": "The room is not ideally suited for yoga or stretching due to the presence of a large bed and a small rug, which limit the available space for these activities.",
+  "_meta": {
+    "image_id": "ai_035_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 38.68,
+    "attempt": 2
+  }
+}

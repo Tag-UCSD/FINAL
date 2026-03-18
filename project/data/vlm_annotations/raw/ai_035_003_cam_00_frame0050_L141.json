@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space required for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is close to the bed and could be a tripping hazard if someone were to walk around the bed."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lamp provides a source of artificial light, which can be used for evening yoga sessions."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a bed and a nearby table, which create obstacles to clear floor space. However, the presence of a lamp suggests that the space could be used for evening yoga sessions.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.34,
+    "attempt": 1
+  }
+}

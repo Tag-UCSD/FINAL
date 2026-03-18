@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table is present, which can be used for food preparation and serving."
+    },
+    {
+      "name": "chairs around the dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs around the dining table provide seating for those preparing or eating food."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants are present, but they do not contribute to the cooking activity."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking as it has a dining table and chairs for food preparation and serving. However, the presence of potted plants does not contribute to the cooking activity and could be considered a distraction.",
+  "_meta": {
+    "image_id": "ai_030_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.25,
+    "attempt": 1
+  }
+}

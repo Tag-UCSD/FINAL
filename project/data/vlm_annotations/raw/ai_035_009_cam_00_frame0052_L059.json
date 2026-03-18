@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 7,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is large and comfortable, providing ample space for rest."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window allows natural light to enter, creating a pleasant atmosphere for sleep."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bookshelf provides storage for books, which can be used for reading before sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for sleep (primary) due to the presence of a comfortable bed, natural light, and a bookshelf for reading.",
+  "_meta": {
+    "image_id": "ai_035_009_cam_00_frame0052",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_009\\images\\scene_cam_00_final_preview\\frame.0052.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.49,
+    "attempt": 2
+  }
+}

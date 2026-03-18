@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of seats are arranged in a way that does not facilitate comfortable sleeping positions."
+    },
+    {
+      "name": "lack of privacy",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout and lack of partitions make it difficult to maintain privacy, which is important for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary) due to the seating arrangement and lack of privacy.",
+  "_meta": {
+    "image_id": "ai_053_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.56,
+    "attempt": 2
+  }
+}

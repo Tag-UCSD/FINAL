@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar stools are designed for sitting and socializing, not for yoga practice."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bar counter is not suitable for yoga practice due to its height and lack of flexibility."
+    },
+    {
+      "name": "seating area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating area is designed for socializing and relaxation, not for yoga practice."
+    },
+    {
+      "name": "bar counter lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bright artificial lighting can be harsh and uncomfortable for yoga practice."
+    },
+    {
+      "name": "bar counter layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bar counter layout is designed for social interaction, not for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for yoga practice. The presence of bar stools, a bar counter, and a seating area all indicate a social setting rather than a space designed for yoga. The bright artificial lighting and the layout of the bar counter further suggest a social atmosphere rather than a tranquil one suitable for yoga.",
+  "_meta": {
+    "image_id": "ai_052_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.34,
+    "attempt": 1
+  }
+}

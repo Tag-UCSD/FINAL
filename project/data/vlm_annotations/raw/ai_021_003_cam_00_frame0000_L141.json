@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting helps create a calm and soothing atmosphere conducive to relaxation and focus during yoga."
+    },
+    {
+      "name": "Wooden floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "A wooden floor provides a stable surface for yoga poses and stretching exercises."
+    },
+    {
+      "name": "No obstructions",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The absence of obstructions like furniture or other equipment allows for unobstructed movement and positioning during yoga and stretching."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for yoga and stretching due to its large open area, soft lighting, stable wooden floor, and lack of obstructions.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.09,
+    "attempt": 2
+  }
+}

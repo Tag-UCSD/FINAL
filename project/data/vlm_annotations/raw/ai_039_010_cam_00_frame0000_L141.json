@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a tub in the middle of the room obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "bathroom layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bathroom layout with a bathtub in the middle and a shower area on one side makes it difficult to create an open floor space suitable for yoga."
+    },
+    {
+      "name": "tiled walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Tiled walls are clean and easy to maintain, which is beneficial for a bathroom setting."
+    },
+    {
+      "name": "skylight",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A skylight provides natural light, which can create a calming atmosphere for yoga."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is an open floor space in the center of the room, which is suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The bathroom layout with a bathtub in the middle and a shower area on one side makes it difficult to create an open floor space suitable for yoga. However, the open floor space in the center of the room and the presence of a skylight contribute positively to the suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_039_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.04,
+    "attempt": 1
+  }
+}

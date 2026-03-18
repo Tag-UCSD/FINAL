@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several curved wooden tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curved tables are not flat and do not provide a suitable surface for computer work."
+    },
+    {
+      "name": "several swivel chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Swivel chairs are not ergonomic and do not provide a suitable seating arrangement for computer work."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat personal work surface available for setting up a computer workstation."
+    },
+    {
+      "name": "no dedicated lighting for task work",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no dedicated lighting for task work, which is essential for reducing eye strain and improving visibility."
+    },
+    {
+      "name": "no dedicated layout for focused work",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout does not support focused work, as it is open and lacks a dedicated workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). There are no flat surfaces or ergonomic seating, and no dedicated lighting or layout for focused work. However, the presence of several curved wooden tables and swivel chairs suggests some potential for adaptation, though it would require significant rearrangement.",
+  "_meta": {
+    "image_id": "ai_053_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.9,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended computer use."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A book is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A vase is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "flower",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A flower is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "apple",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "An apple is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A bowl is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A potted plant is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A sink is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A closed door provides some privacy, though it is not a dedicated workspace."
+    },
+    {
+      "name": "low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The layout is relatively simple and uncluttered, reducing distractions."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is a closed door providing some privacy and a low-distraction layout, the lack of a dedicated flat work surface and ergonomic seating significantly undermines the suitability for extended computer use.",
+  "_meta": {
+    "image_id": "ai_003_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.73,
+    "attempt": 1
+  }
+}

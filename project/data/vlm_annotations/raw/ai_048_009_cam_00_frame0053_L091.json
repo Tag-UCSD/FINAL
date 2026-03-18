@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "unstructured bed arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is unmade and cluttered, suggesting a lack of a dedicated workspace."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No chair or seating arrangement is visible that would support extended periods of sitting."
+    },
+    {
+      "name": "no dedicated lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting specifically directed at a workspace."
+    },
+    {
+      "name": "no organized storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No visible storage solutions for documents or electronic devices."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The unstructured bed arrangement and lack of a dedicated workspace make it difficult to set up a productive workstation. There is no flat surface at sitting height, no ergonomic seating, and no dedicated lighting for screen work. The absence of organized storage further undermines the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_048_009_cam_00_frame0053",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_009\\images\\scene_cam_00_final_preview\\frame.0053.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.24,
+    "attempt": 1
+  }
+}

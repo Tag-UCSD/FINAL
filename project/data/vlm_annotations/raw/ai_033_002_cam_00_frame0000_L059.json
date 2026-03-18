@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any resting surface makes this space unsuitable for sleep."
+    },
+    {
+      "name": "no privacy or acoustic enclosure",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open office layout with large windows and lack of walls or partitions makes this space unsuitable for sleep."
+    },
+    {
+      "name": "bright artificial lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright artificial lighting is incompatible with sleep and can disrupt circadian rhythms."
+    }
+  ],
+  "reasoning_summary": "This is a large, open office space with no bed or resting surface, no privacy or acoustic enclosure, and bright artificial lighting. The lack of any sleep-supportive features makes this space unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_033_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.35,
+    "attempt": 1
+  }
+}

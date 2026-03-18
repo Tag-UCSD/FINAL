@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.98,
+  "indicators": [
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hardwood floors are generally slippery and not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The hardwood floor is too slippery and not suitable for yoga practice. Therefore, the space is completely unsuitable for yoga / stretching.",
+  "_meta": {
+    "image_id": "ai_016_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.09,
+    "attempt": 1
+  }
+}

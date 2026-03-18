@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Dining tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Multiple dining tables provide ample seating for multiple people."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Comfortable chairs around each table for casual seating."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Adding greenery can make the space feel more inviting and relaxed."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting creates a warm and welcoming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its ample seating, comfortable chairs, and inviting lighting.",
+  "_meta": {
+    "image_id": "ai_012_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.23,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa provides ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A coffee table in the center of the room serves as a shared surface for conversation topics and refreshments."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement is sociopetal, with seats facing each other, conducive to group conversation."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting creates a more intimate and relaxed atmosphere suitable for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation / hangout. The large sofa and coffee table provide ample seating and a shared surface, while the sociopetal seating arrangement facilitates group conversation. However, the low lighting might be perceived as too dim for some users, potentially lowering the overall suitability.",
+  "_meta": {
+    "image_id": "ai_050_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_050_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.47,
+    "attempt": 1
+  }
+}

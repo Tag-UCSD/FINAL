@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright artificial lighting can disrupt sleep patterns and cause eye strain."
+    },
+    {
+      "name": "bench",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bench is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plant is not suitable for sleep due to its potential to attract pests and allergens."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Window allows natural light to enter, which can disrupt sleep patterns."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling is too high and open, which can make the space feel cold and unwelcoming."
+    },
+    {
+      "name": "wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wall is too high and open, which can make the space feel cold and unwelcoming."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor is too hard and flat, which can make the space feel cold and unwelcoming."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (primary). The presence of a couch, bench, chairs, and potted plant indicates a focus on other activities, while the bright artificial lighting, open window, and high ceiling contribute to an unwelcoming and potentially disruptive environment. The lack of a bed or other sleep-friendly furniture makes this space unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_003_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.51,
+    "attempt": 1
+  }
+}

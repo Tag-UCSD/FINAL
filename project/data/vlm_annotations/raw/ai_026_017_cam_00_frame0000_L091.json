@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space lacks a dedicated area for focused work, making it difficult to set up a workstation."
+    },
+    {
+      "name": "glass railings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass railings are not suitable for placing a laptop or other equipment, as they are not stable and could be easily broken."
+    },
+    {
+      "name": "low seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low seating is not suitable for prolonged computer work, as it does not provide proper back support and can lead to discomfort."
+    },
+    {
+      "name": "dark flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Dark flooring can make it difficult to see the screen in bright light conditions."
+    },
+    {
+      "name": "large windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Large windows allow natural light to enter, which can be beneficial for some tasks."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some positive aspects such as natural light from the large windows, the lack of a dedicated workspace, unstable glass railings, and low seating make it challenging to set up a comfortable and efficient workstation. The open space also makes it difficult to maintain privacy and focus.",
+  "_meta": {
+    "image_id": "ai_026_017_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_017\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.06,
+    "attempt": 1
+  }
+}

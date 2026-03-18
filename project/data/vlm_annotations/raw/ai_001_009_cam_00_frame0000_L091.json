@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Red furniture",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The color red can be stimulating, which might be beneficial for concentration."
+    },
+    {
+      "name": "Floor tiles",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Floor tiles are durable and easy to clean, which is practical for a workspace."
+    },
+    {
+      "name": "Ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ceiling lights provide even illumination, which is important for tasks requiring precision."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work (Solo) due to its large windows, red furniture, durable flooring, and good lighting.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_001_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.68,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Potted Plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant obstructs the view and could be distracting."
+    },
+    {
+      "name": "Wall",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wall does not provide any direct support for computer work."
+    }
+  ],
+  "reasoning_summary": "The presence of a potted plant obstructs the view and could be distracting, making the space marginally suitable for solo computer work.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.49,
+    "attempt": 2
+  }
+}

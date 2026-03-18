@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting and potentially reducing eye strain."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a more casual, leisurely atmosphere, which is generally less conducive to focused computer work."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to distractions and noise, which can negatively impact concentration during computer work."
+    },
+    {
+      "name": "lighting fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Lighting fixtures can provide task lighting, which is important for computer work."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While it has some positive aspects such as large windows and lighting fixtures, the presence of a couch and an open layout suggest a more casual and potentially distracting environment. The score reflects the mixed nature of the space, leaning towards being suitable but not ideal for focused computer work.",
+  "_meta": {
+    "image_id": "ai_029_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.94,
+    "attempt": 1
+  }
+}

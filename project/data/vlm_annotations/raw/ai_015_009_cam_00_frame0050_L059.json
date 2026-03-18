@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Black and white color scheme",
+      "type": "color",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The monochromatic color scheme may make the space feel less inviting and relaxing."
+    },
+    {
+      "name": "Minimalist design",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A minimalist layout can reduce distractions and promote relaxation."
+    },
+    {
+      "name": "Hard surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard surfaces like tiles and wood may not be as comfortable to touch compared to soft materials."
+    }
+  ],
+  "reasoning_summary": "The space has a minimalist design which can promote relaxation, but the hard surfaces and monochromatic color scheme may not be as conducive to sleep.",
+  "_validation_errors": [
+    "indicators[0].type invalid: 'color' (must be one of {'spatial', 'layout', 'surface', 'object', 'lighting'})"
+  ],
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.91,
+    "attempt": 2
+  }
+}

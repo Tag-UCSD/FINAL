@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "concrete floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Concrete floors are cold and hard, making them unsuitable for sleep."
+    },
+    {
+      "name": "concrete walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Concrete walls are cold and hard, making them unsuitable for sleep."
+    },
+    {
+      "name": "concrete ceiling",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Concrete ceilings are cold and hard, making them unsuitable for sleep."
+    },
+    {
+      "name": "no furniture or bedding",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No furniture or bedding indicates no resting surface or support for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows prevent natural light and views, essential for circadian alignment."
+    },
+    {
+      "name": "no lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No lighting makes it impossible to create a sleep-friendly environment."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). The hard, cold surfaces and lack of furniture or lighting make it impossible to create a comfortable and supportive environment for sleep.",
+  "_meta": {
+    "image_id": "ai_026_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.58,
+    "attempt": 1
+  }
+}

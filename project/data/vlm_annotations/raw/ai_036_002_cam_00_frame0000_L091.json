@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Dining tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Dining tables can be repurposed as workstations, providing ample surface area for computer work."
+    },
+    {
+      "name": "Bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Bookshelves provide storage for reference materials and personal items, enhancing productivity."
+    },
+    {
+      "name": "Ceiling beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ceiling beams add character and warmth to the space, creating a cozy atmosphere conducive to focused work."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for solo computer work due to its large windows, versatile dining tables, organized bookshelves, and warm, inviting atmosphere.",
+  "_meta": {
+    "image_id": "ai_036_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.79,
+    "attempt": 2
+  }
+}

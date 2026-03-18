@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large mirror can create a sense of openness and make the space feel larger."
+    },
+    {
+      "name": "Window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light to enter, creating a pleasant atmosphere for socializing."
+    },
+    {
+      "name": "Potted plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The potted plant adds a touch of nature and can make the space more inviting."
+    }
+  ],
+  "reasoning_summary": "The space has positive indicators such as a large mirror, a window, and a potted plant, but it lacks seating and other social amenities, which limits its suitability for a hangout.",
+  "_meta": {
+    "image_id": "ai_039_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.51,
+    "attempt": 2
+  }
+}

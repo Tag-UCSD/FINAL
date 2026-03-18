@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "long white desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A long desk is not conducive to casual conversation as it lacks a sociopetal layout and does not encourage face-to-face interaction."
+    },
+    {
+      "name": "black office chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A single black office chair is not suitable for a casual hangout as it lacks a companion seat for conversation."
+    },
+    {
+      "name": "book on desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A book on the desk is not conducive to casual conversation as it suggests a work or study environment rather than a social setting."
+    },
+    {
+      "name": "white fireplace mantle",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white fireplace mantle is not conducive to casual conversation as it suggests a formal setting rather than a casual hangout."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A mirror is not conducive to casual conversation as it suggests a formal setting rather than a casual hangout."
+    },
+    {
+      "name": "white curtains",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White curtains are not conducive to casual conversation as they suggest a formal setting rather than a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the presence of formal elements such as the fireplace mantle, mirror, and white curtains. The long desk and single office chair also suggest a work or study environment rather than a social setting. A score of 7 would require additional social props such as a sofa, armchairs, and a central coffee table to create a more inviting and sociable environment.",
+  "_meta": {
+    "image_id": "ai_033_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.84,
+    "attempt": 1
+  }
+}

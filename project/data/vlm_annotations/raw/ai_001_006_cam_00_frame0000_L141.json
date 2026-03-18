@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space for yoga practice."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring is suitable for yoga mat placement."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling height is not clearly visible, but it appears to be low, which could limit headroom during stretching."
+    },
+    {
+      "name": "window-blind",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Blinds can obstruct natural light and create shadows, which might be distracting during yoga."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets can be obstacles to clear floor space and might contain items that could be dangerous during yoga."
+    },
+    {
+      "name": "mirror-stuff",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can help practitioners monitor their posture during yoga."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A table can be a potential hazard during yoga practice."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from the window can be beneficial for mood and focus during yoga."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase can be a potential hazard during yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a bed and cabinets, which obstruct clear floor space. However, the wooden flooring and natural light from the window are positive factors. The low ceiling height and potential hazards from the table and vase are negative points. Overall, the score is 4 because the space is not ideal but could be made suitable with some rearrangement.",
+  "_meta": {
+    "image_id": "ai_001_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.16,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor is clear of furniture, allowing for easy movement and stretching."
+    },
+    {
+      "name": "large windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the large windows can create a calming atmosphere for yoga."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable and smooth surface for yoga mats."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement, while functional for dining, may limit the space available for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for yoga, with an unobstructed floor area and natural light from large windows. However, the seating arrangement may limit the available space for yoga practice.",
+  "_meta": {
+    "image_id": "ai_010_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.85,
+    "attempt": 1
+  }
+}

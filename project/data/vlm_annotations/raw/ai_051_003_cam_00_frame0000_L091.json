@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and could be used as a workspace, but it is not ergonomically suitable for extended periods of computer use."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a comfortable surface to place a laptop or keyboard."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural light coming through the window is bright and can help reduce eye strain."
+    },
+    {
+      "name": "window-blind",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window blinds can be adjusted to control the amount of light entering the room, which is beneficial for different tasks."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for computer work (Solo) due to the presence of a comfortable surface and natural lighting, but the bed is not ergonomically suitable for extended periods of use.",
+  "_meta": {
+    "image_id": "ai_051_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_051_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.98,
+    "attempt": 2
+  }
+}

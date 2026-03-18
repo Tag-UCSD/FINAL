@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large Indoor Plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large indoor plant provides a natural and calming atmosphere conducive to casual conversations."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be artificial and somewhat dim, which might make it less suitable for a hangout where natural light is preferred."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to the presence of a large indoor plant that adds a pleasant atmosphere, but the lighting could be improved to better suit a hangout setting.",
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.67,
+    "attempt": 2
+  }
+}

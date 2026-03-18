@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Frosted glass panels",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The frosted glass panels obstruct visibility and create a sense of enclosure, which can be conducive to sleep."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting can help create a calming atmosphere conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects for sleep, such as soft lighting, but also has negative aspects like frosted glass panels that obstruct visibility and create a sense of enclosure.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 39.04,
+    "attempt": 2
+  }
+}

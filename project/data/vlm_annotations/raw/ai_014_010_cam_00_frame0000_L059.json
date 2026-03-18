@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and lacks back support for comfortable sleep."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table obstructs view of the couch and makes it less inviting for sleep."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow light to enter, potentially disturbing sleep."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard floor is not comfortable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally suitable for primary sleep. The presence of a couch and coffee table obstructs the view of the couch, making it less inviting for sleep. Large windows allow light to enter, potentially disturbing sleep. The hard floor is not comfortable for sleep.",
+  "_meta": {
+    "image_id": "ai_014_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_014_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.58,
+    "attempt": 1
+  }
+}

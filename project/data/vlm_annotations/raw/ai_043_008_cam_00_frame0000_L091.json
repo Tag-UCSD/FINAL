@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The couch provides a comfortable seating option for prolonged computer use."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden flooring is easy to walk on and clean, which is convenient for a workspace."
+    },
+    {
+      "name": "Table-merged",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The table can be used to place a laptop or other work materials."
+    },
+    {
+      "name": "Cabinet-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The cabinet might be used for storage but does not directly support computer work."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for computer work (Solo) due to the presence of a comfortable seating option and a functional table, but lacks dedicated storage for work materials.",
+  "_meta": {
+    "image_id": "ai_043_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.31,
+    "attempt": 2
+  }
+}

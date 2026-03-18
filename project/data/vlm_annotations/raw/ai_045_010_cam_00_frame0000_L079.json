@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with sink and stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a central workspace for food preparation and cooking."
+    },
+    {
+      "name": "white cabinets and counter space",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets and counter space offer ample storage and work surface for daily cooking tasks."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hardwood flooring can be slippery when wet, making it less suitable for a kitchen environment."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can make the space feel cramped and less suitable for a kitchen."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a kitchen island with a sink and stove, ample storage and counter space, and a central workspace. However, the low ceiling height and hardwood flooring make it less suitable for a kitchen environment.",
+  "_meta": {
+    "image_id": "ai_045_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.49,
+    "attempt": 1
+  }
+}

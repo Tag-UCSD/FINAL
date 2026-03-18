@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Red wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The red wall can be perceived as too bold and may cause distraction."
+    },
+    {
+      "name": "Glass table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The glass table provides a clean and modern look, suitable for a casual hangout."
+    },
+    {
+      "name": "Speakers",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Speakers are present but do not directly contribute to the hangout atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space has a neutral to positive score for casual conversation/hangout due to the glass table and neutral speakers, but the red wall might be too bold for some users.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_001_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.78,
+    "attempt": 2
+  }
+}

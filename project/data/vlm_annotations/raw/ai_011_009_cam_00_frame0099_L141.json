@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large potted plant obstructs the space and makes it difficult to move around freely."
+    },
+    {
+      "name": "White walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white walls provide a clean and minimalistic backdrop, which can help in focusing on the practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga/stretching due to the obstruction caused by the large potted plant, but the clean and minimalistic environment can be beneficial for concentration.",
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.07,
+    "attempt": 2
+  }
+}

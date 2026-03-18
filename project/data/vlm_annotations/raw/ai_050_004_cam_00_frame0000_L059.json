@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not designed for sleep and is not suitable for sleeping."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table is not designed for sleep and is not suitable for sleeping."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting is not conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not well-suited for sleep (primary). There is no furniture specifically designed for sleep, and the lighting is too low for comfortable sleep.",
+  "_meta": {
+    "image_id": "ai_050_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_050_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.38,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not designed for sleep and is not suitable for sleeping."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Books are not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Refrigerator is not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sink is not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "window",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Window is not suitable for sleep and can be distracting."
+    },
+    {
+      "name": "tv",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Tv is not suitable for sleep and can be distracting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). There are no objects or features that support sleep, and the presence of distractions such as books, dining table, chair, refrigerator, sink, window, and tv make it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_036_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.58,
+    "attempt": 1
+  }
+}

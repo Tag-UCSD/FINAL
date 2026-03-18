@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual focus, making it less suitable for solo computer work."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter is not a flat work surface suitable for computer use, and its location suggests a social setting rather than a workspace."
+    },
+    {
+      "name": "high-traffic area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple seating areas and a bar counter indicates a high-traffic area, which is not conducive to focused solo work."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated workspace or desk area specifically designed for computer work, which is essential for solo work."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for extended computer use due to their height and lack of back support."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to the lack of a dedicated workspace, high-traffic area, and seating arrangement designed for social interaction rather than individual focus. The presence of a bar counter and bar stools further undermines the suitability for solo work.",
+  "_meta": {
+    "image_id": "ai_055_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.2,
+    "attempt": 1
+  }
+}

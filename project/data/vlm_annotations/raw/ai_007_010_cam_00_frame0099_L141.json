@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a toilet in the immediate vicinity can be considered a negative factor for yoga practice due to hygiene concerns and potential discomfort."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink's proximity to the toilet can create a sense of clutter and reduce the available space for yoga practice."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be beneficial for yoga practice as it allows practitioners to monitor their posture and alignment."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable and non-slip surface suitable for placing a yoga mat."
+    },
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The absence of furniture or other obstructions on the floor allows for a clear space for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga practice. While the hardwood flooring and unobstructed floor space are positive factors, the presence of a toilet and sink nearby can create a sense of clutter and discomfort, reducing the overall suitability for yoga.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.52,
+    "attempt": 1
+  }
+}

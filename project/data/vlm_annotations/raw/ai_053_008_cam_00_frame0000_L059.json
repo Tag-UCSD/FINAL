@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "long tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Long tables are not suitable for sleeping, as they lack a comfortable horizontal surface and do not provide a sense of enclosure."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is designed for meetings and conferences, not for sleeping, as it lacks a sense of enclosure and comfort."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring is not comfortable for sleeping and can be noisy."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    },
+    {
+      "name": "no personal storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No personal storage fixtures like a nightstand or closet are present, which are essential for a sleeping environment."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The long tables and seating arrangement are designed for meetings and conferences, not for sleeping. The hard flooring, lack of windows, and absence of personal storage make this environment unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_053_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.15,
+    "attempt": 1
+  }
+}

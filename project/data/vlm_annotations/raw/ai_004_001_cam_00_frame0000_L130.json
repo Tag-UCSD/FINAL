@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows multiple people to gather comfortably."
+    },
+    {
+      "name": "Soft seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soft seating provides a comfortable place for people to sit and converse."
+    },
+    {
+      "name": "Natural lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural lighting creates a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "Fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The fireplace adds warmth and a cozy atmosphere, making it ideal for casual hangouts."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its large open area, comfortable seating, natural lighting, and cozy fireplace.",
+  "_meta": {
+    "image_id": "ai_004_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.62,
+    "attempt": 2
+  }
+}

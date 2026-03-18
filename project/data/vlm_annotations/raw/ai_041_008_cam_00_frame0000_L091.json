@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large open space may lead to distractions and lack of privacy."
+    },
+    {
+      "name": "Marble floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The marble floor is clean and polished, but does not provide any specific support for computer work."
+    },
+    {
+      "name": "Yellow lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The yellow lighting provides a pleasant ambiance and can help reduce eye strain."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, which may not be conducive to focused computer work. However, the lighting is positive and can help create a comfortable environment.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_041_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_041_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.13,
+    "attempt": 2
+  }
+}

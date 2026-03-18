@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep as it lacks a backrest and is not designed for sleeping."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Table is not suitable for sleep as it is not designed for sleeping."
+    },
+    {
+      "name": "grass-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Grass outside the sliding glass doors is not suitable for sleep as it is not a suitable surface for sleeping."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plant is not suitable for sleep as it is not a suitable surface for sleeping."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are not suitable for sleep as they are not a suitable surface for sleeping."
+    },
+    {
+      "name": "floor-wood",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood floor is not suitable for sleep as it is not a suitable surface for sleeping."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a couch and table indicates that the space is primarily designed for other activities, such as sitting or dining, rather than sleeping. The grass outside and the potted plant suggest that the space is more likely to be used outdoors or for decoration rather than for sleep. The cabinets and wood floor also indicate that the space is not designed for sleeping.",
+  "_meta": {
+    "image_id": "ai_009_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.02,
+    "attempt": 1
+  }
+}

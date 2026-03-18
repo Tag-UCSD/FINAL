@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "long wooden conference table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long wooden conference table is too large and lacks a built-in surface for a single user, making it unsuitable for solo computer work."
+    },
+    {
+      "name": "white rolling chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White rolling chairs are not ergonomic and do not provide a comfortable sitting position for extended computer work."
+    },
+    {
+      "name": "lack of personal flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat personal work surface available for setting up a computer workstation."
+    },
+    {
+      "name": "no built-in power outlets",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No built-in power outlets make it difficult to connect a laptop or other devices."
+    },
+    {
+      "name": "no built-in desk lamp",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No built-in desk lamp makes it difficult to illuminate the workspace properly."
+    },
+    {
+      "name": "no built-in storage",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No built-in storage makes it difficult to organize personal items and reference materials."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to the lack of a personal flat work surface, ergonomic seating, and built-in power outlets and desk lamp. The long conference table and white rolling chairs are not suitable for solo work, and there is no built-in storage for personal items and reference materials.",
+  "_meta": {
+    "image_id": "ai_053_017_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_017\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.83,
+    "attempt": 1
+  }
+}

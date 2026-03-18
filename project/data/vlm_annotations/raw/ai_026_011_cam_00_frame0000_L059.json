@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "concrete walls and ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Concrete materials are cold and hard, making them unsuitable for sleep."
+    },
+    {
+      "name": "large skylight",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Large skylight allows natural light to enter, which can be disruptive to sleep patterns."
+    },
+    {
+      "name": "concrete hand sculptures",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Concrete sculptures are not conducive to sleep, as they are cold and hard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). The large skylight allows natural light to enter, which can be disruptive to sleep patterns. The cold, hard concrete materials and sculptures make the environment unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_026_011_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_011\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.39,
+    "attempt": 1
+  }
+}

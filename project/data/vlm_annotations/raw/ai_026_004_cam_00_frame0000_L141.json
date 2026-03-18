@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large open space is obstructed by columns and doors, making it unsuitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The large open space is obstructed by columns and doors, making it unsuitable for yoga practice. The score of 1 reflects the complete lack of unobstructed floor space.",
+  "_meta": {
+    "image_id": "ai_026_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.75,
+    "attempt": 1
+  }
+}

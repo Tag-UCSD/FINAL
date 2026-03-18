@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor is clear of any furniture obstruction, allowing for stretching and yoga poses."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass coffee table could be slippery and might pose a safety hazard during yoga practice."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low lighting might make it difficult to see oneself in the mirror for form feedback."
+    },
+    {
+      "name": "chaise lounge chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chaise lounge chair is not suitable for yoga practice and might be a distraction."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for yoga and stretching due to the unobstructed floor area and the presence of a glass coffee table. However, the low lighting and the presence of a chaise lounge chair could be potential hazards and distractions during practice.",
+  "_meta": {
+    "image_id": "ai_036_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.34,
+    "attempt": 1
+  }
+}

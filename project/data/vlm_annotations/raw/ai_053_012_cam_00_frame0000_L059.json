@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "long wooden table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The long wooden table is not suitable for sleeping, as it lacks a comfortable surface and is too large to fit into a typical bedroom."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs around the table are not suitable for sleeping, as they lack a comfortable surface and are too large to fit into a typical bedroom."
+    },
+    {
+      "name": "large screen TV",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large screen TV is not suitable for sleeping, as it is too large to fit into a typical bedroom and can be a source of distraction and light pollution."
+    },
+    {
+      "name": "world map on the wall",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The world map on the wall is not suitable for sleeping, as it is too large to fit into a typical bedroom and can be a source of distraction and light pollution."
+    },
+    {
+      "name": "potted plant on the floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The potted plant on the floor is not suitable for sleeping, as it can be a source of allergens and can block light and air circulation."
+    },
+    {
+      "name": "hard wood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard wood flooring is not suitable for sleeping, as it can be cold and uncomfortable."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no windows or curtains, which makes it difficult to control light and temperature, two important factors for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The long wooden table and chairs are not suitable for sleeping, and the large screen TV and world map on the wall can be sources of distraction and light pollution. The hard wood flooring and lack of windows or curtains make it difficult to control light and temperature, which are important factors for sleep.",
+  "_meta": {
+    "image_id": "ai_053_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.51,
+    "attempt": 1
+  }
+}

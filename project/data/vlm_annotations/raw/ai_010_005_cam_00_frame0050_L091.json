@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is in the way of the workspace."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is too close to the bed, limiting workspace."
+    },
+    {
+      "name": "grass",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The grass outside the window is distracting."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the presence of the bed and cabinet, and the grass outside the window is distracting.",
+  "_meta": {
+    "image_id": "ai_010_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.35,
+    "attempt": 2
+  }
+}

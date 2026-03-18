@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A freestanding bathtub is not suitable for cooking activities."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is easy to clean and maintain, which is beneficial for a kitchen."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for kitchen items."
+    },
+    {
+      "name": "countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Countertops provide a hard surface for food preparation."
+    },
+    {
+      "name": "lighting from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from windows can be used for cooking."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects such as hardwood flooring and cabinets, but it also has a negative aspect with the presence of a freestanding bathtub, which is not suitable for cooking activities. Overall, the space is marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_039_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.23,
+    "attempt": 1
+  }
+}

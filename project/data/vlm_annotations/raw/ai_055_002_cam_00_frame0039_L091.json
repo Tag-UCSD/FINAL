@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too high for comfortable sitting and working."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too low for ergonomic use and do not provide a suitable height for computer work."
+    },
+    {
+      "name": "mirror-stuff",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Mirrors can create reflections that may be distracting or cause discomfort when working on a computer."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and not designed for computer work, making it less suitable for focused solo work."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The wall does not provide any additional support or features for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The high counter and low chairs make it difficult to sit comfortably and ergonomically. Mirrors and a large dining table further detract from the suitability for focused solo work. However, the presence of a bar area suggests some level of social interaction, which may not be desirable for all users.",
+  "_meta": {
+    "image_id": "ai_055_002_cam_00_frame0039",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_002\\images\\scene_cam_00_final_preview\\frame.0039.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.68,
+    "attempt": 1
+  }
+}

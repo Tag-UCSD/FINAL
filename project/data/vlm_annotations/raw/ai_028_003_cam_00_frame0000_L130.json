@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "yellow tablecloth",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A bright, inviting tablecloth can encourage casual conversation by making the space feel more welcoming."
+    },
+    {
+      "name": "low table height",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low table height might make it difficult for people to sit comfortably, potentially hindering conversation."
+    },
+    {
+      "name": "low chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low chairs might limit the comfort and ease of conversation, especially for taller individuals."
+    },
+    {
+      "name": "tea set",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A tea set suggests a relaxed, social setting conducive to casual conversation."
+    },
+    {
+      "name": "circular windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Circular windows can create a cozy, intimate atmosphere, which is conducive to casual conversation."
+    },
+    {
+      "name": "dark wooden flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark wooden flooring can make the space feel less inviting and more formal, potentially hindering casual conversation."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive elements like a yellow tablecloth and a tea set, but also some negative factors such as low table height and chairs, and dark flooring. Overall, it's a marginally adequate space for casual conversation, scoring a 5 out of 7.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.89,
+    "attempt": 1
+  }
+}

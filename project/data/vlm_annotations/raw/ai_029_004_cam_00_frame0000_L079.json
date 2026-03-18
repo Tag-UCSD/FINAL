@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with bar stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a functional workspace for food preparation and cooking."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sink is essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops are durable and easy to clean, ideal for food preparation."
+    },
+    {
+      "name": "stove and oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove and oven are essential for cooking."
+    },
+    {
+      "name": "absence of soft seating furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The presence of soft seating furniture would make it difficult to use the space for cooking."
+    },
+    {
+      "name": "absence of hard prep surfaces",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There are no hard surfaces available for food preparation."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with a kitchen island, sink, and stove providing essential cooking affordances. However, the absence of hard prep surfaces and soft seating furniture makes it less than ideal for regular cooking activities.",
+  "_meta": {
+    "image_id": "ai_029_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.38,
+    "attempt": 1
+  }
+}

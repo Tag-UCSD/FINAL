@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "marble floor tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Marble floor tiles are cold and hard, making them unsuitable for sleeping."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls reflect light and can be visually stimulating, making it difficult to fall asleep."
+    },
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A large open space without walls or dividers makes it difficult to achieve a sense of enclosure and privacy necessary for sleep."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No furniture such as a bed or chair would make it impossible to sleep in this space."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). The marble floor tiles, white walls, large open space, and lack of furniture all contribute to an environment that is too cold, stimulating, and open to be conducive to sleep.",
+  "_meta": {
+    "image_id": "ai_026_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.43,
+    "attempt": 1
+  }
+}

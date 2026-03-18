@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "laptop on glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The laptop is a significant obstacle to yoga practice, as it occupies a central position on the coffee table, preventing the use of the entire table surface for yoga mats or other props."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass surface is slippery and potentially unsafe for yoga practice, especially when wet or with bare feet."
+    },
+    {
+      "name": "couches and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple couches and chairs obstructs the open floor space necessary for yoga practice."
+    },
+    {
+      "name": "rug on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug partially obstructs the open floor space, reducing the available area for yoga practice."
+    },
+    {
+      "name": "bricks on walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brick walls create a visually cluttered environment, which can be distracting and unsuitable for the focused practice required in yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga practice, but several factors detract from its suitability. The presence of a laptop on the coffee table, couches, chairs, and a rug on the floor obstruct the open floor space necessary for yoga. The glass coffee table and brick walls also contribute to a less-than-ideal environment for yoga practice.",
+  "_meta": {
+    "image_id": "ai_006_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.79,
+    "attempt": 1
+  }
+}

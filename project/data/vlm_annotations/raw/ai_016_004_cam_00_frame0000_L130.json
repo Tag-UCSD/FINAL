@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls can make the space feel less open and inviting, potentially discouraging casual conversation."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel cold and impersonal, which might not be conducive to a warm and casual hangout."
+    },
+    {
+      "name": "glass doors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Glass doors allow natural light to enter, creating a brighter and more welcoming atmosphere."
+    },
+    {
+      "name": "metal railings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Metal railings can be perceived as cold and rigid, which might not be ideal for a casual hangout."
+    },
+    {
+      "name": "staircase",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A staircase can create barriers and limit the flow of conversation, especially if it's a busy area."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects like glass doors allowing natural light, but the brick walls and high ceilings can make it feel less inviting. The metal railings and staircase could create barriers and limit the flow of conversation. Overall, it's marginally adequate for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_016_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.74,
+    "attempt": 1
+  }
+}

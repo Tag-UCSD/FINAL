@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a functional object, but it does not support social interaction or conversation."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a decorative object, but it does not support social interaction or conversation."
+    },
+    {
+      "name": "grass-merged",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Grass outside the window suggests an outdoor setting, which is not conducive to indoor casual conversation."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a decorative object, but it does not support social interaction or conversation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a functional object, but it does not support social interaction or conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene lacks objects and spatial features that support casual conversation or hangout. The presence of a sink and vases, along with the outdoor grass visible through the window, suggest a functional and potentially outdoor setting rather than a social space. A score of 4 indicates marginal adequacy due to the lack of social props and the presence of functional objects that do not support social interaction.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.81,
+    "attempt": 1
+  }
+}

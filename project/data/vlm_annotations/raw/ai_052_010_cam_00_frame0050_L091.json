@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window provides natural light and a view, which can enhance concentration and mood."
+    },
+    {
+      "name": "Marble counter",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The marble counter is clean and smooth, suitable for placing a laptop and other work materials."
+    },
+    {
+      "name": "Brick walls",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Brick walls add character to the space but do not directly impact the suitability for computer work."
+    },
+    {
+      "name": "Bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable seating for extended periods of computer work as they lack back support."
+    }
+  ],
+  "reasoning_summary": "The space has positive aspects such as natural light and a clean surface, but lacks ergonomic seating, making it marginally adequate for solo computer work.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_052_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.22,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a flat surface suitable for placing a laptop."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is ergonomic and comfortable, supporting prolonged sitting."
+    },
+    {
+      "name": "Bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bookshelf provides a variety of reading materials, which can be distracting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (solo) due to the presence of a dining table, comfortable chairs, and a bookshelf, but could be improved by reducing distractions.",
+  "_meta": {
+    "image_id": "ai_034_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_034_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.38,
+    "attempt": 2
+  }
+}

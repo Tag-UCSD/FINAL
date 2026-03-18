@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can lead to feelings of claustrophobia and discomfort, potentially affecting sleep quality."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Fireplace can be a source of noise and heat, which can disturb sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable for sleep, especially if worn out or cold."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a couch and low ceiling height negatively impact the suitability, while the absence of windows and hard flooring further reduce the score. The fireplace adds a potential noise and heat source, making it less suitable for sleep.",
+  "_meta": {
+    "image_id": "ai_021_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.99,
+    "attempt": 1
+  }
+}

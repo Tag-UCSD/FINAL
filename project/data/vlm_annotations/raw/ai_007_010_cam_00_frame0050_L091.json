@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "White sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white sinks are not suitable for computer work as they are not functional for typing or using a mouse."
+    },
+    {
+      "name": "Brown wooden tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brown wooden tiles do not provide a neutral surface for computer work, which can be distracting."
+    },
+    {
+      "name": "Large mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large mirror can be a distraction while working, as it reflects the surroundings and may cause the user to become distracted."
+    },
+    {
+      "name": "Toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a toilet in the bathroom is not conducive to focused computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the presence of non-functional sinks, a distracting surface, a large mirror, and the presence of a toilet.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.54,
+    "attempt": 2
+  }
+}

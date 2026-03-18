@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a primary sleeping artifact, not designed for social interaction."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "dresser",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A dresser is a storage artifact, not designed for social interaction."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring provides a warm, inviting feel conducive to social interaction."
+    },
+    {
+      "name": "white lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A white lamp provides ambient light, enhancing the social atmosphere."
+    }
+  ],
+  "reasoning_summary": "This bedroom has a high score for casual conversation due to its large windows, wooden flooring, and white lamp. However, the presence of a bed and dresser negatively impacts the social atmosphere. A score of 5 reflects a mixed suitability with strong positive elements but significant negative ones.",
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.45,
+    "attempt": 1
+  }
+}

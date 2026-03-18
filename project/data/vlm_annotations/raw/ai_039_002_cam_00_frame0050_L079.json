@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Countertop provides a hard work surface for food preparation."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for food and kitchen supplies."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hard flooring can be slippery when wet, posing a safety hazard."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a sink, countertop, and storage cabinets. However, the hard flooring poses a safety hazard when wet, and there is no stove or oven visible, which are essential for cooking.",
+  "_meta": {
+    "image_id": "ai_039_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.65,
+    "attempt": 1
+  }
+}

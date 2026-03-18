@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of any furniture or obstructions, allowing for free movement."
+    },
+    {
+      "name": "adequate lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is sufficient artificial lighting to create a comfortable environment for yoga."
+    },
+    {
+      "name": "minimal clutter",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The space is not cluttered, which is important for maintaining a clear and organized environment for yoga."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of windows means there is no natural light, which can be beneficial for some yoga practices but may limit others."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga and stretching. The unobstructed floor space and adequate lighting are strong positives, while the minimal clutter and lack of windows are neutral factors. The score of 3 reflects the positive aspects without the need for windows, which could be considered a limitation for some yoga practices.",
+  "_meta": {
+    "image_id": "ai_033_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.15,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for computer work as they lack the necessary space and ergonomics."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not ergonomic and do not provide sufficient support for extended periods of computer use."
+    },
+    {
+      "name": "Ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The ceiling lights provide adequate lighting for computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the lack of ergonomic furniture and suitable work surfaces, but has good lighting.",
+  "_meta": {
+    "image_id": "ai_032_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.32,
+    "attempt": 2
+  }
+}

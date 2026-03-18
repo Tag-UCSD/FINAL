@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large windows with view of sky",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep."
+    },
+    {
+      "name": "dark floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring can make it difficult to see in the dark, potentially causing accidents."
+    },
+    {
+      "name": "no furniture or bedding",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No furniture or bedding indicates no place to rest or sleep."
+    }
+  ],
+  "reasoning_summary": "The large windows and dark floor make this space less suitable for sleep. The absence of furniture or bedding further undermines the potential for sleep.",
+  "_meta": {
+    "image_id": "ai_026_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.54,
+    "attempt": 1
+  }
+}

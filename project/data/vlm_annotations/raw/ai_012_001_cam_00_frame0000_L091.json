@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large kitchen island",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island is too large and obstructive for a comfortable workspace."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too close together and not suitable for extended use."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is insufficient for extended computer work."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated flat surface for placing a laptop or other work tools."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large kitchen island and low lighting create significant obstacles, while the seating arrangement is not conducive to extended use. There is no flat personal work surface, which is crucial for setting up a computer workstation.",
+  "_meta": {
+    "image_id": "ai_012_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.1,
+    "attempt": 1
+  }
+}

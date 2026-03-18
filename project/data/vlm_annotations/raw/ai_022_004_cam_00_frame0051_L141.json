@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant obstructs the open floor space and could pose a tripping hazard during yoga practice."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is located close to the yoga mat area, which could make it difficult to access during practice."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The mirror can be used to monitor posture and alignment during yoga practice."
+    },
+    {
+      "name": "floor-tile",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor tiles are smooth and non-slip, suitable for placing a yoga mat."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling lights provide adequate lighting for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga practice. While the floor tiles and mirror are suitable, the potted plant and sink create potential hazards. The layout is somewhat obstructed, but the lighting is adequate for practice.",
+  "_meta": {
+    "image_id": "ai_022_004_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_004\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.61,
+    "attempt": 1
+  }
+}

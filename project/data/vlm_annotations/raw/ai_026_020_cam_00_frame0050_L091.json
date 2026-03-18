@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The ceiling is high and spacious, providing ample headroom for someone working on a computer."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There are multiple light sources, including natural light from the windows and artificial lights, ensuring good illumination for computer work."
+    },
+    {
+      "name": "Windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of windows allows for natural light and potentially a view, which can be beneficial for concentration and mood."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (Solo) due to its spacious ceiling, ample lighting, and potential for natural light and views through the windows.",
+  "_meta": {
+    "image_id": "ai_026_020_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_020\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.54,
+    "attempt": 2
+  }
+}

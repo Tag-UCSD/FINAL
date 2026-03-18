@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large drafting tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Large drafting tables are not suitable for sleeping, as they lack a comfortable horizontal surface and are not designed for rest."
+    },
+    {
+      "name": "hard wood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard wood flooring is not comfortable for lying down and can be noisy, making it unsuitable for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    },
+    {
+      "name": "no furniture for resting",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture specifically designed for sleeping, such as a bed or sofa."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). The large drafting tables, hard wood flooring, lack of windows, and absence of furniture for resting all contribute to a poor sleep environment. The score is low due to the lack of any features that support sleep.",
+  "_meta": {
+    "image_id": "ai_036_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.55,
+    "attempt": 1
+  }
+}

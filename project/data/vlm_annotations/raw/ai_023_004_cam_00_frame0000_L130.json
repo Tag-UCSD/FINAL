@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "grand piano",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A grand piano is a musical instrument, not a social seating artifact. It is out of place in a casual conversation setting."
+    },
+    {
+      "name": "herringbone parquet floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A herringbone parquet floor is visually appealing and adds warmth to the space, making it more inviting for social interaction."
+    },
+    {
+      "name": "arched doorways",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Architectural elements like arched doorways can create a sense of openness and flow, which is conducive to social interactions."
+    },
+    {
+      "name": "sunlight streaming through windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural sunlight can create a pleasant and welcoming atmosphere, which is beneficial for casual conversations."
+    },
+    {
+      "name": "ceiling frescoes",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Frescoes on the ceiling add an artistic touch and can make the space feel more special and inviting."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects such as the herringbone parquet floor, arches, sunlight, and ceiling frescoes, but the presence of a grand piano is a significant negative factor. The score of 4 indicates that the space is marginally adequate for casual conversation due to the piano's presence, which is not conducive to social interaction.",
+  "_meta": {
+    "image_id": "ai_023_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.88,
+    "attempt": 1
+  }
+}

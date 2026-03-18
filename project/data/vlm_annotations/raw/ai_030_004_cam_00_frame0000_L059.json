@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable place to lie down and sleep."
+    },
+    {
+      "name": "Window-blind",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window blind can block out light, which is important for sleep."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for sleep (Primary) as it has a comfortable couch but the window blind could potentially disrupt natural light patterns.",
+  "_meta": {
+    "image_id": "ai_030_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.47,
+    "attempt": 2
+  }
+}

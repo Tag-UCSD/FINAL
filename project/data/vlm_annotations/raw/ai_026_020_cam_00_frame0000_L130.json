@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "no seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of seating makes it impossible to engage in a casual conversation or hangout."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of furniture such as chairs or sofas means there is no place to sit and engage in conversation."
+    },
+    {
+      "name": "no lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The absence of lighting makes the space appear cold and unwelcoming, which is not conducive to a casual conversation or hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene lacks any seating or furniture, making it completely unsuitable for a casual conversation or hangout. The absence of lighting further contributes to the cold and unwelcoming atmosphere, resulting in a score of 2.",
+  "_meta": {
+    "image_id": "ai_026_020_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_020\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.71,
+    "attempt": 1
+  }
+}

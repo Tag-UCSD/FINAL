@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The vast open space lacks defined boundaries or seating areas, making it difficult to establish a conversational cluster."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No seating or furniture present to facilitate a social hangout."
+    },
+    {
+      "name": "high ceiling with skylights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceiling and skylights create a cold, industrial atmosphere, which is not conducive to a warm, social hangout."
+    }
+  ],
+  "reasoning_summary": "The large open space without defined boundaries or seating areas makes it unsuitable for a casual conversation or hangout. The lack of furniture and high ceiling with skylights contribute to a cold, industrial atmosphere, preventing a score of 1.",
+  "_meta": {
+    "image_id": "ai_026_018_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_018\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.82,
+    "attempt": 1
+  }
+}

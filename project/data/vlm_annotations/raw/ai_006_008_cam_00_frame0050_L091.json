@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving little space for computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is a chair available for sitting, which is suitable for computer work."
+    },
+    {
+      "name": "floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The floor is flat and clean, which is suitable for computer work."
+    }
+  ],
+  "reasoning_summary": "The room has a bed that takes up a lot of space, making it marginally adequate for computer work. There is a chair available for sitting, which is positive. The floor is flat and clean, which is neutral.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_006_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.94,
+    "attempt": 2
+  }
+}

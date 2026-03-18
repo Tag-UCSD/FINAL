@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light and a view of the outdoors, creating a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "Comfy seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The stool near the bathtub provides a comfortable spot for sitting and engaging in casual conversations."
+    },
+    {
+      "name": "Baskets with towels",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The baskets with towels are functional but do not directly contribute to the casual conversation environment."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations due to its bright, open atmosphere and comfortable seating options.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.11,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large kitchen island provides ample workspace for food preparation."
+    },
+    {
+      "name": "Microwave and refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The microwave and refrigerator are essential for cooking daily meals."
+    },
+    {
+      "name": "Sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sink is necessary for washing dishes and cleaning up after cooking."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table can be used for eating meals prepared in the kitchen."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for daily cooking activities, with a large kitchen island, essential appliances, and a dining table.",
+  "_meta": {
+    "image_id": "ai_016_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.27,
+    "attempt": 2
+  }
+}

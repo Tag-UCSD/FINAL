@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bench",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bench is too close to the window, potentially obstructing the view and creating a sense of confinement."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is too close to the window, potentially obstructing the view and creating a sense of confinement."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is too close to the window, potentially obstructing the view and creating a sense of confinement."
+    },
+    {
+      "name": "curtain",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The curtain partially obstructs the view of the outside, potentially creating a sense of confinement."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too high, potentially creating a sense of confinement."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is too high, potentially creating a sense of confinement."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is too dark, potentially creating a sense of confinement."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga / stretching, but several factors contribute to a sense of confinement and limited space. The bench, potted plant, vase, curtain, ceiling, window, and floor all contribute to a negative perception of the space, making it less ideal for yoga practice.",
+  "_meta": {
+    "image_id": "ai_015_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.77,
+    "attempt": 1
+  }
+}

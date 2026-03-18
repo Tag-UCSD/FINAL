@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "White leather armchairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white leather armchairs provide comfortable seating for multiple people."
+    },
+    {
+      "name": "Glass coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The glass coffee table provides a surface for placing drinks and small items."
+    },
+    {
+      "name": "Potted plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The potted plant adds a touch of nature and can make the space feel more inviting."
+    },
+    {
+      "name": "Magazine on the table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The magazine suggests a relaxed atmosphere suitable for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its comfortable seating, functional surfaces, and inviting atmosphere.",
+  "_meta": {
+    "image_id": "ai_008_006_cam_00_frame0006",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_006\\images\\scene_cam_00_final_preview\\frame.0006.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.37,
+    "attempt": 2
+  }
+}

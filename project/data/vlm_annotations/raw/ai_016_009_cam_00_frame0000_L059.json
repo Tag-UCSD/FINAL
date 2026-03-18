@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "hard floor surface",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A hard floor surface is unsuitable for sleeping, as it lacks comfort and can cause discomfort and injury."
+    }
+  ],
+  "reasoning_summary": "The image shows a hard floor surface, which is completely unsuitable for sleep (Primary). There are no objects or spatial features that support this activity, and the lack of a bed or other resting surface makes it impossible to score higher than 2.",
+  "_meta": {
+    "image_id": "ai_016_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 6.02,
+    "attempt": 1
+  }
+}

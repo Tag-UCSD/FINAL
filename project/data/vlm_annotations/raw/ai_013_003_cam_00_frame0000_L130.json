@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The vast open area lacks a defined conversational boundary, making it difficult to establish a social space."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of seating means there is no place to sit and engage in conversation."
+    },
+    {
+      "name": "curved glass partition",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The curved glass partition obstructs direct line of sight and interaction between potential conversational partners."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is largely unsuitable for casual conversation / hangout due to the lack of furniture and a defined conversational space. The large open area and curved glass partition further hinder the establishment of a social environment.",
+  "_meta": {
+    "image_id": "ai_013_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.36,
+    "attempt": 1
+  }
+}

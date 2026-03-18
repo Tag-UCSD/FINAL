@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a sink suggests a bathroom rather than a workspace."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A potted plant can be distracting and may require maintenance."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A mirror is not directly related to computer work and may be considered a distraction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a sink and potted plant suggests a bathroom rather than a workspace, and the mirror is not directly related to computer work. However, the layout and lighting appear to be suitable for a workspace.",
+  "_meta": {
+    "image_id": "ai_022_004_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_004\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.2,
+    "attempt": 1
+  }
+}

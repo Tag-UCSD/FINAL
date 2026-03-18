@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bookshelves provide a sense of intellectual stimulation and can serve as conversation topics."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "several desks",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Desks provide surfaces for conversation props like drinks and snacks."
+    },
+    {
+      "name": "ladder",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A ladder allows easy access to high shelves, adding variety to conversation topics."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ceiling beams add character and warmth to the space, making it inviting for social interaction."
+    },
+    {
+      "name": "light fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Light fixtures provide ample lighting for a comfortable social setting."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is ideally suited for casual conversations and hangouts. The presence of bookshelves, large windows, several desks, a ladder, ceiling beams, and light fixtures all contribute positively to the social atmosphere. A score of 7 would require additional social props such as drinks and snacks, but this room is very close to being perfectly suited for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_036_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.11,
+    "attempt": 1
+  }
+}

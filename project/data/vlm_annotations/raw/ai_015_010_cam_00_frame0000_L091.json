@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large sectional sofa",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large sectional sofa takes up a significant portion of the space and could obstruct a flat work surface."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glass coffee table is not suitable for placing a laptop or keyboard due to its fragility and lack of stability."
+    },
+    {
+      "name": "low-lying furniture arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The furniture is arranged in a low-lying manner, which could make it difficult to set up a flat work surface."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated workspace in the visible area, making it challenging to set up a computer workstation."
+    },
+    {
+      "name": "open layout with large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout with large windows could lead to distractions and reduced privacy, which are important for focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a large sectional sofa and low-lying furniture arrangement makes it difficult to set up a flat work surface. Additionally, the open layout with large windows could lead to distractions and reduced privacy, which are important for focused solo work. However, the presence of natural light and the potential for a view of the outdoors could provide some benefits for mental well-being.",
+  "_meta": {
+    "image_id": "ai_015_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.05,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a leisurely environment rather than a workspace."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are typically used for socializing and dining, not for computer work."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bar counter is not suitable for a dedicated workspace."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vases are decorative items and do not contribute to a workspace."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bottles are not related to computer work and can be distracting."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light, which can be beneficial for work."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glass coffee table is not suitable for a workspace."
+    },
+    {
+      "name": "yellow armchairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Armchairs are not suitable for a workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some positive aspects like large windows for natural light, the presence of furniture such as a couch, bar stools, and armchairs, along with decorative items like vases and bottles, make it less suitable for focused solo work. The layout and objects present suggest a more social and leisurely environment rather than a workspace.",
+  "_meta": {
+    "image_id": "ai_031_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.97,
+    "attempt": 1
+  }
+}

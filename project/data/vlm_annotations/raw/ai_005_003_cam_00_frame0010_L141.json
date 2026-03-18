@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Concrete columns",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The concrete columns do not obstruct the view or movement, but they do not add to the aesthetic appeal for yoga."
+    },
+    {
+      "name": "Fountain",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The fountain provides a calming sound and visual element, which can enhance the yoga experience."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The potted plants add a natural element and can help create a serene atmosphere conducive to yoga."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, allowing for a variety of yoga poses and movements. The presence of potted plants and a fountain adds to the ambiance, while the concrete columns do not obstruct the space.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_005_003_cam_00_frame0010",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_003\\images\\scene_cam_00_final_preview\\frame.0010.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.97,
+    "attempt": 2
+  }
+}

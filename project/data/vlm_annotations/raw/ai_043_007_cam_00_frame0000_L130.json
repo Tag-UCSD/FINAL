@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Marble dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The marble dining table provides a clean and elegant surface for casual conversations."
+    },
+    {
+      "name": "Modern chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern chairs are comfortable and stylish, suitable for long conversations."
+    },
+    {
+      "name": "Open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout allows for easy conversation flow and visibility between participants."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soft lighting creates a warm and inviting atmosphere for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations due to its open layout, comfortable seating, and elegant surfaces.",
+  "_meta": {
+    "image_id": "ai_043_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.94,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "several rows of chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "large black pillar",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large black pillar obstructs the open floor space required for yoga practice."
+    },
+    {
+      "name": "carpeted floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Carpeted floors are generally slippery and not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for yoga or stretching due to the presence of multiple rows of chairs and a large black pillar, which obstruct the open floor space required for these activities. The carpeted floor also makes it unsuitable for yoga practice.",
+  "_meta": {
+    "image_id": "ai_053_004_cam_00_frame0004",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_004\\images\\scene_cam_00_final_preview\\frame.0004.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.43,
+    "attempt": 1
+  }
+}

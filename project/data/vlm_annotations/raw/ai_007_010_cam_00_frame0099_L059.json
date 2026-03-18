@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Toilets are not suitable for sleep, as they are associated with hygiene and cleanliness, not rest."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sinks are associated with hygiene and cleanliness, not rest."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirrors are associated with grooming and personal care, not rest."
+    },
+    {
+      "name": "wooden tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wooden tiles are associated with a commercial or public setting, not a private sleeping area."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls are associated with a commercial or public setting, not a private sleeping area."
+    },
+    {
+      "name": "white floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White floor is associated with a commercial or public setting, not a private sleeping area."
+    }
+  ],
+  "reasoning_summary": "The scene is a public restroom with toilets, sinks, and mirrors, all of which are associated with hygiene and grooming rather than rest. The wooden tiles and white walls suggest a commercial or public setting, not a private sleeping area. The score is 3 because there are no positive indicators present, and the negative indicators are strong.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.78,
+    "attempt": 1
+  }
+}

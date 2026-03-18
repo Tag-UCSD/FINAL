@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space provides ample room for movement and comfort."
+    },
+    {
+      "name": "Natural light from skylights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can reduce eye strain and improve mood."
+    },
+    {
+      "name": "Concrete floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "A concrete floor is durable and easy to clean, but may be cold and less comfortable than carpet."
+    }
+  ],
+  "reasoning_summary": "The space is spacious and well-lit, making it suitable for solo computer work. However, the concrete floor could be less comfortable for extended periods.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.25,
+    "attempt": 2
+  }
+}

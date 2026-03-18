@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "Large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too large for a single person to comfortably use as a workspace."
+    },
+    {
+      "name": "No flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated flat surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "No ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended periods of sitting and working."
+    },
+    {
+      "name": "No dedicated lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and does not provide task illumination for screen work."
+    },
+    {
+      "name": "No dedicated area for work",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The space is open and lacks a designated area for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large dining table and lack of dedicated flat surface, ergonomic seating, and proper lighting make it challenging to set up a productive workspace. The open layout and absence of a dedicated area for work further undermine its suitability for focused solo computer work.",
+  "_meta": {
+    "image_id": "ai_030_010_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_010\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.23,
+    "attempt": 1
+  }
+}

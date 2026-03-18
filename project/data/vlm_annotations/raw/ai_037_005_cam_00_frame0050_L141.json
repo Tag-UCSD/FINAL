@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can obstruct movement and create visual clutter, which is not conducive to a calming yoga environment."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a table in the foreground can obstruct movement and create visual clutter, which is not conducive to a calming yoga environment."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is an open floor area that could potentially be used for yoga practice, but it is obstructed by the potted plants and table."
+    }
+  ],
+  "reasoning_summary": "The scene shows an open floor area that could potentially be used for yoga practice, but it is obstructed by potted plants and a table. The presence of these objects makes the space marginally suitable for yoga, receiving a score of 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_037_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.26,
+    "attempt": 1
+  }
+}

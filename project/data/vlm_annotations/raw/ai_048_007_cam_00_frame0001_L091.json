@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a dedicated workspace for computer work."
+    },
+    {
+      "name": "ladder",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ladder is not suitable for computer work as it is not a stable surface and can be a safety hazard."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is insufficient for computer work, as it is not bright enough to reduce eye strain."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a dining table and a ladder makes it difficult to set up a stable and safe workspace. Additionally, the lighting is not sufficient for extended computer work, which is crucial for maintaining focus and reducing eye strain.",
+  "_meta": {
+    "image_id": "ai_048_007_cam_00_frame0001",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_007\\images\\scene_cam_00_final_preview\\frame.0001.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.77,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "curved ceiling panels",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curved ceiling panels may obstruct vision and create a sense of enclosure, potentially reducing focus."
+    },
+    {
+      "name": "yellow structural beams",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bright yellow beams may be visually distracting and could cause discomfort when working on screens."
+    },
+    {
+      "name": "concrete pillars",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Concrete pillars may limit workspace flexibility and create obstructions when moving around the area."
+    },
+    {
+      "name": "open space layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open space layout may lead to distractions from other people and activities in the vicinity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for computer work (solo). While the open space layout and bright structural beams may be visually distracting, the curved ceiling panels and concrete pillars could limit workspace flexibility and create obstructions. The layout is open and lacks dedicated work surfaces, making it less than ideal for focused solo work.",
+  "_meta": {
+    "image_id": "ai_024_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.58,
+    "attempt": 1
+  }
+}

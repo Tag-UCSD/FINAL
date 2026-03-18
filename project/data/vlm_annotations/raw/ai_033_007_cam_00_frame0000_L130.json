@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "long black desks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Long desks are typically used for workstations, not for casual conversations."
+    },
+    {
+      "name": "yellow desk lamps",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Yellow desk lamps provide a warm, inviting ambiance conducive to casual conversations."
+    },
+    {
+      "name": "black office chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black office chairs are designed for ergonomic support, not for casual conversations."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A staircase in the middle of a hangout area can disrupt the flow and social interaction."
+    },
+    {
+      "name": "high glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A high glass partition can create a sense of separation and reduce the feeling of openness and inclusiveness."
+    }
+  ],
+  "reasoning_summary": "The long black desks and black office chairs are more suitable for workstations than for casual conversations. The yellow desk lamps provide a warm, inviting ambiance. However, the presence of a staircase and a high glass partition can disrupt the flow and social interaction, making the space less suitable for casual conversations.",
+  "_meta": {
+    "image_id": "ai_033_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.15,
+    "attempt": 1
+  }
+}

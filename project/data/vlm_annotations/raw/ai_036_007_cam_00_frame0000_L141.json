@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of furniture, allowing for a full range of yoga poses."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable, non-slip surface for yoga mats."
+    },
+    {
+      "name": "large windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the large windows can create a calming atmosphere for yoga."
+    },
+    {
+      "name": "furniture arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The furniture arrangement is somewhat cluttered, but it does not obstruct the floor space significantly."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with unobstructed floor space and hardwood flooring providing a stable surface. However, the furniture arrangement is somewhat cluttered, which could be improved for a more ideal setup.",
+  "_meta": {
+    "image_id": "ai_036_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.13,
+    "attempt": 1
+  }
+}

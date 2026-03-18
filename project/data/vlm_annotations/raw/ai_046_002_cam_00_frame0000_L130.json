@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for casual conversation due to their height and lack of backrests, making them uncomfortable for extended periods."
+    },
+    {
+      "name": "black kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The black kitchen island is too formal and lacks a sociopetal layout, making it less conducive to casual conversation."
+    },
+    {
+      "name": "white countertops",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White countertops can be slippery and difficult to maintain, which might be distracting during a casual conversation."
+    },
+    {
+      "name": "black cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black cabinets are too formal and do not contribute to a casual atmosphere."
+    },
+    {
+      "name": "white refrigerator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white refrigerator is too formal and does not contribute to a casual atmosphere."
+    },
+    {
+      "name": "white floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white floor can be slippery and difficult to maintain, which might be distracting during a casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has several negative indicators that make it marginally adequate for casual conversation. The presence of bar stools, black kitchen island, white countertops, black cabinets, white refrigerator, and white floor contribute to a formal and less inviting atmosphere. A score of 4 indicates that while the space could potentially be used for casual conversation, it lacks the necessary social props and comfort to be considered ideal.",
+  "_meta": {
+    "image_id": "ai_046_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.91,
+    "attempt": 1
+  }
+}

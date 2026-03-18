@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, creating a bright and inviting atmosphere conducive to yoga."
+    },
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is too large and may obstruct the space needed for yoga poses."
+    },
+    {
+      "name": "Microwave",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The microwave is not relevant to the activity and could be distracting."
+    }
+  ],
+  "reasoning_summary": "The space is generally suitable for yoga due to the presence of large windows allowing natural light, but the furniture layout and the presence of non-relevant objects could be improved.",
+  "_meta": {
+    "image_id": "ai_029_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.37,
+    "attempt": 2
+  }
+}

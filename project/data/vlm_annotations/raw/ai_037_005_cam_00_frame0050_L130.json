@@ -1,0 +1,33 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of potted plants adds a touch of nature and can make the space feel more welcoming."
+    },
+    {
+      "name": "Table",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The table is present but not detailed enough to indicate its suitability for seating or conversation."
+    }
+  ],
+  "reasoning_summary": "The space has potential for casual conversations due to the presence of potted plants, but lacks clear details about seating arrangements or other features that would enhance the hangout experience.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_037_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.77,
+    "attempt": 2
+  }
+}

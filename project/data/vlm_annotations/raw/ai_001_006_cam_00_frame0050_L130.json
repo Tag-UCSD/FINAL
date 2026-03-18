@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is not suitable for casual conversation as it is intended for sleeping and not for sitting or talking."
+    },
+    {
+      "name": "low table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low table is not suitable for casual conversation as it is too low to comfortably sit around and talk."
+    },
+    {
+      "name": "no seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no seating arrangement in the room, making it impossible to engage in casual conversation."
+    },
+    {
+      "name": "no lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no lighting in the room, making it difficult to see and engage in conversation."
+    }
+  ],
+  "reasoning_summary": "The room is not suitable for casual conversation due to the lack of seating, lighting, and a proper layout. The presence of a bed and a low table further undermines the potential for casual conversation.",
+  "_meta": {
+    "image_id": "ai_001_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.08,
+    "attempt": 1
+  }
+}

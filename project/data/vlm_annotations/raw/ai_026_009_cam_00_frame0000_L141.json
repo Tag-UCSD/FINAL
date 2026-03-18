@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.98,
+  "indicators": [
+    {
+      "name": "glass walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Glass walls obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "glass ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Glass ceiling obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "glass floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Glass floor obstructs the open floor space required for yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for yoga or stretching due to the glass walls, ceiling, and floor, which obstruct the open floor space required for these activities. The score of 1 reflects the complete lack of unobstructed floor space.",
+  "_meta": {
+    "image_id": "ai_026_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.1,
+    "attempt": 1
+  }
+}

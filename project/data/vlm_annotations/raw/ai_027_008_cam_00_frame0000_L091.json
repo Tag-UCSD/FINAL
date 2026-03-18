@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not suitable for computer work as they lack ergonomic support and are not designed for prolonged use."
+    },
+    {
+      "name": "Rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug can provide comfort underfoot, which is beneficial for long periods of sitting."
+    },
+    {
+      "name": "Ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ceiling lights provide even illumination, which is essential for tasks requiring high visual acuity."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work due to its large windows, rug, and ceiling lights. However, the presence of couches is a negative factor as they are not ergonomic for prolonged computer use.",
+  "_meta": {
+    "image_id": "ai_027_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.87,
+    "attempt": 2
+  }
+}

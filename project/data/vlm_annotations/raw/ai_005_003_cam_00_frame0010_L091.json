@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large open space may lead to distractions and lack of privacy."
+    },
+    {
+      "name": "Concrete columns",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The columns do not obstruct the view but do not provide additional functionality."
+    },
+    {
+      "name": "Fountain",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fountain may create noise and a distraction, affecting concentration."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The potted plants add some greenery but do not contribute significantly to the workspace."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, which might be distracting for solo computer work. The presence of a fountain and potted plants adds some distractions, while the columns do not obstruct the view.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_005_003_cam_00_frame0010",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_003\\images\\scene_cam_00_final_preview\\frame.0010.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.49,
+    "attempt": 2
+  }
+}

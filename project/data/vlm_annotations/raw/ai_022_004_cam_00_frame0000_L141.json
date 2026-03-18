@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "rug on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug partially obstructs the open floor area, reducing the available space for yoga."
+    },
+    {
+      "name": "table with books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table with books is an obstacle in the open floor area, preventing yoga practice."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is an obstacle in the open floor area, preventing yoga practice."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is an obstacle in the open floor area, preventing yoga practice."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is an obstacle in the open floor area, preventing yoga practice."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The ceiling lights provide ambient lighting suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga practice due to the presence of obstacles on the open floor area. The rug, table, potted plant, cabinet, and sink obstruct the space, while the ceiling lights provide suitable lighting. A score of 4 rather than 5 reflects the limited open floor area and the presence of multiple obstacles.",
+  "_meta": {
+    "image_id": "ai_022_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.96,
+    "attempt": 1
+  }
+}

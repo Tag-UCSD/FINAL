@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural light coming through the large windows can help create a calming atmosphere conducive to yoga and stretching."
+    },
+    {
+      "name": "Hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor might be uncomfortable for some individuals performing yoga and stretching, especially if they are barefoot."
+    }
+  ],
+  "reasoning_summary": "The space is largely suitable for yoga and stretching due to its large open area and natural lighting, but the hard floor could be a minor inconvenience for some users.",
+  "_meta": {
+    "image_id": "ai_016_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.21,
+    "attempt": 2
+  }
+}

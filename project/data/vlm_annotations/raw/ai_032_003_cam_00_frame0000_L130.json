@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "elevators",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Elevators are typically associated with formal business environments, not casual social hangouts."
+    },
+    {
+      "name": "formal marble walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal marble walls suggest a corporate or formal setting, not a casual social environment."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble floors are often found in formal settings, not casual social spaces."
+    },
+    {
+      "name": "formal lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal lighting suggests a formal setting, not a casual social environment."
+    },
+    {
+      "name": "formal layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout is formal and functional, not conducive to casual social interaction."
+    }
+  ],
+  "reasoning_summary": "The scene is a formal elevator lobby with elevators, marble walls, marble floor, formal lighting, and a formal layout. These elements suggest a corporate or formal setting, not a casual social hangout. A score of 4 indicates it is marginally adequate for casual conversation/hangout.",
+  "_meta": {
+    "image_id": "ai_032_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.07,
+    "attempt": 1
+  }
+}

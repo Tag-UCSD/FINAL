@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "carved relief artwork",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The carved relief artwork is visually distracting and likely to cause discomfort or distraction during sleep."
+    }
+  ],
+  "reasoning_summary": "The presence of a carved relief artwork in a bedroom setting is highly unlikely to support the primary sleep activity. The artwork is visually distracting and likely to cause discomfort or distraction during sleep, resulting in a low score.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.63,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "High ceiling height",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The high ceiling height provides ample space for comfortable sitting and working."
+    },
+    {
+      "name": "Natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The presence of natural light can reduce eye strain and improve mood."
+    },
+    {
+      "name": "Wooden surfaces",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Wooden surfaces are visually appealing but may require maintenance to prevent dust accumulation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has high ceiling height and natural light, which are positive factors for computer work. However, the wooden surfaces might require maintenance.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_017_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_017\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.34,
+    "attempt": 2
+  }
+}

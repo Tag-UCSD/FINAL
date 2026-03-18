@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "fountain",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Fountains produce noise and water sounds incompatible with sleep."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can be a source of allergens and irritants, potentially disturbing sleep."
+    },
+    {
+      "name": "large columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Columns obstruct views and create a sense of confinement, which can be disruptive to sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable, making it less suitable for sleep."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout without walls or partitions can lead to noise and drafts, disrupting sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not well-suited for sleep (primary). The presence of a fountain, potted plants, large columns, hard flooring, and an open layout all contribute to a negative sleep environment. The score is slightly above 2 due to the absence of more severe sleep-disrupting factors like strong odors or bright lighting.",
+  "_meta": {
+    "image_id": "ai_005_003_cam_00_frame0010",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_003\\images\\scene_cam_00_final_preview\\frame.0010.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.22,
+    "attempt": 1
+  }
+}

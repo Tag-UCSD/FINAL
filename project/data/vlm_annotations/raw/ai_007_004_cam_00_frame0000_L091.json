@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Marble countertop provides a flat surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "two sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sinks are not suitable for setting up a computer workstation."
+    },
+    {
+      "name": "towel holder",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Towel holder is not related to computer work and may be distracting."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Toilet is not suitable for setting up a computer workstation."
+    },
+    {
+      "name": "large mirror",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large mirror can reflect light and create glare on computer screens."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Lighting may cause glare on computer screens."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The marble countertop provides a flat surface suitable for placing a laptop or keyboard, but the presence of two sinks, a towel holder, a toilet, a large mirror, and poor lighting make it less than ideal for focused solo work.",
+  "_meta": {
+    "image_id": "ai_007_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.17,
+    "attempt": 1
+  }
+}

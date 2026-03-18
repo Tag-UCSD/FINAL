@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase is a high-traffic area that can distract from focused work."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting may cause screen glare and does not provide task illumination."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Windows can be a source of distraction and may require blinds or curtains for privacy."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a staircase and ambient lighting creates distractions and potential glare, while windows may require privacy measures. However, the space is open and spacious, which could be beneficial for some types of solo work.",
+  "_meta": {
+    "image_id": "ai_024_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.5,
+    "attempt": 1
+  }
+}

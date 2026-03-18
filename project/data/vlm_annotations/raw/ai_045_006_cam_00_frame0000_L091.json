@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and could obstruct the user's view of the computer screen."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a comfortable chair available for sitting while working."
+    },
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is not carpeted, which might be uncomfortable for prolonged sitting."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (solo) due to the presence of a dining table that could obstruct the user's view and the lack of carpeting on the floor, but it has a comfortable chair and good lighting.",
+  "_meta": {
+    "image_id": "ai_045_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.87,
+    "attempt": 2
+  }
+}

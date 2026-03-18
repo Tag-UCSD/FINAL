@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large kitchen island",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island is too large and obstructive for a comfortable workspace."
+    },
+    {
+      "name": "white bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for prolonged computer work due to their height and lack of back support."
+    },
+    {
+      "name": "open-plan layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open-plan layout makes it difficult to focus on computer work due to potential distractions."
+    },
+    {
+      "name": "no dedicated desk",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no dedicated desk area for computer work, which is essential for productivity."
+    },
+    {
+      "name": "no ergonomic chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No ergonomic chair is available for long periods of computer work."
+    },
+    {
+      "name": "no flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height for placing a laptop or keyboard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large kitchen island and open-plan layout create significant distractions and obstructions, while the lack of a dedicated desk and ergonomic chair further undermines the suitability for focused work. The absence of a flat work surface also hinders the setup of a productive workstation.",
+  "_meta": {
+    "image_id": "ai_046_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.94,
+    "attempt": 1
+  }
+}

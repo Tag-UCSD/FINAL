@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed or furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any sleeping furniture makes it impossible to use this space for sleep."
+    },
+    {
+      "name": "Bright daylight",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright daylight is not conducive to sleep as it can disrupt the natural circadian rhythm."
+    }
+  ],
+  "reasoning_summary": "The space is completely unsuited for sleep due to the lack of a bed and the bright daylight.",
+  "_meta": {
+    "image_id": "ai_010_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.04,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large open space provides ample room for movement and comfort."
+    },
+    {
+      "name": "Natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light can improve mood and productivity."
+    },
+    {
+      "name": "No obstructions",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The absence of obstructions allows for a clear and uncluttered workspace."
+    },
+    {
+      "name": "No furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of furniture makes it difficult to set up a comfortable and ergonomic workspace."
+    }
+  ],
+  "reasoning_summary": "The space is suitable for computer work due to its large open area and natural lighting, but lacks furniture to create a comfortable and ergonomic workspace.",
+  "_meta": {
+    "image_id": "ai_032_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.87,
+    "attempt": 2
+  }
+}

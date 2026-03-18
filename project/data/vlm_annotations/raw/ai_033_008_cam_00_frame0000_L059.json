@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "hard industrial surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The exposed concrete floor and brick walls lack soft, absorbent materials that would reduce noise and enhance comfort."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open office layout with visible through-traffic cues and lack of enclosed sleeping areas makes it unsuitable for sleep."
+    },
+    {
+      "name": "no personal storage or sleeping furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture or storage specifically designed for sleeping, such as a bed, nightstand, or closet."
+    }
+  ],
+  "reasoning_summary": "This is a large, open office space with hard industrial surfaces and an open layout. There is no furniture or storage specifically designed for sleeping, making it unsuitable for primary sleep. The lack of personal storage and sleeping furniture further contributes to the low score.",
+  "_meta": {
+    "image_id": "ai_033_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.97,
+    "attempt": 1
+  }
+}

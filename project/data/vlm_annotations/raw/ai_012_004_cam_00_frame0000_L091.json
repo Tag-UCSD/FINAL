@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets obstruct the view and access to the workspace."
+    },
+    {
+      "name": "Countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The countertop provides a flat surface for placing a computer and other items."
+    },
+    {
+      "name": "Floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dark flooring can make it difficult to see the computer screen."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the obstruction caused by cabinets and the potential difficulty of seeing the computer screen on the dark flooring.",
+  "_meta": {
+    "image_id": "ai_012_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.88,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "tub in corner",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bathtub is a fixed object that occupies a significant amount of floor space, making it difficult to create an open floor area suitable for yoga."
+    },
+    {
+      "name": "towel rack next to tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel rack is a fixed object that occupies a significant amount of floor space, making it difficult to create an open floor area suitable for yoga."
+    },
+    {
+      "name": "toilet in corner",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A toilet is a fixed object that occupies a significant amount of floor space, making it difficult to create an open floor area suitable for yoga."
+    },
+    {
+      "name": "sink and mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A sink and mirror can be used for yoga practice, providing a place to store props and a reflective surface for self-assessment."
+    },
+    {
+      "name": "windows with blinds",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Windows with blinds allow natural light to enter the room, creating a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "floor tiles",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor tiles are smooth and non-slip, providing a suitable surface for yoga mats."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga due to the presence of a sink and mirror, which can be used for practice, and the presence of windows allowing natural light. However, the presence of a bathtub, towel rack, and toilet significantly limits the open floor area available for yoga, resulting in a marginal score of 4.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.82,
+    "attempt": 1
+  }
+}

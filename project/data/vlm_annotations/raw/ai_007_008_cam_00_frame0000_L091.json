@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space provides ample room for movement and comfort."
+    },
+    {
+      "name": "Minimalist furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The minimalist furniture reduces distractions and allows for a clear view of the workspace."
+    },
+    {
+      "name": "Bright natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bright natural light can reduce eye strain and improve mood."
+    },
+    {
+      "name": "Hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor might be uncomfortable to sit on for extended periods."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work due to its open layout, minimalistic furniture, and bright lighting, but the hard floor could be less comfortable for extended use.",
+  "_meta": {
+    "image_id": "ai_007_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.2,
+    "attempt": 2
+  }
+}

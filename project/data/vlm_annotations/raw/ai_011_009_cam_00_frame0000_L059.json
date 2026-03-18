@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is located near the bed, which could potentially disturb the user's sleep."
+    },
+    {
+      "name": "Ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is high and open, which might make the room feel too cold or drafty during the night."
+    },
+    {
+      "name": "Floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is smooth and hard, which might be uncomfortable to walk on at night."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for sleep due to the presence of a potted plant, high ceiling, and hard floor, which could potentially disrupt the user's sleep.",
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.76,
+    "attempt": 2
+  }
+}

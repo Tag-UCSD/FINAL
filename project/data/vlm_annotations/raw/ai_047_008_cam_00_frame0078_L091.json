@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs are not ergonomically designed for extended computer work."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Overhead lighting can cause glare on computer screens."
+    },
+    {
+      "name": "black curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Black curtains do not block out light, which is necessary for some computer work tasks."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be distracting and reduce productivity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The white chairs lack ergonomic design, the ceiling lights may cause glare, black curtains do not block out light, and large windows allow natural light to enter, which can be distracting and reduce productivity.",
+  "_meta": {
+    "image_id": "ai_047_008_cam_00_frame0078",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_008\\images\\scene_cam_00_final_preview\\frame.0078.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.93,
+    "attempt": 1
+  }
+}

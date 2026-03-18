@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The presence of multiple chairs and desks provides ample seating for multiple people to engage in casual conversations."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout allows for easy movement and interaction between individuals, facilitating casual conversations."
+    },
+    {
+      "name": "neutral color palette",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The neutral color palette creates a calm and neutral atmosphere conducive to casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to its open layout and seating arrangement, but the neutral color palette contributes positively to the atmosphere.",
+  "_meta": {
+    "image_id": "ai_008_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.82,
+    "attempt": 2
+  }
+}

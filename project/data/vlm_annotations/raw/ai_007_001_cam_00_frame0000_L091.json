@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and is not suitable for prolonged sitting."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large window can be a source of distraction and may require additional measures to block out external noise and light for focused work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be soft and ambient, which may not be sufficient for tasks requiring high contrast and sharp vision, such as reading or typing on a screen."
+    },
+    {
+      "name": "minimal furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is limited furniture, which makes it difficult to set up a comfortable and ergonomic workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a bed and minimal furniture makes it challenging to set up a comfortable and ergonomic workstation. The large window and low lighting also pose potential distractions and may require additional measures to create a suitable working environment.",
+  "_meta": {
+    "image_id": "ai_007_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.44,
+    "attempt": 1
+  }
+}

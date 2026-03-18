@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large desks with multiple computers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple workstations with computers suggest a shared workspace rather than a dedicated solo environment."
+    },
+    {
+      "name": "several chairs around desks",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple chairs indicate a collaborative workspace rather than a solo work area."
+    },
+    {
+      "name": "shared workstations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple workstations suggests a collaborative environment, not a solo workspace."
+    },
+    {
+      "name": "shared workstations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple workstations suggests a collaborative environment, not a solo workspace."
+    },
+    {
+      "name": "shared workstations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of multiple workstations suggests a collaborative environment, not a solo workspace."
+    }
+  ],
+  "reasoning_summary": "The image depicts a shared workspace with multiple workstations and chairs, indicating it is designed for collaboration rather than solo computer work. The presence of multiple workstations and chairs suggests a collaborative environment, not a solo workspace. Therefore, the score is 4, indicating it is marginally adequate for solo computer work.",
+  "_meta": {
+    "image_id": "ai_033_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.4,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Plants add a touch of nature and can make the space feel more inviting and relaxing."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can serve as a shared surface for casual conversation and food sharing."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide seating for multiple people, facilitating conversation."
+    },
+    {
+      "name": "layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The layout appears open and inviting, allowing for easy conversation and interaction."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive indicators for casual conversation, including potted plants, a dining table, and chairs. However, the lack of a clearly defined seating area and the presence of a water feature might make it less suitable for a hangout compared to a dedicated living room setup.",
+  "_meta": {
+    "image_id": "ai_052_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.01,
+    "attempt": 1
+  }
+}

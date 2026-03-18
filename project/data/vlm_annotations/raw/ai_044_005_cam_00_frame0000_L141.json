@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for stretching without obstructions."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft lighting creates a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement, while comfortable, does not provide a dedicated space for yoga."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with an unobstructed floor area and soft lighting creating a calming atmosphere. However, the seating arrangement does not provide a dedicated space for yoga, which slightly undermines the suitability.",
+  "_meta": {
+    "image_id": "ai_044_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.99,
+    "attempt": 1
+  }
+}

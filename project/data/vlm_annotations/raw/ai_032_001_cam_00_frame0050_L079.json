@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.98,
+  "indicators": [
+    {
+      "name": "decorative wall panel",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The decorative wall panel obstructs the view and access to potential cooking areas."
+    }
+  ],
+  "reasoning_summary": "The image shows a decorative wall panel that obstructs the view and access to potential cooking areas, making it completely unsuitable for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.28,
+    "attempt": 1
+  }
+}

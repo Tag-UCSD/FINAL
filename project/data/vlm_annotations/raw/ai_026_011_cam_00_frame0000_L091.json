@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "concrete wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rough texture and lack of finish on the walls make it less suitable for prolonged use as a workspace."
+    },
+    {
+      "name": "concrete ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling appears to be made of concrete, which can be cold and uninviting for prolonged use."
+    },
+    {
+      "name": "concrete floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The concrete floor is smooth and hard, which might be uncomfortable for prolonged sitting."
+    },
+    {
+      "name": "concrete hand sculptures",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The presence of hand sculptures adds an element of distraction and does not contribute to a focused workspace."
+    },
+    {
+      "name": "concrete hand sculptures on the floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The placement of hand sculptures on the floor is not conducive to a focused workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The rough concrete surfaces and lack of finish on the walls, ceiling, and floor make it less suitable for prolonged use as a workspace. The presence of hand sculptures on the floor adds an element of distraction and does not contribute to a focused workspace.",
+  "_meta": {
+    "image_id": "ai_026_011_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_011\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.96,
+    "attempt": 1
+  }
+}

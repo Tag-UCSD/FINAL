@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table is present, which can be used for food preparation and serving."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden flooring provides a stable and clean surface for food preparation."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is bright and evenly distributed, which is important for food preparation."
+    },
+    {
+      "name": "tv",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A television is present, which is not suitable for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with a dining table and wooden flooring providing surfaces for food preparation. However, the presence of a television is a negative factor, as it is not suitable for cooking. The lighting is adequate for the task, but the overall setup is not ideal for a dedicated cooking area.",
+  "_meta": {
+    "image_id": "ai_036_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.2,
+    "attempt": 1
+  }
+}

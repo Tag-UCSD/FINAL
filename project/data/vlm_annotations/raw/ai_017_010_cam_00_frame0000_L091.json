@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and obstructs the view of the window."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is ergonomic and provides good back support."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor is warm and comfortable to sit on."
+    },
+    {
+      "name": "Cabinet-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are too high and obstruct the view of the window."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (solo) due to the obstruction of the view by the dining table and cabinets, but it has a comfortable chair and a warm wooden floor.",
+  "_meta": {
+    "image_id": "ai_017_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.8,
+    "attempt": 2
+  }
+}

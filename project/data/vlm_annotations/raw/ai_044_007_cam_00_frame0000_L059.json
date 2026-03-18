@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "futuristic furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Futuristic furniture is not conducive to sleep due to its lack of comfort and ergonomic design."
+    },
+    {
+      "name": "large digital display",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Large digital display emits blue light, which can interfere with sleep patterns."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hard flooring is not comfortable for sleeping and can cause noise."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows prevent natural light and ventilation, which are important for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for sleep (primary). The futuristic furniture, large digital display, hard flooring, and lack of windows all contribute to a negative sleep environment. The score is low due to the absence of any positive indicators.",
+  "_meta": {
+    "image_id": "ai_044_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.84,
+    "attempt": 1
+  }
+}

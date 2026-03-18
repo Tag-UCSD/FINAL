@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "ample unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The spacious layout allows for a variety of yoga poses without obstruction."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft lighting creates a calming atmosphere conducive to yoga practice."
+    },
+    {
+      "name": "comfortable chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide comfortable seating for meditation or relaxation before or after yoga."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for yoga practice and could be a distraction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga, with ample unobstructed floor space and soft lighting creating a calming atmosphere. Comfortable chairs also provide a place for relaxation. However, the presence of dining tables could be a distraction and are not suitable for yoga practice.",
+  "_meta": {
+    "image_id": "ai_023_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.04,
+    "attempt": 1
+  }
+}

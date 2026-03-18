@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "soaking tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A soaking tub is not suitable for sleep, as it is designed for bathing and relaxation, not restful sleep."
+    },
+    {
+      "name": "floor-to-ceiling windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Floor-to-ceiling windows allow natural light to enter, which can help regulate the body's circadian rhythm and improve sleep quality."
+    },
+    {
+      "name": "towels",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Towels are useful for drying off after a bath or shower, but they do not directly support sleep."
+    },
+    {
+      "name": "vase with flowers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Flowers can create a calming atmosphere, which may indirectly support sleep."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not suitable for sleep, as it is designed for washing hands and face, not restful sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for sleep, with floor-to-ceiling windows allowing natural light to enter and towels available for drying off after a bath. However, the presence of a soaking tub and sink suggests the space is more focused on bathing and relaxation rather than sleep, which slightly reduces the overall score.",
+  "_meta": {
+    "image_id": "ai_039_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.96,
+    "attempt": 1
+  }
+}

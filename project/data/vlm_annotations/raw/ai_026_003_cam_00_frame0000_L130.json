@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for multiple people to gather without feeling cramped."
+    },
+    {
+      "name": "Bright lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Bright lighting creates a welcoming atmosphere conducive to social interaction."
+    },
+    {
+      "name": "Clean and minimalistic design",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The clean and minimalistic design reduces distractions and allows for easy conversation."
+    }
+  ],
+  "reasoning_summary": "The space is large, bright, and minimalistic, making it suitable for casual conversations and hangouts.",
+  "_meta": {
+    "image_id": "ai_026_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.84,
+    "attempt": 2
+  }
+}

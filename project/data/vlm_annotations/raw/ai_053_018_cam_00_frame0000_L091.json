@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Marble wall",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The marble wall provides a clean and elegant backdrop, which can be visually stimulating."
+    },
+    {
+      "name": "Glass dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The glass dining table is smooth and easy to use for typing and mouse work."
+    },
+    {
+      "name": "Wooden flooring",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden flooring is warm and comfortable underfoot, which can enhance focus and comfort during long periods of work."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs are ergonomic and adjustable, providing support and comfort for extended periods of sitting."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for solo computer work due to its elegant and stimulating environment, comfortable seating, and functional furniture.",
+  "_meta": {
+    "image_id": "ai_053_018_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_018\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.78,
+    "attempt": 2
+  }
+}

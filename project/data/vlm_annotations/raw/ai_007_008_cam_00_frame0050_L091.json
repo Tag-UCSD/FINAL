@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "white carpet",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White carpet can show dirt and stains easily, making it less suitable for a workspace."
+    },
+    {
+      "name": "wooden floor",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden floor provides a stable and clean surface for a workspace."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Pillow is not suitable for a workspace as it is not a flat surface."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for a workspace as it is not a flat surface."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Pillow is not suitable for a workspace as it is not a flat surface."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Pillow is not suitable for a workspace as it is not a flat surface."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for computer work (solo). The wooden floor provides a stable and clean surface, while the white carpet can show dirt and stains easily. The presence of a couch and pillows indicates that the space is not designed for a workspace, which negatively impacts the suitability.",
+  "_meta": {
+    "image_id": "ai_007_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.72,
+    "attempt": 1
+  }
+}

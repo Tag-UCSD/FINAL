@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a dedicated workspace for computer work."
+    },
+    {
+      "name": "open-plan layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open-plan layout makes it difficult to focus on computer work due to potential distractions from other areas of the house."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The lighting appears to be low, which may affect visibility and concentration during computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The large dining table and open-plan layout make it challenging to focus on computer work, while the low lighting may impact visibility and concentration. However, there are no major barriers to setting up a workspace, so a score of 4 is appropriate.",
+  "_meta": {
+    "image_id": "ai_054_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.06,
+    "attempt": 1
+  }
+}

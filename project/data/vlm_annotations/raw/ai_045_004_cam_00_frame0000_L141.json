@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelf along the wall obstructs the open floor space needed for yoga."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant on the nightstand is too close to the bed, potentially obstructing the yoga mat."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The books on the nightstand are too close to the bed, potentially obstructing the yoga mat."
+    },
+    {
+      "name": "wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wall behind the bed is too close, limiting the open floor space needed for yoga."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The wall-mounted lamp provides ambient lighting suitable for a yoga session."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga due to the presence of a bed and other objects that obstruct the open floor space needed for yoga. The lighting is suitable for a yoga session, but the limited open floor area makes it difficult to set up a yoga mat.",
+  "_meta": {
+    "image_id": "ai_045_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.87,
+    "attempt": 1
+  }
+}

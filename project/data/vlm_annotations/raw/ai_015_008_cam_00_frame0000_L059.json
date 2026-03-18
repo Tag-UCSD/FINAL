@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large rectangular bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bathtub is too large and deep for comfortable sleep, and its location in a bathroom is not conducive to a peaceful sleep environment."
+    },
+    {
+      "name": "candles on a tray",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Candles can provide a calming atmosphere, but their presence in a bathroom setting does not align with typical sleep practices."
+    },
+    {
+      "name": "dark tiles on the floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark tiles can make the space feel colder and less inviting, which may affect sleep quality."
+    },
+    {
+      "name": "glass doors leading to a balcony",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The balcony provides a connection to nature and fresh air, which can improve sleep quality."
+    }
+  ],
+  "reasoning_summary": "The large bathtub and dark tiles on the floor are negative indicators for sleep, while the glass doors leading to a balcony are positive. The overall score is 4 because the presence of a bathtub in a bathroom setting makes it unsuitable for sleep, despite the potential benefits of the balcony.",
+  "_meta": {
+    "image_id": "ai_015_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.11,
+    "attempt": 1
+  }
+}

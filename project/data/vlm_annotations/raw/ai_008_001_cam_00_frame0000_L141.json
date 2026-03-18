@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "L-shaped desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The L-shaped desk occupies a significant portion of the floor space, leaving little room for a yoga mat or other stretching equipment."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelves along the walls create a cluttered and visually distracting environment, which is not conducive to the calming atmosphere required for yoga."
+    },
+    {
+      "name": "filing cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The filing cabinet further obstructs the available floor space and adds to the visual clutter, making it difficult to find a clear area for yoga."
+    },
+    {
+      "name": "stacks of papers and boxes",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is cluttered with stacks of papers and boxes, which obstructs the floor space and makes it impossible to set up a yoga mat or perform any stretching exercises."
+    },
+    {
+      "name": "no open floor area visible",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no open floor area visible, which is essential for performing yoga and stretching exercises."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is highly unsuitable for yoga and stretching due to the presence of a large L-shaped desk, bookshelves, a filing cabinet, and cluttered floor space. There is no open floor area visible, making it impossible to perform any yoga or stretching exercises in this space.",
+  "_meta": {
+    "image_id": "ai_008_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.82,
+    "attempt": 1
+  }
+}

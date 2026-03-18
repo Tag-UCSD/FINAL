@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too close to the kitchen area, which could lead to distractions."
+    },
+    {
+      "name": "Ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sloped ceiling might limit the space available for setting up a comfortable workspace."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is ample natural light coming from the window, which can be beneficial for concentration."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the proximity of the dining table to the kitchen area and the limited space under the sloped ceiling, but it benefits from good lighting.",
+  "_meta": {
+    "image_id": "ai_045_010_cam_00_frame0058",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_010\\images\\scene_cam_00_final_preview\\frame.0058.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.86,
+    "attempt": 2
+  }
+}

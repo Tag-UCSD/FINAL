@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not designed for sleep and is too large for a bedroom setting."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for sleep and are too close to the kitchen counter."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is not suitable for sleep and is too close to the couch."
+    },
+    {
+      "name": "bare concrete floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bare concrete floor is not suitable for sleep and is too cold."
+    },
+    {
+      "name": "exposed brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed brick walls are not suitable for sleep and are too noisy."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Open layout is not suitable for sleep and is too noisy."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (primary). The presence of a couch, bar stools, glass coffee table, bare concrete floor, exposed brick walls, and an open layout make this a poor choice for a bedroom. The lack of a dedicated sleep area and the presence of furniture and surfaces incompatible with sleep prevent a higher score.",
+  "_meta": {
+    "image_id": "ai_005_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.87,
+    "attempt": 1
+  }
+}

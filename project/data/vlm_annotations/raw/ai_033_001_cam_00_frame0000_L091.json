@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several desks with computers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple workstations provide options for setting up a computer workspace."
+    },
+    {
+      "name": "ergonomic chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs designed for comfort and support are suitable for extended computer work."
+    },
+    {
+      "name": "task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Lighting is present but not specifically directed at the screens, which may affect visibility."
+    },
+    {
+      "name": "open space layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open space layout may lead to distractions and reduced privacy."
+    },
+    {
+      "name": "staircase nearby",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Staircase may be a source of noise and distraction."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there are multiple workstations and ergonomic chairs, the open space layout and nearby staircase may lead to distractions and reduced privacy. The lighting is present but not specifically directed at the screens, which may affect visibility.",
+  "_meta": {
+    "image_id": "ai_033_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.7,
+    "attempt": 1
+  }
+}

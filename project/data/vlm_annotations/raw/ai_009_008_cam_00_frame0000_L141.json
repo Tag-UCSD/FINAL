@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is large and takes up significant floor space, obstructing the open floor area required for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass coffee table is placed in the middle of the room, creating a potential tripping hazard and obstructing the open floor space."
+    },
+    {
+      "name": "grass outside",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of grass outside the sliding glass doors suggests that the floor is not entirely flat and level, which could be uncomfortable for yoga practice."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is placed close to the couch, further obstructing the open floor space and potentially creating a tripping hazard."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is placed against the wall, taking up valuable floor space and obstructing the open floor area."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a stable and non-slip surface suitable for yoga mat placement."
+    }
+  ],
+  "reasoning_summary": "The room is partially obstructed by furniture and has a partially obstructed floor area due to the presence of a couch, table, and potted plant. The cabinet also takes up valuable floor space. While the wooden floor is suitable for yoga, the overall obstruction of the floor area makes it marginally adequate for yoga practice.",
+  "_meta": {
+    "image_id": "ai_009_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.17,
+    "attempt": 1
+  }
+}

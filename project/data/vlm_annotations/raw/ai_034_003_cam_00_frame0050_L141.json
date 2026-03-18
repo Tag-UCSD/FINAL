@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "red chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Red chairs are too close together and obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining tables are too close together and obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "arched columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Arched columns obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "wooden flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring is suitable for yoga practice."
+    },
+    {
+      "name": "dining tables",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining tables are too close together and obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "arched columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Arched columns obstruct the open floor space required for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially suitable for yoga due to the wooden flooring, but the presence of red chairs, dining tables, and arches obstruct the open floor space required for yoga. The score of 2 reflects the significant obstruction of the floor space by furniture and the limited open area available for yoga.",
+  "_meta": {
+    "image_id": "ai_034_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_034_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.75,
+    "attempt": 1
+  }
+}

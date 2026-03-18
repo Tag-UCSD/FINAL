@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A single couch does not provide enough seating for multiple people, making it difficult to engage in a casual conversation."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A single pillow on the couch does not provide enough seating comfort for multiple people."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden floor is too cold and hard for prolonged sitting, which is essential for a casual conversation."
+    },
+    {
+      "name": "no other seating",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no other seating available, making it impossible to engage in a casual conversation with multiple people."
+    }
+  ],
+  "reasoning_summary": "The scene lacks sufficient seating and a comfortable floor surface, making it unsuitable for a casual conversation. The presence of only one couch and a single pillow on it further reduces the suitability of this space for a hangout.",
+  "_meta": {
+    "image_id": "ai_015_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.39,
+    "attempt": 1
+  }
+}

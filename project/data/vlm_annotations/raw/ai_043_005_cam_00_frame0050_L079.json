@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "counter",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Counter provides a hard work surface for food preparation tasks."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No stove is visible, which is a critical component for cooking."
+    },
+    {
+      "name": "fridge",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No fridge is visible, which is essential for storing food."
+    }
+  ],
+  "reasoning_summary": "The space has some elements that support daily cooking, such as a sink and counter, but it lacks crucial components like a stove and fridge, making it marginally adequate for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.08,
+    "attempt": 1
+  }
+}

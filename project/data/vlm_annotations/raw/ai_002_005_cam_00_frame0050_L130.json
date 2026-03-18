@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are too high and closed, making it difficult to access items without bending or reaching."
+    },
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Counter height is too low for comfortable conversation, requiring users to lean over or sit on the floor."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Window provides natural light and a view, contributing to a pleasant atmosphere."
+    },
+    {
+      "name": "clock",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Clock is small and not easily visible, making timekeeping inconvenient."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Lighting is sufficient and evenly distributed, creating a pleasant ambiance."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has mixed support for casual conversation/hangout. While the window and lighting contribute positively, the cabinets and counter height negatively impact comfort and accessibility. A score of 4 indicates marginal adequacy due to the height issues and lack of easily accessible items.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.92,
+    "attempt": 1
+  }
+}

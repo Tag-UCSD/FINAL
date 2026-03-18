@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large L-shaped desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large desk with dual monitors is suitable for extended computer work."
+    },
+    {
+      "name": "ergonomic mesh office chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ergonomic chairs with lumbar support are beneficial for long periods of computer use."
+    },
+    {
+      "name": "directional task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Task lighting can reduce eye strain and improve visibility."
+    },
+    {
+      "name": "closed door providing privacy",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Enclosed room with door enables acoustic and visual privacy essential for focused solo work."
+    },
+    {
+      "name": "dedicated low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "No high-traffic areas or recreational features compete for attention; the room is wholly work-oriented."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for solo computer work. While it has a large desk with dual monitors and ergonomic chairs, the lighting is not specifically designed for computer work, and the layout is not entirely free of distractions. The presence of a closed door and a dedicated workspace layout does provide some positive aspects.",
+  "_meta": {
+    "image_id": "ai_033_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.37,
+    "attempt": 1
+  }
+}

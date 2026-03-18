@@ -1,0 +1,33 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Potted Plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a potted plant may obstruct airflow and light, potentially affecting sleep quality."
+    },
+    {
+      "name": "Wall",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wall does not directly affect sleep but its texture and color might influence mood."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has a potted plant that could obstruct airflow and light, which might negatively impact sleep quality. However, the wall's texture and color do not significantly affect sleep.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.68,
+    "attempt": 2
+  }
+}

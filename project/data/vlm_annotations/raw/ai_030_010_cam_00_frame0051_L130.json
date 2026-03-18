@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large dining table is more suitable for formal dining or working, not casual conversation."
+    },
+    {
+      "name": "book on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Books on the table suggest a focus on reading rather than casual conversation."
+    },
+    {
+      "name": "stools under table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stools under the table are not suitable for sitting and conversing."
+    },
+    {
+      "name": "open windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Open windows allow natural light and fresh air, enhancing the casual atmosphere."
+    },
+    {
+      "name": "skylights",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Skylights bring in natural light, creating a bright and inviting space."
+    },
+    {
+      "name": "chairs around table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs around the table provide seating for conversation."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects like open windows and skylights, but the large dining table, books on the table, and stools under the table suggest it is more suited for formal dining or working rather than casual conversation. A score of 4 indicates it is marginally adequate for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_030_010_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_010\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.76,
+    "attempt": 1
+  }
+}

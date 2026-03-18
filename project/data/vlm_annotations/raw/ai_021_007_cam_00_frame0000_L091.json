@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended computer use and lacks ergonomic support."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bookshelves are not organized for easy access to reference materials."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Natural light can create glare on computer screens."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling beams may obstruct the view and create shadows."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a dining table and chairs suggests it is primarily a social space rather than a dedicated workspace. The bookshelves are not organized for easy access to reference materials, and the window and ceiling beams may create glare and shadows, respectively. However, the space does not have any major barriers to setting up a computer workstation, so it scores a 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_021_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.5,
+    "attempt": 1
+  }
+}

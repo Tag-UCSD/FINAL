@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "glass roof",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass roof allows natural light but does not provide a sheltered, enclosed space conducive to casual conversation."
+    },
+    {
+      "name": "arched ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The arched ceiling may be visually appealing but does not contribute to a sense of enclosure or privacy."
+    },
+    {
+      "name": "high ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A high ceiling can make the space feel less intimate and more open, which might be less suitable for a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The glass roof and high ceiling create an open, airy atmosphere that may be visually appealing but lacks the sense of enclosure and privacy needed for a casual hangout. The arches add to the visual interest but do not enhance the suitability for this activity.",
+  "_meta": {
+    "image_id": "ai_024_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.0,
+    "attempt": 1
+  }
+}

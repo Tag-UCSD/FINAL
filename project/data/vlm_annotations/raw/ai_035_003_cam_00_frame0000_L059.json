@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with white pillows and green blanket",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, with soft textiles providing comfort and support."
+    },
+    {
+      "name": "round bed frame with black headboard",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bed frame is modern and comfortable, contributing to a restful sleep environment."
+    },
+    {
+      "name": "white nightstand with black lamp",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The nightstand with a lamp provides a source of warm, dimmable light, conducive to sleep."
+    },
+    {
+      "name": "glass balcony railing",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The glass balcony railing provides a safe barrier while allowing natural light and views to enhance the sleep experience."
+    },
+    {
+      "name": "large windows with view of ocean",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows with a view of the ocean allow natural light and a calming ocean view to support sleep."
+    },
+    {
+      "name": "white carpeted floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white carpeted floor is soft and comfortable, contributing to a restful sleep environment."
+    }
+  ],
+  "reasoning_summary": "This is a well-designed bedroom that is ideally suited for sleep (Primary). The presence of a comfortable bed with soft textiles, a source of warm, dimmable light, and a view of the ocean contribute to a restful sleep environment. The large windows and glass balcony railing also provide a calming ocean view and a safe barrier, respectively, which further enhance the sleep experience.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.24,
+    "attempt": 1
+  }
+}

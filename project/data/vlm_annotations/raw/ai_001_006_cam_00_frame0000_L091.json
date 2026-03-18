@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "low flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is not suitable for prolonged computer work due to its low flat surface and lack of ergonomics."
+    },
+    {
+      "name": "no dedicated desk or table",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for setting up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No chair or seating arrangement is present for comfortable extended computer use."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no direct task lighting for the computer screens."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The room is not set up for focused solo work, as it lacks a dedicated workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The low flat surface of the bed and the absence of a dedicated desk or ergonomic seating make it challenging to set up a comfortable workstation. There is also no task lighting, and the layout does not support focused solo work.",
+  "_meta": {
+    "image_id": "ai_001_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.33,
+    "attempt": 1
+  }
+}

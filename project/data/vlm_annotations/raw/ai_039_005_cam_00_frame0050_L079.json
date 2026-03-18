@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for cooking supplies and ingredients."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink is essential for washing dishes and preparing food."
+    },
+    {
+      "name": "countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Countertop provides a hard surface for food preparation."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Bottles could contain cooking oils or other ingredients."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is decorative and not functional for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with essential elements like cabinets, sink, and countertop present. However, the presence of a vase is not conducive to cooking and the lack of specific cooking tools and ingredients limits its suitability.",
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.81,
+    "attempt": 1
+  }
+}

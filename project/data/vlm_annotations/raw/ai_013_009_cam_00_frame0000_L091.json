@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for computer work as it lacks a dedicated workspace."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A comfortable chair is essential for long periods of computer use."
+    }
+  ],
+  "reasoning_summary": "The space has large windows for natural light, a comfortable chair, but lacks a dedicated workspace for computer work.",
+  "_meta": {
+    "image_id": "ai_013_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.83,
+    "attempt": 2
+  }
+}

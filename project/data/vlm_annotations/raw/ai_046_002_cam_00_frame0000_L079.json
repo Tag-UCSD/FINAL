@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A refrigerator is essential for storing food and keeping it fresh."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A sink is necessary for washing dishes and preparing food."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops provide a hard, washable surface for food preparation."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An oven is needed for baking, roasting, and other cooking methods."
+    },
+    {
+      "name": "microwave",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A microwave can heat and defrost food quickly."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A stove is essential for cooking on the hob."
+    }
+  ],
+  "reasoning_summary": "The space has some key cooking affordances, but lacks a complete set of essential kitchen appliances and work surfaces. It scores 4/7 as marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_046_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.3,
+    "attempt": 1
+  }
+}

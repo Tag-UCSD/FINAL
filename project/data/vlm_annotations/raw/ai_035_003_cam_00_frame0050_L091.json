@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the window."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height, making it impossible to set up a computer workstation."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is too close to the bed, making it difficult to position a computer screen without causing glare or discomfort."
+    },
+    {
+      "name": "lack of task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting available to illuminate the workspace, which is essential for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a bed and the lack of a flat personal work surface make it challenging to set up a computer workstation. Additionally, the window's proximity to the bed and the absence of task lighting further reduce the suitability of this space for focused solo computer work.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.61,
+    "attempt": 1
+  }
+}

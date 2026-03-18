@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for cooking activities due to their purpose being for eating rather than preparing food."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for sitting and eating, not for cooking activities."
+    },
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are meant for relaxation and sitting, not for cooking activities."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants are decorative and do not contribute to cooking activities."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ceiling lights provide adequate lighting for cooking activities."
+    },
+    {
+      "name": "wall decorations",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wall decorations are not conducive to cooking activities."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially suitable for daily cooking activities. While there are dining tables and chairs, which are not ideal for cooking, the presence of ceiling lights ensures adequate lighting for such activities. However, the presence of potted plants, couches, and wall decorations detracts from the suitability of the space for cooking.",
+  "_meta": {
+    "image_id": "ai_055_008_cam_00_frame0001",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_008\\images\\scene_cam_00_final_preview\\frame.0001.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.58,
+    "attempt": 1
+  }
+}

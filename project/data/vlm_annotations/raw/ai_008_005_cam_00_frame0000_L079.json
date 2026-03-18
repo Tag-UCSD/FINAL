@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for cooking activities due to their height and lack of a built-in surface for food preparation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for sitting and do not provide a stable surface for cooking tasks."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are not suitable for cooking activities as they can be easily damaged by heat and spills."
+    },
+    {
+      "name": "stone walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stone walls are not conducive to cooking activities as they do not provide a flat surface for food preparation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for daily cooking activities. The presence of dining tables and chairs suggests a focus on dining rather than cooking, and the hard flooring and stone walls make it less suitable for cooking tasks. The score of 3 indicates that while some elements could be adapted for cooking, the overall setup is not ideal for this purpose.",
+  "_meta": {
+    "image_id": "ai_008_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.26,
+    "attempt": 1
+  }
+}

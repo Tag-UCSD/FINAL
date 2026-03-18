@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and stretching."
+    },
+    {
+      "name": "Natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can help set a calming atmosphere for yoga practice."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature but do not obstruct the space significantly."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for yoga and stretching due to its large open area and natural lighting, while the potted plants add a pleasant touch without obstructing the space.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.25,
+    "attempt": 2
+  }
+}

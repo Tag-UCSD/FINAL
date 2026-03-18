@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk is large enough to accommodate a dual monitor setup, which is beneficial for extended computer work."
+    },
+    {
+      "name": "ergonomic stool",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stool is designed for ergonomic support, which is important for maintaining correct posture during prolonged computer work."
+    },
+    {
+      "name": "directional desk lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk lamp is positioned to illuminate the dual monitors, reducing eye strain and providing focused task lighting."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The closed door provides some level of privacy, which can be beneficial for focused solo work."
+    },
+    {
+      "name": "low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The room layout is relatively simple and uncluttered, minimizing distractions that could disrupt focused work."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for computer work (solo). While it does have a desk with dual monitors and an ergonomic stool, the presence of a closed door and a low-distraction layout provide some level of privacy and focus. However, the lack of a dedicated workspace and the minimal lighting options limit its suitability for extended computer work.",
+  "_meta": {
+    "image_id": "ai_043_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.23,
+    "attempt": 1
+  }
+}

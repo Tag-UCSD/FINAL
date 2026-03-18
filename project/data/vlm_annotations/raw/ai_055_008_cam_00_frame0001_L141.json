@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is too soft and large, making it difficult to perform yoga poses."
+    },
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and obstructs the space, making it difficult to move around."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too close together, making it difficult to move around and perform yoga poses."
+    },
+    {
+      "name": "Potted Plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plants are too close to the seating areas, making it difficult to move around and perform yoga poses."
+    }
+  ],
+  "reasoning_summary": "The space is not suitable for yoga and stretching due to the presence of furniture and potted plants that obstruct movement and make it difficult to perform poses.",
+  "_meta": {
+    "image_id": "ai_055_008_cam_00_frame0001",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_008\\images\\scene_cam_00_final_preview\\frame.0001.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.06,
+    "attempt": 2
+  }
+}

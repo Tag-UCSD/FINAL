@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white sectional sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa is the primary social seating artifact, accommodating multiple people comfortably."
+    },
+    {
+      "name": "white ottomans",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ottomans provide additional seating options and can be used as footrests or extra seats."
+    },
+    {
+      "name": "round glass coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central shared surface within reach of all seats allows drinks, snacks, and objects to be shared during conversation."
+    },
+    {
+      "name": "rug under seating area",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug visually anchors the seating area, creating a sense of enclosed social space."
+    },
+    {
+      "name": "fireplace with sculpture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A fireplace with a sculpture adds a focal point and warmth to the room, enhancing the social atmosphere."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to flood the room, creating a bright and inviting atmosphere."
+    },
+    {
+      "name": "high ceiling with exposed beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Exposed beams add character and interest to the ceiling, making the space feel more open and airy."
+    }
+  ],
+  "reasoning_summary": "This living room is well-suited for casual conversations and hangouts. The large sofa and ottomans provide ample seating, while the central coffee table and rug define the social space. The fireplace and sculpture add focal points and warmth, and the large windows let in natural light. The high ceiling with exposed beams gives the room an open and airy feel, making it an ideal space for socializing.",
+  "_meta": {
+    "image_id": "ai_021_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.85,
+    "attempt": 1
+  }
+}

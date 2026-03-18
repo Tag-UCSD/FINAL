@@ -1,0 +1,86 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not designed for sleep and is too large for a bedroom setting."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring is cold and hard, not suitable for sleep."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is not suitable for sleep."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Book on coffee table is not suitable for sleep."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bowl on coffee table is not suitable for sleep."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not designed for sleep and is too large for a bedroom setting."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring is cold and hard, not suitable for sleep."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is not suitable for sleep."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Book on coffee table is not suitable for sleep."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bowl on coffee table is not suitable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for sleep. The presence of a couch, glass coffee table, and hard wood flooring make it unsuitable for sleep. The lack of a bed or other sleep-friendly furniture further contributes to the low score.",
+  "_meta": {
+    "image_id": "ai_002_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.81,
+    "attempt": 1
+  }
+}

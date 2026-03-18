@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and is not suitable for prolonged sitting."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height to place a laptop or keyboard, making it difficult to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no ergonomic seating available, which is crucial for maintaining correct posture during extended computer work."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting available to reduce eye strain and provide good illumination for screen work."
+    },
+    {
+      "name": "closed door providing privacy",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The closed door provides some level of privacy, which can be beneficial for focused solo work."
+    },
+    {
+      "name": "dedicated low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The room layout is relatively simple and uncluttered, reducing distractions and allowing for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there is some level of privacy and a dedicated layout, the absence of a flat work surface, ergonomic seating, and task lighting significantly undermines the suitability for extended computer work. The presence of a bed and the lack of a dedicated desk are major drawbacks.",
+  "_meta": {
+    "image_id": "ai_007_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.31,
+    "attempt": 1
+  }
+}

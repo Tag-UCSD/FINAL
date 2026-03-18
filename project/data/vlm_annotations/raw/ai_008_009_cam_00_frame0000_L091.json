@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for computer work due to its height and lack of ergonomics for prolonged use."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended computer use, lacking proper back support and armrests."
+    },
+    {
+      "name": "wine glasses",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wine glasses are not suitable for computer work as they are not ergonomically designed for extended use."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is not suitable for computer work as it is not ergonomically designed for extended use."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not suitable for computer work as it is not ergonomically designed for extended use."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bowl is not suitable for computer work as it is not ergonomically designed for extended use."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A closed door provides some privacy, which can be beneficial for focused solo work."
+    },
+    {
+      "name": "low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The room layout is relatively simple, with minimal distractions, which can be conducive to focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is some privacy and a relatively simple layout, the lack of ergonomic furniture and flat work surfaces makes it challenging to set up a comfortable and efficient workspace. The presence of a closed door and a low-distraction layout are positive factors, but the dining table, chairs, and other objects are not suitable for extended computer use.",
+  "_meta": {
+    "image_id": "ai_008_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.82,
+    "attempt": 1
+  }
+}

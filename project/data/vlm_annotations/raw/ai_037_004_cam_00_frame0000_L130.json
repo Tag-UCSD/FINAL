@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa provides ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "seating arrangement around coffee table",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A U-shaped seating arrangement around a coffee table encourages face-to-face interaction and easy conversation."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central coffee table provides a shared surface for placing drinks and small items, enhancing the social atmosphere."
+    },
+    {
+      "name": "rug under seating area",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds warmth and comfort to the space, making it more inviting for conversation."
+    },
+    {
+      "name": "ample natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the large windows creates a pleasant and welcoming atmosphere conducive to casual conversation."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation and hangouts, featuring a large sofa, a U-shaped seating arrangement, a central coffee table, a rug, and ample natural light. The score of 6 indicates a high level of suitability, with only minor improvements needed to achieve a perfect score.",
+  "_meta": {
+    "image_id": "ai_037_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.62,
+    "attempt": 1
+  }
+}

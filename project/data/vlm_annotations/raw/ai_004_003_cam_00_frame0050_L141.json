@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for placing a yoga mat."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a toilet in the immediate vicinity can be considered a negative factor for yoga practice."
+    },
+    {
+      "name": "bidet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bidet is located close to the toilet, which might be considered a negative factor for yoga practice."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is placed on the floor, which could be considered a negative factor for yoga practice."
+    },
+    {
+      "name": "bathroom fixtures",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of bathroom fixtures such as a bathtub and toilet in close proximity to the yoga area can be considered a negative factor for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The hardwood flooring is suitable for yoga practice, but the presence of bathroom fixtures in close proximity to the yoga area can be considered a negative factor. The score of 4 reflects the marginal adequacy of the space for yoga practice due to the proximity of bathroom fixtures.",
+  "_meta": {
+    "image_id": "ai_004_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.74,
+    "attempt": 1
+  }
+}

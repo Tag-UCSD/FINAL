@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not a suitable sleep surface."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can cause discomfort and limit space."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard floor is not comfortable for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No natural light source."
+    }
+  ],
+  "reasoning_summary": "The space is not well-suited for sleep due to the lack of a suitable sleep surface, low ceiling height, hard floor, and lack of natural light. The presence of a couch instead of a bed is a significant negative factor.",
+  "_meta": {
+    "image_id": "ai_045_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.92,
+    "attempt": 1
+  }
+}

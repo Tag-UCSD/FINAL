@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too low for comfortable sitting and working."
+    },
+    {
+      "name": "sink",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is too close to the counter, making it difficult to set up a workspace."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The vase is decorative and not functional for workspace setup."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair available for sitting and working."
+    },
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The towel is decorative and not functional for workspace setup."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The low counter and sink make it difficult to set up a workspace, and there is no chair or towel available for sitting and working. The presence of decorative objects like the vase and towel further detracts from the workspace setup.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.27,
+    "attempt": 1
+  }
+}

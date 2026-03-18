@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large U-shaped sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large U-shaped sofa provides ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "several small round tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Small round tables allow for easy sharing of drinks and snacks, enhancing the casual conversation experience."
+    },
+    {
+      "name": "low stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Low stools provide additional seating options and can be used for informal conversations."
+    },
+    {
+      "name": "ample natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the windows creates a pleasant and inviting atmosphere conducive to casual conversation."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout encourages interaction and conversation among people seated in different areas."
+    }
+  ],
+  "reasoning_summary": "The scene is ideally suited for casual conversation and hangouts, featuring a large U-shaped sofa, small round tables for sharing, low stools for additional seating, ample natural light, and an open layout that encourages interaction. A score of 7 would require more personal items like drinks and snacks.",
+  "_meta": {
+    "image_id": "ai_018_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_018_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.16,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White couches are not suitable for computer work as they do not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is not suitable for computer work as it does not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white armchairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White armchairs are not suitable for computer work as they do not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white shelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "White shelves are not suitable for computer work as they do not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls are not suitable for computer work as they do not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White floor is not suitable for computer work as it does not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White ceiling is not suitable for computer work as it does not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White light is not suitable for computer work as it does not provide a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "white vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "White vase is not suitable for computer work as it does not provide a flat surface for a laptop or keyboard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The lack of a flat surface for a laptop or keyboard, combined with the white color scheme, makes it difficult to set up a productive workstation. The presence of white furniture and decor further undermines the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_004_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.6,
+    "attempt": 1
+  }
+}

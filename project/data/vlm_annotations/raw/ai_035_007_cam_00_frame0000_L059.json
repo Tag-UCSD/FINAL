@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "queen bed with duvet and pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A bed is the primary artifact for sleep; its presence with soft textiles strongly supports the activity."
+    },
+    {
+      "name": "floor-length curtains over window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Window coverings provide light control and visual privacy essential for quality sleep."
+    },
+    {
+      "name": "fireplace with warm flames",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A fireplace can provide warmth and a calming ambiance, which are conducive to sleep."
+    },
+    {
+      "name": "armchair near window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "An armchair near a window can provide a comfortable spot for reading or relaxing before sleep."
+    },
+    {
+      "name": "floor lamps with warm light",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor lamps with warm light can provide a calming atmosphere conducive to sleep."
+    },
+    {
+      "name": "artwork on walls",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Artwork on walls can add aesthetic appeal and a sense of personalization to the space."
+    }
+  ],
+  "reasoning_summary": "This is a well-designed bedroom that is ideally suited for sleep. The presence of a comfortable bed, floor-length curtains, a fireplace, and warm lighting all contribute to creating a relaxing and sleep-friendly environment. The artwork on the walls adds a personal touch without detracting from the primary purpose of the room.",
+  "_meta": {
+    "image_id": "ai_035_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.22,
+    "attempt": 1
+  }
+}

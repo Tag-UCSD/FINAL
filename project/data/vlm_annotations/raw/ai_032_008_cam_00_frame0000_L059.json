@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "queen bed with duvet and pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A bed is the primary artifact for sleep; its presence with soft textiles strongly supports the activity."
+    },
+    {
+      "name": "wooden nightstand with bedside lamp",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bedside lamp provides dimmable warm lighting typical of sleep-supportive environments."
+    },
+    {
+      "name": "floor-length curtains over window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Window coverings provide light control and visual privacy essential for quality sleep."
+    },
+    {
+      "name": "wardrobe along far wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Personal storage fixture is consistent with a primary sleeping room, reinforcing residential bedroom context."
+    },
+    {
+      "name": "enclosed private room with door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Enclosed layout with no through-traffic cues supports the low-disturbance environment needed for sleep."
+    },
+    {
+      "name": "warm soft ambient lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Warm-toned, low-intensity bedside lighting is conducive to relaxation and sleep onset."
+    }
+  ],
+  "reasoning_summary": "This is a well-appointed residential bedroom. The queen bed with soft textiles is the primary sleep artifact, complemented by privacy-providing curtains and a warm bedside lamp. The enclosed, low-disturbance layout earns a high score; it falls just short of 7 due to modest room size and curtains that appear to be drapes rather than blackout blinds.",
+  "_meta": {
+    "image_id": "ai_032_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.83,
+    "attempt": 1
+  }
+}

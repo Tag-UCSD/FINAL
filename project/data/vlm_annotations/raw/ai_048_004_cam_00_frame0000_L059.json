@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with colorful bedding",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bed is the primary artifact for sleep, and the colorful bedding adds comfort and visual appeal."
+    },
+    {
+      "name": "large windows with pink curtains",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and ventilation, which can be beneficial for sleep."
+    },
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor can be noisy and uncomfortable for sleep."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to noise and distractions, which can interfere with sleep."
+    }
+  ],
+  "reasoning_summary": "The scene has a bed with colorful bedding, large windows with pink curtains, and hardwood flooring. The bed and windows support sleep, but the open layout and hard floor could be problematic for sleep quality.",
+  "_meta": {
+    "image_id": "ai_048_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.66,
+    "attempt": 1
+  }
+}

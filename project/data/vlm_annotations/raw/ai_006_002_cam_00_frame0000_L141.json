@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "several round tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Round tables obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "chairs around tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Chairs around tables obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar counter obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "book on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Book on table obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "newspaper on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Newspaper on table obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "open floor space limited",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Limited open floor space makes it difficult to deploy a yoga mat."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is poorly suited for yoga due to the presence of several round tables, chairs, a bar counter, and various objects on the tables. The limited open floor space makes it difficult to deploy a yoga mat, resulting in a low score of 2.",
+  "_meta": {
+    "image_id": "ai_006_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.37,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "towel hanging on towel holder",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A towel hanging on a holder is a common feature in bathrooms, but it does not directly support sleep."
+    },
+    {
+      "name": "sink with faucet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A sink with a faucet is a typical bathroom fixture, but it is not suitable for sleep."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A toilet is a typical bathroom fixture, but it is not suitable for sleep."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A window allows natural light and ventilation, which can be disruptive during sleep."
+    },
+    {
+      "name": "tiled walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Tiled walls are typical of bathrooms, but they do not support sleep."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Marble flooring is typical of bathrooms, but it does not support sleep."
+    }
+  ],
+  "reasoning_summary": "The bathroom is well-equipped with typical bathroom fixtures such as a sink, toilet, and window, but these features do not support sleep. The presence of a window and tiled walls indicates a typical bathroom setting, which is not conducive to sleep.",
+  "_meta": {
+    "image_id": "ai_007_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.61,
+    "attempt": 1
+  }
+}

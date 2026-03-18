@@ -1,0 +1,75 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the space, leaving little room for other activities."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a warm and inviting atmosphere conducive to casual conversations."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is large and could be used as a surface for placing items during a hangout, but it's currently empty."
+    },
+    {
+      "name": "rug-merged",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug adds comfort and a cozy feel to the space, making it more suitable for casual conversations."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wall is plain and does not distract from the conversation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair provides a comfortable seating option for casual conversations."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The lighting is bright and evenly distributed, creating a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "window-other",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window allows natural light to enter, enhancing the ambiance for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for casual conversations, with positive aspects such as the wooden floor, rug, and lighting, but negative aspects like the large bed and empty cabinet could be improved.",
+  "_validation_errors": [
+    "indicators[4].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 31.19,
+    "attempt": 2
+  }
+}

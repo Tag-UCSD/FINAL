@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The toilet is a significant obstacle to clear floor space required for yoga."
+    },
+    {
+      "name": "books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Stacked books on the floor obstruct the open floor area needed for yoga."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can help practitioners monitor their posture during yoga."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is a fixed obstacle that cannot be moved out of the way for yoga."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable surface for yoga mats."
+    },
+    {
+      "name": "limited open floor space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is limited open floor space due to the toilet and sink, making it difficult to perform yoga."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga, with a hard floor and a mirror, but is hindered by the presence of a toilet and sink, and limited open floor space. The score of 3 reflects the mixed suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_039_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.13,
+    "attempt": 1
+  }
+}

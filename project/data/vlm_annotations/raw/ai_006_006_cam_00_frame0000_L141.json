@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable, non-slip surface suitable for yoga practice."
+    },
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for a variety of yoga poses without obstruction."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is placed in the middle of the room, potentially obstructing the open floor space."
+    },
+    {
+      "name": "plant in corner",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The plant in the corner could potentially obstruct the open floor space if moved."
+    }
+  ],
+  "reasoning_summary": "The hardwood flooring and unobstructed floor area are positive indicators for yoga practice. However, the presence of a couch and a plant in the corner could potentially obstruct the open floor space, reducing the suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_006_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.77,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "two white sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sinks are not flat surfaces suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "black countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The black countertop is not a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "white wall tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The white wall tiles do not provide a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "black wall tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The black wall tiles do not provide a flat surface suitable for placing a laptop or other work equipment."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The towel rack is not a flat surface suitable for placing a laptop or other work equipment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of two sinks and a black countertop indicates that there is no flat surface suitable for placing a laptop or other work equipment. The white wall tiles and black wall tiles also do not provide a flat surface suitable for placing a laptop or other work equipment. The towel rack is not a flat surface suitable for placing a laptop or other work equipment. Overall, the lack of a flat surface makes it difficult to set up a computer workstation in this space.",
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.03,
+    "attempt": 1
+  }
+}

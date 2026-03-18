@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "dining tables and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining tables and chairs are not suitable for sleep, as they are designed for eating and socializing, not resting."
+    },
+    {
+      "name": "chandeliers and ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chandeliers and ceiling beams create a visually busy and cluttered environment, which is not conducive to sleep."
+    },
+    {
+      "name": "white walls and ceiling",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls and ceiling can reflect light and create a harsh, clinical atmosphere, which is not conducive to sleep."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep patterns."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The presence of dining tables and chairs, chandeliers, white walls, large windows, and a visually busy environment make it unsuitable for sleep. The score is low because there are no features that support sleep, and the negative indicators outweigh any potential positive ones.",
+  "_meta": {
+    "image_id": "ai_017_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.28,
+    "attempt": 1
+  }
+}

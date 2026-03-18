@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Marble floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The smooth and clean marble floor provides a pleasant surface for sitting and moving around."
+    },
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to flood the space, creating a bright and inviting atmosphere."
+    },
+    {
+      "name": "Soft seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soft seating encourages people to relax and engage in casual conversations."
+    },
+    {
+      "name": "Plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The plants add a touch of nature and make the space feel more comfortable and welcoming."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its bright lighting, comfortable seating, and pleasant aesthetic.",
+  "_meta": {
+    "image_id": "ai_038_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_038_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.15,
+    "attempt": 2
+  }
+}

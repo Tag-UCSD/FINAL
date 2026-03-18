@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with stove and sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a central cooking area with a stove and sink, essential for daily cooking tasks."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops offer a hard, washable work surface for food preparation."
+    },
+    {
+      "name": "dining table and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The dining table and chairs are not directly related to cooking activities and take up space that could be used for cooking."
+    },
+    {
+      "name": "lack of storage space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is limited storage space available for daily cooking needs."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a kitchen island with a stove and sink, but lacks sufficient storage space and dedicated cooking work surfaces. The dining table and chairs take up valuable space that could be used for cooking.",
+  "_meta": {
+    "image_id": "ai_048_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.63,
+    "attempt": 1
+  }
+}

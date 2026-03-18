@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "laptop with bright screen",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The laptop's bright screen emits blue light, which can interfere with sleep."
+    },
+    {
+      "name": "glass table",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass surfaces are cold and hard, making them unsuitable for sleeping."
+    },
+    {
+      "name": "lack of soft textiles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No pillows, blankets, or other soft items are present to provide comfort and warmth."
+    },
+    {
+      "name": "no bed",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed or other resting surface for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). The presence of a laptop with a bright screen, a glass table, and a lack of soft textiles make it impossible to support the primary sleep activity. There is no bed or resting surface, and the cold, hard glass table would be uncomfortable to sleep on.",
+  "_meta": {
+    "image_id": "ai_001_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.26,
+    "attempt": 1
+  }
+}

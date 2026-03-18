@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for a wide range of movement and positioning during yoga and stretching."
+    },
+    {
+      "name": "Natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can help set a calming atmosphere and aid in focusing on breathing and alignment during yoga."
+    },
+    {
+      "name": "Candles",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Candles can create a relaxing ambiance, which is beneficial for meditation and relaxation during yoga."
+    },
+    {
+      "name": "Sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not directly related to yoga practice but could be used for cleaning after practice."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for yoga and stretching due to its open layout, natural lighting, and the presence of candles, while the sink is a minor distraction.",
+  "_meta": {
+    "image_id": "ai_015_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.63,
+    "attempt": 2
+  }
+}

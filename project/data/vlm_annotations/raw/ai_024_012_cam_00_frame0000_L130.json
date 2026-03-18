@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase obstructs direct line-of-sight between potential conversational partners, reducing the ease of engaging in casual conversation."
+    },
+    {
+      "name": "high ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel less intimate and conducive to casual conversation."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to flood the space, creating a welcoming and open atmosphere."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout facilitates easy movement and interaction among people, supporting casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has a moderate level of support for casual conversation due to its open layout and large windows allowing natural light. However, the staircase obstructs direct line-of-sight and the high ceiling can make the space feel less intimate, resulting in a marginal adequacy score.",
+  "_meta": {
+    "image_id": "ai_024_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.61,
+    "attempt": 1
+  }
+}

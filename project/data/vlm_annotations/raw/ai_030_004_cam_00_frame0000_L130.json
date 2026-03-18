@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A white sofa provides ample seating for multiple people."
+    },
+    {
+      "name": "white armchair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "An armchair opposite the sofa creates a sociopetal layout."
+    },
+    {
+      "name": "white coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central coffee table allows for shared items during conversation."
+    },
+    {
+      "name": "striped rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds comfort."
+    },
+    {
+      "name": "U-shaped seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A U-shaped arrangement with seats facing inward is ideal for group conversation."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor lamp provides ambient light conducive to a relaxed atmosphere."
+    }
+  ],
+  "reasoning_summary": "This living room is well-suited for casual conversations and hangouts, featuring a comfortable seating arrangement, central coffee table, and ambient lighting. A score of 7 would require additional social props such as drinks accessories; this room is just below peak.",
+  "_meta": {
+    "image_id": "ai_030_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.7,
+    "attempt": 1
+  }
+}

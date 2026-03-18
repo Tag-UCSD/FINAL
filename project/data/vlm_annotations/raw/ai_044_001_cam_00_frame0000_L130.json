@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The space is designed with multiple seating options, including sofas and chairs, providing ample space for people to sit and engage in casual conversations."
+    },
+    {
+      "name": "large open area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open area allows for easy movement and conversation without feeling cramped."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting creates a warm and inviting atmosphere conducive to casual conversations."
+    },
+    {
+      "name": "decorative plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Decorative plants add a touch of nature and can make the space feel more relaxed and comfortable."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its ample seating, open layout, soft lighting, and decorative elements.",
+  "_meta": {
+    "image_id": "ai_044_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.95,
+    "attempt": 2
+  }
+}

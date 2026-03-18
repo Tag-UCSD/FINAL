@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "queen bed with duvet and pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A bed is the primary artifact for sleep; its presence with soft textiles strongly supports the activity."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not suitable for sleep, as it lacks a backrest and is not designed for prolonged sitting."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is not suitable for sleep, as it lacks a backrest and is not designed for prolonged sitting."
+    },
+    {
+      "name": "fan",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fan is not suitable for sleep, as it can be noisy and disrupt sleep."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light and ventilation, which can be beneficial for sleep."
+    },
+    {
+      "name": "brick walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick walls can provide a sense of coziness and warmth, which can be beneficial for sleep."
+    }
+  ],
+  "reasoning_summary": "This is a moderately suitable space for sleep. The presence of a queen bed with soft textiles strongly supports the activity. However, the chair and table lack backrests and are not suitable for sleep. The fan can be noisy and disrupt sleep. The window allows natural light and ventilation, which can be beneficial for sleep. The brick walls can provide a sense of coziness and warmth, which can be beneficial for sleep.",
+  "_meta": {
+    "image_id": "ai_006_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.16,
+    "attempt": 1
+  }
+}

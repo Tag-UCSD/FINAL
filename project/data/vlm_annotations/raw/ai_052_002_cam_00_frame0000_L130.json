@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large dining table is typically associated with formal dining settings, not casual hangouts."
+    },
+    {
+      "name": "formal place settings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal place settings suggest a formal dining experience, not a casual hangout."
+    },
+    {
+      "name": "formal chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal chairs are not conducive to casual conversation, as they lack comfort and flexibility."
+    },
+    {
+      "name": "formal lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal lighting is typically used for formal dining, not casual hangouts."
+    },
+    {
+      "name": "formal decor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Formal decor suggests a formal setting, not a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to its formal dining setup, place settings, and decor. The large dining table, formal chairs, and formal lighting are not conducive to a casual hangout atmosphere. A score of 4 would require significant changes to the setup to make it more suitable for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_052_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.43,
+    "attempt": 1
+  }
+}

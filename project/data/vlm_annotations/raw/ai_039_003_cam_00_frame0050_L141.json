@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bowl on shelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowl is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "sink on shelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wall is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowl is not related to yoga or stretching and could be seen as a distraction."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not related to yoga or stretching and could be seen as a distraction."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga or stretching, but several objects and spatial features are not related to the activity and could be seen as distractions. The score of 4 reflects the presence of a sink and bowl on a shelf, which are not conducive to yoga or stretching, while the rest of the space is relatively clear and unobstructed.",
+  "_meta": {
+    "image_id": "ai_039_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.13,
+    "attempt": 1
+  }
+}

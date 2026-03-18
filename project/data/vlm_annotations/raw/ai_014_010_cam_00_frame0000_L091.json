@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a living area rather than a dedicated workspace."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A coffee table is not suitable for setting up a computer workstation."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can lead to glare and distractions."
+    },
+    {
+      "name": "curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Curtains can block natural light and create a dim environment."
+    },
+    {
+      "name": "lack of flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a couch and coffee table, along with the large windows and curtains, suggest a living area rather than a dedicated workspace. There is no flat work surface at sitting height, which is crucial for setting up a computer workstation.",
+  "_meta": {
+    "image_id": "ai_014_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_014_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.7,
+    "attempt": 1
+  }
+}

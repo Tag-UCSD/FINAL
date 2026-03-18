@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting and potentially reducing eye strain."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open layout can lead to distractions and noise, which can be disruptive for focused solo work."
+    },
+    {
+      "name": "various workstations",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple workstations provide options for different work styles and preferences."
+    },
+    {
+      "name": "ergonomic chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ergonomic chairs support proper posture and comfort during extended periods of computer use."
+    },
+    {
+      "name": "laptop computers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Laptops are suitable for mobile work and can be used at various workstations."
+    },
+    {
+      "name": "artistic wall decorations",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Artistic wall decorations may be visually appealing but do not contribute to a focused work environment."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While it has some positive aspects like large windows and ergonomic chairs, the open layout and artistic wall decorations can be distracting and may not provide a conducive environment for focused solo work.",
+  "_meta": {
+    "image_id": "ai_033_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.58,
+    "attempt": 1
+  }
+}

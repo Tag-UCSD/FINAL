@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "White color scheme",
+      "type": "color",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white color scheme provides a neutral and calming environment conducive to concentration."
+    },
+    {
+      "name": "Open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open space allows for a sense of freedom and reduces feelings of confinement, which can enhance focus."
+    },
+    {
+      "name": "Modern lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern lighting provides even illumination without glare, which is beneficial for visual tasks like computer work."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work (Solo) due to its open layout, modern lighting, and neutral color scheme, which together create a conducive environment for concentration and productivity.",
+  "_validation_errors": [
+    "indicators[0].type invalid: 'color' (must be one of {'spatial', 'layout', 'surface', 'object', 'lighting'})"
+  ],
+  "_meta": {
+    "image_id": "ai_038_005_cam_00_frame0015",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_038_005\\images\\scene_cam_00_final_preview\\frame.0015.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.0,
+    "attempt": 2
+  }
+}

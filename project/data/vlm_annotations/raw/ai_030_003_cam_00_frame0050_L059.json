@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed or sleeping area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The image does not show any furniture or space designated for sleeping."
+    }
+  ],
+  "reasoning_summary": "The scene lacks a bed or any sleeping area, making it completely unsuitable for primary sleep activities.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 36.88,
+    "attempt": 2
+  }
+}

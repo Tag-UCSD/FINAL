@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large open space lacks the privacy needed for focused solo work."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated desk or table at sitting height for setting up a computer workstation."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for group meetings rather than individual work."
+    },
+    {
+      "name": "lack of task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting specifically designed for screen work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large open space and lack of a flat personal work surface make it difficult to set up a productive workstation. The seating arrangement is designed for group meetings rather than individual work, and there is no task lighting specifically designed for screen work. However, the presence of natural light and the spacious layout could potentially be beneficial for some tasks.",
+  "_meta": {
+    "image_id": "ai_027_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.87,
+    "attempt": 1
+  }
+}

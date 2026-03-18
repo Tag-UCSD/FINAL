@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "circular seating area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Circular seating area is not conducive to sleep, as it lacks a dedicated resting surface."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can lead to feelings of claustrophobia and discomfort, which are not conducive to sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable, making it less suitable for sleep."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Lack of windows makes it difficult to control light levels and view natural scenery, which can affect sleep quality."
+    },
+    {
+      "name": "no visible bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No visible bed or resting surface makes it impossible to support the primary sleep activity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for primary sleep. While there are no visible obstacles to sleep, the lack of a dedicated resting surface, hard flooring, low ceiling height, and lack of windows make it less suitable for sleep compared to a typical bedroom setting.",
+  "_meta": {
+    "image_id": "ai_038_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_038_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.52,
+    "attempt": 1
+  }
+}

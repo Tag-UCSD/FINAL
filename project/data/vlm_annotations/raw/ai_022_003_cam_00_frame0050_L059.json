@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel is not a suitable sleep surface."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A window allows light and potential noise into the room."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not a suitable sleep surface."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A counter is not a suitable sleep surface."
+    },
+    {
+      "name": "floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor is not suitable for sleeping."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for sleep (primary). There is no bed or other suitable sleep surface, and the presence of a window, sink, and counter makes the space unsuitable for sleeping.",
+  "_meta": {
+    "image_id": "ai_022_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.15,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is designed for listening and discussion, not rest or sleep."
+    },
+    {
+      "name": "lack of personal storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No personal storage fixtures like a nightstand or wardrobe are present, which are typically found in a bedroom."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed, which is the primary artifact for sleep."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows for natural light and ventilation, which are important for sleep."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No curtains for light control, which is important for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). It lacks the key components of a bedroom, such as a bed, personal storage, and windows with curtains. The seating arrangement is designed for listening and discussion, not rest or sleep. The absence of windows and curtains makes it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_053_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.94,
+    "attempt": 1
+  }
+}

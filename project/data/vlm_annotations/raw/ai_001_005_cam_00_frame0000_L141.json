@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "red glossy countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glossy surface can be slippery and uncomfortable for yoga practice."
+    },
+    {
+      "name": "curved countertop",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A curved countertop may limit the available space for yoga mats."
+    },
+    {
+      "name": "white cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets can be heavy and difficult to move out of the way for yoga practice."
+    },
+    {
+      "name": "red chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs can be uncomfortable and may obstruct the floor space needed for yoga."
+    },
+    {
+      "name": "white floor tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White tiles can be slippery and uncomfortable for yoga practice."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls can be visually distracting and may create a cold atmosphere."
+    }
+  ],
+  "reasoning_summary": "This kitchen scene is moderately suitable for yoga practice. The red glossy countertop and curved shape of the countertop may limit the available space for yoga mats. The white cabinets and chairs can be heavy and difficult to move out of the way, and the white floor tiles can be slippery and uncomfortable. The white walls can be visually distracting and create a cold atmosphere. Overall, the score is 3 due to the limited space and potential discomfort factors.",
+  "_meta": {
+    "image_id": "ai_001_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.44,
+    "attempt": 1
+  }
+}

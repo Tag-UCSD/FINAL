@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bathtub is not suitable for sleep, as it is designed for bathing and relaxation, not rest."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A fireplace is not suitable for sleep, as it is designed for warmth and comfort, not rest."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large window allows natural light to enter, which can be disruptive to sleep."
+    },
+    {
+      "name": "towels hanging on wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Towels provide a soft surface for resting feet, which can be beneficial for sleep."
+    },
+    {
+      "name": "wooden floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A wooden floor is not suitable for sleep, as it is cold and hard."
+    }
+  ],
+  "reasoning_summary": "The scene is partially suitable for sleep (Primary). The presence of a bathtub and fireplace suggests a focus on relaxation rather than sleep. The large window allows natural light to enter, which can be disruptive. However, the hanging towels and wooden floor provide some positive aspects for sleep.",
+  "_meta": {
+    "image_id": "ai_039_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.44,
+    "attempt": 1
+  }
+}

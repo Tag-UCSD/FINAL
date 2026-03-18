@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "wooden walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden walls provide a warm, rustic ambiance conducive to casual social interactions."
+    },
+    {
+      "name": "wooden dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A wooden dining table can serve as a shared surface for casual conversation and food sharing."
+    },
+    {
+      "name": "wooden chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden chairs provide comfortable seating for multiple people."
+    },
+    {
+      "name": "stone fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A stone fireplace adds a cozy element to the room, enhancing the casual conversation atmosphere."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout allows for easy conversation and interaction between different areas of the room."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has a moderate level of support for casual conversation/hangout, with positive aspects such as wooden walls, a wooden dining table, wooden chairs, a stone fireplace, and an open layout. However, the lack of a dedicated seating arrangement and the presence of a stone fireplace might limit the comfort and suitability for extended casual conversations.",
+  "_meta": {
+    "image_id": "ai_011_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.23,
+    "attempt": 1
+  }
+}

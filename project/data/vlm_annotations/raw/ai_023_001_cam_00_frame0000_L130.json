@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bookshelves",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bookshelves provide a sense of intellectual atmosphere and can serve as conversation topics."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Chairs are available for people to sit and engage in conversation."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug adds comfort and warmth to the space, making it inviting for casual conversations."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the windows can create a pleasant and relaxed atmosphere for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to its intellectual atmosphere and availability of seating, but lacks direct interaction areas.",
+  "_meta": {
+    "image_id": "ai_023_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.34,
+    "attempt": 2
+  }
+}

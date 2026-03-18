@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Multiple seating options allow for group conversations."
+    },
+    {
+      "name": "natural lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The lighting is bright and evenly distributed, creating a welcoming atmosphere."
+    },
+    {
+      "name": "stone walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stone walls add a rustic charm, making the space feel cozy."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its comfortable seating arrangement, natural lighting, and cozy ambiance.",
+  "_meta": {
+    "image_id": "ai_008_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.69,
+    "attempt": 2
+  }
+}

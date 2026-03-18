@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large sofa",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large sofa takes up a significant amount of space, leaving limited room for computer work."
+    },
+    {
+      "name": "Lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no dedicated workspace for computer work, making it difficult to focus on tasks."
+    },
+    {
+      "name": "Bright natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bright natural light from the windows can help reduce eye strain during computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the lack of a dedicated workspace and the large sofa taking up space, but the bright natural light can be beneficial.",
+  "_meta": {
+    "image_id": "ai_037_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.11,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dining tables obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "candles and candle holders",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Candles and candle holders are not suitable for yoga practice and can pose a fire hazard."
+    },
+    {
+      "name": "wine glasses",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Wine glasses are not suitable for yoga practice and can pose a safety hazard."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Potted plants obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "dining table layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table layout is too close to the seating area, making it difficult to move around without disturbing others."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially suitable for yoga due to the hardwood flooring, but is significantly hindered by the presence of dining tables, candles, wine glasses, potted plants, and the close proximity of the dining table to the seating area. The score of 2 reflects the significant obstructions and hazards present in the space.",
+  "_meta": {
+    "image_id": "ai_018_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_018_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.27,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a place for people to sit and engage in conversation."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are closed, which might make it less inviting for casual conversation."
+    },
+    {
+      "name": "Ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sloped ceiling adds character and can create a cozy atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for casual conversation and hangouts, with a positive aspect being the dining table and ceiling design, but a negative aspect being the closed cabinets.",
+  "_meta": {
+    "image_id": "ai_045_010_cam_00_frame0058",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_010\\images\\scene_cam_00_final_preview\\frame.0058.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.14,
+    "attempt": 2
+  }
+}

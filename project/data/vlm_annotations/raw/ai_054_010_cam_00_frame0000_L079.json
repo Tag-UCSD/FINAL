@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not a cooking surface and is not suitable for food preparation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs around the dining table are not suitable for food preparation."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The potted plant is not a cooking surface and is not suitable for food preparation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no visible sink in the image, which is essential for food preparation."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no visible stove in the image, which is essential for cooking."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no visible oven in the image, which is essential for baking and roasting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for daily cooking due to the absence of essential cooking appliances such as a stove, oven, and sink. The presence of a dining table and chairs suggests it is primarily designed for dining rather than cooking.",
+  "_meta": {
+    "image_id": "ai_054_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.34,
+    "attempt": 1
+  }
+}

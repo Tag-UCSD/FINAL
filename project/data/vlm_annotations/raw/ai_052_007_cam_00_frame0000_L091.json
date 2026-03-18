@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of multiple chairs and sofas suggests a social or leisure area rather than a dedicated workspace."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bar counter is not suitable for computer work as it lacks a flat surface and is designed for social interaction."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated workspace with a flat surface suitable for placing a laptop or monitor."
+    },
+    {
+      "name": "ambient lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting is not sufficient for focused screen work and may cause glare."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of multiple chairs and sofas, along with the bar counter, suggests a social or leisure area rather than a dedicated workspace. There is no dedicated workspace with a flat surface suitable for placing a laptop or monitor. The ambient lighting is not sufficient for focused screen work and may cause glare.",
+  "_meta": {
+    "image_id": "ai_052_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.22,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are typically associated with formal dining settings, not casual hangouts."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for formal dining, not casual socializing."
+    },
+    {
+      "name": "laptop",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A laptop is a tool for work, not social interaction."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "curtains",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Curtains can provide privacy and a sense of enclosure, which is conducive to social interaction."
+    },
+    {
+      "name": "chandelier",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A chandelier provides ambient lighting, which is suitable for a social setting."
+    }
+  ],
+  "reasoning_summary": "The presence of dining tables, chairs, and a laptop suggests this space is primarily designed for formal dining and work, not casual social hangouts. However, the large windows, curtains, and chandelier contribute positively to the social atmosphere, making it marginally adequate for casual conversations.",
+  "_meta": {
+    "image_id": "ai_016_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.56,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large dining table is not suitable for sleep due to its size and lack of a comfortable seating arrangement."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is not conducive to sleep due to its coldness and potential noise."
+    },
+    {
+      "name": "no visible bed or sleeping area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no visible bed or sleeping area, which is essential for primary sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for primary sleep. The large dining table, hard flooring, and lack of a visible bed or sleeping area make it unsuitable for sleep. The presence of a dining table and chairs instead of a bed or sleeping area is a significant issue.",
+  "_meta": {
+    "image_id": "ai_051_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_051_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.71,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and not easily accessible for multiple people to use simultaneously."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The seating arrangement is not conducive to conversation as it is not facing each other."
+    },
+    {
+      "name": "statue",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The statue is not a social seating artifact and does not contribute to the conversational environment."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants do not contribute to the conversational environment and can be seen as distractions."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the lack of suitable seating arrangements and the presence of non-social objects like the table and statue. The layout is not conducive to conversation as the seating is not facing each other. Potted plants also do not contribute to the conversational environment.",
+  "_meta": {
+    "image_id": "ai_009_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.64,
+    "attempt": 1
+  }
+}

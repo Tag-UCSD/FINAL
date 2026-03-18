@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement is sociopetal, with chairs facing each other, conducive to conversation."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dining tables provide surfaces for placing drinks and snacks, enhancing the social atmosphere."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, creating a pleasant and open atmosphere."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space, making it more inviting."
+    },
+    {
+      "name": "modern lighting fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Modern lighting fixtures provide a pleasant ambiance without being too harsh or industrial."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts, featuring a sociopetal seating arrangement, dining tables for snacks, large windows for natural light, potted plants for a touch of nature, and modern lighting for a pleasant ambiance. However, the lack of a dedicated social area or a larger seating cluster slightly reduces the score.",
+  "_meta": {
+    "image_id": "ai_055_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.51,
+    "attempt": 1
+  }
+}

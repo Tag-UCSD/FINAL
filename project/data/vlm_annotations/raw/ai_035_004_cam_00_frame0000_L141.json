@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is large and takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bookshelf is filled with books and other items, occupying valuable floor space that could be used for yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor is smooth and firm, suitable for placing a yoga mat."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large window allows natural light to enter, creating a calming atmosphere for yoga."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling is high enough to allow for a variety of yoga poses without hitting it."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a bed and a bookshelf that take up a significant amount of floor space. However, the wooden floor is suitable for placing a yoga mat, and the large window allows natural light to enter, creating a calming atmosphere for yoga.",
+  "_meta": {
+    "image_id": "ai_035_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.48,
+    "attempt": 1
+  }
+}

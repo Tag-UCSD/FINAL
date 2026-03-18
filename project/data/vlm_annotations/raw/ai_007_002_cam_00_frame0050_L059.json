@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not suitable for sleep due to its height and lack of a comfortable seating arrangement."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not suitable for sleep due to their height and lack of a comfortable seating arrangement."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring is not suitable for sleep due to its coldness and lack of comfort."
+    },
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no bed present, which is essential for sleep."
+    },
+    {
+      "name": "no curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No curtains are present, which would block out light and provide privacy."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). There is no bed, no curtains, and the hard flooring and chairs are not suitable for sleep. The presence of a dining table and chairs further suggests a non-sleep environment.",
+  "_meta": {
+    "image_id": "ai_007_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.58,
+    "attempt": 1
+  }
+}

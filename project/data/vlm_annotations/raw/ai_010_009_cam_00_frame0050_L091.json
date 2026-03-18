@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "White flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "White flooring reflects light, creating a brighter and more open atmosphere."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature but may require maintenance."
+    },
+    {
+      "name": "Stairs",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stairs can create a sense of separation from other areas, potentially disrupting focus."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work due to its bright, open layout and natural light, but the presence of stairs could potentially disrupt focus.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_010_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.05,
+    "attempt": 2
+  }
+}

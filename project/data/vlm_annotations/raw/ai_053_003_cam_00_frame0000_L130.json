@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs facing a screen are not conducive to casual conversation, as they are designed for formal presentations and lectures."
+    },
+    {
+      "name": "screen",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A large screen is typically used for presentations, not for casual conversation."
+    },
+    {
+      "name": "lack of soft seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard chairs are not suitable for prolonged sitting, which is necessary for casual conversation."
+    },
+    {
+      "name": "no furniture arrangement conducive to conversation",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The rows of chairs are arranged in a way that discourages face-to-face interaction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not ideally suited for casual conversation due to the formal seating arrangement, lack of soft seating, and the presence of a screen, which is not conducive to informal social interactions. A score of 2 reflects the complete unsuitability of this space for the intended activity.",
+  "_meta": {
+    "image_id": "ai_053_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.59,
+    "attempt": 1
+  }
+}

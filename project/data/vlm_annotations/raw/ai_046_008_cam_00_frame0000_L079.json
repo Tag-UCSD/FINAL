@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops forming U-shape",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+    },
+    {
+      "name": "large side-by-side refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Refrigerator completes the stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge work triangle, the standard efficient cooking workflow."
+    },
+    {
+      "name": "work triangle layout (stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge)",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The classical work triangle is clearly visible in the U-shape arrangement, minimising movement during cooking tasks."
+    },
+    {
+      "name": "absence of cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No stove, oven, or microwave is visible \u00e2\u20ac\u201d the single most critical deficiency for a cooking space."
+    },
+    {
+      "name": "absence of water fixture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is present; water access is essential for food preparation and kitchen hygiene."
+    },
+    {
+      "name": "absence of hard prep surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No countertop or hard washable work surface is present \u00e2\u20ac\u201d required for all food preparation tasks."
+    },
+    {
+      "name": "absence of storage",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No cabinets or shelves are visible to store ingredients and cookware."
+    }
+  ],
+  "reasoning_summary": "The space has some key elements for cooking, such as a sink, countertop, and refrigerator, but lacks essential cooking appliances like a stove, oven, and microwave. The absence of storage and hard prep surfaces also undermines its suitability for daily cooking.",
+  "_meta": {
+    "image_id": "ai_046_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.71,
+    "attempt": 1
+  }
+}

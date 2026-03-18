@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with blue sheets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, and the blue sheets add comfort and color."
+    },
+    {
+      "name": "desk with lamp",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk with a lamp provides a workspace and a source of ambient light."
+    },
+    {
+      "name": "brick wall",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The brick wall adds texture and visual interest, contributing to the aesthetic appeal of the space."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large windows allow natural light and views, which can be soothing and relaxing."
+    },
+    {
+      "name": "hardwood floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The hardwood floor is cold and hard, which is less comfortable for sleeping."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for sleep (Primary). The bed with blue sheets and the desk with a lamp are positive features, but the hard floor and lack of privacy make it less than ideal. The large windows and brick wall contribute to the aesthetic appeal but do not significantly enhance the sleep environment.",
+  "_meta": {
+    "image_id": "ai_036_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.1,
+    "attempt": 1
+  }
+}

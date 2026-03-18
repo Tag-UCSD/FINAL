@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "high ceiling with skylights",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "High ceilings and skylights create an open, airy feeling that can be perceived as cold and impersonal, making it less suitable for intimate social interactions."
+    },
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The vast open space lacks defined boundaries, making it difficult to establish a sense of enclosure and privacy, which are important for casual conversations."
+    },
+    {
+      "name": "industrial-style lighting fixtures",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Industrial lighting fixtures contribute to a utilitarian atmosphere, which is not conducive to a relaxed and social environment."
+    },
+    {
+      "name": "exposed structural beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed structural beams create a raw, industrial feel that might be perceived as intimidating or uninviting, reducing the appeal for casual social interactions."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is a large, open, industrial-style space with high ceilings and exposed structural beams, which creates an impersonal and potentially intimidating atmosphere. The lack of defined boundaries and the utilitarian lighting fixtures further contribute to a setting that is not well-suited for casual conversations and hangouts. A score of 2 reflects the significant barriers to creating a social environment in this space.",
+  "_meta": {
+    "image_id": "ai_026_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.5,
+    "attempt": 1
+  }
+}

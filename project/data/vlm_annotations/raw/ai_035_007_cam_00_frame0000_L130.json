@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a private sleeping area, not suitable for casual conversation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A white armchair provides a comfortable seat for conversation."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The fireplace adds warmth and a focal point for conversation."
+    },
+    {
+      "name": "floor lamps",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor lamps provide ambient lighting conducive to conversation."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A bookshelf with books suggests a leisurely atmosphere for conversation."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows let in natural light and offer a view, enhancing the conversational setting."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation with a comfortable armchair, a warm fireplace, and ambient lighting. However, the presence of a bed indicates a private sleeping area, which detracts from the conversational purpose. A score of 6 reflects this mixed suitability.",
+  "_meta": {
+    "image_id": "ai_035_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.87,
+    "attempt": 1
+  }
+}

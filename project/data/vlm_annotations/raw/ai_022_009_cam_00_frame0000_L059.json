@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring can be cold and uncomfortable to sleep on."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No ceiling fan or ventilation system is visible, which could contribute to a stuffy atmosphere."
+    },
+    {
+      "name": "bench",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bench is not a suitable sleep surface."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants can be heavy and difficult to move, potentially causing discomfort if moved during sleep."
+    },
+    {
+      "name": "tv",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Television can emit blue light, which can interfere with sleep."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Chair is not a suitable sleep surface."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has several features that are not conducive to sleep. The wood flooring can be cold and uncomfortable, and the lack of a ceiling fan or ventilation system could lead to a stuffy atmosphere. The presence of a bench, potted plants, TV, and chair further detracts from the suitability of the space for sleep.",
+  "_meta": {
+    "image_id": "ai_022_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.3,
+    "attempt": 1
+  }
+}

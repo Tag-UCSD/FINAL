@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table occupies a significant portion of the floor space and obstructs the open floor area required for yoga."
+    },
+    {
+      "name": "books on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Books on the table create clutter and reduce the available floor space for yoga."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed close to the table, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga, but the presence of furniture obstructs the open floor area."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is obstructed by the dining table, reducing the available floor space for yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is poorly suited for yoga due to the presence of a dining table, chairs, and books on the table, which obstruct the open floor area required for yoga. The hardwood flooring is suitable for yoga, but the furniture placement significantly reduces the available floor space. The ceiling obstruction also contributes to the limited floor area available for yoga.",
+  "_meta": {
+    "image_id": "ai_015_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.74,
+    "attempt": 1
+  }
+}

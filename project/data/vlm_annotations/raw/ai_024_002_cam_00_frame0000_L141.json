@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for a variety of yoga poses without obstruction."
+    },
+    {
+      "name": "high ceiling height",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "High ceilings can provide better natural lighting and create a sense of openness."
+    },
+    {
+      "name": "glass roof panels",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Glass roof panels allow natural light to enter, creating a bright and airy atmosphere."
+    },
+    {
+      "name": "columns and beams",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Columns and beams may obstruct certain yoga poses and create a less fluid environment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga / stretching. The open floor space and high ceiling height are positive factors, but the presence of columns and beams could potentially limit certain poses. The glass roof panels also contribute positively by allowing natural light to enter.",
+  "_meta": {
+    "image_id": "ai_024_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.1,
+    "attempt": 1
+  }
+}

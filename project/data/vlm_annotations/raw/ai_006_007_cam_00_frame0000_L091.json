@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white vanity table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and lacks sufficient space for a computer setup."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The mirror is not suitable for computer work as it does not provide a flat surface for a monitor."
+    },
+    {
+      "name": "floor-wood",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden flooring is not suitable for a computer workstation due to its potential for damage from electronic devices."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not suitable for computer work as it is not designed for extended sitting."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is not suitable for computer work as it is not directed towards the workspace."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The potted plant is not suitable for computer work as it is not a flat surface for a monitor."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The white vanity table is too small and lacks sufficient space for a computer setup, while the mirror and chair are not suitable for extended sitting. The wooden flooring and lighting are also not suitable for a computer workstation. The potted plant is not a flat surface for a monitor. Overall, the space is not conducive to focused solo computer work.",
+  "_meta": {
+    "image_id": "ai_006_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.72,
+    "attempt": 1
+  }
+}

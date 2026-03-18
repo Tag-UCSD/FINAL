@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Couches block the open floor space required for yoga practice."
+    },
+    {
+      "name": "tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Tables obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are decorative items that do not contribute to the yoga practice but could be moved out of the way."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bowl is a decorative item that does not contribute to the yoga practice but could be moved out of the way."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rug is a decorative item that does not contribute to the yoga practice but could be moved out of the way."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Indirect lighting from the ceiling can create a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "couch",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Couches obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "couch",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Couches obstruct the open floor space required for yoga practice."
+    },
+    {
+      "name": "couch",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Couches obstruct the open floor space required for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is partially obstructed by furniture, making it difficult to perform yoga. However, the indirect lighting from the ceiling can create a calming atmosphere suitable for yoga. The score of 3 reflects the partial obstruction by furniture and the presence of decorative items that could be moved out of the way.",
+  "_meta": {
+    "image_id": "ai_005_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.8,
+    "attempt": 1
+  }
+}

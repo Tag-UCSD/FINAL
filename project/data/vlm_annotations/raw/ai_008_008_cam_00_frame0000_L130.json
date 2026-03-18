@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "White sofas",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white sofas provide ample seating for multiple people to engage in casual conversations."
+    },
+    {
+      "name": "Clear glass coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The clear glass coffee table allows for easy conversation without visual obstructions."
+    },
+    {
+      "name": "Modern lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern lighting provides a warm and inviting atmosphere conducive to casual conversations."
+    },
+    {
+      "name": "Open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout encourages interaction between different areas of the room, facilitating casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its ample seating, clear table, modern lighting, and open layout.",
+  "_meta": {
+    "image_id": "ai_008_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.96,
+    "attempt": 2
+  }
+}

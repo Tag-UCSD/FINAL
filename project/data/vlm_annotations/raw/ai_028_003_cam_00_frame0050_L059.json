@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with soft textiles",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bed is the primary artifact for sleep, with soft textiles providing comfort and support."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Low lighting is conducive to relaxation and sleep onset."
+    },
+    {
+      "name": "closed sliding doors",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Closed doors provide privacy and reduce external noise."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hard floors are less comfortable for sleep compared to soft surfaces."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for primary sleep. The bed with soft textiles and low lighting support the activity, but the hard floor and lack of acoustic enclosure detract from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.18,
+    "attempt": 1
+  }
+}

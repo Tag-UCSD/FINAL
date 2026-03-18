@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "high ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make it difficult to focus on tasks requiring concentration."
+    },
+    {
+      "name": "exposed concrete structure",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed concrete structure may be visually distracting and does not provide a sense of enclosure."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No flat work surface or seating makes it impossible to set up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The high ceiling and exposed concrete structure create a sense of openness and lack of enclosure, which can be distracting. Additionally, the absence of furniture such as a desk or chair makes it impossible to set up a computer workstation. However, the lighting appears to be adequate for task illumination.",
+  "_meta": {
+    "image_id": "ai_026_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.94,
+    "attempt": 1
+  }
+}

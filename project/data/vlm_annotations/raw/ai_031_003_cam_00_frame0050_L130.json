@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa provides ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "two armchairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Armchairs provide additional seating options, allowing for a more intimate conversation setting."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central coffee table allows for easy sharing of items during casual conversations."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area, creating a cozy and intimate space for conversation."
+    },
+    {
+      "name": "sociopetal seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The U-shaped arrangement with the sofa and armchairs facing each other encourages natural eye contact and conversation."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor lamp provides ambient lighting conducive to a relaxed and social atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation and hangouts, featuring a large sofa, armchairs, a coffee table, a rug, and a sociopetal seating arrangement. The floor lamp adds to the social atmosphere. However, the presence of a bar counter and stools suggests a more formal setting, slightly undermining the casual hangout vibe.",
+  "_meta": {
+    "image_id": "ai_031_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.09,
+    "attempt": 1
+  }
+}

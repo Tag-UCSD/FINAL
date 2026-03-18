@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide seating for multiple people, essential for a casual conversation setting."
+    },
+    {
+      "name": "glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glass partition can create a sense of separation and reduce the feeling of a shared space."
+    },
+    {
+      "name": "orange walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bright colors can make a space feel more inviting and lively, potentially enhancing a casual conversation atmosphere."
+    },
+    {
+      "name": "white pendant lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft, ambient lighting can create a relaxed and comfortable atmosphere conducive to casual conversations."
+    }
+  ],
+  "reasoning_summary": "The scene has several chairs for seating, which is positive for a casual conversation. However, the glass partition can create a sense of separation, which is negative. The orange walls and white pendant lights contribute positively to the atmosphere, making it suitable for a casual hangout, but the overall score is limited by the presence of the glass partition.",
+  "_meta": {
+    "image_id": "ai_013_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.87,
+    "attempt": 1
+  }
+}

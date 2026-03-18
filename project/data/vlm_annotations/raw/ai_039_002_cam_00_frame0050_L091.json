@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are closed, which might make it difficult to access items quickly."
+    },
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a warm and comfortable surface to stand or sit on."
+    },
+    {
+      "name": "Window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window allows natural light to enter, which can improve mood and focus."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the closed cabinets, but has positive aspects such as a comfortable floor and natural light from the window.",
+  "_meta": {
+    "image_id": "ai_039_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.9,
+    "attempt": 2
+  }
+}

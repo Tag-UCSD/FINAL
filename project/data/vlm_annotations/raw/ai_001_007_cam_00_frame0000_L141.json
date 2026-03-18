@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "towel on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the floor can be slippery and may cause accidents during yoga practice."
+    },
+    {
+      "name": "bottle on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle on the floor can be slippery and may cause accidents during yoga practice."
+    },
+    {
+      "name": "vase on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase on the floor can be slippery and may cause accidents during yoga practice."
+    },
+    {
+      "name": "towel on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Towels on the floor can create a slippery surface, increasing the risk of slipping and falling during yoga practice."
+    },
+    {
+      "name": "bottle on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles on the floor can create a slippery surface, increasing the risk of slipping and falling during yoga practice."
+    },
+    {
+      "name": "vase on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases on the floor can create a slippery surface, increasing the risk of slipping and falling during yoga practice."
+    }
+  ],
+  "reasoning_summary": "The presence of towels, bottles, and vases on the floor makes this space marginally suitable for yoga practice. The slippery surfaces created by these objects increase the risk of accidents, reducing the overall suitability to 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_001_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.31,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can interfere with sleep patterns."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable for sleep."
+    },
+    {
+      "name": "no visible bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No bed visible, indicating the space is not designed for sleep."
+    },
+    {
+      "name": "no visible curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No curtains to block out light, which can be disruptive during sleep."
+    }
+  ],
+  "reasoning_summary": "The space is not designed for sleep, as there is no visible bed, no curtains to block out light, and large windows allowing natural light to enter. The hard flooring and lack of privacy also contribute to a lower score.",
+  "_meta": {
+    "image_id": "ai_021_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.55,
+    "attempt": 1
+  }
+}

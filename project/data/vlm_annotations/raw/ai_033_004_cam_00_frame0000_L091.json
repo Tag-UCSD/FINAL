@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large white desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A spacious desk provides ample workspace for a computer and other accessories."
+    },
+    {
+      "name": "ergonomic black office chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An ergonomic chair with armrests and wheels supports long periods of sitting."
+    },
+    {
+      "name": "directional desk lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A desk lamp can provide focused task lighting for the computer screen."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A closed door provides privacy and reduces distractions."
+    },
+    {
+      "name": "bookshelf with reference materials",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Books and reference materials indicate a knowledge work environment."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). The large desk and ergonomic chair provide a functional workspace, while the closed door offers privacy. However, the lack of a dedicated workspace layout and directional lighting limits the suitability.",
+  "_meta": {
+    "image_id": "ai_033_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.35,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not a cooking surface and obstructs the view of the kitchen area."
+    },
+    {
+      "name": "bench",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bench obstructs the view of the kitchen area and does not serve as a cooking surface."
+    },
+    {
+      "name": "white brick walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick walls add character to the space and can be used for display or storage."
+    },
+    {
+      "name": "white wooden flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring is easy to clean and maintain, suitable for a kitchen."
+    },
+    {
+      "name": "white kitchen cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for kitchen items and keep the space organized."
+    },
+    {
+      "name": "white subway tiles",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Subway tiles are easy to clean and maintain, suitable for a kitchen."
+    },
+    {
+      "name": "white pendant lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Pendant lights provide focused lighting over the kitchen area."
+    },
+    {
+      "name": "white kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "white kitchen stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Stove is the central cooking appliance."
+    },
+    {
+      "name": "white kitchen hood",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hood signals functional kitchen infrastructure."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a dining table and bench that obstruct the view of the kitchen area. However, the white brick walls, white wooden flooring, white kitchen cabinets, white subway tiles, white pendant lights, white kitchen sink, and white kitchen hood contribute positively to the overall suitability of the space for daily cooking.",
+  "_meta": {
+    "image_id": "ai_043_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.4,
+    "attempt": 1
+  }
+}

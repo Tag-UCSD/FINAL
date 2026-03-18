@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the window."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can reduce the need for artificial lighting and improve mood and productivity."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The rug is thick and plush, which might make it difficult to set up a flat surface for a laptop or keyboard."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fireplace is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the window."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling beams add character to the room and may create a cozy atmosphere, which can be conducive to focused work."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The floor appears to be made of wood, which might be slippery and difficult to set up a flat surface for a laptop or keyboard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While the large windows and ceiling beams contribute positively to the atmosphere, the presence of the bed and fireplace, along with the rug and floor, create obstacles that make it difficult to set up a flat surface for a computer workstation. The layout is open and spacious, which could be beneficial for some types of work, but the physical obstructions significantly reduce the suitability for solo computer work.",
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.42,
+    "attempt": 1
+  }
+}

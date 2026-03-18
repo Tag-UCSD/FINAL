@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "L-shaped desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The L-shaped desk occupies a significant portion of the floor space, leaving little room for a yoga mat or other stretching equipment."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelf along the wall obstructs the open floor space and adds visual clutter, making it difficult to create a clear area for yoga."
+    },
+    {
+      "name": "filing cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The filing cabinet further obstructs the floor space and adds to the visual clutter, making it challenging to create a clear area for yoga."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of chairs around the desk makes it difficult to create a clear area for yoga, as they would need to be moved out of the way."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is occupied by furniture and equipment, making it impossible to create a clear area for yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is poorly suited for yoga or stretching due to the significant obstruction of floor space by an L-shaped desk, bookshelf, filing cabinet, and chairs. The presence of these objects makes it difficult to create a clear area for yoga, resulting in a low score of 2.",
+  "_meta": {
+    "image_id": "ai_008_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.47,
+    "attempt": 1
+  }
+}

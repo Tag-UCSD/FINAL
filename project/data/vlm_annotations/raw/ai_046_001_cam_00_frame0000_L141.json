@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open floor space allows for movement without obstruction."
+    },
+    {
+      "name": "table and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a table and chairs suggests a dining area, which is not suitable for yoga."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bookshelves can obstruct the open floor space and create visual clutter."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can obstruct the open floor space and create visual clutter."
+    }
+  ],
+  "reasoning_summary": "The open floor space is suitable for yoga, but the presence of a table and chairs, bookshelves, and potted plants obstruct the open space and create visual clutter, making the space marginally adequate for yoga.",
+  "_meta": {
+    "image_id": "ai_046_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.71,
+    "attempt": 1
+  }
+}

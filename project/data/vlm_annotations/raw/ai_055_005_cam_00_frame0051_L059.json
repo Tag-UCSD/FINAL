@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "cushioned seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cushioned seating provides comfort and relaxation, essential for sleep."
+    },
+    {
+      "name": "green plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Plants can improve air quality and reduce stress, contributing to better sleep."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, which can enhance mood and sleep quality."
+    },
+    {
+      "name": "indoor lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Indoor lighting can be adjusted to create a relaxing atmosphere conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for sleep (Primary). The cushioned seating and green plants contribute positively, but the large windows and indoor lighting suggest a more public, social setting rather than a private, restful environment. The score is slightly below 4 due to the lack of a dedicated sleeping area and the potential for noise and distraction from the bar setting.",
+  "_meta": {
+    "image_id": "ai_055_005_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_005\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.65,
+    "attempt": 1
+  }
+}

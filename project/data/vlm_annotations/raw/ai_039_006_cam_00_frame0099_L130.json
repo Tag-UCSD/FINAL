@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light and views, enhancing the casual atmosphere."
+    },
+    {
+      "name": "Modern furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Modern furniture is comfortable and stylish, suitable for casual conversations."
+    },
+    {
+      "name": "Vase with flowers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A vase with flowers adds a touch of nature and freshness to the space."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations due to its modern furniture, large windows, and pleasant decorative elements.",
+  "_meta": {
+    "image_id": "ai_039_006_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_006\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.25,
+    "attempt": 2
+  }
+}

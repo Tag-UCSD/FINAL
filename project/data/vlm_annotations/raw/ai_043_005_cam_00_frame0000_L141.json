@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table occupies a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring is suitable for yoga practice, providing a firm yet slightly cushioned surface."
+    },
+    {
+      "name": "stool",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The stool is placed near the dining table, potentially obstructing the floor space needed for yoga."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling height appears sufficient for yoga practice, allowing for a wide range of movements."
+    },
+    {
+      "name": "dining table layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The arrangement of the dining table and chairs leaves little room for a yoga mat to be placed without obstruction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga / stretching. While the wooden flooring is appropriate, the presence of a dining table and stool significantly limits the available floor space for yoga mat placement. The ceiling height and layout are positive factors, but the overall score is reduced due to the obstruction caused by the dining table and stool.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.69,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase obstructs direct line-of-sight between potential conversational partners, reducing the ease of engaging in casual conversation."
+    },
+    {
+      "name": "seating bench",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The long seating bench provides a place to sit and potentially engage in casual conversation, but it lacks a backrest and is not designed for prolonged sitting."
+    },
+    {
+      "name": "large windows",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a pleasant atmosphere conducive to casual conversation."
+    },
+    {
+      "name": "open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open space allows for unobstructed movement and visibility, facilitating casual conversation among multiple people."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for casual conversation due to the presence of a staircase that obstructs direct line-of-sight and the lack of a suitable seating arrangement. However, the large windows and open space contribute positively to the atmosphere, making it suitable for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_026_017_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_017\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.05,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not designed for sleep and do not provide a suitable surface for lying down."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table is not designed for sleep and does not provide a suitable surface for lying down."
+    },
+    {
+      "name": "dog",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dog is not suitable for sleep and may disturb the sleeping environment."
+    },
+    {
+      "name": "hard wood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard wood flooring is not comfortable for sleep and can be noisy."
+    },
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls are not conducive to a quiet, peaceful sleep environment."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (primary). The presence of couches, a coffee table, and a dog indicates that the space is primarily designed for social interaction and relaxation rather than sleep. Hard wood flooring and brick walls contribute to a noisy and uncomfortable environment. Large windows allow natural light to enter, which can be disruptive to sleep. Overall, the space is marginally adequate for sleep but lacks the necessary features to support the activity.",
+  "_meta": {
+    "image_id": "ai_021_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.44,
+    "attempt": 1
+  }
+}

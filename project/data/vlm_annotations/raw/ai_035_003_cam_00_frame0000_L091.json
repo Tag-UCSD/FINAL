@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a soft surface that is not suitable for prolonged computer work."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug is a soft surface that is not suitable for prolonged computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is a soft surface that is not suitable for prolonged computer work."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too high and open, which can lead to distractions and noise."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is too bright and direct, which can cause eye strain and glare on the computer screen."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is too large and open, which can lead to distractions and noise."
+    },
+    {
+      "name": "view",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The view of the ocean and sky can be distracting and may affect concentration."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for computer work (solo). The presence of a bed, rug, and chair on a soft surface makes it unsuitable for prolonged computer work. The ceiling is too high and open, the lighting is too bright and direct, and the window is too large and open, which can lead to distractions and noise. The view of the ocean and sky can also be distracting and may affect concentration. Overall, the environment is not conducive to focused solo work.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.4,
+    "attempt": 1
+  }
+}

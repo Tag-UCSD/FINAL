@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white armchair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white armchair is not suitable for computer work as it lacks a flat surface for a laptop or monitor."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is not suitable for computer work as it lacks a flat surface for a laptop or monitor."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The ceiling lights may create glare on computer screens."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The window can be a source of distraction and potential glare."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a white armchair and a couch makes it difficult to set up a proper workstation. The ceiling lights and window may create glare on computer screens, further reducing the suitability for focused work.",
+  "_meta": {
+    "image_id": "ai_032_009_cam_00_frame0003",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_009\\images\\scene_cam_00_final_preview\\frame.0003.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.1,
+    "attempt": 1
+  }
+}

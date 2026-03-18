@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can be distracting and reduce concentration."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar counter is not suitable for computer work."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Seating is not designed for extended computer use."
+    },
+    {
+      "name": "lamps",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Lamps are not task-specific."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). Large windows can be a distraction, and the bar counter is not suitable for computer use. Seating is not designed for extended computer use, and lamps are not task-specific. However, there is a large window view, which could be beneficial for some users.",
+  "_meta": {
+    "image_id": "ai_031_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.67,
+    "attempt": 1
+  }
+}

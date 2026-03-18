@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The vast open area lacks defined boundaries or seating arrangements conducive to social interaction."
+    },
+    {
+      "name": "rusty metal structures",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rusty metal structures are not typical of a social hangout setting and may be perceived as unclean or unsafe."
+    },
+    {
+      "name": "concrete walls and floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Concrete surfaces lack warmth and comfort, making the space less inviting for social gatherings."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is largely unsuitable for casual conversation / hangout due to its large, open space without defined boundaries or seating arrangements. The presence of rusty metal structures and concrete surfaces further detracts from the social atmosphere. A score of 3 reflects the minimal potential for social interaction in this setting.",
+  "_meta": {
+    "image_id": "ai_026_013_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_013\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.06,
+    "attempt": 1
+  }
+}

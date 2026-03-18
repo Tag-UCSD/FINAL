@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table is present, which can be used for food preparation and serving."
+    },
+    {
+      "name": "chairs around the dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs around the dining table provide seating for those preparing or eating food."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hardwood flooring is not ideal for food preparation as it can be difficult to clean and may harbor food particles."
+    },
+    {
+      "name": "lamps providing ambient lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Lamps provide sufficient lighting for food preparation tasks."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with a dining table and chairs for food preparation and serving. However, the hardwood flooring may pose a challenge for cleaning and food preparation. The ambient lighting from the lamps is positive for food preparation tasks.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.27,
+    "attempt": 1
+  }
+}

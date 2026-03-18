@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "several desks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Desks are typically associated with work, not casual conversation."
+    },
+    {
+      "name": "laptops on desks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Laptops suggest work-related tasks, not casual social interaction."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A staircase can be a barrier to easy conversation."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Windows can be distractions or interruptions during casual conversation."
+    },
+    {
+      "name": "hanging lamps",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hanging lamps provide ambient light, which is conducive to casual conversation."
+    },
+    {
+      "name": "wooden walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden walls add warmth and a cozy feel to the space."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the presence of desks and laptops, which suggest work-related tasks. The staircase and windows can be barriers to easy conversation. However, the hanging lamps and wooden walls contribute positively to the ambiance.",
+  "_meta": {
+    "image_id": "ai_033_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.84,
+    "attempt": 1
+  }
+}

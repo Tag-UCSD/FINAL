@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 7,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soft lighting creates a calming atmosphere conducive to sleep."
+    },
+    {
+      "name": "Neutral colors",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The neutral color palette of the bathroom helps create a calm and relaxing environment."
+    },
+    {
+      "name": "Large bathtub",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large bathtub provides ample space for relaxation, which can aid in sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for sleep (primary) due to its calming atmosphere, neutral color palette, and ample space for relaxation.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 39.71,
+    "attempt": 2
+  }
+}

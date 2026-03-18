@@ -1,0 +1,48 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large open space can lead to distractions and lack of privacy."
+    },
+    {
+      "name": "Concrete walls",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "Concrete walls do not provide any specific benefits or drawbacks for computer work."
+    },
+    {
+      "name": "Floor tiles",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "Floor tiles do not provide any specific benefits or drawbacks for computer work."
+    },
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light, which can improve mood and focus during computer work."
+    }
+  ],
+  "reasoning_summary": "The space is large and open, which might be distracting, but it has large windows that provide natural light, which can be beneficial for computer work.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_024_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.95,
+    "attempt": 2
+  }
+}

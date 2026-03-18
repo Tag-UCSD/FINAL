@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be used for self-assessment and posture correction during yoga."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug can provide comfort and grip for yoga mats."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor appears to be clear of obstructions, allowing for some movement."
+    },
+    {
+      "name": "window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from the window can create a pleasant atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally suitable for yoga due to the presence of a couch, but it has some positive features like a mirror and rug. The score is 4 because the couch is a significant obstacle, while other features are less critical.",
+  "_meta": {
+    "image_id": "ai_023_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.16,
+    "attempt": 1
+  }
+}

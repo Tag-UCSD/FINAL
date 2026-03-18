@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is large and takes up a significant amount of space, which could make it difficult to find a clear area for yoga."
+    },
+    {
+      "name": "Stairs",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The stairs can be a tripping hazard and may obstruct movement during yoga."
+    },
+    {
+      "name": "Cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is large and could be used as a storage space, but it also takes up valuable floor space."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of furniture and stairs, which could obstruct movement and create a cluttered environment.",
+  "_meta": {
+    "image_id": "ai_008_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.61,
+    "attempt": 2
+  }
+}

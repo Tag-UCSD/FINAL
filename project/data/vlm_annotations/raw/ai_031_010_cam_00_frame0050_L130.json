@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "arched ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The curved ceiling obstructs direct line-of-sight communication between participants."
+    },
+    {
+      "name": "dark stains on walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dirt and stains on the walls detract from the aesthetic appeal and cleanliness of the space."
+    },
+    {
+      "name": "lack of seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No seating present in the visible area makes it impossible to engage in a casual conversation."
+    },
+    {
+      "name": "lack of lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The absence of artificial lighting makes the space appear dim and uninviting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is poorly suited for casual conversation due to the lack of seating, poor lighting, and obstructions in the view. The dark stains on the walls further detract from the space's appeal. A score of 2 reflects the minimal presence of features that could support a hangout.",
+  "_meta": {
+    "image_id": "ai_031_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.7,
+    "attempt": 1
+  }
+}

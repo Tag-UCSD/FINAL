@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any resting surface makes this space unsuitable for sleep."
+    },
+    {
+      "name": "no furniture or personal items",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of furniture or personal items indicates a commercial or public space, not a private bedroom."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows or curtains prevent natural light control and privacy, essential for sleep."
+    },
+    {
+      "name": "no lighting control",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bright artificial lighting is incompatible with sleep and does not allow for dimming or control."
+    }
+  ],
+  "reasoning_summary": "This space is clearly designed for public or commercial use, lacking any features typically associated with a private bedroom. The absence of a bed, windows, curtains, and lighting control makes it completely unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_044_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.15,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The toilet is not a suitable flat work surface for computer work."
+    },
+    {
+      "name": "stack of books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Books are not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "pedestal sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A pedestal sink is not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A mirror is not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "wicker basket",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A wicker basket is not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "white wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white wall is not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "white floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white floor is not a flat work surface suitable for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). There are no flat work surfaces suitable for computer use, and the presence of a toilet, sink, books, mirror, basket, and white walls and floor make it unsuitable for focused solo work. The score reflects the lack of a dedicated workspace.",
+  "_meta": {
+    "image_id": "ai_039_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.02,
+    "attempt": 1
+  }
+}

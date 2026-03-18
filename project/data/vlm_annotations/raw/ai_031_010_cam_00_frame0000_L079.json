@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not suitable for cooking due to its purpose being for eating, not food preparation."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are decorative items and do not serve a functional purpose in cooking."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is designed for sitting and not for food preparation."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plant is decorative and does not serve a functional purpose in cooking."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling height is too low for comfortable cooking."
+    },
+    {
+      "name": "arches",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Arches obstruct the view and make it difficult to navigate the space."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a dining table, chairs, vases, and potted plants, which are not suitable for food preparation. The low ceiling height and arches obstruct the view and make it difficult to navigate the space. The score is 4 because these factors significantly hinder the primary activity of cooking.",
+  "_meta": {
+    "image_id": "ai_031_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.68,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large desk is typically associated with work or study, not casual conversation."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs are suitable for seating during casual conversations."
+    },
+    {
+      "name": "laptop on desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A laptop suggests work or study, not casual conversation."
+    },
+    {
+      "name": "no soft seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No soft seating like sofas or armchairs makes it difficult to engage in casual conversation."
+    },
+    {
+      "name": "no sociopetal seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A sociopetal seating arrangement is essential for casual conversation."
+    },
+    {
+      "name": "no central shared surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A central shared surface is necessary for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The scene has some potential for casual conversation due to the presence of several chairs, but lacks key elements such as soft seating, a sociopetal seating arrangement, and a central shared surface. The large desk and laptop suggest a work or study context, making it marginally adequate for casual conversation.",
+  "_meta": {
+    "image_id": "ai_033_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.46,
+    "attempt": 1
+  }
+}

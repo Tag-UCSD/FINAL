@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can disrupt sleep patterns."
+    },
+    {
+      "name": "exposed concrete ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Exposed concrete ceiling can be noisy and visually distracting, affecting sleep quality."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Open layout with no walls or partitions can lead to noise and light intrusion, disrupting sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable, affecting sleep quality."
+    },
+    {
+      "name": "no visible bed or sleeping furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No visible bed or sleeping furniture indicates a lack of a primary sleep artifact, making the space unsuitable for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is largely unsuitable for sleep (primary) due to the presence of large windows, exposed concrete ceiling, open layout, hard flooring, and the absence of visible sleeping furniture. The lack of a bed or sleeping furniture is particularly concerning, as it is the primary artifact for sleep. The open layout and hard flooring contribute to noise and discomfort, while the large windows can disrupt sleep patterns with natural light. Overall, the space scores a 3 out of 7, indicating it is marginally adequate for sleep.",
+  "_meta": {
+    "image_id": "ai_054_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.66,
+    "attempt": 1
+  }
+}

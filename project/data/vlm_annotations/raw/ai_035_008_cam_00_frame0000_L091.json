@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the workspace."
+    },
+    {
+      "name": "large bed with pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of pillows on the bed makes it less suitable for setting up a computer workstation, as they can be used to prop up a laptop, but they also add clutter and reduce the available space."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The rug on the floor can be a tripping hazard and may obstruct movement when setting up a computer workstation."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting in the room is low, which may make it difficult to see the computer screen clearly and comfortably."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat personal work surface, such as a desk or table, which is necessary for setting up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a large bed and rug, along with low lighting and the absence of a flat personal work surface, make it challenging to set up a comfortable and efficient workstation. However, the room is not entirely unsuitable, as there is some potential for rearrangement to create a workspace.",
+  "_meta": {
+    "image_id": "ai_035_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.25,
+    "attempt": 1
+  }
+}

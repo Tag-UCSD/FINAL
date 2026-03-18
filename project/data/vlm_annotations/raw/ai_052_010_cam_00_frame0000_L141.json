@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "large unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for a variety of yoga poses without obstruction."
+    },
+    {
+      "name": "minimal clutter in movement zone",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The absence of furniture or objects on the floor is crucial for safe yoga practice."
+    },
+    {
+      "name": "large windows allowing natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light can create a calming atmosphere conducive to yoga."
+    },
+    {
+      "name": "bar counter and stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter and stools are not suitable for yoga practice and could be distracting."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with a spacious, unobstructed floor area and minimal clutter. However, the presence of a bar counter and stools suggests it is more suited to social activities rather than yoga practice.",
+  "_meta": {
+    "image_id": "ai_052_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.85,
+    "attempt": 1
+  }
+}

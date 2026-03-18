@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "vase on counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase on the counter could be mistaken for a yoga prop, but it is actually a decorative item, which is not suitable for yoga practice."
+    },
+    {
+      "name": "sink in bathroom",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a sink in a bathroom is not conducive to yoga practice, as it takes up valuable floor space and is not a typical feature found in a yoga studio."
+    },
+    {
+      "name": "mirror on wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be used for self-reflection and posture correction during yoga practice."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling beams create a sense of enclosure and may make the space feel cramped, which is not ideal for yoga practice."
+    },
+    {
+      "name": "floor tiles",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor tiles are generally smooth and non-slip, which is suitable for yoga practice."
+    },
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is enough open floor space to accommodate a yoga mat and allow for movement."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga practice due to the presence of a sink in the bathroom and the ceiling beams creating a sense of enclosure. However, the open floor space and mirror are positive indicators for yoga practice.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.75,
+    "attempt": 1
+  }
+}

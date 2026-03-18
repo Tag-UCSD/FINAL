@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "two white sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sinks are typically associated with hygiene and personal care, not social interaction."
+    },
+    {
+      "name": "black countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A black countertop is too formal and clinical for a casual hangout."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel rack is associated with hygiene and personal care, not social interaction."
+    },
+    {
+      "name": "black tiles",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black tiles create a stark, clinical atmosphere, not conducive to a casual hangout."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls lack warmth and can make the space feel too clinical."
+    }
+  ],
+  "reasoning_summary": "This bathroom setting is not ideally suited for a casual conversation / hangout due to its clinical and formal appearance. The presence of sinks, black countertop, towel rack, black tiles, and white walls contribute to a sterile atmosphere that is not conducive to a relaxed social environment. A score of 4 indicates it is marginally adequate for the activity.",
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.27,
+    "attempt": 1
+  }
+}

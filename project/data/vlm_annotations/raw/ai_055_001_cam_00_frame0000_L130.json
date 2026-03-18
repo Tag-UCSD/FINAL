@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "yellow couches",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Couches provide ample seating for multiple people, promoting social interaction."
+    },
+    {
+      "name": "long wooden tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Tables offer surfaces for placing drinks and snacks, enhancing the casual conversation experience."
+    },
+    {
+      "name": "chairs around tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Chairs around tables facilitate face-to-face conversations, creating a sociopetal layout."
+    },
+    {
+      "name": "large windows",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, contributing to a pleasant atmosphere."
+    },
+    {
+      "name": "indirect lighting from ceiling fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Indirect lighting provides a soft, ambient glow without direct glare, conducive to conversation."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Open layout allows for easy movement and conversation between different areas of the space."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation and hangouts, featuring ample seating, functional surfaces, and a pleasant ambiance. However, the lack of a dedicated social area or a more intimate setup slightly reduces the score.",
+  "_meta": {
+    "image_id": "ai_055_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.81,
+    "attempt": 1
+  }
+}

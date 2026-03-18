@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement is open and inviting, allowing for easy conversation and interaction."
+    },
+    {
+      "name": "exposed brick walls",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Exposed brick walls add character and warmth to the space, making it feel more relaxed and informal."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting can create a cozy atmosphere but might also make the space feel dim and less inviting for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for casual conversations and hangouts, with positive aspects such as an open layout and exposed brick walls, but low lighting could potentially be a drawback.",
+  "_meta": {
+    "image_id": "ai_047_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.68,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large Open Space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large open space allows for multiple people to gather without feeling cramped."
+    },
+    {
+      "name": "Natural Light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to enter, creating a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "Modern Design",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern design of the space can make it feel more contemporary and inviting for casual gatherings."
+    },
+    {
+      "name": "Minimalist Furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The minimalist furniture may limit seating options and make the space feel less cozy for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is suitable for casual conversations due to its large open area, natural light, and modern design, but the minimalistic furniture could be limiting for comfort.",
+  "_meta": {
+    "image_id": "ai_024_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.08,
+    "attempt": 2
+  }
+}

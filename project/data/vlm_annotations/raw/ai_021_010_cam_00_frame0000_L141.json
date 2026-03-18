@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is too large and takes up too much space, making it difficult to move around for yoga."
+    },
+    {
+      "name": "Rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug provides a soft surface for stretching and yoga poses."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The lighting is bright and even, which is suitable for yoga and stretching."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga and stretching due to the presence of a large couch and the need for a soft surface, but the lighting is suitable.",
+  "_meta": {
+    "image_id": "ai_021_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.15,
+    "attempt": 2
+  }
+}

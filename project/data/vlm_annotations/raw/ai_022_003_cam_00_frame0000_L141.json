@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A freestanding bathtub is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "towel hanging on towel rail",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel hanging on a towel rail is a potential tripping hazard and does not contribute to a yoga-friendly environment."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga practice, providing a stable and non-slip surface."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a significant obstacle to yoga practice, requiring removal or relocation."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Indirect lighting from ceiling fixtures can create a calming atmosphere conducive to yoga."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a calming atmosphere conducive to yoga."
+    }
+  ],
+  "reasoning_summary": "The presence of a freestanding bathtub and sink, along with a towel hanging on a towel rail, significantly undermines the suitability of this space for yoga. While the hardwood flooring and indirect lighting are positive features, the obstacles created by the bathtub, sink, and towel outweigh these benefits, resulting in a marginal adequacy score of 4.",
+  "_meta": {
+    "image_id": "ai_022_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.34,
+    "attempt": 1
+  }
+}

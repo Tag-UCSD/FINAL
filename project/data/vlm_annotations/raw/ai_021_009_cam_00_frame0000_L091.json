@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large wooden coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too large and lacks a flat surface suitable for a laptop or keyboard."
+    },
+    {
+      "name": "dog sleeping on couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a dog on the couch can be distracting and disrupt concentration."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated desk or table at sitting height for setting up a computer workstation."
+    },
+    {
+      "name": "low lighting levels",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and not task-specific, which is inadequate for computer work."
+    },
+    {
+      "name": "open layout with high-traffic areas",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout and high-traffic areas make it difficult to maintain focus and concentration."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some positive aspects such as natural light and a spacious layout, the lack of a flat personal work surface, low lighting, and distractions from the dog and high-traffic areas significantly reduce its suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_021_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.54,
+    "attempt": 1
+  }
+}

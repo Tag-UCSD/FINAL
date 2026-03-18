@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can restrict airflow and make the space feel cramped, potentially affecting sleep quality."
+    },
+    {
+      "name": "wooden furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden furniture is typically associated with a cozy, homey atmosphere conducive to sleep."
+    },
+    {
+      "name": "stone fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A fireplace can provide warmth and a calming ambiance, which are beneficial for sleep."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bar stools are not suitable for sleeping, as they lack the necessary comfort and support for extended periods."
+    }
+  ],
+  "reasoning_summary": "The scene has a cozy, rustic charm with wooden furniture and a stone fireplace, which could contribute positively to sleep. However, the low ceiling height and the presence of bar stools suggest potential negative factors that could detract from the overall suitability for sleep.",
+  "_meta": {
+    "image_id": "ai_011_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.17,
+    "attempt": 1
+  }
+}

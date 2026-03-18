@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space lacks a dedicated area for focused work, making it difficult to set up a workstation."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height to place a laptop or monitor."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no ergonomic seating available for prolonged use."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and does not provide sufficient task illumination for screen work."
+    },
+    {
+      "name": "no dedicated low-distraction room layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout is open and lacks a dedicated area for focused work, making it difficult to concentrate."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for computer work (solo). The large open space and lack of dedicated work surfaces, ergonomic seating, and task lighting make it challenging to set up a productive workstation. The open layout also makes it difficult to concentrate on work tasks.",
+  "_meta": {
+    "image_id": "ai_016_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.32,
+    "attempt": 1
+  }
+}

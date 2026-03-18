@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and too close to the window, making it difficult to use as a bed."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are too close to the window, making it difficult to use them as a bed."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar counter is too close to the window, making it difficult to use it as a bed."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Large windows allow light to enter the room, which can be disruptive to sleep."
+    },
+    {
+      "name": "bright lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright lighting can be disruptive to sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not well-suited for sleep (primary). The presence of a couch, bar stools, and a bar counter makes it difficult to use the space as a bed. Large windows and bright lighting make it difficult to achieve a dark, quiet environment necessary for sleep.",
+  "_meta": {
+    "image_id": "ai_031_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.88,
+    "attempt": 1
+  }
+}

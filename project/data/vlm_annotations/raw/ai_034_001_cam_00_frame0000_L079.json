@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.97,
+  "indicators": [
+    {
+      "name": "no cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There are no stoves, ovens, or microwaves visible, which are essential for cooking."
+    },
+    {
+      "name": "no water fixture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is present, which is necessary for food preparation and kitchen hygiene."
+    },
+    {
+      "name": "no hard prep surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No countertops or hard washable work surfaces are present, which are required for all food preparation tasks."
+    },
+    {
+      "name": "no entertainment media",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no TV or other entertainment media visible, confirming this as an office space, not a kitchen."
+    }
+  ],
+  "reasoning_summary": "This is a purely office space with no cooking infrastructure whatsoever. It is completely unsuitable for any cooking activity and receives the minimum score of 1.",
+  "_meta": {
+    "image_id": "ai_034_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_034_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.08,
+    "attempt": 1
+  }
+}

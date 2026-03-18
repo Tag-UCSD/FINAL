@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable seating area for conversation."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor adds warmth and comfort to the space."
+    },
+    {
+      "name": "Sky-other-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of the sky suggests an open space, which might not be suitable for a cozy hangout."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation/hangout due to the presence of the sky and the limited furniture.",
+  "_meta": {
+    "image_id": "ai_008_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.27,
+    "attempt": 2
+  }
+}

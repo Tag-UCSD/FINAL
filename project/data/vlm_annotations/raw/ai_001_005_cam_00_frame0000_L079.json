@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "red island counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Red color may be visually appealing but does not contribute to functionality or practicality for cooking."
+    },
+    {
+      "name": "white cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for cooking supplies and ingredients."
+    },
+    {
+      "name": "stainless steel sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Sink is essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Oven is a key appliance for baking, roasting, and other cooking methods."
+    },
+    {
+      "name": "stainless steel range hood",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Range hood is essential for ventilation and smoke extraction during cooking."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Granite countertops provide a hard, washable work surface for food preparation."
+    },
+    {
+      "name": "stainless steel appliances",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Stainless steel appliances are durable and easy to clean, ideal for a kitchen environment."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of essential appliances and surfaces, but the red island counter may not be practical for cooking tasks. The white cabinets and stainless steel sink and range hood are positive features, while the granite countertops and stainless steel appliances contribute to the overall functionality of the kitchen.",
+  "_meta": {
+    "image_id": "ai_001_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.32,
+    "attempt": 1
+  }
+}

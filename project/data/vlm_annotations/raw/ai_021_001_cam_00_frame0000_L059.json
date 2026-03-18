@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and too soft for comfortable sleep, and its position obstructs access to other areas."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep patterns."
+    },
+    {
+      "name": "hard wood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable to sleep on."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel cold and less cozy, which can affect sleep quality."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for primary sleep. The presence of a couch and large windows makes it unsuitable for sleep, while the hard wood flooring and high ceilings contribute to discomfort and potential noise. The lack of a dedicated sleep area or furniture specifically designed for sleep further reduces the suitability.",
+  "_meta": {
+    "image_id": "ai_021_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.31,
+    "attempt": 1
+  }
+}

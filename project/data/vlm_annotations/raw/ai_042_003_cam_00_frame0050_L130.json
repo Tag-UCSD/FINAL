@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white chair with cushion",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A single chair with a cushion provides a place to sit, but it is insufficient for a group hangout."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A floor lamp provides ambient light, which is suitable for a casual hangout."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug adds comfort and a sense of enclosure to the space."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can create a pleasant atmosphere for a hangout."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for a casual conversation/hangout due to the presence of a single chair and a floor lamp. While the rug and window contribute positively to the ambiance, the lack of multiple seating options and a more sociopetal layout limits the suitability for a group hangout.",
+  "_meta": {
+    "image_id": "ai_042_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.35,
+    "attempt": 1
+  }
+}

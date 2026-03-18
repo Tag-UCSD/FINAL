@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "red leather sofas",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Red leather sofas are too soft and may cause discomfort during yoga practice."
+    },
+    {
+      "name": "metal coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Metal coffee table is too hard and may cause discomfort during yoga practice."
+    },
+    {
+      "name": "glass vase on coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass vase on coffee table is too fragile and may break during yoga practice."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Open floor area is suitable for yoga practice."
+    },
+    {
+      "name": "large windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter the room."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for yoga practice due to the presence of soft and hard furniture that may cause discomfort. However, the open floor area and large windows contribute positively to the suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_001_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.12,
+    "attempt": 1
+  }
+}

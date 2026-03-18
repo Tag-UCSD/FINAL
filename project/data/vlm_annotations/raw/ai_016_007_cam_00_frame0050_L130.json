@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are typically associated with storage, not social interaction."
+    },
+    {
+      "name": "open doorway",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open doorway can lead to distractions and interruptions, disrupting the flow of a casual conversation."
+    },
+    {
+      "name": "light-colored walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Light-colored walls can create a more open and inviting atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects like light-colored walls, but the presence of cabinets and an open doorway suggests it is not ideally suited for casual conversation. A score of 4 indicates it is marginally adequate for this activity.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.15,
+    "attempt": 1
+  }
+}

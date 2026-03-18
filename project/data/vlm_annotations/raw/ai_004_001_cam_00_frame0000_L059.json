@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bathtub is not suitable for sleep, as it is designed for bathing and relaxation, not sleep."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A fireplace is not suitable for sleep, as it is designed for warmth and relaxation, not sleep."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A toilet is not suitable for sleep, as it is designed for hygiene, not sleep."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not suitable for sleep, as it is designed for hygiene, not sleep."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A potted plant is not suitable for sleep, as it is designed for decoration, not sleep."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is not suitable for sleep, as it is cold and hard, not comfortable."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling beams are not suitable for sleep, as they are not part of a sleeping area."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Lighting is not suitable for sleep, as it is not dimmable and can be bright."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for sleep due to the presence of a bathtub, toilet, sink, potted plant, and hard flooring. The lighting is also not suitable for sleep due to its brightness. The ceiling beams and lack of a sleeping area further contribute to the unsuitability of the space for sleep.",
+  "_meta": {
+    "image_id": "ai_004_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.02,
+    "attempt": 1
+  }
+}

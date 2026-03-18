@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 7,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is large and comfortable, providing ample space for rest."
+    },
+    {
+      "name": "curtain",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The curtain blocks out light, allowing for a dark and peaceful sleep environment."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window allows natural light to enter, which might disturb sleep if not covered."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for sleep (primary) due to the presence of a comfortable bed, a curtain that blocks out light, and a dark and peaceful environment.",
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.38,
+    "attempt": 2
+  }
+}

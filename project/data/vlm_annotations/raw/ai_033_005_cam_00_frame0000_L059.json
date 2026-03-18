@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "folding cot against wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A cot provides a minimal horizontal rest surface, though its size and location are far from ideal for sleep."
+    },
+    {
+      "name": "hard industrial surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The hard industrial surfaces of the furniture and flooring are incompatible with a sleep environment."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout with no walls or dividers makes it difficult to achieve a sense of enclosure and privacy."
+    },
+    {
+      "name": "bright artificial lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright artificial lighting is incompatible with sleep, as it can disrupt circadian rhythms."
+    }
+  ],
+  "reasoning_summary": "This is a commercial office space with minimal support for primary sleep. The presence of a cot is the only indication of a rest area, but the hard industrial surfaces, open layout, and bright artificial lighting make this a poor environment for sleep.",
+  "_meta": {
+    "image_id": "ai_033_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.46,
+    "attempt": 1
+  }
+}

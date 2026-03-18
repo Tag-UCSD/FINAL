@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The closed door obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The refrigerator is a large object that occupies a significant portion of the floor space, making it unsuitable for yoga."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chair is a large object that occupies a significant portion of the floor space, making it unsuitable for yoga."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The cabinets are large objects that occupy a significant portion of the floor space, making it unsuitable for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is covered with furniture, making it unsuitable for yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for yoga due to the presence of large objects like a closed door, a refrigerator, a chair, cabinets, and the floor being covered with furniture. The closed door and large objects obstruct the open floor space required for yoga, resulting in a score of 1.",
+  "_meta": {
+    "image_id": "ai_015_007_cam_00_frame0056",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_007\\images\\scene_cam_00_final_preview\\frame.0056.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.6,
+    "attempt": 1
+  }
+}

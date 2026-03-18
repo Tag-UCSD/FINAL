@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 5,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "L-shaped desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large dedicated work surface with two screens is the ideal configuration for extended computer work."
+    },
+    {
+      "name": "ergonomic mesh office chair with lumbar support",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Ergonomic seating with lumbar support is critical for maintaining correct posture during sustained knowledge work."
+    },
+    {
+      "name": "desk lamp angled toward screens",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Directional task lighting reduces eye strain and is well-positioned relative to the monitors."
+    },
+    {
+      "name": "bookshelf with reference materials",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Reference books and organised storage indicate a dedicated knowledge work environment."
+    },
+    {
+      "name": "closed door providing privacy",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Enclosed room with door enables acoustic and visual privacy essential for focused solo work."
+    },
+    {
+      "name": "dedicated low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "No high-traffic areas or recreational features compete for attention; the room is wholly work-oriented."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for solo computer work, featuring a large desk with dual monitors, ergonomic seating, directional task lighting, reference materials, and a closed door for privacy. However, the presence of multiple desks and chairs suggests it is more of a shared workspace than a dedicated solo area, which slightly reduces the score.",
+  "_meta": {
+    "image_id": "ai_036_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.85,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs access to the window."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large window allows natural light to enter, which can be beneficial for reducing eye strain and improving mood."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "There is no flat surface available for setting up a computer workstation, as the cabinet is too low and does not provide enough space for a keyboard and monitor."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The rug is soft and may make it difficult to set up a stable and ergonomic workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While the large window provides natural light, the presence of the bed and the lack of a flat surface for a workstation make it challenging to set up a comfortable and efficient workspace. The cabinet is too low and the rug is soft, further hindering the setup process.",
+  "_meta": {
+    "image_id": "ai_004_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.52,
+    "attempt": 1
+  }
+}

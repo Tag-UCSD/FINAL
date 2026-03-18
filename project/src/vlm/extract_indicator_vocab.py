@@ -171,7 +171,8 @@ def write_summary(vocab: dict, out_path: Path) -> None:
         affs = ", ".join(e["affordances"])
         lines.append(f"  {e['name']:<45} n={e['count']:>4}  affs=[{affs}]")
 
-    out_path.write_text("\n".join(lines))
+    # out_path.write_text("\n".join(lines))
+    out_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"Summary written → {out_path}")
 
 

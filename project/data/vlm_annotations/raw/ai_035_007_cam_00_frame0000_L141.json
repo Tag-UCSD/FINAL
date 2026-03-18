@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed occupies a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed close to the bed, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The fireplace is a focal point in the room, which may draw attention away from the yoga practice."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is partially obstructed by the bed and chair, limiting the available space for yoga."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The windows allow natural light to enter, creating a calming atmosphere suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga due to the presence of a bed and chair that obstruct the floor space. However, the fireplace and windows contribute positively to the atmosphere, making it a marginally adequate space for yoga.",
+  "_meta": {
+    "image_id": "ai_035_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.8,
+    "attempt": 1
+  }
+}

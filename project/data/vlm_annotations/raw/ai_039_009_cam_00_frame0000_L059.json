@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, providing a comfortable resting surface."
+    },
+    {
+      "name": "dark walls and tiles",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dark surfaces can help reduce glare and create a calming atmosphere conducive to sleep."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A closed door can provide privacy and reduce external noise, contributing to a quieter sleep environment."
+    },
+    {
+      "name": "bathroom setting",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The bathroom setting is not ideal for sleep, as it is typically associated with hygiene routines and not rest."
+    }
+  ],
+  "reasoning_summary": "The space is marginally suitable for sleep (Primary). While the bed and dark surfaces contribute positively, the bathroom setting and lack of a dedicated bedroom space detract from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_039_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.76,
+    "attempt": 1
+  }
+}

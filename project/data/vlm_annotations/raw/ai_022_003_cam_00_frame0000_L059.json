@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 7,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large bed is essential for comfortable sleep."
+    },
+    {
+      "name": "Dark curtains",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Dark curtains help block out light, promoting better sleep."
+    },
+    {
+      "name": "Quiet environment",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The quiet environment is conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The space is ideally suited for sleep due to the presence of a large bed, dark curtains, and a quiet environment.",
+  "_meta": {
+    "image_id": "ai_022_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.7,
+    "attempt": 2
+  }
+}

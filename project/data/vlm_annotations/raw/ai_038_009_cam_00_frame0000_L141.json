@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Marble floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The smooth and cool surface of the marble floor provides a comfortable and stable base for yoga and stretching."
+    },
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to enter, creating a serene and calming atmosphere ideal for yoga and stretching."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of potted plants adds a touch of nature and tranquility, enhancing the peacefulness of the space."
+    },
+    {
+      "name": "Light fixtures",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The light fixtures provide even lighting, which is essential for visibility during yoga and stretching sessions."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga and stretching due to its spacious layout, natural light, and tranquil environment, but lacks specific features like mats or cushions for comfort.",
+  "_meta": {
+    "image_id": "ai_038_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_038_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.47,
+    "attempt": 2
+  }
+}

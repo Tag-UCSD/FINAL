@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement is sociopetal, with tables and chairs facing each other, facilitating natural conversation."
+    },
+    {
+      "name": "tables with flowers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Flowers on the tables add a touch of elegance and warmth, enhancing the social atmosphere."
+    },
+    {
+      "name": "glassware and cutlery",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of glassware and cutlery suggests a preparedness for a casual meal or drinks, enhancing the social experience."
+    },
+    {
+      "name": "natural light from skylights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the skylights creates a pleasant and inviting ambiance, conducive to social interaction."
+    },
+    {
+      "name": "trees and greenery",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of trees and greenery outside the windows brings a sense of nature and tranquility, enhancing the overall atmosphere."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for casual conversations and hangouts, with a sociopetal seating arrangement, pleasant decor, and natural light. The score of 6 indicates it is very close to being perfectly suited, but could benefit from more social props like drinks accessories.",
+  "_meta": {
+    "image_id": "ai_052_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.02,
+    "attempt": 1
+  }
+}

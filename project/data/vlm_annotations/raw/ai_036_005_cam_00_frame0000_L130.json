@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement includes a mix of chairs and sofas, allowing for a sociopetal layout conducive to conversation."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can serve as a shared surface for snacks and drinks during casual conversations."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting appears to be warm and ambient, contributing to a relaxed atmosphere suitable for casual conversations."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A couch provides additional seating options and comfort for casual conversations."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A bookshelf can serve as a backdrop for casual conversations, adding a personal touch."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversations, featuring a sociopetal seating arrangement, a dining table for shared surfaces, and warm lighting. However, the presence of office furniture and a lack of personal touches slightly undermines the suitability for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_036_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.01,
+    "attempt": 1
+  }
+}

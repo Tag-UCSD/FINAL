@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "White sinks",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white sinks provide a clean and neutral setting conducive to conversation."
+    },
+    {
+      "name": "Large mirrors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large mirrors create a spacious feeling, which can be conducive to conversation."
+    },
+    {
+      "name": "Brown wooden tiles",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The brown wooden tiles provide a warm and inviting atmosphere, which can be conducive to conversation."
+    },
+    {
+      "name": "Toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The presence of a toilet in the room may be considered intrusive for a casual conversation."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation due to the presence of a toilet, but the clean and warm atmosphere provided by the white sinks and brown wooden tiles is conducive to conversation.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.9,
+    "attempt": 2
+  }
+}

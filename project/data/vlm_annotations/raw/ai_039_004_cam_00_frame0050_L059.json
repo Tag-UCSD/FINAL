@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "fluorescent light fixture",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright, direct lighting is incompatible with sleep."
+    },
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No horizontal rest surface is present."
+    },
+    {
+      "name": "no window or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No natural light or privacy is available."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). There is no bed or resting surface, no window or curtains for natural light or privacy, and bright fluorescent lighting is incompatible with sleep.",
+  "_meta": {
+    "image_id": "ai_039_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.49,
+    "attempt": 1
+  }
+}

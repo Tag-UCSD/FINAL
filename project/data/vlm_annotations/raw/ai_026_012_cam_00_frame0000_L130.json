@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel more open and less claustrophobic, conducive to social interaction."
+    },
+    {
+      "name": "dark flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring can make the space feel more formal and less inviting for casual conversation."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of furniture makes it difficult to create a comfortable and engaging social space."
+    }
+  ],
+  "reasoning_summary": "The large windows and high ceilings contribute positively to the social atmosphere, but the dark flooring and lack of furniture detract from the suitability for casual conversation / hangout. A score of 4 indicates marginal adequacy due to the essential need for furniture to create a social space.",
+  "_meta": {
+    "image_id": "ai_026_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.27,
+    "attempt": 1
+  }
+}

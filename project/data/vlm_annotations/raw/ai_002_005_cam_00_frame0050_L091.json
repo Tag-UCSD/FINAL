@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too high for comfortable sitting and working."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An oven is not suitable for a workspace."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A window can be a distraction and may require blinds or curtains for privacy."
+    },
+    {
+      "name": "clock",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A clock is not directly related to computer work."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can be beneficial for work."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bowl is not related to computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is natural light from the window, the high counter, oven, and window can be distractions and may require additional privacy measures. The presence of a clock and bowl is irrelevant to the activity.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.41,
+    "attempt": 1
+  }
+}

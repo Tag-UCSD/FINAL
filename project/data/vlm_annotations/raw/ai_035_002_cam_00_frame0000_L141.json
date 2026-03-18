@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chair is placed close to the bed, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is partially obstructed by the bed and chair, making it difficult to create an unobstructed space for yoga."
+    },
+    {
+      "name": "window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light to enter, creating a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The mirror can be used to reflect light and potentially provide a sense of space, but it does not replace the need for an unobstructed floor."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of the bed and chair, which obstruct the floor space. However, the window provides natural light, which is beneficial for creating a calming atmosphere for yoga practice.",
+  "_meta": {
+    "image_id": "ai_035_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.43,
+    "attempt": 1
+  }
+}

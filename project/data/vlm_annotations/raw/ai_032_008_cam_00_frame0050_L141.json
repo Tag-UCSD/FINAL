@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space required for yoga."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chandelier's height and size could pose a tripping hazard during yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is a potential tripping hazard and obstructs floor space."
+    },
+    {
+      "name": "curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The curtains could block light and create a sense of enclosure, which might be uncomfortable for yoga."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is partially obstructed by curtains, reducing natural light."
+    },
+    {
+      "name": "floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The carpeted floor is not ideal for yoga mat placement due to its texture and potential for slipping."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga due to the presence of a bed, table, and curtains that obstruct clear floor space. The chandelier and window also pose potential hazards and reduce natural light. The carpeted floor is not ideal for yoga mat placement. Overall, the space is not optimised for yoga practice.",
+  "_meta": {
+    "image_id": "ai_032_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.74,
+    "attempt": 1
+  }
+}

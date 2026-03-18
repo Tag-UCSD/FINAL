@@ -1,0 +1,100 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "black marble tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black marble tiles are slippery and not suitable for yoga practice."
+    },
+    {
+      "name": "white toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A toilet is not a suitable object for yoga practice."
+    },
+    {
+      "name": "white bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bathtub is not a suitable object for yoga practice."
+    },
+    {
+      "name": "white shower",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A shower is not a suitable object for yoga practice."
+    },
+    {
+      "name": "white floor tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White floor tiles are slippery and not suitable for yoga practice."
+    },
+    {
+      "name": "white curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White curtains are not suitable for yoga practice."
+    },
+    {
+      "name": "white bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is not a suitable object for yoga practice."
+    },
+    {
+      "name": "white wooden door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A wooden door is not a suitable object for yoga practice."
+    },
+    {
+      "name": "white bathroom fixtures",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White bathroom fixtures are not suitable for yoga practice."
+    },
+    {
+      "name": "white bathroom accessories",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White bathroom accessories are not suitable for yoga practice."
+    },
+    {
+      "name": "white bathroom lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White bathroom lighting is not suitable for yoga practice."
+    },
+    {
+      "name": "white bathroom layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bathroom layout is not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "This bathroom is not suitable for yoga practice due to the presence of slippery black marble tiles, white bathroom fixtures, and a lack of open floor space. The overall score is 3 out of 7.",
+  "_meta": {
+    "image_id": "ai_039_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.65,
+    "attempt": 1
+  }
+}

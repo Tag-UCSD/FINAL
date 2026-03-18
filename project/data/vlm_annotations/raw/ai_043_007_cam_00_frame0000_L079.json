@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "marble dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble table is not suitable for cooking due to its high maintenance and potential damage from heat and water."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not designed for cooking, as they lack ergonomic support and are not made of materials suitable for food preparation."
+    },
+    {
+      "name": "open shelves",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Open shelves provide easy access to cooking utensils and ingredients, which is beneficial for daily cooking."
+    },
+    {
+      "name": "marble countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Marble countertops are durable and easy to clean, making them suitable for food preparation."
+    },
+    {
+      "name": "kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Kitchen island provides additional counter space for food preparation and can serve as a workspace for cooking."
+    },
+    {
+      "name": "lighting fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Well-placed lighting fixtures ensure good visibility for cooking tasks."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking. While it has some positive features like open shelves and marble countertops, the presence of a marble dining table and white chairs makes it less suitable for cooking. The kitchen island and lighting fixtures provide some support for daily cooking activities.",
+  "_meta": {
+    "image_id": "ai_043_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.06,
+    "attempt": 1
+  }
+}

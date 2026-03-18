@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is not clearly defined, making it difficult for people to engage in a casual conversation."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are typically associated with formal dining settings, not casual hangouts."
+    },
+    {
+      "name": "stained glass windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Stained glass windows add a unique aesthetic appeal, which can be appealing for a casual hangout."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel more open and inviting, which is conducive to casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has potential for casual conversation due to the high ceilings and stained glass windows, but the lack of a clear seating arrangement and the presence of dining tables suggest it is not ideally suited for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_023_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.43,
+    "attempt": 1
+  }
+}

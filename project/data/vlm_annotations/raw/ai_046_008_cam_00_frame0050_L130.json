@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "loft bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The loft bed is too high and not easily accessible, making it difficult for casual conversation."
+    },
+    {
+      "name": "kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a central shared surface for casual conversation."
+    },
+    {
+      "name": "yellow floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The yellow floor lamp provides a warm, inviting light for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The space has some potential for casual conversation due to the kitchen island and the yellow floor lamp, but the loft bed is too high and inaccessible, making it unsuitable for this activity.",
+  "_meta": {
+    "image_id": "ai_046_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.01,
+    "attempt": 1
+  }
+}

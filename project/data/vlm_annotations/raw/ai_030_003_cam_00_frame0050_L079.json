@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "orange cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Orange cabinets may be visually appealing but do not provide storage or functional space for cooking."
+    },
+    {
+      "name": "white tile backsplash",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White tile backsplash is clean and easy to maintain, which is beneficial for a kitchen."
+    },
+    {
+      "name": "gray countertop",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Gray countertop provides a neutral working surface for food preparation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink is essential for washing dishes and preparing food."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants add a decorative touch but do not contribute to the functionality of the kitchen."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects such as a clean backsplash and a neutral countertop, but lacks essential kitchen features like storage cabinets and a stove. The orange cabinets are visually appealing but do not serve a functional purpose. The sink is present, which is crucial for daily cooking activities. Overall, the space is marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.27,
+    "attempt": 1
+  }
+}

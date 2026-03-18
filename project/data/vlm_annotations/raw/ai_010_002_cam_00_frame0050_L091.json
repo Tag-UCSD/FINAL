@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large bed takes up a significant portion of the room, leaving limited space for computer work."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a warm and comfortable surface to place a laptop."
+    },
+    {
+      "name": "Rug-merged",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The rug adds comfort underfoot and can be used as a workspace."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is ergonomic and provides support for long periods of sitting."
+    },
+    {
+      "name": "Light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The natural light from the window provides good illumination for work."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for computer work (Solo) due to the presence of a large bed, but has positive features such as a wooden floor, rug, chair, and natural lighting.",
+  "_meta": {
+    "image_id": "ai_010_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.25,
+    "attempt": 2
+  }
+}

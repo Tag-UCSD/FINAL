@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "L-shaped desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk provides a large workspace suitable for dual monitors, though it is not specifically designed for solo work."
+    },
+    {
+      "name": "ergonomic mesh office chair with lumbar support",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chair is ergonomic and provides lumbar support, which is beneficial for long periods of computer work."
+    },
+    {
+      "name": "directional task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The yellow desk lamp is directed towards the desk, providing task lighting for the computer screens."
+    },
+    {
+      "name": "closed door providing privacy",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The closed door helps to create a private space, which can be important for focused work."
+    },
+    {
+      "name": "low-distraction room layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The room layout is simple and uncluttered, reducing distractions that could interfere with focused work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for solo computer work due to the presence of a dedicated workspace with dual monitors and ergonomic seating, as well as directional task lighting and a closed door for privacy. However, the lack of a dedicated flat work surface and the presence of other furniture and items in the room suggest that it is not optimally suited for this activity.",
+  "_meta": {
+    "image_id": "ai_046_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.35,
+    "attempt": 1
+  }
+}

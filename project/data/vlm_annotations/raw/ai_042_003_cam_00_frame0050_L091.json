@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white chair with cushion",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is too small and lacks back support for extended computer work."
+    },
+    {
+      "name": "rug under chair",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug under the chair can cause discomfort and distraction when moving around."
+    },
+    {
+      "name": "floor-wood",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden floor is not suitable for prolonged standing or sitting."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The window allows natural light, which can be beneficial for some tasks."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The light is sufficient for general tasks but may not be ideal for detailed work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is a window for natural light and a light source, the chair is too small and the rug under it can cause discomfort. The wooden floor is not suitable for prolonged standing or sitting. However, the presence of a window and light source indicates potential for a more suitable environment with proper furniture and layout.",
+  "_meta": {
+    "image_id": "ai_042_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.38,
+    "attempt": 1
+  }
+}

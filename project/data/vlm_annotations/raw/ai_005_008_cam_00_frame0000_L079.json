@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a hard surface for food preparation and cleaning."
+    },
+    {
+      "name": "stainless steel sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sink is essential for food preparation and cleaning."
+    },
+    {
+      "name": "microwave oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The microwave is a common cooking appliance used for heating and cooking."
+    },
+    {
+      "name": "stove top",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove top is a common cooking appliance used for cooking."
+    },
+    {
+      "name": "no visible refrigerator",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A refrigerator is essential for storing food."
+    },
+    {
+      "name": "no visible counter space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Counter space is essential for food preparation."
+    },
+    {
+      "name": "no visible seating",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Seating is necessary for eating meals."
+    }
+  ],
+  "reasoning_summary": "The space has some key cooking affordances such as a sink, microwave, and stove top, but lacks a refrigerator and counter space, making it marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_005_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.94,
+    "attempt": 1
+  }
+}

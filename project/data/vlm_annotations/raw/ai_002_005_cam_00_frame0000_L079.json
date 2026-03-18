@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not a cooking surface and obstructs the view of the kitchen area."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not part of the cooking area and could obstruct movement."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets provide storage for cooking supplies and ingredients."
+    },
+    {
+      "name": "counter",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Counter provides a hard work surface for food preparation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides water access for food preparation and cleaning."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is not related to cooking and could be a distraction."
+    },
+    {
+      "name": "banana",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Banana is a food item that can be prepared in the kitchen."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a dining table and chairs that obstruct the view of the kitchen area. However, there are positive aspects such as cabinets for storage, a counter for preparation, and a sink for water access. The presence of a vase and a banana indicates that some food items are present, but they do not contribute to the overall suitability for cooking.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.46,
+    "attempt": 1
+  }
+}

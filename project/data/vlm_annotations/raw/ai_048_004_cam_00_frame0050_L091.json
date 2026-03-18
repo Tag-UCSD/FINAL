@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it occupies a large portion of the space and is not suitable for prolonged sitting."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height, making it impossible to set up a computer workstation without external furniture."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low ceiling height may limit the ability to position a monitor at a comfortable viewing distance, potentially causing neck strain."
+    },
+    {
+      "name": "lack of ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no ergonomic seating available, which is crucial for maintaining correct posture during extended computer work."
+    },
+    {
+      "name": "decoration-heavy layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of decorative elements such as hanging lights and hanging plants suggests a more decorative than functional layout, which is not conducive to focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are some positive aspects such as natural light and a spacious layout, the presence of a bed and lack of flat personal work surface make it challenging to set up a comfortable and efficient workstation. The low ceiling height and lack of ergonomic seating further reduce the suitability for extended computer work.",
+  "_meta": {
+    "image_id": "ai_048_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.92,
+    "attempt": 1
+  }
+}

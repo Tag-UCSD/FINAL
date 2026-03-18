@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and comfortable, but it is not suitable for computer work due to its size and lack of a desk."
+    },
+    {
+      "name": "shelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The shelf provides storage space for personal items, which can be useful for organizing work-related materials."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wooden floor is neutral and does not affect the suitability of the space for computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the presence of a comfortable bed and a shelf for storage, but lacks a dedicated workspace.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_035_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.26,
+    "attempt": 2
+  }
+}

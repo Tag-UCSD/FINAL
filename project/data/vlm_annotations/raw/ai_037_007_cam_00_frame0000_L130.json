@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a surface for people to sit around and engage in conversation."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs around the dining table allow multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "Vase with flowers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The vase with flowers adds a pleasant aesthetic touch, making the space more inviting for casual conversations."
+    },
+    {
+      "name": "Chalkboard wall",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The chalkboard wall can be used for writing notes or reminders, which might be useful for planning a hangout but does not directly support casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts, with ample seating and a pleasant aesthetic. The chalkboard wall could be used for planning, but its impact on the overall suitability is neutral.",
+  "_validation_errors": [
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_037_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.11,
+    "attempt": 2
+  }
+}

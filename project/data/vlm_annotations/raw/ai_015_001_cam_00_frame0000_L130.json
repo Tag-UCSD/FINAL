@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too formal and large for a casual hangout setting."
+    },
+    {
+      "name": "chairs around dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are too formal and large for a casual hangout setting."
+    },
+    {
+      "name": "large kitchen area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large kitchen area is not conducive to a casual hangout setting."
+    },
+    {
+      "name": "formal chandelier",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The formal chandelier is not conducive to a casual hangout setting."
+    },
+    {
+      "name": "formal kitchen layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The formal kitchen layout is not conducive to a casual hangout setting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for a casual conversation/hangout due to the formal dining setup, large kitchen area, and formal chandelier. The layout and lighting do not support a casual hangout setting.",
+  "_meta": {
+    "image_id": "ai_015_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.65,
+    "attempt": 1
+  }
+}

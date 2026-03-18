@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large kitchen island",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island is too large and obstructive for comfortable computer work."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair or stool designed for extended computer use."
+    },
+    {
+      "name": "no dedicated lighting for task work",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and not focused on the workspace."
+    },
+    {
+      "name": "no dedicated area for computer work",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen layout does not provide a designated space for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large kitchen island obstructs movement and there is no flat surface suitable for a laptop. There is no ergonomic seating or dedicated lighting for task work, and no dedicated area for computer work within the kitchen layout.",
+  "_meta": {
+    "image_id": "ai_012_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.93,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rows of seats facing a screen are designed for collective viewing, not individual work."
+    },
+    {
+      "name": "seating color",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Black and yellow seats are visually distracting and do not promote a professional atmosphere."
+    },
+    {
+      "name": "seating density",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Seating is too close together, making it difficult to set up a personal workspace."
+    },
+    {
+      "name": "seating layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rows of seats are oriented towards a screen, not a flat surface suitable for computer work."
+    },
+    {
+      "name": "seating material",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Plastic chairs are not ergonomic and do not provide comfort for extended use."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The seating arrangement is designed for collective viewing rather than individual work, and the close seating density makes it difficult to set up a personal workspace. The black and yellow seats are visually distracting and not conducive to a professional atmosphere. The layout is oriented towards a screen, not a flat surface suitable for computer work. The plastic chairs are not ergonomic and do not provide comfort for extended use.",
+  "_meta": {
+    "image_id": "ai_053_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.04,
+    "attempt": 1
+  }
+}

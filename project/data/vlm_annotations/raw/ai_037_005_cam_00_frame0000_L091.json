@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white round dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and lacks a flat surface suitable for a laptop or keyboard."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not designed for extended sitting and do not provide ergonomic support."
+    },
+    {
+      "name": "white wooden floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is not suitable for a laptop stand or keyboard placement."
+    },
+    {
+      "name": "blue pendant light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The lighting is not task-specific and may cause glare on screens."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The walls are plain and do not provide a backdrop for a focused workspace."
+    },
+    {
+      "name": "white built-in cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The cabinets are not designed for a workspace and do not provide storage for work-related items."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The white round dining table and chairs are not suitable for a workspace, and the lighting is not task-specific. The plain white walls and built-in cabinets do not provide a backdrop or storage for a focused workspace.",
+  "_meta": {
+    "image_id": "ai_037_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.58,
+    "attempt": 1
+  }
+}

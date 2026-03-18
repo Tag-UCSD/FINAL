@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bath tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bath tub is not conducive to casual conversation or hangout, as it is typically associated with personal hygiene and relaxation, not social interaction."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is a functional object for washing hands and dishes, but does not contribute to a social hangout atmosphere."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a decorative item, not a social prop for a hangout."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles are typically associated with personal care items, not social interaction."
+    },
+    {
+      "name": "shelf",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A shelf is a functional storage area, not a social space for a hangout."
+    }
+  ],
+  "reasoning_summary": "This bathroom scene lacks the necessary social props and layout for a casual conversation or hangout. The presence of a bath tub, sink, vase, bottles, and a shelf all contribute to a functional, private space rather than a social one. A score of 4 indicates that while the space is not completely unsuitable, it is not designed for social interaction.",
+  "_meta": {
+    "image_id": "ai_010_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.92,
+    "attempt": 1
+  }
+}

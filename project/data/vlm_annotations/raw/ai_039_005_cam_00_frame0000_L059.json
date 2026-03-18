@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 7,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, creating a bright and inviting atmosphere conducive to relaxation."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soft lighting from the wall sconces provides a calming ambiance, which is beneficial for sleep."
+    },
+    {
+      "name": "Soaking tub",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The soaking tub can be used for a relaxing bath before bedtime, which can help induce sleep."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The cabinets provide storage for personal items, keeping the space organized and tidy, which can contribute to a restful environment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for sleep (primary) due to its bright, calming atmosphere, soft lighting, and the presence of a soothing bathtub.",
+  "_validation_errors": [
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 42.46,
+    "attempt": 2
+  }
+}

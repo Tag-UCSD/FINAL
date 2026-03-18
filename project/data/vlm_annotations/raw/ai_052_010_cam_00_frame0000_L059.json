@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar stools are not suitable for sleeping, as they lack backrests and are designed for standing or sitting at a bar counter."
+    },
+    {
+      "name": "marble bar counter",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Marble bar counter is too hard and cold for comfort during sleep."
+    },
+    {
+      "name": "metal chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Metal chairs are uncomfortable and not suitable for sleeping."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hard floor is not comfortable for sleeping."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows prevent natural light and views, which are important for circadian rhythm regulation."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No curtains prevent light control and privacy, which are important for sleep quality."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (primary). There are no windows, curtains, or other features that would support sleep. The hard floor, metal chairs, and bar stools are all unsuitable for sleeping. The lack of windows and curtains makes it difficult to regulate light and maintain privacy, which are important for sleep quality.",
+  "_meta": {
+    "image_id": "ai_052_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.91,
+    "attempt": 1
+  }
+}

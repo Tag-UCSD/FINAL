@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white tiled floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White tiles can reflect light and create glare on computer screens, reducing visibility and comfort."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls can reflect light and create glare on computer screens, reducing visibility and comfort."
+    },
+    {
+      "name": "white ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White ceiling can reflect light and create glare on computer screens, reducing visibility and comfort."
+    },
+    {
+      "name": "white kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island is not a flat work surface suitable for computer work, and it is not ergonomically designed for prolonged use."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white chairs are not ergonomically designed for prolonged use and do not provide a flat work surface suitable for computer work."
+    },
+    {
+      "name": "white cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white cabinets are not a flat work surface suitable for computer work, and they are not ergonomically designed for prolonged use."
+    },
+    {
+      "name": "white refrigerator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white refrigerator is not a flat work surface suitable for computer work, and it is not ergonomically designed for prolonged use."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white dining table is not a flat work surface suitable for computer work, and it is not ergonomically designed for prolonged use."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of white surfaces and objects can cause glare on computer screens, reducing visibility and comfort. There is no flat work surface suitable for computer work, and the chairs and cabinets are not ergonomically designed for prolonged use. However, the open layout and lack of high-traffic areas make it somewhat conducive to focused solo work.",
+  "_meta": {
+    "image_id": "ai_015_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.56,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too low for comfortable keyboarding and mouse use."
+    },
+    {
+      "name": "sink",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is too close to the counter, making it difficult to use both simultaneously."
+    },
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are too high for comfortable keyboarding and mouse use."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is too low for comfortable head movement."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting is insufficient for screen work."
+    }
+  ],
+  "reasoning_summary": "This kitchen is marginally suitable for computer work (solo). The low counter and cabinets make it difficult to use a keyboard and mouse comfortably, and the sink is too close to the counter. The ceiling is also too low for comfortable head movement. The lighting is insufficient for screen work, making it difficult to see the screen clearly.",
+  "_meta": {
+    "image_id": "ai_037_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.85,
+    "attempt": 1
+  }
+}

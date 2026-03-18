@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for cooking activities due to their purpose being for eating rather than preparing food."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for sitting and eating, not for cooking activities."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are decorative items and do not serve a functional purpose in cooking."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants are decorative and do not serve a functional purpose in cooking."
+    },
+    {
+      "name": "glassware",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glassware is designed for drinking, not for cooking activities."
+    },
+    {
+      "name": "dining table layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table layout is designed for eating, not for cooking activities."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is primarily designed for dining and socializing rather than cooking. The presence of dining tables, chairs, vases, potted plants, glassware, and the dining table layout all indicate that this space is not ideally suited for daily cooking activities. The score of 4 indicates that it is marginally adequate for cooking, but not ideal.",
+  "_meta": {
+    "image_id": "ai_052_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.14,
+    "attempt": 1
+  }
+}

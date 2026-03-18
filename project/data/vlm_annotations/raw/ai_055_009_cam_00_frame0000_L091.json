@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several round dining tables",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for computer work as they lack a flat surface and are designed for social dining."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for computer work as they lack a flat surface and are designed for social dining."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not suitable for computer work as they lack a flat surface and are designed for social dining."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter is not suitable for computer work as it lacks a flat surface and is designed for social dining."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting levels can make it difficult to see the screen clearly and may cause eye strain."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout makes it difficult to focus on computer work due to potential distractions from other patrons."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some flat surfaces available, they are not designed for computer work and are intended for social dining. The low lighting and open layout also contribute to a less than ideal environment for focused solo work.",
+  "_meta": {
+    "image_id": "ai_055_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.43,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bed is suitable for sleep due to its back support and potential for comfort."
+    },
+    {
+      "name": "pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Pillows are suitable for sleep due to their back support and potential for comfort."
+    },
+    {
+      "name": "window-blind",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Window blind is suitable for sleep due to its ability to block light and provide privacy."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Rug is suitable for sleep due to its soft surface and potential for comfort."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden flooring is suitable for sleep due to its soft surface and potential for comfort."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Merged ceiling is suitable for sleep due to its potential for comfort and lack of disturbance."
+    },
+    {
+      "name": "wall-wood",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden walls are suitable for sleep due to their potential for comfort and lack of disturbance."
+    },
+    {
+      "name": "wall-stone",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Stone wall is suitable for sleep due to its potential for comfort and lack of disturbance."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for sleep (Primary). The presence of a bed and pillows indicates a primary sleep artifact, but the lack of back support and comfort in the couch and chair negatively impacts the score. The window blind and rug provide positive aspects for sleep, but the open layout and lack of personal storage fixtures prevent a higher score.",
+  "_meta": {
+    "image_id": "ai_017_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.07,
+    "attempt": 1
+  }
+}

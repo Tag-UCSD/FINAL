@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space for yoga practice."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs are placed close to the bed, further obstructing the floor space."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The cabinets are positioned near the bed, creating a cluttered and obstructed space."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The window is partially obstructed by curtains, reducing the available floor space."
+    },
+    {
+      "name": "floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is obstructed by the bed, chairs, and cabinets, making it unsuitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga practice due to the presence of a bed, chairs, and cabinets that obstruct the floor space. The window partially obstructs the floor, further reducing the available area for yoga. A score of 4 reflects the significant obstacles present in the space.",
+  "_meta": {
+    "image_id": "ai_035_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.14,
+    "attempt": 1
+  }
+}

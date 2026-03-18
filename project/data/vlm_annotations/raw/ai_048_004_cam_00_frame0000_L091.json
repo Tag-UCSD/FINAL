@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it takes up a large portion of the space and obstructs movement."
+    },
+    {
+      "name": "lack of flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "lack of ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair or stool designed for prolonged sitting, which is crucial for maintaining correct posture during extended computer work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be ambient and not task-specific, which can lead to eye strain and reduced visibility when working on a screen."
+    },
+    {
+      "name": "high-traffic area",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of multiple people and a busy atmosphere suggests that this is not a quiet, distraction-free environment suitable for focused solo work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there is some natural light and a spacious layout, the presence of a bed and lack of a flat work surface and ergonomic seating significantly hinder the ability to set up a productive workstation. The low lighting and high-traffic area further reduce the suitability for focused solo work.",
+  "_meta": {
+    "image_id": "ai_048_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.66,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large windows with city view",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep patterns."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is a hard surface that could be slippery and difficult to move, potentially causing accidents."
+    },
+    {
+      "name": "vase on coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase on coffee table is an unnecessary object that could be accidentally knocked over, potentially causing injury."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Couch provides a soft seating area for relaxation, which can help prepare for sleep."
+    },
+    {
+      "name": "rug under couch",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Rug under couch provides a soft surface for comfort and warmth, which can aid in relaxation."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Fireplace can provide a warm and cozy atmosphere, which can help induce relaxation and sleep."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects for sleep, such as the couch and fireplace, but also has several negative factors, including large windows, glass coffee table, and unnecessary objects like the vase. The overall score is 4, indicating that the space is marginally adequate for primary sleep.",
+  "_meta": {
+    "image_id": "ai_027_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.39,
+    "attempt": 1
+  }
+}

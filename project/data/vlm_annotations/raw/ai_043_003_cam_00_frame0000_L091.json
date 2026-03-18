@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a flat surface suitable for placing a laptop."
+    },
+    {
+      "name": "Bench",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bench can be used as an additional seat or a place to prop up a laptop."
+    },
+    {
+      "name": "Floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden flooring is clean and provides a comfortable surface to stand or sit on."
+    },
+    {
+      "name": "Ceiling-merged",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The ceiling height is adequate but does not provide any specific benefits for computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the presence of a dining table and bench, which can serve as work surfaces, and the clean wooden flooring. However, the ceiling height and lack of specific ergonomic features make it less than ideal.",
+  "_validation_errors": [
+    "indicators[3].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_043_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.06,
+    "attempt": 2
+  }
+}

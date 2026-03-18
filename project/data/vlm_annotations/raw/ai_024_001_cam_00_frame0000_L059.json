@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "arched windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large arched windows allow natural light to flood the space, which can be disruptive to sleep."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can contribute to noise and drafts, which are not conducive to sleep."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can allow unwanted light and noise into the space, making it difficult to achieve a dark and quiet environment necessary for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has several features that could negatively impact sleep. The large arched windows, high ceilings, and large windows all contribute to potential noise, drafts, and unwanted light, making it less suitable for primary sleep.",
+  "_meta": {
+    "image_id": "ai_024_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.65,
+    "attempt": 1
+  }
+}

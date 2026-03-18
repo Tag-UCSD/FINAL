@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 2,
+  "confidence": 0.87,
+  "indicators": [
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a flat surface at sitting height makes it impossible to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no seating available that would allow for ergonomic positioning while working on a computer."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting present to reduce eye strain and provide adequate illumination for screen work."
+    },
+    {
+      "name": "high-traffic public layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The layout of the space is designed for public use and does not provide a private area suitable for focused solo work."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for computer work (solo). There is no flat work surface, no ergonomic seating, no task lighting, and the layout is designed for public use, making it incompatible with focused solo work.",
+  "_meta": {
+    "image_id": "ai_039_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.66,
+    "attempt": 1
+  }
+}

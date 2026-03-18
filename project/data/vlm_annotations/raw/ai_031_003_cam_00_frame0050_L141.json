@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of any furniture obstruction, allowing for free movement."
+    },
+    {
+      "name": "table and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a table and chairs suggests a dining or meeting area, not suitable for yoga."
+    },
+    {
+      "name": "bar counter and stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter and stools suggest a social setting, not conducive to yoga."
+    },
+    {
+      "name": "lamps",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lamps are not specifically designed for yoga lighting, and their presence might create shadows."
+    },
+    {
+      "name": "bottles",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles are not related to yoga practice and could be hazardous if knocked over."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are not related to yoga practice and could be hazardous if knocked over."
+    }
+  ],
+  "reasoning_summary": "The scene is partially suitable for yoga due to the unobstructed floor area. However, the presence of a table, chairs, bar counter, and other objects suggests a social setting, making it less suitable for yoga. The score is 3 because while there is some potential for yoga, the overall setup is more conducive to other activities.",
+  "_meta": {
+    "image_id": "ai_031_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.27,
+    "attempt": 1
+  }
+}

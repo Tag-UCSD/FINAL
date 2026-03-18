@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a firm, non-slip surface suitable for yoga."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table obstructs the floor space and is not suitable for yoga."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The ceiling is too low for comfortable yoga practice."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The window is too small to allow natural light into the room."
+    },
+    {
+      "name": "bottle",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bottle on the floor is not suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The room is partially suitable for yoga due to the wooden floor and the presence of a bed, but it is significantly obstructed by a table and a ceiling that is too low. The small window does not allow natural light, and the bottle on the floor is not suitable for yoga. Overall, the room scores a 3 out of 7 for yoga suitability.",
+  "_meta": {
+    "image_id": "ai_030_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.8,
+    "attempt": 1
+  }
+}

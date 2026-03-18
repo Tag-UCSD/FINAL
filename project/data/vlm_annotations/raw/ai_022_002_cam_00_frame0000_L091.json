@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large desk provides ample space for a computer and other work materials."
+    },
+    {
+      "name": "Comfortable chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Comfortable chairs support long periods of sitting, which is essential for computer work."
+    },
+    {
+      "name": "Natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can improve mood and focus during work."
+    },
+    {
+      "name": "Quiet environment",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A quiet environment reduces distractions, allowing for more focused work."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for solo computer work due to its ample workspace, comfortable seating, natural lighting, and quiet environment.",
+  "_meta": {
+    "image_id": "ai_022_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.32,
+    "attempt": 2
+  }
+}

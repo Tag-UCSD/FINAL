@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large dining table is not suitable for computer work as it lacks a flat surface and is too far away from the seating area."
+    },
+    {
+      "name": "seating area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating area is not designed for computer work, as it lacks a flat surface and is not ergonomically designed for extended use."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The bookshelves provide some reference materials, which can be useful for computer work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low lighting in the room makes it difficult to see the computer screens clearly."
+    },
+    {
+      "name": "open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space makes it difficult to focus on computer work due to potential distractions."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some positive aspects such as bookshelves and low lighting, the lack of a flat surface and ergonomic seating, along with the open space and low lighting, make it less than ideal for focused solo work.",
+  "_meta": {
+    "image_id": "ai_046_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.79,
+    "attempt": 1
+  }
+}

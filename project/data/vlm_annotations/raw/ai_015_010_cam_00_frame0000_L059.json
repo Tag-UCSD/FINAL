@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and lacks back support for comfortable sleep."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow light to enter during the day, making it difficult to sleep."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass coffee table is slippery and unsafe for sleep."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are cold and uncomfortable for sleep."
+    },
+    {
+      "name": "no visible bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No bed present, making it impossible to sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for primary sleep. The presence of a couch and large windows makes it difficult to sleep, while the lack of a bed and hard surfaces further undermine the suitability. The glass coffee table also poses a safety hazard.",
+  "_meta": {
+    "image_id": "ai_015_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.05,
+    "attempt": 1
+  }
+}

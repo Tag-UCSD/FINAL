@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple chairs provide seating options for multiple people."
+    },
+    {
+      "name": "several tables",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Tables can be used for placing drinks, snacks, or conversation props."
+    },
+    {
+      "name": "artwork on walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Artwork adds a personal touch and can spark conversation."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout allows for easy conversation and interaction between people."
+    },
+    {
+      "name": "natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light creates a pleasant and inviting atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation / hangout. It has multiple seating options, tables for conversation props, and an open layout that encourages interaction. However, it lacks a dedicated conversational area and lacks natural conversation props like drinks and snacks.",
+  "_meta": {
+    "image_id": "ai_033_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.22,
+    "attempt": 1
+  }
+}

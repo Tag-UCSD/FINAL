@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "corner bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A corner bathtub takes up a significant amount of space and obstructs the open floor area needed for yoga."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel rack can be used to hang towels, but it also takes up space and obstructs the open floor area."
+    },
+    {
+      "name": "towel hanging",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel hanging on the towel rack obstructs the open floor area."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink takes up space and obstructs the open floor area."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A window allows natural light to enter, which is beneficial for creating a calming atmosphere for yoga."
+    },
+    {
+      "name": "floor tiles",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Floor tiles are smooth and non-slip, providing a suitable surface for yoga mats."
+    }
+  ],
+  "reasoning_summary": "The presence of a corner bathtub, towel rack, sink, and towel hanging obstructs the open floor area needed for yoga. While the window allows natural light, the other elements take up space and create visual clutter. A score of 4 indicates that the space is marginally adequate for yoga due to the obstructions and lack of open floor area.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.52,
+    "attempt": 1
+  }
+}

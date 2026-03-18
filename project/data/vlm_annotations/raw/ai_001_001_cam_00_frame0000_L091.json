@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a sink in a bathroom setting suggests a non-work environment."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The toilet is not suitable for extended computer work."
+    },
+    {
+      "name": "bathroom setting",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bathroom setting is not conducive to focused solo work."
+    },
+    {
+      "name": "lack of flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "lack of ergonomic seating",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair designed for extended computer use."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo) due to the presence of a bathroom setting and the lack of a flat work surface and ergonomic seating. The score reflects the mixed presence of features that support and those that do not support the activity.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.51,
+    "attempt": 1
+  }
+}

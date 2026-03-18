@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of books suggests a cluttered environment, which can be distracting."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A wooden floor provides a warm and comfortable surface to sit on while working."
+    },
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is present, which might be used for napping or resting during breaks, but it could also be a distraction."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the presence of books and a bed, which can be distractions. The wooden floor provides a positive aspect for comfort.",
+  "_meta": {
+    "image_id": "ai_017_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.98,
+    "attempt": 2
+  }
+}

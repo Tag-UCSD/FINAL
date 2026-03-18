@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large corner bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large corner bathtub takes up a significant amount of space, leaving limited room for computer work."
+    },
+    {
+      "name": "Sink",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The sink is present but does not contribute to the suitability for computer work."
+    },
+    {
+      "name": "Window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window allows natural light to enter, which can be beneficial for computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the presence of a large corner bathtub, but has a positive aspect with the window allowing natural light.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.7,
+    "attempt": 2
+  }
+}

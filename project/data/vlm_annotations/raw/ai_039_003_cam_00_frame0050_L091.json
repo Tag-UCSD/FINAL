@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white bowl on countertop",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowl is not a flat work surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "sink on countertop",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not a flat work surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is not a flat work surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is not a flat work surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is not a flat work surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "bowl on countertop",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowl is not a flat work surface suitable for placing a laptop or keyboard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). There is no flat work surface suitable for placing a laptop or keyboard, and the presence of a sink and bowl on the countertop further undermines the potential for a productive workspace. The lack of a dedicated flat surface makes it difficult to set up a computer workstation in this space.",
+  "_meta": {
+    "image_id": "ai_039_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.46,
+    "attempt": 1
+  }
+}

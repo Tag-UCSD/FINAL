@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch occupies a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is placed in the middle of the room, obstructing the open floor space needed for yoga."
+    },
+    {
+      "name": "banana",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The banana is placed on the table, which could be a distraction or obstacle during yoga practice."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is placed on the table, which could be a distraction or obstacle during yoga practice."
+    },
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a clear, unobstructed floor area in the center of the room, which is suitable for yoga practice."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The soft lighting from the lamp and natural light from the window creates a calming atmosphere suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga, with a clear unobstructed floor area and soft lighting. However, the presence of furniture and objects on the floor obstructs the open space needed for yoga practice, resulting in a moderate score of 3.",
+  "_meta": {
+    "image_id": "ai_017_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.31,
+    "attempt": 1
+  }
+}

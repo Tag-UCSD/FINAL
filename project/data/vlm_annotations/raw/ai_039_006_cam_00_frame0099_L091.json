@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Minimalist furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Minimalist furniture reduces distractions and provides a clear workspace."
+    },
+    {
+      "name": "Towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel is not directly related to computer work but could be seen as a distraction."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for computer work due to its large windows and minimalist furniture, but the presence of a towel might be considered a minor distraction.",
+  "_meta": {
+    "image_id": "ai_039_006_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_006\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.35,
+    "attempt": 2
+  }
+}

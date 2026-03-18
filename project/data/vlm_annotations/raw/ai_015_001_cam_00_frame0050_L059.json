@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A couch is not suitable for sleep as it lacks a backrest and is not designed for lying down."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A pillow can be used for sleep, but it is not enough to support the activity."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring is cold and hard, making it uncomfortable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is minimally suitable for sleep (Primary). The presence of a couch and a pillow suggests some potential for sleep, but the cold wood flooring and lack of a proper bed make it unsuitable for a comfortable sleep experience.",
+  "_meta": {
+    "image_id": "ai_015_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.25,
+    "attempt": 1
+  }
+}

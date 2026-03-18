@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "architectural grid",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The grid-like structure obstructs direct line-of-sight between potential conversational partners, making it difficult to engage in a natural conversation."
+    },
+    {
+      "name": "dark interior",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dark interior lacks natural light, creating a gloomy atmosphere that is less conducive to social interaction."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture present, which is essential for creating a comfortable and engaging space for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is poorly suited for casual conversation due to the lack of furniture, the dark interior, and the obstructive architectural grid. While the grid could potentially create an interesting visual backdrop, the overall lack of suitable seating and lighting makes it unsuitable for a hangout.",
+  "_meta": {
+    "image_id": "ai_026_018_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_018\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.15,
+    "attempt": 1
+  }
+}

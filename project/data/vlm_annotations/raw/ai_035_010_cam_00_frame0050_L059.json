@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, creating a bright and inviting atmosphere conducive to sleep."
+    },
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Soft lighting from lamps can create a calming environment for sleep."
+    },
+    {
+      "name": "Comfortable bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A comfortable bed is essential for good sleep."
+    },
+    {
+      "name": "Quiet environment",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The quiet environment is conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for sleep (primary) due to its large windows, soft lighting, comfortable bed, and quiet environment.",
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.05,
+    "attempt": 2
+  }
+}

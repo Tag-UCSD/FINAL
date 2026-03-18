@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vast open area lacks a defined conversational boundary, making it difficult to maintain a focused social interaction."
+    },
+    {
+      "name": "formal seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The formal arrangement of chairs and tables suggests a more formal setting, which is less conducive to casual conversation."
+    },
+    {
+      "name": "lack of soft seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of hard chairs and tables instead of soft seating options limits the comfort and informal nature of a casual hangout."
+    },
+    {
+      "name": "formal lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The formal lighting setup with large overhead lights does not provide a warm, inviting atmosphere suitable for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to its formal layout, lack of soft seating, and formal lighting. The large open space and formal seating arrangement make it challenging to create a relaxed, informal atmosphere suitable for casual social interactions.",
+  "_meta": {
+    "image_id": "ai_032_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.15,
+    "attempt": 1
+  }
+}

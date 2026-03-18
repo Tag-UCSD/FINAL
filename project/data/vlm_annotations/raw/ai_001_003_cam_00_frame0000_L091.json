@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "L-shaped desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk provides a large workspace suitable for extended computer use."
+    },
+    {
+      "name": "ergonomic mesh office chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chair is designed for comfort and support during prolonged computer work."
+    },
+    {
+      "name": "directional task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting is directed towards the desk, reducing glare on the screens."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The door provides some privacy, although it is not fully enclosed."
+    },
+    {
+      "name": "bookshelf with reference materials",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The presence of reference books indicates a knowledge work environment."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for solo computer work. While it has a dedicated desk and ergonomic seating, the lack of full enclosure and the presence of only directional lighting limit its suitability. The bookshelf adds a positive element, indicating a knowledge work environment.",
+  "_meta": {
+    "image_id": "ai_001_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.55,
+    "attempt": 1
+  }
+}

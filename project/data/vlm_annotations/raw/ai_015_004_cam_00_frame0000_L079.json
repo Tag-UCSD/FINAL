@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "white kitchen cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets are white, which might be considered a neutral color but does not contribute to a cooking environment."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is white, which might be considered a neutral color but does not contribute to a cooking environment."
+    },
+    {
+      "name": "stack of books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stack of books on the dining table suggests a non-cooking activity."
+    },
+    {
+      "name": "pen and paper",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Pen and paper on the dining table suggest a non-cooking activity."
+    },
+    {
+      "name": "no stove or oven",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No stove or oven is visible, which are essential for cooking."
+    },
+    {
+      "name": "no sink",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is visible, which is essential for food preparation and cleaning."
+    }
+  ],
+  "reasoning_summary": "The space is designed for dining rather than cooking, with no stove, oven, or sink visible. The presence of books and writing materials on the dining table further suggests a non-cooking activity. The score is 4, indicating it is marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_015_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.95,
+    "attempt": 1
+  }
+}

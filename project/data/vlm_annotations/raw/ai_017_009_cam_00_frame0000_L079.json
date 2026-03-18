@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a central workspace for food preparation and dining."
+    },
+    {
+      "name": "separate dining area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dedicated dining area allows for separate meal preparation and eating spaces."
+    },
+    {
+      "name": "glass railings",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Glass railings may pose a safety hazard when cooking with open flames."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout allows for better communication and supervision while cooking with children or pets."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of a kitchen island and a separate dining area. However, the glass railings could pose a safety risk, and the open layout might not be ideal for all cooking tasks.",
+  "_meta": {
+    "image_id": "ai_017_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.95,
+    "attempt": 1
+  }
+}

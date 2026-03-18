@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable seating area for conversation."
+    },
+    {
+      "name": "Coffee Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The coffee table offers a surface to place drinks and small items during conversation."
+    },
+    {
+      "name": "Shelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The shelves are filled with items that might be distracting or obstructive during conversation."
+    },
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The tiled floor is easy to walk on and clean, supporting a casual atmosphere."
+    },
+    {
+      "name": "Windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light and views, creating a pleasant environment for socializing."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts, with comfortable seating, a functional coffee table, and a pleasant ambiance from the natural light and open layout. However, the cluttered shelves could be distracting.",
+  "_meta": {
+    "image_id": "ai_015_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 30.63,
+    "attempt": 2
+  }
+}

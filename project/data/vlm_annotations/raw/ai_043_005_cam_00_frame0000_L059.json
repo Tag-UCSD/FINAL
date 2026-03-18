@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed visible",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is essential for primary sleep, but it is absent in this scene."
+    }
+  ],
+  "reasoning_summary": "The scene lacks a bed, which is crucial for primary sleep, making it completely unsuitable for this activity.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.4,
+    "attempt": 2
+  }
+}

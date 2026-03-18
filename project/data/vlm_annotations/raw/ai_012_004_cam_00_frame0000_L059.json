@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any resting surface makes this space unsuitable for sleep."
+    },
+    {
+      "name": "no furniture or personal items",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of furniture or personal items indicates a commercial or temporary setting, not a residential bedroom."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No windows or curtains prevent natural light control and privacy, essential for sleep."
+    },
+    {
+      "name": "no lighting control",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No visible lighting control options suggest this space is not designed for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). There is no bed or resting surface, no furniture or personal items, no windows or curtains for light control, and no lighting control options. The lack of these key elements makes this space unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_012_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.41,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "yellow structural beams",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright yellow beams are visually distracting and do not contribute to a calm, restful environment."
+    },
+    {
+      "name": "curved ceiling panels",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Curved ceiling panels create a sense of enclosure but also add visual complexity that can be disorienting."
+    },
+    {
+      "name": "concrete floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Concrete flooring is hard and cold, making it unsuitable for sleeping."
+    },
+    {
+      "name": "lack of windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No natural light sources make it difficult to establish a circadian rhythm."
+    },
+    {
+      "name": "high ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "High ceilings can make the space feel cavernous and less intimate, which is counterproductive to sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is highly unsuitable for primary sleep. The bright yellow structural beams, curved ceiling panels, and lack of windows create a visually complex and disorienting environment. The high ceiling height and hard concrete floor further contribute to an inhospitable atmosphere for sleep.",
+  "_meta": {
+    "image_id": "ai_024_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.35,
+    "attempt": 1
+  }
+}

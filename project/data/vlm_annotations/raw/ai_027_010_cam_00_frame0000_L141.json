@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of any furniture obstruction, allowing for free movement."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood provides a firm, non-slip base surface suitable for yoga mat placement."
+    },
+    {
+      "name": "minimal clutter in movement zone",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The near-total absence of furniture or objects on the floor is the key spatial prerequisite for safe yoga practice."
+    },
+    {
+      "name": "bookshelves lining all walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wall-to-wall shelving reduces usable floor width and creates visual clutter unsuitable for calm movement practice."
+    },
+    {
+      "name": "boxes and papers stacked on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Floor-level clutter directly obstructs any mat-sized area \u00e2\u20ac\u201d there is no clearance for basic stretching poses."
+    },
+    {
+      "name": "no open floor area visible",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Complete absence of any unobstructed floor zone makes yoga or stretching physically impossible in this space."
+    },
+    {
+      "name": "high visual noise from clutter",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dense visual clutter creates a cognitively stimulating environment incompatible with the calm needed for yoga."
+    }
+  ],
+  "reasoning_summary": "The scene is partially suitable for yoga due to the unobstructed floor area and hardwood flooring, but it is significantly hindered by the presence of bookshelves and clutter on the floor, making it difficult to perform yoga or stretching.",
+  "_meta": {
+    "image_id": "ai_027_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.75,
+    "attempt": 1
+  }
+}

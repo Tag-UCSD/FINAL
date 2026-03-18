@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large open space lacks privacy and acoustic enclosure, making it unsuitable for sleep."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor is uncomfortable and noisy, making it unsuitable for sleep."
+    },
+    {
+      "name": "no furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No furniture, especially a bed, makes it impossible to use this space for sleep."
+    }
+  ],
+  "reasoning_summary": "This large open space lacks the necessary privacy, acoustic enclosure, and furniture to support primary sleep. The hard floor and lack of furniture make it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_024_014_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_014\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 8.77,
+    "attempt": 1
+  }
+}

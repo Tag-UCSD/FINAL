@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.97,
+  "indicators": [
+    {
+      "name": "absence of cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No stove, oven, or microwave is visible, making it impossible to cook in this space."
+    },
+    {
+      "name": "absence of water fixture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is present, which is essential for food preparation and kitchen hygiene."
+    },
+    {
+      "name": "soft seating furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large white chair and a bed take up most of the floor space, leaving no usable cooking workspace."
+    },
+    {
+      "name": "absence of hard prep surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No countertop or hard washable work surface is present, which is required for all food preparation tasks."
+    },
+    {
+      "name": "absence of cooking utensils or tools",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No cooking utensils or tools are visible, which are essential for cooking."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for cooking (Daily). There are no cooking appliances, no sink, no hard prep surfaces, and no cooking utensils or tools. The presence of soft seating furniture and a bed further obstructs the use of the space for cooking.",
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.82,
+    "attempt": 1
+  }
+}

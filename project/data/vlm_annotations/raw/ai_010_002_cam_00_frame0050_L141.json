@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is large and takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug is large and covers much of the floor, making it difficult to find a clear space for yoga."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed close to the bed, further obstructing the floor space."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor is smooth and provides a suitable surface for yoga mats."
+    },
+    {
+      "name": "large unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "There is a large unobstructed floor area, which is essential for yoga practice."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting is bright and even, creating a pleasant atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for yoga due to the large unobstructed floor area and the presence of good lighting. However, the bed, rug, and chair obstruct the floor space, reducing the suitability. A score of 4 reflects the mixed suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_010_002_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_002\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.17,
+    "attempt": 1
+  }
+}

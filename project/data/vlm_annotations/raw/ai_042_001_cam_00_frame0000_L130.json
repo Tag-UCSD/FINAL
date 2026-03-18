@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a private sleeping area, not suitable for casual conversation."
+    },
+    {
+      "name": "white bedspread",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bedspread can be a barrier to conversation, making it less inviting for casual interaction."
+    },
+    {
+      "name": "white carpet",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white carpet can be difficult to maintain and may not be conducive to a casual hangout setting."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bookshelf is a functional object, but not conducive to casual conversation or social interaction."
+    },
+    {
+      "name": "metallic desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A metallic desk is not conducive to a casual hangout setting due to its cold and industrial appearance."
+    },
+    {
+      "name": "glass window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A glass window allows natural light and a view, which can enhance a casual hangout atmosphere."
+    },
+    {
+      "name": "wooden ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A wooden ceiling can add warmth and a cozy feel to the space, enhancing the hangout atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation/hangout due to the presence of a bed and functional objects like a bookshelf and desk. However, the white carpet and lack of soft seating make it less inviting. The glass window and wooden ceiling contribute positively to the atmosphere.",
+  "_meta": {
+    "image_id": "ai_042_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.94,
+    "attempt": 1
+  }
+}

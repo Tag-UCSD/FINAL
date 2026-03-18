@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "open floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open floor space allows for movement without obstruction."
+    },
+    {
+      "name": "chairs and couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs and couches obstruct the open floor space and create visual clutter."
+    },
+    {
+      "name": "curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curtains block light and create visual clutter."
+    },
+    {
+      "name": "light fixtures",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Light fixtures provide ambient lighting, but do not obstruct the open floor space."
+    }
+  ],
+  "reasoning_summary": "The open floor space and light fixtures support yoga and stretching, while the chairs and curtains create visual clutter and obstruction. A score of 4 reflects the mixed support for the activity due to the presence of chairs and curtains.",
+  "_meta": {
+    "image_id": "ai_031_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.57,
+    "attempt": 1
+  }
+}

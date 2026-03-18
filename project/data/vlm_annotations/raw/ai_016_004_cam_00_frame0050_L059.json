@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls can be cold and uncomfortable to touch, potentially disrupting sleep."
+    },
+    {
+      "name": "glass windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass windows allow natural light to enter, which can be disruptive to sleep patterns."
+    },
+    {
+      "name": "metal railings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Metal railings can be noisy and distracting, potentially disturbing sleep."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be noisy and uncomfortable, potentially disrupting sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (primary). The brick walls, glass windows, metal railings, and hard flooring all contribute to a noisy, uncomfortable environment that would likely disrupt sleep patterns.",
+  "_meta": {
+    "image_id": "ai_016_004_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_004\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.47,
+    "attempt": 1
+  }
+}

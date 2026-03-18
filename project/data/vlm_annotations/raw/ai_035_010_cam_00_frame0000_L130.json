@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large bed takes up a significant portion of the room, leaving limited space for other social furniture."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A fireplace can serve as a focal point for conversation, adding warmth and ambiance."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "red rug",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug defines the seating area and adds comfort underfoot."
+    },
+    {
+      "name": "low ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low beams might limit the feeling of openness and could make the room feel cramped."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets suggest a functional space rather than a social one."
+    }
+  ],
+  "reasoning_summary": "The room has a large bed and low ceiling beams, which slightly undermine the casual conversation / hangout affordance. However, the fireplace, large windows, red rug, and cabinets suggest a comfortable, social space with potential for conversation. A score of 6 reflects the mixed nature of the space.",
+  "_meta": {
+    "image_id": "ai_035_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.62,
+    "attempt": 1
+  }
+}

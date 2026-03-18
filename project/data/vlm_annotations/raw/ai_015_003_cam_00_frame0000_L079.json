@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Microwave",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The microwave is essential for cooking."
+    },
+    {
+      "name": "Cabinet",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Cabinets provide storage for cooking utensils and ingredients."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is not directly related to cooking but can be used for food preparation."
+    }
+  ],
+  "reasoning_summary": "The space is well-equipped for cooking with a microwave and cabinets, but the dining table could be more suitable for food preparation.",
+  "_meta": {
+    "image_id": "ai_015_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.55,
+    "attempt": 2
+  }
+}

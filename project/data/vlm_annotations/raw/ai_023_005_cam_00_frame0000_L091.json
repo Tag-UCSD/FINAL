@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several round tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Round tables are not suitable for computer work as they do not provide a flat surface for a keyboard and monitor."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for computer work as they do not provide a flat surface for a keyboard and monitor."
+    },
+    {
+      "name": "stained glass windows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stained glass windows allow natural light, which can be distracting and reduce the need for artificial lighting."
+    },
+    {
+      "name": "chandelier lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chandelier lighting can create glare on computer screens and is not suitable for focused work."
+    },
+    {
+      "name": "architectural details",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Architectural details can be visually distracting and may reduce focus on the task at hand."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to distractions and reduce the sense of enclosure needed for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are several round tables and chairs, they do not provide a flat surface suitable for a computer workstation. Additionally, stained glass windows, chandelier lighting, architectural details, and an open layout can be visually distracting and reduce focus, making it less suitable for focused solo work compared to a dedicated home office.",
+  "_meta": {
+    "image_id": "ai_023_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.98,
+    "attempt": 1
+  }
+}

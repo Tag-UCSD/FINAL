@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dark wooden dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dark wooden dining table is too formal and lacks the casual, inviting feel needed for a hangout."
+    },
+    {
+      "name": "four black chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The four black chairs are too formal and lack the casual, inviting feel needed for a hangout."
+    },
+    {
+      "name": "orange walls",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The orange walls add warmth and a welcoming atmosphere to the space."
+    },
+    {
+      "name": "candles on the table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Candles can create a cozy and intimate atmosphere conducive to casual conversation."
+    },
+    {
+      "name": "glass block window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The glass block window allows natural light to enter, creating a pleasant and inviting atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects like the warm orange walls and the glass block window, but the formal dining table and chairs, along with the lack of a more casual seating arrangement, make it marginally suitable for a casual conversation/hangout.",
+  "_meta": {
+    "image_id": "ai_008_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.02,
+    "attempt": 1
+  }
+}

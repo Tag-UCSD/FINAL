@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table is present, which can be used for food preparation and serving."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The chandelier is not directly related to cooking but may indicate a focus on aesthetics over functionality."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is not ideal for food preparation as it can be difficult to clean and may harbor food particles."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs may show dirt and stains easily, making them less suitable for a kitchen environment."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with a dining table available for food preparation and serving. However, the presence of a chandelier and hardwood flooring indicates a focus on aesthetics over functionality, and the white chairs may show dirt and stains easily, making them less suitable for a kitchen environment.",
+  "_meta": {
+    "image_id": "ai_017_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.64,
+    "attempt": 1
+  }
+}

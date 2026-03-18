@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "long wooden dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long wooden dining table is not suitable for computer work as it lacks a flat surface and is too narrow for ergonomic seating."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is not conducive to focused work, as it is designed for social interaction rather than individual work."
+    },
+    {
+      "name": "exposed ceiling with pipes and ducts",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The exposed ceiling with pipes and ducts may create a noisy environment, which can be distracting for focused work."
+    },
+    {
+      "name": "indirect lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Indirect lighting may cause glare on computer screens, making it less suitable for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The long wooden dining table lacks a flat surface and is too narrow for ergonomic seating, while the seating arrangement is designed for social interaction rather than individual work. The exposed ceiling with pipes and ducts may create a noisy environment, and indirect lighting may cause glare on computer screens. However, the presence of natural light from the windows could potentially improve the situation.",
+  "_meta": {
+    "image_id": "ai_047_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.19,
+    "attempt": 1
+  }
+}

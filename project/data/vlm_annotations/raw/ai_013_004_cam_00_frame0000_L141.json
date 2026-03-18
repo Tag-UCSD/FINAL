@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Potted Plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is located near the seating area, which could obstruct the view or create a cluttered environment during yoga or stretching."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are chairs in the room, which might be used for other activities and could interfere with the yoga or stretching space."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga or stretching due to the presence of potted plants and chairs that could obstruct the area.",
+  "_meta": {
+    "image_id": "ai_013_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.77,
+    "attempt": 2
+  }
+}

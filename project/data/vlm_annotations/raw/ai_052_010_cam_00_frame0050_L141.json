@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble is too hard and slippery for yoga practice."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar stools are too high and uncomfortable for yoga practice."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick wall is too rigid and cold for yoga practice."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, which can be calming for yoga."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and can be calming for yoga."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for yoga due to the presence of large windows allowing natural light and views, but the marble countertop, bar stools, and brick wall make it less suitable for yoga practice.",
+  "_meta": {
+    "image_id": "ai_052_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.12,
+    "attempt": 1
+  }
+}

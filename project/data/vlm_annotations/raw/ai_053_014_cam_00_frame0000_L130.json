@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "long rectangular table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A long table can be awkward for casual conversation, especially when seated on chairs."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs may be too formal for a casual hangout setting."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick walls add a rustic charm that can be appealing in a casual setting."
+    },
+    {
+      "name": "glass windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Glass windows allow natural light and views, enhancing the casual atmosphere."
+    },
+    {
+      "name": "projected image of sailing ship",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A projected image can serve as a conversation starter or a pleasant backdrop."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive elements like brick walls and glass windows, but the long rectangular table and white chairs suggest a more formal setting. The projected image could be a good conversation starter, but the overall layout leans towards a more formal environment rather than a casual hangout spot.",
+  "_meta": {
+    "image_id": "ai_053_014_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_014\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.79,
+    "attempt": 1
+  }
+}

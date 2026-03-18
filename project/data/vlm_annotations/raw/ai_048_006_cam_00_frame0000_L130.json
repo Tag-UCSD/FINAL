@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large dining table provides ample space for multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "Comfortable seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The comfortable chairs around the dining table make it suitable for long conversations and social gatherings."
+    },
+    {
+      "name": "Ample natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow plenty of natural light to enter, creating a pleasant atmosphere for casual conversations."
+    },
+    {
+      "name": "Open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout of the space encourages easy movement and interaction between different areas, facilitating casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is ideally suited for casual conversations and hangouts due to its ample seating, natural lighting, and open layout.",
+  "_meta": {
+    "image_id": "ai_048_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.01,
+    "attempt": 2
+  }
+}

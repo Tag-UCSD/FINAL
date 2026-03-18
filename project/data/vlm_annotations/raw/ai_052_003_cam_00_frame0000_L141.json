@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "large L-shaped desk blocking floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The desk dominates the available floor space, directly blocking the open clearance required for even minimal stretching."
+    },
+    {
+      "name": "bookshelves lining all walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wall-to-wall shelving reduces usable floor width and creates visual clutter unsuitable for calm movement practice."
+    },
+    {
+      "name": "boxes and papers stacked on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Floor-level clutter directly obstructs any mat-sized area \u00e2\u20ac\u201d there is no clearance for basic stretching poses."
+    },
+    {
+      "name": "no open floor area visible",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Complete absence of any unobstructed floor zone makes yoga or stretching physically impossible in this space."
+    },
+    {
+      "name": "high visual noise from clutter",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dense visual clutter creates a cognitively stimulating environment incompatible with the calm needed for yoga."
+    }
+  ],
+  "reasoning_summary": "This cluttered home office has no unobstructed floor space whatsoever. Every available surface \u00e2\u20ac\u201d including the floor \u00e2\u20ac\u201d is occupied by furniture, boxes, or equipment. This space is completely unsuitable for yoga or any movement practice and receives the minimum score of 1.",
+  "_meta": {
+    "image_id": "ai_052_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.2,
+    "attempt": 1
+  }
+}

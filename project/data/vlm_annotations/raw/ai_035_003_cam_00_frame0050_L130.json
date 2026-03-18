@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is present, but it is not suitable for casual conversation due to its primary function as a sleeping area."
+    },
+    {
+      "name": "lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A lamp provides ambient light, which can contribute to a relaxed atmosphere conducive to casual conversation."
+    },
+    {
+      "name": "blanket",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A blanket adds comfort and warmth, which can enhance the casual conversation experience."
+    }
+  ],
+  "reasoning_summary": "The presence of a bed indicates that this space is primarily intended for sleeping rather than casual conversation. However, the lamp and blanket contribute positively to the ambiance, making it marginally suitable for casual hangouts.",
+  "_meta": {
+    "image_id": "ai_035_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.33,
+    "attempt": 1
+  }
+}

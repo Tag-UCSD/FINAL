@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a bathtub is a significant negative indicator for yoga, as it occupies a large portion of the floor space and is not suitable for stretching or yoga practice."
+    },
+    {
+      "name": "carved wall panel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The carved wall panel is visually distracting and does not contribute to a calming atmosphere conducive to yoga practice."
+    },
+    {
+      "name": "towel on tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The towel on the tub is not suitable for yoga practice, as it could become a tripping hazard or get in the way of the yoga mat."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not suitable for yoga practice, as it is not a flat surface and could be a tripping hazard."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The ceiling lights provide ambient lighting, which can create a calming atmosphere for yoga practice."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The towel rack is not suitable for yoga practice, as it could become a tripping hazard or get in the way of the yoga mat."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga practice due to the presence of a bathtub, sink, and towel on the tub, which occupy a significant portion of the floor space and are not suitable for yoga. The carved wall panel and towel rack also contribute to a less calming atmosphere. However, the ceiling lights provide some positive lighting, which can help create a calming atmosphere. Overall, the score is 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.5,
+    "attempt": 1
+  }
+}

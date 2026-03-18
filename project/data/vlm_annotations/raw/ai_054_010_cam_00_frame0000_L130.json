@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large dining table provides ample space for multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "black leather chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Black leather chairs are comfortable and stylish, suitable for a casual hangout setting."
+    },
+    {
+      "name": "wooden dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A wooden dining table adds warmth and a homey feel to the space."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout allows for easy conversation and interaction between different areas of the room."
+    },
+    {
+      "name": "natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from windows creates a pleasant and inviting atmosphere for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation / hangout. The large dining table and black leather chairs provide ample seating and comfort, while the open layout and natural light contribute to a welcoming atmosphere. However, the lack of a dedicated seating area and the industrial design elements slightly detract from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_054_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.33,
+    "attempt": 1
+  }
+}

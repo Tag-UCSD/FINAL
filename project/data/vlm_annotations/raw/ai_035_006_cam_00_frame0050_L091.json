@@ -1,0 +1,78 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving limited space for computer work."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a warm and comfortable surface to place a laptop."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The cabinet is merged with the wall, indicating it might not be easily accessible for computer work."
+    },
+    {
+      "name": "rug-merged",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The rug is merged with the floor, suggesting it might not be easily moved for computer work."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The wall is merged with other objects, indicating it might not be easily used for computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is designed for comfort and can be used as a desk chair for computer work."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a lamp providing sufficient lighting for computer work."
+    },
+    {
+      "name": "window-other",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The window is merged with other objects, indicating it might not be easily used for computer work."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the large bed taking up most of the room, but has positive aspects such as a comfortable chair and sufficient lighting.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'",
+    "indicators[3].polarity invalid: 'neutral'",
+    "indicators[4].polarity invalid: 'neutral'",
+    "indicators[7].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_035_006_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_006\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 36.98,
+    "attempt": 2
+  }
+}

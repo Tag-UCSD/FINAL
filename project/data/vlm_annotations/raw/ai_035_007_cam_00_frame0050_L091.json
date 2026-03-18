@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large framed flower artwork",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The artwork is too large and distracting for a focused workspace."
+    },
+    {
+      "name": "bookshelf with books",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Books indicate a knowledge work environment."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Task lighting is available for screen work."
+    },
+    {
+      "name": "couch with patterned pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for extended sitting work."
+    },
+    {
+      "name": "window view of snowy landscape",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "View of nature can be distracting."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there is a bookshelf with books indicating a knowledge work environment, the large framed flower artwork and the couch with a patterned pillow are distractions. The floor lamp provides task lighting, but the presence of a couch and a view of a snowy landscape can be distracting and reduce focus.",
+  "_meta": {
+    "image_id": "ai_035_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.59,
+    "attempt": 1
+  }
+}

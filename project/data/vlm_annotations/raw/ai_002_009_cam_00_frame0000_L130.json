@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Frosted glass panels",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The frosted glass panels obstruct visibility, making it difficult to see into the room, which can be perceived as less welcoming for casual conversations."
+    },
+    {
+      "name": "Futuristic design",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The futuristic design of the room may appeal to some users, making it suitable for a hangout setting."
+    },
+    {
+      "name": "White floor",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 1,
+      "rationale": "The white floor provides a clean and modern look, but does not directly contribute to the suitability of the space for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The room has a futuristic design that could be appealing for a hangout, but the frosted glass panels make it less suitable for casual conversations due to the lack of visibility.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.27,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large potted plant obstructs the view of the ceiling and walls, creating a sense of confinement and reducing the feeling of openness and spaciousness."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has a large potted plant that obstructs the view of the ceiling and walls, creating a sense of confinement and reducing the feeling of openness and spaciousness. This makes the space less suitable for sleep (primary).",
+  "_meta": {
+    "image_id": "ai_011_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 6.24,
+    "attempt": 1
+  }
+}

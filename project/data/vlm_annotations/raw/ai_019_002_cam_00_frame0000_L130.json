@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large open space lacks defined boundaries, making it difficult to establish a conversational zone."
+    },
+    {
+      "name": "glass walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass walls do not provide privacy, which is essential for casual conversations."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture to sit on, making it impossible to engage in a casual conversation."
+    },
+    {
+      "name": "high ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel cold and impersonal, which is not conducive to a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is largely unsuitable for casual conversation due to the lack of furniture, high ceiling, and glass walls. The large open space without defined boundaries makes it difficult to establish a conversational zone. A score of 3 indicates that the space is marginally adequate for this activity.",
+  "_meta": {
+    "image_id": "ai_019_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_019_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.73,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and not designed for sleep, taking up valuable floor space."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Seating is arranged in a way that obstructs movement and access to the sleeping area."
+    },
+    {
+      "name": "lack of privacy",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No walls or partitions separate the sleeping area from the rest of the space, making it vulnerable to disturbances."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Open layout allows for easy visibility and sound transmission, reducing the sense of seclusion necessary for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for primary sleep. The presence of a couch and seating arrangement obstructs the sleeping area, and the lack of privacy and open layout make it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_036_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.14,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large flat-screen TV",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large flat-screen TV is not suitable for computer work as it is not a flat work surface and does not provide a dedicated workspace."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is not suitable for computer work as it is not a flat work surface and does not provide a dedicated workspace."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The coffee table is not suitable for computer work as it is not a flat work surface and does not provide a dedicated workspace."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no dedicated workspace in the image, which is essential for computer work."
+    },
+    {
+      "name": "no flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat work surface available for placing a laptop or keyboard."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo) due to the lack of a dedicated workspace and flat work surface. The presence of a large flat-screen TV and a couch further undermines the suitability for computer work.",
+  "_meta": {
+    "image_id": "ai_050_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_050_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.63,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "tiled walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Tiled walls can be slippery when wet, posing a safety risk for yoga practice."
+    },
+    {
+      "name": "tiled floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Tiled floors can be slippery when wet, posing a safety risk for yoga practice."
+    },
+    {
+      "name": "tall pedestal sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A tall pedestal sink occupies valuable floor space and could pose a tripping hazard."
+    },
+    {
+      "name": "tub with water",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A tub filled with water is not suitable for yoga practice and could pose a tripping hazard."
+    },
+    {
+      "name": "open doorway",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open doorway can lead to drafts and drafts can disrupt yoga practice."
+    },
+    {
+      "name": "curtains",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curtains can be a tripping hazard and may block light, affecting mood and focus."
+    }
+  ],
+  "reasoning_summary": "This bathroom is marginally adequate for yoga practice due to the presence of slippery tiled surfaces, a tall pedestal sink, a tub with water, an open doorway, and curtains. The score of 4 reflects the limited space available for yoga practice and the potential hazards posed by the objects present.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.04,
+    "attempt": 1
+  }
+}

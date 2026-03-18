@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "sliding glass doors",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sliding glass doors allow for easy access to the outdoor area, enhancing the indoor-outdoor connection."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space, making it more inviting and relaxing."
+    },
+    {
+      "name": "rock garden",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The rock garden provides a calming visual element and a natural aesthetic, contributing to a tranquil atmosphere."
+    },
+    {
+      "name": "wooden walls and ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wooden materials give the space a warm, natural feel, which is conducive to relaxation and conversation."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The presence of a sink suggests a functional area rather than a social space, which could be distracting during a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation and hangouts. The sliding glass doors and potted plants contribute positively to the atmosphere, while the wooden walls and ceiling enhance the natural feel. However, the presence of a sink in the room suggests a functional area, which might be distracting during a casual hangout. Overall, the score is 5 out of 7.",
+  "_meta": {
+    "image_id": "ai_028_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.54,
+    "attempt": 1
+  }
+}

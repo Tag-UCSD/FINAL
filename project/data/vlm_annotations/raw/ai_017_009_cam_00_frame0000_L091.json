@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open space lacks a dedicated area for focused work, making it difficult to set up a workstation."
+    },
+    {
+      "name": "glass railings",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass railings obstruct\u89c6\u7ebf and may create distractions, reducing the suitability for solo work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low lighting conditions make it challenging to see the computer screens clearly, especially in a potentially variable lighting environment."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height to place a laptop or other work tools, making it difficult to set up a workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The large open space and glass railings create distractions and obstructions, while the low lighting conditions make it challenging to see the computer screens clearly. The absence of a flat personal work surface further hinders the ability to set up a workstation. However, the presence of a dedicated area with a desk and chairs suggests some potential for focused work, albeit with significant challenges to overcome.",
+  "_meta": {
+    "image_id": "ai_017_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.03,
+    "attempt": 1
+  }
+}

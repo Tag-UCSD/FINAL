@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white tablecloths on tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White tablecloths are typically associated with dining settings, not sleeping areas."
+    },
+    {
+      "name": "chandelier with multiple lamps",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chandelier with multiple lamps is too bright and likely to disturb sleep."
+    },
+    {
+      "name": "large windows with curtains",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows with curtains can provide natural light and privacy, which are beneficial for sleep."
+    },
+    {
+      "name": "white curtains on windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White curtains on windows can help block out light, which is beneficial for sleep."
+    },
+    {
+      "name": "white chairs around tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs around tables are typically associated with dining settings, not sleeping areas."
+    }
+  ],
+  "reasoning_summary": "The scene is partially suitable for sleep (Primary). While the large windows with curtains and white curtains on windows can provide natural light and privacy, the presence of white tablecloths and chairs around tables suggests a dining setting, which is not conducive to sleep. The chandelier with multiple lamps is too bright and likely to disturb sleep.",
+  "_meta": {
+    "image_id": "ai_016_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.61,
+    "attempt": 1
+  }
+}

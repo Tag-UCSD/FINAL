@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "freestanding bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A freestanding bathtub is not suitable for computer work as it takes up valuable space and is not ergonomically designed for prolonged use."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A fireplace is not conducive to computer work due to its heat and the need for ventilation, which can disrupt concentration."
+    },
+    {
+      "name": "books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Books are present, but they are not organized or easily accessible, which is not conducive to a focused work environment."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large window allows natural light to enter, which can improve mood and reduce eye strain during computer work."
+    },
+    {
+      "name": "towels",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Towels are not directly related to computer work and do not contribute to a focused workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there is natural light and a large window, the presence of a freestanding bathtub and fireplace, along with unorganized books, detracts from the suitability of the space for focused solo work. The large window provides some positive aspects, but the overall setup is not conducive to a productive workspace.",
+  "_meta": {
+    "image_id": "ai_039_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.46,
+    "attempt": 1
+  }
+}

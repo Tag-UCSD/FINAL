@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a significant obstacle to setting up a computer workstation, as it occupies the main working area and requires rearrangement."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not designed for extended computer use, lacking ergonomic support and lumbar support, which can lead to discomfort and reduced productivity."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The bookshelves provide some reference materials and storage, which can be useful for quick look-ups and reference during work."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can reduce the need for artificial lighting, which can be beneficial for eye health and mood."
+    },
+    {
+      "name": "low ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low ceiling can make the space feel cramped and less conducive to focused work, especially when working on a computer."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). While there are some positive aspects such as natural light and some reference materials, the presence of a bed and a non-ergonomic chair are significant drawbacks. The low ceiling also contributes to a cramped feeling, which can negatively impact productivity.",
+  "_meta": {
+    "image_id": "ai_035_009_cam_00_frame0052",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_009\\images\\scene_cam_00_final_preview\\frame.0052.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.33,
+    "attempt": 1
+  }
+}

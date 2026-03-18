@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is not suitable for computer work due to its height and lack of a flat surface."
+    },
+    {
+      "name": "floor-wood",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The wooden floor is not suitable for computer work as it lacks a flat surface."
+    },
+    {
+      "name": "mirror-stuff",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The mirror is not suitable for computer work as it is not a flat surface."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor lamp provides task lighting, which is positive for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a bed and wooden floor makes it unsuitable for computer work, while the floor lamp provides positive task lighting. However, the lack of a flat surface on the bed and mirror makes it difficult to set up a computer workstation.",
+  "_meta": {
+    "image_id": "ai_035_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.38,
+    "attempt": 1
+  }
+}

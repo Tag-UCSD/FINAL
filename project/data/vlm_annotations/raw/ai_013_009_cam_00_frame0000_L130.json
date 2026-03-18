@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, creating a pleasant atmosphere for socializing."
+    },
+    {
+      "name": "Comfortable chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs are designed for comfort, making them suitable for long conversations."
+    },
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can be used for casual meals or drinks, enhancing the social experience."
+    },
+    {
+      "name": "Vase and potted plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Decorative elements add a touch of elegance and warmth to the space, making it more inviting."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its comfortable seating, natural lighting, and decorative elements.",
+  "_meta": {
+    "image_id": "ai_013_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_013_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.35,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A kitchen island can serve as a prep area and provide additional workspace."
+    },
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An oven is essential for baking and roasting."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A sink is necessary for washing dishes and preparing food."
+    },
+    {
+      "name": "counter",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Countertops provide a hard, flat surface for food preparation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Chairs are not directly related to cooking but could be used for eating."
+    }
+  ],
+  "reasoning_summary": "The space has some key elements for cooking, such as an oven, sink, and counter, but lacks a dedicated prep area and chairs for eating. It scores 4 \u00e2\u20ac\u201d marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_045_010_cam_00_frame0058",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_010\\images\\scene_cam_00_final_preview\\frame.0058.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.22,
+    "attempt": 1
+  }
+}

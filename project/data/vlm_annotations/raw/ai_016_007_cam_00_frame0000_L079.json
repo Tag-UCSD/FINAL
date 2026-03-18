@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.97,
+  "indicators": [
+    {
+      "name": "absence of cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No stove, oven, or microwave is visible, making it impossible to cook."
+    },
+    {
+      "name": "absence of water fixture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is present, which is essential for food preparation and kitchen hygiene."
+    },
+    {
+      "name": "hard surfaces",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The hard surfaces are suitable for cleaning and maintenance."
+    },
+    {
+      "name": "glass window",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No natural light source is available, which is necessary for cooking."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for daily cooking. There are no cooking appliances, no sink, and no natural light source. The presence of hard surfaces is positive but does not compensate for the lack of essential cooking infrastructure.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.7,
+    "attempt": 1
+  }
+}

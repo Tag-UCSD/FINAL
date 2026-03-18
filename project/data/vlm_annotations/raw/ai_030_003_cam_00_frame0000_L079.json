@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining table is not a cooking surface and is likely used for eating rather than cooking."
+    },
+    {
+      "name": "orange kitchen cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Orange cabinets are not typically associated with kitchen functionality and may not be suitable for cooking."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs are not suitable for cooking as they can easily get dirty and are not designed for kitchen use."
+    },
+    {
+      "name": "white radiator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Radiator is not a cooking surface and may be a safety hazard if hot."
+    },
+    {
+      "name": "white floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White floor can show dirt and stains easily, making it less suitable for cooking."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls can show dirt and stains easily, making them less suitable for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking due to the presence of a white dining table and orange kitchen cabinets. However, the white chairs, white radiator, white floor, and white walls make the space less suitable for cooking. The overall score is 4, indicating that the space is marginally adequate for daily cooking.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.09,
+    "attempt": 1
+  }
+}

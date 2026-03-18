@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space for yoga practice."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug partially obstructs the floor space and could cause slipping during yoga."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is close to the bed and could be accidentally knocked over during yoga."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinet is close to the bed and could be accidentally knocked over during yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a stable surface for yoga mat placement."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light to enter, creating a calming atmosphere."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting is sufficient for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of the bed, rug, chair, and cabinets, which obstruct the floor space. However, the wooden floor and natural light contribute positively to the environment.",
+  "_meta": {
+    "image_id": "ai_010_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.25,
+    "attempt": 1
+  }
+}

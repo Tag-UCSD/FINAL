@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets can be perceived as barriers to conversation, as they might be used to store items that could obstruct the view or access to the kitchen area."
+    },
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too narrow and cluttered to serve as a shared surface for casual conversation, as it is currently occupied by various kitchen tools and utensils."
+    },
+    {
+      "name": "sink",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is located near the center of the kitchen, which might make it difficult for multiple people to engage in conversation without getting in each other's way."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling height is relatively low, which might make the space feel cramped and less conducive to a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The kitchen is somewhat suitable for casual conversation due to its open layout and ample space. However, the presence of cabinets and cluttered counter space, along with the sink's location, make it challenging for multiple people to engage in conversation without obstruction. The low ceiling height also contributes to a more confined feeling, reducing the overall suitability for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_037_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.24,
+    "attempt": 1
+  }
+}

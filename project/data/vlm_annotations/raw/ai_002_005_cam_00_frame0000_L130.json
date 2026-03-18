@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is set for a meal, which suggests a formal dining setting rather than a casual hangout."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are chairs around the dining table, but they are not arranged in a sociopetal manner conducive to casual conversation."
+    },
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The cabinets are closed and do not provide easy access to items, which can be a barrier to casual conversation."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is not used for casual conversation, as it is not set up for social interaction."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is not used for casual conversation, as it is not set up for social interaction."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vase is decorative and does not contribute to the casual conversation setting."
+    },
+    {
+      "name": "banana",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The banana is a food item and does not contribute to the casual conversation setting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the presence of a dining table set for a meal, closed cabinets, and lack of sociopetal seating arrangement. The presence of functional objects like the sink and counter further undermines the casual hangout potential.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.93,
+    "attempt": 1
+  }
+}

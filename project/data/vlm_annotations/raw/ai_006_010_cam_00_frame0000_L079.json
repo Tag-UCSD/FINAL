@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a hard surface for food preparation and cleaning."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sink is essential for food preparation and cleaning."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops provide a hard surface for food preparation."
+    },
+    {
+      "name": "stove and oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The stove and oven are essential for cooking."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The refrigerator is essential for storing food."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hard flooring can be slippery when wet, making it less safe for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of essential cooking appliances and surfaces, but the hard flooring poses a safety hazard when wet.",
+  "_meta": {
+    "image_id": "ai_006_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.11,
+    "attempt": 1
+  }
+}

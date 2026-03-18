@@ -1,0 +1,23 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.98,
+  "indicators": [
+    {
+      "name": "carved relief artwork",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The carved relief artwork is a significant obstacle to any movement, making it completely unsuitable for yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "The presence of a large carved relief artwork on the floor makes it completely unsuitable for yoga or stretching. The artwork is a significant obstacle that obstructs any potential floor space for these activities.",
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 5.8,
+    "attempt": 1
+  }
+}

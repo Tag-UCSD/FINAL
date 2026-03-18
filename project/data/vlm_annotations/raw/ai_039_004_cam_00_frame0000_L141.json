@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a stable, non-slip surface suitable for yoga practice."
+    },
+    {
+      "name": "large bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A large bathtub occupies a significant portion of the floor space, reducing available area for yoga."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets along the walls reduce available floor space and create visual clutter."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be used for self-assessment and posture correction during yoga."
+    },
+    {
+      "name": "light fixtures",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Light fixtures provide ambient lighting, which can be beneficial for creating a calming atmosphere."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with a hardwood floor providing a stable surface and a mirror allowing self-assessment. However, the presence of a large bathtub and cabinets significantly reduces available floor space, making it challenging to perform yoga. The lighting fixtures contribute positively to the ambiance but do not compensate for the lack of floor space.",
+  "_meta": {
+    "image_id": "ai_039_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.19,
+    "attempt": 1
+  }
+}

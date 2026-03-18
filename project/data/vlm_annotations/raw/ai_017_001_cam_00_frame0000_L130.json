@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A couch provides ample seating for multiple people."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs provide additional seating options."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central coffee table allows for shared items during conversation."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Vases add a decorative touch without being too distracting."
+    },
+    {
+      "name": "wall art",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Wall art adds visual interest and can inspire conversation."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A bookshelf can hold reading materials for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for casual conversation/hangout. The presence of a couch and several chairs provides seating, while a central coffee table allows for shared items. However, the lack of a sociopetal seating arrangement and the minimal decorative elements limit the potential for deep conversation.",
+  "_meta": {
+    "image_id": "ai_017_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.45,
+    "attempt": 1
+  }
+}

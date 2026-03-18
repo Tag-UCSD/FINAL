@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is present, which is not conducive to casual conversation or hangout activities."
+    },
+    {
+      "name": "clothes hanging on closet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Clothes hanging on a closet does not facilitate casual conversation or hangout activities."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large window provides natural light and a view, which can enhance the casual conversation experience."
+    },
+    {
+      "name": "bedside tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bedside tables are present but do not contribute to the casual conversation or hangout activities."
+    },
+    {
+      "name": "lamps on bedside tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Lamps on bedside tables are not conducive to casual conversation or hangout activities."
+    }
+  ],
+  "reasoning_summary": "The presence of a bed and clothes hanging on a closet indicates that this space is primarily designed for sleeping and dressing, not for casual conversation or hangout activities. The large window provides some positive aspects, but the overall setup is not conducive to social interaction.",
+  "_meta": {
+    "image_id": "ai_010_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_010_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.03,
+    "attempt": 1
+  }
+}

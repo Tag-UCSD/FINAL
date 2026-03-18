@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large glass ceiling panels",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large glass panels allow natural light to flood the space, potentially creating glare on computer screens."
+    },
+    {
+      "name": "curved white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Curved walls can create visual distractions and make it difficult to focus on a single point of interest."
+    },
+    {
+      "name": "glass ceiling panels",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass ceiling panels can be visually distracting and may cause glare on computer screens."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The large glass ceiling panels allow natural light to enter, which can be beneficial for some tasks, but also creates potential glare on computer screens. The curved white walls can be visually distracting and make it difficult to focus on a single point of interest. Overall, the space lacks the dedicated layout and minimal distractions typically associated with a suitable computer work environment.",
+  "_meta": {
+    "image_id": "ai_026_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.66,
+    "attempt": 1
+  }
+}

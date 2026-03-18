@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "floor lamp",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor lamp provides bright artificial light, which is incompatible with sleep."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bookshelf is cluttered and does not provide a comfortable resting place."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large window allows light to enter, which can be disruptive to sleep."
+    },
+    {
+      "name": "artwork",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Artwork is not suitable for sleep due to its lack of comfort and potential for distraction."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a couch, floor lamp, bookshelf, large window, and artwork indicates a residential setting but lacks the necessary comfort and darkness for optimal sleep. The cluttered bookshelf and bright artificial light from the floor lamp are significant distractions and potential sources of discomfort.",
+  "_meta": {
+    "image_id": "ai_035_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.2,
+    "attempt": 1
+  }
+}

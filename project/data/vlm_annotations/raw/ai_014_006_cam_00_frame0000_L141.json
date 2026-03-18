@@ -1,0 +1,86 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is large and takes up a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "chaise lounge",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chaise lounge is close to the bed and takes up a significant amount of floor space, further reducing the available area for yoga."
+    },
+    {
+      "name": "fireplace",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The fireplace is large and takes up a significant amount of floor space, further reducing the available area for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The table is close to the bed and chaise lounge, taking up a significant amount of floor space and further reducing the available area for yoga."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bookshelf is close to the bed and chaise lounge, taking up a significant amount of floor space and further reducing the available area for yoga."
+    },
+    {
+      "name": "cabinet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The cabinet is close to the bed and chaise lounge, taking up a significant amount of floor space and further reducing the available area for yoga."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The rug is large and takes up a significant amount of floor space, further reducing the available area for yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The hardwood flooring is smooth and firm, providing a suitable surface for yoga mat placement."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large window allows natural light to enter, creating a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling height is adequate for yoga practice, allowing for a sense of openness and space."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga due to the presence of a large window allowing natural light and the hardwood flooring providing a suitable surface. However, the bed, chaise lounge, fireplace, table, bookshelf, cabinet, and rug take up a significant amount of floor space, leaving little room for a yoga mat. The score of 4 reflects the moderate suitability despite the presence of some positive factors.",
+  "_meta": {
+    "image_id": "ai_014_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_014_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.21,
+    "attempt": 1
+  }
+}

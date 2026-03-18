@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, providing a comfortable resting surface."
+    },
+    {
+      "name": "pillows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Pillows enhance comfort and support during sleep."
+    },
+    {
+      "name": "blanket",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A blanket adds warmth and comfort to the sleeping environment."
+    },
+    {
+      "name": "window with view",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A view from the bed can be distracting and disrupt sleep."
+    },
+    {
+      "name": "glass partition",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A glass partition may allow noise and light to enter the room, potentially disrupting sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The bed, pillows, and blanket provide comfort and support, but the window view and glass partition could potentially disrupt sleep by allowing noise and light to enter the room.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.0,
+    "attempt": 1
+  }
+}

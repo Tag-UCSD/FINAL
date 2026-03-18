@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bathroom sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bathroom sinks are not suitable for sleeping, as they are designed for hygiene and not rest."
+    },
+    {
+      "name": "no bed or sleeping area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any sleeping area makes this space unsuitable for sleep."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No windows or curtains prevent natural light control and privacy, which are important for sleep."
+    },
+    {
+      "name": "no furniture or storage",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No furniture or storage indicates a lack of personal space and comfort, which are important for sleep."
+    }
+  ],
+  "reasoning_summary": "This bathroom lacks the necessary components for sleep, such as a bed, windows for light control, and personal storage. The presence of sinks and no furniture makes it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_015_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.21,
+    "attempt": 1
+  }
+}

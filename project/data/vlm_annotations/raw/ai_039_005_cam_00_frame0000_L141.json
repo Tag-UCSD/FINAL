@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "yoga mat on floor",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A yoga mat is the primary artifact for yoga practice, and its presence on the floor is the strongest positive signal."
+    },
+    {
+      "name": "ample unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space around the mat is crucial for yoga practice, allowing for various poses without obstruction."
+    },
+    {
+      "name": "full-length mirror on wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A full-length mirror allows practitioners to observe and self-correct posture during practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Smooth hardwood provides an appropriate firm, non-slip base surface for yoga mat placement."
+    },
+    {
+      "name": "minimal clutter in movement zone",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The near-total absence of furniture or objects on the floor is the key spatial prerequisite for safe yoga practice."
+    },
+    {
+      "name": "natural light from large window",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light creates a calm, energizing environment appropriate for mindful movement practice."
+    }
+  ],
+  "reasoning_summary": "This bathroom is well-suited for yoga practice. It has a yoga mat on the floor, ample unobstructed space, a full-length mirror, hardwood flooring, minimal clutter, and natural light. The score of 6 rather than 7 reflects the lack of a dedicated yoga area and the presence of a bathtub, which could be a potential hazard during practice.",
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.23,
+    "attempt": 1
+  }
+}

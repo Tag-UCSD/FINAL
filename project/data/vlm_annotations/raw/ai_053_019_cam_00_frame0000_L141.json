@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table occupies a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chairs around the table prevent any open floor space suitable for yoga."
+    },
+    {
+      "name": "whiteboard on wall",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The whiteboard on the wall is not suitable for yoga practice."
+    },
+    {
+      "name": "glass partition",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The glass partition obstructs the view and creates a sense of enclosure, which is not conducive to a calming yoga environment."
+    },
+    {
+      "name": "lack of natural light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lack of natural light in the room makes it less suitable for yoga, which often benefits from natural light."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is largely unsuitable for yoga due to the presence of a large dining table and chairs, a whiteboard on the wall, and a glass partition. The lack of natural light also contributes to the low score. The score of 2 reflects the significant obstacles to yoga practice in this space.",
+  "_meta": {
+    "image_id": "ai_053_019_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_019\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.9,
+    "attempt": 1
+  }
+}

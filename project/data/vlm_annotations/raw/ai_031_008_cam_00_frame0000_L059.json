@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "fountain with water feature",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The fountain with running water is a significant source of noise, which is incompatible with sleep."
+    },
+    {
+      "name": "marble floor with floral pattern",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The marble floor with floral pattern is hard and cold, which is incompatible with sleep."
+    },
+    {
+      "name": "couches and seating areas",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches and seating areas are designed for sitting and socializing, not sleeping."
+    },
+    {
+      "name": "arched doorways and columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Architectural elements like doorways and columns can create visual distractions and reduce the sense of enclosure."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants can add to the visual clutter and reduce the sense of calmness."
+    }
+  ],
+  "reasoning_summary": "This indoor scene has several features that are not conducive to sleep. The running fountain, hard marble floor, and seating areas all contribute to a noisy, distracting, and visually cluttered environment. While there are some positive aspects such as the natural light and the layout, the negative factors outweigh them, resulting in a marginal adequacy score.",
+  "_meta": {
+    "image_id": "ai_031_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.91,
+    "attempt": 1
+  }
+}

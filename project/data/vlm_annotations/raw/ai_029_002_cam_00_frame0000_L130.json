@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large black island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large black island in the center of the room takes up a significant amount of space, leaving little room for social seating."
+    },
+    {
+      "name": "black kitchen cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The black kitchen cabinets are too dark and monotonous, lacking the warmth and inviting feel needed for a casual hangout."
+    },
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white dining table provides a neutral backdrop that can be easily decorated for a casual hangout."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white chairs are simple and functional, providing basic seating for a casual hangout."
+    },
+    {
+      "name": "white couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The white couch offers a comfortable place to sit and chat with friends."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large windows allow natural light to enter the room, creating a pleasant atmosphere for a casual hangout."
+    },
+    {
+      "name": "city view",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The city view outside the windows adds interest and a sense of connection to the outside world."
+    }
+  ],
+  "reasoning_summary": "The room has some positive aspects for a casual hangout, such as the white dining table and chairs, but the large black island and dark cabinets detract from the overall appeal. The large windows and city view provide a pleasant backdrop, but the lack of social seating and the monotonous color scheme prevent a higher score.",
+  "_meta": {
+    "image_id": "ai_029_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.49,
+    "attempt": 1
+  }
+}

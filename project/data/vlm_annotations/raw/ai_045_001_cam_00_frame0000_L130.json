@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is a private sleeping area, not suitable for casual conversation."
+    },
+    {
+      "name": "white wooden floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bare floor without furniture or seating makes it difficult to create a social space."
+    },
+    {
+      "name": "lamps on bedside tables",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bedside lamps are designed for reading, not for creating a social atmosphere."
+    },
+    {
+      "name": "candles on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Candles are a personal item, not suitable for a shared social space."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A potted plant is a decorative item, not suitable for a social space."
+    },
+    {
+      "name": "handbag",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A handbag is a personal item, not suitable for a shared social space."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the lack of suitable furniture and lighting for a social setting. The presence of a bed and personal items like candles and a handbag further undermines the suitability for a hangout.",
+  "_meta": {
+    "image_id": "ai_045_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.32,
+    "attempt": 1
+  }
+}

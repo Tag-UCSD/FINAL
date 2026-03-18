@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is set with plates and cups, indicating it is being used for eating rather than cooking."
+    },
+    {
+      "name": "chairs around the dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are occupied, suggesting the table is currently in use for dining rather than cooking."
+    },
+    {
+      "name": "kitchen island with hanging pots and pans",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island has hanging pots and pans, indicating it is a functional cooking area."
+    },
+    {
+      "name": "stainless steel sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stainless steel sink is a functional element for food preparation and cleaning."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops provide a hard, washable work surface for food preparation."
+    },
+    {
+      "name": "stove and oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove and oven are essential for cooking."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The refrigerator is essential for storing food."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking, with key elements like the kitchen island, sink, and refrigerator present. However, the dining table and chairs indicate that the space is currently being used for eating rather than cooking, reducing its suitability to 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_051_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_051_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.37,
+    "attempt": 1
+  }
+}

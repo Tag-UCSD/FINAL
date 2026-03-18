@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring can be slippery and may pose a tripping hazard when wet."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Toilet is not suitable for extended computer work due to hygiene concerns and lack of privacy."
+    },
+    {
+      "name": "bidet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bidet is not suitable for extended computer work due to hygiene concerns and lack of privacy."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vase is a decorative element that does not contribute to the functionality of the space for computer work."
+    },
+    {
+      "name": "window-blind",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Window blinds can obstruct natural light and create shadows, affecting visibility and mood."
+    },
+    {
+      "name": "closed door",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Closed door provides some privacy, but it is not a dedicated workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there is a closed door for some privacy, the presence of a toilet and bidet, wood flooring, and window blinds make the space less than ideal for extended computer work. The lack of a dedicated workspace and ergonomic seating further undermines the suitability.",
+  "_meta": {
+    "image_id": "ai_004_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.99,
+    "attempt": 1
+  }
+}

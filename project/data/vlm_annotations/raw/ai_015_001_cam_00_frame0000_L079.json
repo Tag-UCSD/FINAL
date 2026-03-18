@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The stove is the central cooking appliance, but it is not visible in the image."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is visible, which is essential for food preparation and cleaning."
+    },
+    {
+      "name": "countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No hard prep surfaces are visible, which are required for all food preparation tasks."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The refrigerator is essential for storing food, but it is not visible in the image."
+    },
+    {
+      "name": "storage cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No storage cabinets are visible, which are essential for organized daily cooking."
+    },
+    {
+      "name": "work triangle layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No work triangle layout is visible, which is the standard efficient cooking workflow."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for daily cooking due to the absence of key cooking infrastructure such as a stove, sink, and storage cabinets. The layout does not form a work triangle, which is essential for efficient cooking. However, the presence of a refrigerator suggests that some food storage is available.",
+  "_meta": {
+    "image_id": "ai_015_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.57,
+    "attempt": 1
+  }
+}

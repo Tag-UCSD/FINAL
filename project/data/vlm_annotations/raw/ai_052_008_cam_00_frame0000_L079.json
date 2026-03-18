@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No cooking equipment",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The image does not show any cooking equipment or utensils."
+    },
+    {
+      "name": "No stove or oven",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no stove or oven visible in the image."
+    },
+    {
+      "name": "No food preparation area",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no designated area for food preparation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuited for daily cooking activities as it lacks essential cooking equipment and a dedicated food preparation area.",
+  "_meta": {
+    "image_id": "ai_052_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.74,
+    "attempt": 2
+  }
+}

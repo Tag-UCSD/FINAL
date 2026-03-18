@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large dining table is typically associated with formal dining settings, not casual hangouts."
+    },
+    {
+      "name": "several chairs around table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Multiple chairs around a table suggest a formal dining setup rather than a casual hangout area."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bookshelves are typically associated with reading or study, not casual social interaction."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, enhancing the casual atmosphere."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space, making it more inviting."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout without walls or partitions encourages social interaction and visibility."
+    }
+  ],
+  "reasoning_summary": "The space has some positive aspects like large windows and potted plants, but the presence of a large dining table and bookshelves suggests a formal setting rather than a casual hangout area. The score is marginally adequate due to the mixed use of the space.",
+  "_meta": {
+    "image_id": "ai_046_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.78,
+    "attempt": 1
+  }
+}

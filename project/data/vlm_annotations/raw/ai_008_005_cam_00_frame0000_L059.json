@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "stone wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stone walls can be cold and uncomfortable to touch, affecting sleep quality."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard floors are not comfortable to sleep on and can be noisy."
+    },
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No horizontal resting surface is present, making it unsuitable for sleep."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No natural light or privacy is available, affecting sleep quality."
+    }
+  ],
+  "reasoning_summary": "The scene lacks a bed or resting surface, windows, or curtains, making it unsuitable for sleep. The stone wall and hard floor contribute to discomfort and noise, further reducing suitability.",
+  "_meta": {
+    "image_id": "ai_008_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.37,
+    "attempt": 1
+  }
+}

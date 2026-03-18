@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants can obstruct views and create a cluttered atmosphere, which is generally not conducive to sleep."
+    },
+    {
+      "name": "dining table and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining furniture is typically associated with eating and socializing, not sleeping."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "An open layout without walls or dividers can lead to noise and drafts, which are detrimental to sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not well-suited for sleep (primary). The presence of potted plants and dining furniture suggests a multi-purpose space that is not conducive to sleep. The open layout further undermines the suitability for sleep due to potential noise and drafts.",
+  "_meta": {
+    "image_id": "ai_052_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.7,
+    "attempt": 1
+  }
+}

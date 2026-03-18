@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable seating option for casual conversations."
+    },
+    {
+      "name": "Potted Plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The potted plant adds a touch of nature and can make the space feel more inviting."
+    },
+    {
+      "name": "Shelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The shelf might be too high to easily access items, which could be inconvenient during a casual conversation."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to the presence of a comfortable seating option and some decorative elements, but the high shelf could be a minor inconvenience.",
+  "_meta": {
+    "image_id": "ai_015_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.6,
+    "attempt": 2
+  }
+}

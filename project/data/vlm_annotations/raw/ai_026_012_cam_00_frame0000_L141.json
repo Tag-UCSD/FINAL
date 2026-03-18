@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, enhancing the mood and atmosphere suitable for yoga."
+    },
+    {
+      "name": "Wooden ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden ceiling adds warmth and a natural element, which can be soothing for yoga practice."
+    },
+    {
+      "name": "Dark flooring",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring might be slippery when wet, which could be a safety concern during yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for yoga and stretching due to its large windows and warm wooden ceiling, but the dark flooring could pose a safety risk.",
+  "_meta": {
+    "image_id": "ai_026_012_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_012\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.71,
+    "attempt": 2
+  }
+}

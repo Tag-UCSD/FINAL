@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "arched ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The arch shape of the ceiling could cause noise and visual distraction, making it less suitable for sleep."
+    },
+    {
+      "name": "dark stains on walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dark stains on the walls could be seen as unclean and potentially disturbing, affecting the sleep environment."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no furniture present, which is typically required for a sleep environment."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (Primary). The arch-shaped ceiling and dark stains on the walls create a visually unappealing and potentially distracting environment. Additionally, the lack of furniture makes it impossible to create a comfortable sleep space.",
+  "_meta": {
+    "image_id": "ai_031_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.72,
+    "attempt": 1
+  }
+}

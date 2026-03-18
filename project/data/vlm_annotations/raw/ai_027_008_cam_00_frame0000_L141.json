@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches block the open floor space required for yoga."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Table obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rug obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Open floor area is essential for yoga practice."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring is suitable for yoga practice."
+    },
+    {
+      "name": "windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Windows allow natural light, which is beneficial for yoga."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga due to the open floor area and hardwood flooring, but it is negatively impacted by the presence of furniture such as couches, tables, chairs, and rugs, which obstruct the open floor space required for yoga practice. The score of 4 reflects the marginal adequacy of the space for yoga given the significant obstructions present.",
+  "_meta": {
+    "image_id": "ai_027_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.58,
+    "attempt": 1
+  }
+}

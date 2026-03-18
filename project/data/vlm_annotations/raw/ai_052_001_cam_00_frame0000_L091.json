@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for dining rather than work, with chairs facing tables and no dedicated workspace."
+    },
+    {
+      "name": "lack of flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "ambient lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting is not sufficient for task illumination required for screen work."
+    },
+    {
+      "name": "decorative elements",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Decorative elements such as potted plants and artwork suggest a public space rather than a dedicated workspace."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is marginally adequate for computer work (solo). The seating is designed for dining rather than work, there is no flat surface at sitting height, and the lighting is insufficient for task illumination. Decorative elements suggest this is a public space, not a dedicated workspace.",
+  "_meta": {
+    "image_id": "ai_052_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.61,
+    "attempt": 1
+  }
+}

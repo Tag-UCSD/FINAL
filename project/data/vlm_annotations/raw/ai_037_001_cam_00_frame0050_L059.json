@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no bed or resting surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any resting surface makes this space unsuitable for sleep."
+    },
+    {
+      "name": "no furniture or personal items",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The kitchen is devoid of furniture or personal items, which are typically associated with a living space."
+    },
+    {
+      "name": "no windows or curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of windows or curtains means there is no source of natural light or privacy."
+    },
+    {
+      "name": "no acoustic enclosure",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout and hard surfaces suggest a noisy environment, which is incompatible with sleep."
+    }
+  ],
+  "reasoning_summary": "This kitchen is not suitable for sleep. It lacks a bed or resting surface, personal items, windows or curtains, and acoustic enclosure, making it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_037_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.1,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The vast open area lacks defined boundaries or seating arrangements conducive to social interaction."
+    },
+    {
+      "name": "glass walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass walls can make the space feel less intimate and more exposed, which might be uncomfortable for casual conversations."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel cold and impersonal, which might be less suitable for casual hangouts."
+    },
+    {
+      "name": "staircase leading up",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase can be a barrier to easy movement and social interaction within the space."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is a large, open space with glass walls and high ceilings, which creates a cold and impersonal atmosphere. The presence of a staircase also acts as a barrier to easy movement and social interaction. While there are no explicit seating arrangements, the lack of defined boundaries and the open space make it less suitable for casual conversations compared to a more enclosed and intimate setting.",
+  "_meta": {
+    "image_id": "ai_024_015_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_015\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.35,
+    "attempt": 1
+  }
+}

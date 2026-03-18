@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel kitchen island",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The island provides additional prep space and can serve as a temporary workspace."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops are durable and easy to clean, ideal for food preparation."
+    },
+    {
+      "name": "stainless steel kitchen appliances",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Stainless steel appliances are durable and easy to maintain, suitable for daily use."
+    },
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light from the window can help create a pleasant cooking environment."
+    }
+  ],
+  "reasoning_summary": "This kitchen is marginally adequate for daily cooking due to its lack of extensive storage space and hard prep surfaces. However, it does have essential cooking appliances and a sink, making it suitable for basic cooking tasks.",
+  "_meta": {
+    "image_id": "ai_001_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.49,
+    "attempt": 1
+  }
+}

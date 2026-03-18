@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass coffee table is too low for comfortable keyboard use and does not provide a flat surface for a laptop."
+    },
+    {
+      "name": "low-lying glass coffee table",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low-lying coffee table obstructs the view of the outside landscape and does not provide a suitable working surface."
+    },
+    {
+      "name": "low-lying glass coffee table",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass coffee table is not at a suitable height for keyboard use and does not provide a flat surface for a laptop."
+    },
+    {
+      "name": "low-lying glass coffee table",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The glass coffee table reflects light, potentially causing glare on the computer screens."
+    },
+    {
+      "name": "low-lying glass coffee table",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low-lying coffee table obstructs the view of the outside landscape and does not provide a suitable working surface."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a low-lying glass coffee table obstructs the view of the outside landscape and does not provide a suitable working surface. The layout is also negatively affected by the low-lying coffee table, which obstructs the view of the outside landscape and does not provide a suitable working surface. The lighting is negatively affected by the glass coffee table, which reflects light, potentially causing glare on the computer screens. However, the presence of a large window and natural light from the outside landscape provides some positive aspects to the environment.",
+  "_meta": {
+    "image_id": "ai_036_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.3,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "White sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The white sofa provides ample seating for multiple people."
+    },
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large windows allow natural light to enter, creating a bright and inviting atmosphere."
+    },
+    {
+      "name": "Open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open layout encourages social interaction and easy conversation."
+    },
+    {
+      "name": "Modern furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The modern furniture is comfortable and stylish, making it suitable for a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts due to its ample seating, bright lighting, open layout, and modern furniture.",
+  "_meta": {
+    "image_id": "ai_005_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.46,
+    "attempt": 2
+  }
+}

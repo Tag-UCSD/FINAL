@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "round bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A round bathtub is not conducive to conversation as it lacks a flat surface for placing items and is not designed for social interaction."
+    },
+    {
+      "name": "vases on the floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases on the floor are not conducive to conversation as they can be easily knocked over and do not provide a flat surface for placing items."
+    },
+    {
+      "name": "towels on the floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Towels on the floor are not conducive to conversation as they can be easily knocked over and do not provide a flat surface for placing items."
+    },
+    {
+      "name": "bubbling water in the bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bubbling water in the bathtub is not conducive to conversation as it can be distracting and noisy."
+    },
+    {
+      "name": "curtain partially open",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A curtain partially open can be a privacy issue and may lead to discomfort during conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the presence of a round bathtub, vases, and towels on the floor, bubbling water, and a partially open curtain. These elements create a less than ideal environment for social interaction.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.27,
+    "attempt": 1
+  }
+}

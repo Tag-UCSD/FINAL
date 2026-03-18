@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is too large and close to the window, making it difficult to focus on the computer screen."
+    },
+    {
+      "name": "Chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is positioned near the desk, providing a comfortable place to sit while working."
+    },
+    {
+      "name": "Desk",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The desk is spacious enough to accommodate a computer setup and other necessary items."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo) due to the presence of a large couch that obstructs the view of the computer screen, but it has a comfortable chair and a spacious desk.",
+  "_meta": {
+    "image_id": "ai_017_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 26.29,
+    "attempt": 2
+  }
+}

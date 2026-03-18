@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement, including tables and chairs, occupies much of the floor space and obstructs open floor areas."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter is a significant obstacle to open floor space and obstructs potential yoga mats."
+    },
+    {
+      "name": "flower arrangements",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Flower arrangements are decorative but take up floor space and could be moved to create more open floor area."
+    }
+  ],
+  "reasoning_summary": "The hardwood flooring is suitable for yoga, but the seating arrangement and bar counter obstruct open floor space. The presence of flower arrangements also takes up floor space and could be rearranged to create more open area. A score of 3 reflects the obstructive nature of the furniture and the need for rearrangement to create a suitable space for yoga.",
+  "_meta": {
+    "image_id": "ai_052_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.1,
+    "attempt": 1
+  }
+}

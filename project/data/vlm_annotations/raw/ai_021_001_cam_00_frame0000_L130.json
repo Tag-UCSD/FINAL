@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large sofa is the primary social seating artifact, accommodating multiple people comfortably."
+    },
+    {
+      "name": "several armchairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Armchairs arranged opposite the sofa create a sociopetal layout, enabling natural eye contact."
+    },
+    {
+      "name": "central coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central shared surface within reach of all seats allows drinks, snacks, and objects to be shared during conversation."
+    },
+    {
+      "name": "rug defining seating area",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A rug visually anchors the conversational cluster, creating a sense of enclosed social space."
+    },
+    {
+      "name": "U-shaped seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The U-shaped arrangement with seats facing inward is the classic sociopetal configuration optimised for group conversation."
+    },
+    {
+      "name": "soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft ambient lighting creates a relaxed, social atmosphere rather than a task-oriented one."
+    }
+  ],
+  "reasoning_summary": "This living room has excellent conversational affordance through its sociopetal seating arrangement, central coffee table, and soft ambient lighting. The U-shaped cluster with sofa and armchairs is the ideal topology for casual hangouts. A score of 7 would require additional social props such as drinks accessories; this room is just below peak.",
+  "_meta": {
+    "image_id": "ai_021_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.58,
+    "attempt": 1
+  }
+}

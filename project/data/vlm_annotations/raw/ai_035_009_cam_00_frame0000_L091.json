@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Well-lit workspace",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The room is well-lit, which is conducive to computer work."
+    },
+    {
+      "name": "Comfortable seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chair is comfortable and positioned near the desk, supporting prolonged computer use."
+    },
+    {
+      "name": "Ample storage",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The built-in shelves provide ample storage for books and other items, keeping the workspace organized."
+    },
+    {
+      "name": "Private setting",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The room appears to be isolated from other areas, providing a private setting for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (Solo) due to its well-lit workspace, comfortable seating, ample storage, and private setting.",
+  "_meta": {
+    "image_id": "ai_035_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.17,
+    "attempt": 2
+  }
+}

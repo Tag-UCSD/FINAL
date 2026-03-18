@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "white leather armchairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Armchairs are not suitable for sleeping, as they lack a flat surface and are designed for sitting."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A glass coffee table is not suitable for sleeping, as it lacks a flat surface and is designed for placing items."
+    },
+    {
+      "name": "magazine on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A magazine on the table suggests a non-sleeping activity, such as reading or waiting."
+    },
+    {
+      "name": "bottles on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bottles on the table suggest a non-sleeping activity, such as drinking or waiting."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A potted plant is not suitable for sleeping, as it can obstruct airflow and potentially cause allergies."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for sleep (primary). The presence of armchairs, a glass coffee table, a magazine, and bottles on the table indicates that the space is intended for sitting or waiting, not sleeping. The potted plant also suggests a non-sleeping activity. The score is low because there are no objects or features that support sleep (primary).",
+  "_meta": {
+    "image_id": "ai_008_006_cam_00_frame0006",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_006\\images\\scene_cam_00_final_preview\\frame.0006.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.34,
+    "attempt": 1
+  }
+}

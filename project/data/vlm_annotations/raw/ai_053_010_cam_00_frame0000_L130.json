@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs facing a podium suggest a formal lecture or presentation setup, not a casual hangout."
+    },
+    {
+      "name": "podium",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A podium is typically used for speeches or presentations, not for casual conversation."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs facing a podium suggest a formal lecture or presentation setup, not a casual hangout."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs facing a podium suggest a formal lecture or presentation setup, not a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for casual conversation / hangout due to the formal seating arrangement and the presence of a podium, which suggests a lecture or presentation setup. The rows of chairs facing a podium make it difficult for people to engage in casual conversation.",
+  "_meta": {
+    "image_id": "ai_053_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.53,
+    "attempt": 1
+  }
+}

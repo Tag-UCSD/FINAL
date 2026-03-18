@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "several desks with computers",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Multiple workstations provide opportunities for individual computer work."
+    },
+    {
+      "name": "several chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chairs are available for seating at the desks."
+    },
+    {
+      "name": "several windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light can reduce the need for artificial lighting, potentially improving visual comfort."
+    },
+    {
+      "name": "several potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Plants can be distracting and may require maintenance, which could interfere with work."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). There are multiple workstations and chairs, which provide opportunities for individual computer work. However, the presence of several potted plants may be distracting and require maintenance, which could interfere with work. Natural light from the windows can also reduce the need for artificial lighting, potentially improving visual comfort.",
+  "_meta": {
+    "image_id": "ai_036_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.41,
+    "attempt": 1
+  }
+}

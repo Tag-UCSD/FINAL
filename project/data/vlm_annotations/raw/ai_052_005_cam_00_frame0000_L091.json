@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are designed for dining rather than work, lacking ergonomic support and lumbar support."
+    },
+    {
+      "name": "umbrellas",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Umbrellas are decorative and do not serve as functional work surfaces."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants are decorative and do not serve as functional work surfaces."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting is low and ambient, which is not suitable for focused computer work."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout allows for high foot traffic and distractions, which is not conducive to focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are some elements that could potentially be adapted for work, such as the dining table and chairs, the low lighting, open layout, and lack of functional work surfaces make it challenging to set up a productive workstation. The presence of decorative elements like umbrellas and potted plants further detracts from the suitability for focused work.",
+  "_meta": {
+    "image_id": "ai_052_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.37,
+    "attempt": 1
+  }
+}

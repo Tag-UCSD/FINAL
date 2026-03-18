@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed or furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The image does not show any furniture suitable for sleeping, such as a bed or a couch."
+    },
+    {
+      "name": "Bright lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bright lighting from the ceiling panels would likely be too stimulating for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is completely unsuited for sleep due to the lack of furniture and bright lighting.",
+  "_meta": {
+    "image_id": "ai_052_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 38.24,
+    "attempt": 2
+  }
+}

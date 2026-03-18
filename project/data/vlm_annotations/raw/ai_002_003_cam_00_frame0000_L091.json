@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a white couch suggests a living area rather than a dedicated workspace."
+    },
+    {
+      "name": "white armchairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Armchairs are typically associated with relaxation rather than focused work."
+    },
+    {
+      "name": "low coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low coffee table is not suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white chairs are not designed for extended computer use."
+    },
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase is a potential source of noise and distraction."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants can be distracting and may require maintenance."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are no direct obstructions to setting up a workstation, the presence of a living area furniture and a staircase suggests a mixed-use space that is not entirely conducive to focused work. The low coffee table and chairs also limit the functionality for a typical computer workstation setup.",
+  "_meta": {
+    "image_id": "ai_002_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.58,
+    "attempt": 1
+  }
+}

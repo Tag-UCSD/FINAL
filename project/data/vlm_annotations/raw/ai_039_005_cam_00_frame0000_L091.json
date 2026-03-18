@@ -1,0 +1,41 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, which can improve mood and productivity."
+    },
+    {
+      "name": "Marble tiles",
+      "type": "surface",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Marble tiles are visually appealing but may require more maintenance."
+    },
+    {
+      "name": "Cabinets",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "Cabinets provide storage but do not directly support computer work."
+    }
+  ],
+  "reasoning_summary": "The space has a large window that allows natural light to enter, which can improve mood and productivity. However, the presence of cabinets and marble tiles does not directly support computer work.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'",
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_039_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.58,
+    "attempt": 2
+  }
+}

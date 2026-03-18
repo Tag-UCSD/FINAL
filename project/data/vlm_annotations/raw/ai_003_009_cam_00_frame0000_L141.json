@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The floor is clear of any furniture, allowing for free movement and stretching."
+    },
+    {
+      "name": "glass partition",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass partition may limit visibility and create a sense of enclosure, which could be distracting or uncomfortable for some individuals."
+    },
+    {
+      "name": "seating area",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating area, while not obstructing the floor space, may still be a distraction or a place where people might sit instead of practicing yoga."
+    },
+    {
+      "name": "city view through windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The natural light from the windows can create a calming atmosphere conducive to yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for yoga and stretching. While the unobstructed floor space and natural light are positive factors, the glass partition and seating area may create distractions or discomfort for some individuals. A score of 4 reflects these mixed conditions.",
+  "_meta": {
+    "image_id": "ai_003_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_003_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.0,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "L-shaped desk with dual monitors",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The desk provides a large workspace suitable for dual monitors, though it lacks a dedicated chair."
+    },
+    {
+      "name": "ergonomic mesh office chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The chairs are ergonomic and provide lumbar support, which is beneficial for long periods of computer work."
+    },
+    {
+      "name": "task lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is directed towards the work area, reducing eye strain and providing adequate illumination for screen work."
+    },
+    {
+      "name": "closed office layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The layout appears to be designed for focused work, with minimal distractions."
+    },
+    {
+      "name": "no personal flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface at sitting height, which is necessary for setting up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While it has some positive aspects such as ergonomic chairs and task lighting, the absence of a flat personal work surface and the closed office layout without a dedicated desk are significant drawbacks. The layout is designed for focused work, but the lack of a flat surface hinders the ability to set up a computer workstation.",
+  "_meta": {
+    "image_id": "ai_008_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.07,
+    "attempt": 1
+  }
+}

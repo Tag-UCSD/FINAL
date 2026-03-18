@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too high for comfortable keyboarding and mouse use."
+    },
+    {
+      "name": "stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stools are not suitable for prolonged computer work due to their lack of back support and ergonomic design."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Marble floors can be slippery and difficult to walk on for extended periods, affecting comfort and productivity."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting levels may lead to eye strain and reduced visibility, making it less suitable for computer work."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout with high foot traffic can be distracting and noisy, reducing focus and productivity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are some positive aspects such as the presence of a counter and stools, the negative factors like the high counter, low lighting, and open layout outweigh these benefits, making it less than ideal for focused solo work.",
+  "_meta": {
+    "image_id": "ai_055_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.25,
+    "attempt": 1
+  }
+}

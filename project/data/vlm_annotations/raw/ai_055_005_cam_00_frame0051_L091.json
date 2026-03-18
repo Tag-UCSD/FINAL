@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual focus, making it less suitable for solo computer work."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter is not a flat work surface suitable for computer use, and its purpose is for social interaction."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is bright and evenly distributed, which is suitable for computer work."
+    },
+    {
+      "name": "green cushioned benches",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The green cushioned benches provide comfortable seating for individuals."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to the seating arrangement and the presence of a bar counter, which are not conducive to focused work. However, the lighting is suitable for computer work, and the comfortable seating provides a positive aspect for the activity.",
+  "_meta": {
+    "image_id": "ai_055_005_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_005\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.41,
+    "attempt": 1
+  }
+}

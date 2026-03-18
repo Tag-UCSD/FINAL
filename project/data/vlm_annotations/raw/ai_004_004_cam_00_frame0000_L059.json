@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is too large and not designed for sleep, making it unsuitable for primary sleep."
+    },
+    {
+      "name": "rug",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rug is too large and not designed for sleep, making it unsuitable for primary sleep."
+    },
+    {
+      "name": "sea view",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Sea view is too bright and not suitable for sleep."
+    },
+    {
+      "name": "ceiling",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling is too bright and not suitable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not suitable for primary sleep. The large couch and rug are not designed for sleep, and the bright sea view and ceiling lighting make it unsuitable for sleep.",
+  "_meta": {
+    "image_id": "ai_004_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.43,
+    "attempt": 1
+  }
+}

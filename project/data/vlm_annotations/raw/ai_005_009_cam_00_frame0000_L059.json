@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not designed for sleep and do not provide a suitable surface for lying down."
+    },
+    {
+      "name": "low ceiling height",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling height can lead to feelings of claustrophobia and discomfort, which are not conducive to sleep."
+    },
+    {
+      "name": "glass walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Glass walls allow sound and light to pass through, potentially disrupting sleep."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chandelier is too bright and may cause discomfort or distraction during sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is not well-suited for sleep (primary). The presence of couches, low ceiling height, glass walls, and a bright chandelier all contribute to an environment that is not conducive to restful sleep.",
+  "_meta": {
+    "image_id": "ai_005_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.99,
+    "attempt": 1
+  }
+}

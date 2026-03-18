@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable seating area for casual conversations."
+    },
+    {
+      "name": "Seating Arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The arrangement of chairs and couch allows for easy conversation and interaction."
+    },
+    {
+      "name": "Soft Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The soft lighting creates a relaxed atmosphere conducive to casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations with a comfortable seating arrangement and soft lighting, but could benefit from more personalization to enhance the hangout experience.",
+  "_meta": {
+    "image_id": "ai_006_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.63,
+    "attempt": 2
+  }
+}

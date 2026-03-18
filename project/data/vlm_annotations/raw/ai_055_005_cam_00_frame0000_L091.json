@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "low flat work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The available flat surface is too low for comfortable computer work, requiring the user to sit on the floor or a low stool, which is not ergonomic."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The layout is open and lacks a dedicated area for computer work, making it difficult to focus and potentially distracting."
+    },
+    {
+      "name": "ambient lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Ambient lighting may cause screen glare and does not provide sufficient task illumination for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The low flat work surface and lack of dedicated workspace layout make it challenging to set up a comfortable and focused workstation. The ambient lighting may also pose a problem for screen work. However, the presence of natural light from the windows could potentially improve the situation if it is used effectively.",
+  "_meta": {
+    "image_id": "ai_055_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.76,
+    "attempt": 1
+  }
+}

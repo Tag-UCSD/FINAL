@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelf takes up a significant portion of the available floor space, reducing the open area suitable for yoga."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant is close to the bookshelf, further reducing the available floor space for yoga."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch is placed against the wall, taking up valuable floor space that could be used for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is partially obstructed by the bookshelf, couch, and potted plant, reducing the available space for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga due to the presence of furniture and plants that occupy a significant portion of the floor space. The bookshelf and couch take up valuable space, while the potted plant adds to the visual clutter. The score of 3 reflects the moderate obstruction of the floor space and the presence of furniture that could be moved to create more open space for yoga.",
+  "_meta": {
+    "image_id": "ai_045_006_cam_00_frame0051",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_045_006\\images\\scene_cam_00_final_preview\\frame.0051.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.52,
+    "attempt": 1
+  }
+}

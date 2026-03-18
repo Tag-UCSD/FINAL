@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A dining table is typically associated with formal dining rather than casual conversation."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White chairs lack the comfort and style needed for a casual hangout."
+    },
+    {
+      "name": "white sofa",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A white sofa is too formal for a casual hangout."
+    },
+    {
+      "name": "white bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White bookshelves lack the warmth and comfort needed for a casual hangout."
+    },
+    {
+      "name": "white walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White walls lack the warmth and comfort needed for a casual hangout."
+    },
+    {
+      "name": "white curtains",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White curtains lack the warmth and comfort needed for a casual hangout."
+    },
+    {
+      "name": "white floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White floor lacks the warmth and comfort needed for a casual hangout."
+    },
+    {
+      "name": "white ceiling",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White ceiling lacks the warmth and comfort needed for a casual hangout."
+    },
+    {
+      "name": "white furniture",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of white furniture throughout the space suggests a formal setting rather than a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the predominance of white furniture and surfaces, which suggest a formal setting rather than a casual hangout. The lack of comfortable seating and warm colors further undermines the suitability for this activity.",
+  "_meta": {
+    "image_id": "ai_017_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.43,
+    "attempt": 1
+  }
+}

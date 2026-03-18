@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with soft textiles",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, and the soft textiles provide comfort and warmth."
+    },
+    {
+      "name": "curtains over windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Curtains help control light and provide privacy, which are important for sleep."
+    },
+    {
+      "name": "furniture arrangement",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The furniture arrangement allows for a comfortable and private sleeping area."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Hard flooring can be noisy and uncomfortable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for sleep (Primary). The presence of a bed with soft textiles and curtains over windows supports the activity, but the hard flooring could be a potential disturbance.",
+  "_meta": {
+    "image_id": "ai_036_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.77,
+    "attempt": 1
+  }
+}

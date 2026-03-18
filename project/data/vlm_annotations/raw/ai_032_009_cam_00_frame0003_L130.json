@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The couch provides a comfortable seating area for conversation."
+    },
+    {
+      "name": "Lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The ambient lighting creates a warm and inviting atmosphere for socializing."
+    },
+    {
+      "name": "Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The table can be used to place drinks or snacks, enhancing the casual conversation experience."
+    },
+    {
+      "name": "Mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The mirror might make the space feel more formal rather than casual."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts, with comfortable seating, good lighting, and a functional table. However, the presence of a mirror could slightly detract from the casual atmosphere.",
+  "_meta": {
+    "image_id": "ai_032_009_cam_00_frame0003",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_009\\images\\scene_cam_00_final_preview\\frame.0003.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.56,
+    "attempt": 2
+  }
+}

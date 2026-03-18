@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for cooking activities due to their height and lack of storage space."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for cooking activities due to their height and lack of storage space."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bookshelves are not suitable for cooking activities due to their height and lack of storage space."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are not suitable for cooking activities due to their potential to trap dirt and debris."
+    },
+    {
+      "name": "open doors",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Open doors can lead to drafts and dust, which are not conducive to cooking activities."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is partially suitable for cooking activities, but several factors detract from its suitability. The presence of dining tables, chairs, and bookshelves, along with hardwood floors and open doors, make it less than ideal for daily cooking tasks.",
+  "_meta": {
+    "image_id": "ai_034_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_034_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.25,
+    "attempt": 1
+  }
+}

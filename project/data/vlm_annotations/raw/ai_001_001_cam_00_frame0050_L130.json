@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The tub is a large, deep object that takes up a significant portion of the space, making it difficult for multiple people to sit and converse comfortably."
+    },
+    {
+      "name": "towel rack",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The towel rack is positioned near the window, which might be used for drying towels rather than seating or conversation."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window is large and open, allowing natural light to enter but also potentially creating drafts or distractions for conversation."
+    },
+    {
+      "name": "towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The towel is hanging on the towel rack, suggesting it is not currently being used for seating or conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the presence of a large tub and a towel rack near the window, which take up space and could be used for other purposes. The window allows natural light but may create distractions or drafts. The score is 4 because there are no specific seating arrangements or objects designed for conversation.",
+  "_meta": {
+    "image_id": "ai_001_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.73,
+    "attempt": 1
+  }
+}

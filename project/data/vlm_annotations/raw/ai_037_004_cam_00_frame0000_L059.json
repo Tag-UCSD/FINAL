@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large L-shaped sofa",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sofa is too large and too close to the window, blocking natural light and creating a sense of confinement."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is cold and can be noisy, making it less suitable for sleep."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open layout allows for through-traffic and noise, which can disturb sleep."
+    },
+    {
+      "name": "coffee table with books and snacks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The coffee table with books and snacks suggests a living area rather than a sleeping area."
+    }
+  ],
+  "reasoning_summary": "This indoor scene has a large L-shaped sofa that blocks natural light and creates a sense of confinement, along with hard hardwood flooring that is cold and noisy. The open layout allows for through-traffic and noise, which can disturb sleep. The coffee table with books and snacks suggests a living area rather than a sleeping area, further reducing the suitability for sleep.",
+  "_meta": {
+    "image_id": "ai_037_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_037_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.12,
+    "attempt": 1
+  }
+}

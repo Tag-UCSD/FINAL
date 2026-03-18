@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The bed is a significant obstacle to clear floor space required for yoga."
+    },
+    {
+      "name": "pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Pillows on the bed obstruct the bed's use as a flat surface for yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor provides a firm, non-slip base suitable for yoga mat placement."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large window allows natural light to enter, creating a calming atmosphere."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling height is sufficient for yoga poses."
+    },
+    {
+      "name": "cabinet-merged",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The cabinet is not obstructing the floor space."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting is adequate for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the presence of a bed and pillows, which obstruct the clear floor space required for yoga. However, the wooden floor, window, and cabinet do not obstruct the space and contribute positively to the environment. The lighting is also adequate for yoga practice. Overall, the score is 4 out of 7.",
+  "_meta": {
+    "image_id": "ai_007_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.38,
+    "attempt": 1
+  }
+}

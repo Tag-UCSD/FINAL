@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "long black desks with multiple computers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long desks are designed for group work rather than individual work, making them less suitable for solo computer work."
+    },
+    {
+      "name": "yellow desk lamps",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Directional task lighting is beneficial for reducing eye strain and illuminating the workspace."
+    },
+    {
+      "name": "black chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are designed for group work and do not provide ergonomic support for extended periods of computer use."
+    },
+    {
+      "name": "open office layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The open office layout makes it difficult to maintain privacy and focus on individual tasks."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for solo computer work due to the long desks designed for group work, lack of ergonomic chairs, and open office layout. The yellow desk lamps provide some positive lighting, but the overall layout and furniture are not conducive to focused solo work.",
+  "_meta": {
+    "image_id": "ai_033_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.59,
+    "attempt": 1
+  }
+}

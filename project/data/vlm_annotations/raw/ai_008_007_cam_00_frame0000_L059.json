@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "folding cot against wall",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A cot provides a minimal horizontal rest surface, though its size and utility-room placement are far from sleep-optimal."
+    },
+    {
+      "name": "hard industrial surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Hard industrial surfaces indicate a commercial kitchen context entirely unsuitable for sleeping."
+    },
+    {
+      "name": "open commercial-use layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Open, throughfare-prone commercial kitchen layout provides no privacy or acoustic enclosure for sleep."
+    }
+  ],
+  "reasoning_summary": "This is a commercial kitchen with only a small folding cot as an afterthought. The hard industrial surfaces and open layout make this space completely unsuitable for primary sleep. The presence of any horizontal rest surface at all prevents a score of 1.",
+  "_meta": {
+    "image_id": "ai_008_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_008_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.71,
+    "attempt": 1
+  }
+}

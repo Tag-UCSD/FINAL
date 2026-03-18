@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 5,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The counter provides a surface for food preparation and cooking."
+    },
+    {
+      "name": "sink",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sink is essential for washing dishes and cleaning up after cooking."
+    },
+    {
+      "name": "potted plant",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plant may obstruct access to the counter or sink."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for daily cooking, with a functional counter and sink, but the potted plant could be a hindrance.",
+  "_meta": {
+    "image_id": "ai_004_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.94,
+    "attempt": 2
+  }
+}

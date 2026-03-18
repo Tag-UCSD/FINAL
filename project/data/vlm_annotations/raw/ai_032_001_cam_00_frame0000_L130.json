@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large Bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The large bathtub takes up a significant portion of the space, leaving limited room for conversation."
+    },
+    {
+      "name": "Decorative Wall Art",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The decorative wall art adds a touch of elegance and can serve as a topic of conversation."
+    },
+    {
+      "name": "Shelves with Towels",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The shelves with towels provide functionality but do not significantly impact the conversational space."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation due to the large bathtub taking up much of the space, but the decorative wall art and functional shelves contribute positively to the overall ambiance.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_032_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 40.7,
+    "attempt": 2
+  }
+}

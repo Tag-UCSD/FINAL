@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "red curved kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The curved kitchen island does not provide a flat surface suitable for placing a laptop or keyboard."
+    },
+    {
+      "name": "white countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The white countertop lacks a neutral tone that would be more conducive to concentration."
+    },
+    {
+      "name": "red chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The red chairs are not ergonomically designed for prolonged computer work."
+    },
+    {
+      "name": "white walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "White walls can reflect light and create distractions."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows can be distracting and allow natural light to interfere with artificial lighting."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to distractions and reduce privacy."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of a curved kitchen island and white countertop indicates a lack of a suitable flat surface for a laptop or keyboard. The red chairs and white walls contribute to a less conducive environment for concentration. The large windows and open layout further detract from the focus required for solo computer work.",
+  "_meta": {
+    "image_id": "ai_001_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.87,
+    "attempt": 1
+  }
+}

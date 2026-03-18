@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar counter is not suitable for cooking as it lacks a sink and other essential kitchen appliances."
+    },
+    {
+      "name": "no stove or oven",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No cooking appliances are visible, making it impossible to cook in this space."
+    },
+    {
+      "name": "no sink",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No water source is available for food preparation and cleaning."
+    },
+    {
+      "name": "no cabinets or shelves",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No storage space for ingredients or prepared food."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for daily cooking due to the absence of essential kitchen appliances, lack of storage, and no water source. The score of 3 indicates that the space is marginally adequate for cooking, but it is not ideal.",
+  "_meta": {
+    "image_id": "ai_055_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.84,
+    "attempt": 1
+  }
+}

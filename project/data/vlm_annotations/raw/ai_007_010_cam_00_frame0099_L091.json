@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a toilet in close proximity to the workspace can be distracting and uncomfortable."
+    },
+    {
+      "name": "Sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The sink is located near the workspace, which might lead to water splashes and potential damage to electronic equipment."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the presence of a toilet and a sink in close proximity to the workspace.",
+  "_meta": {
+    "image_id": "ai_007_010_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_010\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.4,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "closed wooden door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A closed door could block access to the space, preventing yoga practice."
+    },
+    {
+      "name": "staircase leading to door",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase may require users to walk up and down, potentially disrupting the flow of a yoga practice."
+    },
+    {
+      "name": "potted plants on either side of door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plants could obstruct the entrance or create a visual barrier, making it difficult to enter the space."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga practice, but several factors detract from its usability. The closed door and staircase may limit access and disrupt the flow of a yoga session. The potted plants on either side of the door could obstruct the entrance or create a visual barrier. Overall, the score is 3 due to these limitations.",
+  "_meta": {
+    "image_id": "ai_016_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.5,
+    "attempt": 1
+  }
+}

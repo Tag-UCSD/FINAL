@@ -1,0 +1,79 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A dining table is typically associated with formal dining rather than casual conversation."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Individual chairs are designed for formal dining rather than casual conversation."
+    },
+    {
+      "name": "vase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase is a decorative item, not a functional object for casual conversation."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plants are decorative and do not contribute to the functionality of a casual conversation space."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The lighting appears to be task-oriented, not conducive to a casual conversation atmosphere."
+    },
+    {
+      "name": "window-blind",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Window blinds can block natural light, which is important for a casual conversation space."
+    },
+    {
+      "name": "ceiling-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The ceiling is not visible, making it difficult to assess the overall lighting and space planning."
+    },
+    {
+      "name": "wall-other-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The walls are not clearly defined, which can make the space feel cramped and less inviting."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Multiple chairs are present, but they are not arranged in a sociopetal manner conducive to casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation due to the presence of formal dining furniture and a lack of social seating arrangements. The lighting and spatial layout also detract from the casual conversation atmosphere.",
+  "_meta": {
+    "image_id": "ai_053_020_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_020\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.18,
+    "attempt": 1
+  }
+}

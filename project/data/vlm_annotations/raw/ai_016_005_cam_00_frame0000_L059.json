@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "No bed or furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed or any furniture makes it unsuitable for sleep."
+    },
+    {
+      "name": "No window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of a window makes it unsuitable for sleep."
+    }
+  ],
+  "reasoning_summary": "The scene lacks essential elements for sleep, such as a bed and a window, making it completely unsuitable for the primary activity of sleep.",
+  "_meta": {
+    "image_id": "ai_016_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.26,
+    "attempt": 2
+  }
+}

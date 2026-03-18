@@ -1,0 +1,100 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep as it is designed for sitting and lounging, not lying down."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Coffee table is not suitable for sleep as it is designed for placing items, not lying down."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chandelier is not suitable for sleep as it is designed for lighting, not lying down."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirror is not suitable for sleep as it is designed for reflection, not lying down."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rug is not suitable for sleep as it is designed for walking, not lying down."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chair is not suitable for sleep as it is designed for sitting, not lying down."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Table is not suitable for sleep as it is designed for placing items, not lying down."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Potted plant is not suitable for sleep as it is designed for decoration, not lying down."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling is not suitable for sleep as it is designed for walking, not lying down."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor is not suitable for sleep as it is designed for walking, not lying down."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Light is not suitable for sleep as it is designed for illumination, not lying down."
+    },
+    {
+      "name": "layout",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Layout is not suitable for sleep as it is designed for movement, not lying down."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not suitable for sleep (Primary). The presence of furniture and layout designed for sitting and walking, rather than lying down, makes this space unsuitable for sleep. The lighting and layout also contribute to the negative assessment.",
+  "_meta": {
+    "image_id": "ai_017_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.28,
+    "attempt": 1
+  }
+}

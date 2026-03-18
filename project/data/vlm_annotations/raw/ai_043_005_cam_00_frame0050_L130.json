@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A kitchen sink is not conducive to casual conversation as it is typically associated with food preparation and hygiene, not social interaction."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Cabinets are typically used for storage, not for social interaction, and their presence can make the space feel too formal for casual hangouts."
+    },
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A marble countertop is more suited to formal settings and food preparation than to casual social interactions."
+    },
+    {
+      "name": "dark flooring",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring can make the space feel less inviting and more formal, which is not conducive to casual conversation."
+    },
+    {
+      "name": "no seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no seating arrangement that would facilitate a sociopetal layout for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is primarily a kitchen area with a sink and cabinets, which are not conducive to casual conversation. The dark flooring and lack of seating arrangement further contribute to a formal atmosphere that is not suitable for a casual hangout. A score of 3 reflects the marginal adequacy of the space for this activity.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.05,
+    "attempt": 1
+  }
+}

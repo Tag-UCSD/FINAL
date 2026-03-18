@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement is designed for social interaction rather than individual focus, making it less suitable for solo computer work."
+    },
+    {
+      "name": "large dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large dining tables are not conducive to individual workspaces, as they are typically used for group dining and socializing."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open layout of the space allows for easy visibility and potential distractions from other patrons."
+    },
+    {
+      "name": "ambient lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Ambient lighting may create glare on computer screens and is not ideal for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for solo computer work due to its social and open layout, which can be distracting. The large dining tables and seating arrangement are not conducive to individual workspaces, and the ambient lighting may cause glare on computer screens. However, the presence of power outlets and the availability of tables with chairs suggest some level of preparedness for work-related activities.",
+  "_meta": {
+    "image_id": "ai_055_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.44,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "glass table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The glass table is too smooth and slippery for yoga mats, posing a risk of slipping during practice."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Chairs are placed around the table, obstructing the open floor space required for yoga."
+    },
+    {
+      "name": "brick walls",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls are visually distracting and do not contribute to a calming atmosphere suitable for yoga."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ceiling lights can create harsh shadows and glare, which can be disorienting during yoga practice."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is an open floor area available for yoga practice, but it is obstructed by chairs and other furniture."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for yoga, with an open floor area available for practice, but it is obstructed by chairs and other furniture. The smooth glass table and brick walls contribute negatively to the atmosphere, while the ceiling lights create a potentially disorienting environment. A score of 3 reflects the partial suitability of the space for yoga.",
+  "_meta": {
+    "image_id": "ai_047_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.06,
+    "attempt": 1
+  }
+}

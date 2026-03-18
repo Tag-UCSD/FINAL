@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a sink suggests a kitchen area, which is not suitable for computer work."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets suggest storage, not a workspace."
+    },
+    {
+      "name": "marble countertop",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A countertop is not a flat work surface suitable for computer work."
+    },
+    {
+      "name": "dark flooring",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dark flooring can be difficult to work on, especially when using a laptop."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a sink and cabinets, along with the dark flooring and lack of a flat work surface, make it unsuitable for focused knowledge work. However, the absence of high-traffic areas and the potential for a flat surface on the countertop if rearranged slightly could make it marginally suitable for some computer work.",
+  "_meta": {
+    "image_id": "ai_043_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.34,
+    "attempt": 1
+  }
+}

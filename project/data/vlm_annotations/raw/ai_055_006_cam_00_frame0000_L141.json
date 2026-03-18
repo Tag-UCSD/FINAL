@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "unobstructed floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for a yoga mat to be placed without obstructions."
+    },
+    {
+      "name": "seating arrangement",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating arrangement, while not obstructing the floor, does not provide a dedicated space for yoga practice."
+    },
+    {
+      "name": "bar counter and shelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bar counter and shelves take up significant space and could be rearranged to create more open floor area."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga practice, with a hard floor and unobstructed space. However, the seating arrangement and bar counter take up significant space, reducing the available area for yoga. A score of 3 rather than 4 reflects the presence of furniture and the lack of a dedicated yoga area.",
+  "_meta": {
+    "image_id": "ai_055_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.16,
+    "attempt": 1
+  }
+}

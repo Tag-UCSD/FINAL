@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large open space lacks privacy and acoustic enclosure, making it unsuitable for sleep."
+    },
+    {
+      "name": "concrete ceiling and walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard industrial surfaces indicate a commercial or industrial setting, which is unsuitable for sleep."
+    },
+    {
+      "name": "no furniture or bedding",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No horizontal rest surface or bedding indicates no provision for sleep."
+    }
+  ],
+  "reasoning_summary": "This is a large open industrial space with hard industrial surfaces and no furniture or bedding, making it completely unsuitable for sleep. The lack of privacy and acoustic enclosure further undermines the potential for sleep.",
+  "_meta": {
+    "image_id": "ai_024_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.08,
+    "attempt": 1
+  }
+}

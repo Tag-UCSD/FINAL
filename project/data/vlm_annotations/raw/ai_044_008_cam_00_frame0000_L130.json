@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase obstructs direct access to the main area, making it less suitable for casual conversation."
+    },
+    {
+      "name": "large portrait",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large portrait on the wall can be intimidating and may not be conducive to a casual hangout."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space, enhancing the ambiance."
+    },
+    {
+      "name": "columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Columns divide the space and may make it feel less open and inviting for casual conversation."
+    }
+  ],
+  "reasoning_summary": "The space has some positive elements like potted plants and columns, but the staircase and portrait create barriers to easy conversation. The score is marginally adequate due to the potential for obstruction and intimidation.",
+  "_meta": {
+    "image_id": "ai_044_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.15,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases are decorative items and do not serve a functional purpose in a kitchen."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Proper lighting is important for food preparation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for food preparation."
+    },
+    {
+      "name": "tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Tables are not suitable for food preparation."
+    },
+    {
+      "name": "windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Windows allow natural light to enter the space."
+    },
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for food preparation."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for food preparation."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The carpeted floor is not suitable for food preparation."
+    }
+  ],
+  "reasoning_summary": "The space is partially suitable for daily cooking due to the presence of windows for natural light and ceiling lights for artificial illumination. However, the presence of vases, chairs, tables, and carpeted flooring makes it less than ideal for food preparation. The score is 3 out of 7, indicating marginal adequacy.",
+  "_meta": {
+    "image_id": "ai_032_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_032_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.0,
+    "attempt": 1
+  }
+}

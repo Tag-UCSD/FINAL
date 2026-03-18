@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A large dining table provides ample space for multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "modern stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Modern stools provide flexible seating options for casual conversations."
+    },
+    {
+      "name": "open layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout encourages easy conversation and interaction among people."
+    },
+    {
+      "name": "ample natural light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ample natural light creates a pleasant and inviting atmosphere for casual conversations."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to its large dining table and modern stools providing flexible seating options. The open layout and ample natural light contribute positively to the atmosphere. However, the lack of a dedicated seating arrangement and the presence of functional kitchen items like the refrigerator and sink make it less than ideal for a social hangout.",
+  "_meta": {
+    "image_id": "ai_001_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.56,
+    "attempt": 1
+  }
+}

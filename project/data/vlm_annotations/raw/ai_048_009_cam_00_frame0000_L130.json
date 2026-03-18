@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving little space for other activities."
+    },
+    {
+      "name": "counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too high to sit at comfortably for casual conversation."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The mirror is too large and takes up a significant amount of wall space, making it difficult to use as a conversation area."
+    }
+  ],
+  "reasoning_summary": "The space is somewhat suitable for casual conversation, but the presence of the bed, counter, and mirror significantly limits the available space and makes it less comfortable for such activities.",
+  "_meta": {
+    "image_id": "ai_048_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.06,
+    "attempt": 2
+  }
+}

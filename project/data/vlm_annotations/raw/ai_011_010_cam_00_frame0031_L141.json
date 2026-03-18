@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "several high tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "High tables obstruct the floor space and prevent any yoga mat placement."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bar stools are designed for sitting and do not support standing or stretching activities."
+    },
+    {
+      "name": "dark carpet",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Dark carpet is slippery and unsafe for yoga practice."
+    },
+    {
+      "name": "no open floor area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no unobstructed floor space for yoga mat placement."
+    },
+    {
+      "name": "no mirrors",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Mirrors are essential for self-assessment and posture correction in yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for yoga or stretching due to the presence of high tables, bar stools, dark carpet, and the lack of an open floor area. The absence of mirrors also makes it impossible to perform yoga in this space.",
+  "_meta": {
+    "image_id": "ai_011_010_cam_00_frame0031",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_010\\images\\scene_cam_00_final_preview\\frame.0031.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.43,
+    "attempt": 1
+  }
+}

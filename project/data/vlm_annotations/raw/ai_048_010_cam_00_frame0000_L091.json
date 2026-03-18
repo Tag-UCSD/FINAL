@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting and potentially reducing eye strain."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a more casual, leisurely atmosphere, which is generally less conducive to focused computer work."
+    },
+    {
+      "name": "low table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low table is not suitable for setting up a computer workstation as it does not provide a proper working height."
+    },
+    {
+      "name": "stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stools are not suitable for prolonged computer work as they do not provide a stable and ergonomic seating position."
+    },
+    {
+      "name": "bookshelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "A bookshelf with books indicates a knowledge work environment, which is supportive of computer work."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for computer work (Solo). While there are some positive aspects such as large windows for natural light and a bookshelf indicating a knowledge work environment, the presence of a couch, low table, and stools suggests a more casual and less ergonomic setup, which is generally less conducive to focused computer work.",
+  "_meta": {
+    "image_id": "ai_048_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.0,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "unobstructed floor space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor space allows for a yoga mat to be placed without obstructions."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga."
+    },
+    {
+      "name": "minimal furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The minimal furniture arrangement allows for a clear floor space for yoga."
+    },
+    {
+      "name": "natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light can create a calming atmosphere for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga and stretching. The unobstructed floor space and hardwood flooring are strong positives, while the minimal furniture and natural light contribute positively. However, the presence of a bar counter and stools suggests a more social setting, which may not be ideal for a dedicated yoga space.",
+  "_meta": {
+    "image_id": "ai_055_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_055_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.41,
+    "attempt": 1
+  }
+}

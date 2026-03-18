@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for placing a yoga mat."
+    },
+    {
+      "name": "table with chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a table and chairs suggests a dining or meeting area, which is not suitable for yoga practice."
+    },
+    {
+      "name": "closed sliding doors",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Closed sliding doors indicate a lack of natural light, which is important for creating a calming atmosphere for yoga."
+    },
+    {
+      "name": "lamps on table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Lamps can provide artificial lighting, which can be useful for evening yoga sessions."
+    }
+  ],
+  "reasoning_summary": "The hardwood flooring and table with chairs suggest this space is primarily used for dining or meetings, making it marginally adequate for yoga practice. The closed sliding doors and lack of natural light indicate a less than ideal environment for yoga, resulting in a score of 4.",
+  "_meta": {
+    "image_id": "ai_028_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_028_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.78,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The presence of a couch suggests a living area rather than a workspace."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A mirror is not suitable for computer work as it does not provide a flat surface for a monitor."
+    },
+    {
+      "name": "rug",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug adds clutter and may obstruct movement, which is counterproductive for a workspace."
+    },
+    {
+      "name": "chandelier",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient chandelier lighting is not suitable for focused screen work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is not suitable for extended computer work due to its lack of ergonomic support."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no flat surface for a computer monitor."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A potted plant is not suitable for a workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of a couch, mirror, rug, chandelier, chair, and lack of a flat surface for a computer monitor make it difficult to set up a productive workspace. However, the absence of high-traffic areas and the presence of a large flat surface on the couch suggest it could potentially be used for computer work if rearranged.",
+  "_meta": {
+    "image_id": "ai_017_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.6,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "large open space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The vast open area lacks defined boundaries or seating arrangements conducive to social interaction."
+    },
+    {
+      "name": "glass roof",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The glass roof allows natural light but does not provide shade or privacy, making it less suitable for casual conversation."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make the space feel intimidating and less intimate, which is counterproductive to a casual hangout."
+    },
+    {
+      "name": "columns",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Columns interrupt the flow of the space and create barriers, reducing the feeling of openness and ease."
+    }
+  ],
+  "reasoning_summary": "The large open space without defined boundaries or seating arrangements makes this indoor scene poorly suited for casual conversation. The glass roof and high ceilings contribute to an intimidating and less intimate atmosphere, further undermining the hangout potential. A score of 2 reflects the significant lack of social affordance in this space.",
+  "_meta": {
+    "image_id": "ai_024_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.76,
+    "attempt": 1
+  }
+}

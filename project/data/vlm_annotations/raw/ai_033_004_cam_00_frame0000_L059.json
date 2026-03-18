@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "no bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of a bed is a significant barrier to sleep."
+    },
+    {
+      "name": "no furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lack of furniture makes the space unsuitable for sleep."
+    },
+    {
+      "name": "no window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No window means no natural light or view, which are important for sleep."
+    },
+    {
+      "name": "no curtains",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No curtains mean no light control, which is crucial for sleep."
+    },
+    {
+      "name": "no lamp",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No lamp means no artificial light source for sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for sleep (primary). There is no bed, no furniture, no window, no curtains, and no lamp, making it impossible to support the primary sleep activity.",
+  "_meta": {
+    "image_id": "ai_033_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.83,
+    "attempt": 1
+  }
+}

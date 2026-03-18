@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Marble flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Marble flooring provides a smooth surface for stretching and yoga poses."
+    },
+    {
+      "name": "Large open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A large open space allows for a variety of yoga poses without obstruction."
+    },
+    {
+      "name": "Natural light from windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light can enhance the mood and focus during yoga practice."
+    },
+    {
+      "name": "No furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The absence of furniture may limit the number of yoga poses that can be performed."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for yoga and stretching due to its open layout and natural lighting, but lacks furniture which could limit pose options.",
+  "_meta": {
+    "image_id": "ai_041_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_041_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.02,
+    "attempt": 2
+  }
+}

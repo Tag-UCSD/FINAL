@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "long wooden dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The long wooden dining table is not suitable for computer work as it lacks a flat surface and is too narrow for a comfortable workspace."
+    },
+    {
+      "name": "chairs around the table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs around the table are not designed for computer work, as they lack ergonomic features and are not suitable for prolonged sitting."
+    },
+    {
+      "name": "open kitchen area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open kitchen area can be a source of noise and distraction, which can negatively impact the focus required for computer work."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The low lighting in the room can make it difficult to see the computer screen clearly, especially if the user needs to read or write on the screen."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The long wooden dining table and chairs lack the necessary features for a comfortable and ergonomic workspace. The open kitchen area and low lighting can be sources of noise and poor visibility, which can negatively impact the focus required for computer work.",
+  "_meta": {
+    "image_id": "ai_027_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_027_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.81,
+    "attempt": 1
+  }
+}

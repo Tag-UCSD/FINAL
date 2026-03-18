@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dining table is too large and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not designed for extended computer use and do not provide ergonomic support."
+    },
+    {
+      "name": "marble floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The marble floor is slippery and not suitable for prolonged standing or walking."
+    },
+    {
+      "name": "open shelving",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Open shelving can be distracting and does not provide a dedicated workspace."
+    },
+    {
+      "name": "cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Cabinets are not specifically designed for computer work and do not provide a dedicated workspace."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Ambient lighting is insufficient for focused computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The large dining table and chairs are not suitable for a workstation, and the open shelving and cabinets do not provide a dedicated workspace. The lighting is insufficient for focused computer work, and the slippery marble floor is not conducive to prolonged standing or walking. However, the open shelving and cabinets could potentially be repurposed to create a dedicated workspace if rearranged.",
+  "_meta": {
+    "image_id": "ai_043_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.35,
+    "attempt": 1
+  }
+}

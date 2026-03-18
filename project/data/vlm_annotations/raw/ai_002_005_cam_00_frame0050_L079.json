@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An oven is essential for baking and roasting, key cooking activities."
+    },
+    {
+      "name": "counter",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A counter provides a hard, flat surface for food preparation and cleanup."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Natural light can be used for food preparation and can create a pleasant atmosphere."
+    },
+    {
+      "name": "clock",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "A clock is not directly related to cooking but could be used to time cooking processes."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the presence of an oven and a counter, but lacks essential elements like a sink and hard prep surfaces. The window provides natural light, which can be beneficial for cooking.",
+  "_meta": {
+    "image_id": "ai_002_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.53,
+    "attempt": 1
+  }
+}

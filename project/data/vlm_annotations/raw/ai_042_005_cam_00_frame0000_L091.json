@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The counter is too high for comfortable keyboarding and mouse use, requiring the user to stand or sit on a chair, which is not ergonomic for extended periods."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height for placing a laptop or keyboard, making it difficult to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no chair or stool available for sitting while working, which is essential for ergonomic support and comfort."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The space is open and lacks a dedicated area for computer work, which can be distracting and reduce focus."
+    },
+    {
+      "name": "no task lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There is no task lighting specifically designed for computer work, which can lead to eye strain and reduced productivity."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there are some elements that could potentially be used for work, such as the counter and the presence of bowls, the lack of a flat work surface, ergonomic seating, dedicated workspace layout, and task lighting significantly undermines the suitability for extended computer work. The space is more suitable for casual tasks or quick work sessions rather than focused, extended computer work.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.15,
+    "attempt": 1
+  }
+}

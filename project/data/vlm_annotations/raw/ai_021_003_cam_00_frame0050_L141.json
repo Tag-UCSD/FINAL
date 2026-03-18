@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "red pipes on brick wall",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Red pipes on the brick wall are visually distracting and could pose a tripping hazard."
+    },
+    {
+      "name": "brick wall",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls can be cold and uncomfortable to touch, especially when performing stretches."
+    },
+    {
+      "name": "ceiling beams",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ceiling beams provide structural support and aesthetic appeal, but do not directly impact the yoga experience."
+    },
+    {
+      "name": "window",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Window allows natural light to enter, creating a pleasant atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with some positive aspects like the window allowing natural light and the ceiling beams providing structural support. However, the red pipes on the brick wall are visually distracting and could pose a tripping hazard, reducing the overall suitability to a score of 3.",
+  "_meta": {
+    "image_id": "ai_021_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.39,
+    "attempt": 1
+  }
+}

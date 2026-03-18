@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a stable surface for stretching and yoga poses."
+    },
+    {
+      "name": "Ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The high ceiling allows for ample space to perform yoga stretches without feeling cramped."
+    },
+    {
+      "name": "Windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Natural light from the windows can help set a calming atmosphere for yoga practice."
+    }
+  ],
+  "reasoning_summary": "The room is spacious and well-lit, with a stable floor surface, making it suitable for yoga and stretching activities.",
+  "_meta": {
+    "image_id": "ai_023_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.77,
+    "attempt": 2
+  }
+}

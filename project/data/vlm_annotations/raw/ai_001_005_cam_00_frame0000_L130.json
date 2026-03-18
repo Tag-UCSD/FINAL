@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "red and white color scheme",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The vibrant red and white color scheme creates a lively and inviting atmosphere conducive to social interaction."
+    },
+    {
+      "name": "large round island counter",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large round island counter provides a central meeting point for conversation and socializing."
+    },
+    {
+      "name": "modern furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The modern furniture design is conducive to social interaction and conversation."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large windows allow natural light to enter, creating a bright and welcoming environment."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open layout encourages social interaction and conversation by minimizing barriers between different areas."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for casual conversation and hangout due to its modern and open layout, but lacks specific social props like comfortable seating and a central meeting point. The bright and inviting color scheme helps to create a positive atmosphere.",
+  "_meta": {
+    "image_id": "ai_001_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.63,
+    "attempt": 1
+  }
+}

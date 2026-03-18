@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating area is designed for social interaction, with multiple chairs and a couch arranged to facilitate conversation."
+    },
+    {
+      "name": "bar counter",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bar counter provides a place for drinks and small items, enhancing the casual atmosphere."
+    },
+    {
+      "name": "lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is bright but not harsh, providing a pleasant ambiance for socializing."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The bar stools are designed for casual seating and can be used for informal conversations."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The couch provides additional seating for larger groups or for those who prefer sitting on the floor."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation and hangouts. The presence of a seating area, bar counter, and lighting contribute positively to the social atmosphere. However, the lack of a dedicated conversation area and the limited number of seating options slightly reduce the suitability.",
+  "_meta": {
+    "image_id": "ai_052_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.24,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "low bed height",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low bed height can make it difficult for people to sit up straight and engage in conversation comfortably."
+    },
+    {
+      "name": "no seating cluster",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no seating arrangement that would facilitate a group conversation."
+    },
+    {
+      "name": "no central shared surface",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No central coffee table or similar object to place drinks and snacks."
+    },
+    {
+      "name": "no lighting fixture",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No visible lighting fixture to provide ambient light for a comfortable conversation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the lack of a seating cluster, central shared surface, and proper lighting. The low bed height also poses a challenge for comfortable conversation.",
+  "_meta": {
+    "image_id": "ai_001_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_001_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.87,
+    "attempt": 1
+  }
+}

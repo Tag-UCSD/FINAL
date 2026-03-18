@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed with red patterned sheets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, with soft sheets providing comfort and support."
+    },
+    {
+      "name": "pillows on the bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Pillows enhance the comfort of the bed, making it more suitable for sleep."
+    },
+    {
+      "name": "window with bamboo blinds",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bamboo blinds can provide some light control and privacy, which are important for sleep."
+    },
+    {
+      "name": "soft toys on the floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Soft toys on the floor could be a distraction and pose a tripping hazard, reducing the suitability of the space for sleep."
+    },
+    {
+      "name": "bedroom layout with furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The layout of the bedroom, with a bed and other furniture, suggests a residential setting conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The bedroom is moderately suitable for sleep (Primary). The bed with soft sheets and pillows, along with the window blinds, contribute positively to the sleep environment. However, the presence of soft toys on the floor and the open layout detract slightly from the overall suitability.",
+  "_meta": {
+    "image_id": "ai_035_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.88,
+    "attempt": 1
+  }
+}

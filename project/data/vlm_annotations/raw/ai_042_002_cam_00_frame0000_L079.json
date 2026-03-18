@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Sink provides the water access essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops forming U-shape",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Continuous hard work surfaces on three sides maximise prep space and form a classic work-triangle layout."
+    },
+    {
+      "name": "large side-by-side refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Refrigerator completes the stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge work triangle, the standard efficient cooking workflow."
+    },
+    {
+      "name": "work triangle layout (stove\u00e2\u20ac\u201csink\u00e2\u20ac\u201cfridge)",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The classical work triangle is clearly visible in the U-shape arrangement, minimising movement during cooking tasks."
+    }
+  ],
+  "reasoning_summary": "This is a partially equipped modern kitchen with key cooking affordances present but lacking a stove, oven, or microwave. The work triangle is defined, countertop prep space is generous, and both water access and storage are well-provisioned. This space scores 3 \u00e2\u20ac\u201d marginally adequate for daily cooking at any skill level.",
+  "_meta": {
+    "image_id": "ai_042_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.53,
+    "attempt": 1
+  }
+}

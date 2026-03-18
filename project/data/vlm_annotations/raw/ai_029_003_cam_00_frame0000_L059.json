@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couch is not suitable for sleep due to its lack of back support and potential for discomfort."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wood flooring can be cold and uncomfortable for sleep, especially without underlay."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bright artificial lighting can interfere with natural circadian rhythms and sleep."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for primary sleep due to the presence of a couch, which is not suitable for sleep, and the use of wood flooring and bright artificial lighting, which can disrupt sleep patterns. The large windows and view do not directly support sleep but do not negatively impact it either.",
+  "_meta": {
+    "image_id": "ai_029_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.49,
+    "attempt": 1
+  }
+}

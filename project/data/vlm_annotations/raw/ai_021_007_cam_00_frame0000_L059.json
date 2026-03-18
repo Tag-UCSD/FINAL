@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed present",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is essential for sleep."
+    },
+    {
+      "name": "No furniture arrangement conducive to sleep",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The space is designed for dining and reading, not sleeping."
+    }
+  ],
+  "reasoning_summary": "The space lacks a bed and does not have a layout conducive to sleep, making it completely unsuitable for primary sleep activities.",
+  "_meta": {
+    "image_id": "ai_021_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 37.95,
+    "attempt": 2
+  }
+}

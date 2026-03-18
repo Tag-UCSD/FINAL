@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A couch is not suitable for sleep as it lacks a backrest and is not designed for lying down."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A coffee table is not suitable for sleep as it is too low to the ground and lacks a backrest."
+    },
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood flooring is not suitable for sleep as it is cold and hard, making it uncomfortable to lie on."
+    },
+    {
+      "name": "low ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A low ceiling can make the room feel cramped and claustrophobic, which is not conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The presence of a couch and coffee table indicates that the space is primarily designed for sitting and socializing rather than sleeping. The hard flooring and low ceiling contribute to an uncomfortable and potentially claustrophobic environment, which is not conducive to sleep.",
+  "_meta": {
+    "image_id": "ai_043_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_043_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.97,
+    "attempt": 1
+  }
+}

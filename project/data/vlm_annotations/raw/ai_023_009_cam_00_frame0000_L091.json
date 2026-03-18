@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating is arranged in a way that allows for individual focus and privacy."
+    },
+    {
+      "name": "adequate lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There are multiple light sources that provide even illumination across the space."
+    },
+    {
+      "name": "minimal distractions",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The space is designed to minimize visual distractions, allowing for focused work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (solo) due to its layout, adequate lighting, and minimal distractions.",
+  "_meta": {
+    "image_id": "ai_023_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.78,
+    "attempt": 2
+  }
+}

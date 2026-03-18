@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "pedestal sinks",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Pedestal sinks take up valuable floor space and do not provide a flat surface suitable for computer work."
+    },
+    {
+      "name": "toilet",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The toilet is a highly distracting and unhygienic feature for a workspace."
+    },
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Books are not conducive to a focused workspace and can be a distraction."
+    },
+    {
+      "name": "window-blind",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Window blinds can obstruct natural light and create shadows, which is not ideal for computer work."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A sink is not a suitable flat surface for computer work."
+    },
+    {
+      "name": "potted plant",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants can be distracting and may require maintenance."
+    }
+  ],
+  "reasoning_summary": "The bathroom depicted is marginally adequate for computer work (Solo). The presence of a toilet, pedestal sinks, and a window blind obstructing natural light are significant drawbacks. However, the absence of a dedicated workspace and the presence of books and a potted plant add to the distractions. Overall, it is not an ideal environment for focused solo computer work.",
+  "_meta": {
+    "image_id": "ai_039_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_039_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.05,
+    "attempt": 1
+  }
+}

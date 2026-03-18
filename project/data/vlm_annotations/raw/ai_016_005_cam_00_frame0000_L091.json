@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Stairs",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The stairs lead to an upper level, which might require additional effort to reach."
+    },
+    {
+      "name": "Potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The potted plants could obstruct the view or create distractions."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for solo computer work due to the stairs and potential distractions from the potted plants.",
+  "_meta": {
+    "image_id": "ai_016_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 16.28,
+    "attempt": 2
+  }
+}

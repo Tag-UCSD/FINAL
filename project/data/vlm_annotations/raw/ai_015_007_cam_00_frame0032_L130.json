@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "book",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A stack of books on the table can be seen as a distraction rather than a facilitator of conversation."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Potted plants add a touch of nature and life to the space, enhancing the casual atmosphere."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the window can create a pleasant and inviting atmosphere for casual conversations."
+    },
+    {
+      "name": "table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A table provides a surface for placing drinks, snacks, or conversation props."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversation/hangout due to the presence of books on the table, which might be perceived as a distraction. However, the potted plants and natural light from the window contribute positively to the atmosphere. The table also serves as a functional element for conversation props. A score of 4 reflects the mixed positive and negative factors present in the scene.",
+  "_meta": {
+    "image_id": "ai_015_007_cam_00_frame0032",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_007\\images\\scene_cam_00_final_preview\\frame.0032.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.97,
+    "attempt": 1
+  }
+}

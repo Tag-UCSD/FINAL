@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a hard surface for food preparation and cleaning."
+    },
+    {
+      "name": "oven in the kitchen",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The oven is a central cooking appliance for baking and roasting."
+    },
+    {
+      "name": "sink in the kitchen",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sink provides water access for food preparation and cleaning."
+    },
+    {
+      "name": "cabinets in the kitchen",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Cabinets offer storage for ingredients and cookware."
+    },
+    {
+      "name": "hard prep surfaces in the kitchen",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island and countertops provide hard surfaces for food preparation."
+    },
+    {
+      "name": "lighting in the kitchen",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The lighting is sufficient for cooking tasks."
+    }
+  ],
+  "reasoning_summary": "The kitchen has essential cooking affordances such as a sink, oven, cabinets, and hard prep surfaces, but lacks a stove, which is a critical component for cooking. The lighting is adequate for cooking tasks, but the overall score is marginally adequate due to the absence of a stove.",
+  "_meta": {
+    "image_id": "ai_046_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_046_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.28,
+    "attempt": 1
+  }
+}

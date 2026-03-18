@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "rug on floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug partially obstructs the open floor area, reducing the available space for yoga."
+    },
+    {
+      "name": "chair in room",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chair is placed in the room, potentially obstructing the open floor space needed for yoga."
+    },
+    {
+      "name": "table on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is placed on the floor, potentially obstructing the open floor space needed for yoga."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The hardwood flooring is smooth and firm, suitable for placing a yoga mat."
+    },
+    {
+      "name": "window-other",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window allows natural light to enter, creating a calming atmosphere for yoga."
+    }
+  ],
+  "reasoning_summary": "The room is moderately suitable for yoga, with a good amount of open floor space and natural light. However, the presence of furniture such as a chair and table obstructs the open floor area, reducing the suitability for yoga. A score of 4 rather than 5 reflects the partial obstruction caused by the rug and furniture.",
+  "_meta": {
+    "image_id": "ai_042_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.59,
+    "attempt": 1
+  }
+}

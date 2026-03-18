@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large window allows natural light and a view, enhancing the social atmosphere."
+    },
+    {
+      "name": "white brick wall",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Brick wall adds texture and visual interest, contributing to a cozy atmosphere."
+    },
+    {
+      "name": "industrial-style lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Industrial lighting provides a warm, inviting ambiance conducive to social interaction."
+    },
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dining table can serve as a shared surface for snacks and drinks, promoting conversation."
+    },
+    {
+      "name": "chalkboard",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Chalkboard can be used for writing notes or messages, enhancing the social experience."
+    }
+  ],
+  "reasoning_summary": "The scene has several positive indicators supporting casual conversation / hangout, including a large window for natural light, a textured brick wall, industrial lighting, a dining table for shared surfaces, and a chalkboard for writing. However, the lack of a seating cluster and the presence of a TV suggest it is more suited to individual tasks rather than group socializing. A score of 4 reflects these mixed signals.",
+  "_meta": {
+    "image_id": "ai_036_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.68,
+    "attempt": 1
+  }
+}

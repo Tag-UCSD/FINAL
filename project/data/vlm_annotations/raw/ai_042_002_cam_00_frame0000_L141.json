@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open floor area allows for unobstructed movement and stretching."
+    },
+    {
+      "name": "couches and chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches and chairs obstruct the open floor area and create visual clutter."
+    },
+    {
+      "name": "stools and bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Stools and bar stools obstruct the open floor area and create visual clutter."
+    },
+    {
+      "name": "kitchen island",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The kitchen island occupies a significant portion of the open floor area and obstructs movement."
+    }
+  ],
+  "reasoning_summary": "The scene has a hardwood floor and an open floor area, which are positive indicators for yoga. However, the presence of couches, chairs, stools, and a kitchen island obstruct the open floor space and create visual clutter, making it marginally adequate for yoga.",
+  "_meta": {
+    "image_id": "ai_042_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.99,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to flood the space, reducing the need for artificial lighting and potentially reducing eye strain."
+    },
+    {
+      "name": "low ceiling beams",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low ceiling beams may obstruct the view and create a sense of confinement, which can be distracting for focused work."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "An open layout can lead to distractions from other people and activities in the space."
+    },
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A couch is not suitable for prolonged computer work as it lacks a flat surface and does not provide ergonomic support."
+    },
+    {
+      "name": "bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Bar stools are not designed for extended computer use and do not provide ergonomic support."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work (Solo). While the large windows provide natural light, the low ceiling beams and open layout can be distracting. The presence of a couch and bar stools suggests a more casual, social atmosphere rather than a focused work environment.",
+  "_meta": {
+    "image_id": "ai_048_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.35,
+    "attempt": 1
+  }
+}

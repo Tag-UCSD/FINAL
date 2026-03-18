@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "glass ceiling panels",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Glass ceiling panels allow natural light to enter, but do not provide a solid surface for sleep."
+    },
+    {
+      "name": "white concrete walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "White concrete walls are cold and hard, unsuitable for sleep."
+    },
+    {
+      "name": "lack of furniture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No furniture suggests a lack of a dedicated sleep area."
+    }
+  ],
+  "reasoning_summary": "The glass ceiling panels allow natural light to enter, but do not provide a solid surface for sleep. The white concrete walls are cold and hard, and there is a lack of furniture, suggesting a lack of a dedicated sleep area. This scene is not suitable for primary sleep.",
+  "_meta": {
+    "image_id": "ai_026_008_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_008\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.44,
+    "attempt": 1
+  }
+}

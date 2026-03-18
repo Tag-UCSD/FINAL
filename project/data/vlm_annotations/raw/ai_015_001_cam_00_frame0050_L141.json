@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 1,
+  "confidence": 0.96,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The presence of a couch obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "pillows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The pillows on the couch further obstruct the open floor space."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Wooden flooring is not suitable for yoga mats due to its slipperiness and lack of cushioning."
+    },
+    {
+      "name": "couch in corner",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The couch is placed in a corner, leaving no open floor space for yoga."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for yoga or stretching due to the presence of a couch and pillows, which obstruct the open floor space required for these activities. The wooden flooring is also not suitable for yoga mats. The score of 1 reflects the complete lack of open floor space and the presence of obstacles that prevent any yoga or stretching activities.",
+  "_meta": {
+    "image_id": "ai_015_001_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_015_001\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.72,
+    "attempt": 1
+  }
+}

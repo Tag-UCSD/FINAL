@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The dining table provides a place for people to sit and engage in conversation."
+    },
+    {
+      "name": "Vases",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The vases add a decorative touch, making the space more inviting."
+    },
+    {
+      "name": "Chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The chairs around the dining table provide seating for multiple people."
+    },
+    {
+      "name": "Ceiling light fixture",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The ceiling light fixture provides ample lighting for the space."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts due to the presence of a dining table, chairs, and lighting, as well as decorative elements like vases.",
+  "_meta": {
+    "image_id": "ai_031_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_031_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 23.66,
+    "attempt": 2
+  }
+}

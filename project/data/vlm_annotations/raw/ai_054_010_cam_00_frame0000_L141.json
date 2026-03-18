@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large dining table occupies a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "Hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for yoga mat placement."
+    },
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, creating a calming atmosphere for yoga practice."
+    },
+    {
+      "name": "Minimal furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The minimal furniture arrangement allows for a clear, unobstructed floor space for yoga."
+    }
+  ],
+  "reasoning_summary": "The scene is moderately suitable for yoga, with a large dining table occupying much of the floor space, but a clear hardwood floor and minimal furniture allowing for some yoga practice. The large windows provide natural light, which is beneficial for yoga. However, the presence of the dining table significantly reduces the available floor space for yoga mats.",
+  "_meta": {
+    "image_id": "ai_054_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.96,
+    "attempt": 1
+  }
+}

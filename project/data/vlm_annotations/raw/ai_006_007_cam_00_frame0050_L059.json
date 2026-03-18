@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed with blue patterned bedding",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, with soft textiles providing comfort and support."
+    },
+    {
+      "name": "white headboard and footboard",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The headboard and footboard add a sense of enclosure and privacy, which is beneficial for sleep."
+    },
+    {
+      "name": "vases with flowers on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Flowers on the table are not directly related to sleep but can be seen as a distraction or a potential allergen."
+    },
+    {
+      "name": "purple walls and ceiling",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The vibrant purple color can be soothing and relaxing, which is conducive to sleep."
+    },
+    {
+      "name": "floor-to-ceiling windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Floor-to-ceiling windows can allow too much natural light into the room, potentially disrupting sleep patterns."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for sleep (Primary). The bed with soft textiles and the headboard and footboard provide comfort and a sense of enclosure, while the purple walls and ceiling can be soothing. However, the floor-to-ceiling windows could potentially disrupt sleep patterns by allowing too much natural light into the room.",
+  "_meta": {
+    "image_id": "ai_006_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_006_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.25,
+    "attempt": 1
+  }
+}

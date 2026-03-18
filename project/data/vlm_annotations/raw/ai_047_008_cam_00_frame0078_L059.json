@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "white chairs arranged in rows",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs suggest a formal setting, likely a conference or meeting room, not a sleep environment."
+    },
+    {
+      "name": "dark curtains covering windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Dark curtains can help block out light, which is beneficial for sleep."
+    },
+    {
+      "name": "ceiling lights and spotlights",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Bright ceiling lights and spotlights can be disruptive to sleep, especially if not dimmable."
+    },
+    {
+      "name": "hard floor surface",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor surface is not comfortable for sleeping and can be noisy."
+    }
+  ],
+  "reasoning_summary": "The scene is a large, open conference room with rows of white chairs arranged in a formal setting. While dark curtains can block out light, the bright ceiling lights and spotlights, along with the hard floor surface, make this space unsuitable for sleep. The presence of chairs arranged in rows suggests a formal setting, not a sleep environment.",
+  "_meta": {
+    "image_id": "ai_047_008_cam_00_frame0078",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_047_008\\images\\scene_cam_00_final_preview\\frame.0078.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.03,
+    "attempt": 1
+  }
+}

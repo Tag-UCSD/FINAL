@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A large bathtub is not conducive to sleep as it is typically associated with relaxation and bathing, not sleeping."
+    },
+    {
+      "name": "Bright window",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bright natural light from the window can be disruptive to sleep patterns."
+    }
+  ],
+  "reasoning_summary": "The presence of a large bathtub and bright window makes this space less suitable for primary sleep due to associations with relaxation and potential light disturbance.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.59,
+    "attempt": 2
+  }
+}

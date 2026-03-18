@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Curved ceiling panels",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The curved ceiling panels create a sense of openness and spaciousness, which is conducive to casual conversations."
+    },
+    {
+      "name": "Yellow structural beams",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bright yellow structural beams add a vibrant touch to the space, making it more inviting and lively for social interactions."
+    }
+  ],
+  "reasoning_summary": "The indoor scene has a spacious and open layout, with curved ceiling panels and bright structural beams, making it suitable for casual conversations and hangouts.",
+  "_meta": {
+    "image_id": "ai_024_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 17.72,
+    "attempt": 2
+  }
+}

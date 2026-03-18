@@ -1,0 +1,72 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "round bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A round bathtub takes up a significant portion of the floor space, leaving little room for yoga mat placement."
+    },
+    {
+      "name": "towel on edge of bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the edge of the bathtub could obstruct the floor space needed for yoga."
+    },
+    {
+      "name": "vase on edge of bathtub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase on the edge of the bathtub could obstruct the floor space needed for yoga."
+    },
+    {
+      "name": "towel on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the floor could obstruct the floor space needed for yoga."
+    },
+    {
+      "name": "bottle on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bottle on the floor could obstruct the floor space needed for yoga."
+    },
+    {
+      "name": "open floor area",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The open floor area around the bathtub is suitable for yoga mat placement."
+    },
+    {
+      "name": "ceiling",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling is visible, indicating the presence of natural light."
+    },
+    {
+      "name": "curtains",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Curtains can block natural light, but they are not obstructing the floor space."
+    }
+  ],
+  "reasoning_summary": "The scene is marginally adequate for yoga due to the presence of a round bathtub and some objects on the floor, which obstruct the open floor space needed for yoga. However, the open floor area around the bathtub is suitable for yoga mat placement, and the presence of curtains suggests potential natural light. A score of 4 rather than 5 reflects the obstruction caused by the bathtub and other objects on the floor.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 19.31,
+    "attempt": 1
+  }
+}

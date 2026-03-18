@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The seating arrangement is open and flexible, allowing for individual workspaces."
+    },
+    {
+      "name": "large screen",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large screen can display information or video content, which might be useful for work."
+    },
+    {
+      "name": "ambient lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ambient lighting is soft and evenly distributed, reducing glare and eye strain."
+    },
+    {
+      "name": "open space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open space allows for privacy and reduces distractions, which is beneficial for focused work."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for computer work (solo) due to its open layout, flexible seating, and good lighting, but lacks dedicated workstations.",
+  "_meta": {
+    "image_id": "ai_044_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 20.35,
+    "attempt": 2
+  }
+}

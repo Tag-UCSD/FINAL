@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large windows with view of trees",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, which can be calming and help with sleep onset."
+    },
+    {
+      "name": "bookshelves filled with books",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Books are not typically associated with sleep, and their presence might be distracting."
+    },
+    {
+      "name": "desks with lamps",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Desks with lamps suggest work or study, which are incompatible with sleep."
+    },
+    {
+      "name": "hardwood floors",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hardwood floors are cold and can be noisy, which is not conducive to sleep."
+    },
+    {
+      "name": "large windows with view of trees",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, which can be calming and help with sleep onset."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects for sleep, such as large windows with a view of trees and hardwood floors. However, the presence of desks with lamps and bookshelves filled with books suggests work or study, which is incompatible with sleep. The overall score is 3 out of 7, indicating that the space is marginally suitable for sleep.",
+  "_meta": {
+    "image_id": "ai_036_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.94,
+    "attempt": 1
+  }
+}

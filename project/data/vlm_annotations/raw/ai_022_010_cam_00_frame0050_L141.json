@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "snow-covered ground outside",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The snow-covered ground outside indicates cold weather, which is generally unsuitable for yoga practice."
+    },
+    {
+      "name": "closed door",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A closed door could block access to the room, preventing the user from entering or exiting the space."
+    },
+    {
+      "name": "no visible floor space",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no visible floor space within the frame, making it impossible to perform yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "The image shows a snow-covered ground outside, a closed door, and no visible floor space within the frame, indicating that the space is not suitable for yoga or stretching. The score of 2 reflects the lack of any positive indicators and the presence of strong negative ones.",
+  "_meta": {
+    "image_id": "ai_022_010_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_010\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.83,
+    "attempt": 1
+  }
+}

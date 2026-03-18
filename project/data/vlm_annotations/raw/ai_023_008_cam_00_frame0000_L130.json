@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Grandiose architecture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The grandiose architecture and the presence of paintings on the ceiling suggest a formal atmosphere, which may not be conducive to casual conversations."
+    },
+    {
+      "name": "Long corridor",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The long corridor provides ample space for people to walk around and engage in casual conversations."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for casual conversations due to its grandiose architecture, but the long corridor provides enough space for people to interact.",
+  "_meta": {
+    "image_id": "ai_023_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.19,
+    "attempt": 2
+  }
+}

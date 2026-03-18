@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The dining table is not suitable for sleep, as it is designed for eating and socializing, not resting."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The chair is not suitable for sleep, as it is designed for sitting and working, not resting."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The lighting is bright and artificial, which is not conducive to sleep."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is not suitable for sleep (primary). The presence of a dining table and chairs, along with bright artificial lighting, makes this space unsuitable for sleep. The lack of a bed or other resting surface further contributes to the low score.",
+  "_meta": {
+    "image_id": "ai_053_013_cam_00_frame0019",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_013\\images\\scene_cam_00_final_preview\\frame.0019.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 9.48,
+    "attempt": 1
+  }
+}

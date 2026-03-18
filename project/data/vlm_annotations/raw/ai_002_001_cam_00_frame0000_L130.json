@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "Couch",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The presence of two couches provides ample seating for multiple people to engage in casual conversations."
+    },
+    {
+      "name": "Table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "A glass coffee table is available for placing drinks or small items during a hangout."
+    },
+    {
+      "name": "Shelf",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The shelves provide storage for books, bowls, and other items that can be used during a casual conversation."
+    },
+    {
+      "name": "Floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden flooring is clean and provides a warm, inviting atmosphere for a hangout."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for casual conversations and hangouts, with ample seating, a functional table, and a welcoming environment.",
+  "_meta": {
+    "image_id": "ai_002_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 27.32,
+    "attempt": 2
+  }
+}

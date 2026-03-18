@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "long carpet runner",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The carpet runner is too long and wide to be easily moved out of the way, potentially obstructing access to the sleeping area."
+    },
+    {
+      "name": "arched windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The arched windows allow natural light to enter, but also create potential noise and drafts that could disturb sleep."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelves are filled with books, which could be distracting or cause discomfort if someone were to lie down on them."
+    },
+    {
+      "name": "globe models",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The globe models are large and heavy, and could be dangerous if someone were to lie down on them."
+    },
+    {
+      "name": "open book on table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The open book on the table is a distraction and could be accidentally knocked over, potentially causing injury."
+    }
+  ],
+  "reasoning_summary": "This scene is marginally suitable for sleep (Primary). The long carpet runner and arched windows pose potential obstructions and distractions, while the bookshelves and globe models add unnecessary hazards. However, the presence of a comfortable bed and the absence of harsh lighting contribute to a moderate suitability score.",
+  "_meta": {
+    "image_id": "ai_023_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_023_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.25,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 2,
+  "confidence": 0.87,
+  "indicators": [
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The absence of any desk or table at sitting height is the primary barrier to setting up a computer workstation."
+    },
+    {
+      "name": "high-traffic public lobby layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The high-traffic public layout makes it difficult to find a quiet spot for focused solo work."
+    },
+    {
+      "name": "ambient chandelier overhead lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Decorative ambient lighting provides no task illumination for screen work and may cause screen glare."
+    },
+    {
+      "name": "decorative plant arrangements",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Decorative elements confirm this is a public reception space, not a work-focused environment."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is largely unsuitable for focused solo computer work. The lack of any desk or flat surface, combined with the high-traffic public layout and ambient-only lighting, makes it difficult to set up a productive workstation. The presence of decorative plant arrangements further suggests this is a public space rather than a dedicated workspace.",
+  "_meta": {
+    "image_id": "ai_026_013_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_026_013\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.06,
+    "attempt": 1
+  }
+}

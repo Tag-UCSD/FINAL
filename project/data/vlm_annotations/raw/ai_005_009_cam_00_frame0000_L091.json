@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "couches",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Couches are not suitable for computer work as they lack a flat surface and are designed for lounging."
+    },
+    {
+      "name": "low tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low tables are not suitable for computer work as they lack a flat surface and are designed for casual dining or coffee."
+    },
+    {
+      "name": "chandeliers",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chandeliers provide ambient lighting, which is not suitable for computer work as it can cause screen glare and eye strain."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can cause glare on computer screens and reduce visual comfort."
+    },
+    {
+      "name": "lack of dedicated workspace",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The layout lacks a dedicated workspace, making it difficult to set up a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (Solo). The presence of couches and low tables, along with chandeliers and large windows, makes it difficult to set up a dedicated workspace. The layout lacks a dedicated area for computer work, which is essential for focused knowledge work.",
+  "_meta": {
+    "image_id": "ai_005_009_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_005_009\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.89,
+    "attempt": 1
+  }
+}

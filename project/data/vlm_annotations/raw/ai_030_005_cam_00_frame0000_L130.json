@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed provides a comfortable seating option for conversation."
+    },
+    {
+      "name": "floor-wood",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor adds warmth and comfort to the space."
+    },
+    {
+      "name": "curtain",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The curtain can be used to control light and privacy, enhancing the conversational atmosphere."
+    },
+    {
+      "name": "light",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The lighting is soft and ambient, creating a relaxed environment."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for casual conversation and hangouts, with a comfortable bed, warm flooring, and good lighting. However, it could benefit from more seating options.",
+  "_meta": {
+    "image_id": "ai_030_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 41.59,
+    "attempt": 2
+  }
+}

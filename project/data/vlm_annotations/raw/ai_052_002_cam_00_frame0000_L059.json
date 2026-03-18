@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for sleep, as they are designed for eating and socializing, not resting."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are not suitable for sleep, as they are designed for sitting and eating, not resting."
+    },
+    {
+      "name": "vases",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vases are not suitable for sleep, as they are decorative items and do not provide any functional support for the activity."
+    },
+    {
+      "name": "potted plants",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Potted plants are not suitable for sleep, as they are decorative items and do not provide any functional support for the activity."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light to enter, which can be disruptive to sleep patterns."
+    },
+    {
+      "name": "brick walls",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Brick walls are not suitable for sleep, as they are hard and cold surfaces that do not provide comfort or warmth."
+    },
+    {
+      "name": "exposed pipes",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Exposed pipes are not suitable for sleep, as they are industrial elements that do not provide comfort or warmth."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not well-suited for sleep (Primary). The presence of dining tables, chairs, vases, and potted plants indicates a focus on eating and socializing rather than resting. Large windows and brick walls contribute to a cold and potentially disruptive environment. Exposed pipes further detract from the comfort and warmth typically associated with a sleep-friendly space.",
+  "_meta": {
+    "image_id": "ai_052_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.12,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window allows natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "Wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The wooden floor provides a warm and comfortable surface to sit on while working."
+    },
+    {
+      "name": "Minimalist furniture",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The minimalist furniture does not clutter the space, allowing for a clear and unobstructed view of the workspace."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is well-suited for computer work (solo) due to the presence of a large window, a wooden floor, and minimalistic furniture, which together create a comfortable and distraction-free environment.",
+  "_meta": {
+    "image_id": "ai_004_007_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_007\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 21.29,
+    "attempt": 2
+  }
+}

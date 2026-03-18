@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for placing a yoga mat."
+    },
+    {
+      "name": "ample counter space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen counter provides a spacious area for placing yoga mats and other accessories."
+    },
+    {
+      "name": "minimal furniture",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The presence of minimal furniture allows for a clear floor space for yoga practice."
+    },
+    {
+      "name": "ample lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "The warm lighting creates a calming atmosphere conducive to yoga."
+    }
+  ],
+  "reasoning_summary": "The kitchen is moderately suitable for yoga due to its hardwood flooring, ample counter space, minimal furniture, and warm lighting. However, the lack of a dedicated yoga area and the presence of kitchen appliances limit its suitability.",
+  "_meta": {
+    "image_id": "ai_012_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_012_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.91,
+    "attempt": 1
+  }
+}

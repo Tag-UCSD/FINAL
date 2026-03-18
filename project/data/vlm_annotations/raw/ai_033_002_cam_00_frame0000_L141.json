@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large L-shaped desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The desk occupies a significant portion of the floor space, leaving little room for a yoga mat or other stretching equipment."
+    },
+    {
+      "name": "bookshelves lining all walls",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bookshelves reduce the available floor space and create visual clutter, making it difficult to find a clear area for yoga."
+    },
+    {
+      "name": "stacks of papers and boxes on floor",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is cluttered with papers and boxes, obstructing any potential space for yoga or stretching."
+    },
+    {
+      "name": "no open floor area visible",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no unobstructed floor space available for yoga or stretching."
+    },
+    {
+      "name": "high visual noise from clutter",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dense visual clutter makes it difficult to focus on a clear area for yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "This office space is highly unsuitable for yoga or stretching due to the large L-shaped desk, extensive bookshelves, and cluttered floor space. There is no open floor area available for yoga or stretching, and the high visual noise from the clutter makes it difficult to focus on a clear area for practice.",
+  "_meta": {
+    "image_id": "ai_033_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_033_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.23,
+    "attempt": 1
+  }
+}

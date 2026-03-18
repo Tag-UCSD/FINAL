@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "treadmill",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The treadmill is a piece of exercise equipment, not suitable for casual conversation."
+    },
+    {
+      "name": "weight bar",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The weight bar is a piece of exercise equipment, not suitable for casual conversation."
+    },
+    {
+      "name": "orange mat",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The orange mat provides a soft surface for sitting or lying down."
+    },
+    {
+      "name": "wooden floor",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The wooden floor is clean and smooth, suitable for walking or standing."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The large windows allow natural light and views, enhancing the mood."
+    },
+    {
+      "name": "sea view",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sea view is calming and relaxing, conducive to conversation."
+    }
+  ],
+  "reasoning_summary": "The scene has some positive aspects like the wooden floor and large windows, but the presence of exercise equipment and the lack of seating make it marginally adequate for casual conversation. A score of 4 reflects the mixed nature of the space.",
+  "_meta": {
+    "image_id": "ai_004_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.15,
+    "attempt": 1
+  }
+}

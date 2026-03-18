@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "black island counter",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The black island counter is too dark to provide a suitable working surface for cooking."
+    },
+    {
+      "name": "white cabinets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White cabinets provide storage for cooking supplies."
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The sink provides water access for food preparation and cleaning."
+    },
+    {
+      "name": "stove",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "No stove is visible, which is essential for cooking."
+    },
+    {
+      "name": "no visible cooking utensils",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "There are no visible cooking utensils, which are necessary for cooking."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking due to the lack of a stove and visible cooking utensils. However, it does have white cabinets for storage and a sink for water access. The black island counter is too dark to serve as a suitable working surface for cooking.",
+  "_meta": {
+    "image_id": "ai_029_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_029_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.3,
+    "attempt": 1
+  }
+}

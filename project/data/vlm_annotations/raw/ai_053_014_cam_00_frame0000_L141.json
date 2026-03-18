@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "large dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The large dining table occupies a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The white chairs are too close to the table, making it difficult to move around without bumping into them."
+    },
+    {
+      "name": "rug-merged",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The rug is too large and covers the entire floor, preventing any open space for yoga."
+    },
+    {
+      "name": "brick wall",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The brick wall is too close to the table, limiting the available space for yoga."
+    },
+    {
+      "name": "glass windows",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The glass windows allow natural light to enter, creating a calming atmosphere suitable for yoga."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for yoga due to the presence of a large dining table and chairs, which limit the available floor space. The rug and brick wall also restrict the open area. However, the glass windows provide natural light, which is beneficial for a yoga practice.",
+  "_meta": {
+    "image_id": "ai_053_014_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_014\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.78,
+    "attempt": 1
+  }
+}

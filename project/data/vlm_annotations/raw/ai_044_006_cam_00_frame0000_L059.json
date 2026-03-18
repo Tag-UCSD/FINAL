@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating area",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The seating area is designed for social interaction, not rest or sleep."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can contribute to noise and drafts, which are detrimental to sleep."
+    },
+    {
+      "name": "chandeliers",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chandeliers are typically associated with formal settings and are not conducive to a restful environment."
+    },
+    {
+      "name": "curtains",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Curtains can help block out light, which is beneficial for sleep."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is not ideally suited for sleep (Primary). While the presence of curtains is positive, the overall design of the space, including high ceilings and chandeliers, suggests a setting more suitable for social interaction rather than rest or sleep.",
+  "_meta": {
+    "image_id": "ai_044_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_044_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.01,
+    "attempt": 1
+  }
+}

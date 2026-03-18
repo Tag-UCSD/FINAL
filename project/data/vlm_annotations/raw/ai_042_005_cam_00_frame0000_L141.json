@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 2,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "counter",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The counter obstructs the open floor space required for yoga."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The floor is obstructed by the counter and cabinets, preventing any open space for yoga."
+    },
+    {
+      "name": "cabinets",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The cabinets obstruct the open floor space required for yoga."
+    },
+    {
+      "name": "bowl",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bowls on the counter are not suitable for yoga practice."
+    }
+  ],
+  "reasoning_summary": "This kitchen scene is poorly suited for yoga due to the presence of a counter and cabinets that obstruct the open floor space required for yoga. The bowls on the counter also make it unsuitable for yoga practice. A score of 2 rather than 1 reflects the presence of some open space, but the obstruction is too significant to allow for yoga.",
+  "_meta": {
+    "image_id": "ai_042_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_042_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.44,
+    "attempt": 1
+  }
+}

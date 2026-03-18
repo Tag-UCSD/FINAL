@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 1,
+  "confidence": 0.97,
+  "indicators": [
+    {
+      "name": "absence of cooking appliances",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No stove, oven, or microwave is visible, making it impossible to perform cooking activities."
+    },
+    {
+      "name": "absence of water fixture",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "No sink is present, which is essential for food preparation and kitchen hygiene."
+    },
+    {
+      "name": "soft bed furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed furniture occupies the main floor area, leaving no usable cooking workspace."
+    },
+    {
+      "name": "absence of hard prep surfaces",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No countertop or hard washable work surface is present, which is required for all food preparation tasks."
+    },
+    {
+      "name": "wall-mounted TV",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The presence of a wall-mounted TV indicates this is a living room, not a kitchen."
+    }
+  ],
+  "reasoning_summary": "This indoor scene is completely unsuitable for daily cooking activities. There are no cooking appliances, no sink, and no hard prep surfaces. The space is occupied by soft bed furniture, which makes it impossible to use the floor area for cooking. The presence of a wall-mounted TV further confirms that this is a living room, not a kitchen. Therefore, the score is 1, indicating that the space is completely unsuitable for cooking.",
+  "_meta": {
+    "image_id": "ai_002_009_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_009\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.34,
+    "attempt": 1
+  }
+}

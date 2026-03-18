@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 1,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "No bed visible",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bed is essential for sleep."
+    },
+    {
+      "name": "No furniture",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Furniture is needed for comfort and rest."
+    }
+  ],
+  "reasoning_summary": "The space does not provide any objects or furniture that are necessary for sleep.",
+  "_meta": {
+    "image_id": "ai_016_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_016_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 37.43,
+    "attempt": 2
+  }
+}

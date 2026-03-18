@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "red chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Red chairs are too formal and rigid for a casual hangout setting."
+    },
+    {
+      "name": "round tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Round tables can make conversation more difficult due to lack of clear focal points."
+    },
+    {
+      "name": "arched columns",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Architectural columns can create a sense of separation and limit the feeling of openness."
+    },
+    {
+      "name": "wooden slat wall",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A wooden slat wall can add warmth and texture to the space, making it more inviting."
+    },
+    {
+      "name": "low lighting",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Low lighting can create a more intimate atmosphere but may also feel too dim for a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The space has some positive elements like the wooden slat wall and low lighting, but the formal red chairs and round tables, along with the architectural columns, create a more formal and less open atmosphere. A score of 4 indicates it's marginally adequate for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_034_003_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_034_003\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.36,
+    "attempt": 1
+  }
+}

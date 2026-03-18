@@ -1,0 +1,37 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Floor",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The floor is made of wood, which can be slippery and may cause discomfort while working."
+    },
+    {
+      "name": "Window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large window provides natural light, which can improve mood and productivity."
+    },
+    {
+      "name": "Sea View",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sea view can provide a calming and relaxing environment, which can enhance focus and creativity."
+    }
+  ],
+  "reasoning_summary": "The space has a good balance of positive and negative factors for computer work. The large window and sea view provide a pleasant environment, but the slippery floor could be a concern.",
+  "_meta": {
+    "image_id": "ai_004_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 33.7,
+    "attempt": 2
+  }
+}

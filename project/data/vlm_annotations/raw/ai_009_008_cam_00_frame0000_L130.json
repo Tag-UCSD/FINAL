@@ -1,0 +1,47 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 6,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Large sofa",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The large sofa provides ample seating for multiple people to sit and engage in conversation."
+    },
+    {
+      "name": "Glass sliding doors",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The glass sliding doors allow natural light to enter, creating a bright and inviting atmosphere for socializing."
+    },
+    {
+      "name": "Cabinet",
+      "type": "object",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "The cabinet provides storage but does not directly contribute to the social aspect of the space."
+    },
+    {
+      "name": "Potted plant",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The potted plant adds a touch of nature and can create a more relaxed atmosphere."
+    }
+  ],
+  "reasoning_summary": "The space is well-suited for casual conversations and hangouts due to its ample seating, natural lighting, and inviting atmosphere, despite the neutral contribution of the cabinet.",
+  "_validation_errors": [
+    "indicators[2].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_009_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_009_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.35,
+    "attempt": 2
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Rows of seats facing forward make it difficult for participants to face each other, which is essential for casual conversation."
+    },
+    {
+      "name": "seating color",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black chairs lack visual warmth and could be perceived as intimidating, which is counterproductive to a casual hangout."
+    },
+    {
+      "name": "yellow accents",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Yellow accents on the wall add a touch of vibrancy and warmth to the otherwise monochromatic setting."
+    },
+    {
+      "name": "whiteboard",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A whiteboard suggests a formal meeting or presentation setup, which is not conducive to a casual hangout."
+    }
+  ],
+  "reasoning_summary": "The seating arrangement and color scheme of the chairs are not conducive to a casual hangout. However, the yellow accents on the wall add a touch of vibrancy and warmth to the otherwise monochromatic setting. The presence of a whiteboard suggests a formal meeting or presentation setup, which is not conducive to a casual hangout. Overall, the space is marginally suitable for a casual hangout.",
+  "_meta": {
+    "image_id": "ai_053_007_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_007\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.59,
+    "attempt": 1
+  }
+}

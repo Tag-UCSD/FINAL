@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "dining table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A dining table can serve as a shared surface for casual conversation."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White chairs are neutral and do not distract from the conversation."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and a view, enhancing the social atmosphere."
+    },
+    {
+      "name": "ceiling lights",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Ceiling lights provide even illumination without glare."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An open layout allows easy conversation flow between different areas."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is moderately suitable for casual conversation / hangout. The presence of a dining table and white chairs provides a functional setup for conversation. Large windows and ceiling lights contribute to a pleasant atmosphere. However, the lack of a dedicated seating area and the open layout might make it challenging to maintain a focused conversation in a larger setting.",
+  "_meta": {
+    "image_id": "ai_021_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_021_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.8,
+    "attempt": 1
+  }
+}

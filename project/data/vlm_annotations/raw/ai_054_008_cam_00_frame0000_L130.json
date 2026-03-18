@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "staircase",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The staircase obstructs direct line-of-sight between potential conversational partners."
+    },
+    {
+      "name": "bookshelves",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Bookshelves can serve as a backdrop for casual conversation, adding a conversational topic."
+    },
+    {
+      "name": "large windows",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, enhancing the social atmosphere."
+    },
+    {
+      "name": "glass railings",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Glass railings are unobtrusive and do not block the view, maintaining a clear sightline."
+    },
+    {
+      "name": "black tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Black tiles can be perceived as cold and formal, potentially discouraging casual conversation."
+    },
+    {
+      "name": "white carpet",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "White carpet is clean and inviting, promoting a welcoming atmosphere for casual hangouts."
+    }
+  ],
+  "reasoning_summary": "The staircase obstructs direct line-of-sight, but the large windows and glass railings enhance the social atmosphere. The black tiles could be perceived as cold, while the white carpet is inviting. Overall, the space is marginally suitable for casual conversation, with some positive features offsetting the negative ones.",
+  "_meta": {
+    "image_id": "ai_054_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_054_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.86,
+    "attempt": 1
+  }
+}

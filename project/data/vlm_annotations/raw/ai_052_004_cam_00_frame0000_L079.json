@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "dining tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Dining tables are not suitable for cooking activities due to their height and lack of practical workspace."
+    },
+    {
+      "name": "chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Chairs are designed for dining, not cooking, and do not provide a suitable working height or surface."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Hard flooring can be slippery when wet, posing a safety hazard during cooking activities."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Large windows allow natural light but also pose a risk of heat loss and drafts during cooking."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make it difficult to reach items on high shelves or hanging items, affecting efficiency."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for daily cooking activities. While there are dining tables and chairs, they are not suitable for cooking due to their height and lack of practical workspace. The hard flooring poses a safety hazard, and the large windows and high ceilings can create challenges during cooking. Overall, the space is not optimally suited for daily cooking tasks.",
+  "_meta": {
+    "image_id": "ai_052_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_052_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.78,
+    "attempt": 1
+  }
+}

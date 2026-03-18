@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "three white sofas",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Three white sofas provide ample seating for multiple people, facilitating casual conversation."
+    },
+    {
+      "name": "glass coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A glass coffee table can serve as a shared surface for drinks and small objects during casual conversations."
+    },
+    {
+      "name": "white armchair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "An armchair provides additional seating, allowing for a more intimate conversation setting."
+    },
+    {
+      "name": "vase with flowers",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A vase with flowers adds a touch of warmth and liveliness to the space, enhancing the casual atmosphere."
+    },
+    {
+      "name": "floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A floor lamp provides ambient lighting, creating a comfortable and inviting environment for casual conversations."
+    },
+    {
+      "name": "open layout",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The open layout allows for easy movement and conversation between people seated on the sofas."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversation with ample seating, a shared surface, and a welcoming ambiance. However, the lack of a central coffee table and the presence of only one armchair limit the potential for a fully immersive hangout experience. A score of 5 reflects these strengths and limitations.",
+  "_meta": {
+    "image_id": "ai_004_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_004_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 15.03,
+    "attempt": 1
+  }
+}

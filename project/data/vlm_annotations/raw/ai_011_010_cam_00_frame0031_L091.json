@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 3,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "white high-top tables",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High-top tables are not suitable for extended computer work as they do not provide a flat surface for a keyboard and monitor."
+    },
+    {
+      "name": "white bar stools",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Bar stools are not ergonomic for extended periods and do not provide a comfortable seating position for computer work."
+    },
+    {
+      "name": "no flat personal work surface",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "There is no flat surface at sitting height to set up a computer workstation."
+    },
+    {
+      "name": "no ergonomic seating",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No chairs or seating options are present that would be suitable for extended computer work."
+    },
+    {
+      "name": "no dedicated workspace layout",
+      "type": "layout",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "The layout is open and lacks a dedicated area for computer work."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). The presence of high-top tables and bar stools suggests it is designed for social activities rather than work. There is no flat surface or ergonomic seating available, making it difficult to set up a proper workstation. The layout is open and lacks a dedicated workspace, further undermining its suitability for solo computer work.",
+  "_meta": {
+    "image_id": "ai_011_010_cam_00_frame0031",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_011_010\\images\\scene_cam_00_final_preview\\frame.0031.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.86,
+    "attempt": 1
+  }
+}

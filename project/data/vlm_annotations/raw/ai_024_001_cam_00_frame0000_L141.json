@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "arched ceiling",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The high ceiling can make it difficult to see oneself in a mirror, which is essential for self-correction during yoga."
+    },
+    {
+      "name": "large windows",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Natural light from the windows can create a calming atmosphere conducive to yoga practice."
+    },
+    {
+      "name": "high ceilings",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "High ceilings can make it difficult to see oneself in a mirror, which is essential for self-correction during yoga."
+    },
+    {
+      "name": "arched windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The arches could potentially obstruct natural light and create shadows, which can be distracting during yoga."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for yoga due to the high ceilings and arches, which can make it difficult to see oneself in a mirror. However, the large windows provide natural light, which is beneficial for creating a calming atmosphere. The score is 4 because the negative factors outweigh the positive ones, but the presence of natural light is a significant positive aspect.",
+  "_meta": {
+    "image_id": "ai_024_001_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_024_001\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.35,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The bed is large and takes up a significant portion of the room, leaving limited space for computer work."
+    },
+    {
+      "name": "chair",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "There is a chair available for sitting, which is essential for computer work."
+    },
+    {
+      "name": "desk",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No desk is visible, which is necessary for placing a computer and other work-related items."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The window allows natural light to enter, which can improve mood and productivity."
+    }
+  ],
+  "reasoning_summary": "The room has a bed and a chair, which are positive aspects for computer work. However, the lack of a desk and the presence of a large bed negatively impact the suitability for computer work.",
+  "_meta": {
+    "image_id": "ai_035_002_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_002\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 25.21,
+    "attempt": 2
+  }
+}

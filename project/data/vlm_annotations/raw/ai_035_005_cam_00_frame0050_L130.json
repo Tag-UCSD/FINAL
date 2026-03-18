@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "bed",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A bed is not suitable for casual conversation due to its primary function as a sleeping area."
+    },
+    {
+      "name": "window-blind",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The window blind obstructs natural light and view, making the space feel less inviting for social interaction."
+    },
+    {
+      "name": "teddy bear",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A stuffed toy is not conducive to a social hangout setting."
+    },
+    {
+      "name": "table-merged",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A small table is not suitable for a social hangout due to its limited surface area."
+    },
+    {
+      "name": "pillow",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Pillows are not suitable for a social hangout setting."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for casual conversation / hangout due to the presence of a bed, window blind, stuffed toy, small table, and pillows, which are not conducive to a social hangout setting. A score of 4 indicates that while some elements could be improved, the space is not ideally suited for the activity.",
+  "_meta": {
+    "image_id": "ai_035_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_035_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.29,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 4,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bubbling hot tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "A bubbling hot tub is not suitable for yoga or stretching due to its potential to cause injury or discomfort."
+    },
+    {
+      "name": "towel on edge of hot tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    },
+    {
+      "name": "vase on edge of hot tub",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A vase on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    },
+    {
+      "name": "towel on edge of hot tub",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Towels on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    },
+    {
+      "name": "vase on edge of hot tub",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Vases on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    },
+    {
+      "name": "towel on edge of hot tub",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Towels on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    },
+    {
+      "name": "vase on edge of hot tub",
+      "type": "lighting",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "Vases on the edge of a hot tub can pose a slipping hazard, making it unsafe for yoga or stretching."
+    }
+  ],
+  "reasoning_summary": "The presence of a bubbling hot tub and associated hazards (towels and vases) makes this space marginally adequate for yoga or stretching. The score of 4 reflects the significant risk posed by the hot tub and the potential for injury or discomfort.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0050",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0050.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 18.96,
+    "attempt": 1
+  }
+}

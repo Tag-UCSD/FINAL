@@ -1,0 +1,40 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 1,
+  "indicators": [
+    {
+      "name": "Large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Large windows allow natural light to enter, reducing the need for artificial lighting."
+    },
+    {
+      "name": "White walls",
+      "type": "spatial",
+      "polarity": "neutral",
+      "strength": 2,
+      "rationale": "White walls reflect light, creating a bright environment."
+    },
+    {
+      "name": "Towel",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A towel is not directly related to computer work but could be seen as a distraction."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for computer work due to the presence of large windows providing natural light and white walls reflecting light, but the towel could be considered a distraction.",
+  "_validation_errors": [
+    "indicators[1].polarity invalid: 'neutral'"
+  ],
+  "_meta": {
+    "image_id": "ai_022_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_022_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 24.63,
+    "attempt": 2
+  }
+}

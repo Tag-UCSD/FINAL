@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 2,
+  "confidence": 0.85,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Rows of chairs and tables are designed for sitting and working, not sleeping."
+    },
+    {
+      "name": "lack of personal storage",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No personal storage like a nightstand or closet is present."
+    },
+    {
+      "name": "hard floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "A hard floor is not comfortable for sleeping."
+    },
+    {
+      "name": "no windows",
+      "type": "spatial",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "No natural light or view to the outside."
+    }
+  ],
+  "reasoning_summary": "The space is designed for sitting and working, not sleeping. The lack of personal storage, hard floor, and absence of windows make it unsuitable for primary sleep.",
+  "_meta": {
+    "image_id": "ai_053_010_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_053_010\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 10.0,
+    "attempt": 1
+  }
+}

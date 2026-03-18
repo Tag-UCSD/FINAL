@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "couch",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The couch occupies a significant portion of the floor space, leaving little room for a yoga mat."
+    },
+    {
+      "name": "mirror",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A mirror can be used for self-assessment and posture correction during yoga practice."
+    },
+    {
+      "name": "rug",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The rug partially covers the floor, reducing the available space for a yoga mat."
+    },
+    {
+      "name": "chandelier",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chandelier could be a distraction during a focused yoga practice."
+    },
+    {
+      "name": "ceiling",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The ceiling height is adequate for yoga practice."
+    },
+    {
+      "name": "floor",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor appears to be smooth and suitable for yoga mat placement."
+    }
+  ],
+  "reasoning_summary": "The space is moderately suitable for yoga, with some negative factors such as the couch and rug occupying floor space, and a chandelier that could be a distraction. However, the presence of a mirror and adequate ceiling height contribute positively to the suitability.",
+  "_meta": {
+    "image_id": "ai_017_005_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_017_005\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.0,
+    "attempt": 1
+  }
+}

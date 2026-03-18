@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L091",
+  "affordance_name": "Computer Work (Solo)",
+  "score": 4,
+  "confidence": 0.92,
+  "indicators": [
+    {
+      "name": "white dining table",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The table is too small and lacks a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "white chairs",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The chairs are not designed for extended computer use and do not provide ergonomic support."
+    },
+    {
+      "name": "orange kitchen cabinets",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The cabinets are not a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "window",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The window provides natural light and a view, which can be beneficial for concentration."
+    },
+    {
+      "name": "white radiator",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The radiator is not a flat surface suitable for a computer workstation."
+    },
+    {
+      "name": "white floor",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 1,
+      "rationale": "The floor is not a flat surface suitable for a computer workstation."
+    }
+  ],
+  "reasoning_summary": "The indoor scene is marginally adequate for computer work (solo). While there is a window providing natural light and a view, the available furniture does not provide a suitable flat surface or ergonomic support for extended computer use. The presence of kitchen cabinets and a radiator further limits the space's potential as a dedicated workspace.",
+  "_meta": {
+    "image_id": "ai_030_003_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_030_003\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.64,
+    "attempt": 1
+  }
+}

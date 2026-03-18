@@ -1,0 +1,58 @@
+{
+  "affordance_id": "L079",
+  "affordance_name": "Cook (Daily)",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "kitchen island with bar stools",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen island provides a hard surface for food preparation and dining, which is essential for daily cooking."
+    },
+    {
+      "name": "stainless steel kitchen sink",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The sink is essential for food preparation, washing, and cleanup."
+    },
+    {
+      "name": "granite countertops",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Granite countertops provide a hard, durable surface for food preparation."
+    },
+    {
+      "name": "stove and oven",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The stove and oven are essential for cooking food."
+    },
+    {
+      "name": "refrigerator",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The refrigerator is essential for storing food."
+    },
+    {
+      "name": "hard flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Hard flooring is easy to clean and maintain, which is important for a kitchen."
+    }
+  ],
+  "reasoning_summary": "The space is marginally adequate for daily cooking, as it has essential kitchen appliances and surfaces, but lacks a dedicated cooking area and sufficient hard prep surfaces. The score is 3 out of 7.",
+  "_meta": {
+    "image_id": "ai_050_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_050_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 14.05,
+    "attempt": 1
+  }
+}

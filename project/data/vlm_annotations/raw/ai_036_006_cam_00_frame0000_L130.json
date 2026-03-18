@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L130",
+  "affordance_name": "Casual Conversation / Hangout",
+  "score": 5,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "seating arrangement",
+      "type": "layout",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The seating arrangement is sociopetal, with chairs facing each other, promoting natural conversation."
+    },
+    {
+      "name": "coffee table",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "A central coffee table provides a shared surface for conversation and casual items."
+    },
+    {
+      "name": "soft seating",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Soft seating encourages relaxation and comfort, essential for casual conversations."
+    },
+    {
+      "name": "large windows",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Large windows allow natural light and views, enhancing the casual atmosphere."
+    },
+    {
+      "name": "artwork on walls",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 1,
+      "rationale": "Artwork adds a personal touch, making the space feel more inviting."
+    }
+  ],
+  "reasoning_summary": "The scene is well-suited for casual conversations with a sociopetal seating arrangement, central coffee table, and soft seating. Large windows and artwork add to the inviting atmosphere. However, the presence of workstations and computers suggests a mixed-use space, which slightly undermines the pure casual hangout potential.",
+  "_meta": {
+    "image_id": "ai_036_006_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_036_006\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 12.93,
+    "attempt": 1
+  }
+}

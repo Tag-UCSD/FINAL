@@ -1,0 +1,44 @@
+{
+  "affordance_id": "L141",
+  "affordance_name": "Yoga / Stretching",
+  "score": 3,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "hardwood flooring",
+      "type": "surface",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "Hardwood flooring provides a smooth, non-slip surface suitable for placing a yoga mat."
+    },
+    {
+      "name": "ample counter space",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The kitchen counter provides a flat surface for placing yoga mats or other props."
+    },
+    {
+      "name": "cabinets and shelves",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "Cabinets and shelves can obstruct the floor space and create visual clutter, which is not conducive to a calming yoga environment."
+    },
+    {
+      "name": "kitchen appliances",
+      "type": "object",
+      "polarity": "negative",
+      "strength": 3,
+      "rationale": "Kitchen appliances like the oven and stove can be dangerous if accidentally activated during yoga practice."
+    }
+  ],
+  "reasoning_summary": "The kitchen has a hardwood floor suitable for yoga practice, ample counter space for props, and cabinets and appliances that could potentially obstruct the floor space. However, the presence of kitchen appliances and cluttered cabinets and shelves negatively impacts the suitability of this space for yoga.",
+  "_meta": {
+    "image_id": "ai_002_004_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_002_004\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 11.56,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 5,
+  "confidence": 0.95,
+  "indicators": [
+    {
+      "name": "bed with pillows and blankets",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 3,
+      "rationale": "The bed is the primary artifact for sleep, providing a comfortable resting surface."
+    },
+    {
+      "name": "soft lighting from floor lamp",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The floor lamp provides a warm, dimmable light conducive to sleep."
+    },
+    {
+      "name": "closed windows with curtains",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "Closed windows with curtains provide privacy and light control, essential for quality sleep."
+    },
+    {
+      "name": "low-traffic layout",
+      "type": "spatial",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The low-traffic layout minimizes disturbance, supporting a peaceful sleep environment."
+    },
+    {
+      "name": "cozy furniture arrangement",
+      "type": "object",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The furniture arrangement creates a cozy, inviting atmosphere conducive to relaxation and sleep."
+    }
+  ],
+  "reasoning_summary": "This is a well-suited residential bedroom for sleep. The bed with soft textiles, closed windows, and low-traffic layout all strongly support the primary sleep activity. The presence of a floor lamp and cozy furniture arrangement further enhances the suitability, earning a score of 5 out of 7.",
+  "_meta": {
+    "image_id": "ai_048_008_cam_00_frame0000",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_048_008\\images\\scene_cam_00_final_preview\\frame.0000.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 13.14,
+    "attempt": 1
+  }
+}

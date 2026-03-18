@@ -1,0 +1,30 @@
+{
+  "affordance_id": "L059",
+  "affordance_name": "Sleep (Primary)",
+  "score": 4,
+  "confidence": 0.9,
+  "indicators": [
+    {
+      "name": "Soft lighting",
+      "type": "lighting",
+      "polarity": "positive",
+      "strength": 2,
+      "rationale": "The soft lighting creates a calming atmosphere conducive to sleep."
+    },
+    {
+      "name": "Dark brown tiles",
+      "type": "surface",
+      "polarity": "negative",
+      "strength": 2,
+      "rationale": "The dark brown tiles may absorb more heat, potentially making the room feel warmer than desired."
+    }
+  ],
+  "reasoning_summary": "The space has soft lighting and dark brown tiles, which can create a calming atmosphere for sleep, but the tiles might absorb heat, potentially making the room warmer than desired.",
+  "_meta": {
+    "image_id": "ai_007_005_cam_00_frame0099",
+    "image_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\data\\hypersim_pilot_420\\scenes\\ai_007_005\\images\\scene_cam_00_final_preview\\frame.0099.tonemap.jpg",
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct-AWQ",
+    "latency_s": 22.73,
+    "attempt": 2
+  }
+}
