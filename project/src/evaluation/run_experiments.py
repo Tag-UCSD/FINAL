@@ -394,8 +394,14 @@ def experiment3_cnn_ablation() -> None:
         pivot = pivot[ordered_cols]
 
         fig, ax = plt.subplots(figsize=(7, 3))
-        sns.heatmap(pivot, annot=True, fmt=".4f", cmap="YlOrRd",
-                    ax=ax, cbar_kws={"label": "Test RMSE"}, linewidths=0.5)
+        if pivot.empty or np.isnan(pivot.to_numpy(dtype=float)).all():
+            ax.text(0.5, 0.5, "CNN results not available",
+                    ha="center", va="center", transform=ax.transAxes)
+            ax.set_xticks([])
+            ax.set_yticks([])
+        else:
+            sns.heatmap(pivot, annot=True, fmt=".4f", cmap="YlOrRd",
+                        ax=ax, cbar_kws={"label": "Test RMSE"}, linewidths=0.5)
         ax.set_title(f"CNN Test RMSE — {aff_id}\n(rows: architecture, cols: learning rate)")
         ax.set_xlabel("Learning Rate")
         ax.set_ylabel("Architecture")

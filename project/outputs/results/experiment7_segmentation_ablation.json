@@ -1,0 +1,15 @@
+{
+  "experiment": "Experiment 7 \u2014 Segmentation Mask Ablation",
+  "status": "planned_work",
+  "description": "Compare Model B RMSE when trained on features extracted from (a) Mask2Former predicted panoptic masks vs (b) Hypersim ground-truth semantic masks. GT masks require downloading the full Hypersim panoptic annotations from the official dataset and re-running src/features/extract_features.py with a gt_mask=True flag.",
+  "gt_masks_available": true,
+  "planned_steps": [
+    "1. Download Hypersim GT semantic/instance annotations.",
+    "2. Run extract_features.py --use-gt-masks to produce features_raw_gt.parquet.",
+    "3. Re-run assemble_dataset.py with the GT features.",
+    "4. Re-train Model B (same best HPs from Optuna search) on GT features.",
+    "5. Compare RMSE: predicted-mask model vs GT-mask model per affordance.",
+    "6. Plot paired bar chart of RMSE differences."
+  ],
+  "expected_outcome": "GT masks should reduce noise in spatial distance features and improve RMSE, but the gap may be small for presence/count features since Mask2Former is already high-quality on Hypersim indoor scenes."
+}

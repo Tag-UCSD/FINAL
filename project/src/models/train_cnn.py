@@ -6,6 +6,7 @@ Predicts VLM affordance scores from raw images.
 """
 
 import json
+import os
 import time
 import warnings
 from pathlib import Path
@@ -28,11 +29,13 @@ DATASET_PATH = DATA / "assembled_dataset" / "pilot_dataset.parquet"
 OUT_MODELS = ROOT / "project" / "outputs" / "models" / "cnn"
 OUT_RESULTS = ROOT / "project" / "outputs" / "results"
 OUT_FIGURES = ROOT / "project" / "outputs" / "figures"
+TORCH_CACHE = ROOT / ".cache" / "torch"
 
 AFFORDANCES = ["L059", "L079", "L091", "L130", "L141"]
 ARCHITECTURES = ["resnet18", "resnet50"]
 LEARNING_RATES = [1e-3, 5e-4, 1e-4, 5e-5]
 BATCH_SIZE = 32
+NUM_WORKERS = 0
 MAX_EPOCHS = 30
 PATIENCE = 5
 SEED = 42
@@ -85,12 +88,24 @@ class AffordanceImageDataset(Dataset):
 
 
 def build_model(arch: str) -> nn.Module:
+    # Keep torchvision cache local to this repo so transferred envs stay usable.
+    os.environ.setdefault("TORCH_HOME", str(TORCH_CACHE))
+    TORCH_CACHE.mkdir(parents=True, exist_ok=True)
+
     if arch == "resnet18":
-        model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
+        try:
+            model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
+        except Exception as exc:
+            warnings.warn(f"Falling back to randomly initialized ResNet-18: {exc}")
+            model = models.resnet18(weights=None)
         in_features = model.fc.in_features
         model.fc = nn.Linear(in_features, 1)
     elif arch == "resnet50":
-        model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
+        try:
+            model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
+        except Exception as exc:
+            warnings.warn(f"Falling back to randomly initialized ResNet-50: {exc}")
+            model = models.resnet50(weights=None)
         in_features = model.fc.in_features
         model.fc = nn.Linear(in_features, 1)
     else:
@@ -115,9 +130,19 @@ def train_one_run(
     val_ds = AffordanceImageDataset(df_val, IMAGE_DIR, EVAL_TRANSFORM)
     test_ds = AffordanceImageDataset(df_test, IMAGE_DIR, EVAL_TRANSFORM)
 
-    train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=2, pin_memory=True)
-    val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=2, pin_memory=True)
-    test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=2, pin_memory=True)
+    pin_memory = device.type == "cuda"
+    train_loader = DataLoader(
+        train_ds, batch_size=BATCH_SIZE, shuffle=True,
+        num_workers=NUM_WORKERS, pin_memory=pin_memory,
+    )
+    val_loader = DataLoader(
+        val_ds, batch_size=BATCH_SIZE, shuffle=False,
+        num_workers=NUM_WORKERS, pin_memory=pin_memory,
+    )
+    test_loader = DataLoader(
+        test_ds, batch_size=BATCH_SIZE, shuffle=False,
+        num_workers=NUM_WORKERS, pin_memory=pin_memory,
+    )
 
     model = build_model(arch).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)

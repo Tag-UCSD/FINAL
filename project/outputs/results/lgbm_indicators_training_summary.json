@@ -1,0 +1,167 @@
+[
+  {
+    "affordance_id": "L059",
+    "best_cv_rmse": 0.8467,
+    "val_metrics": {
+      "rmse": 0.3331,
+      "mae": 0.2505,
+      "pearson_r": 0.9735,
+      "spearman_rho": 0.9429
+    },
+    "test_metrics": {
+      "rmse": 0.6658,
+      "mae": 0.5407,
+      "pearson_r": 0.8005,
+      "spearman_rho": 0.7609
+    },
+    "best_params": {
+      "num_leaves": 206,
+      "max_depth": 4,
+      "learning_rate": 0.026671783684815473,
+      "n_estimators": 437,
+      "subsample": 0.7895284146289874,
+      "colsample_bytree": 0.8311356799254843,
+      "reg_alpha": 2.2536483122623824e-08,
+      "reg_lambda": 0.0009759750646269498,
+      "min_child_samples": 5,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features_total": 598,
+    "n_indicator_features": 288,
+    "search_time_s": 14.3
+  },
+  {
+    "affordance_id": "L079",
+    "best_cv_rmse": 0.5058,
+    "val_metrics": {
+      "rmse": 0.0316,
+      "mae": 0.0225,
+      "pearson_r": 0.9997,
+      "spearman_rho": 0.7433
+    },
+    "test_metrics": {
+      "rmse": 0.5231,
+      "mae": 0.279,
+      "pearson_r": 0.9237,
+      "spearman_rho": 0.7295
+    },
+    "best_params": {
+      "num_leaves": 142,
+      "max_depth": 12,
+      "learning_rate": 0.2668392747053027,
+      "n_estimators": 194,
+      "subsample": 0.6040966745787396,
+      "colsample_bytree": 0.8193860349492589,
+      "reg_alpha": 0.3870018716090272,
+      "reg_lambda": 6.2777779604584385,
+      "min_child_samples": 5,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features_total": 450,
+    "n_indicator_features": 140,
+    "search_time_s": 12.0
+  },
+  {
+    "affordance_id": "L091",
+    "best_cv_rmse": 0.7251,
+    "val_metrics": {
+      "rmse": 0.2368,
+      "mae": 0.1767,
+      "pearson_r": 0.9588,
+      "spearman_rho": 0.7122
+    },
+    "test_metrics": {
+      "rmse": 0.8131,
+      "mae": 0.5837,
+      "pearson_r": 0.5954,
+      "spearman_rho": 0.5655
+    },
+    "best_params": {
+      "num_leaves": 199,
+      "max_depth": 3,
+      "learning_rate": 0.05155924838850251,
+      "n_estimators": 341,
+      "subsample": 0.6821079065051647,
+      "colsample_bytree": 0.6094709664606969,
+      "reg_alpha": 0.00014590323686836207,
+      "reg_lambda": 0.0001454344149697105,
+      "min_child_samples": 5,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features_total": 578,
+    "n_indicator_features": 268,
+    "search_time_s": 15.7
+  },
+  {
+    "affordance_id": "L130",
+    "best_cv_rmse": 0.7417,
+    "val_metrics": {
+      "rmse": 0.4791,
+      "mae": 0.3491,
+      "pearson_r": 0.8842,
+      "spearman_rho": 0.8644
+    },
+    "test_metrics": {
+      "rmse": 0.8127,
+      "mae": 0.6257,
+      "pearson_r": 0.724,
+      "spearman_rho": 0.7309
+    },
+    "best_params": {
+      "num_leaves": 164,
+      "max_depth": 3,
+      "learning_rate": 0.0353942432391074,
+      "n_estimators": 284,
+      "subsample": 0.6273184287023637,
+      "colsample_bytree": 0.3664977859091364,
+      "reg_alpha": 0.024258190676820973,
+      "reg_lambda": 0.004488094774675141,
+      "min_child_samples": 6,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features_total": 590,
+    "n_indicator_features": 280,
+    "search_time_s": 18.1
+  },
+  {
+    "affordance_id": "L141",
+    "best_cv_rmse": 0.9184,
+    "val_metrics": {
+      "rmse": 0.2421,
+      "mae": 0.1863,
+      "pearson_r": 0.9835,
+      "spearman_rho": 0.9528
+    },
+    "test_metrics": {
+      "rmse": 1.0024,
+      "mae": 0.7926,
+      "pearson_r": 0.5816,
+      "spearman_rho": 0.5272
+    },
+    "best_params": {
+      "num_leaves": 176,
+      "max_depth": 3,
+      "learning_rate": 0.12753903546719042,
+      "n_estimators": 401,
+      "subsample": 0.6917457441514396,
+      "colsample_bytree": 0.4848865958436558,
+      "reg_alpha": 0.006792598282263358,
+      "reg_lambda": 1.6741244604639731,
+      "min_child_samples": 13,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features_total": 582,
+    "n_indicator_features": 272,
+    "search_time_s": 13.2
+  }
+]

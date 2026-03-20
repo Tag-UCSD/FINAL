@@ -1,0 +1,101 @@
+{
+  "dataset": {
+    "n_images": 420,
+    "n_rows": 2100,
+    "affordance_ids": [
+      "L059",
+      "L079",
+      "L091",
+      "L130",
+      "L141"
+    ],
+    "split_counts": {
+      "train": 1490,
+      "val": 190,
+      "test": 420
+    }
+  },
+  "best_model_per_affordance": {
+    "L059": {
+      "model": "Indicator-LGBM",
+      "rmse": 0.6658,
+      "mae": 0.5407,
+      "pearson_r": 0.8005,
+      "spearman_rho": 0.7609
+    },
+    "L079": {
+      "model": "Indicator-LGBM",
+      "rmse": 0.5231,
+      "mae": 0.279,
+      "pearson_r": 0.9237,
+      "spearman_rho": 0.7295
+    },
+    "L091": {
+      "model": "Indicator-LGBM",
+      "rmse": 0.8131,
+      "mae": 0.5837,
+      "pearson_r": 0.5954,
+      "spearman_rho": 0.5655
+    },
+    "L130": {
+      "model": "Indicator-LGBM",
+      "rmse": 0.8127,
+      "mae": 0.6257,
+      "pearson_r": 0.724,
+      "spearman_rho": 0.7309
+    },
+    "L141": {
+      "model": "Indicator-LGBM",
+      "rmse": 1.0024,
+      "mae": 0.7926,
+      "pearson_r": 0.5816,
+      "spearman_rho": 0.5272
+    }
+  },
+  "best_overall": {
+    "model": "Indicator-LGBM",
+    "mean_rmse": 0.7634,
+    "per_affordance_rmse": {
+      "L059": 0.6658,
+      "L079": 0.5231,
+      "L091": 0.8131,
+      "L130": 0.8127,
+      "L141": 1.0024
+    }
+  },
+  "model_d_vs_b_delta": {
+    "L059": {
+      "delta_rmse": -0.1481,
+      "delta_mae": -0.1174,
+      "delta_pearson_r": 0.1045,
+      "wilcoxon_p": 0.0005
+    },
+    "L079": {
+      "delta_rmse": -0.2526,
+      "delta_mae": -0.2665,
+      "delta_pearson_r": 0.1195,
+      "wilcoxon_p": 0.0
+    },
+    "L091": {
+      "delta_rmse": -0.3273,
+      "delta_mae": -0.2071,
+      "delta_pearson_r": 0.7516,
+      "wilcoxon_p": 0.0036
+    },
+    "L130": {
+      "delta_rmse": -0.1658,
+      "delta_mae": -0.1682,
+      "delta_pearson_r": 0.1375,
+      "wilcoxon_p": 0.0
+    },
+    "L141": {
+      "delta_rmse": -0.1727,
+      "delta_mae": -0.1196,
+      "delta_pearson_r": 0.1786,
+      "wilcoxon_p": 0.0812
+    },
+    "_mean_delta_rmse": -0.2133,
+    "_interpretation": "Negative delta_rmse means Model D (Indicator-LGBM) outperforms Model B (LGBM)."
+  },
+  "total_compute_time_s": 11.0
+}

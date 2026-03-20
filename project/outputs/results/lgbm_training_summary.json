@@ -1,0 +1,167 @@
+[
+  {
+    "affordance_id": "L059",
+    "best_cv_rmse": 0.8821,
+    "val_metrics": {
+      "rmse": 0.2563,
+      "mae": 0.1955,
+      "pearson_r": 0.9859,
+      "spearman_rho": 0.9457
+    },
+    "test_metrics": {
+      "rmse": 0.8139,
+      "mae": 0.6581,
+      "pearson_r": 0.696,
+      "spearman_rho": 0.6535
+    },
+    "best_params": {
+      "num_leaves": 91,
+      "max_depth": 4,
+      "learning_rate": 0.06427951007742644,
+      "n_estimators": 276,
+      "subsample": 0.5000273776497931,
+      "colsample_bytree": 0.4804751308985808,
+      "reg_alpha": 9.100692243947236e-08,
+      "reg_lambda": 6.407456161258021e-07,
+      "min_child_samples": 13,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features": 310,
+    "search_time_s": 10.3,
+    "model_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\outputs\\models\\lgbm\\L059\\lgbm_model.pkl"
+  },
+  {
+    "affordance_id": "L079",
+    "best_cv_rmse": 0.815,
+    "val_metrics": {
+      "rmse": 0.043,
+      "mae": 0.0314,
+      "pearson_r": 0.9992,
+      "spearman_rho": 0.7433
+    },
+    "test_metrics": {
+      "rmse": 0.7757,
+      "mae": 0.5455,
+      "pearson_r": 0.8042,
+      "spearman_rho": 0.5942
+    },
+    "best_params": {
+      "num_leaves": 237,
+      "max_depth": 11,
+      "learning_rate": 0.06800394261072641,
+      "n_estimators": 146,
+      "subsample": 0.9341429541081163,
+      "colsample_bytree": 0.3565640200602604,
+      "reg_alpha": 0.22128917252743874,
+      "reg_lambda": 9.599067371063075e-08,
+      "min_child_samples": 6,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features": 310,
+    "search_time_s": 12.4,
+    "model_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\outputs\\models\\lgbm\\L079\\lgbm_model.pkl"
+  },
+  {
+    "affordance_id": "L091",
+    "best_cv_rmse": 0.9195,
+    "val_metrics": {
+      "rmse": 0.4122,
+      "mae": 0.2938,
+      "pearson_r": 0.871,
+      "spearman_rho": 0.6799
+    },
+    "test_metrics": {
+      "rmse": 1.1404,
+      "mae": 0.7908,
+      "pearson_r": -0.1562,
+      "spearman_rho": -0.0626
+    },
+    "best_params": {
+      "num_leaves": 41,
+      "max_depth": 4,
+      "learning_rate": 0.15925275661388258,
+      "n_estimators": 55,
+      "subsample": 0.9418119184536002,
+      "colsample_bytree": 0.3486473857229085,
+      "reg_alpha": 0.08183336271581884,
+      "reg_lambda": 2.8977607347492408e-05,
+      "min_child_samples": 7,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features": 310,
+    "search_time_s": 7.1,
+    "model_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\outputs\\models\\lgbm\\L091\\lgbm_model.pkl"
+  },
+  {
+    "affordance_id": "L130",
+    "best_cv_rmse": 0.8076,
+    "val_metrics": {
+      "rmse": 0.1525,
+      "mae": 0.112,
+      "pearson_r": 0.9913,
+      "spearman_rho": 0.9336
+    },
+    "test_metrics": {
+      "rmse": 0.9785,
+      "mae": 0.7939,
+      "pearson_r": 0.5865,
+      "spearman_rho": 0.5857
+    },
+    "best_params": {
+      "num_leaves": 219,
+      "max_depth": 4,
+      "learning_rate": 0.05038571745706107,
+      "n_estimators": 486,
+      "subsample": 0.6225654151521363,
+      "colsample_bytree": 0.4984212444915073,
+      "reg_alpha": 3.995955619354117e-08,
+      "reg_lambda": 0.005469456060763165,
+      "min_child_samples": 5,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features": 310,
+    "search_time_s": 13.7,
+    "model_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\outputs\\models\\lgbm\\L130\\lgbm_model.pkl"
+  },
+  {
+    "affordance_id": "L141",
+    "best_cv_rmse": 0.9649,
+    "val_metrics": {
+      "rmse": 0.2125,
+      "mae": 0.1737,
+      "pearson_r": 0.9872,
+      "spearman_rho": 0.9528
+    },
+    "test_metrics": {
+      "rmse": 1.1751,
+      "mae": 0.9122,
+      "pearson_r": 0.403,
+      "spearman_rho": 0.4033
+    },
+    "best_params": {
+      "num_leaves": 221,
+      "max_depth": 3,
+      "learning_rate": 0.18389800751984692,
+      "n_estimators": 434,
+      "subsample": 0.8111172709267197,
+      "colsample_bytree": 0.48052275388109217,
+      "reg_alpha": 1.5616362120295092e-08,
+      "reg_lambda": 4.561690679854262e-06,
+      "min_child_samples": 26,
+      "random_state": 42,
+      "n_jobs": -1,
+      "verbosity": -1
+    },
+    "n_features": 310,
+    "search_time_s": 8.8,
+    "model_path": "D:\\01_LabMemberWorkspace\\Danny\\Robust_Adaptive_Preference_GUI\\FINAL\\project\\outputs\\models\\lgbm\\L141\\lgbm_model.pkl"
+  }
+]
