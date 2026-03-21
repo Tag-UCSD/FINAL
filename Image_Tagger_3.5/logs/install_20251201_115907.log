@@ -1,0 +1,11 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+Traceback (most recent call last):
+  File "/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/scripts/hollow_repo_guard.py", line 18, in <module>
+    import yaml  # type: ignore
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'yaml'
+❌ Hollow Repo Guard failed

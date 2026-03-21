@@ -1,0 +1,70 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+📦 Installing host-side dependencies...
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+[hollow_repo_guard] OK: structure looks non-hollow.
+🧪 Running program integrity guard
+[program_integrity_guard] OK: no dangerous ellipses or uncontrolled stubs.
+🧯 Running syntax guard
+[syntax_guard] OK: all critical python files parse cleanly and contain no truncations.
+🪝 Running critical import guard
+[critical_import_guard] WARNINGS:
+  backend.science.pipeline: missing third-party dependency: numpy
+  backend.main: missing third-party dependency: fastapi
+[critical_import_guard] OK: critical modules import cleanly.
+🧪 Running canon guard
+[canon_guard] OK: registry keys covered by compute or stubs.
+🔒 Running Guardian (governance) checks
+[guardian] Verification FAILED:
+ - Protected file missing: backend/database/__pycache__/__init__.cpython-311.pyc
+ - Protected file missing: backend/database/__pycache__/core.cpython-311.pyc
+ - Protected file missing: backend/database/__pycache__/mixins.cpython-311.pyc
+ - Protected file hash changed: backend/models/__init__.py
+ - Protected file missing: backend/models/__pycache__/__init__.cpython-311.pyc
+ - Protected file missing: backend/models/__pycache__/annotation.cpython-311.pyc
+ - Protected file missing: backend/models/__pycache__/assets.cpython-311.pyc
+ - Protected file missing: backend/models/__pycache__/attribute.cpython-311.pyc
+ - Protected file missing: backend/models/__pycache__/config.cpython-311.pyc
+ - Protected file missing: backend/models/__pycache__/users.cpython-311.pyc
+ - Protected file hash changed: backend/models/annotation.py
+ - Protected file hash changed: backend/models/attribute.py
+ - Protected file missing: backend/science/__pycache__/__init__.cpython-311.pyc
+ - Protected file missing: backend/science/__pycache__/core.cpython-311.pyc
+ - Protected file missing: backend/science/__pycache__/perception.cpython-311.pyc
+ - Protected file missing: backend/science/__pycache__/pipeline.cpython-311.pyc
+ - Protected file missing: backend/science/__pycache__/vision.cpython-311.pyc
+ - Protected file missing: backend/science/context/__pycache__/cognitive.cpython-311.pyc
+ - Protected file missing: backend/science/context/__pycache__/social.cpython-311.pyc
+ - Protected file hash changed: backend/science/context/cognitive.py
+ - Protected file hash changed: backend/science/core.py
+ - Protected file missing: backend/science/math/__pycache__/color.cpython-311.pyc
+ - Protected file missing: backend/science/math/__pycache__/complexity.cpython-311.pyc
+ - Protected file missing: backend/science/math/__pycache__/fractals.cpython-311.pyc
+ - Protected file missing: backend/science/math/__pycache__/glcm.cpython-311.pyc
+ - Protected file hash changed: backend/science/math/color.py
+ - Protected file hash changed: backend/science/math/complexity.py
+ - Protected file hash changed: backend/science/math/fractals.py
+ - Protected file hash changed: backend/science/math/glcm.py
+ - Protected file hash changed: backend/science/pipeline.py
+ - Protected file missing: backend/science/spatial/__pycache__/isovist.cpython-311.pyc
+ - Protected file missing: backend/science/vision/__pycache__/materials.cpython-311.pyc
+ - Protected file missing: backend/science/vision/__pycache__/objects.cpython-311.pyc
+ - Protected file hash changed: backend/science/vision/materials.py
+ - Protected file hash changed: backend/science/vision/objects.py
+ - Protected file hash changed: frontend/apps/admin/src/App.jsx
+ - Protected file hash changed: frontend/apps/admin/src/main.jsx
+ - Protected file hash changed: frontend/apps/explorer/src/App.jsx
+ - Protected file hash changed: frontend/apps/explorer/src/main.jsx
+ - Protected file hash changed: frontend/apps/monitor/src/App.jsx
+ - Protected file hash changed: frontend/apps/monitor/src/main.jsx
+ - Protected file hash changed: frontend/apps/workbench/src/App.jsx
+ - Protected file hash changed: frontend/apps/workbench/src/main.jsx
+ - Protected file hash changed: frontend/shared/src/api-client.js
+ - Protected file hash changed: frontend/shared/src/index.js
+ - New root-level files detected: CANONICAL_ANCHOR.json, CHANGELOG_v3.4.23_tag_inspector.md, CHANGELOG_v3.4.24_tag_inspector_help.md, CHANGELOG_v3.4.25_role_help_strips.md, CHANGELOG_v3.4.27_priority_help.md, CHANGELOG_v3.4.28_pipeline_health_view.md, CHANGELOG_v3.4.30_pipeline_health_tests.md, CHANGELOG_v3.4.31_bn_canon_sanity.md, CHANGELOG_v3.4.32_restorativeness_H1.md, CHANGELOG_v3.4.36_upload_guard_and_bn_guard.md, CHANGELOG_v3.4.60_semantic_tags_vlm.md, CHANGELOG_v3.4.62_science_tag_coverage_enforced.md, CHANGELOG_v3.4.63_bn_db_tightening_and_health.md, CHANGELOG_v3.4.64_bn_db_migration_helper.md, Makefile, PROJECT_CONSTITUTION.md, STUDENT_START_HERE.md, VERSION, auto_install.sh, deconcat.py, deconcat_v3_3.py, release.keep.yml, requirements-install.txt, science_tag_coverage_v1.json
+❌ Guardian verification failed (rc=1). Aborting install.

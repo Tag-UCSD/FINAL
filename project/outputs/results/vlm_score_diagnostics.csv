@@ -1,0 +1,26 @@
+analysis,affordance_id,affordance_name,metric,value
+affordance_distribution,L059,Sleep,entropy_bits,2.2881
+affordance_distribution,L059,Sleep,fraction_score_1,0.0595
+affordance_distribution,L059,Sleep,fraction_score_7,0.0167
+affordance_distribution,L079,Cook,entropy_bits,1.1935
+affordance_distribution,L079,Cook,fraction_score_1,0.7405
+affordance_distribution,L079,Cook,fraction_score_7,0.0
+affordance_distribution,L091,Computer Work,entropy_bits,1.5532
+affordance_distribution,L091,Computer Work,fraction_score_1,0.0143
+affordance_distribution,L091,Computer Work,fraction_score_7,0.0
+affordance_distribution,L130,Conversation,entropy_bits,2.0017
+affordance_distribution,L130,Conversation,fraction_score_1,0.0095
+affordance_distribution,L130,Conversation,fraction_score_7,0.0024
+affordance_distribution,L141,Yoga/Stretching,entropy_bits,2.0271
+affordance_distribution,L141,Yoga/Stretching,fraction_score_1,0.0976
+affordance_distribution,L141,Yoga/Stretching,fraction_score_7,0.0024
+inter_affordance_correlation,L059-L079,Sleep vs Cook,pearson_r,-0.1884
+inter_affordance_correlation,L059-L091,Sleep vs Computer Work,pearson_r,0.164
+inter_affordance_correlation,L059-L130,Sleep vs Conversation,pearson_r,0.2793
+inter_affordance_correlation,L059-L141,Sleep vs Yoga/Stretching,pearson_r,0.4621
+inter_affordance_correlation,L079-L091,Cook vs Computer Work,pearson_r,0.0401
+inter_affordance_correlation,L079-L130,Cook vs Conversation,pearson_r,0.1615
+inter_affordance_correlation,L079-L141,Cook vs Yoga/Stretching,pearson_r,-0.1013
+inter_affordance_correlation,L091-L130,Computer Work vs Conversation,pearson_r,0.3051
+inter_affordance_correlation,L091-L141,Computer Work vs Yoga/Stretching,pearson_r,0.2027
+inter_affordance_correlation,L130-L141,Conversation vs Yoga/Stretching,pearson_r,0.1789

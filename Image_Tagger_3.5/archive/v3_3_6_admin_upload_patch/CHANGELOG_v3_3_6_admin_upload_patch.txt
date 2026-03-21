@@ -1,0 +1,4 @@
+v3.3.6 admin upload + version bump patch
+- Bumped VERSION and metadata files from 3.3.5 to 3.3.6.
+- Fixed Admin bulk upload endpoint path to /api/v1/admin/upload.
+- Preserved all prior files; this release is a strict superset of v3.3.5.

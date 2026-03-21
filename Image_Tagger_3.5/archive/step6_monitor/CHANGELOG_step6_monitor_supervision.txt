@@ -1,0 +1,9 @@
+Image Tagger v3.2.6 – Step 6: Supervisor Monitor wired to real data
+
+- Implemented backend/api/v1_supervision.py with:
+  * /v1/monitor/velocity → TaggerPerformance[]
+  * /v1/monitor/irr → IRRStat[]
+- Updated frontend/apps/monitor/src/App.jsx to call the real API:
+  * Uses ApiClient('/api/v1/monitor')
+  * Renders team velocity table and IRR table from live data
+- Ensured backend/main.py includes v1_supervision.router.

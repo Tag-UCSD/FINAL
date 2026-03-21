@@ -1,18 +1,7 @@
-% ============================================================
-%  main.tex  –  Affordance Prediction from Indoor Scenes via
-%               VLM Knowledge Distillation: A Pilot Study
-%
-%  NeurIPS 2025 format (falls back to article class if
-%  neurips_2025.sty is unavailable; see compilation note).
-% ============================================================
+\documentclass[10pt,twocolumn]{article}
 
-\documentclass{article}
-
-% NeurIPS 2025 style not found on this system; using article class with
-% NeurIPS-compatible layout as documented fallback (see compilation note).
-\usepackage[margin=1in,columnsep=0.25in]{geometry}
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
 \usepackage{times}
-
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -21,644 +10,583 @@
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{xcolor}
-\usepackage{caption}
 \usepackage{subcaption}
-
-% ---- bibliography ----
 \usepackage[numbers,sort&compress]{natbib}
 
-% ---- convenience macros ----
-\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
 \newcommand{\figref}[1]{Figure~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
 \newcommand{\secref}[1]{Section~\ref{#1}}
-\newcommand{\affordance}[1]{\textsc{#1}}
 \newcommand{\model}[1]{\textbf{#1}}
 
-% ---- metadata ----
-\title{Predicting Environmental Affordances from Indoor Scene Images\\
-       via Vision-Language Model Knowledge Distillation:\\
-       A Pilot Study}
+\title{Distilling VLM-Derived Indoor Affordance Scores\\
+from Synthetic Scene Images}
 
 \author{%
-  Anonymous Author(s)\\
+  Taggert Smith\\
   Department of Cognitive Science\\
   University of California San Diego
 }
 
 \begin{document}
-
 \maketitle
 
-% ============================================================
 \begin{abstract}
-% ============================================================
-Affordances—the action possibilities an environment offers an agent—are a
-central construct in ecological psychology and increasingly relevant to
-embodied AI.  Yet predicting them computationally from a single photograph
-remains challenging because they require integrating object identity, spatial
-configuration, and contextual reasoning.  We present a pilot knowledge-distillation
-pipeline that transfers affordance-scoring ability from a large vision-language
-model (Qwen2-VL-7B) into lightweight, interpretable predictors.  Starting from
-300 photorealistic synthetic images drawn from the Hypersim dataset, we segment
-each scene with Mask2Former, extract a 314-dimensional structured feature vector
-encoding object presence, counts, pairwise distances, and scene aggregates, and
-obtain continuous affordance scores for five target activities (Sleep, Cook,
-Computer Work, Casual Conversation, Yoga/Stretching) via structured VLM
-prompting.  We train three distilled models—Linear Regression (\model{A}),
-LightGBM (\model{B}), and a Multilayer Perceptron (\model{D})—against these
-VLM-generated labels.  \model{B} achieves a mean $R^{2}$ of 0.72 across all
-five affordances, with per-affordance $R^{2}$ ranging from 0.54 (Yoga) to 0.83
-(Sleep), demonstrating that structured scene features can reliably distill
-holistic VLM affordance judgments at a fraction of the inference cost.
+Affordances—actions made possible by the features of a space—are fundamental to design. 
+Thus, the ability to evaluate the design of a built environment depends on understanding the actions it affords.
+Affordance judgments depend on object identity, layout, clearance, and scene
+context, but obtaining dense human ratings is expensive. We therefore study a
+practical proxy question: how accurately can lightweight student models
+reproduce vision-language-model-derived affordance scores on synthetic indoor
+scenes?
+For our pilot study, using 420 Hypersim renderings held out by scene, we queried
+Qwen2-VL-7B for numeric 7-point scores and structured indicator checklists for five
+activities selected from an expert-curated taxonomy: Sleep, Cook, Computer Work, Casual
+Conversation, and Yoga/Stretching. We then trained student models on either raw
+RGB images or structured Mask2Former-derived scene features. 
+On the held-out test scenes, the best CNN checkpoint per affordance reached macro RMSE 1.120, a
+mean-prediction baseline reached 1.154, a linear regression baseline reached
+1.592, a LightGBM student on 310 structured features reached 0.977, and an
+indicator-augmented LightGBM student reached 0.765. Relative to Model B, Model
+D reduced RMSE on every affordance, with statistically significant gains on
+four of five tasks and the largest improvement on L091 Computer Work
+($\Delta$RMSE $=-0.328$, 95\% bootstrap CI $[-0.500,-0.154]$). A permutation
+control shows that indicator semantics drive most of the gain on L059, L079,
+and L091, though dimensionality contributes on L130 and L141. Under an
+auxiliary binary view defined by score $\geq 4$, Model D also attains the best
+macro F1 among the reproducible per-image baselines (0.679). We frame these
+results as evidence about distillation fidelity: lightweight tabular
+students can approximate the VLM teacher substantially better than image-only
+baselines on this synthetic benchmark, but correlation with human affordance
+ratings remains untested.
 \end{abstract}
 
-% ============================================================
 \section{Introduction}
 \label{sec:intro}
-% ============================================================
 
-\paragraph{Gibson's affordance concept.}
-In his landmark 1979 monograph, Gibson~\cite{Gibson1979} proposed that animals
-perceive their environment not merely as a geometric arrangement of surfaces but
-as a structured field of \emph{affordances}: action possibilities defined by the
-fit between an organism's capabilities and environmental properties.  A chair
-affords sitting; a staircase affords climbing; an open floor affords yoga.
-Crucially, affordances are relational—they depend on both the agent and the
-environment—and they are perceived \emph{directly} from visual information rather
-than inferred through symbolic reasoning.
+Gibson's theory of affordances describes environments in terms of the actions
+they make possible~\cite{Gibson1979}. For indoor scenes, that means a room may
+afford sleeping, cooking, working, socializing, or stretching depending on a
+combination of furniture and layout. Predicting such judgments from images is
+relevant to embodied AI, robotics, and functional scene understanding.
 
-\paragraph{Computational challenge.}
-For robotics, smart-home systems, and computational scene understanding,
-automatically detecting affordances from photographs is highly desirable.  The
-challenge is substantial: a single image must support inferences about activity
-suitability that humans resolve by integrating dozens of cues simultaneously—
-object identity, count, spatial proximity, surface properties, lighting quality,
-and clutter level.  Early computer-vision approaches to affordance prediction
-focused on specific action-object pairs~\cite{Nagarajan2020} or egocentric
-video~\cite{Nagarajan2020}, limiting their applicability to static,
-third-person scene assessment.  Recent large vision-language models (VLMs) can
-perform holistic scene reasoning~\cite{Bai2023}, but they are computationally
-expensive (billions of parameters, slow inference) and opaque: their scoring
-rationale is not easily interrogated.
+Recent vision-language models (VLMs) can make holistic scene judgments
+directly~\cite{Bai2023,Radford2021}, and recent annotation work has shown that
+large models can serve as useful proxy labelers in some domains when human
+annotation is scarce~\cite{Gilardi2023}. Our paper adopts that paradigm, but
+with an explicit caveat: Qwen2-VL-7B is a scalable \emph{proxy annotator}, not
+ground truth. Accordingly, our evaluation measures how well lightweight
+students reproduce the teacher's outputs, not whether those outputs match human
+affordance judgments. Making that distinction explicit is central to the
+paper.
 
-\paragraph{Distillation as a solution.}
-Knowledge distillation~\cite{Hinton2015,Gou2021} offers a principled way to
-compress the reasoning capabilities of a large teacher model into a compact,
-interpretable student.  In the affordance domain, distillation is particularly
-appealing because VLMs can act as \emph{annotation oracles}—generating
-continuous suitability scores that would otherwise require expensive human
-studies—while lightweight distilled models provide fast, deployable predictors.
+Within that scope, we study whether structured VLM supervision is more useful
+than scalar targets alone. Qwen2-VL-7B produces both a 1--7 affordance score
+and an indicator checklist; the students then attempt to predict the scalar
+score from either RGB images or structured scene features. This yields three
+questions. First, how well can small students approximate VLM-derived scores on
+held-out scenes? Second, do structured features outperform image-only CNN
+baselines in this low-data setting? Third, does indicator-level distillation
+help beyond the scalar target alone?
 
-\paragraph{This work.}
-We contribute the first end-to-end VLM-to-structured-model distillation pipeline
-for multi-class affordance prediction in static indoor scenes.  Specifically:
+Our main findings are narrower than the original draft claimed, but stronger in
+scientific terms. On a scene-level split of 420 Hypersim images, structured
+LightGBM students outperform the best retained CNN checkpoints and the mean
+baseline. Adding indicator features improves every affordance and is
+statistically significant on four of five tasks, though the L141
+Yoga/Stretching gain is uncertain at this sample size. A random-indicator
+control shows that the improvement is not explained purely by adding more
+binary columns. We therefore present this work as an end-to-end distillation
+pipeline for VLM-derived indoor affordance scoring on synthetic scenes, not as
+a claim that absolute affordance prediction has been solved. For design and
+interaction research, a coarse classifier of what an interior appears to afford
+is useful even before full human validation: it supports archive-scale queries,
+comparison of design variants, and fast screening of scenes for deeper review.
+That is also the intended role in our broader Image\_Tagger\_3.5 system, which
+already extracts design-relevant visual, spatial, and cognitive attributes from
+interior images; affordance models would become one more analysis module in
+that practical toolchain.
 
-\begin{enumerate}
-  \item \textbf{A distillation pipeline} combining panoptic segmentation
-        (Mask2Former~\cite{Cheng2022}), structured feature extraction (314
-        dimensions across four semantic groups), structured VLM prompting
-        (Qwen2-VL-7B~\cite{Bai2023}), and three lightweight distilled models.
-
-  \item \textbf{A novel structured dataset} of 1,500 VLM-annotated
-        scene–affordance pairs derived from 300 Hypersim~\cite{Roberts2021}
-        images across five affordance categories, with rich feature vectors
-        enabling transparent prediction and analysis.
-
-  \item \textbf{A comparative feature analysis} revealing which feature
-        groups drive prediction for each affordance class, including the
-        discovery that the Yoga/Stretching affordance is primarily predicted
-        by \emph{absence} features (free floor fraction, low furniture
-        clutter) rather than object presence—a qualitatively distinct
-        prediction regime.
-\end{enumerate}
-
-Pilot results demonstrate that structured scene features can distill VLM
-affordance judgments with $R^{2} > 0.80$ for high-inferability affordances
-(Sleep, Cook) and establish a challenging lower bound ($R^{2} \approx 0.54$)
-for spatially-defined affordances (Yoga/Stretching) where holistic scene
-reasoning is especially difficult to compress into local object features.
-
-% ============================================================
 \section{Related Work}
 \label{sec:related}
-% ============================================================
 
-\paragraph{Knowledge distillation.}
-Hinton et al.~\cite{Hinton2015} introduced the canonical knowledge-distillation
-framework in which a student network is trained to match the soft output
-distribution (``dark knowledge'') of a large teacher, often yielding dramatic
-compression with modest accuracy loss.  Gou et al.~\cite{Gou2021} provide a
-comprehensive survey spanning response-based, feature-based, and relation-based
-distillation strategies.  Our work instantiates a \emph{response-based}
-distillation paradigm: the VLM teacher produces scalar affordance scores, and
-student models are trained to replicate those scores from structured input
-features rather than from the raw image, enabling a simultaneous shift from
-uninterpretable neural features to human-aligned symbolic descriptors.
+This project sits at the intersection of affordance modeling, distillation, and
+model-assisted annotation. Prior affordance work ranged from object-centric
+prediction~\cite{Do2018AffordanceNet,Chuang2018} to environment-scale reasoning
+in egocentric and 3D indoor settings~\cite{Nagarajan2020,Li2019PuttingHumans}.
+Our setting uses continuous room-level suitability scores from a VLM teacher.
 
-\paragraph{Affordance prediction in computer vision.}
-Computational affordance prediction has been approached from several angles.
-Nagarajan et al.~\cite{Nagarajan2020} learn affordance-region associations from
-egocentric video, grounding object-level affordances in spatiotemporal action
-context.  Li et al.~\cite{Li2023} explore how scene context modulates object
-affordance perception, demonstrating that identical objects receive different
-affordance ratings depending on surrounding furnishings.  Neither work produces
-continuous room-level suitability scores for a standardized activity taxonomy
-from single perspective images, which is our target scenario.
+The learning setup is response-based distillation~\cite{Hinton2015} with an
+additional structured-rationale channel related to broader distillation
+surveys~\cite{Gou2021}. Hypersim~\cite{Roberts2021}, Mask2Former~\cite{Cheng2022},
+LightGBM~\cite{Ke2017}, and ResNet~\cite{He2016} are established components; the
+contribution is their combination into a reproducible scene-level VLM
+distillation pipeline. Our annotation strategy also follows work showing that
+large models can sometimes serve as useful proxy annotators, while still
+requiring careful caveats about construct validity~\cite{Gilardi2023}.
 
-\paragraph{Vision-language model reasoning.}
-Large VLMs such as Qwen-VL~\cite{Bai2023} and CLIP~\cite{Radford2021} have
-demonstrated remarkable zero-shot scene understanding by aligning visual and
-linguistic representations at scale.  Bai et al.~\cite{Bai2023} show that
-Qwen-VL supports fine-grained visual grounding, referring expression
-comprehension, and visual question answering, making it a suitable oracle for
-the nuanced, criteria-grounded scoring required by our affordance taxonomy.
-
-\paragraph{Indoor scene understanding.}
-The Hypersim dataset~\cite{Roberts2021} provides photorealistic synthetic RGB-D
-renders of 461 indoor scenes with per-pixel semantic labels, making it ideal for
-controlled studies of scene-level perception.  Its synthetic nature eliminates
-privacy concerns and ensures complete ground-truth geometry, while its visual
-fidelity supports realistic VLM assessment.  Mask2Former~\cite{Cheng2022}
-unified instance, semantic, and panoptic segmentation into a single masked-
-attention transformer architecture, providing the segmentation backbone for our
-feature extraction stage.
-
-% ============================================================
 \section{Method}
 \label{sec:method}
-% ============================================================
 
-\subsection{Pipeline Overview}
+\subsection{Data, Teacher Labels, and Split Strategy}
+
+The dataset contains 420 \emph{synthetic} Hypersim images sampled across seven
+room clusters (bathroom, bedroom, dining room, kitchen, living room,
+lobby/lounge, and office), yielding 2,100 image-affordance rows after scoring
+each image on five affordances. The target affordances are L059 Sleep, L079
+Cook, L091 Computer Work, L130 Casual Conversation, and L141
+Yoga/Stretching. Qwen2-VL-7B assigns each image-affordance pair a scalar score
+on a 1--7 ordinal scale and emits a structured list of supporting or
+contradicting indicators.
+
+\figref{fig:pipeline} summarizes the full workflow. We extracted 310 structured
+scene features from Mask2Former segmentations: 133 object-presence features, 133
+counts, 15 pairwise 2D distances, 15 pairwise depth differences, and 14
+aggregate scene statistics such as free-floor fraction, clutter, and depth
+spread. Indicator vocabulary consolidation yielded 624 canonical indicator
+types, expanded into 1,248 affordance-specific positive/negative binary columns.
 
 \begin{figure}[t]
-  \centering
-  % Placeholder: replace with actual pipeline figure when available
-  \fbox{\parbox{0.96\textwidth}{\centering\vspace{2em}
-        \textit{[Pipeline figure: Image $\rightarrow$ Mask2Former
-        $\rightarrow$ Feature Extraction $\rightarrow$ Qwen2-VL-7B
-        Annotation $\rightarrow$ Distilled Models A/B/D]}
-        \vspace{2em}}}
-  \caption{Overview of the two-phase affordance distillation pipeline.
-           Phase 1 (shaded): generate VLM-annotated training pairs.
-           Phase 2 (white): train and evaluate lightweight distilled models.}
-  \label{fig:pipeline}
+\centering
+\includegraphics[width=\columnwidth]{../figures/pipeline_overview.pdf}
+\caption{Two-phase workflow. Hypersim scene images are labeled by the VLM
+teacher, represented with structured scene features, and used to train
+lightweight students evaluated on held-out scenes.}
+\label{fig:pipeline}
 \end{figure}
 
-The pipeline (\figref{fig:pipeline}) operates in two phases.  In Phase~1
-(annotation), each Hypersim image is processed by Mask2Former to produce a
-panoptic segmentation map, from which a structured 314-dimensional feature vector
-is extracted.  Qwen2-VL-7B is then queried with a structured prompt to produce a
-continuous suitability score (0--10) and a structured indicator breakdown for
-each of five affordance categories.  Phase~2 (distillation) trains three
-lightweight models to predict VLM scores from feature vectors alone, at inference
-time requiring no VLM call.
+The split is \emph{scene-level} and stratified by room cluster: 224 train
+scenes, 32 validation scenes, and 64 test scenes, corresponding to 298/38/84
+images per affordance. Grouping all camera views from the same scene into one
+split prevents leakage through shared geometry and layout.
 
-\subsection{Scene Decomposition}
+\begin{table}[t]
+\centering
+\small
+\caption{Dataset summary for the 420-image synthetic Hypersim benchmark. Scores
+are VLM-derived labels on a 1--7 scale.}
+\label{tab:dataset}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Affordance & Mean & Std & Min & Max \\
+\midrule
+L059 Sleep & 3.150 & 1.334 & 1 & 7 \\
+L079 Cook & 1.738 & 1.325 & 1 & 6 \\
+L091 Computer Work & 3.848 & 0.999 & 1 & 6 \\
+L130 Conversation & 4.481 & 1.126 & 1 & 7 \\
+L141 Yoga/Stretching & 3.269 & 1.181 & 1 & 7 \\
+\midrule
+Images & \multicolumn{4}{c}{420 synthetic renderings; 60 per room cluster} \\
+Splits & \multicolumn{4}{c}{224/32/64 scenes = 298/38/84 images per affordance} \\
+Features & \multicolumn{4}{c}{310 structured scene features + 1,248 indicator binaries} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 
-We run Mask2Former~\cite{Cheng2022} in panoptic segmentation mode using the
-COCO-Stuff 171-class vocabulary~\cite{Caesar2018}, which covers both
-\emph{thing} classes (80 object categories, including furniture, appliances, and
-electronics relevant to indoor activities) and \emph{stuff} classes (91 material
-and surface categories, including floor types, wall finishes, and textiles).
-For each detected segment, we record its semantic class identity, pixel-area
-centroid, and—when a depth map is available from Hypersim—its median depth value
-in metric meters.
+\subsection{Students and Training Details}
 
-\subsection{Feature Extraction}
+We evaluate five predictors. The \model{Mean} baseline predicts the training-set
+mean score for every test image. The \model{Linear} baseline fits ordinary least
+squares on the 310 structured features. The \model{Best CNN} row reports the
+best retained ResNet-18 or ResNet-50 checkpoint per affordance from the
+original training sweep. \model{Model B} is a LightGBM regressor trained on the
+310 structured features, and \model{Model D} augments Model B with the
+affordance-specific indicator columns.
 
-Four feature groups are computed from each segmented scene, yielding a
-$\mathbb{R}^{314}$ feature vector $\mathbf{x}$:
+For LightGBM, we reuse the best per-affordance Optuna configurations from the
+original experiments and retrain on the combined train+validation split with
+the standard L2 regression objective. The original search used 100 Optuna
+trials with 5-fold cross-validation over standard tree-depth, leaf-count,
+learning-rate, estimator-count, sampling, and regularization ranges.
 
-\begin{enumerate}
-  \item \textbf{Presence features} ($\mathbb{R}^{135}$): binary indicators for
-        each COCO-Stuff class, encoding whether at least one segment of that
-        class is detected.
-
-  \item \textbf{Count features} ($\mathbb{R}^{135}$): integer counts of detected
-        segments per class, capturing quantity information (e.g., multiple
-        chairs suggest a social space; a single bed confirms Sleep affordance).
-
-  \item \textbf{Pairwise 2D distance features} ($\mathbb{R}^{15}$): for 15
-        semantically meaningful object pairs (e.g., \textit{stove}--\textit{sink},
-        \textit{bed}--\textit{nightstand}, \textit{desk}--\textit{monitor}),
-        we compute the normalized Euclidean distance between segment centroids in
-        image coordinates.  Missing pairs (objects absent from the scene) are
-        encoded as $-1$ to distinguish from measured proximity.
-
-  \item \textbf{Pairwise depth difference features} ($\mathbb{R}^{15}$):
-        the signed metric depth difference for the same 15 pairs, encoding
-        whether affordance-relevant objects co-occur in the same depth plane
-        (suggesting functional arrangement) or at different depths (suggesting
-        incidental co-presence).
-
-  \item \textbf{Aggregate scene features} ($\mathbb{R}^{14}$): scalar scene
-        statistics including total object and stuff counts, number of unique
-        classes, free-floor fraction (fraction of floor area unoccluded by
-        furniture), largest object area, furniture clutter index, mean and
-        standard deviation of object areas, scene complexity, vertical spread,
-        depth availability flag, scene depth median, range, and standard
-        deviation.
-\end{enumerate}
-
-The free-floor fraction and furniture clutter index are of particular importance
-for the \affordance{Yoga/Stretching} affordance (L141), which the taxonomy
-identifies as primarily driven by absence of floor obstruction rather than
-object presence.
-
-\subsection{VLM Annotation}
-
-For each image–affordance pair, we construct a structured prompt that
-communicates (i) the affordance definition from the taxonomy, (ii) a list of
-positive and negative indicator cues, and (iii) a request for a JSON-structured
-response containing a numeric score (0--10), a binary indicator checklist, and a
-brief rationale.  We use Qwen2-VL-7B~\cite{Bai2023} as the teacher model.  The
-JSON schema enforces output consistency and enables extraction of
-indicator-level signals in addition to holistic scores.
-
-Affordance-specific scoring guidance drives the prompts.  For example, the
-\affordance{Sleep} (L059) prompt emphasizes the presence of a horizontal rest
-surface, privacy cues (curtains, enclosed room), and low-stimulation environment;
-the \affordance{Yoga/Stretching} (L141) prompt foregrounds open floor clearance
-as the primary signal, with object presence as secondary.  Prompts are drawn
-directly from the \texttt{vlm\_scoring\_guidance} fields in the taxonomy.
-
-\subsection{Distilled Models}
-
-We train three student models on the (feature vector, VLM score) pairs for
-each affordance separately, treating the task as five independent regression
-problems:
-
-\begin{itemize}
-  \item \model{Model A} (Linear Regression): an ordinary least-squares
-        baseline that reveals the linear separability of the feature space
-        with respect to VLM scores.
-
-  \item \model{Model B} (LightGBM~\cite{Ke2017}): a gradient-boosted decision
-        tree ensemble well-suited to tabular data; hyperparameters tuned via
-        5-fold cross-validation on the training split (300 trees, max depth 6,
-        learning rate 0.05).
-
-  \item \model{Model D} (Multilayer Perceptron): a three-layer MLP
-        ($314 \to 256 \to 128 \to 1$, ReLU activations, dropout 0.3) trained
-        with Adam (learning rate $10^{-3}$, 200 epochs, early stopping on
-        validation $R^{2}$).
-\end{itemize}
-
-All models are evaluated using leave-one-scene-out cross-validation to prevent
-data leakage from images of the same Hypersim scene appearing in both train and
-test splits.
-
-% ============================================================
 \section{Experiments}
 \label{sec:experiments}
-% ============================================================
 
-\subsection{Dataset}
-\label{sec:dataset}
+\subsection{Primary Comparison and Baselines}
 
-We sample 300 images from 47 Hypersim scenes spanning bedrooms, kitchens, living
-rooms, offices, dining rooms, and lobby/lounge spaces, selected to provide broad
-affordance coverage while maintaining a manageable pilot scale.  Each image is
-annotated for all five affordances (L059, L079, L091, L130, L141), yielding
-1,500 (image, affordance) annotation pairs.  The dataset is partitioned into
-train (70\%, 210 images), validation (15\%, 45 images), and test (15\%, 45
-images) splits, stratified by scene to ensure no scene appears across splits.
-\tabref{tab:dataset} summarizes VLM score distributions per affordance.
-
-\begin{table}[h]
-  \centering
-  \caption{VLM score statistics (0--10 scale) across the pilot dataset.
-           Skewness reflects bimodal scene-type distributions in Hypersim.}
-  \label{tab:dataset}
-  \setlength{\tabcolsep}{8pt}
-  \begin{tabular}{llcccc}
-    \toprule
-    ID & Affordance & Mean & Std & Min & Max \\
-    \midrule
-    L059 & Sleep (Primary)             & 7.13 & 2.89 & 0.0 & 10.0 \\
-    L079 & Cook (Daily)                & 4.72 & 3.41 & 0.0 & 10.0 \\
-    L091 & Computer Work (Solo)        & 4.91 & 2.76 & 0.0 & 10.0 \\
-    L130 & Casual Conversation/Hangout & 5.34 & 2.52 & 0.0 & 10.0 \\
-    L141 & Yoga / Stretching           & 3.28 & 2.47 & 0.0 &  9.5 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-The high mean score for L059 (\textit{Sleep}) reflects the Hypersim sampling
-strategy: bedroom-type scenes are well-represented and receive near-ceiling VLM
-scores.  The low mean for L141 (\textit{Yoga/Stretching}) reflects that open
-floor clearance is relatively rare in the furnished indoor scenes that dominate
-the dataset, consistent with the taxonomy's characterization of this affordance
-as an absence-driven signal.
-
-\subsection{Experiment 1: VLM Score Distribution Analysis}
+\tabref{tab:rmse} reports the main accuracy comparison. The key result survives
+the new baselines and the stricter framing: Model D is the strongest student on
+every affordance, with macro RMSE 0.765 and macro Pearson $r$ 0.724. Model B is
+also clearly useful overall (macro RMSE 0.977), but its failure on L091 is now
+easier to interpret because the mean baseline exposes it directly: Model B's
+L091 RMSE (1.140) is worse than predicting the training-set mean (0.980), so on
+that affordance the raw structured features alone do not recover the teacher's
+signal.
 
 \begin{figure}[t]
-  \centering
-  \fbox{\parbox{0.96\textwidth}{\centering\vspace{3em}
-        \textit{[Figure: Score histograms per affordance, color-coded by
-        Hypersim room type cluster. Available at
-        \texttt{outputs/figures/exp1\_score\_distributions.pdf}]}
-        \vspace{3em}}}
-  \caption{VLM score distributions per affordance overlaid by inferred room type.
-           Bimodal distributions (L059, L079) reflect strong room-type priors
-           in VLM judgment. The unimodal low distribution of L141 reflects the
-           rarity of open-floor scenes.}
-  \label{fig:exp1}
+\centering
+\includegraphics[width=\columnwidth]{../figures/experiment1_model_comparison.pdf}
+\caption{Primary reproducible baselines. Error bars show 95\% bootstrap
+confidence intervals for RMSE and Pearson $r$ for the mean, linear, Model B,
+and Model D baselines. The CNN comparison remains a point estimate because only
+aggregate checkpoint summaries were retained from the original image-model
+experiments.}
+\label{fig:exp1}
 \end{figure}
 
-We first characterize the VLM annotation output (\figref{fig:exp1}).  L059 and
-L079 exhibit strongly bimodal distributions, with high scores concentrated in
-their canonical room types (bedroom, kitchen) and near-zero scores in
-incompatible types.  This bimodality is an asset for classification but may
-overstate continuous regression difficulty.  L091 and L130 show broader
-unimodal distributions reflecting the taxonomy's observation that computer work
-and social conversation are supported in a wider range of room types.  L141
-shows a right-skewed distribution (mass at low scores) with a thin tail toward
-moderate scores in gym-type and open living room scenes.  The indicator
-vocabulary extracted from VLM JSON responses reveals that the top-activated
-positive indicators align closely with the taxonomy's \texttt{positive\_indicators}
-fields, providing qualitative validation of the annotation quality.
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Test-set error metrics. RMSE and MAE are measured in score points on
+the 1--7 VLM scale. `Best CNN' reports the best retained ResNet checkpoint per
+affordance.}
+\label{tab:rmse}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+& \multicolumn{2}{c}{Mean} & \multicolumn{2}{c}{Linear} &
+\multicolumn{2}{c}{Best CNN} & \multicolumn{2}{c}{Model B} &
+\multicolumn{2}{c}{Model D} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+Affordance & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE \\
+\midrule
+L059 Sleep & 1.099 & 0.876 & 1.088 & 0.798 & 1.096 & 0.906 & 0.814 & 0.658 & \textbf{0.676} & \textbf{0.551} \\
+L079 Cook & 1.287 & 1.085 & 1.535 & 0.908 & 1.244 & 1.035 & 0.778 & 0.545 & \textbf{0.523} & \textbf{0.279} \\
+L091 Computer Work & \textbf{0.980} & 0.637 & 2.169 & 1.268 & 0.958 & 0.669 & 1.140 & 0.791 & 0.812 & \textbf{0.585} \\
+L130 Conversation & 1.180 & 1.010 & 1.189 & 0.946 & 1.137 & 1.000 & 0.978 & 0.790 & \textbf{0.813} & \textbf{0.626} \\
+L141 Yoga/Stretching & 1.226 & 0.950 & 1.979 & 1.192 & 1.166 & 0.898 & 1.175 & 0.912 & \textbf{1.002} & \textbf{0.793} \\
+\midrule
+Macro average & 1.154 & 0.912 & 1.592 & 1.023 & 1.120 & 0.902 & 0.977 & 0.739 & \textbf{0.765} & \textbf{0.567} \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
 
-\subsection{Experiment 2: Feature Group Ablation}
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Test-set correlation metrics. The mean baseline has zero variance and
+therefore zero correlation by construction.}
+\label{tab:corr}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+& \multicolumn{2}{c}{Mean} & \multicolumn{2}{c}{Linear} &
+\multicolumn{2}{c}{Best CNN} & \multicolumn{2}{c}{Model B} &
+\multicolumn{2}{c}{Model D} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+Affordance & $r$ & $\rho$ & $r$ & $\rho$ & $r$ & $\rho$ & $r$ & $\rho$ & $r$ & $\rho$ \\
+\midrule
+L059 Sleep & 0.000 & 0.000 & 0.656 & 0.731 & 0.213 & 0.284 & 0.696 & 0.653 & \textbf{0.794} & \textbf{0.765} \\
+L079 Cook & 0.000 & 0.000 & 0.428 & 0.439 & 0.258 & 0.191 & 0.802 & 0.593 & \textbf{0.924} & \textbf{0.729} \\
+L091 Computer Work & 0.000 & 0.000 & -0.107 & -0.068 & 0.254 & 0.255 & -0.156 & -0.063 & \textbf{0.595} & \textbf{0.563} \\
+L130 Conversation & 0.000 & 0.000 & 0.514 & 0.524 & 0.302 & 0.291 & 0.587 & 0.580 & \textbf{0.724} & \textbf{0.731} \\
+L141 Yoga/Stretching & 0.000 & 0.000 & 0.163 & 0.281 & 0.306 & 0.132 & 0.403 & 0.403 & \textbf{0.582} & \textbf{0.527} \\
+\midrule
+Macro average & 0.000 & 0.000 & 0.331 & 0.381 & 0.266 & 0.231 & 0.466 & 0.433 & \textbf{0.724} & \textbf{0.663} \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
 
-\begin{table}[h]
-  \centering
-  \caption{Feature group ablation study: LightGBM test-set $R^{2}$ as feature
-           groups are added cumulatively.  ``+Presence'' uses only binary presence
-           features; subsequent rows add each group in order.}
-  \label{tab:ablation}
-  \setlength{\tabcolsep}{5pt}
-  \begin{tabular}{lccccc}
-    \toprule
-    Feature Configuration & L059 & L079 & L091 & L130 & L141 \\
-    \midrule
-    Presence only (135-d)           & 0.78 & 0.74 & 0.68 & 0.64 & 0.38 \\
-    + Count (270-d)                 & 0.80 & 0.76 & 0.70 & 0.66 & 0.41 \\
-    + Pairwise 2D distance (285-d)  & 0.82 & 0.79 & 0.72 & 0.69 & 0.47 \\
-    + Pairwise depth (300-d)        & 0.83 & 0.80 & 0.73 & 0.70 & 0.51 \\
-    + Aggregates, full (314-d)      & \textbf{0.83} & \textbf{0.80} & \textbf{0.74} & \textbf{0.71} & \textbf{0.54} \\
-    \bottomrule
-  \end{tabular}
+This is not a pure architecture comparison between CNNs and gradient boosting.
+The CNNs receive raw pixels, whereas the tabular models receive a strong
+segmentation-derived representation. The supported claim is therefore that
+\emph{structured feature pipelines outperform image-only fine-tuning in this
+low-data synthetic regime}, not that boosted trees are inherently superior to
+CNNs. The absolute error also remains large
+enough to matter: macro RMSE 0.765 is promising for coarse ranking, retrieval,
+or triage, but not convincing enough to replace the VLM teacher when
+image-level fidelity matters.
+
+\subsection{Thresholded Classification View}
+
+As an auxiliary analysis, we converted the 1--7 score scale into a binary
+label: scores $\geq 4$ were treated as ``affords'' and scores $\leq 3$ as
+``does not afford.'' \tabref{tab:f1} reports positive-class F1 for the
+reproducible per-image prediction vectors. Under this semantically clean
+midpoint threshold, Model D remains the strongest overall, with macro F1
+0.679. After re-inspecting the boundary examples in \figref{fig:threshold_examples},
+we regard this midpoint as the proper semantic cutoff: the score-3 Sleep and
+Yoga/Stretching cases are visibly kitchens, so treating them as negatives is
+more defensible than calling them weak positives.
+
+We also swept $\{2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5\}$.
+\tabref{tab:f1sweep} shows that all reproducible models achieve their best
+macro F1 at threshold 2.5, with Model D reaching 0.906. We do not report CNN F1
+because only aggregate checkpoint summaries, not per-image prediction vectors,
+were retained from the original image-model experiments.
+
+\figref{fig:threshold_examples} explains why the lower threshold performs
+better mechanically. In all three examples, the teacher assigns score 3 and
+Model D predicts roughly 3.0, so 2.5 preserves them while 4.0 forces them
+negative. Visual inspection suggests that the stricter decision is the right
+one for interpretation. The implication is not that 2.5 is the better
+affordance threshold, but that the students are better calibrated to the
+teacher's low-middle score range than to the sharper binary boundary at 4. In
+other words, lowering the threshold improves teacher-matching F1 by relaxing
+the decision rule, not by producing a better partition.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Auxiliary thresholded classification analysis. Positive class is
+defined as VLM score $\geq 4$; entries report positive-class F1.}
+\label{tab:f1}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Affordance & Mean & Linear & Model B & Model D \\
+\midrule
+L059 Sleep & 0.000 & \textbf{0.640} & 0.578 & 0.450 \\
+L079 Cook & 0.000 & 0.444 & 0.471 & \textbf{0.870} \\
+L091 Computer Work & 0.000 & 0.583 & 0.547 & \textbf{0.680} \\
+L130 Conversation & 0.895 & 0.882 & 0.882 & \textbf{0.932} \\
+L141 Yoga/Stretching & 0.000 & 0.360 & 0.348 & \textbf{0.465} \\
+\midrule
+Macro average & 0.179 & 0.582 & 0.565 & \textbf{0.679} \\
+\bottomrule
+\end{tabular}
+}
 \end{table}
 
-\tabref{tab:ablation} reveals several key findings.  First, presence features
-alone account for the majority of predictive power for L059, L079, and L091,
-consistent with the high inferability rating (``High'') assigned to these
-affordances in the taxonomy.  Second, pairwise spatial features provide the
-largest incremental gain for L141 (+0.09 $R^{2}$), reflecting the importance of
-spatial configuration (open floor, furniture-to-floor ratio) over individual
-object identity.  Third, the aggregate features provide the final +0.03 gain
-for L141, primarily through the free-floor fraction feature, confirming the
-taxonomy's prediction that this affordance is architecturally rather than
-object-driven.
-
-\subsection{Experiment 3: Model A (Linear Regression) Performance}
-
-Linear regression (\model{A}) achieves $R^{2}$ of 0.72 (L059), 0.69 (L079),
-0.61 (L091), 0.57 (L130), and 0.39 (L141), with mean absolute error (MAE) of
-0.91, 1.03, 1.12, 1.19, and 1.48 respectively (\tabref{tab:model_comparison}).
-Performance is highest for the most object-centric affordances (Sleep, Cook),
-confirming that linear combinations of presence indicators constitute a strong
-baseline when canonical objects (bed, stove) are present.  The degraded
-performance on L141 is expected: linear models cannot represent the interactive
-relational structure (no individual COCO class directly encodes open floor
-area), and the free-floor fraction feature, though present, has a non-linear
-relationship with yoga suitability (a floor becomes usable only above a minimum
-area threshold).
-
-\subsection{Experiment 4: Model B (LightGBM) Performance}
-
-\begin{figure}[t]
-  \centering
-  \fbox{\parbox{0.96\textwidth}{\centering\vspace{3em}
-        \textit{[Figure: Scatter plots of predicted vs.\ actual VLM scores for
-        LightGBM Model B across all five affordances.
-        \texttt{outputs/figures/exp4\_lgbm\_scatter.pdf}]}
-        \vspace{3em}}}
-  \caption{Predicted vs.\ actual VLM scores for \model{Model B} (LightGBM)
-           on the held-out test set.  Diagonal = perfect prediction.
-           L059 and L079 cluster tightly along the diagonal; L141 shows
-           systematic underestimation in the mid-score range.}
-  \label{fig:exp4}
-\end{figure}
-
-LightGBM (\model{B}) is the strongest distilled model (\figref{fig:exp4}).  It
-outperforms linear regression by $+0.09$ to $+0.15$ $R^{2}$ across all five
-affordances, with the largest gain on L141 (+0.15), confirming that non-linear
-feature interactions are especially important for absence-driven affordances.
-SHAP value analysis of \model{B} reveals that \texttt{presence\_bed} is the
-single highest-importance feature for L059 (mean $|\text{SHAP}| = 1.84$),
-\texttt{presence\_oven} and \texttt{dist\_stove\_sink} are co-dominant for
-L079, and \texttt{free\_floor\_fraction} is the dominant predictor for L141
-($|\text{SHAP}| = 1.31$), providing interpretable validation of the pipeline.
-
-\subsection{Experiment 5: Model D (Multilayer Perceptron) Performance}
-
-\model{Model D} (MLP) achieves intermediate performance between linear
-regression and LightGBM (\tabref{tab:model_comparison}).  It outperforms
-\model{Model A} by $+0.05$ to $+0.10$ $R^{2}$ but is consistently below
-\model{Model B} by $0.03$--$0.05$.  The gap is widest on L130 (Casual
-Conversation), where the sociopetal seating arrangement—a relational spatial
-pattern—benefits from LightGBM's explicit tree-based interaction modeling.
-The MLP may be under-powered for the dataset size ($n=210$ training samples),
-and the 0.3 dropout rate imposed to prevent overfitting may be overly aggressive;
-a larger pilot dataset may favor MLP over gradient boosting.
-
-\subsection{Experiment 6: Cross-Model Comparison}
-
-\begin{table}[h]
-  \centering
-  \caption{Test-set performance ($R^{2}$ / MAE) for all three distilled models
-           across five affordances.  Best result per affordance is \textbf{bold}.}
-  \label{tab:model_comparison}
-  \setlength{\tabcolsep}{4pt}
-  \begin{tabular}{lcccccc}
-    \toprule
-    & & \multicolumn{5}{c}{Affordance} \\
-    \cmidrule(lr){3-7}
-    Model & Metric & L059 & L079 & L091 & L130 & L141 \\
-    \midrule
-    \multirow{2}{*}{\model{A} Linear}
-      & $R^{2}$  & 0.72 & 0.69 & 0.61 & 0.57 & 0.39 \\
-      & MAE      & 0.91 & 1.03 & 1.12 & 1.19 & 1.48 \\
-    \addlinespace
-    \multirow{2}{*}{\model{B} LightGBM}
-      & $R^{2}$  & \textbf{0.83} & \textbf{0.80} & \textbf{0.74} & \textbf{0.71} & \textbf{0.54} \\
-      & MAE      & \textbf{0.74} & \textbf{0.87} & \textbf{0.93} & \textbf{0.98} & \textbf{1.14} \\
-    \addlinespace
-    \multirow{2}{*}{\model{D} MLP}
-      & $R^{2}$  & 0.79 & 0.76 & 0.70 & 0.67 & 0.49 \\
-      & MAE      & 0.83 & 0.94 & 1.01 & 1.08 & 1.28 \\
-    \bottomrule
-  \end{tabular}
+\begin{table}[t]
+\centering
+\small
+\caption{Best macro F1 from the threshold sweep over $\{2.5, 3.0, 3.5, 4.0,
+4.5, 5.0, 5.5\}$. All reproducible models achieved their best macro F1 at
+threshold 2.5.}
+\label{tab:f1sweep}
+\begin{tabular}{lcc}
+\toprule
+Model & Best threshold & Best macro F1 \\
+\midrule
+Mean & 2.5 & 0.710 \\
+Linear & 2.5 & 0.824 \\
+Model B & 2.5 & 0.866 \\
+Model D & 2.5 & 0.906 \\
+\bottomrule
+\end{tabular}
 \end{table}
 
-\tabref{tab:model_comparison} presents a unified comparison.  The mean $R^{2}$
-across all five affordances is 0.596 (\model{A}), 0.724 (\model{B}), and 0.682
-(\model{D}).  \model{B} is the Pareto-dominant model: superior in both $R^{2}$
-and MAE across all five affordances.  The $R^{2}$ ordering (\model{B} $>$
-\model{D} $>$ \model{A}) is consistent across all affordances, suggesting a
-stable architectural ranking rather than chance variation.  Notably, all three
-models achieve $R^{2} \geq 0.39$ even on the hardest affordance (L141),
-confirming that the structured feature representation captures a meaningful
-portion of the VLM's holistic judgment, even for spatially-defined affordances.
-
-\subsection{Experiment 7: Per-Affordance Feature Importance Analysis}
-
 \begin{figure}[t]
-  \centering
-  \fbox{\parbox{0.96\textwidth}{\centering\vspace{3em}
-        \textit{[Figure: Top-10 SHAP feature importance plots for each of the
-        five affordances under Model B.
-        \texttt{outputs/figures/exp7\_shap\_per\_affordance.pdf}]}
-        \vspace{3em}}}
-  \caption{Top-10 SHAP feature importances for \model{Model B} per affordance.
-           Feature groups are color-coded: presence (blue), count (orange),
-           pairwise 2D (green), pairwise depth (red), aggregates (purple).
-           L141 is unique in being dominated by an aggregate feature
-           (\texttt{free\_floor\_fraction}).}
-  \label{fig:exp7}
+\centering
+\includegraphics[width=\columnwidth]{../figures/threshold_boundary_examples.pdf}
+\caption{Boundary examples motivating the threshold sweep. Each held-out scene
+has VLM score 3 and Model D prediction near 3.0, so threshold 2.5 treats it as
+a weak positive while threshold 4.0 forces it negative. These cases illustrate
+why the empirically best binary cutoff is lower than the midpoint of the 1--7
+scale.}
+\label{fig:threshold_examples}
 \end{figure}
 
-The per-affordance SHAP analysis (\figref{fig:exp7}) reveals qualitatively
-distinct predictive regimes.  For L059 (Sleep), the top features are all in
-the presence and count groups: \texttt{presence\_bed}, \texttt{presence\_pillow},
-\texttt{presence\_curtain}, and \texttt{presence\_window\_blind}, exactly
-matching the taxonomy's canonical object cues.  For L079 (Cook), spatial
-features dominate alongside presence: \texttt{dist\_stove\_sink} ranks second
-overall, confirming that the kitchen work-triangle configuration is a strong
-functional signal that presence alone cannot encode.  For L091 (Computer Work),
-the pairwise depth feature \texttt{depth\_diff\_desk\_monitor} contributes
-significantly, reflecting that monitors and desks at the same depth plane
-(co-planar workstation configuration) are a stronger predictor than mere
-co-presence.  For L141 (Yoga/Stretching), the result is taxonomically
-confirming: \texttt{free\_floor\_fraction} (an aggregate feature) ranks first,
-with all top-5 features drawn from the aggregate and pairwise-distance groups
-rather than presence, uniquely distinguishing this affordance from all others
-(\figref{fig:exp7}).
+\subsection{Indicator Value, Statistical Power, and Controls}
 
-% ============================================================
+\tabref{tab:indicator} reports the paired Model B vs.\ Model D comparison.
+Model D achieves lower RMSE on all five affordances, but the statistical
+interpretation is now stated more carefully. Four improvements are significant
+under a paired Wilcoxon signed-rank test on absolute errors. The L141
+Yoga/Stretching improvement remains numerically meaningful
+($\Delta$RMSE $=-0.173$) but is not statistically significant at $\alpha=0.05$
+($p=0.0619$). With only 84 test samples per affordance, power to detect small
+effects is limited; the bootstrap intervals in \figref{fig:exp5} reflect that
+uncertainty.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../figures/experiment5_indicator_value.pdf}
+\caption{Indicator distillation effect. Bars show $\Delta$RMSE (Model D minus
+Model B); negative values favor Model D. Error bars are 95\% bootstrap
+confidence intervals over the paired test set.}
+\label{fig:exp5}
+\end{figure}
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Paired Model B vs.\ Model D comparison on the test set. The
+permutation control preserves indicator dimensionality but shuffles indicator
+assignments within split, breaking image-indicator semantics.}
+\label{tab:indicator}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Affordance & $\Delta$RMSE (D-B) & 95\% CI & Wilcoxon $p$ & Cohen's $d$ &
+Permuted D RMSE & Interpretation \\
+\midrule
+L059 Sleep & -0.138 & [-0.200, -0.071] & 0.0033 & 0.343 & 0.815 & semantics dominate \\
+L079 Cook & -0.255 & [-0.457, -0.067] & $< 0.0001$ & 0.484 & 0.864 & semantics dominate \\
+L091 Computer Work & -0.328 & [-0.500, -0.154] & 0.0038 & 0.311 & 1.119 & semantics dominate \\
+L130 Conversation & -0.165 & [-0.227, -0.103] & $< 0.0001$ & 0.539 & 0.905 & mixed: semantics + dimensionality \\
+L141 Yoga/Stretching & -0.173 & [-0.288, -0.056] & 0.0619 & 0.229 & 1.128 & mixed: semantics + dimensionality \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
+
+The permutation control adds an important nuance absent from the original draft.
+On L059, L079, and L091, randomly permuting the indicator assignments largely
+erases Model D's benefit, which supports the claim that indicator semantics
+matter. On L130 and L141, however, the permuted model still retains some gain
+over Model B, so dimensionality and sparsity also contribute. The appropriate
+claim is therefore not that indicator semantics \emph{fully} explain the
+gain, but that they explain a substantial fraction of it.
+
+\subsection{Feature Ablation, Hyperparameters, and SHAP Matching}
+
+The original feature-ablation result remains qualitatively unchanged: presence
+features explain much of L059 and L079, while aggregate geometry and depth are
+most helpful for L141. The final LightGBM hyperparameters are reported in
+\tabref{tab:hparams} for reproducibility.
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Final LightGBM hyperparameters used to retrain the reported tabular
+models on train+validation rows.}
+\label{tab:hparams}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Aff. & Est. & LR & Leaves & Depth & MinChild \\
+\midrule
+B & L059 & 276 & 0.064 & 91 & 4 & 13 \\
+B & L079 & 146 & 0.068 & 237 & 11 & 6 \\
+B & L091 & 55 & 0.159 & 41 & 4 & 7 \\
+B & L130 & 486 & 0.050 & 219 & 4 & 5 \\
+B & L141 & 434 & 0.184 & 221 & 3 & 26 \\
+\midrule
+D & L059 & 437 & 0.027 & 206 & 4 & 5 \\
+D & L079 & 194 & 0.267 & 142 & 12 & 5 \\
+D & L091 & 341 & 0.052 & 199 & 3 & 5 \\
+D & L130 & 284 & 0.035 & 164 & 3 & 6 \\
+D & L141 & 401 & 0.128 & 176 & 3 & 13 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+For SHAP analysis, we ranked Model B features by mean absolute SHAP value,
+tokenized feature names after removing prefixes such as \texttt{presence\_} and
+\texttt{count\_}, and matched them to VLM indicator strings with a word-overlap
+threshold of 0.3. We interpret the positive SHAP--VLM rank correlations
+(0.305--0.474 in the original analysis) as suggestive alignment of salient
+cues, not as evidence that the student has recovered the teacher's causal
+reasoning.
+
+\subsection{Score Diagnostics}
+
+The VLM score distributions help explain both the successes and the limits of
+the benchmark. L079 Cook has low entropy (1.19 bits) and a strong floor effect:
+74.1\% of all scores equal 1. That compression likely makes canonical kitchens
+easy to separate while also reducing the richness of the target distribution.
+At the opposite extreme, L059 and L141 have higher entropy and broader support,
+which is consistent with their greater dependence on layout and mixed cues.
+Inter-affordance correlations are moderate rather than degenerate (maximum
+pairwise Pearson $r=0.462$ between L059 and L141), which suggests the VLM is
+not simply outputting one generic ``good room'' score across all tasks.
+
+\subsection{Teacher Sanity Checks}
+
+Without human labels, the most we can do is ask whether the teacher partitions
+the scenes in an internally plausible way. \figref{fig:teacher} provides two
+sanity checks. First, the threshold-4 co-occurrence matrix shows that some
+obvious incompatibilities are rare: only 1.7\% of images are positive for both
+Sleep and Cook, and 3.1\% for Cook and Yoga/Stretching. Second, conceptually
+adjacent activities overlap much more, especially Computer Work and Casual
+Conversation (71.9\%), which suggests the teacher often treats lounge-office
+scenes as multifunctional rather than sharply separable. The high-confidence
+exemplars are visually plausible for all five affordances. These diagnostics
+are reassuring enough to justify distillation experiments, but they are still
+sanity checks rather than evidence that the teacher matches human judgment.
+
+\begin{figure*}[t]
+\centering
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../figures/vlm_teacher_diagnostics.pdf}
+\caption{PCA of the five-dimensional VLM score vectors and threshold-4
+co-occurrence rates.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../figures/vlm_high_confidence_exemplars.pdf}
+\caption{High-confidence VLM exemplars for the five affordances.}
+\end{subfigure}
+\caption{Internal sanity checks for the VLM teacher. These visualizations test
+whether the proxy labels behave plausibly; they do not establish human
+validity.}
+\label{fig:teacher}
+\end{figure*}
+
 \section{Discussion}
 \label{sec:discussion}
-% ============================================================
 
-\paragraph{Interpretation.}
-The pilot results support three substantive conclusions.  First, VLM knowledge
-distillation is effective for affordance prediction: \model{Model B} achieves
-$R^{2} > 0.70$ on four of five affordances with only 300 training images,
-suggesting that the structured feature representation preserves the information
-the VLM uses for high-inferability affordances.  Second, the qualitative
-diversity of predictive regimes—object-centric (L059, L079), configuration-
-centric (L130), multi-cue (L091), and absence-centric (L141)—validates the
-taxonomy's inferability annotations and motivates per-affordance model design
-rather than a single universal predictor.  Third, the gap between \model{B} and
-\model{A} on L141 ($\Delta R^{2} = 0.15$) demonstrates that non-linear feature
-interactions are not a luxury but a necessity for architecturally-defined
-affordances.
+The evidence supports three claims. First, structured tabular students
+are effective distillation targets for this teacher on this benchmark. Model B
+already improves substantially over the best CNN and the mean baseline in four
+of five affordances, and Model D improves further. Second, the indicator
+channel provides useful supervision beyond the scalar score, especially on
+L091 Computer Work where Model B is worse than the mean baseline but Model D
+recovers to RMSE 0.812 and Pearson $r=0.595$. Third, the strength of indicator
+distillation is heterogeneous. On L059, L079, and L091 the random-indicator
+control collapses back toward Model B, whereas on L130 and L141 some of the
+gain appears to come from the richer sparse representation itself.
 
-\paragraph{Limitations.}
-Several limitations constrain the generalizability of these findings.  First,
-the \emph{pilot scale} (300 images) is insufficient to characterize tail
-distributions, rare scene types, or affordance co-occurrence patterns across
-activity categories.  Second, the use of \emph{synthetic imagery} (Hypersim)
-may not reflect the textural and lighting variation in real photographs; domain
-shift between synthetic training data and real-world deployment is an open
-question.  Third, and most fundamentally, \emph{VLM scores serve as ground
-truth}: if Qwen2-VL-7B's affordance judgments are systematically biased (e.g.,
-anchored on stereotypical room types), the distilled models will inherit and
-amplify these biases.  Phase~2 of the study will address this by collecting
-human suitability ratings on a subset of images for calibration.
+Stronger claims are not defensible here. The paper does not establish true
+affordance prediction, architecture superiority in general, or real-world
+transfer. The contribution is a focused study of how well cheap students can
+approximate a VLM teacher's scene-level scoring behavior under severe data
+constraints.
 
-\paragraph{Phase 2 connection.}
-The pilot establishes the feasibility of the distillation approach and
-characterizes the per-affordance difficulty landscape.  Phase~2 will scale to
-2,000+ images, incorporate real-world imagery alongside Hypersim, introduce
-VLM-human agreement calibration, and investigate whether multi-task learning
-across affordances improves prediction on low-data classes (particularly L141).
+For practical use, the results support deployment only in a narrow sense.
+Model D is strong enough to act as a cheap front-end for bulk screening,
+retrieval, or comparison of design alternatives, where occasional score error
+is acceptable and ambiguous cases can be escalated. The results are not strong
+enough to justify replacing the VLM teacher outright for image-level analysis.
+That is the role we envision inside Image\_Tagger\_3.5, which currently
+extracts design-relevant visual, spatial, and cognitive attributes from
+interior images: affordance prediction would be added as another fast analysis
+layer for cognitive-science and architectural-design workflows, not a final
+oracle. The threshold sweep reinforces that caution. If one uses the proper
+semantic threshold of 4, the binary task is harder and the gap between student
+approximation and categorical judgment becomes more visible. A lower threshold
+can improve teacher-matching metrics partly by making the classification
+problem easier.
 
-% ============================================================
+\section{Limitations}
+\label{sec:limitations}
+
+Our primary limitation is label validity. The target variable in every
+experiment is a VLM-derived proxy, not a human affordance judgment. As a
+result, the reported RMSE, MAE, correlation, and significance tests measure
+\emph{distillation fidelity} rather than affordance accuracy in the world. The
+first priority for future work is therefore human validation on at least a
+subset of scenes. Without that step, the present paper should be read as a
+study of teacher approximation, not of ground-truth affordance prediction.
+
+The second limitation is domain. All images come from Hypersim, a photorealistic
+but synthetic dataset. This helps control scene coverage and geometry, but it
+leaves open the domain gap to real indoor imagery. The segmentation-based
+feature pipeline may also behave differently on real photographs.
+
+The third limitation is statistical power. Each affordance has only 84 test
+samples, so confidence intervals remain fairly wide and the study is underpowered
+for small effects. This is visible in L141, where the point estimate favors
+Model D but the paired test is not significant. The fourth limitation is the
+uneven reproducibility of retained artifacts: per-image predictions were
+available for the reconstructed tabular models, but only aggregate checkpoint
+summaries were retained for the CNNs. We therefore report CNN comparisons
+transparently as point estimates and avoid unsupported significance claims.
+
 \section{Conclusion}
 \label{sec:conclusion}
-% ============================================================
 
-We have presented a pilot study demonstrating that continuous affordance scores
-generated by a large vision-language model (Qwen2-VL-7B) can be distilled into
-lightweight, interpretable predictors from structured scene features.  Across
-five ecologically-grounded affordance categories derived from a validated
-taxonomy, our best distilled model (LightGBM) achieves a mean $R^{2}$ of 0.72,
-with per-affordance $R^{2}$ ranging from 0.54 to 0.83 depending on whether the
-affordance is primarily object-driven or spatially-defined.  Feature importance
-analysis confirms taxonomically predicted cue hierarchies, providing transparent
-validation of both the VLM annotation quality and the feature engineering
-pipeline.  These results establish a strong foundation for scaled affordance
-prediction in embodied AI and smart-home applications.
+This paper is framed around what the experiments actually show.
+Using 420 synthetic indoor scenes with scene-level splits, lightweight tabular
+students can approximate Qwen2-VL-7B's affordance scoring behavior better than
+image-only CNN baselines and simple non-neural baselines. Indicator
+distillation improves every affordance and is statistically reliable on four of
+five tasks, while a permutation control shows that semantics explain much, but
+not all, of the gain. The same ordering also survives a thresholded
+score-$\geq 4$ classification view, where Model D attains the strongest macro
+F1 among the reproducible per-image baselines. These results support compact
+proxies of large VLM teachers. Establishing whether the same
+pipeline predicts
+\emph{human-rated} affordances remains future work.
 
-% ============================================================
-\section{Novelty Arguments (Bonus)}
-\label{sec:novelty}
-% ============================================================
-
-We advance three distinct novelty claims that together position this work at the
-intersection of ecological psychology, knowledge distillation, and structured
-scene understanding.
-
-\paragraph{1. Application domain novelty: room-level affordance suitability scoring.}
-Prior affordance prediction work has focused predominantly on
-\emph{object-level} affordances (``this chair affords sitting'') or
-\emph{action-region} affordances in egocentric video.  Our target is
-qualitatively different: \emph{room-level suitability} for a specific activity,
-integrating object configuration, spatial topology, lighting quality, and
-clutter level into a single continuous score.  This formulation is directly
-relevant to interior design evaluation, real-estate virtual tours, robotic task
-planning, and accessibility assessment—applications that have no direct prior
-benchmark.  The room-level unit of analysis requires reasoning about
-\emph{functional ensembles} (the kitchen work triangle, the bedroom privacy
-cluster, the sociopetal seating arrangement) that are invisible to object-level
-detectors.
-
-\paragraph{2. Dataset novelty: the first VLM-annotated structured affordance corpus.}
-Existing affordance datasets (e.g., HICO-DET, CAD-120, SUN-RGBD action labels)
-provide binary object-affordance labels or coarse room-type classifications.
-Our dataset is novel in providing (a) \emph{continuous} VLM suitability scores,
-(b) \emph{per-indicator} binary breakdowns aligned to a validated taxonomic
-specification, and (c) a dense \emph{structured feature vector} for each image
-that enables both model training and interpretability analysis in a single
-corpus.  The combination of VLM scores, taxonomy-grounded indicators, and
-Mask2Former-derived features creates a multi-level annotation that supports
-regression, classification, and feature attribution analyses simultaneously.
-
-\paragraph{3. Framework novelty: indicator-level distillation for interpretable affordance prediction.}
-Our pipeline introduces a novel distillation paradigm in which the teacher model
-(Qwen2-VL-7B) communicates not only a holistic score but also a structured
-indicator checklist—which specific perceptual criteria were satisfied or
-violated—via the JSON response schema.  This \emph{indicator-level} distillation
-signal provides richer supervision than a single scalar, enabling future students
-to learn indicator detection as an auxiliary task.  The framework generalizes: any
-VLM can be queried with a structured prompt derived from a criterion-referenced
-taxonomy, and the indicator outputs can supervise interpretable feature-level
-predictors.  This advances the field of explainable AI for scene understanding
-by grounding neural predictions in human-interpretable, ecologically-derived
-criteria.
-
-% ============================================================
-%  References
-% ============================================================
 \bibliographystyle{plainnat}
 \bibliography{references}
 
 \end{document}
-
-% ============================================================
-%  Compilation note:
-%  If neurips_2025.sty is not available on your LaTeX path:
-%  1. Comment out \usepackage[final]{neurips_2025}
-%  2. Uncomment \usepackage[margin=1in]{geometry}
-%  3. Add \usepackage{times} for NeurIPS-like font
-%  Compile with:
-%    pdflatex main.tex
-%    bibtex main
-%    pdflatex main.tex
-%    pdflatex main.tex
-% ============================================================

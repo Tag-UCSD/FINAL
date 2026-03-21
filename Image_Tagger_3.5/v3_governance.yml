@@ -1,0 +1,46 @@
+# v3_governance.yml
+# THE IRON DOME: Active Protection Rules
+
+policy_version: "3.0.0"
+
+protected_scopes:
+  - "backend/database"
+  - "backend/science"
+  - "backend/models"
+  - "backend/api"
+  - "backend/services"
+  - "scripts"
+  - "frontend/shared"
+  - "frontend/apps"
+
+critical_files:
+  - "backend/main.py"
+  - "backend/services/vlm.py"
+  - "backend/models/config.py"
+  - "backend/database/core.py"
+  - "backend/models/annotation.py"
+  - "backend/api/v1_annotation.py"
+  - "backend/science/pipeline.py"
+  - "deploy/docker-compose.yml"
+  - "deploy/nginx.conf"
+  - "deploy/Dockerfile.backend"
+  - "scripts/guardian.py"
+  - "v3_governance.yml"
+  - "README_v3.md"
+  - "install.sh"
+  - "backend/api/v1_admin.py"
+  - "backend/api/v1_supervision.py"
+  - "backend/api/v1_discovery.py"
+  - "backend/schemas/supervision.py"
+  - "scripts/smoke_api.py"
+  - "scripts/smoke_science.py"
+  - "tests/test_v3_api.py"
+
+constraints:
+  min_file_size_bytes: 20
+  prevent_new_root_files: true
+  enforce_science_tag_coverage: true
+  check_bn_db_health: false
+
+# Note: Interpreter caches like __pycache__/ and *.pyc are not part of the governed surface
+# and MUST NOT be included in release artifacts.

@@ -1,0 +1,16 @@
+Image Tagger v3.2.11 – Step 11: API Smoketests (FastAPI)
+
+- Replaced the stubbed tests/test_v3_api.py (which contained ellipses) with a
+  concrete FastAPI smoketest suite:
+    * test_health_check(): asserts /health returns {status: healthy, version: 3.0.0}.
+    * test_root_descriptor(): asserts / advertises docs and workbench_api.
+    * test_admin_models_smoke(): GET /v1/admin/models with admin headers
+      should return a JSON list (will fail if router or RBAC wiring is broken).
+    * test_admin_training_export_empty_list_ok(): POST /v1/admin/training/export
+      with empty image_ids should succeed and return a JSON list.
+    * test_explorer_export_empty_list_ok(): POST /v1/explorer/export with empty
+      image_ids and tagger headers should succeed and return a JSON list.
+    * test_404_handling_json(): asserts that /v1/non_existent returns a JSON
+      404 payload with {detail: "Not Found"}.
+- These tests are intentionally minimal but will catch missing router mounts,
+  broken RBAC decorators, or schema mismatches in the training/export paths.

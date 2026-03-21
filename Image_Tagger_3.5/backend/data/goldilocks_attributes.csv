@@ -1,0 +1,5 @@
+Feature_Name,Human_Readable_Label,Feature_Category,Low_End_State (Boring),High_End_State (Chaotic),Optimal_State (Just Right),Computational_Method
+cnfa.fluency.processing_load_proxy,Visual Information Density,Cognitive Load,"Sterile, under-stimulating","Chaotic, overwhelming, high-load","Engaging, rich, ordered complexity","JPEG file size / total_pixels"
+cnfa.fluency.clutter_density_count,Clutter Density (Objects),Cognitive Load,"Impersonal, unlived-in","Stressful, overwhelming","Personalized, cozy, organized density","count(objects)/area(room_floor)"
+cnfa.fluency.symmetry_score,Symmetry,Fluency,"Chaotic, Unbalanced","Static, Rigid","Balanced Asymmetry","SSIM(image, flipped)"
+cnfa.spatial.prospect,Prospect,Spatial,"Confined, Claustrophobic","Exposed, Vulnerable","Sheltered View","Isovist Raycast > 5m"

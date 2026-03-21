@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,12 +13,6 @@ Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang
   localization, text reading, and beyond.
 \newblock In \emph{arXiv preprint arXiv:2308.12966}, 2023.
 
-\bibitem[Caesar et~al.(2018)Caesar, Uijlings, and Ferrari]{Caesar2018}
-Holger Caesar, Jasper Uijlings, and Vittorio Ferrari.
-\newblock {COCO-Stuff}: Thing and stuff classes in context.
-\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
-  and Pattern Recognition (CVPR)}, pages 1209--1218, 2018.
-
 \bibitem[Cheng et~al.(2022)Cheng, Misra, Schwing, Kirillov, and
   Girdhar]{Cheng2022}
 Bowen Cheng, Ishan Misra, Alexander~G. Schwing, Alexander Kirillov, and Rohit
@@ -27,10 +21,29 @@ Bowen Cheng, Ishan Misra, Alexander~G. Schwing, Alexander Kirillov, and Rohit
 \newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
   and Pattern Recognition (CVPR)}, pages 1290--1299, 2022.
 
+\bibitem[Chuang et~al.(2018)Chuang, Li, Torralba, and Fidler]{Chuang2018}
+Ching-Yao Chuang, Jiaman Li, Antonio Torralba, and Sanja Fidler.
+\newblock Learning to act properly: Predicting and explaining affordances from
+  images.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 975--983, 2018.
+
+\bibitem[Do et~al.(2018)Do, Nguyen, and Reid]{Do2018AffordanceNet}
+Thanh-Toan Do, Anh Nguyen, and Ian Reid.
+\newblock Affordancenet: An end-to-end deep learning approach for object
+  affordance detection.
+\newblock In \emph{Proceedings of the IEEE International Conference on Robotics
+  and Automation (ICRA)}, pages 5882--5889, 2018.
+
 \bibitem[Gibson(1979)]{Gibson1979}
 James~Jerome Gibson.
 \newblock \emph{The Ecological Approach to Visual Perception}.
 \newblock Houghton Mifflin, Boston, MA, 1979.
+
+\bibitem[Gilardi et~al.(2023)Gilardi, Alizadeh, and Kubli]{Gilardi2023}
+Fabrizio Gilardi, Meysam Alizadeh, and Ma{\"e}l Kubli.
+\newblock Chatgpt outperforms crowd-workers for text-annotation tasks.
+\newblock \emph{PNAS Nexus}, 2\penalty0 (11), 2023.
 
 \bibitem[Gou et~al.(2021)Gou, Yu, Maybank, and Tao]{Gou2021}
 Jianping Gou, Baosheng Yu, Stephen~J. Maybank, and Dacheng Tao.
@@ -38,6 +51,12 @@ Jianping Gou, Baosheng Yu, Stephen~J. Maybank, and Dacheng Tao.
 \newblock \emph{International Journal of Computer Vision}, 129\penalty0
   (6):\penalty0 1789--1819, 2021.
 \newblock \doi{10.1007/s11263-021-01453-z}.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 770--778, 2016.
 
 \bibitem[Hinton et~al.(2015)Hinton, Vinyals, and Dean]{Hinton2015}
 Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
@@ -50,13 +69,14 @@ Guolin Ke, Qi~Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei
 \newblock {LightGBM}: A highly efficient gradient boosting decision tree.
 \newblock \emph{Advances in Neural Information Processing Systems}, 30, 2017.
 
-\bibitem[Li et~al.(2023)Li, Li, Cao, Gong, and Lu]{Li2023}
-Changhao Li, Yanpeng Li, Liangliang Cao, Boqing Gong, and Xin Lu.
-\newblock Locate, assign, refine: Taming customized image inpainting with
-  text-subject guidance.
-\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
-  Computer Vision (ICCV)}, 2023.
-\newblock (proxy citation for Li et al. 2023 on affordance prediction).
+\bibitem[Li et~al.(2019)Li, Liu, Kim, Wang, Yang, and
+  Kautz]{Li2019PuttingHumans}
+Xueting Li, Sifei Liu, Kihwan Kim, Xiaolong Wang, Ming-Hsuan Yang, and Jan
+  Kautz.
+\newblock Putting humans in a scene: Learning affordance in 3d indoor
+  environments.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2019.
 
 \bibitem[Nagarajan et~al.(2020)Nagarajan, Li, Feichtenhofer, and
   Grauman]{Nagarajan2020}

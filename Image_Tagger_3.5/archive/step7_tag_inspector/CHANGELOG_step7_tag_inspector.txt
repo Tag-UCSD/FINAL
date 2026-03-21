@@ -1,0 +1,8 @@
+Image Tagger v3.2.7 – Step 7: Tag Inspector (Supervisor Deep Dive)
+
+- Extended backend/schemas/supervision.py with ValidationDetail.
+- Extended backend/api/v1_supervision.py with:
+  * GET /v1/monitor/image/{image_id}/validations → ValidationDetail[] for that image.
+- Updated frontend/apps/monitor/src/App.jsx:
+  * IRR table now has an Inspect action that opens a Tag Inspector drawer.
+  * Tag Inspector shows per-user validations for the selected image, including attribute, value, dwell time, and timestamp.

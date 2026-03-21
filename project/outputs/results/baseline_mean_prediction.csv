@@ -1,0 +1,6 @@
+affordance_id,affordance_name,rmse,mae,pearson_r,spearman_rho,train_mean
+L059,Sleep,1.0986,0.8759,0.0,0.0,3.1376
+L079,Cook,1.2869,1.0846,0.0,0.0,1.7752
+L091,Computer Work,0.9798,0.6369,0.0,0.0,3.8624
+L130,Conversation,1.1796,1.0102,0.0,0.0,4.4899
+L141,Yoga/Stretching,1.2258,0.9499,0.0,0.0,3.3087

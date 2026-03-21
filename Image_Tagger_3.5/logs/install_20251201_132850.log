@@ -1,0 +1,173 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+📦 Installing host-side dependencies...
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+[hollow_repo_guard] OK: structure looks non-hollow.
+🧪 Running program integrity guard
+[program_integrity_guard] OK: no dangerous ellipses or uncontrolled stubs.
+🧯 Running syntax guard
+[syntax_guard] OK: all critical python files parse cleanly and contain no truncations.
+🪝 Running critical import guard
+[critical_import_guard] WARNINGS:
+  backend.science.pipeline: missing third-party dependency: numpy
+  backend.main: missing third-party dependency: fastapi
+[critical_import_guard] OK: critical modules import cleanly.
+🧪 Running canon guard
+[canon_guard] OK: registry keys covered by compute or stubs.
+🔒 Running Guardian (governance) checks
+[guardian] Verification PASSED.
+⚠️  WARNING: API_SECRET is using the default value 'dev_secret_key_change_me'.
+    This is fine for local demos, but you MUST change it for any shared or deployed environment.
+🐳 Building containers
+time="2025-12-01T13:28:53-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.29kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile.backend
+#2 transferring dockerfile: 1.28kB done
+#2 DONE 0.0s
+
+#3 [frontend internal] load build definition from Dockerfile.frontend
+#3 transferring dockerfile: 1.23kB done
+#3 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#3 DONE 0.0s
+
+#4 [frontend internal] load metadata for docker.io/library/node:18-alpine
+#4 ...
+
+#5 [api internal] load metadata for docker.io/library/python:3.11-slim
+#5 DONE 0.9s
+
+#6 [frontend internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [api 1/7] FROM docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d65b549fcaa8af75624c47474444d
+#7 resolve docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d65b549fcaa8af75624c47474444d 0.0s done
+#7 DONE 0.0s
+
+#8 [api 2/7] WORKDIR /app
+#8 CACHED
+
+#9 [api 3/7] RUN apt-get update && apt-get install -y     libgl1     libglib2.0-0     libpq-dev     gcc     && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [api internal] load build context
+#10 transferring context: 6.99kB done
+#10 DONE 0.0s
+
+#11 [frontend internal] load metadata for docker.io/library/nginx:alpine
+#11 DONE 1.0s
+
+#4 [frontend internal] load metadata for docker.io/library/node:18-alpine
+#4 DONE 1.0s
+
+#12 [frontend stage-1 1/7] FROM docker.io/library/nginx:alpine@sha256:b3c656d55d7ad751196f21b7fd2e8d4da9cb430e32f646adcf92441b72f82b14
+#12 resolve docker.io/library/nginx:alpine@sha256:b3c656d55d7ad751196f21b7fd2e8d4da9cb430e32f646adcf92441b72f82b14 done
+#12 DONE 0.0s
+
+#13 [frontend builder  1/11] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#13 resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e done
+#13 DONE 0.0s
+
+#14 [frontend stage-1 2/7] RUN rm -rf /usr/share/nginx/html/*
+#14 CACHED
+
+#15 [frontend internal] load build context
+#15 transferring context: 2.51kB 0.0s done
+#15 DONE 0.0s
+
+#16 [frontend builder  6/11] COPY frontend/vite.config.base.js ./
+#16 CACHED
+
+#17 [frontend builder  9/11] WORKDIR /app/frontend
+#17 CACHED
+
+#18 [frontend builder  5/11] COPY frontend/shared ./frontend/shared
+#18 CACHED
+
+#19 [frontend builder  3/11] COPY frontend/package.json frontend/package-lock.json* ./
+#19 CACHED
+
+#20 [frontend builder  2/11] WORKDIR /app
+#20 CACHED
+
+#21 [frontend builder  8/11] COPY frontend/postcss.config.js ./
+#21 CACHED
+
+#22 [frontend builder  4/11] COPY frontend/apps ./frontend/apps
+#22 CACHED
+
+#23 [frontend builder  7/11] COPY frontend/tailwind.config.js ./
+#23 CACHED
+
+#24 [frontend builder 10/11] RUN npm install
+#24 CACHED
+
+#25 [frontend builder 11/11] RUN npm run build
+#25 0.294 
+#25 0.294 > image-tagger-v3-monorepo@3.0.0 build
+#25 0.294 > npm run build -w apps/workbench && npm run build -w apps/monitor && npm run build -w apps/admin && npm run build -w apps/explorer
+#25 0.294 
+#25 0.391 npm error No workspaces found:
+#25 0.391 npm error   --workspace=apps/workbench
+#25 0.392 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-12-01T21_28_55_421Z-debug-0.log
+#25 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+#26 [api 4/7] RUN pip install --no-cache-dir     fastapi==0.109.0     uvicorn==0.27.0     sqlalchemy==2.0.25     psycopg2-binary==2.9.9     pydantic==2.6.1     pydantic-settings==2.1.0     python-jose[cryptography]==3.3.0     passlib[bcrypt]==1.7.4     python-multipart==0.0.7     pillow==10.2.0     numpy==1.26.3     opencv-python-headless==4.9.0.80     scipy==1.11.4     scikit-image==0.22.0     requests==2.31.0     PyYAML==6.0.1     pytest==7.4.4     httpx==0.26.0     openai==1.12.0     anthropic==0.33.0     google-generativeai==0.8.3     google-genai==0.1.0
+#26 CANCELED
+------
+ > [frontend builder 11/11] RUN npm run build:
+0.294 
+0.294 > image-tagger-v3-monorepo@3.0.0 build
+0.294 > npm run build -w apps/workbench && npm run build -w apps/monitor && npm run build -w apps/admin && npm run build -w apps/explorer
+0.294 
+0.391 npm error No workspaces found:
+0.391 npm error   --workspace=apps/workbench
+0.392 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-12-01T21_28_55_421Z-debug-0.log
+------
+Dockerfile.frontend:21
+
+--------------------
+
+  19 |     # Build all 4 apps
+
+  20 |     # This runs the 'build' script in package.json which builds each workspace
+
+  21 | >>> RUN npm run build
+
+  22 |     
+
+  23 |     # Stage 2: Serve with Nginx
+
+--------------------
+
+target frontend: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+🌱 Seeding database
+time="2025-12-01T13:29:00-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+time="2025-12-01T13:29:00-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+✅ SYSTEM ONLINE at http://localhost:8080
+🧪 Running smoke tests (API + Science)
+time="2025-12-01T13:29:00-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+Running science smoke test (advisory)...
+time="2025-12-01T13:29:00-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+[install] WARNING: science smoketest failed (likely empty DB or misconfigured pipeline) – continuing.
+time="2025-12-01T13:29:00-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+[install] smoke_science (second pass) failed – continuing as advisory.
+[install] Running frontend smoketest...
+INFO:__main__:playwright not installed; falling back to HTML-only check
+INFO:__main__:Running frontend HTML smoke check against http://localhost:8080/
+ERROR:__main__:Failed to reach frontend at http://localhost:8080/: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1055bf980>: Failed to establish a new connection: [Errno 61] Connection refused'))
+[install] Frontend smoketest failed

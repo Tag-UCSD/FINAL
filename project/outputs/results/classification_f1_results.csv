@@ -1,0 +1,21 @@
+threshold,affordance_id,affordance_name,model,precision,recall,f1,positive_rate
+4.0,L059,Sleep,Mean,0.0,0.0,0.0,0.3452
+4.0,L059,Sleep,LinearRegression,0.7619,0.5517,0.64,0.3452
+4.0,L059,Sleep,LightGBM,0.8125,0.4483,0.5778,0.3452
+4.0,L059,Sleep,Indicator-LGBM,0.8182,0.3103,0.45,0.3452
+4.0,L079,Cook,Mean,0.0,0.0,0.0,0.1548
+4.0,L079,Cook,LinearRegression,0.8,0.3077,0.4444,0.1548
+4.0,L079,Cook,LightGBM,1.0,0.3077,0.4706,0.1548
+4.0,L079,Cook,Indicator-LGBM,1.0,0.7692,0.8696,0.1548
+4.0,L091,Computer Work,Mean,0.0,0.0,0.0,0.7381
+4.0,L091,Computer Work,LinearRegression,0.8235,0.4516,0.5833,0.7381
+4.0,L091,Computer Work,LightGBM,0.7879,0.4194,0.5474,0.7381
+4.0,L091,Computer Work,Indicator-LGBM,0.8947,0.5484,0.68,0.7381
+4.0,L130,Conversation,Mean,0.8095,1.0,0.8947,0.8095
+4.0,L130,Conversation,LinearRegression,0.9492,0.8235,0.8819,0.8095
+4.0,L130,Conversation,LightGBM,0.9492,0.8235,0.8819,0.8095
+4.0,L130,Conversation,Indicator-LGBM,0.9538,0.9118,0.9323,0.8095
+4.0,L141,Yoga/Stretching,Mean,0.0,0.0,0.0,0.369
+4.0,L141,Yoga/Stretching,LinearRegression,0.4737,0.2903,0.36,0.369
+4.0,L141,Yoga/Stretching,LightGBM,0.5333,0.2581,0.3478,0.369
+4.0,L141,Yoga/Stretching,Indicator-LGBM,0.8333,0.3226,0.4651,0.369

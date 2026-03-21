@@ -1,0 +1,15 @@
+Image Tagger v3.2.9 – Step 9: Training Export / Active Learning wiring
+
+- Added backend/services/training_export.py with TrainingExporter:
+  * export_for_images(db, image_ids) joins Validation with Image to produce
+    JSON-ready training examples (image_id, filename, attribute_key, value,
+    user_id, region_id, duration_ms, created_at, source).
+- Added backend/schemas/training.py with TrainingExample Pydantic model.
+- Replaced the stubbed /v1/explorer/export implementation in
+  backend/api/v1_discovery.py with a real exporter-backed endpoint:
+  * POST /v1/explorer/export (via router prefix) now returns
+    list[TrainingExample] instead of a fake JSON blob.
+- Added an admin alias endpoint:
+  * POST /v1/admin/training/export uses the same TrainingExporter but is
+    protected by require_admin and can be extended later with richer
+    filters (quality thresholds, time windows).

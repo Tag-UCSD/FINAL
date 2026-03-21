@@ -1,0 +1,16 @@
+Image Tagger v3.2.13 – Step 13: Router Wiring for Smoketests
+
+- Rewrote backend/main.py to explicitly mount all v1 routers:
+    * v1_annotation.router   -> /v1/workbench/...
+    * v1_admin.router        -> /v1/admin/...
+    * v1_supervision.router  -> /v1/monitor/...
+    * v1_discovery.router    -> /v1/explorer/...
+- Kept FastAPI app metadata stable (title, description, version, docs URLs).
+- Preserved /health and root (/) endpoints so that:
+    * /health returns {status: "healthy", version: "3.0.0"}.
+    * / returns a JSON descriptor with "docs" and "workbench_api" keys.
+- This makes the smoketests in tests/test_v3_api.py meaningful in a real environment:
+    * GET /v1/admin/models
+    * POST /v1/admin/training/export
+    * POST /v1/explorer/export
+    * and the basic health/root checks.

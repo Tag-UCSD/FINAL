@@ -1,0 +1,45 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+📦 Installing host-side dependencies...
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+[hollow_repo_guard] OK: structure looks non-hollow.
+🧪 Running program integrity guard
+[program_integrity_guard] OK: no dangerous ellipses or uncontrolled stubs.
+🧯 Running syntax guard
+[syntax_guard] OK: all critical python files parse cleanly and contain no truncations.
+🪝 Running critical import guard
+[critical_import_guard] WARNINGS:
+  backend.science.pipeline: missing third-party dependency: numpy
+  backend.main: missing third-party dependency: fastapi
+[critical_import_guard] OK: critical modules import cleanly.
+🧪 Running canon guard
+[canon_guard] OK: registry keys covered by compute or stubs.
+🔒 Running Guardian (governance) checks
+[guardian] Verification PASSED.
+⚠️  WARNING: API_SECRET is using the default value 'dev_secret_key_change_me'.
+    This is fine for local demos, but you MUST change it for any shared or deployed environment.
+🐳 Building containers
+time="2025-12-01T12:33:56-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+unable to get image 'deploy-api': Cannot connect to the Docker daemon at unix:///Users/taggertsmith/.docker/run/docker.sock. Is the docker daemon running?
+🌱 Seeding database
+time="2025-12-01T12:34:01-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Cannot connect to the Docker daemon at unix:///Users/taggertsmith/.docker/run/docker.sock. Is the docker daemon running?
+time="2025-12-01T12:34:01-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Cannot connect to the Docker daemon at unix:///Users/taggertsmith/.docker/run/docker.sock. Is the docker daemon running?
+✅ SYSTEM ONLINE at http://localhost:8080
+🧪 Running smoke tests (API + Science)
+time="2025-12-01T12:34:01-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Cannot connect to the Docker daemon at unix:///Users/taggertsmith/.docker/run/docker.sock. Is the docker daemon running?
+Running science smoke test (advisory)...
+open /Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/deploy/docker-compose.yml: no such file or directory
+[install] WARNING: science smoketest failed (likely empty DB or misconfigured pipeline) – continuing.
+open /Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/deploy/docker-compose.yml: no such file or directory
+[install] smoke_science (second pass) failed – continuing as advisory.
+[install] Running frontend smoketest...
+install.sh: line 100: .venv/bin/python: No such file or directory
+[install] Frontend smoketest failed

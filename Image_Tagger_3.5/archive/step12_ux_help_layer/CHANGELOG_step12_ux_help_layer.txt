@@ -1,0 +1,18 @@
+Image Tagger v3.2.12 – Step 12: UX Help Layer (Explorer + Workbench)
+
+- Explorer (frontend/apps/explorer/src/App.jsx):
+  * Extended lucide-react imports to include HelpCircle.
+  * Added a "How to use Explorer" quick-help banner directly under the header. It explains:
+    - Start with a query or browse images.
+    - Use Filters to narrow by attributes/tags/source.
+    - Click thumbnails to inspect tags/attributes.
+    - Use the checkbox on each card to add images to the export cart.
+    - Click "Export Dataset" to download a JSON file for training/analysis.
+- Workbench (frontend/apps/workbench/src/App.jsx):
+  * Extended lucide-react imports to include HelpCircle.
+  * Added a slim quick-help strip under the header that reminds taggers:
+    - One binary question at a time.
+    - Keyboard shortcuts: 1 = NO, 2 = YES.
+    - They can use mouse buttons instead, and Retry if the task looks wrong.
+- These UX hints are intentionally lightweight, visible by default, and designed to make
+  the attribute tagging and export workflows more idiot-proof for new users.

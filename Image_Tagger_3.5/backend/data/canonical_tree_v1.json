@@ -1,0 +1,108 @@
+{
+  "I. Spatial Configuration": [
+    "spatial.prospect_depth",
+    "spatial.refuge_availability",
+    "spatial.edge_definition",
+    "spatial.ceiling_height_variation",
+    "spatial.visual_escape_routes"
+  ],
+  "II. Fractals & Pattern": [
+    "fractals.dimension_range",
+    "pattern.self_similarity_index",
+    "rhythm.repetition_regularity",
+    "pattern.hierarchical_nesting"
+  ],
+  "III. Biophilia": [
+    "biophilia.natural_material_diversity",
+    "biophilia.biomimetic_forms",
+    "plants.biomass_estimate",
+    "plants.foliage_density_layers"
+  ],
+  "IV. Color & Light": [
+    "color.palette_diversity",
+    "color.harmony_measure",
+    "lighting.shadow_softness",
+    "lighting.glare_probability"
+  ],
+  "V. Material & Texture": [
+    "materials.tactile_diversity",
+    "materials.softness_presence",
+    "materials.natural_weathering"
+  ],
+  "VI. Social Affordances": [
+    "social.seating_arrangements",
+    "social.interpersonal_distance_support",
+    "density.people_capacity_ratio"
+  ],
+  "VII. Temporal & Dynamic": [
+    "temporal.wear_evidence",
+    "dynamics.movement_elements",
+    "dynamics.discovery_potential"
+  ],
+  "VIII. Cognitive Load": [
+    "navigation.visual_access_extent",
+    "navigation.landmark_distinctiveness",
+    "cognitive.visual_information_density",
+    "cognitive.novelty_vs_familiarity"
+  ],
+  "IX. Restorative Qualities": [
+    "restoration.fascination_elements",
+    "restoration.being_away_quality",
+    "stress.threatening_elements"
+  ],
+  "X. Cultural & Semantic": [
+    "archetype.cave_like_quality",
+    "archetype.cathedral_quality",
+    "semantics.function_clarity",
+    "semantics.status_markers"
+  ],
+  "XI. Control & Agency": [
+    "control.adjustable_element_density",
+    "control.modification_affordances",
+    "control.microclimate_zones",
+    "agency.responsive_feedback",
+    "agency.furniture_mobility_afforded",
+    "agency.light_zoning_control"
+  ],
+  "XII. Info Gradient & Surprise": [
+    "information.conditional_entropy",
+    "surprise.expectation_violation",
+    "mystery.progressive_disclosure"
+  ],
+  "XIII. Topology & Network": [
+    "topology.integration_value",
+    "topology.choice_coefficient",
+    "network.visual_graph_connectivity"
+  ],
+  "XIV. Proportion & Scale": [
+    "scale.body_part_resonance",
+    "proportion.golden_ratio_proximity",
+    "proportion.harmonic_intervals",
+    "scale.magnitude_range"
+  ],
+  "XV. Affordances & Activity": [
+    "activity.primary_script_clarity",
+    "activity.functional_density",
+    "activity.object_constellation_completeness",
+    "activity.transition_impedance",
+    "motor.postural_variety",
+    "motor.body_clearance_min",
+    "affordance.graspability_index",
+    "affordance.view_adjustment_potential"
+  ],
+  "XVI. Privacy & Territory": [
+    "privacy.visual_exposure_to_entry",
+    "privacy.gaze_vulnerability_outward",
+    "territory.personalization_density",
+    "territory.boundary_softness",
+    "territory.primary_vantage_point"
+  ],
+  "XVII. Anomalies & Illusions": [
+    "schema.functional_mismatch",
+    "schema.material_contradiction",
+    "material.mimicry_fidelity",
+    "surface.trompe_l_oeil_presence",
+    "structure.physics_defiance_proxy",
+    "scale.gulliver_effect"
+  ]
+}

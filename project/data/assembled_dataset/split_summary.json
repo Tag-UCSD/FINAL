@@ -1,0 +1,57 @@
+{
+  "total_rows": 2100,
+  "n_images": 420,
+  "n_affordances": 5,
+  "affordance_ids": [
+    "L059",
+    "L079",
+    "L091",
+    "L130",
+    "L141"
+  ],
+  "splits": {
+    "train": {
+      "n_scenes": 224,
+      "n_rows": 1490
+    },
+    "val": {
+      "n_scenes": 32,
+      "n_rows": 190
+    },
+    "test": {
+      "n_scenes": 64,
+      "n_rows": 420
+    }
+  },
+  "n_features_raw": 310,
+  "n_indicator_features": 1248,
+  "cluster_split": {
+    "train": {
+      "living_room": 42,
+      "office": 42,
+      "lobby_lounge": 36,
+      "dining_room": 32,
+      "kitchen": 28,
+      "bedroom": 25,
+      "bathroom": 19
+    },
+    "val": {
+      "living_room": 6,
+      "office": 6,
+      "dining_room": 5,
+      "lobby_lounge": 5,
+      "kitchen": 4,
+      "bedroom": 4,
+      "bathroom": 2
+    },
+    "test": {
+      "living_room": 12,
+      "office": 12,
+      "lobby_lounge": 10,
+      "dining_room": 9,
+      "kitchen": 8,
+      "bedroom": 7,
+      "bathroom": 6
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Image Tagger v3.2.14 – Step 14: Guardian + Install-Time Tests
+
+- Hardened install.sh to integrate governance and tests:
+  * Guardian:
+    - If governance.lock exists, run `python3 scripts/guardian.py verify` and abort
+      the install if verification fails.
+    - If governance.lock does not exist, run `python3 scripts/guardian.py freeze`
+      to create the initial baseline, aborting on failure.
+    - If python3 is not available, print a warning and skip Guardian.
+  * Tests:
+    - After docker-compose brings up the stack, seeding, and existing smoke_api /
+      smoke_science checks, run:
+          docker-compose exec -T api pytest -q tests/test_v3_api.py
+      and abort if the pytest smoketests fail.
+- This makes install.sh behave like a mini CI gate: a release that passes Guardian
+  + smoke tests + pytest is much closer to "enterprise-ready".

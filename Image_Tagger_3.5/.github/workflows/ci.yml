@@ -1,0 +1,33 @@
+name: Image Tagger v3 CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install fastapi uvicorn sqlalchemy pydantic psycopg2-binary pytest requests
+
+      - name: Run Guardian verification
+        run: |
+          python scripts/guardian.py verify
+
+      - name: Run API and Guardian tests
+        run: |
+          pytest -q tests/test_v3_api.py tests/test_guardian.py

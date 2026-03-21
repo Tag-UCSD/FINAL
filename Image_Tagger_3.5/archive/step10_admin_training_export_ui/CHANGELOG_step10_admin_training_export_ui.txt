@@ -1,0 +1,11 @@
+Image Tagger v3.2.10 – Step 10: Admin Training Export UI
+
+- Extended frontend/apps/admin/src/App.jsx to surface the training export capability:
+  * Added state: exportIds (comma-separated image IDs), exportBusy, exportMessage.
+  * Implemented handleTrainingExport(), which:
+    - Parses exportIds into a list of integers.
+    - Calls POST /v1/admin/training/export with payload { image_ids, format: "json" }.
+    - Downloads the returned list[TrainingExample] as training_export.json via Blob.
+  * Added a "Training Export" card under the right-hand column (below Cost Overview),
+    with a textarea for IDs and a Download JSON button.
+- Extended lucide-react imports to include the Download icon for this card.

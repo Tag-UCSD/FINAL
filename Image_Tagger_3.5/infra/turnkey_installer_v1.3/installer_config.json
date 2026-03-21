@@ -1,0 +1,12 @@
+{
+  "prechecks": [
+    "python --version",
+    "docker --version || echo 'docker not found (ok for CI)'"
+  ],
+  "steps": [
+    {
+      "name": "Image Tagger native installer",
+      "shell": "bash install.sh"
+    }
+  ]
+}

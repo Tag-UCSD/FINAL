@@ -1,0 +1,12 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+📦 Installing host-side dependencies...
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+[hollow_repo_guard] Missing critical paths:
+  - governance.lock
+❌ Hollow Repo Guard failed

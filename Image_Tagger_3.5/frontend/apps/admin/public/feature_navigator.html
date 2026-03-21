@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Repository Explorer</title>
+    <!-- 1. Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Include PapaParse to parse the CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        /* Simple bar chart styles */
+        .chart-bar {
+            transition: all 0.3s ease;
+        }
+        .chart-bar:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Sidebar: Filters -->
+        <aside class="w-72 bg-white p-6 overflow-y-auto border-r border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Filter by Category</h2>
+            <div id="filter-container" class="space-y-2">
+                <!-- Filter checkboxes will be dynamically inserted here -->
+                <div class="flex items-center">
+                    <input id="filter-all" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" onchange="filterData()">
+                    <label for="filter-all" class="ml-3 text-sm font-medium text-gray-700">All Categories</label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto p-8">
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-900">Architectural Feature Repository Explorer</h1>
+                <p class="text-gray-600 mt-1">A dashboard to explore, filter, and analyze the feature database.</p>
+            </header>
+
+            <!-- Stats & Chart -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- Summary Stat -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-sm font-medium text-gray-500">Total Features</h3>
+                    <p id="total-features" class="mt-1 text-3xl font-semibold text-gray-900">0</p>
+                </div>
+                <!-- Summary Stat -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-sm font-medium text-gray-500">Total Categories</h3>
+                    <p id="total-categories" class="mt-1 text-3xl font-semibold text-gray-900">0</p>
+                </div>
+
+                <!-- Frequency Chart -->
+                <div class="bg-white p-6 rounded-lg shadow md:col-span-3">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Feature Frequency by Category</h3>
+                    <div id="chart-container" class="space-y-2">
+                        <!-- Chart bars will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtered Feature List -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Filtered Feature List</h2>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Feature Name</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CNfA Relevance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feature-list" class="bg-white divide-y divide-gray-200">
+                            <!-- Feature rows will be dynamically inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Global variable to hold the parsed data
+        let allFeatures = [];
+        const categoryColors = [
+            'bg-blue-500', 'bg-green-500', 'bg-red-500', 'bg-yellow-500', 'bg-purple-500', 
+            'bg-pink-500', 'bg-indigo-500', 'bg-teal-500', 'bg-orange-500', 'bg-gray-500',
+            'bg-blue-700', 'bg-green-700', 'bg-red-700', 'bg-yellow-700', 'bg-purple-700',
+        ];
+
+        // *** FIX: Embed the CSV data directly as a string ***
+        const csvData = `
+"Feature_Category","Feature_Name","Human_Readable_Label","Method_1_Retrieval_Source","Method_1_Retrieval_Query","Method_2_Extraction_Tool","Method_2_Extraction_Algorithm_or_Query","CNfA_Relevance"
+"Style","style.mid_century_modern","Mid-Century Modern","Houzz, Pinterest, ArchDaily, Unsplash API","""mid-century modern"", ""MCM""","VLM (Gemini), CLIP","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Mid-Century Modern? (yes/no)""\`","Cues for 'Eames' schema, 'warm' woods, 'classic' design, low 'ornament'."
+"Style","style.japandi","Japandi","Houzz, Pinterest","""japandi""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Japandi? (yes/no)""\`","Cues for 'minimalism', 'biophilia' (wood/rattan), 'calm', 'wabi-sabi' (imperfection)."
+"Style","style.scandinavian","Scandinavian","Houzz, Pinterest, Unsplash API","""scandinavian"", ""scandi""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Scandinavian? (yes/no)""\`","Cues for 'lightness' (light woods, white walls), 'minimalism', 'coziness' (hygge), 'functionality'."
+"Style","style.industrial","Industrial","Houzz, Pinterest, Unsplash API","""industrial interior""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Industrial? (yes/no)""\`","Cues for 'rawness' (exposed brick/ducts), 'authenticity', 'cold' materials (metal, concrete)."
+"Style","style.farmhouse","Farmhouse / Modern Farmhouse","Houzz, Pinterest","""farmhouse"", ""modern farmhouse""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Farmhouse or Modern Farmhouse? (yes/no)""\`","Cues for 'comfort', 'nostalgia', 'rustic' materials (shiplap, barn doors), 'hearth' (social center)."
+"Style","style.traditional","Traditional","Houzz, Pinterest","""traditional interior""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Traditional? (yes/no)""\`","Cues for 'formality', 'symmetry', 'ornament', 'heirloom' (status, history)."
+"Style","style.minimalist","Minimalist","Houzz, Pinterest, Unsplash API","""minimalist interior""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Minimalist? (yes/no)""\`","Low 'clutter', 'low complexity', 'low cognitive load'. Can be 'calming' or 'sterile'."
+"Style","style.rustic","Rustic","Houzz, Pinterest","""rustic interior""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Rustic? (yes/no)""\`","Cues for 'refuge' (cabin), 'biophilia' (raw wood, stone), 'warmth', 'escape from technology'."
+"Style","style.bohemian","Bohemian / Boho","Houzz, Pinterest, Unsplash API","""bohemian"", ""boho interior""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is the primary style of this interior Bohemian? (yes/no)""\`","High 'clutter_density', 'personalization', 'soft_goods_ratio' (haptics), 'informal', 'creative'."
+"Provenance","provenance.architect_le_corbusier","Architect: Le Corbusier","ArchDaily, Dezeen, Academic Archives","""architect: Le Corbusier""","VLM (Gemini), CLIP","(Vector Search) \`cosine_similarity(image_vector, known_corbusier_vector) > 0.8\` (VLM Query) \`Q: ""Does this interior strongly resemble the work of Le Corbusier? (yes/no)""\`","High 'schema' activation for 'Modernism'. Cues for 'concrete', 'primary colors', 'machine for living'."
+"Provenance","provenance.architect_kengo_kuma","Architect: Kengo Kuma","ArchDaily, Dezeen","""architect: Kengo Kuma""","VLM (Gemini), CLIP","(Vector Search) \`cosine_similarity(image_vector, known_kuma_vector) > 0.8\` (VLM Query) \`Q: ""Does this interior strongly resemble the work of Kengo Kuma? (yes/no)""\`","High 'biophilia' cue, 'wood' (slats), 'lightness', 'dematerialization', 'craft'."
+"Provenance","provenance.iconic_chair_eames","Iconic Chair: Eames Lounge Chair","Houzz (Visual Match), Pinterest, Design Museums","""Eames Lounge Chair""","VLM (Gemini), Google Cloud Vision API","(Object Detection) \`GCV\` has a 'mid' for 'Eames Lounge Chair'. (VLM Query) \`Q: ""Is there an Eames Lounge Chair in this image? (yes/no)""\`","'Mid-Century Modern' schema. 'High-status' cue. 'Perceived comfort' (affordance)."
+"Provenance","provenance.iconic_chair_barcelona","Iconic Chair: Barcelona Chair","Houzz (Visual Match), Pinterest, Design Museums","""Barcelona Chair""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is there a Barcelona Chair in this image? (yes/no)""\`","'Mies van der Rohe' schema. 'Modernist' cue. 'Formal' seating (less 'lounge' than Eames)."
+"Spatial & Geometric","spatial.room_function.living_room","Room Function: Living Room","Houzz, ArchDaily, ADE20K","""Living Room""","VLM (Gemini), ADE20K Dataset","(VLM Query - Classification) \`Q: ""What room is this?""\` -> \`(label == 'living_room')\`","Primary 'social' and 'relaxation' space. High 'sociopetal' potential."
+"Spatial & Geometric","spatial.room_function.kitchen","Room Function: Kitchen","Houzz, ArchDaily, ADE20K","""Kitchen""","VLM (Gemini), ADE20K Dataset","(VLM Query - Classification) \`Q: ""What room is this?""\` -> \`(label == 'kitchen')\`","'Task-oriented' (focus). 'Social' (hearth). 'Olfactory' cues (food)."
+"Spatial & Geometric","spatial.room_function.bedroom","Room Function: Bedroom","Houzz, ArchDaily, ADE20K","""Bedroom""","VLM (Gemini), ADE20K Dataset","(VLM Query - Classification) \`Q: ""What room is this?""\` -> \`(label == 'bedroom')\`","Primary 'refuge' and 'rest' space. Low-arousal, low-light, high 'softness' desired."
+"Spatial & Geometric","spatial.room_function.home_office","Room Function: Home Office","Houzz, ArchDaily, ADE20K","""Home Office""","VLM (Gemini), ADE20K Dataset","(VLM Query - Classification) \`Q: ""What room is this?""\` -> \`(label == 'home_office')\`","'Task-oriented' (focus). Requires 'ergonomic' affordances, 'low-distraction', 'good task lighting'."
+"Spatial & Geometric","spatial.room_function.bathroom","Room Function: Bathroom","Houzz, ArchDaily, ADE20K","""Bathroom""","VLM (Gemini), ADE20K Dataset","(VLM Query - Classification) \`Q: ""What room is this?""\` -> \`(label == 'bathroom')\`","'Private' space. 'Spa-like' (restorative) or 'functional' (task-based). 'Haptic' (water, steam)."
+"Component: Ceiling","component.ceiling.exposed_beam","Ceiling: Exposed Beam","Houzz, Pinterest","""exposed beam ceiling""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Are there exposed structural beams on the ceiling? (yes/no)""\`","Cues for 'rustic', 'craft', 'structure', 'shelter'. Can increase 'visual complexity'."
+"Component: Ceiling","component.ceiling.coffered","Ceiling: Coffered","Houzz, Pinterest","""coffered ceiling""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is this a coffered (sunken panel) ceiling? (yes/no)""\`","Cues for 'traditional', 'formal', 'high-status', 'high-complexity', 'rhythm'."
+"Component: Ceiling","component.ceiling.vaulted","Ceiling: Vaulted","Houzz, Pinterest","""vaulted ceiling""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is this a vaulted or cathedral ceiling? (yes/no)""\`","'Cathedral Effect'. Primes 'abstract thought', 'awe', 'openness'. Can feel 'less cozy'."
+"Component: Ceiling","component.ceiling.tray","Ceiling: Tray","Houzz","""tray ceiling""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is this a tray ceiling (recessed center)? (yes/no)""\`","'Formal' cue (often in dining/bedrooms). 'Softly' defines a zone. Good for 'cove lighting'."
+"Component: Ceiling","component.ceiling.cove_lighting","Ceiling: Cove Lighting","Houzz, Pinterest, Lighting Catalogs","""cove lighting""","VLM (Gemini)","(VLM Query - Binary Classification) \`Q: ""Is indirect cove lighting visible at the ceiling edge? (yes/no)""\`","'Indirect light' = low glare, 'soft' shadows, 'calming' atmosphere. Reduces 'visual hot spots'."
+"Component: Wall","component.wall.material.brick_exposed","Wall: Exposed Brick","Houzz, Pinterest, ArchDaily","""exposed brick wall"", ""brick wall interior""","VLM (Gemini), SAM","1. Get \`wall\` segment (SAM). 2. Pass to VLM: \`Q: ""Is this wall exposed brick? (yes/no)""\`","'Industrial' or 'historic' schema. 'Authenticity'. 'Rough' texture. 'Warm' color. High 'fractal_dimension'."
+"Component: Wall","component.wall.material.stone_wall","Wall: Stone Wall","Houzz, Pinterest, ArchDaily","""stone wall interior"", ""stacked stone wall"" (User's 'stone walls')","VLM (Gemini), SAM","1. Get \`wall\` segment (SAM). 2. Pass to VLM: \`Q: ""Is this wall made of stacked stone? (yes/no)""\`","'Refuge' cue (cave-like, solid). 'Biophilia' (natural material). 'High-mass' thermal cue. 'Rustic' schema."
+"Component: Wall","component.wall.material.wood_slat","Wall: Wood Slat / Acoustic Wood","Houzz, Pinterest, ArchDaily (Products)","""wood slat wall"", ""acoustic wood panel""","VLM (Gemini), SAM","1. Get \`wall\` segment (SAM). 2. Pass to VLM: \`Q: ""Is this a wood slat wall? (yes/no)""\`","'Biophilia'. High 'rhythm'. 'Modern' style. Implies 'acoustic damping' (CNfA)."
+"Component: Wall","component.wall.treatment.wallpaper_patterned","Wall: Patterned Wallpaper","Houzz, Wallpaper Catalogs","""patterned wallpaper""","VLM (Gemini), SAM","1. Get \`wall\` segment (SAM). 2. Pass to VLM: \`Q: ""Is this wall covered in patterned wallpaper? (yes/no)""\`","High 'visual complexity'. 'Biophilic' (if floral/natural). 'Formal' or 'playful' style. Can be 'high-load' or 'fascinating'."
+"Component: Wall","component.wall.treatment.wainscoting","Wall: Wainscoting","Houzz, Pinterest","""wainscoting""","VLM (Gemini), SAM","1. Get \`wall\` segment (SAM). 2. Pass to VLM: \`Q: ""Does this wall have wainscoting (lower-half paneling)? (yes/no)""\`","'Traditional' or 'Formal' schema. Creates a 'horizontal datum line'. 'Human-scale' element."
+"Component: Kitchen","component.kitchen.hardware.material.brass","Hardware: Brass","Houzz, Pinterest, Hardware Catalogs (e.g., Rejuvenation)","""brass hardware"", ""brass cabinet pulls""","VLM (Gemini), SAM","1. Get \`cabinet\` segments (SAM). 2. Find small anomalies (hardware). 3. Pass hardware segment to VLM: \`Q: ""Is this hardware brass? (yes/no)""\`","'Warm' metal. 'Classic' or 'high-status' cue. 'Haptic' affordance."
+"Component: Kitchen","component.kitchen.hardware.material.matte_black","Hardware: Matte Black","Houzz, Pinterest, Hardware Catalogs","""matte black hardware"", ""matte black faucet""","VLM (Gemini), SAM","1. Get \`cabinet\` segments (SAM). 2. Find hardware. 3. Pass hardware segment to VLM: \`Q: ""Is this hardware matte black? (yes/no)""\`","'Modern', 'Industrial', or 'Farmhouse' style. 'High-contrast' graphic element."
+"Component: Kitchen","component.kitchen.hardware.material.chrome","Hardware: Chrome","Houzz, Pinterest, Hardware Catalogs","""chrome hardware"", ""chrome faucet""","VLM (Gemini), SAM","1. Get \`cabinet\` segments (SAM). 2. Find hardware. 3. Pass hardware segment to VLM: \`Q: ""Is this hardware chrome/polished nickel? (yes/no)""\`","'Standard', 'clean', 'functional' cue. 'Cool' metal. Can create 'glare' (visual hot spots)."
+"Component: Kitchen","component.kitchen.hardware.type.bar_pull","Hardware: Bar Pull","Houzz, Hardware Catalogs","""bar pull"", ""cabinet bar pull""","VLM (Gemini), SAM","1. Get \`cabinet hardware\` segments. 2. Pass segment to VLM: \`Q: ""Is this hardware a 'bar pull' or a 'knob'?""\` -> \`(label == 'bar_pull')\`","'Modern', 'minimal', 'rectilinear' cue. 'Clear' haptic affordance."
+"Component: Kitchen","component.kitchen.hardware.type.knob","Hardware: Knob","Houzz, Hardware Catalots","""cabinet knob""","VLM (Gemini), SAM","1. Get \`cabinet hardware\` segments. 2. Pass segment to VLM: \`Q: ""Is this hardware a 'bar pull' or a 'knob'?""\` -> \`(label == 'knob')\`","'Traditional' or 'vintage' cue. 'Small-scale' haptic affordance."
+"Component: Kitchen","component.kitchen.hardware.type.handleless","Hardware: Handleless / Integrated","Houzz, Pinterest, Kitchen Catalogs","""handleless cabinets"", ""push-to-open""","VLM (Gemini), SAM","1. Get \`cabinet\` segments. 2. \`count(hardware segments) == 0\`. (VLM Query) \`Q: ""Are these cabinets handleless? (yes/no)""\`","'Minimalist' schema. Low 'visual complexity'. 'Ambiguous' haptic affordance (less obvious)."
+"Component: Bathroom","component.bathroom.fixture.material.brass","Fixture: Brass","Houzz, Plumbing Catalogs (e.g., Kohler)","""brass faucet"", ""brass showerhead""","VLM (Gemini), SAM","1. Get \`faucet\` or \`shower\` segment. 2. Pass to VLM: \`Q: ""Is this fixture's material brass? (yes/no)""\`","'Warm' metal. 'Classic' or 'high-status'. Cues 'wabi-sabi' if 'unlaquered brass' (patina)."
+"Component: Bathroom","component.bathroom.fixture.material.matte_black","Fixture: Matte Black","Houzz, Plumbing Catalogs","""matte black faucet"", ""matte black showerhead""","VLM (Gemini), SAM","1. Get \`faucet\` or \`shower\` segment. 2. Pass to VLM: \`Q: ""Is this fixture's material matte black? (yes/no)""\`","'Modern', 'graphic', 'high-contrast'. Can be 'calming' (low-reflection) or 'severe'."
+"Component: Bathroom","component.bathroom.fixture.type.rain_showerhead","Fixture: Rain Showerhead","Houzz, Plumbing Catalogs","""rain showerhead""","VLM (Gemini)","1. Get \`showerhead\` bounding box. 2. Pass to VLM: \`Q: ""Is this a rain showerhead (ceiling-mounted or large-diameter)? (yes/no)""\`","'Spa-like' affordance. Cues 'relaxation', 'luxury', 'enveloping' (full-body haptic)."
+"Computed CNfA: Light","cnfa.light.diffuse_vs_direct_ratio","Quantifying 'softness' of light.","'Diffuse' (soft shadows) = 'calming', 'low-load', 'even' illumination. 'Direct' (hard shadows) = 'dramatic', 'high-contrast', 'focal', can be 'harsh'.","N/A (Computed)","N/A (Computed)","OpenCV, VLM (Gemini)","(CV Method) 1. Find all \`shadow\` segments. 2. Calculate the 'entropy' of the shadow edge gradient (penumbra). High entropy = blurry/soft. Low entropy = sharp/hard. (VLM Query) \`Q: ""Are the shadows in this room 'soft and diffuse' or 'hard and sharp'?""\`"
+"Computed CNfA: Light","cnfa.light.warm_vs_cool_ratio","Quantifying overall light 'temperature'.","(Circadian) 'Cool' light (>5000K) = 'alertness'. 'Warm' light (<3000K) = 'relaxation'.","N/A (Computed)","N/A (Computed)","OpenCV, SAM","1. Get \`light_source\` (window, lamp) and \`illuminated_surface\` (white wall) segments (SAM). 2. Calculate the average BGR color of these pixels. 3. Convert BGR to Color Temperature (CCT) in Kelvin. 4. \`Ratio = (pixels > 4000K) / (pixels < 4000K)\`."
+"Computed CNfA: Light","cnfa.light.vertical_illuminance_proxy","Quantifying light on vertical surfaces (walls).","'Vertical illuminance' (lit walls) is key to making a space feel 'bright' and 'open', more so than just floor/ceiling light.","N/A (Computed)","N/A (Computed)","SAM, OpenCV","1. Get \`wall\` segments (SAM). 2. Calculate the \`mean(pixel_brightness)\` of *only* the wall segments. 3. Compare \`brightness(wall)\` to \`brightness(floor)\`."
+"Computed CNfA: Spatial","cnfa.spatial.prospect_to_refuge_ratio","Quantifying the 'Prospect-Refuge' balance (Appleton).","The 'ideal' state. High prospect ('I can see') + High refuge ('I cannot be seen'). The 'captain's chair' or 'cozy nook with a view'.","N/A (Computed)","N/A (Computed)","Apple RoomPlan API, 3D Mesh Library","(Complex Calculation) 1. Get 3D mesh. 2. For each \`seat\` (refuge spot): 3. Calculate \`prospect_score\` (isovist area from seat). 4. Calculate \`refuge_score\` (1 - visibility *from* main paths). 5. \`Ratio = max(prospect_score * refuge_score)\`."
+"Computed CNfA: Spatial","cnfa.spatial.enclosure_index","Quantifying the 'sense of enclosure'. (User's 'privacy.enclosure')","'High Enclosure' = 'refuge', 'privacy', 'cozy', 'intimate' (can be 'claustrophobic'). 'Low' = 'open', 'social', 'public' (can be 'exposed').","N/A (Computed)","N/A (Computed)","Apple RoomPlan API, VLM (Gemini)","(Strong Method) 1. Get 3D mesh (RoomPlan). 2. \`Index = 1 - (area(openings) / area(total_wall_surface))\`. (VLM Query) \`Q: ""On a scale of 1-10, how 'enclosed' or 'cozy' does this space feel?""\`"
+"Computed CNfA: Spatial","cnfa.spatial.ceiling_height_avg","Quantifying the 'Cathedral Effect'.","'High Ceiling' (>3m) = primes 'abstract' thought, 'awe'. 'Low Ceiling' (<2.5m) = primes 'concrete' thought, 'focus', 'coziness'.","Apple RoomPlan API","N/A (Computed)","Apple RoomPlan API","(Strong Method) This is a *direct output* of the \`RoomPlan\` API, \`room.height\`."
+"Computed CNfA: Cognitive","cnfa.cognitive.legibility_score","Quantifying 'wayfinding' ease (Lynch).","'High Legibility' = 'low cognitive load', 'easy to map', 'comfortable'. 'Low' (ambiguous paths) = 'stress', 'confusion', 'mystery'."
+"N/A (Computed)","N/A (Computed)","VLM (Gemini), Apple RoomPlan API","(Strong Method) 1. Get 2D floor plan (RoomPlan). 2. Run 'Space Syntax' analysis (calculate 'integration' and 'intelligibility' of the graph). (VLM Query) \`Q: ""Does this space look 'easy' or 'confusing' to navigate?""\`"
+"Computed CNfA: Cognitive","cnfa.cognitive.landmark_salience","Quantifying 'landmarks' for navigation (Lynch).","A 'salient landmark' (e.g., fireplace, sculpture, unique window) 'anchors' the mental map, reducing cognitive load.","N/A (Computed)","N/A (Computed)","Salience Models (FASA, etc.), VLM (Gemini)","(CV Method) 1. Generate a 'visual salience map'. 2. \`Score = max(salience_peak_value)\`. A high peak = a clear landmark. (VLM Query) \`Q: ""What is the single most memorable object or feature in this room?""\`"
+"Computed CNfA: Cognitive","cnfa.cognitive.activity_zones_count","Quantifying 'functional density'.","'High Count' (many zones) = 'complex', 'high-function' (e.g., studio apt). 'Low Count' = 'simple', 'focused' (e.g., bedroom).","N/A (Computed)","N/A (Computed)","VLM (Gemini)","(VLM Query - Count) \`Q: ""How many distinct activity zones can you see (e.g., a 'reading zone', a 'dining zone', a 'TV zone')? List them.""\` -> \`count(list)\`"
+"Computed CNfA: Haptic","cnfa.haptic.soft_surface_ratio","Quantifying 'haptic comfort' and 'acoustic softness'.","'High Ratio' = 'soft haptics', 'acoustic damping', 'cozy', 'low-reverb'. 'Low' (e.g., all hard surfaces) = 'cold haptics', 'high-reverb', 'loud'.","N/A (Computed)","N/A (Computed)","VLM (Gemini), SAM","1. Use SAM to segment all major surfaces. 2. For each, ask VLM: \`Q: ""Is this surface 'soft' (e.g., rug, curtain, sofa, plant) or 'hard' (e.g., wood, concrete, glass, plaster)?""\` 3. \`Ratio = area(Soft) / area(Total)\`."
+"Computed CNfA: Haptic","cnfa.haptic.texture_variation_index","Quantifying 'haptic richness'.","'High Variation' (e.g., wood, stone, wool, glass) = 'rich sensory' experience (Barsalou), 'high-interest', 'craft'. 'Low' (e.g., all drywall) = 'simple', 'low-load', 'sterile'."
+"N/A (Computed)","N/A (Computed)","VLM (Gemini), SAM, OpenCV","(CV Method) 1. Get all surfaces (SAM). 2. For each, calculate a 'texture vector' (Gabor, GLCM). 3. \`Index = variance(all_texture_vectors)\`. (VLM) \`Q: ""Count the number of different textures you can see (e.g., 'smooth glass', 'rough wood', 'soft fabric').""\`"
+"Computed CNfA: Dynamic","cnfa.dynamic.optic_flow_magnitude","Optic Flow Magnitude (Avg)","N/A (Computed)","N/A (Computed)","3D Model (RoomPlan) + 3D Engine (three.js) OR Video (OpenCV)","(3D Model) 1. Simulate camera move from 'entry' to 'focal_point'. 2. Run OpenCV's 'calcOpticalFlowFarneback' on the rendered frames. 3. Average the vector magnitudes. (Video) 1. Run 'calcOpticalFlowFarneback' directly on the video. 2. Average magnitudes.","Gibson's 'optic flow'. High magnitude (e.g., 'tunneling') increases arousal/stress. Low magnitude ('open lobby') is calmer. This is the brain's primary cue for 'speed' and 'space'."
+"Computed CNfA: Dynamic","cnfa.dynamic.revelation_rate","Revelation Rate (Mystery)","N/A (Computed)","N/A (Computed)","3D Model (RoomPlan) + 3D Engine (three.js)","(3D Model) 1. Simulate camera move along 'primary_path'. 2. At each step(t), calculate \`total_visible_surface_area\`. 3. \`Rate = d(Area) / d(t)\`. A high, sustained rate = high 'Mystery'.","Kaplan's 'Mystery'. The rate at which new information is revealed by moving. 'High' rate is 'engaging' and 'fascinating'. 'Zero' rate is 'boring'. 'Infinite' (e.g., a corner) is 'surprising'."
+"Computed CNfA: Dynamic","cnfa.dynamic.texture_gradient","Dynamic Texture Gradient (slat example)","N/A (Computed)","N/A (Computed)","3D Model (RoomPlan) + 3D Engine + OpenCV OR VLM (Depth Map) + OpenCV","(3D Model) 1. Simulate camera *approaching* a textured wall. 2. For each frame, run FFT on the texture to get \`dominant_spatial_frequency\`. 3. \`Gradient = d(Frequency) / d(distance)\`. (Weak Method) 1. Get 2.5D depth map. 2. Calculate FFT on texture at 'point A' vs. 'point B'. 3. Get gradient.","Gibson's 'texture gradient'. This is a primary cue for 'scale', 'distance', and 'speed'. A 'steep' gradient (e.g., a fine-grained texture) provides a powerful cue for your own motion."
+"Computed CNfA: Dynamic","cnfa.dynamic.path_glare_max","Path-Based Glare (Max)","N/A (Computed)","N/A (Computed)","3D Model (RoomPlan) + 3D Engine (Unity, Unreal)","(3D Model) 1. Simulate camera move along 'primary_path' *with a light source (sun)*. 2. Use ray-tracing to render reflections. 3. At each frame, run the *static* 'cnfa.light.glare_probability' algorithm. 4. \`Result = max(glare_prob_along_path)\`.","Measures *experiential* visual discomfort. A static photo might miss the blinding glare that only happens when you walk past a window. This is a key 'stressor' that static analysis fails to capture."
+"Computed CNfA: Dynamic","cnfa.dynamic.reflection_flow","Reflection Flow (Shimmer)","N/A (Computed)","N/A (Computed)","3D Model (RoomPlan) + 3D Engine OR Video (OpenCV)","(Video/3D Render) 1. Identify 'glossy' surfaces (e.g., polished floor, water). 2. Run 'Optical Flow' *only* on those surfaces. 3. \`Flow = avg_magnitude(vectors_on_glossy_surface)\`.","The 'shimmer' of light on water or a polished floor. Can be a 'Soft Fascination' (restorative, biophilic) or a 'Distraction' (high-load, annoying)."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.edge_clarity_mean","Edge Clarity / Predictability","N/A (Computed)","N/A (Computed)","OpenCV","(CV Method) 1. Run Canny or Sobel edge detection. 2. Calculate the *average gradient (sharpness)* of all detected edge pixels. High avg = 'crisp', 'high-contrast', 'easy-to-process' edges. Low avg = 'blurry', 'ambiguous' edges.","'Predictive Coding'. Our brain 'predicts' edges. Sharp, clear edges fulfill these predictions easily, leading to 'high fluency' (feels good, low-load). Ambiguous edges create 'prediction error' (higher load, 'uneasy' feeling)."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.pattern_rhythm_regularity","Pattern Rhythm / Regularity (User's 'slats')","N/A (Computed)","N/A (Computed)","OpenCV, SAM","(CV Method) 1. Segment a repeating pattern (e.g., 'wood slats', 'tile grid') using SAM. 2. Take a 1D slice across the pattern. 3. Run a Fast Fourier Transform (FFT) on this signal. A single, sharp peak = high regularity. A noisy, broad signal = low regularity.","'Easy to Gestalt'. A regular rhythm (like wood slats) is perceptually 'simple' because the brain can model it with one simple rule (e.g., 'repeat every 5cm'). This is 'high fluency' and can be 'calming' or 'hypnotic'."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.symmetry_score_horizontal","Horizontal Symmetry Score","N/A (Computed)","N/A (Computed)","OpenCV","(CV Method) 1. \`image_flipped = cv2.flip(image, 1)\` (horizontal flip). 2. Calculate the 'Structural Similarity Index' (SSIM) between \`image\` and \`image_flipped\`. 3. \`Symmetry Score = SSIM_result\`.","'High Fluency' / 'Prägnanz'. Symmetry is the 'simplest' visual form. It is processed *very* quickly and easily by the brain. Often associated with 'formality', 'stability', and 'beauty', but also 'static' or 'boring'."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.visual_entropy_spatial","Visual Entropy (Spatial Disorder)","N/A (Computed)","N/A (Computed)","Google Cloud Vision API, OpenCV","(CV Method) 1. Get bounding boxes for all objects (GCV). 2. Create a 2D spatial histogram (grid) of the object centers. 3. Calculate the Shannon entropy of this distribution. High entropy = high disorder (objects scattered randomly).","This is 'disfluency'. 'High Entropy' = 'chaotic', 'disorganized', 'high-load'. 'Low Entropy' (e.g., everything on a grid) = 'orderly', 'low-load', 'legible'."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.clutter_density_count","Clutter Density (Object Count)","N/A (Computed)","N/A (Computed)","Google Cloud Vision API","(CV Method) 1. Use GCV \`objectLocalization\` to get a list of *all* objects. 2. \`Density = count(objects) / area(room_floor)\`. 3. Normalize.","'High Cognitive Load'. This is a *count* of items the brain must process. Differs from 'entropy' (which is 'disorder'). A full bookshelf is 'dense' but not 'entropic'. High density = high load."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.color_palette_entropy","Color Palette Entropy (Complexity)","N/A (Computed)","N/A (Computed)","Google Cloud Vision API, OpenCV","(CV Method) 1. Get the \`dominant_palette\` (from GCV or OpenCV k-means clustering). 2. Calculate the Shannon entropy of the palette's pixel-fraction distribution. Low entropy = monochromatic (fluent). High entropy = many colors (complex).","'High Fluency' (low entropy) = 'calming', 'serene', 'monochromatic'. 'Disfluency' (high entropy) = 'vibrant', 'chaotic', 'playful', 'high-arousal'."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.figure_ground_clarity","Figure-Ground Clarity","N/A (Computed)","N/A (Computed)","VLM (Gemini), SAM","(VLM Query) \`Q: ""On a scale of 1-10, how easy is it to distinguish objects from their background in this image?""\` (CV Method) 1. Get \`object\` segments (SAM). 2. Get \`wall/floor\` segments (SAM). 3. Calculate the avg. color/texture *contrast* between object edges and their background.","'Gestalt - Figure/Ground'. 'High Clarity' = 'legible', 'low-load'. 'Low Clarity' (e.g., a beige chair against a beige wall) = 'ambiguous', 'high-load', but can also feel 'serene' or 'blended'."
+"Computed CNfA: Perceptual Fluency","cnfa.fluency.processing_load_proxy","Processing Load Proxy (Compression)","N/A (Computed)","N/A (Computed)","ImageMagick, PIL (Python)","(CV Method) 1. Take the full-res image. 2. Save it as a JPEG at 90% quality. 3. \`Load_Proxy = file_size_in_bytes / total_pixels\`. A high ratio = high-frequency detail (complex). A low ratio = large simple surfaces (fluent).","This is a 'pure' measure of visual information density. 'High Load' (e.g., a patterned wallpaper) literally requires more data to store, just as it requires more cognitive effort to process. 'Low Load' (a plain painted wall) is 'fluent'."
+`;
+        
+        // 1. Fetch and Parse the CSV data
+        // 1. Fetch feature data from the API (v1/features)
+        window.onload = () => {
+            fetch('/api/v1/features/')
+                .then(resp => {
+                    if (!resp.ok) throw new Error('Failed to load features');
+                    return resp.json();
+                })
+                .then(apiFeatures => {
+                    // Adapt API schema to the CSV-like schema used by the UI
+                    allFeatures = apiFeatures.map(f => ({
+                        Feature_Category: f.category,
+                        Feature_Name: f.key,
+                        Human_Readable_Label: f.label,
+                        CNfA_Relevance: f.cfa_relevance || "",
+                    }));
+                    initializeApp(allFeatures);
+                })
+                .catch(err => {
+                    console.error('Error fetching features:', err);
+                });
+        };
+        };
+
+        // 2. Initialize the dashboard with parsed data
+        function initializeApp(data) {
+            renderSummary(data);
+            const categories = getCategoryCounts(data);
+            renderCategoryChart(categories);
+            renderFilterOptions(categories);
+            renderFeatureList(data);
+        }
+
+        // 3. Render Summary Stats
+        function renderSummary(data) {
+            const categories = new Set(data.map(item => item.Feature_Category));
+            document.getElementById('total-features').textContent = data.length;
+            document.getElementById('total-categories').textContent = categories.size;
+        }
+
+        // 4. Get Category Counts
+        function getCategoryCounts(data) {
+            const counts = {};
+            data.forEach(item => {
+                const category = item.Feature_Category || 'Uncategorized';
+                counts[category] = (counts[category] || 0) + 1;
+            });
+            return counts;
+        }
+
+        // 5. Render Bar Chart
+        function renderCategoryChart(categories) {
+            const container = document.getElementById('chart-container');
+            container.innerHTML = ''; // Clear previous chart
+            
+            const maxCount = Math.max(...Object.values(categories));
+            let colorIndex = 0;
+
+            const sortedCategories = Object.entries(categories).sort(([,a],[,b]) => b-a);
+
+            for (const [category, count] of sortedCategories) {
+                const widthPercentage = (count / maxCount) * 100;
+                const color = categoryColors[colorIndex % categoryColors.length];
+                
+                const barHtml = `
+                    <div class="flex items-center">
+                        <div class="w-48 text-sm font-medium text-gray-600 truncate pr-2">${category}</div>
+                        <div class="flex-1 bg-gray-200 rounded-full h-6">
+                            <div class="chart-bar ${color} h-6 rounded-full text-xs font-bold text-white text-right pr-2 leading-6" style="width: ${widthPercentage > 0 ? widthPercentage : 1}%" title="${count} features">
+                                ${count}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += barHtml;
+                colorIndex++;
+            }
+        }
+
+        // 6. Render Filter Checkboxes
+        function renderFilterOptions(categories) {
+            const container = document.getElementById('filter-container');
+            const sortedKeys = Object.keys(categories).sort();
+            
+            sortedKeys.forEach(category => {
+                const filterId = `filter-${category.replace(/\W/g, '')}`;
+                const checkboxHtml = `
+                    <div class="flex items-center">
+                        <input id="${filterId}" data-category="${category}" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 category-filter" onchange="filterData()">
+                        <label for="${filterId}" class="ml-3 text-sm text-gray-700">${category} (${categories[category]})</label>
+                    </div>
+                `;
+                container.innerHTML += checkboxHtml;
+            });
+
+            // Add logic to 'All Categories' checkbox
+            document.getElementById('filter-all').onchange = () => {
+                const isChecked = document.getElementById('filter-all').checked;
+                document.querySelectorAll('.category-filter').forEach(cb => cb.checked = false);
+                filterData();
+            };
+        }
+
+        // 7. Filter and Re-render List
+        function filterData() {
+            const allCheckbox = document.getElementById('filter-all');
+            const categoryCheckboxes = document.querySelectorAll('.category-filter:checked');
+            
+            let selectedCategories = [];
+            categoryCheckboxes.forEach(cb => selectedCategories.push(cb.dataset.category));
+
+            if (selectedCategories.length > 0) {
+                allCheckbox.checked = false;
+                const filteredFeatures = allFeatures.filter(item => selectedCategories.includes(item.Feature_Category));
+                renderFeatureList(filteredFeatures);
+            } else {
+                allCheckbox.checked = true;
+                renderFeatureList(allFeatures);
+            }
+        }
+
+        // 8. Render the actual feature list (table)
+        function renderFeatureList(data) {
+            const tbody = document.getElementById('feature-list');
+            tbody.innerHTML = ''; // Clear list
+
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="3" class="px-6 py-4 text-center text-gray-500">No features match the selected filters.</td></tr>';
+                return;
+            }
+
+            data.forEach(item => {
+                const row = `
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm font-medium text-gray-900">${item.Feature_Name || 'N/A'}</div>
+                            <div class="text-sm text-gray-500">${item.Human_Readable_Label || 'N/A'}</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.Feature_Category || 'N/A'}</td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900" style="white-space: normal; min-width: 300px;">${item.CNfA_Relevance || 'N/A'}</div>
+                        </td>
+                    </tr>
+                `;
+                tbody.innerHTML += row;
+            });
+        }
+
+    </script>
+</body>
+</html>

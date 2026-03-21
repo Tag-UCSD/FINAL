@@ -1,0 +1,585 @@
+⚠️  No virtualenv detected. Creating .venv...
+✅ Activated virtualenv at .venv
+📦 Installing host-side dependencies...
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+🚀 Delegating to install.sh...
+🚀 Starting Image Tagger v3 (v3.4.74_vlm_lab_notebook_TL_runbook)
+🧬 Running structural hollow-repo guard
+[hollow_repo_guard] OK: structure looks non-hollow.
+🧪 Running program integrity guard
+[program_integrity_guard] OK: no dangerous ellipses or uncontrolled stubs.
+🧯 Running syntax guard
+[syntax_guard] OK: all critical python files parse cleanly and contain no truncations.
+🪝 Running critical import guard
+[critical_import_guard] WARNINGS:
+  backend.science.pipeline: missing third-party dependency: numpy
+  backend.main: missing third-party dependency: fastapi
+[critical_import_guard] OK: critical modules import cleanly.
+🧪 Running canon guard
+[canon_guard] OK: registry keys covered by compute or stubs.
+🔒 Running Guardian (governance) checks
+[guardian] Verification PASSED.
+⚠️  WARNING: API_SECRET is using the default value 'dev_secret_key_change_me'.
+    This is fine for local demos, but you MUST change it for any shared or deployed environment.
+🐳 Building containers
+time="2025-12-01T13:39:20-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.29kB done
+#1 DONE 0.0s
+
+#2 [frontend internal] load build definition from Dockerfile.frontend
+#2 transferring dockerfile: 1.26kB done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile.backend
+#3 transferring dockerfile: 1.28kB done
+#3 DONE 0.0s
+
+#4 [frontend internal] load metadata for docker.io/library/node:18-alpine
+#4 DONE 0.4s
+
+#5 [frontend internal] load metadata for docker.io/library/nginx:alpine
+#5 DONE 0.4s
+
+#6 [api internal] load metadata for docker.io/library/python:3.11-slim
+#6 DONE 0.4s
+
+#7 [frontend internal] load .dockerignore
+#7 transferring context: 2B done
+#7 DONE 0.0s
+
+#8 [api internal] load build context
+#8 transferring context: 6.99kB done
+#8 DONE 0.0s
+
+#9 [frontend builder  1/11] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#9 resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 0.0s done
+#9 DONE 0.0s
+
+#10 [frontend stage-1 1/7] FROM docker.io/library/nginx:alpine@sha256:b3c656d55d7ad751196f21b7fd2e8d4da9cb430e32f646adcf92441b72f82b14
+#10 resolve docker.io/library/nginx:alpine@sha256:b3c656d55d7ad751196f21b7fd2e8d4da9cb430e32f646adcf92441b72f82b14 0.0s done
+#10 DONE 0.0s
+
+#11 [api 1/7] FROM docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d65b549fcaa8af75624c47474444d
+#11 resolve docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d65b549fcaa8af75624c47474444d 0.0s done
+#11 DONE 0.0s
+
+#12 [api 2/7] WORKDIR /app
+#12 CACHED
+
+#13 [api 3/7] RUN apt-get update && apt-get install -y     libgl1     libglib2.0-0     libpq-dev     gcc     && rm -rf /var/lib/apt/lists/*
+#13 CACHED
+
+#14 [frontend stage-1 2/7] RUN rm -rf /usr/share/nginx/html/*
+#14 CACHED
+
+#15 [frontend internal] load build context
+#15 transferring context: 42.55kB 0.0s done
+#15 DONE 0.0s
+
+#16 [frontend builder  2/11] WORKDIR /app
+#16 CACHED
+
+#17 [frontend builder  3/11] COPY frontend/package.json frontend/package-lock.json* ./
+#17 CACHED
+
+#18 [frontend builder  4/11] COPY frontend/apps ./apps
+#18 DONE 0.0s
+
+#19 [frontend builder  5/11] COPY frontend/shared ./shared
+#19 DONE 0.0s
+
+#20 [frontend builder  6/11] COPY frontend/vite.config.base.js ./
+#20 DONE 0.0s
+
+#21 [frontend builder  7/11] COPY frontend/tailwind.config.js ./
+#21 DONE 0.0s
+
+#22 [api 4/7] RUN pip install --no-cache-dir     fastapi==0.109.0     uvicorn==0.27.0     sqlalchemy==2.0.25     psycopg2-binary==2.9.9     pydantic==2.6.1     pydantic-settings==2.1.0     python-jose[cryptography]==3.3.0     passlib[bcrypt]==1.7.4     python-multipart==0.0.7     pillow==10.2.0     numpy==1.26.3     opencv-python-headless==4.9.0.80     scipy==1.11.4     scikit-image==0.22.0     requests==2.31.0     PyYAML==6.0.1     pytest==7.4.4     httpx==0.26.0     openai==1.12.0     anthropic==0.33.0     google-generativeai==0.8.3     google-genai==0.1.0
+#22 ...
+
+#23 [frontend builder  8/11] COPY frontend/postcss.config.js ./
+#23 DONE 0.0s
+
+#24 [frontend builder  9/11] COPY frontend/index.css ./
+#24 DONE 0.0s
+
+#25 [frontend builder 10/11] RUN npm install
+#25 ...
+
+#22 [api 4/7] RUN pip install --no-cache-dir     fastapi==0.109.0     uvicorn==0.27.0     sqlalchemy==2.0.25     psycopg2-binary==2.9.9     pydantic==2.6.1     pydantic-settings==2.1.0     python-jose[cryptography]==3.3.0     passlib[bcrypt]==1.7.4     python-multipart==0.0.7     pillow==10.2.0     numpy==1.26.3     opencv-python-headless==4.9.0.80     scipy==1.11.4     scikit-image==0.22.0     requests==2.31.0     PyYAML==6.0.1     pytest==7.4.4     httpx==0.26.0     openai==1.12.0     anthropic==0.33.0     google-generativeai==0.8.3     google-genai==0.1.0
+#22 1.056 Collecting fastapi==0.109.0
+#22 1.166   Downloading fastapi-0.109.0-py3-none-any.whl.metadata (24 kB)
+#22 1.212 Collecting uvicorn==0.27.0
+#22 1.234   Downloading uvicorn-0.27.0-py3-none-any.whl.metadata (6.4 kB)
+#22 1.447 Collecting sqlalchemy==2.0.25
+#22 1.470   Downloading SQLAlchemy-2.0.25-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.6 kB)
+#22 1.540 Collecting psycopg2-binary==2.9.9
+#22 1.567   Downloading psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.4 kB)
+#22 1.662 Collecting pydantic==2.6.1
+#22 1.694   Downloading pydantic-2.6.1-py3-none-any.whl.metadata (83 kB)
+#22 1.722      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.5/83.5 kB 2.9 MB/s eta 0:00:00
+#22 1.756 Collecting pydantic-settings==2.1.0
+#22 1.779   Downloading pydantic_settings-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+#22 1.805 Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0)
+#22 1.829   Downloading python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
+#22 1.859 Collecting passlib==1.7.4 (from passlib[bcrypt]==1.7.4)
+#22 1.880   Downloading passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+#22 1.912 Collecting python-multipart==0.0.7
+#22 1.933   Downloading python_multipart-0.0.7-py3-none-any.whl.metadata (2.5 kB)
+#22 2.057 Collecting pillow==10.2.0
+#22 2.084   Downloading pillow-10.2.0-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (9.7 kB)
+#22 2.222 Collecting numpy==1.26.3
+#22 2.248   Downloading numpy-1.26.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+#22 2.255      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 13.7 MB/s eta 0:00:00
+#22 2.315 Collecting opencv-python-headless==4.9.0.80
+#22 2.338   Downloading opencv_python_headless-4.9.0.80-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (20 kB)
+#22 2.423 Collecting scipy==1.11.4
+#22 2.447   Downloading scipy-1.11.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (60 kB)
+#22 2.455      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 kB 11.5 MB/s eta 0:00:00
+#22 2.517 Collecting scikit-image==0.22.0
+#22 2.544   Downloading scikit_image-0.22.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+#22 2.582 Collecting requests==2.31.0
+#22 2.606   Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+#22 2.656 Collecting PyYAML==6.0.1
+#22 2.681   Downloading PyYAML-6.0.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (2.1 kB)
+#22 2.733 Collecting pytest==7.4.4
+#22 2.769   Downloading pytest-7.4.4-py3-none-any.whl.metadata (7.9 kB)
+#22 2.804 Collecting httpx==0.26.0
+#22 2.828   Downloading httpx-0.26.0-py3-none-any.whl.metadata (7.6 kB)
+#22 2.928 Collecting openai==1.12.0
+#22 2.955   Downloading openai-1.12.0-py3-none-any.whl.metadata (18 kB)
+#22 3.001 Collecting anthropic==0.33.0
+#22 3.022   Downloading anthropic-0.33.0-py3-none-any.whl.metadata (18 kB)
+#22 3.049 Collecting google-generativeai==0.8.3
+#22 3.069   Downloading google_generativeai-0.8.3-py3-none-any.whl.metadata (3.9 kB)
+#22 3.109 Collecting google-genai==0.1.0
+#22 3.131   Downloading google_genai-0.1.0-py3-none-any.whl.metadata (17 kB)
+#22 3.193 Collecting starlette<0.36.0,>=0.35.0 (from fastapi==0.109.0)
+#22 3.212   Downloading starlette-0.35.1-py3-none-any.whl.metadata (5.8 kB)
+#22 3.243 Collecting typing-extensions>=4.8.0 (from fastapi==0.109.0)
+#22 3.262   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+#22 3.301 Collecting click>=7.0 (from uvicorn==0.27.0)
+#22 3.323   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+#22 3.347 Collecting h11>=0.8 (from uvicorn==0.27.0)
+#22 3.376   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#22 3.490 Collecting greenlet!=0.4.17 (from sqlalchemy==2.0.25)
+#22 3.519   Downloading greenlet-3.2.4-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (4.1 kB)
+#22 3.551 Collecting annotated-types>=0.4.0 (from pydantic==2.6.1)
+#22 3.574   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+#22 4.030 Collecting pydantic-core==2.16.2 (from pydantic==2.6.1)
+#22 4.054   Downloading pydantic_core-2.16.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)
+#22 4.158 Collecting python-dotenv>=0.21.0 (from pydantic-settings==2.1.0)
+#22 4.175   Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+#22 4.210 Collecting ecdsa!=0.15 (from python-jose==3.3.0->python-jose[cryptography]==3.3.0)
+#22 4.230   Downloading ecdsa-0.19.1-py2.py3-none-any.whl.metadata (29 kB)
+#22 4.263 Collecting rsa (from python-jose==3.3.0->python-jose[cryptography]==3.3.0)
+#22 4.286   Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+#22 4.317 Collecting pyasn1 (from python-jose==3.3.0->python-jose[cryptography]==3.3.0)
+#22 4.336   Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+#22 4.442 Collecting networkx>=2.8 (from scikit-image==0.22.0)
+#22 4.461   Downloading networkx-3.6-py3-none-any.whl.metadata (6.8 kB)
+#22 4.497 Collecting imageio>=2.27 (from scikit-image==0.22.0)
+#22 4.524   Downloading imageio-2.37.2-py3-none-any.whl.metadata (9.7 kB)
+#22 4.570 Collecting tifffile>=2022.8.12 (from scikit-image==0.22.0)
+#22 4.597   Downloading tifffile-2025.10.16-py3-none-any.whl.metadata (31 kB)
+#22 4.630 Collecting packaging>=21 (from scikit-image==0.22.0)
+#22 4.655   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+#22 4.682 Collecting lazy_loader>=0.3 (from scikit-image==0.22.0)
+#22 4.713   Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+#22 4.782 Collecting charset-normalizer<4,>=2 (from requests==2.31.0)
+#22 4.809   Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (37 kB)
+#22 4.835 Collecting idna<4,>=2.5 (from requests==2.31.0)
+#22 4.856   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+#22 4.899 Collecting urllib3<3,>=1.21.1 (from requests==2.31.0)
+#22 4.921   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+#22 4.950 Collecting certifi>=2017.4.17 (from requests==2.31.0)
+#22 4.969   Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+#22 4.997 Collecting iniconfig (from pytest==7.4.4)
+#22 5.022   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+#22 5.054 Collecting pluggy<2.0,>=0.12 (from pytest==7.4.4)
+#22 5.076   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+#22 5.113 Collecting anyio (from httpx==0.26.0)
+#22 5.134   Downloading anyio-4.12.0-py3-none-any.whl.metadata (4.3 kB)
+#22 5.167 Collecting httpcore==1.* (from httpx==0.26.0)
+#22 5.194   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#22 5.226 Collecting sniffio (from httpx==0.26.0)
+#22 5.245   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+#22 5.279 Collecting distro<2,>=1.7.0 (from openai==1.12.0)
+#22 5.303   Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+#22 5.359 Collecting tqdm>4 (from openai==1.12.0)
+#22 5.387   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+#22 5.391      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 16.6 MB/s eta 0:00:00
+#22 5.460 Collecting jiter<1,>=0.4.0 (from anthropic==0.33.0)
+#22 5.487   Downloading jiter-0.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.2 kB)
+#22 5.586 Collecting tokenizers>=0.13.0 (from anthropic==0.33.0)
+#22 5.605   Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.8 kB)
+#22 5.642 Collecting google-ai-generativelanguage==0.6.10 (from google-generativeai==0.8.3)
+#22 5.661   Downloading google_ai_generativelanguage-0.6.10-py3-none-any.whl.metadata (5.6 kB)
+#22 5.717 Collecting google-api-core (from google-generativeai==0.8.3)
+#22 5.740   Downloading google_api_core-2.28.1-py3-none-any.whl.metadata (3.3 kB)
+#22 5.882 Collecting google-api-python-client (from google-generativeai==0.8.3)
+#22 5.902   Downloading google_api_python_client-2.187.0-py3-none-any.whl.metadata (7.0 kB)
+#22 5.956 Collecting google-auth>=2.15.0 (from google-generativeai==0.8.3)
+#22 5.976   Downloading google_auth-2.43.0-py2.py3-none-any.whl.metadata (6.6 kB)
+#22 6.083 Collecting protobuf (from google-generativeai==0.8.3)
+#22 6.110   Downloading protobuf-6.33.1-cp39-abi3-manylinux2014_aarch64.whl.metadata (593 bytes)
+#22 6.197 Collecting websockets<15.0dev,>=13.0 (from google-genai==0.1.0)
+#22 6.221   Downloading websockets-14.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.8 kB)
+#22 6.266 Collecting bcrypt>=3.1.0 (from passlib[bcrypt]==1.7.4)
+#22 6.291   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_aarch64.whl.metadata (10 kB)
+#22 6.416 Collecting cryptography>=3.4.0 (from python-jose[cryptography]==3.3.0)
+#22 6.438   Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+#22 6.514 Collecting proto-plus<2.0.0dev,>=1.22.3 (from google-ai-generativelanguage==0.6.10->google-generativeai==0.8.3)
+#22 6.532   Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+#22 6.555 Collecting protobuf (from google-generativeai==0.8.3)
+#22 6.577   Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_aarch64.whl.metadata (592 bytes)
+#22 6.693 Collecting cffi>=2.0.0 (from cryptography>=3.4.0->python-jose[cryptography]==3.3.0)
+#22 6.721   Downloading cffi-2.0.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.6 kB)
+#22 6.759 Collecting six>=1.9.0 (from ecdsa!=0.15->python-jose==3.3.0->python-jose[cryptography]==3.3.0)
+#22 6.787   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#22 6.827 Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core->google-generativeai==0.8.3)
+#22 6.852   Downloading googleapis_common_protos-1.72.0-py3-none-any.whl.metadata (9.4 kB)
+#22 6.940 Collecting cachetools<7.0,>=2.0.0 (from google-auth>=2.15.0->google-generativeai==0.8.3)
+#22 6.966   Downloading cachetools-6.2.2-py3-none-any.whl.metadata (5.6 kB)
+#22 7.000 Collecting pyasn1-modules>=0.2.1 (from google-auth>=2.15.0->google-generativeai==0.8.3)
+#22 7.027   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+#22 7.276 Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers>=0.13.0->anthropic==0.33.0)
+#22 7.299   Downloading huggingface_hub-1.1.7-py3-none-any.whl.metadata (13 kB)
+#22 7.364 Collecting httplib2<1.0.0,>=0.19.0 (from google-api-python-client->google-generativeai==0.8.3)
+#22 7.386   Downloading httplib2-0.31.0-py3-none-any.whl.metadata (2.2 kB)
+#22 7.424 Collecting google-auth-httplib2<1.0.0,>=0.2.0 (from google-api-python-client->google-generativeai==0.8.3)
+#22 7.447   Downloading google_auth_httplib2-0.2.1-py3-none-any.whl.metadata (3.0 kB)
+#22 7.498 Collecting uritemplate<5,>=3.0.1 (from google-api-python-client->google-generativeai==0.8.3)
+#22 7.522   Downloading uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+#22 7.565 Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->python-jose[cryptography]==3.3.0)
+#22 7.584   Downloading pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+#22 7.916 Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.10->google-generativeai==0.8.3)
+#22 7.940   Downloading grpcio-1.76.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (3.7 kB)
+#22 7.988 Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.10->google-generativeai==0.8.3)
+#22 8.011   Downloading grpcio_status-1.76.0-py3-none-any.whl.metadata (1.1 kB)
+#22 8.074 Collecting pyparsing<4,>=3.0.4 (from httplib2<1.0.0,>=0.19.0->google-api-python-client->google-generativeai==0.8.3)
+#22 8.101   Downloading pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+#22 8.177 Collecting filelock (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic==0.33.0)
+#22 8.196   Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+#22 8.230 Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic==0.33.0)
+#22 8.252   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+#22 8.304 Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic==0.33.0)
+#22 8.331   Downloading hf_xet-1.2.0-cp37-abi3-manylinux_2_28_aarch64.whl.metadata (4.9 kB)
+#22 8.362 Collecting shellingham (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic==0.33.0)
+#22 8.384   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+#22 8.428 Collecting typer-slim (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic==0.33.0)
+#22 8.454   Downloading typer_slim-0.20.0-py3-none-any.whl.metadata (16 kB)
+#22 8.589 INFO: pip is looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+#22 8.591 Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.10->google-generativeai==0.8.3)
+#22 8.619   Downloading grpcio_status-1.75.1-py3-none-any.whl.metadata (1.1 kB)
+#22 8.677   Downloading grpcio_status-1.75.0-py3-none-any.whl.metadata (1.1 kB)
+#22 8.720   Downloading grpcio_status-1.74.0-py3-none-any.whl.metadata (1.1 kB)
+#22 8.753   Downloading grpcio_status-1.73.1-py3-none-any.whl.metadata (1.1 kB)
+#22 8.808   Downloading grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+#22 8.833   Downloading grpcio_status-1.72.2-py3-none-any.whl.metadata (1.1 kB)
+#22 8.863   Downloading grpcio_status-1.72.1-py3-none-any.whl.metadata (1.1 kB)
+#22 8.865 INFO: pip is still looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+#22 8.892   Downloading grpcio_status-1.71.2-py3-none-any.whl.metadata (1.1 kB)
+#22 8.999 Downloading fastapi-0.109.0-py3-none-any.whl (92 kB)
+#22 9.005    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.0/92.0 kB 19.2 MB/s eta 0:00:00
+#22 9.032 Downloading uvicorn-0.27.0-py3-none-any.whl (60 kB)
+#22 9.035    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 kB 27.8 MB/s eta 0:00:00
+#22 9.058 Downloading SQLAlchemy-2.0.25-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.2 MB)
+#22 9.170    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 28.8 MB/s eta 0:00:00
+#22 9.195 Downloading psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.9 MB)
+#22 9.240    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 65.5 MB/s eta 0:00:00
+#22 9.261 Downloading pydantic-2.6.1-py3-none-any.whl (394 kB)
+#22 9.269    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.8/394.8 kB 65.0 MB/s eta 0:00:00
+#22 9.294 Downloading pydantic_settings-2.1.0-py3-none-any.whl (11 kB)
+#22 9.321 Downloading python_jose-3.3.0-py2.py3-none-any.whl (33 kB)
+#22 9.347 Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+#22 9.355    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 79.9 MB/s eta 0:00:00
+#22 9.381 Downloading python_multipart-0.0.7-py3-none-any.whl (22 kB)
+#22 9.409 Downloading pillow-10.2.0-cp311-cp311-manylinux_2_28_aarch64.whl (4.3 MB)
+#22 9.487    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 56.5 MB/s eta 0:00:00
+#22 9.507 Downloading numpy-1.26.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+#22 9.761    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 57.5 MB/s eta 0:00:00
+#22 9.791 Downloading opencv_python_headless-4.9.0.80-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (29.0 MB)
+#22 10.27    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.0/29.0 MB 64.1 MB/s eta 0:00:00
+#22 10.30 Downloading scipy-1.11.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (32.9 MB)
+#22 10.81    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.9/32.9 MB 65.5 MB/s eta 0:00:00
+#22 10.83 Downloading scikit_image-0.22.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.1 MB)
+#22 11.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 58.3 MB/s eta 0:00:00
+#22 11.10 Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+#22 11.10    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 609.4 MB/s eta 0:00:00
+#22 11.12 Downloading PyYAML-6.0.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (732 kB)
+#22 11.14    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 732.2/732.2 kB 61.1 MB/s eta 0:00:00
+#22 11.16 Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+#22 11.16    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.3/325.3 kB 53.9 MB/s eta 0:00:00
+#22 11.19 Downloading httpx-0.26.0-py3-none-any.whl (75 kB)
+#22 11.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.9/75.9 kB 69.6 MB/s eta 0:00:00
+#22 11.22 Downloading openai-1.12.0-py3-none-any.whl (226 kB)
+#22 11.22    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 42.7 MB/s eta 0:00:00
+#22 11.25 Downloading anthropic-0.33.0-py3-none-any.whl (866 kB)
+#22 11.26    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 866.9/866.9 kB 86.7 MB/s eta 0:00:00
+#22 11.28 Downloading google_generativeai-0.8.3-py3-none-any.whl (160 kB)
+#22 11.28    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.8/160.8 kB 73.7 MB/s eta 0:00:00
+#22 11.31 Downloading google_genai-0.1.0-py3-none-any.whl (110 kB)
+#22 11.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.3/110.3 kB 61.0 MB/s eta 0:00:00
+#22 11.34 Downloading google_ai_generativelanguage-0.6.10-py3-none-any.whl (760 kB)
+#22 11.35    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 760.0/760.0 kB 76.8 MB/s eta 0:00:00
+#22 11.38 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#22 11.38    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 148.7 MB/s eta 0:00:00
+#22 11.40 Downloading pydantic_core-2.16.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.9 MB)
+#22 11.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 63.9 MB/s eta 0:00:00
+#22 11.46 Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+#22 11.49 Downloading anyio-4.12.0-py3-none-any.whl (113 kB)
+#22 11.49    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.4/113.4 kB 34.0 MB/s eta 0:00:00
+#22 11.51 Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_aarch64.whl (275 kB)
+#22 11.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 275.7/275.7 kB 87.0 MB/s eta 0:00:00
+#22 11.54 Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+#22 11.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.4/159.4 kB 89.3 MB/s eta 0:00:00
+#22 11.57 Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (147 kB)
+#22 11.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.3/147.3 kB 29.5 MB/s eta 0:00:00
+#22 11.60 Downloading click-8.3.1-py3-none-any.whl (108 kB)
+#22 11.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 64.8 MB/s eta 0:00:00
+#22 11.62 Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl (4.3 MB)
+#22 11.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 64.5 MB/s eta 0:00:00
+#22 11.72 Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+#22 11.75 Downloading ecdsa-0.19.1-py2.py3-none-any.whl (150 kB)
+#22 11.75    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.6/150.6 kB 43.8 MB/s eta 0:00:00
+#22 11.77 Downloading google_api_core-2.28.1-py3-none-any.whl (173 kB)
+#22 11.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.7/173.7 kB 59.7 MB/s eta 0:00:00
+#22 11.80 Downloading google_auth-2.43.0-py2.py3-none-any.whl (223 kB)
+#22 11.81    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.1/223.1 kB 67.7 MB/s eta 0:00:00
+#22 11.83 Downloading greenlet-3.2.4-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (632 kB)
+#22 11.84    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 632.5/632.5 kB 78.7 MB/s eta 0:00:00
+#22 11.87 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#22 11.89 Downloading idna-3.11-py3-none-any.whl (71 kB)
+#22 11.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 128.8 MB/s eta 0:00:00
+#22 11.92 Downloading imageio-2.37.2-py3-none-any.whl (317 kB)
+#22 11.93    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.6/317.6 kB 79.3 MB/s eta 0:00:00
+#22 11.95 Downloading jiter-0.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (351 kB)
+#22 11.96    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 351.9/351.9 kB 72.0 MB/s eta 0:00:00
+#22 11.98 Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+#22 12.00 Downloading networkx-3.6-py3-none-any.whl (2.1 MB)
+#22 12.04    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 60.3 MB/s eta 0:00:00
+#22 12.07 Downloading packaging-25.0-py3-none-any.whl (66 kB)
+#22 12.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 53.2 MB/s eta 0:00:00
+#22 12.09 Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+#22 12.12 Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_aarch64.whl (319 kB)
+#22 12.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.8/319.8 kB 53.0 MB/s eta 0:00:00
+#22 12.15 Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+#22 12.17 Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+#22 12.20 Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+#22 12.20    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.1/83.1 kB 36.8 MB/s eta 0:00:00
+#22 12.22 Downloading starlette-0.35.1-py3-none-any.whl (71 kB)
+#22 12.22    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.1/71.1 kB 607.3 MB/s eta 0:00:00
+#22 12.25 Downloading tifffile-2025.10.16-py3-none-any.whl (231 kB)
+#22 12.26    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.2/231.2 kB 89.1 MB/s eta 0:00:00
+#22 12.29 Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.3 MB)
+#22 12.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 66.6 MB/s eta 0:00:00
+#22 12.36 Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+#22 12.36    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 254.1 MB/s eta 0:00:00
+#22 12.39 Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+#22 12.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 508.6 MB/s eta 0:00:00
+#22 12.42 Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+#22 12.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 kB 47.8 MB/s eta 0:00:00
+#22 12.44 Downloading websockets-14.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (170 kB)
+#22 12.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 170.5/170.5 kB 49.6 MB/s eta 0:00:00
+#22 12.47 Downloading google_api_python_client-2.187.0-py3-none-any.whl (14.6 MB)
+#22 12.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.6/14.6 MB 60.0 MB/s eta 0:00:00
+#22 12.74 Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+#22 12.76 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#22 12.79 Downloading cachetools-6.2.2-py3-none-any.whl (11 kB)
+#22 12.81 Downloading cffi-2.0.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (216 kB)
+#22 ...
+
+#25 [frontend builder 10/11] RUN npm install
+#25 12.71 
+#25 12.71 added 199 packages, and audited 205 packages in 13s
+#25 12.71 
+#25 12.71 32 packages are looking for funding
+#25 12.71   run `npm fund` for details
+#25 12.71 
+#25 12.71 2 moderate severity vulnerabilities
+#25 12.71 
+#25 12.71 To address all issues (including breaking changes), run:
+#25 12.71   npm audit fix --force
+#25 12.71 
+#25 12.71 Run `npm audit` for details.
+#25 12.71 npm notice
+#25 12.71 npm notice New major version of npm available! 10.8.2 -> 11.6.4
+#25 12.71 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.4
+#25 12.71 npm notice To update run: npm install -g npm@11.6.4
+#25 12.71 npm notice
+#25 DONE 13.2s
+
+#22 [api 4/7] RUN pip install --no-cache-dir     fastapi==0.109.0     uvicorn==0.27.0     sqlalchemy==2.0.25     psycopg2-binary==2.9.9     pydantic==2.6.1     pydantic-settings==2.1.0     python-jose[cryptography]==3.3.0     passlib[bcrypt]==1.7.4     python-multipart==0.0.7     pillow==10.2.0     numpy==1.26.3     opencv-python-headless==4.9.0.80     scipy==1.11.4     scikit-image==0.22.0     requests==2.31.0     PyYAML==6.0.1     pytest==7.4.4     httpx==0.26.0     openai==1.12.0     anthropic==0.33.0     google-generativeai==0.8.3     google-genai==0.1.0
+#22 12.82    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.5/216.5 kB 56.0 MB/s eta 0:00:00
+#22 12.84 Downloading google_auth_httplib2-0.2.1-py3-none-any.whl (9.5 kB)
+#22 12.86 Downloading googleapis_common_protos-1.72.0-py3-none-any.whl (297 kB)
+#22 12.88    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 297.5/297.5 kB 632.2 MB/s eta 0:00:00
+#22 12.91 Downloading httplib2-0.31.0-py3-none-any.whl (91 kB)
+#22 12.91    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.1/91.1 kB 35.0 MB/s eta 0:00:00
+#22 12.94 Downloading huggingface_hub-1.1.7-py3-none-any.whl (516 kB)
+#22 12.95    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.2/516.2 kB 58.6 MB/s eta 0:00:00
+#22 12.96 Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+#22 12.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.2/50.2 kB 536.5 MB/s eta 0:00:00
+#22 12.99 Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+#22 12.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 58.3 MB/s eta 0:00:00
+#22 13.01 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#22 13.04 Downloading uritemplate-4.2.0-py3-none-any.whl (11 kB)
+#22 13.06 Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+#22 13.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 201.0/201.0 kB 62.5 MB/s eta 0:00:00
+#22 13.09 Downloading grpcio-1.76.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (6.4 MB)
+#22 13.20    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.4/6.4 MB 59.3 MB/s eta 0:00:00
+#22 13.23 Downloading grpcio_status-1.71.2-py3-none-any.whl (14 kB)
+#22 13.25 Downloading hf_xet-1.2.0-cp37-abi3-manylinux_2_28_aarch64.whl (3.2 MB)
+#22 13.30    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 65.2 MB/s eta 0:00:00
+#22 13.32 Downloading pyparsing-3.2.5-py3-none-any.whl (113 kB)
+#22 13.33    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.9/113.9 kB 31.8 MB/s eta 0:00:00
+#22 13.35 Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+#22 13.37 Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+#22 13.38    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 62.1 MB/s eta 0:00:00
+#22 13.40 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+#22 13.42 Downloading typer_slim-0.20.0-py3-none-any.whl (47 kB)
+#22 13.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.1/47.1 kB 289.3 MB/s eta 0:00:00
+#22 13.85 Installing collected packages: passlib, websockets, urllib3, uritemplate, typing-extensions, tqdm, sniffio, six, shellingham, PyYAML, python-multipart, python-dotenv, pyparsing, pycparser, pyasn1, psycopg2-binary, protobuf, pluggy, pillow, packaging, numpy, networkx, jiter, iniconfig, idna, hf-xet, h11, greenlet, fsspec, filelock, distro, click, charset-normalizer, certifi, cachetools, bcrypt, annotated-types, uvicorn, typer-slim, tifffile, sqlalchemy, scipy, rsa, requests, pytest, pydantic-core, pyasn1-modules, proto-plus, opencv-python-headless, lazy_loader, imageio, httplib2, httpcore, grpcio, googleapis-common-protos, ecdsa, cffi, anyio, starlette, scikit-image, python-jose, pydantic, httpx, grpcio-status, google-auth, cryptography, pydantic-settings, openai, huggingface-hub, google-genai, google-auth-httplib2, google-api-core, fastapi, tokenizers, google-api-python-client, google-ai-generativelanguage, anthropic, google-generativeai
+#22 ...
+
+#26 [frontend builder 11/11] RUN npm run build
+#26 0.230 
+#26 0.230 > image-tagger-v3-monorepo@3.0.0 build
+#26 0.230 > npm run build -w apps/workbench && npm run build -w apps/monitor && npm run build -w apps/admin && npm run build -w apps/explorer
+#26 0.230 
+#26 0.327 
+#26 0.327 > workbench@3.0.0 build
+#26 0.327 > vite build
+#26 0.327 
+#26 0.440 vite v5.4.21 building for production...
+#26 0.468 transforming...
+#26 1.184 
+#26 1.184 warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+#26 1.184 warn - Configure your content sources or your generated CSS will be missing styles.
+#26 1.184 warn - https://tailwindcss.com/docs/content-configuration
+#26 1.580 ✓ 1358 modules transformed.
+#26 1.642 rendering chunks...
+#26 1.646 computing gzip size...
+#26 1.650 ../../dist/workbench/index.html                   0.46 kB │ gzip:  0.32 kB
+#26 1.651 ../../dist/workbench/assets/index-BmAVGTu2.css    4.77 kB │ gzip:  1.40 kB
+#26 1.651 ../../dist/workbench/assets/index-DNZPsg3K.js   158.19 kB │ gzip: 51.04 kB
+#26 1.651 ✓ built in 1.20s
+#26 1.756 
+#26 1.756 > monitor@3.0.0 build
+#26 1.756 > vite build
+#26 1.756 
+#26 1.867 vite v5.4.21 building for production...
+#26 1.896 transforming...
+#26 2.047 
+#26 2.047 warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+#26 2.047 warn - Configure your content sources or your generated CSS will be missing styles.
+#26 2.047 warn - https://tailwindcss.com/docs/content-configuration
+#26 2.978 ✓ 1358 modules transformed.
+#26 3.042 rendering chunks...
+#26 3.047 computing gzip size...
+#26 3.051 ../../dist/monitor/index.html                   0.44 kB │ gzip:  0.30 kB
+#26 3.051 ../../dist/monitor/assets/index-BmAVGTu2.css    4.77 kB │ gzip:  1.40 kB
+#26 3.051 ../../dist/monitor/assets/index-R6a5Kl6g.js   170.93 kB │ gzip: 53.47 kB
+#26 3.051 ✓ built in 1.17s
+#26 3.152 
+#26 3.152 > admin@3.0.0 build
+#26 3.152 > vite build
+#26 3.152 
+#26 3.262 vite v5.4.21 building for production...
+#26 3.291 transforming...
+#26 3.439 
+#26 3.439 warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+#26 3.439 warn - Configure your content sources or your generated CSS will be missing styles.
+#26 3.439 warn - https://tailwindcss.com/docs/content-configuration
+#26 3.505 ✓ 5 modules transformed.
+#26 3.506 x Build failed in 230ms
+#26 3.506 error during build:
+#26 3.506 [vite:esbuild] Transform failed with 1 error:
+#26 3.506 /app/apps/admin/src/App.jsx:230:1: ERROR: Expected ")" but found ";"
+#26 3.506 file: /app/apps/admin/src/App.jsx:230:1
+#26 3.506 
+#26 3.506 Expected ")" but found ";"
+#26 3.506 228|      </div>
+#26 3.506 229|    );
+#26 3.506 230|  };
+#26 3.506    |   ^
+#26 3.506 231|  
+#26 3.506 232|  
+#26 3.506 
+#26 3.506     at failureErrorWithLog (/app/node_modules/esbuild/lib/main.js:1472:15)
+#26 3.506     at /app/node_modules/esbuild/lib/main.js:755:50
+#26 3.506     at responseCallbacks.<computed> (/app/node_modules/esbuild/lib/main.js:622:9)
+#26 3.506     at handleIncomingPacket (/app/node_modules/esbuild/lib/main.js:677:12)
+#26 3.506     at Socket.readFromStdout (/app/node_modules/esbuild/lib/main.js:600:7)
+#26 3.506     at Socket.emit (node:events:517:28)
+#26 3.506     at addChunk (node:internal/streams/readable:368:12)
+#26 3.506     at readableAddChunk (node:internal/streams/readable:341:9)
+#26 3.506     at Readable.push (node:internal/streams/readable:278:10)
+#26 3.506     at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+#26 3.513 npm error Lifecycle script `build` failed with error:
+#26 3.513 npm error code 1
+#26 3.513 npm error path /app/apps/admin
+#26 3.513 npm error workspace admin@3.0.0
+#26 3.513 npm error location /app/apps/admin
+#26 3.513 npm error command failed
+#26 3.513 npm error command sh -c vite build
+#26 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+#22 [api 4/7] RUN pip install --no-cache-dir     fastapi==0.109.0     uvicorn==0.27.0     sqlalchemy==2.0.25     psycopg2-binary==2.9.9     pydantic==2.6.1     pydantic-settings==2.1.0     python-jose[cryptography]==3.3.0     passlib[bcrypt]==1.7.4     python-multipart==0.0.7     pillow==10.2.0     numpy==1.26.3     opencv-python-headless==4.9.0.80     scipy==1.11.4     scikit-image==0.22.0     requests==2.31.0     PyYAML==6.0.1     pytest==7.4.4     httpx==0.26.0     openai==1.12.0     anthropic==0.33.0     google-generativeai==0.8.3     google-genai==0.1.0
+#22 CANCELED
+------
+ > [frontend builder 11/11] RUN npm run build:
+3.506     at readableAddChunk (node:internal/streams/readable:341:9)
+3.506     at Readable.push (node:internal/streams/readable:278:10)
+3.506     at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+3.513 npm error Lifecycle script `build` failed with error:
+3.513 npm error code 1
+3.513 npm error path /app/apps/admin
+3.513 npm error workspace admin@3.0.0
+3.513 npm error location /app/apps/admin
+3.513 npm error command failed
+3.513 npm error command sh -c vite build
+------
+Dockerfile.frontend:21
+
+--------------------
+
+  19 |     # Build all 4 apps
+
+  20 |     # This runs the 'build' script in package.json which builds each workspace
+
+  21 | >>> RUN npm run build
+
+  22 |     
+
+  23 |     # Stage 2: Serve with Nginx
+
+--------------------
+
+target frontend: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+🌱 Seeding database
+time="2025-12-01T13:39:43-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+time="2025-12-01T13:39:43-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+✅ SYSTEM ONLINE at http://localhost:8080
+🧪 Running smoke tests (API + Science)
+time="2025-12-01T13:39:43-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+Running science smoke test (advisory)...
+time="2025-12-01T13:39:43-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+[install] WARNING: science smoketest failed (likely empty DB or misconfigured pipeline) – continuing.
+time="2025-12-01T13:39:43-08:00" level=warning msg="/Users/taggertsmith/Desktop/Image_Tagger_3.4.74_handoff_bundle_full/Image_Tagger_3.4.74_vlm_lab_TL_runbook_full/deploy/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+service "api" is not running
+[install] smoke_science (second pass) failed – continuing as advisory.
+[install] Running frontend smoketest...
+INFO:__main__:playwright not installed; falling back to HTML-only check
+INFO:__main__:Running frontend HTML smoke check against http://localhost:8080/
+ERROR:__main__:Failed to reach frontend at http://localhost:8080/: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106e373b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+[install] Frontend smoketest failed

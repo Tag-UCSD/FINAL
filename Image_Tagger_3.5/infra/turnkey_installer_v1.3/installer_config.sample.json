@@ -1,0 +1,11 @@
+{
+  "prechecks": [
+    "python --version"
+  ],
+  "steps": [
+    {
+      "name": "Sample echo",
+      "shell": "echo sample step ran"
+    }
+  ]
+}

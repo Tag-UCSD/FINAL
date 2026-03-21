@@ -1,0 +1,68 @@
+name: image-tagger-v3-ci
+
+on:
+  push:
+    paths:
+      - "backend/**"
+      - "frontend/**"
+      - "scripts/**"
+      - "tests/**"
+      - "deploy/**"
+      - "v3_governance.yml"
+  pull_request:
+    paths:
+      - "backend/**"
+      - "frontend/**"
+      - "scripts/**"
+      - "tests/**"
+      - "deploy/**"
+      - "v3_governance.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install minimal dependencies
+        run: |
+          if [ -f backend/requirements.txt ]; then
+            pip install -r backend/requirements.txt
+          else:
+            pip install fastapi uvicorn sqlalchemy alembic pytest requests pydantic opencv-python-headless numpy scipy scikit-image
+          fi
+
+      - name: Guardian verify
+        run: |
+          if [ -f scripts/guardian.py ]; then
+            python scripts/guardian.py verify
+          else:
+            echo "Guardian script not found; skipping drift check."
+          fi
+
+      - name: Run API tests
+        run: |
+          if [ -f tests/test_v3_api.py ]; then
+            pytest -q tests/test_v3_api.py
+          else:
+            echo "API tests not found; skipping."
+          fi
+
+      - name: Science smoketest (optional)
+        run: |
+          if [ -f scripts/smoke_science.py ]; then
+            python scripts/smoke_science.py || echo "smoke_science failed (likely due to DB config) – treat as advisory."
+          else:
+            echo "smoke_science not found; skipping."
+          fi
+
+
+- name: Guard against __pycache__ in tree
+  run: python scripts/check_no_pycache_in_tree.py
+

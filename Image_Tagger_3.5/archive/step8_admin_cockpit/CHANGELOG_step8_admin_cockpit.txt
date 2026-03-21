@@ -1,0 +1,12 @@
+Image Tagger v3.2.8 – Step 8: Admin Cockpit wired to real ToolConfig & budget endpoints
+
+- Rewrote backend/api/v1_admin.py with concrete endpoints:
+  * GET /v1/admin/models → list[ToolConfigRead] from tool_configs table.
+  * PATCH /v1/admin/models/{tool_id} → update is_enabled / cost_per_1k_tokens.
+  * GET /v1/admin/budget → BudgetStatus with derived kill-switch state.
+  * POST /v1/admin/kill-switch?active=bool → disables all paid models and returns BudgetStatus.
+- Rewrote frontend/apps/admin/src/App.jsx to:
+  * Load models and budget from the real API using ApiClient('/api/v1/admin').
+  * Toggle models on/off via PATCH requests.
+  * Edit cost_per_1k_tokens via number input + PATCH on blur.
+  * Activate/deactivate the kill switch by calling POST /v1/admin/kill-switch.

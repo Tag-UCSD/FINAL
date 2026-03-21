@@ -1,0 +1,9 @@
+v3.3.7 Ruthless follow-up patch
+
+- Unified visible version strings to 3.3.7 where appropriate.
+- Made scripts/smoke_science.py tolerant of a zero-image database (skip with guidance).
+- Added pytest coverage for Admin bulk upload and Monitor Tag Inspector endpoints.
+- Improved empty-state messaging in the Monitor and Explorer frontends.
+- Added docs: WHATS_NEW_v3_3_x.md, FIRST_DASHBOARD_QUICKSTART.md, BN_EXPORT_EXAMPLE.md.
+- Expanded governance_guide.md with a Guardian everyday-work cheat sheet.
+- Documented frontend smoketest expectations in devops_quickstart.md and smoke_frontend.py.

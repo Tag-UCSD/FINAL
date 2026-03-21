@@ -1,0 +1,52 @@
+[
+  {
+    "affordance_id": "L059",
+    "test_metrics": {
+      "rmse": 0.8139,
+      "mae": 0.6581,
+      "pearson_r": 0.696,
+      "spearman_rho": 0.6535
+    },
+    "n_features": 310
+  },
+  {
+    "affordance_id": "L079",
+    "test_metrics": {
+      "rmse": 0.7928,
+      "mae": 0.5532,
+      "pearson_r": 0.8008,
+      "spearman_rho": 0.5887
+    },
+    "n_features": 310
+  },
+  {
+    "affordance_id": "L091",
+    "test_metrics": {
+      "rmse": 1.1361,
+      "mae": 0.7737,
+      "pearson_r": -0.1388,
+      "spearman_rho": 0.0055
+    },
+    "n_features": 310
+  },
+  {
+    "affordance_id": "L130",
+    "test_metrics": {
+      "rmse": 0.9785,
+      "mae": 0.7939,
+      "pearson_r": 0.5865,
+      "spearman_rho": 0.5857
+    },
+    "n_features": 310
+  },
+  {
+    "affordance_id": "L141",
+    "test_metrics": {
+      "rmse": 1.1765,
+      "mae": 0.9109,
+      "pearson_r": 0.4166,
+      "spearman_rho": 0.4248
+    },
+    "n_features": 310
+  }
+]

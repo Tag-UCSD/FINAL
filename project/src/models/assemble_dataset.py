@@ -284,7 +284,13 @@ def main() -> None:
         "n_indicator_features": len([c for c in merged.columns if c.startswith("ind_")]),
         "columns": list(merged.columns),
         "cluster_split": {
-            split: dict(merged[merged["split"] == split].drop_duplicates("scene_name")["cluster_assignment"].value_counts())
+            split: {
+                str(k): int(v)
+                for k, v in merged[merged["split"] == split]
+                .drop_duplicates("scene_name")["cluster_assignment"]
+                .value_counts()
+                .items()
+            }
             for split in ["train", "val", "test"]
         },
         "elapsed_seconds": round(time.time() - t0, 1),

@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # 1. The Source of Truth (Database)
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: tagger
+      POSTGRES_PASSWORD: tagger_pass
+      POSTGRES_DB: image_tagger_v3
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - tagger-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tagger -d image_tagger_v3"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. The Business Logic (Backend API)
+  api:
+    build:
+      context: ../
+      dockerfile: deploy/Dockerfile.backend
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://tagger:tagger_pass@db:5432/image_tagger_v3
+      SECRET_KEY: "production_secret_key_change_me_in_prod"
+      # VLM API keys (pass through from host environment)
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      # Wait for DB to be healthy before starting
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tagger-net
+    volumes:
+      # Mount the old v2 logic folder so we don't have to copy it into the docker image manually
+      - ../backend/image_tagger:/app/backend/image_tagger
+      - image_data:/app/data_store
+
+  # 3. The User Interface (Frontend Gateway)
+  frontend:
+    build:
+      context: ../
+      dockerfile: deploy/Dockerfile.frontend
+    restart: always
+    ports:
+      - "8080:80" # The Single Entry Point for all users
+    depends_on:
+      - api
+    networks:
+      - tagger-net
+
+volumes:
+  postgres_data:
+  image_data:
+
+networks:
+  tagger-net:
+    driver: bridge

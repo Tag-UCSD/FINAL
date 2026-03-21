@@ -1,0 +1,287 @@
+schema:
+  - id: string
+  - name: string
+  - level: string
+  - range: string
+  - sources: {cv: bool, vlm: bool}
+  - notes: string
+attributes:
+  - id: geometry.curvilinearity
+    name: Curvilinearity
+    level: visible
+    range: continuous
+    sources: {cv: true, vlm: false}
+    notes: Ratio of curved to straight contours
+  - id: clutter.density
+    name: Visual clutter density
+    level: visible
+    range: continuous
+    sources: {cv: true, vlm: false}
+    notes: Entropy/keypoint density normalized by area
+  - id: lighting.daylight_evidence
+    name: Daylight evidence
+    level: inferred
+    range: prob
+    sources: {cv: true, vlm: true}
+    notes: Windows/sky cues and VLM judgement
+  - id: privacy.enclosure
+    name: Enclosure (refuge)
+    level: inferred
+    range: prob
+    sources: {cv: true, vlm: true}
+    notes: Occluders, alcoves, high-back seating
+  - id: privacy.prospect
+    name: Prospect (openness)
+    level: inferred
+    range: prob
+    sources: {cv: true, vlm: true}
+    notes: Long sightlines, low occlusion
+  - id: greenery.plants_presence
+    name: Plants presence
+    level: visible
+    range: prob
+    sources: {cv: true, vlm: true}
+    notes: Green hues with leaf-like textures or VLM confirmation
+
+# --- Extended Attribute Set (added 2025-11-10T21:50:15.811362Z) ---
+# XIII. Materiality and Authenticity Indicators
+- id: materials.construction_legibility
+  name: Construction legibility
+  level: visible
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Visibility of how elements are made/assembled; junction readability, exposed joinery
+
+- id: materials.finish_honesty
+  name: Finish honesty
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Alignment between apparent material expression and substrate (avoid faux finishes)
+
+- id: materials.craft_evidence
+  name: Craft evidence
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Signs of handwork vs industrial production (tool marks, irregularities)
+
+- id: materials.repair_visibility
+  name: Repair visibility
+  level: visible
+  range: prob
+  sources: {cv: true, vlm: true}
+  notes: Evidence of maintenance and care over time (patches, inlays)
+
+# Patina and Temporal Depth
+- id: aging.desirable_patina
+  name: Desirable patina
+  level: visible
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Aesthetically valued wear vs degradation
+
+- id: temporal.layer_visibility
+  name: Layer visibility
+  level: visible
+  range: count
+  sources: {cv: true, vlm: true}
+  notes: Discernible historical strata or modifications
+
+# XIV. Embodied Energy and Ecological Cues
+- id: sustainability.recycled_material_evidence
+  name: Recycled material evidence
+  level: inferred
+  range: prob
+  sources: {cv: true, vlm: true}
+  notes: Visible reuse/upcycling markers
+
+- id: sustainability.low_impact_indicators
+  name: Low-impact indicators
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Minimal processing cues; low embodied energy signatures
+
+- id: sustainability.local_material_signatures
+  name: Local material signatures
+  level: inferred
+  range: prob
+  sources: {cv: true, vlm: true}
+  notes: Vernacular/locally sourced materials
+
+- id: ecology.carbon_sequestration_visible
+  name: Visible carbon sequestration
+  level: visible
+  range: prob
+  sources: {cv: true, vlm: true}
+  notes: Presence of living systems/biomass with sequestration potential
+
+# XV. Phenomenological Qualities
+- id: atmosphere.intimacy_scale
+  name: Intimacy scale
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Psychological closeness vs monumentality
+
+- id: atmosphere.gravity_vs_levity
+  name: Gravity vs levity
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Heavy/grounded vs light/floating character
+
+- id: atmosphere.opacity_gradient
+  name: Opacity gradient
+  level: visible
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Visual penetration depth, layering, translucency gradations
+
+# Sensory Synesthesia Potential
+- id: synesthesia.temperature_color_correspondence
+  name: Temperature–color correspondence
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Visual warmth matching thermal expectation
+
+- id: synesthesia.acoustic_visual_match
+  name: Acoustic–visual match
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Expected sound quality inferred from visible materials/forms
+
+- id: synesthesia.haptic_visual_correspondence
+  name: Haptic–visual correspondence
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Touch expectation from appearance (roughness/softness cues)
+
+# XVI. Control and Agency Indicators
+- id: control.adjustable_element_density
+  name: Adjustable element density
+  level: visible
+  range: count
+  sources: {cv: true, vlm: true}
+  notes: Operable windows, shades, dimmers, vents per area
+
+- id: control.modification_affordances
+  name: Modification affordances
+  level: visible
+  range: count
+  sources: {cv: true, vlm: true}
+  notes: Moveable furniture, personalizable surfaces, modular components
+
+- id: control.microclimate_zones
+  name: Microclimate zones
+  level: inferred
+  range: count
+  sources: {cv: true, vlm: true}
+  notes: Distinct controllable thermal/light regions
+
+- id: agency.responsive_feedback
+  name: Responsive feedback
+  level: inferred
+  range: prob
+  sources: {cv: true, vlm: true}
+  notes: Visible environmental response to user actions (lights dimming, louvers moving)
+
+# XVII. Topological and Network Properties
+- id: topology.integration_value
+  name: Topological integration value
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Accessibility from other spaces (space syntax/visibility graph proxies)
+
+- id: topology.choice_coefficient
+  name: Topological choice coefficient
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Likelihood of passing through (betweenness centrality proxies)
+
+- id: network.visual_graph_connectivity
+  name: Visual graph connectivity
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Inter-visibility network density from visibility graph analysis
+
+# XVIII. Scale and Proportion Relations
+- id: scale.body_part_resonance
+  name: Body-part resonance
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Elements matching hand/arm/body dimensions
+
+- id: proportion.golden_ratio_proximity
+  name: Golden-ratio proximity
+  level: visible
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Deviation from φ relationships in salient rectangles/triangles
+
+- id: proportion.harmonic_intervals
+  name: Harmonic intervals (proportion)
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Prevalence of musical ratio correspondences (3:2, 4:3, etc.)
+
+- id: scale.magnitude_range
+  name: Magnitude range
+  level: visible
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Ratio of largest to smallest perceptible elements
+
+- id: scale.transition_smoothness
+  name: Transition smoothness (scale)
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: false}
+  notes: Gradual vs abrupt size changes across hierarchies
+
+# XIX. Information Gradient and Surprise
+- id: information.conditional_entropy
+  name: Conditional entropy (view sequence)
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Uncertainty reduction as views unfold (information-theoretic measure)
+
+- id: surprise.expectation_violation
+  name: Expectation violation
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Schema-inconsistent elements quantified vs local priors
+
+- id: mystery.progressive_disclosure
+  name: Progressive disclosure (mystery)
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Promise of further information (partial occlusion, curving paths)
+
+# XX. Historical and Cultural Legibility
+- id: narrative.chronological_layering
+  name: Chronological layering (temporal narrative)
+  level: inferred
+  range: ordinal
+  sources: {cv: true, vlm: true}
+  notes: Sequential historical evidence readable in the environment
+
+- id: cultural.vernacular_vocabulary_strength
+  name: Vernacular vocabulary strength
+  level: inferred
+  range: continuous
+  sources: {cv: true, vlm: true}
+  notes: Degree of local architectural language adherence
+

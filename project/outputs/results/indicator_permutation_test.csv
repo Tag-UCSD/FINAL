@@ -1,0 +1,6 @@
+affordance_id,affordance_name,rmse_b,rmse_d,rmse_d_permuted,delta_rmse_d_vs_b,delta_rmse_perm_vs_b,pearson_r_d,pearson_r_d_permuted,n_indicator_cols
+L059,Sleep,0.8139,0.6763,0.8149,-0.1376,0.0011,0.7943,0.695,288
+L079,Cook,0.7783,0.5231,0.8644,-0.2553,0.0861,0.9237,0.7609,140
+L091,Computer Work,1.1404,0.8122,1.1193,-0.3282,-0.0211,0.5954,0.032,268
+L130,Conversation,0.9776,0.8127,0.9049,-0.1649,-0.0727,0.724,0.6442,280
+L141,Yoga/Stretching,1.1751,1.0024,1.1284,-0.1727,-0.0467,0.5816,0.4482,272

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Feature Onboarding Wizard — CNfA</title>
+  <style>
+    body { max-width: 800px; margin: 2rem auto; font-family: system-ui, sans-serif; line-height: 1.5; }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    label { font-weight: 600; display: block; margin-bottom: 4px; font-size: 0.9rem; }
+    input, textarea, select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    textarea { min-height: 60px; }
+    h3 { margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    .btn { padding: 10px 16px; border-radius: 6px; border: none; cursor: pointer; font-weight: 600; background: #2563eb; color: #fff; }
+    .btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🧪 Feature Onboarding Wizard</h1>
+    <p>Define new architectural attributes. Export to JSON to add to the system.</p>
+
+    <div class="grid">
+      <div>
+        <label>Feature Category</label>
+        <input id="cat" placeholder="e.g. Spatial, Cognitive">
+      </div>
+      <div>
+        <label>Feature Key</label>
+        <input id="key" placeholder="e.g. spatial.prospect">
+      </div>
+      <div>
+        <label>Human Label</label>
+        <input id="label" placeholder="e.g. Prospect Depth">
+      </div>
+      <div>
+        <label>Method</label>
+        <select id="method">
+            <option value="vlm">VLM (AI Reasoning)</option>
+            <option value="cv">Computer Vision (Math)</option>
+        </select>
+      </div>
+    </div>
+
+    <h3>Goldilocks Parameters</h3>
+    <div class="grid">
+      <div><label>Low End (Boring)</label><textarea id="low"></textarea></div>
+      <div><label>High End (Chaotic)</label><textarea id="high"></textarea></div>
+      <div><label>Optimal (Just Right)</label><textarea id="opt"></textarea></div>
+    </div>
+
+    <br>
+    <button class="btn" onclick="exportJSON()">Download Definition</button>
+  </div>
+
+<script>
+  function exportJSON(){
+    const d = (id) => document.getElementById(id).value;
+    const data = {
+      key: d('key'), label: d('label'), category: d('cat'), method: d('method'),
+      goldilocks: { low: d('low'), high: d('high'), optimal: d('opt') }
+    };
+    const b = new Blob([JSON.stringify(data,null,2)], {type:"application/json"});
+    const u = URL.createObjectURL(b);
+    const a = document.createElement('a'); a.href=u; a.download=`feature_${data.key}.json`;
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+</script>
+</body>
+</html>

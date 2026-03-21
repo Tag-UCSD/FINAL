@@ -1,0 +1,6 @@
+{
+  "base_artifact": "Image_Tagger_v3.4.17_stub_safe_vlm_seed_full.zip",
+  "base_sha256": "096f717914206160de9b9510c6a668bf63122b41c6a580974750aac4bb0fcedc",
+  "base_version": "3.4.17_stub_safe_vlm_seed",
+  "notes": "Canonical anchor for 3.4.18_vlm_patterns_materials_seed_full; built monotonically from 3.4.17_stub_safe_vlm_seed."
+}

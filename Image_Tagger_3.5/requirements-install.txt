@@ -1,0 +1,5 @@
+# Host-side dependencies for installation guard scripts
+# These are installed in the local .venv before running guard checks
+
+PyYAML==6.0.1
+requests==2.31.0

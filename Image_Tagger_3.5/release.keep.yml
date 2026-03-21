@@ -1,0 +1,21 @@
+critical_paths:
+- backend
+- backend/science
+- backend/api
+- frontend
+- scripts
+- tests
+- install.sh
+- v3_governance.yml
+- governance.lock
+min_counts:
+  backend: 64
+  frontend: 29
+  scripts: 8
+  tests: 5
+stub_allowlist:
+- backend/science/semantics/arch_parts_vlm.py
+- backend/science/semantics/arch_patterns_vlm.py
+- backend/services/vlm.py
+ellipsis_allowlist:
+- backend/science/contracts.py
