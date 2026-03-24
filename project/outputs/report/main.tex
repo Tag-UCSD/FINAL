@@ -38,26 +38,8 @@ context, but obtaining dense human ratings is expensive. We therefore study a
 practical proxy question: how accurately can lightweight student models
 reproduce vision-language-model-derived affordance scores on synthetic indoor
 scenes?
-For our pilot study, using 420 Hypersim renderings held out by scene, we queried
-Qwen2-VL-7B for numeric 7-point scores and structured indicator checklists for five
-activities selected from an expert-curated taxonomy: Sleep, Cook, Computer Work, Casual
-Conversation, and Yoga/Stretching. We then trained student models on either raw
-RGB images or structured Mask2Former-derived scene features. 
-On the held-out test scenes, the best CNN checkpoint per affordance reached macro RMSE 1.120, a
-mean-prediction baseline reached 1.154, a linear regression baseline reached
-1.592, a LightGBM student on 310 structured features reached 0.977, and an
-indicator-augmented LightGBM student reached 0.765. Relative to Model B, Model
-D reduced RMSE on every affordance, with statistically significant gains on
-four of five tasks and the largest improvement on L091 Computer Work
-($\Delta$RMSE $=-0.328$, 95\% bootstrap CI $[-0.500,-0.154]$). A permutation
-control shows that indicator semantics drive most of the gain on L059, L079,
-and L091, though dimensionality contributes on L130 and L141. Under an
-auxiliary binary view defined by score $\geq 4$, Model D also attains the best
-macro F1 among the reproducible per-image baselines (0.679). We frame these
-results as evidence about distillation fidelity: lightweight tabular
-students can approximate the VLM teacher substantially better than image-only
-baselines on this synthetic benchmark, but correlation with human affordance
-ratings remains untested.
+Using 420 Hypersim renderings held out by scene, we queried Qwen2-VL-7B for 7-point scores and structured indicator checklists across five activities drawn from an expert-curated taxonomy: Sleep, Cook, Computer Work, Casual Conversation, and Yoga/Stretching. Student models were trained on either raw RGB images or structured Mask2Former-derived scene features. On held-out test scenes, an indicator-augmented LightGBM student (Model D) achieved macro RMSE 0.765 and macro Pearson r = 0.724, outperforming a feature-only LightGBM (Model B; RMSE 0.977), the best CNN checkpoint (RMSE 1.120), and a mean-prediction baseline (RMSE 1.154). Model D reduced RMSE on every affordance relative to Model B, with statistically significant gains on four of five tasks; the largest improvement was on Computer Work ($\Delta$ RMSE = −0.328, 95\% bootstrap CI $[−0.500, −0.154]$). A permutation control shows that indicator semantics drive most of this gain on three affordances, though dimensionality also contributes on the remaining two. Under a binary view defined by score ≥ 4, Model D attains the best macro F1 among reproducible baselines (0.679). We present these results as evidence for distillation fidelity: lightweight tabular students can approximate a VLM teacher substantially better than image-only baselines on this synthetic benchmark, though their correlation with human affordance judgments remains untested.
+
 \end{abstract}
 
 \section{Introduction}
@@ -88,23 +70,7 @@ held-out scenes? Second, do structured features outperform image-only CNN
 baselines in this low-data setting? Third, does indicator-level distillation
 help beyond the scalar target alone?
 
-Our main findings are narrower than the original draft claimed, but stronger in
-scientific terms. On a scene-level split of 420 Hypersim images, structured
-LightGBM students outperform the best retained CNN checkpoints and the mean
-baseline. Adding indicator features improves every affordance and is
-statistically significant on four of five tasks, though the L141
-Yoga/Stretching gain is uncertain at this sample size. A random-indicator
-control shows that the improvement is not explained purely by adding more
-binary columns. We therefore present this work as an end-to-end distillation
-pipeline for VLM-derived indoor affordance scoring on synthetic scenes, not as
-a claim that absolute affordance prediction has been solved. For design and
-interaction research, a coarse classifier of what an interior appears to afford
-is useful even before full human validation: it supports archive-scale queries,
-comparison of design variants, and fast screening of scenes for deeper review.
-That is also the intended role in our broader Image\_Tagger\_3.5 system, which
-already extracts design-relevant visual, spatial, and cognitive attributes from
-interior images; affordance models would become one more analysis module in
-that practical toolchain.
+On a scene-level split of 420 Hypersim images, structured LightGBM students outperform the best CNN checkpoints and the mean baseline. Adding indicator features improves every affordance and is statistically significant on four of five tasks, though the Yoga/Stretching gain remains uncertain at this sample size. A random-indicator control shows the improvement is not explained purely by adding binary columns. We present this work as an end-to-end distillation pipeline for VLM-derived indoor affordance scoring on synthetic scenes — not as a claim that affordance prediction has been solved. Even a coarse classifier of what an interior appears to afford is practically useful before full human validation: it supports archive-scale queries, comparison of design variants, and fast screening of scenes for deeper review. Affordance scoring is intended to serve exactly that role as one analysis module within a broader pipeline for extracting design-relevant visual, spatial, and cognitive attributes from interior images, which we submit as a supplement 
 
 \section{Related Work}
 \label{sec:related}
@@ -524,12 +490,6 @@ distillation is heterogeneous. On L059, L079, and L091 the random-indicator
 control collapses back toward Model B, whereas on L130 and L141 some of the
 gain appears to come from the richer sparse representation itself.
 
-Stronger claims are not defensible here. The paper does not establish true
-affordance prediction, architecture superiority in general, or real-world
-transfer. The contribution is a focused study of how well cheap students can
-approximate a VLM teacher's scene-level scoring behavior under severe data
-constraints.
-
 For practical use, the results support deployment only in a narrow sense.
 Model D is strong enough to act as a cheap front-end for bulk screening,
 retrieval, or comparison of design alternatives, where occasional score error
@@ -573,7 +533,6 @@ transparently as point estimates and avoid unsupported significance claims.
 \section{Conclusion}
 \label{sec:conclusion}
 
-This paper is framed around what the experiments actually show.
 Using 420 synthetic indoor scenes with scene-level splits, lightweight tabular
 students can approximate Qwen2-VL-7B's affordance scoring behavior better than
 image-only CNN baselines and simple non-neural baselines. Indicator

@@ -25,8 +25,8 @@ from backend.database.core import SessionLocal, engine
 from backend.models import Base, Attribute
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-ATTRIBUTES_YML = REPO_ROOT / "contracts" / "attributes.yml"
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+ATTRIBUTES_YML = BACKEND_ROOT / "data" / "attributes.yml"
 
 
 def parse_attributes(lines: List[str]) -> List[Dict[str, Any]]:
