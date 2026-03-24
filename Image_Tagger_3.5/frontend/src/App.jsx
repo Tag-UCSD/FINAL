@@ -12,6 +12,32 @@ const SAMPLE_IMAGES = Array.from({ length: 12 }).map((_, i) => ({
 
 const api = new ApiClient('/api/v1/explorer');
 
+const AFFORDANCE_SHORT_LABELS = {
+    L059: 'Sleep',
+    L079: 'Cook',
+    L091: 'Work',
+    L130: 'Talk',
+    L141: 'Yoga',
+};
+
+function AffordanceStrip({ scores }) {
+    if (!scores?.length) return null;
+    return (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+            {scores.map(item => (
+                <span
+                    key={item.id}
+                    className="inline-flex items-center gap-1 rounded bg-blue-50 px-2 py-1 text-[10px] font-semibold text-blue-900 ring-1 ring-inset ring-blue-200"
+                    title={item.label}
+                >
+                    <span>{AFFORDANCE_SHORT_LABELS[item.id] || item.label}</span>
+                    <span className="font-mono">{Number(item.score).toFixed(1)}</span>
+                </span>
+            ))}
+        </div>
+    );
+}
+
 export default function ExplorerApp() {
     const [cart, setCart] = useState([]);
     const [debugMode, setDebugMode] = useState('none'); // 'none' | 'edges' | 'overlay' | 'depth' | 'complexity' | 'segmentation' | 'room' | 'materials' | 'materials2'
@@ -33,12 +59,47 @@ export default function ExplorerApp() {
     const [seedElapsed, setSeedElapsed] = useState(0);
     const [seedSkipped, setSeedSkipped] = useState(false);
     const [detailIndex, setDetailIndex] = useState(null); // index into images[] for detail modal
+    const [affordanceMap, setAffordanceMap] = useState({});
 
     useEffect(() => {
         loadAttributes();
         // Initial search with empty filters/query
         runSearch([]);
     }, []);
+
+    useEffect(() => {
+        let cancelled = false;
+        const queue = images
+            .filter(img => !img.affordance_scores?.length && !affordanceMap[img.id])
+            .map(img => img.id);
+
+        if (!queue.length) return;
+
+        async function worker() {
+            while (queue.length && !cancelled) {
+                const imageId = queue.shift();
+                try {
+                    const data = await api.get(`/images/${imageId}/affordance`);
+                    if (!cancelled) {
+                        setAffordanceMap(prev => ({ ...prev, [imageId]: data }));
+                    }
+                } catch (err) {
+                    if (!cancelled) {
+                        setAffordanceMap(prev => ({ ...prev, [imageId]: { affordance_scores: [] } }));
+                    }
+                }
+            }
+        }
+
+        const workerCount = Math.min(2, queue.length);
+        for (let i = 0; i < workerCount; i += 1) {
+            worker();
+        }
+
+        return () => {
+            cancelled = true;
+        };
+    }, [images]);
 
     const groupedAttributes = useMemo(() => {
         if (!attributes || !attributes.length) return [];
@@ -491,6 +552,7 @@ export default function ExplorerApp() {
                                 const tags = Array.isArray(img.tags) ? img.tags : [];
                                 const inCart = cart.includes(img.id);
                                 const altText = img.meta_data && img.meta_data.filename ? img.meta_data.filename : `Image ${img.id}`;
+                                const affordanceScores = affordanceMap[img.id]?.affordance_scores ?? img.affordance_scores ?? [];
                                 return (
                                     <div
                                         key={img.id}
@@ -575,6 +637,7 @@ export default function ExplorerApp() {
                                                     </span>
                                                 ))}
                                             </div>
+                                            <AffordanceStrip scores={affordanceScores} />
                                         </div>
                                     </div>
                                 );

@@ -5,21 +5,127 @@ Endpoints for the Explorer UI: search, export, attributes, image detail, seeding
 """
 from __future__ import annotations
 
-from typing import List, Optional
+from datetime import datetime, timezone
+import os
 from pathlib import Path
+from typing import List, Optional
 
+import cv2
+import numpy as np
+import requests
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from backend.database.core import get_db
 from backend.schemas.discovery import (
     SearchQuery, ImageSearchResult, ExportRequest, AttributeRead,
-    AttributeValue, HumanValidation, ImageDetailResult, TagInfo,
+    AttributeValue, HumanValidation, ImageDetailResult, TagInfo, AffordanceScore,
 )
 from backend.models.attribute import Attribute
 from backend.models.assets import Image
+from backend.science.context.affordance import (
+    AFFORDANCE_IDS,
+    AFFORDANCE_NAMES,
+    predict_affordances_with_metadata_from_image,
+)
 
 router = APIRouter(prefix="/v1/explorer", tags=["explorer"])
+
+
+_AFFORDANCE_CACHE_KEY = "affordance_runtime_v1"
+
+
+def _is_url(path: str) -> bool:
+    return path.startswith("http://") or path.startswith("https://")
+
+
+def _resolve_path(storage_path: str) -> Path:
+    raw = Path(storage_path)
+    if raw.is_file():
+        return raw
+    root = Path("data_store")
+    candidate = root / storage_path
+    if candidate.is_file():
+        return candidate
+    env_root_value = os.getenv("IMAGE_STORAGE_ROOT", "")
+    if env_root_value:
+        env_root = Path(env_root_value)
+        env_candidate = env_root / storage_path
+        if env_candidate.is_file():
+            return env_candidate
+    return raw
+
+
+def _load_image_rgb(storage_path: str) -> np.ndarray:
+    if _is_url(storage_path):
+        resp = requests.get(storage_path, timeout=15)
+        resp.raise_for_status()
+        arr = np.frombuffer(resp.content, dtype=np.uint8)
+        bgr = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+    else:
+        path = _resolve_path(storage_path)
+        if not path.is_file():
+            raise FileNotFoundError(f"Image file not found: {path}")
+        bgr = cv2.imread(str(path))
+    if bgr is None:
+        raise ValueError(f"Could not load image: {storage_path}")
+    return cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
+
+
+def _score_list_from_map(score_map: dict | None) -> list[AffordanceScore]:
+    score_map = score_map or {}
+    out: list[AffordanceScore] = []
+    for aff_id in AFFORDANCE_IDS:
+        if aff_id not in score_map:
+            continue
+        out.append(AffordanceScore(
+            id=aff_id,
+            label=AFFORDANCE_NAMES.get(aff_id, aff_id),
+            score=float(score_map[aff_id]),
+        ))
+    return out
+
+
+def _get_cached_affordance_payload(image: Image) -> dict | None:
+    meta = getattr(image, "meta_data", {}) or {}
+    payload = meta.get(_AFFORDANCE_CACHE_KEY)
+    if isinstance(payload, dict) and isinstance(payload.get("scores"), dict):
+        scores = payload.get("scores") or {}
+        if any((not isinstance(v, (int, float))) or float(v) < 1.0 or float(v) > 7.0 for v in scores.values()):
+            return None
+        return payload
+    return None
+
+
+def _compute_and_cache_affordance_payload(image: Image, db: Session) -> dict:
+    try:
+        rgb = _load_image_rgb(image.storage_path)
+        predicted = predict_affordances_with_metadata_from_image(rgb)
+        payload = {
+            "scores": {k: round(float(v), 3) for k, v in predicted.get("scores", {}).items()},
+            "method": predicted.get("method"),
+            "computed_at": datetime.now(timezone.utc).isoformat(),
+        }
+    except Exception:
+        payload = {
+            "scores": {},
+            "method": "unavailable",
+            "computed_at": datetime.now(timezone.utc).isoformat(),
+        }
+    meta = dict(getattr(image, "meta_data", {}) or {})
+    meta[_AFFORDANCE_CACHE_KEY] = payload
+    image.meta_data = meta
+    db.add(image)
+    db.commit()
+    db.refresh(image)
+    return payload
+
+
+def _get_or_compute_affordance_payload(image: Image, db: Session) -> dict:
+    cached = _get_cached_affordance_payload(image)
+    if cached is not None:
+        return cached
+    return _compute_and_cache_affordance_payload(image, db)
 
 
 @router.post("/search", response_model=List[ImageSearchResult])
@@ -53,7 +159,15 @@ def search_images(payload: SearchQuery, db: Session = Depends(get_db)):
             url = f"/static/thumbnails/{thumb_name}"
         meta = getattr(img, "meta_data", {}) or {}
         tags = meta.get("tags", []) if isinstance(meta, dict) else []
-        results.append(ImageSearchResult(id=image_id, url=url, tags=tags, meta_data=meta))
+        affordance_payload = _get_cached_affordance_payload(img)
+        results.append(ImageSearchResult(
+            id=image_id,
+            url=url,
+            tags=tags,
+            meta_data=meta,
+            affordance_scores=_score_list_from_map((affordance_payload or {}).get("scores")),
+            affordance_method=(affordance_payload or {}).get("method"),
+        ))
 
     return results
 
@@ -147,6 +261,7 @@ def get_image_detail(image_id: int, db: Session = Depends(get_db)):
             ))
 
     meta = getattr(image, "meta_data", {}) or {}
+    affordance_payload = _get_or_compute_affordance_payload(image, db)
     raw_tags = meta.get("tags", []) if isinstance(meta, dict) else []
     filename = getattr(image, "filename", None) or meta.get("filename", f"image_{image_id}")
 
@@ -190,9 +305,25 @@ def get_image_detail(image_id: int, db: Session = Depends(get_db)):
 
     return ImageDetailResult(
         id=image.id, url=url, filename=filename, tags=tag_infos,
-        meta_data=meta, science_attributes=science_attributes,
+        meta_data=meta,
+        affordance_scores=_score_list_from_map(affordance_payload.get("scores")),
+        affordance_method=affordance_payload.get("method"),
+        science_attributes=science_attributes,
         human_validations=human_validations,
     )
+
+
+@router.get("/images/{image_id}/affordance")
+def get_image_affordance(image_id: int, db: Session = Depends(get_db)):
+    image = db.query(Image).filter(Image.id == image_id).first()
+    if image is None:
+        raise HTTPException(status_code=404, detail="Image not found")
+    payload = _get_or_compute_affordance_payload(image, db)
+    return {
+        "image_id": image_id,
+        "affordance_scores": _score_list_from_map(payload.get("scores")),
+        "affordance_method": payload.get("method"),
+    }
 
 
 @router.post("/seed")

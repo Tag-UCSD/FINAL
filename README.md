@@ -179,10 +179,12 @@ Each analyzer writes normalized attributes to the frame, which are then persiste
 ### Enabling Affordance Prediction
 
 The affordance analyzer is **opt-in**. It requires the OneFormer segmentation layer (L1.5) to run first.
+The Explorer UI also computes and caches affordance scores on demand for image cards and the image detail view.
 
 **From the API / debug UI:**
 
 Visit `http://localhost:8080/api/v1/debug/images/{image_id}/affordance` to get a JSON response with affordance scores for any image in the database.
+The Explorer also exposes `GET /api/v1/explorer/images/{image_id}/affordance` for the GUI.
 
 **From Python code:**
 
@@ -251,7 +253,7 @@ environment:
 
 A built-in cost tracker enforces a hard budget limit (default $15 USD, configurable via `VLM_HARD_LIMIT_USD`) to prevent runaway API spending.
 
-The affordance analyzer (L1.8) does **not** require a VLM -- it runs entirely on segmentation features + pre-trained LightGBM models.
+The affordance analyzer (L1.8) now prefers the best-performing project model: indicator-augmented LightGBM (Model D). That path uses OneFormer segmentation plus runtime VLM indicator extraction when a VLM API key is configured. If no VLM is configured, the app falls back to the bundled raw-feature LightGBM model.
 
 ### Stopping & Restarting
 

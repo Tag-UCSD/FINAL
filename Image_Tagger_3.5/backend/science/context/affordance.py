@@ -30,14 +30,17 @@ import json
 import logging
 import math
 import pickle
+import re
 from collections import defaultdict
 from itertools import combinations
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+import cv2
 import numpy as np
 
 from backend.science.core import AnalysisFrame
+from backend.services.vlm import StubEngine, get_vlm_engine
 
 logger = logging.getLogger("v3.science.affordance")
 
@@ -226,6 +229,10 @@ IMAGE_DIAGONAL = math.sqrt(2.0)
 
 def _safe(label: str) -> str:
     return label.replace(" ", "_").replace("-", "_").replace("/", "_")
+
+
+def _safe_indicator_name(name: str) -> str:
+    return re.sub(r"[^a-z0-9_]", "_", name.lower().strip())[:60]
 
 
 def _resolve_alias(name: str) -> str:
@@ -439,10 +446,27 @@ def extract_feature_vector(
     return vec
 
 
+def extract_feature_map(segments: List[Dict]) -> Dict[str, float]:
+    """Build a raw-feature dict keyed by the training column names."""
+    presence, count = compute_presence_counts(segments, COCO_CLASSES)
+    pairwise = compute_pairwise_features(segments)
+    aggregates = compute_room_aggregates(segments)
+
+    all_features: Dict[str, float] = {}
+    all_features.update(presence)
+    all_features.update(count)
+    all_features.update(pairwise)
+    all_features.update(aggregates)
+    return all_features
+
+
 # ── Model Loading ────────────────────────────────────────────────────────────
 
 _MODELS: Dict[str, Any] = {}
 _FEATURE_COLS: Optional[List[str]] = None
+_INDICATOR_MODELS: Dict[str, Any] = {}
+_INDICATOR_VOCAB: Optional[Dict[str, List[Dict[str, Any]]]] = None
+_AFFORDANCE_DEFS: Optional[Dict[str, Dict[str, Any]]] = None
 
 
 def _load_feature_cols() -> List[str]:
@@ -478,6 +502,184 @@ def _load_model(aff_id: str):
     return model
 
 
+def _load_indicator_model(aff_id: str):
+    if aff_id in _INDICATOR_MODELS:
+        return _INDICATOR_MODELS[aff_id]
+
+    path = _DATA_DIR / aff_id / "lgbm_indicators_model.pkl"
+    if not path.exists():
+        _INDICATOR_MODELS[aff_id] = None
+        return None
+
+    with open(path, "rb") as f:
+        model = pickle.load(f)
+    _INDICATOR_MODELS[aff_id] = model
+    logger.info("Loaded indicator affordance model for %s", aff_id)
+    return model
+
+
+def _load_indicator_vocab() -> Dict[str, List[Dict[str, Any]]]:
+    global _INDICATOR_VOCAB
+    if _INDICATOR_VOCAB is not None:
+        return _INDICATOR_VOCAB
+
+    path = _DATA_DIR / "indicator_vocabulary.json"
+    if not path.exists():
+        _INDICATOR_VOCAB = {}
+        return _INDICATOR_VOCAB
+
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+
+    vocab: Dict[str, List[Dict[str, Any]]] = {}
+    for aff_id in AFFORDANCE_IDS:
+        entries = []
+        seen = set()
+        for entry in raw.get(aff_id, []):
+            if int(entry.get("count", 0)) < 3:
+                continue
+            safe_name = _safe_indicator_name(entry.get("name", ""))
+            if not safe_name or safe_name in seen:
+                continue
+            seen.add(safe_name)
+            entries.append({
+                "name": entry["name"],
+                "safe_name": safe_name,
+                "canonical_polarity": entry.get("canonical_polarity", "positive"),
+            })
+        vocab[aff_id] = entries
+
+    _INDICATOR_VOCAB = vocab
+    return vocab
+
+
+def _load_affordance_defs() -> Dict[str, Dict[str, Any]]:
+    global _AFFORDANCE_DEFS
+    if _AFFORDANCE_DEFS is not None:
+        return _AFFORDANCE_DEFS
+
+    path = _DATA_DIR / "affordance_definitions.json"
+    if not path.exists():
+        _AFFORDANCE_DEFS = {}
+        return _AFFORDANCE_DEFS
+
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+    _AFFORDANCE_DEFS = {
+        aff_id: raw.get(aff_id, {})
+        for aff_id in AFFORDANCE_IDS
+    }
+    return _AFFORDANCE_DEFS
+
+
+def _extract_json_object(text: str) -> Dict[str, Any]:
+    text = (text or "").strip()
+    if not text:
+        return {}
+
+    start = text.find("{")
+    end = text.rfind("}")
+    if start == -1 or end == -1 or end <= start:
+        return {}
+
+    payload = text[start:end + 1]
+    try:
+        return json.loads(payload)
+    except json.JSONDecodeError:
+        return {}
+
+
+def _build_indicator_prompt(detected_classes: List[str]) -> str:
+    vocab = _load_indicator_vocab()
+    defs = _load_affordance_defs()
+
+    affordance_specs = {}
+    for aff_id in AFFORDANCE_IDS:
+        definition = defs.get(aff_id, {})
+        affordance_specs[aff_id] = {
+            "name": AFFORDANCE_NAMES[aff_id],
+            "definition": definition.get("definition", ""),
+            "candidate_indicator_names": [x["name"] for x in vocab.get(aff_id, [])],
+            "positive_examples": definition.get("positive_indicators", [])[:8],
+            "negative_examples": definition.get("negative_indicators", [])[:8],
+        }
+
+    return (
+        "You are an environmental psychologist and interior design expert. "
+        "Assess what is visible in this indoor scene only.\n\n"
+        f"Detected objects from segmentation: {', '.join(sorted(detected_classes)) or 'none'}.\n\n"
+        "For each affordance below, identify the indicators that are visibly present.\n"
+        "Use ONLY indicator names from the provided candidate_indicator_names list for that affordance.\n"
+        "If an affordance has no visible matching indicators, return an empty indicators list.\n"
+        "Return ONLY valid JSON with this structure:\n"
+        "{"
+        "\"L059\":{\"indicators\":[{\"name\":\"...\",\"polarity\":\"positive|negative\"}]},"
+        "\"L079\":{\"indicators\":[...]},"
+        "\"L091\":{\"indicators\":[...]},"
+        "\"L130\":{\"indicators\":[...]},"
+        "\"L141\":{\"indicators\":[...]}"
+        "}\n\n"
+        f"Affordance specs:\n{json.dumps(affordance_specs, ensure_ascii=True)}"
+    )
+
+
+def _extract_indicator_features(vlm_payload: Dict[str, Any]) -> Tuple[Dict[str, float], Dict[str, List[Dict[str, str]]]]:
+    vocab = _load_indicator_vocab()
+    feature_map: Dict[str, float] = {}
+    indicator_payload: Dict[str, List[Dict[str, str]]] = {}
+
+    for aff_id in AFFORDANCE_IDS:
+        allowed = {entry["safe_name"] for entry in vocab.get(aff_id, [])}
+        pos_seen = set()
+        neg_seen = set()
+        indicators = []
+        aff_blob = vlm_payload.get(aff_id, {})
+        for raw_ind in aff_blob.get("indicators", []) if isinstance(aff_blob, dict) else []:
+            safe_name = _safe_indicator_name(str(raw_ind.get("name", "")))
+            polarity = str(raw_ind.get("polarity", "")).lower()
+            if safe_name not in allowed or polarity not in {"positive", "negative"}:
+                continue
+            indicators.append({"name": str(raw_ind.get("name", "")), "polarity": polarity})
+            if polarity == "positive":
+                pos_seen.add(safe_name)
+            else:
+                neg_seen.add(safe_name)
+
+        indicator_payload[aff_id] = indicators
+        for safe_name in allowed:
+            feature_map[f"ind_{aff_id}_pos_{safe_name}"] = 1.0 if safe_name in pos_seen else 0.0
+            feature_map[f"ind_{aff_id}_neg_{safe_name}"] = 1.0 if safe_name in neg_seen else 0.0
+
+    return feature_map, indicator_payload
+
+
+def _predict_with_feature_map(model: Any, feature_map: Dict[str, float]) -> float:
+    feature_names = model.booster_.feature_name()
+    vec = np.zeros(len(feature_names), dtype=np.float32)
+    for i, name in enumerate(feature_names):
+        vec[i] = float(feature_map.get(name, 0.0))
+    score = float(model.predict(vec.reshape(1, -1))[0])
+    return max(1.0, min(7.0, score))
+
+
+def _get_indicator_payload_for_frame(
+    frame: AnalysisFrame,
+    detected_classes: List[str],
+) -> Optional[Dict[str, Any]]:
+    engine = get_vlm_engine()
+    if isinstance(engine, StubEngine):
+        return None
+
+    ok, buffer = cv2.imencode(".jpg", frame.original_image)
+    if not ok:
+        return None
+
+    result = engine.analyze_image(buffer.tobytes(), _build_indicator_prompt(detected_classes))
+    if result.get("stub"):
+        return None
+    return _extract_json_object(result.get("text", ""))
+
+
 # ── Analyzer ─────────────────────────────────────────────────────────────────
 
 class AffordanceAnalyzer:
@@ -509,6 +711,9 @@ class AffordanceAnalyzer:
             return False
         for aff_id in AFFORDANCE_IDS:
             _load_model(aff_id)
+            _load_indicator_model(aff_id)
+        _load_indicator_vocab()
+        _load_affordance_defs()
         return True
 
     def analyze(self, frame: AnalysisFrame) -> None:
@@ -549,29 +754,41 @@ class AffordanceAnalyzer:
                 logger.info("AffordanceAnalyzer: no COCO-mappable segments found.")
                 return
 
-            # Extract feature vector
-            feature_cols = _load_feature_cols()
-            X = extract_feature_vector(segments, feature_cols)
+            raw_feature_map = extract_feature_map(segments)
+            detected_classes = sorted({s["coco_class_label"] for s in segments})
 
-            # Predict each affordance
+            indicator_payload = None
+            indicator_feature_map: Dict[str, float] = {}
+            if all(_load_indicator_model(aff_id) is not None for aff_id in AFFORDANCE_IDS):
+                indicator_payload = _get_indicator_payload_for_frame(frame, detected_classes)
+                if indicator_payload:
+                    indicator_feature_map, indicator_details = _extract_indicator_features(indicator_payload)
+                    frame.metadata["affordance.indicators"] = indicator_details
+
+            method = "raw_lgbm"
             for aff_id in AFFORDANCE_IDS:
-                model = _load_model(aff_id)
+                model = None
+                feature_map = raw_feature_map
+                indicator_model = _load_indicator_model(aff_id)
+                if indicator_model is not None and indicator_feature_map:
+                    model = indicator_model
+                    feature_map = {**raw_feature_map, **indicator_feature_map}
+                    method = "indicator_lgbm_runtime_vlm"
+                if model is None:
+                    model = _load_model(aff_id)
                 if model is None:
                     continue
 
-                score = float(model.predict(X.reshape(1, -1))[0])
-                # Clamp to valid Likert range
-                score = max(1.0, min(7.0, score))
+                score = _predict_with_feature_map(model, feature_map)
                 normalized = (score - 1.0) / 6.0
 
                 frame.add_attribute(f"affordance.{aff_id}", score, confidence=0.85)
                 frame.add_attribute(f"affordance.{aff_id}_norm", normalized, confidence=0.85)
 
             # Store provenance
+            frame.metadata["affordance.method"] = method
             frame.metadata["affordance.n_segments"] = len(segments)
-            frame.metadata["affordance.segment_classes"] = list(
-                {s["coco_class_label"] for s in segments}
-            )
+            frame.metadata["affordance.segment_classes"] = detected_classes
 
             logger.info(
                 "AffordanceAnalyzer: predicted %d affordances from %d segments",
@@ -604,4 +821,29 @@ def predict_affordances_from_image(
     return {
         aff_id: frame.attributes.get(f"affordance.{aff_id}", 0.0)
         for aff_id in AFFORDANCE_IDS
+    }
+
+
+def predict_affordances_with_metadata_from_image(
+    image: np.ndarray,
+) -> Dict[str, Any]:
+    frame = AnalysisFrame(image_id=-1, original_image=image)
+
+    from backend.science.vision.segmentation import SegmentationAnalyzer
+    SegmentationAnalyzer.analyze(frame, use_semantic=True, use_panoptic=True)
+
+    analyzer = AffordanceAnalyzer()
+    analyzer.analyze(frame)
+
+    return {
+        "scores": {
+            aff_id: frame.attributes.get(f"affordance.{aff_id}", 0.0)
+            for aff_id in AFFORDANCE_IDS
+        },
+        "method": frame.metadata.get("affordance.method", "raw_lgbm"),
+        "metadata": {
+            "n_segments": frame.metadata.get("affordance.n_segments"),
+            "segment_classes": frame.metadata.get("affordance.segment_classes", []),
+            "indicators": frame.metadata.get("affordance.indicators", {}),
+        },
     }

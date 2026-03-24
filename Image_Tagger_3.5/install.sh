@@ -17,6 +17,6 @@ docker-compose up -d --build
 
 echo "Seeding database..."
 sleep 5
-docker-compose exec -T api python3 backend/scripts/seed_attributes.py
+docker-compose exec -T api python3 -m backend.scripts.seed_attributes
 
 echo "System online at http://localhost:8080"

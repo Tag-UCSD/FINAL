@@ -1,0 +1,280 @@
+{
+  "_metadata": {
+    "source": "Environment_Cognition_Taxonomy_Hierarchical_V2.7_ActivityAffordances_RoomMarkers.xlsx",
+    "taxonomy_version": "V2.7",
+    "pilot_count": 5,
+    "extraction_notes": [
+      "Fields 'definition', 'family', 'name', 'primary_room_type_codes', 'key_cues_2d', and 'tier' extracted directly from Activity_Affordances sheet.",
+      "Fields 'primary_room_types' (human-readable) and 'room_signatures' extracted by joining Activity_Affordances with Room_Typology sheet on RoomType_ID.",
+      "Fields 'signature_artefacts' and 'key_spatial_relations' derived from Room_Typology.Signature_Artifacts and Room_Typology.Signature_Layout_Cues for primary rooms, cross-referenced with Activity_Affordances.Key_Cues_2D.",
+      "Fields 'positive_indicators' and 'negative_indicators' inferred from Key_Cues_2D text and Activity_Indicators sheet. The taxonomy does not have explicit positive/negative indicator lists; these are extracted and structured from the cue descriptions.",
+      "Field 'measurement_items' added from Activity_Indicators sheet — includes all Rating_Item and Behavioral_Proxy entries for each affordance.",
+      "Field 'coco_proxy_classes' added as cross-reference to coco_to_taxonomy_map.json for downstream segmentation pipeline use.",
+      "Field 'vlm_scoring_guidance' inferred from Key_Cues_2D field and taxonomy methodology notes.",
+      "Fields 'inferability_2d' and 'vr_enrichment' extracted from Room_Typology sheet for primary rooms."
+    ]
+  },
+
+  "L059": {
+    "name": "Sleep (Primary)",
+    "family": "Rest & Recovery",
+    "tier": "Tier 1",
+    "definition": "Suitability of the pictured space for doing sleep (primary) (given typical user intentions).",
+    "primary_room_type_codes": ["RT01", "RT09", "RT29"],
+    "primary_room_types": [
+      {"id": "RT01", "name": "Bedroom", "building_typology": "Residential", "strength_prior": 0.75},
+      {"id": "RT09", "name": "Hotel Room", "building_typology": "Hospitality", "strength_prior": 0.75},
+      {"id": "RT29", "name": "Hospital Ward / Patient Room", "building_typology": "Healthcare", "strength_prior": 0.75}
+    ],
+    "signature_artefacts": ["bed", "nightstand", "wardrobe", "pillow", "blanket", "dimmable lamp", "curtain/blind", "luggage bench"],
+    "key_spatial_relations": [
+      "enclosed private room with door",
+      "soft textile surfaces dominate",
+      "low ambient task lighting or dimmable fixtures",
+      "minimal through-traffic / low disturbance cues",
+      "circulation space around bed"
+    ],
+    "positive_indicators": [
+      "Presence of a bed (any size)",
+      "Nightstand or bedside table adjacent to bed",
+      "Soft textiles (duvet, pillows, blankets) visible",
+      "Dimmable or warm lighting fixtures",
+      "Curtains, blinds, or window coverings providing privacy",
+      "Enclosed room with door visible or implied",
+      "Low visual noise / clutter level",
+      "Wardrobe or dresser present"
+    ],
+    "negative_indicators": [
+      "High ambient noise cues (open-plan, public-facing layout)",
+      "Bright overhead fluorescent lighting",
+      "No horizontal sleeping surface",
+      "High foot traffic cues (corridor, lobby adjacency)",
+      "Commercial or industrial equipment present",
+      "Multiple occupant workstations visible"
+    ],
+    "key_cues_2d": "Artifacts/equipment implied by image; layout + furniture topology; signage; surfaces; lighting cues. Key: Bed; dimmable light; privacy; low disturbance cues",
+    "inferability_2d": "High",
+    "vr_enrichment": "VR: layout scale; circulation around bed",
+    "measurement_items": [
+      {"type": "Rating_Item", "text": "How suitable is this space for sleep (primary)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How easy would it be to do sleep (primary) here given the visible artifacts/equipment?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How likely would you choose this space for sleep (primary) (all else equal)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Behavioral_Proxy", "text": "Scenario 2AFC: choose which of two spaces you would use for sleep (primary) (estimate choice probability)."},
+      {"type": "Behavioral_Proxy", "text": "Artifact click/identify: click the object you would primarily use for sleep (primary); RT/accuracy."}
+    ],
+    "coco_proxy_classes": ["bed", "pillow", "blanket", "curtain", "window-blind", "light"],
+    "vlm_scoring_guidance": "Score 1–10 on suitability for sleeping. Look for: (1) presence of a bed as primary artifact, (2) privacy cues (enclosed room, curtains), (3) soft textiles and low-stimulation environment. Penalize for: bright task lighting, public spaces, absence of horizontal rest surface.",
+    "typical_hypersim_clusters": ["bedroom"]
+  },
+
+  "L079": {
+    "name": "Cook (Daily)",
+    "family": "Food & Drink",
+    "tier": "Tier 1",
+    "definition": "Suitability of the pictured space for doing cook (daily) (given typical user intentions).",
+    "primary_room_type_codes": ["RT03", "RT15"],
+    "primary_room_types": [
+      {"id": "RT03", "name": "Kitchen", "building_typology": "Residential", "strength_prior": 0.75},
+      {"id": "RT15", "name": "Commercial Kitchen", "building_typology": "Food & Beverage", "strength_prior": 0.75}
+    ],
+    "signature_artefacts": ["stove/oven", "sink", "countertop/counter", "refrigerator", "microwave", "toaster", "knife", "cutting board", "pots/pans", "prep tools"],
+    "key_spatial_relations": [
+      "work triangle (stove–sink–refrigerator)",
+      "counter adjacency to stove and sink",
+      "hard washable surfaces (tile, stone, stainless steel)",
+      "storage above/below counters",
+      "task lighting over work surfaces"
+    ],
+    "positive_indicators": [
+      "Stove or oven visible",
+      "Kitchen sink present",
+      "Countertops / work surfaces present",
+      "Refrigerator visible",
+      "Microwave or toaster present",
+      "Utensils, pots, pans, or cooking tools visible",
+      "Cutting board or food prep surface",
+      "Overhead hood vent / exhaust fan",
+      "Hard tile or stone surfaces",
+      "Upper/lower cabinet storage"
+    ],
+    "negative_indicators": [
+      "No cooking appliances present",
+      "Absence of hard work surfaces",
+      "No water fixture (sink)",
+      "Soft furnishings dominate without kitchen fixtures",
+      "Dining area only with no cooking zone visible"
+    ],
+    "key_cues_2d": "Artifacts/equipment implied by image; layout + furniture topology; signage; surfaces; lighting cues. Key: Stove; sink; counters; prep tools",
+    "inferability_2d": "High",
+    "vr_enrichment": "VR: reachability; workflow",
+    "measurement_items": [
+      {"type": "Rating_Item", "text": "How suitable is this space for cook (daily)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How easy would it be to do cook (daily) here given the visible artifacts/equipment?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How likely would you choose this space for cook (daily) (all else equal)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Behavioral_Proxy", "text": "Scenario 2AFC: choose which of two spaces you would use for cook (daily) (estimate choice probability)."},
+      {"type": "Behavioral_Proxy", "text": "Artifact click/identify: click the object you would primarily use for cook (daily); RT/accuracy."}
+    ],
+    "coco_proxy_classes": ["oven", "microwave", "toaster", "sink", "refrigerator", "counter", "knife", "fork", "spoon", "bowl", "cup", "bottle", "dining table", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "fruit", "food-other-merged"],
+    "vlm_scoring_guidance": "Score 1–10 on suitability for daily cooking. Look for: (1) cooking appliances (stove, oven, microwave), (2) prep surfaces (counters), (3) water access (sink), (4) storage (refrigerator, cabinets). The work triangle layout is a strong positive signal even when individual appliances are partially occluded.",
+    "typical_hypersim_clusters": ["kitchen", "dining_room"]
+  },
+
+  "L091": {
+    "name": "Computer Work (Solo)",
+    "family": "Focused Knowledge Work",
+    "tier": "Tier 1",
+    "definition": "Suitability of the pictured space for doing computer work (solo) (given typical user intentions).",
+    "primary_room_type_codes": ["RT06", "RT17", "RT16"],
+    "primary_room_types": [
+      {"id": "RT06", "name": "Home Office / Study", "building_typology": "Residential", "strength_prior": 0.75},
+      {"id": "RT17", "name": "Private Office", "building_typology": "Workplace / Office", "strength_prior": 0.75},
+      {"id": "RT16", "name": "Open-Plan Office", "building_typology": "Workplace / Office", "strength_prior": 0.75}
+    ],
+    "signature_artefacts": ["desk", "ergonomic chair", "monitor/screen", "keyboard", "mouse", "laptop", "lamp (task)", "bookshelf", "outlets/power strips", "headset"],
+    "key_spatial_relations": [
+      "desk as primary work surface",
+      "monitor at eye level",
+      "ergonomic seating with back support",
+      "task lighting positioned to reduce glare",
+      "low visual distraction in immediate field of view",
+      "power outlet access at desk level"
+    ],
+    "positive_indicators": [
+      "Desk or dedicated work surface visible",
+      "Monitor, TV screen, or laptop at desk height",
+      "Office-style chair with back support",
+      "Keyboard or computer peripheral visible",
+      "Task lamp or directional desk lighting",
+      "Books, reference materials, or documents",
+      "Shelves or organized storage nearby",
+      "Door or enclosure providing privacy (for solo work)",
+      "Low foot-traffic cues"
+    ],
+    "negative_indicators": [
+      "No flat work surface present",
+      "Seating not appropriate for extended seated work (e.g., only soft lounging seats, no desk)",
+      "High ambient noise or distraction cues (bar, open public space)",
+      "Absence of electrical power access cues",
+      "Strong recreational/leisure cues (TV wall without desk)"
+    ],
+    "key_cues_2d": "Artifacts/equipment implied by image; layout + furniture topology; signage; surfaces; lighting cues. Key: Monitor; desk; outlets; ergonomic chair",
+    "inferability_2d": "High",
+    "vr_enrichment": "VR: privacy; glare",
+    "measurement_items": [
+      {"type": "Rating_Item", "text": "How suitable is this space for computer work (solo)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How easy would it be to do computer work (solo) here given the visible artifacts/equipment?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How likely would you choose this space for computer work (solo) (all else equal)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Behavioral_Proxy", "text": "Scenario 2AFC: choose which of two spaces you would use for computer work (solo) (estimate choice probability)."},
+      {"type": "Behavioral_Proxy", "text": "Artifact click/identify: click the object you would primarily use for computer work (solo); RT/accuracy."}
+    ],
+    "coco_proxy_classes": ["chair", "tv", "laptop", "mouse", "keyboard", "cell phone", "book", "scissors", "light", "shelf"],
+    "vlm_scoring_guidance": "Score 1–10 on suitability for solo computer work. Look for: (1) desk or flat work surface, (2) monitor or laptop, (3) ergonomic seating, (4) task lighting. A hotel room desk scores moderately; a dedicated home office or private office scores highest. Open-plan offices score moderate due to noise/distraction cues.",
+    "typical_hypersim_clusters": ["office", "living_room", "bedroom"]
+  },
+
+  "L130": {
+    "name": "Casual Conversation / Hangout",
+    "family": "Leisure & Entertainment",
+    "tier": "Tier 1",
+    "definition": "Suitability of the pictured space for doing casual conversation / hangout (given typical user intentions).",
+    "primary_room_type_codes": ["RT02", "RT10", "RT14"],
+    "primary_room_types": [
+      {"id": "RT02", "name": "Living Room / Lounge", "building_typology": "Residential", "strength_prior": 0.75},
+      {"id": "RT10", "name": "Hotel Lobby", "building_typology": "Hospitality", "strength_prior": 0.75},
+      {"id": "RT14", "name": "Bar / Lounge (F&B)", "building_typology": "Food & Beverage", "strength_prior": 0.75}
+    ],
+    "signature_artefacts": ["sofa/couch", "armchair", "coffee table", "rug", "cushions", "side tables", "TV (optional)", "social lighting"],
+    "key_spatial_relations": [
+      "sociopetal seating arrangement (seats facing each other)",
+      "soft seating cluster with central focus element (coffee table, rug)",
+      "accessible shared surface (coffee table within reach of multiple seats)",
+      "comfortable spacing — not too far, not cramped",
+      "warm or ambient lighting rather than task lighting",
+      "low visual barrier between seats (open sightlines across group)"
+    ],
+    "positive_indicators": [
+      "Sofa or couch visible",
+      "Multiple seating pieces arranged facing each other",
+      "Coffee table or central shared surface",
+      "Rug or soft flooring defining seating zone",
+      "Cushions on seating",
+      "Warm ambient or accent lighting",
+      "TV or focal wall element (optional but common)",
+      "Low visual clutter in conversational sight-lines",
+      "Social drink/food accessories (wine glasses, cups, snacks)"
+    ],
+    "negative_indicators": [
+      "Only single-occupancy seating (no seating cluster)",
+      "Seating oriented away from each other (parallel rows, classroom)",
+      "Strong work task cues overwhelming leisure signals",
+      "No soft seating present (only hard chairs at work desks)",
+      "High distraction cues (TV screens everywhere without comfortable seating)"
+    ],
+    "key_cues_2d": "Artifacts/equipment implied by image; layout + furniture topology; signage; surfaces; lighting cues. Key: Soft seating clusters; coffee table",
+    "inferability_2d": "High",
+    "vr_enrichment": "VR: seating graph; sightlines",
+    "measurement_items": [
+      {"type": "Rating_Item", "text": "How suitable is this space for casual conversation / hangout?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How easy would it be to do casual conversation / hangout here given the visible artifacts/equipment?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How likely would you choose this space for casual conversation / hangout (all else equal)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Behavioral_Proxy", "text": "Scenario 2AFC: choose which of two spaces you would use for casual conversation / hangout (estimate choice probability)."},
+      {"type": "Behavioral_Proxy", "text": "Artifact click/identify: click the object you would primarily use for casual conversation / hangout; RT/accuracy."}
+    ],
+    "coco_proxy_classes": ["bench", "wine glass", "cup", "chair", "couch", "dining table", "tv", "remote", "pillow"],
+    "vlm_scoring_guidance": "Score 1–10 on suitability for casual conversation. The key signal is the sociopetal seating arrangement — seats facing each other with a shared central surface. A living room with sofa + coffee table scores high. A bedroom with a sofa area scores moderate. A lone desk chair scores low. Focus on seating cluster topology over individual object presence.",
+    "typical_hypersim_clusters": ["living_room", "dining_room", "lobby_lounge"]
+  },
+
+  "L141": {
+    "name": "Yoga / Stretching",
+    "family": "Movement & Fitness",
+    "tier": "Tier 1",
+    "definition": "Suitability of the pictured space for doing yoga / stretching (given typical user intentions).",
+    "primary_room_type_codes": ["RT38", "RT41", "RT02"],
+    "primary_room_types": [
+      {"id": "RT38", "name": "Gym / Fitness Room", "building_typology": "Workplace / Office", "strength_prior": 0.75},
+      {"id": "RT41", "name": "Meditation Room", "building_typology": "Religious / Spiritual", "strength_prior": 0.75},
+      {"id": "RT02", "name": "Living Room / Lounge", "building_typology": "Residential", "strength_prior": 0.75}
+    ],
+    "signature_artefacts": ["yoga mat", "exercise mat", "mirror (full-length)", "open floor area", "minimal furniture/clutter"],
+    "key_spatial_relations": [
+      "open unobstructed floor space (at least 2m x 1.5m clearance)",
+      "full-length or large mirror on wall (for form feedback)",
+      "low clutter — no furniture in the movement zone",
+      "calm visual field (minimal visual noise)",
+      "soft natural or warm lighting"
+    ],
+    "positive_indicators": [
+      "Yoga mat or exercise mat visible",
+      "Large open floor area with no furniture obstruction",
+      "Full-length mirror on wall",
+      "Minimal clutter in the floor space",
+      "Low-stimulation / calm visual environment",
+      "Soft flooring (wood, carpet, rubber) rather than hard concrete",
+      "Natural light or warm ambient lighting",
+      "Gym or fitness equipment nearby (moderate positive signal)",
+      "Cushions or meditation props"
+    ],
+    "negative_indicators": [
+      "Floor fully occupied by furniture (no clearance for mat)",
+      "Dense clutter preventing movement",
+      "Narrow corridor or restricted space",
+      "Industrial equipment cluttering floor",
+      "High visual noise / stimulation"
+    ],
+    "key_cues_2d": "Artifacts/equipment implied by image; layout + furniture topology; signage; surfaces; lighting cues. Key: Mats; open floor; calm cues",
+    "inferability_2d": "High",
+    "vr_enrichment": "VR: movement",
+    "measurement_items": [
+      {"type": "Rating_Item", "text": "How suitable is this space for yoga / stretching?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How easy would it be to do yoga / stretching here given the visible artifacts/equipment?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Rating_Item", "text": "How likely would you choose this space for yoga / stretching (all else equal)?", "format": "Likert 1–7 (or 0–100 slider)", "scale": "1=Not at all … 7=Extremely"},
+      {"type": "Behavioral_Proxy", "text": "Scenario 2AFC: choose which of two spaces you would use for yoga / stretching (estimate choice probability)."},
+      {"type": "Behavioral_Proxy", "text": "Artifact click/identify: click the object you would primarily use for yoga / stretching; RT/accuracy."}
+    ],
+    "coco_proxy_classes": ["mirror-stuff", "floor-wood", "floor-other-merged", "playingfield"],
+    "vlm_scoring_guidance": "Score 1–10 on suitability for yoga/stretching. This affordance is primarily an ABSENCE-OF-CLUTTER signal: a clear floor area is the single strongest predictor. Secondary positives: yoga mat visible, mirror on wall, calm lighting. A large open living room with furniture pushed aside scores higher than a cluttered bedroom even without a mat. Gym spaces with mats score highest.",
+    "typical_hypersim_clusters": ["living_room", "office", "bedroom"],
+    "special_note": "L141 is unusual in that its primary positive indicators are architectural/spatial (open floor clearance) rather than object presence. This means COCO segmentation feature vectors will be relatively weak predictors; VLM holistic scene assessment is especially important for this affordance."
+  }
+}

@@ -20,6 +20,14 @@ const DEBUG_MODES = [
     { key: 'materials',    label: 'Materials',     shortcut: '8', hasEdgeSliders: false, hasOverlaySlider: false, hasSegSlider: false },
 ];
 
+const AFFORDANCE_SHORT_LABELS = {
+    L059: 'Sleep',
+    L079: 'Cook',
+    L091: 'Work',
+    L130: 'Talk',
+    L141: 'Yoga',
+};
+
 function buildDebugSrc(img, mode, edgeLow, edgeHigh, segConf) {
     if (!img) return '';
     const id = img.id;
@@ -155,6 +163,44 @@ function TagBadge({ tag }) {
     );
 }
 
+function AffordancePanel({ scores, method }) {
+    if (!scores?.length) return null;
+
+    return (
+        <div className="p-3 border-b border-gray-700">
+            <div className="flex items-center justify-between mb-2">
+                <div className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                    Affordance Ratings
+                </div>
+                {method && (
+                    <div className="text-[9px] text-gray-500">
+                        {method === 'indicator_lgbm_runtime_vlm' ? 'Model D' : 'Raw LGBM'}
+                    </div>
+                )}
+            </div>
+            <div className="space-y-2">
+                {scores.map(item => {
+                    const pct = ((Number(item.score) - 1) / 6) * 100;
+                    return (
+                        <div key={item.id}>
+                            <div className="flex items-center justify-between text-xs mb-1">
+                                <span className="text-gray-200">{AFFORDANCE_SHORT_LABELS[item.id] || item.label}</span>
+                                <span className="font-mono text-blue-300">{Number(item.score).toFixed(1)} / 7</span>
+                            </div>
+                            <div className="h-1.5 rounded-full bg-gray-800 overflow-hidden">
+                                <div
+                                    className="h-full rounded-full bg-blue-500"
+                                    style={{ width: `${Math.max(0, Math.min(100, pct))}%` }}
+                                />
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function ImageDetailModal({
@@ -254,6 +300,7 @@ export default function ImageDetailModal({
     // detail.tags is TagInfo[] from the API; img.tags is string[] from the grid search result (fallback).
     const tags = detail?.tags
         ?? (img?.tags ?? []).map(t => ({ label: t, source: 'preloaded', source_label: 'Imported with dataset' }));
+    const affordanceScores = detail?.affordance_scores ?? [];
 
     const groupedAttrs = useMemo(() => {
         if (!detail?.science_attributes?.length) return [];
@@ -505,6 +552,8 @@ export default function ImageDetailModal({
                     </div>
 
                     {/* Tags */}
+                    <AffordancePanel scores={affordanceScores} method={detail?.affordance_method} />
+
                     {tags.length > 0 && (
                         <div className="p-3 border-b border-gray-700">
                             <div className="flex items-center justify-between mb-2">

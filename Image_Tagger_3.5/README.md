@@ -19,7 +19,9 @@ bash install.sh
 
 This builds three Docker containers (PostgreSQL, FastAPI backend, Nginx + React frontend), seeds the attribute taxonomy, and starts the system.
 
-Once running, open **http://localhost:8080** in your browser.
+Once running, open **http://localhost:8080/explorer/** in your browser.
+
+Note: in some environments, **http://localhost:8080/** may not redirect correctly. If the root URL fails, go directly to **http://localhost:8080/explorer/**.
 
 ## Using the Explorer
 
@@ -30,6 +32,7 @@ The Explorer is the single interface for browsing and analyzing images.
 - **Search**: Type a query in the search bar and press Enter, or click Search.
 - **Filters**: Toggle the sidebar to filter by attribute categories (color, texture, spatial, etc.).
 - **Debug Modes**: Cycle through visualization overlays on the gallery thumbnails — Edges, Overlay, Depth, Complexity, Segmentation, Room, Materials, Materials2. Each mode renders the image through a different computer vision analyzer in real time.
+- **Affordance Ratings**: Each image card can show 1-7 ratings for Sleep, Cook, Work, Conversation, and Yoga as affordance scores are computed and cached.
 - **Export Cart**: Check images to add them to your cart, then click Export Dataset to download a JSON file of their validation records.
 
 ### Single-Image Detail View
@@ -38,6 +41,7 @@ Click any image to open the full detail modal:
 
 - **Navigation**: Arrow keys or Prev/Next buttons to move between images.
 - **Debug Modes**: Press keys 1-8 to switch visualization modes. Sliders for edge thresholds, overlay opacity, and segmentation confidence appear when relevant.
+- **Affordance Ratings**: Right sidebar shows the five 1-7 affordance predictions for the current image.
 - **Science Attributes**: Bottom-left panel shows all computed feature values grouped by analyzer (color, texture, fractal, fluency, segmentation, etc.), each with a mini bar chart.
 - **Human Validations**: Bottom-right panel shows any manual annotation records.
 - **Tags**: Right sidebar shows tags with provenance tooltips (imported vs. pipeline-derived, with confidence scores).

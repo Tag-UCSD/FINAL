@@ -15,6 +15,8 @@ class ImageSearchResult(BaseModel):
     url: str
     tags: List[str] = []
     meta_data: Dict[str, Any] = {}
+    affordance_scores: List["AffordanceScore"] = []
+    affordance_method: Optional[str] = None
     
 class ExportRequest(BaseModel):
     """Contract for Dataset Export"""
@@ -63,6 +65,13 @@ class TagInfo(BaseModel):
     attribute_key: Optional[str] = None  # e.g. "style.modern", only for pipeline-derived tags
 
 
+class AffordanceScore(BaseModel):
+    """Ordered affordance score for UI display."""
+    id: str
+    label: str
+    score: float
+
+
 class ImageDetailResult(BaseModel):
     """Full detail payload for the single-image viewer modal."""
     id: int
@@ -70,5 +79,7 @@ class ImageDetailResult(BaseModel):
     filename: str
     tags: List[TagInfo] = []
     meta_data: Dict[str, Any] = {}
+    affordance_scores: List[AffordanceScore] = []
+    affordance_method: Optional[str] = None
     science_attributes: List[AttributeValue] = []
     human_validations: List[HumanValidation] = []
