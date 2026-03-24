@@ -224,6 +224,9 @@ export default function ImageDetailModal({
     const [detail, setDetail] = useState(null);
     const [detailLoading, setDetailLoading] = useState(false);
     const [detailError, setDetailError] = useState(null);
+    const [affordanceDetail, setAffordanceDetail] = useState(null);
+    const [affordanceLoading, setAffordanceLoading] = useState(false);
+    const [affordanceError, setAffordanceError] = useState(null);
 
     const [imgLoading, setImgLoading] = useState(true);
     const [imgError, setImgError] = useState(false);
@@ -242,6 +245,21 @@ export default function ImageDetailModal({
             .then(data => { if (!cancelled) setDetail(data); })
             .catch(err => { if (!cancelled) setDetailError(err?.message || 'Failed to load details'); })
             .finally(() => { if (!cancelled) setDetailLoading(false); });
+
+        return () => { cancelled = true; };
+    }, [img?.id]);
+
+    useEffect(() => {
+        if (!img) return;
+        let cancelled = false;
+        setAffordanceDetail(null);
+        setAffordanceLoading(true);
+        setAffordanceError(null);
+
+        api.get(`/images/${img.id}/affordance`)
+            .then(data => { if (!cancelled) setAffordanceDetail(data); })
+            .catch(err => { if (!cancelled) setAffordanceError(err?.message || 'Failed to load affordance ratings'); })
+            .finally(() => { if (!cancelled) setAffordanceLoading(false); });
 
         return () => { cancelled = true; };
     }, [img?.id]);
@@ -300,7 +318,8 @@ export default function ImageDetailModal({
     // detail.tags is TagInfo[] from the API; img.tags is string[] from the grid search result (fallback).
     const tags = detail?.tags
         ?? (img?.tags ?? []).map(t => ({ label: t, source: 'preloaded', source_label: 'Imported with dataset' }));
-    const affordanceScores = detail?.affordance_scores ?? [];
+    const affordanceScores = affordanceDetail?.affordance_scores ?? detail?.affordance_scores ?? [];
+    const affordanceMethod = affordanceDetail?.affordance_method ?? detail?.affordance_method;
 
     const groupedAttrs = useMemo(() => {
         if (!detail?.science_attributes?.length) return [];
@@ -552,7 +571,20 @@ export default function ImageDetailModal({
                     </div>
 
                     {/* Tags */}
-                    <AffordancePanel scores={affordanceScores} method={detail?.affordance_method} />
+                    {affordanceLoading && (
+                        <div className="p-3 border-b border-gray-700 text-xs text-gray-400 flex items-center gap-2">
+                            <Loader2 className="animate-spin" size={12} />
+                            Loading affordance ratings…
+                        </div>
+                    )}
+                    {!affordanceLoading && affordanceError && (
+                        <div className="p-3 border-b border-gray-700 text-xs text-red-400">
+                            {affordanceError}
+                        </div>
+                    )}
+                    {!affordanceLoading && !affordanceError && (
+                        <AffordancePanel scores={affordanceScores} method={affordanceMethod} />
+                    )}
 
                     {tags.length > 0 && (
                         <div className="p-3 border-b border-gray-700">

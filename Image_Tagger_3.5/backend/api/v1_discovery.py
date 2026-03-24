@@ -261,7 +261,7 @@ def get_image_detail(image_id: int, db: Session = Depends(get_db)):
             ))
 
     meta = getattr(image, "meta_data", {}) or {}
-    affordance_payload = _get_or_compute_affordance_payload(image, db)
+    affordance_payload = _get_cached_affordance_payload(image) or {}
     raw_tags = meta.get("tags", []) if isinstance(meta, dict) else []
     filename = getattr(image, "filename", None) or meta.get("filename", f"image_{image_id}")
 
@@ -306,8 +306,8 @@ def get_image_detail(image_id: int, db: Session = Depends(get_db)):
     return ImageDetailResult(
         id=image.id, url=url, filename=filename, tags=tag_infos,
         meta_data=meta,
-        affordance_scores=_score_list_from_map(affordance_payload.get("scores")),
-        affordance_method=affordance_payload.get("method"),
+        affordance_scores=_score_list_from_map((affordance_payload or {}).get("scores")),
+        affordance_method=(affordance_payload or {}).get("method"),
         science_attributes=science_attributes,
         human_validations=human_validations,
     )
